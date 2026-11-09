@@ -54,9 +54,9 @@ The study is descriptive: the repositories are survivors chosen by today's stars
 The data and text in this repository are licensed under [CC BY 4.0](LICENSE). Quoted claims in `evidence/` belong to the repositories they come from and are cited with their file and line.
 
 ```bibtex
-@misc{soufraz2026agents,
+@misc{frazao2026agents,
   title  = {How much of GitHub's most-starred AI tooling is written by coding agents?},
-  author = {Soufraz, Rafael},
+  author = {Frazao, Rafael},
   year   = {2026},
   note   = {Data as of 2026-11-08; data: https://github.com/Soufraz/famous-repos-research-data},
   url    = {https://www.soufraz.com/famous-repos-research/}

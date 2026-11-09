@@ -2,7 +2,7 @@
 
 **AI authorship, churn and self-published results in 52 of GitHub's most-starred AI-tooling repositories**
 
-Rafael Soufraz · data as of 2026-11-08 · [interactive version](https://www.soufraz.com/famous-repos-research/) · [data and evidence](https://github.com/Soufraz/famous-repos-research-data)
+Rafael Frazao · data as of 2026-11-08 · [interactive version](https://www.soufraz.com/famous-repos-research/) · [data and evidence](https://github.com/Soufraz/famous-repos-research-data)
 
 ## Summary
 
