@@ -1,0 +1,72 @@
+{
+  "repo": "gsd-core",
+  "head_commit": "a00b42e65",
+  "published_results": [
+    {
+      "claim": "\"reductionPct\": 15.5",
+      "metric": "Static prompt token count of 6 workflow spine/detail splits with workflow.compact_content on vs off, counted with proxy tokenizer gpt-tokenizer 4.0.0 (not Claude's tokenizer)",
+      "value": "aggregate 113676 -> 96055 tokens (15.5%); per split: complete-milestone 35.02%, verify-work 17.57%, docs-update 16.39%, new-project 13.37%, plan-phase 11.32%, execute-phase 8.85%",
+      "baseline": "workflow.compact_content=false (spine + all detail parts); the default is false (docs/CONFIGURATION.md:563)",
+      "evidence_type": "harness+results",
+      "files": [
+        "tests/fixtures/compact-content-benchmark-baseline.json:3",
+        "tests/fixtures/compact-content-benchmark-baseline.json:8",
+        "tests/fixtures/compact-content-benchmark-baseline.json:44",
+        "scripts/benchmark-compact-content.cjs:5",
+        "package.json:166",
+        "CHANGELOG.md:501"
+      ],
+      "reproduce_command": "npm run benchmark:compact-content"
+    },
+    {
+      "claim": "\"reductionPct\": 21.91",
+      "metric": "Static token count of canonical agent/template/workflow files vs their .compact.md variants (proxy tokenizer gpt-tokenizer 4.0.0)",
+      "value": "aggregate 122467 -> 95637 tokens (21.91%); 32 pairs, per-pair 4.56% (gsd-eval-auditor) to 42.1% (gsd-integration-checker)",
+      "baseline": "canonical (non-compact) file, the default at each call site",
+      "evidence_type": "harness+results",
+      "files": [
+        "tests/fixtures/compact-content-variant-benchmark-baseline.json:3",
+        "tests/fixtures/compact-content-variant-benchmark-baseline.json:174",
+        "scripts/benchmark-compact-content-variants.cjs:5",
+        "package.json:167"
+      ],
+      "reproduce_command": "npm run benchmark:compact-content-variants"
+    },
+    {
+      "claim": "**Purpose:** Reduce static prompt overhead by ~40% for models with context windows under 200K tokens.",
+      "metric": "Static prompt overhead reduction from context-window-aware prompt thinning (executor/planner prompts on sub-200K models)",
+      "value": "~40%",
+      "baseline": "unthinned prompts on standard-context models",
+      "evidence_type": "claim_only",
+      "files": [
+        "docs/features/context-window-aware-prompt-thinning.md:7",
+        "docs/FEATURES.md:2987",
+        "gsd-core/workflows/execute-phase.md:170"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "- **Changed:** Thin orchestrator pattern — commands delegate to workflows, reducing command file size ~75%.",
+      "metric": "Command file size reduction",
+      "value": "~75%",
+      "baseline": "pre-refactor command files",
+      "evidence_type": "claim_only",
+      "files": [
+        "docs/RELEASE-NOTES-LEGACY.md:459"
+      ],
+      "reproduce_command": null
+    }
+  ],
+  "strongest_evidence_type": "harness+results",
+  "summary": "gsd-core publishes no results on task success, output quality or end-to-end agent cost. Its measured numbers are static prompt-size reductions from two offline token-count scripts with committed JSON baselines: with the opt-in `workflow.compact_content` mode (off by default), the six spine/detail workflow splits come to 15.5% fewer tokens (113,676 to 96,055) and the 32 compact variant files to 21.91% fewer (122,467 to 95,637), counted with gpt-tokenizer as a stand-in for Claude's tokenizer and without a check that output quality holds; both rerun deterministically with `npm run benchmark:compact-content` and `npm run benchmark:compact-content-variants`. The '~40%' static-overhead reduction from prompt thinning and the '~75%' smaller command files are stated without a measurement.",
+  "result_focus": "outcome",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself",
+  "accuracy_check": {
+    "date": "2026-11-08",
+    "numbers_checked": 31,
+    "corrections": [
+      "published_results[0].files: scripts/benchmark-compact-content.cjs:14 is a blank comment line -> scripts/benchmark-compact-content.cjs:5 (the script's description)",
+      "published_results[1].value: per-pair range '7.26% (gsd-ai-researcher) to 37.7% (gsd-code-fixer)' -> '4.56% (gsd-eval-auditor) to 42.1% (gsd-integration-checker)' over 32 pairs (tests/fixtures/compact-content-variant-benchmark-baseline.json:78, tests/fixtures/compact-content-variant-benchmark-baseline.json:93)"
+    ]
+  }
+}

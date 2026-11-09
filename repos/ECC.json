@@ -1,0 +1,672 @@
+{
+  "repo": "ECC",
+  "full_name": "affaan-m/ECC",
+  "stars": 299342,
+  "stars_source": "github-api 2026-11-08T08:40:50Z",
+  "selection_topics": [
+    "ai-agents",
+    "llm"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2026-01-18T00:51:51Z",
+    "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+    "fork": false,
+    "forks": 44227,
+    "full_name": "affaan-m/ECC",
+    "pushed_at": "2026-11-06T21:21:50Z",
+    "stars": 299342,
+    "fetched_at": "2026-11-08T08:40:50Z"
+  },
+  "url": "https://github.com/affaan-m/ECC",
+  "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "d2ef2680594f9a17526a6e1a2e18b3d242c5d17b",
+    "head_date": "2026-11-06T16:21:50-05:00",
+    "history_complete": true,
+    "non_merge_commits": 3584,
+    "merge_commits": 743,
+    "maintenance_bot_commits": 77,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 285,
+    "explicit_ai_pct": 8.1,
+    "by_tool": {
+      "claude": 213,
+      "copilot": 35,
+      "other": 17,
+      "cursor": 11,
+      "devin": 8,
+      "codex": 1
+    },
+    "by_signal": {
+      "co-author": 242,
+      "agent-author": 43
+    },
+    "recent_180d": {
+      "commits": 2166,
+      "ai_pct": 7.9,
+      "fix_pct": 48.0
+    },
+    "first_365d": {
+      "commits": 3507,
+      "ai_pct": 8.1,
+      "fix_pct": 43.7
+    },
+    "bot_commit_count": 77,
+    "agent_config": {
+      "files": {
+        ".agents/": "2026-02-25T10:45:29-08:00",
+        ".claude/": "2026-01-22T23:08:07-08:00",
+        ".codex/": "2026-02-25T10:45:29-08:00",
+        ".cursor/": "2026-02-11T02:31:52-08:00",
+        ".gemini/": "2026-03-31T15:13:20-07:00",
+        ".github/copilot-instructions.md": "2026-05-12T23:00:00-04:00",
+        ".github/prompts/": "2026-05-12T23:00:00-04:00",
+        ".kiro/": "2026-03-20T01:50:35-07:00",
+        ".opencode/": "2026-02-05T05:14:33-08:00",
+        "AGENTS.md": "2026-02-25T10:45:29-08:00",
+        "CLAUDE.md": "2026-02-19T16:50:08+08:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2026-01-22T23:08:07-08:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 3507,
+    "first_commit_date": "2026-01-17T17:49:33-08:00",
+    "last_commit_date": "2026-10-29T19:43:24-07:00",
+    "current_loc": 932778,
+    "total_historical_additions": 1199483,
+    "total_historical_deletions": 262115,
+    "total_churn": 1461598,
+    "churn_ratio": 1.57,
+    "survival_rate_pct": 77.8,
+    "code": {
+      "current_loc": 406712,
+      "additions": 463490,
+      "deletions": 57284,
+      "churn_ratio": 1.28,
+      "survival_rate_pct": 87.7
+    },
+    "docs": {
+      "current_loc": 526066,
+      "additions": 735993,
+      "deletions": 204831,
+      "churn_ratio": 1.79,
+      "survival_rate_pct": 71.5
+    },
+    "fix_commits": 1534,
+    "fix_pct": 43.7,
+    "revert_commits": 14,
+    "revert_pct": 0.4,
+    "trial_error_commits": 1539,
+    "trial_error_pct": 43.9,
+    "rapid_fire_commits": 887,
+    "rapid_fire_pct": 25.3,
+    "trial_error_chains": 395,
+    "suspicious_additions_count": 157,
+    "top5_hotspot_volatility_pct": 5.9
+  },
+  "code_hygiene": {
+    "total_files": 1316,
+    "docs_files": 2866,
+    "avg_file_loc": 309.1,
+    "test_loc": 190487,
+    "test_files": 553,
+    "test_ratio_pct": 46.8,
+    "comment_ratio_pct": 5.2,
+    "monolith_count": 41,
+    "top_languages": {
+      ".js": 289404,
+      ".rs": 55756,
+      ".py": 43449,
+      ".sh": 6756,
+      ".ts": 4041
+    }
+  },
+  "authors": {
+    "unique_authors": 513,
+    "top_authors": [
+      {
+        "name": "Affaan Mustafa",
+        "commits": 1404,
+        "pct": 40.0
+      },
+      {
+        "name": "haelyra",
+        "commits": 362,
+        "pct": 10.3
+      },
+      {
+        "name": "montjeffrey",
+        "commits": 98,
+        "pct": 2.8
+      },
+      {
+        "name": "Jeffrey Montoya",
+        "commits": 52,
+        "pct": 1.5
+      },
+      {
+        "name": "Eneko Ruiz",
+        "commits": 51,
+        "pct": 1.5
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 11.7,
+    "p75": 104.7,
+    "p90": 2887.5,
+    "p95": 8760.0,
+    "p99": 53820.0,
+    "avg": 3868.7
+  },
+  "hotspots": [
+    {
+      "file": "README.md",
+      "commits": 411,
+      "additions": 6576,
+      "deletions": 4342,
+      "churn": 10918,
+      "first_seen": "2026-01-17T17:49:33-08:00",
+      "last_seen": "2026-10-29T17:02:32-07:00"
+    },
+    {
+      "file": "docs/zh-CN/README.md",
+      "commits": 164,
+      "additions": 3415,
+      "deletions": 1960,
+      "churn": 5375,
+      "first_seen": "2026-02-05T21:57:54+08:00",
+      "last_seen": "2026-10-29T17:02:32-07:00"
+    },
+    {
+      "file": "README.zh-CN.md",
+      "commits": 163,
+      "additions": 1282,
+      "deletions": 418,
+      "churn": 1700,
+      "first_seen": "2026-01-29T15:06:26+08:00",
+      "last_seen": "2026-10-29T17:02:32-07:00"
+    },
+    {
+      "file": "AGENTS.md",
+      "commits": 157,
+      "additions": 566,
+      "deletions": 344,
+      "churn": 910,
+      "first_seen": "2026-02-25T10:45:29-08:00",
+      "last_seen": "2026-10-29T17:02:32-07:00"
+    },
+    {
+      "file": "docs/ECC-2.0-GA-ROADMAP.md",
+      "commits": 142,
+      "additions": 2220,
+      "deletions": 831,
+      "churn": 3051,
+      "first_seen": "2026-05-12T00:44:16-04:00",
+      "last_seen": "2026-07-26T01:46:56-07:00"
+    },
+    {
+      "file": "ecc2/src/tui/dashboard.rs",
+      "commits": 140,
+      "additions": 17223,
+      "deletions": 1763,
+      "churn": 18986,
+      "first_seen": "2026-03-22T15:48:19-07:00",
+      "last_seen": "2026-10-29T16:42:32+08:00"
+    },
+    {
+      "file": "tests/hooks/hooks.test.js",
+      "commits": 140,
+      "additions": 11458,
+      "deletions": 4275,
+      "churn": 15733,
+      "first_seen": "2026-01-23T15:08:07+08:00",
+      "last_seen": "2026-10-28T12:20:21+05:00"
+    },
+    {
+      "file": "docs/zh-CN/AGENTS.md",
+      "commits": 132,
+      "additions": 479,
+      "deletions": 314,
+      "churn": 793,
+      "first_seen": "2026-03-08T06:48:02+08:00",
+      "last_seen": "2026-10-29T17:02:32-07:00"
+    },
+    {
+      "file": "tests/hooks/gateguard-fact-force.test.js",
+      "commits": 95,
+      "additions": 10272,
+      "deletions": 2764,
+      "churn": 13036,
+      "first_seen": "2026-04-12T17:42:32+09:00",
+      "last_seen": "2026-10-29T18:44:54Z"
+    },
+    {
+      "file": "ecc2/src/session/manager.rs",
+      "commits": 93,
+      "additions": 9114,
+      "deletions": 466,
+      "churn": 9580,
+      "first_seen": "2026-03-22T15:48:19-07:00",
+      "last_seen": "2026-10-29T12:57:39-07:00"
+    },
+    {
+      "file": "ecc2/src/main.rs",
+      "commits": 92,
+      "additions": 13592,
+      "deletions": 589,
+      "churn": 14181,
+      "first_seen": "2026-03-22T15:48:19-07:00",
+      "last_seen": "2026-10-29T22:22:25+08:00"
+    },
+    {
+      "file": "scripts/hooks/gateguard-fact-force.js",
+      "commits": 85,
+      "additions": 4987,
+      "deletions": 2364,
+      "churn": 7351,
+      "first_seen": "2026-04-12T11:41:33+09:00",
+      "last_seen": "2026-10-28T12:28:55-07:00"
+    },
+    {
+      "file": "ecc2/src/session/store.rs",
+      "commits": 78,
+      "additions": 9401,
+      "deletions": 596,
+      "churn": 9997,
+      "first_seen": "2026-03-22T15:48:19-07:00",
+      "last_seen": "2026-10-29T17:25:41-07:00"
+    },
+    {
+      "file": "tests/lib/session-manager.test.js",
+      "commits": 70,
+      "additions": 2790,
+      "deletions": 91,
+      "churn": 2881,
+      "first_seen": "2026-02-12T15:50:04-08:00",
+      "last_seen": "2026-10-01T17:50:41-05:00"
+    },
+    {
+      "file": "tests/lib/utils.test.js",
+      "commits": 67,
+      "additions": 3003,
+      "deletions": 120,
+      "churn": 3123,
+      "first_seen": "2026-01-23T15:08:07+08:00",
+      "last_seen": "2026-10-11T15:04:53-04:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "ecc2/src/tui/dashboard.rs",
+      "loc": 15467
+    },
+    {
+      "file": "ecc2/src/main.rs",
+      "loc": 13003
+    },
+    {
+      "file": "ecc2/src/session/store.rs",
+      "loc": 8844
+    },
+    {
+      "file": "ecc2/src/session/manager.rs",
+      "loc": 8657
+    },
+    {
+      "file": "tests/hooks/gateguard-fact-force.test.js",
+      "loc": 7706
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "61472d54c0dd71ee647d21590593a84d94ab6a19",
+      "short_hash": "61472d54",
+      "author": "haelyra",
+      "date": "2026-10-29T15:22:45-07:00",
+      "subject": "test: disable background maintenance in isolated Git fixtures",
+      "coauthors": [],
+      "additions": 1,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "f29e33271bc257df341bc168b6dbe9f4b76fe7be",
+      "short_hash": "f29e3327",
+      "author": "haelyra",
+      "date": "2026-10-29T17:02:32-07:00",
+      "subject": "feat(skills): port reviewed TypeScript patterns onto current catalog",
+      "coauthors": [
+        "AbhiramMandala"
+      ],
+      "additions": 1569,
+      "deletions": 19,
+      "files_count": 16,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "3f844bd175d0f0bee78f6c64f00f2d2bba28be67",
+      "short_hash": "3f844bd1",
+      "author": "haelyra",
+      "date": "2026-10-29T17:05:17-07:00",
+      "subject": "fix(context): bind curated triggers to combined reviewed registry",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "e55b9c13465dfc0e2d5f462432f5ce4fe95290b4",
+      "short_hash": "e55b9c13",
+      "author": "haelyra",
+      "date": "2026-10-29T17:25:41-07:00",
+      "subject": "fix(ecc2): preserve persisted tool event ownership on replay",
+      "coauthors": [],
+      "additions": 33,
+      "deletions": 7,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "6b8c757e544f19a63db542ffa838b0cd34706ba4",
+      "short_hash": "6b8c757e",
+      "author": "haelyra",
+      "date": "2026-10-29T17:25:42-07:00",
+      "subject": "fix(skills): validate TypeScript example arrays and request identifiers",
+      "coauthors": [],
+      "additions": 96,
+      "deletions": 7,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "ca24fb12c04ab0fcdb63494c019d299bc6e86ab6",
+      "short_hash": "ca24fb12",
+      "author": "haelyra",
+      "date": "2026-10-29T17:25:46-07:00",
+      "subject": "docs: clarify compact fallback and tinystruct transport dependencies",
+      "coauthors": [],
+      "additions": 10,
+      "deletions": 10,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "fc549b6372446ead4deef1d3a24516ea51a38eb0",
+      "short_hash": "fc549b63",
+      "author": "haelyra",
+      "date": "2026-10-29T17:27:56-07:00",
+      "subject": "fix: preserve Windows rule examples and conservative summary budgets",
+      "coauthors": [],
+      "additions": 72,
+      "deletions": 9,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "f75d8322f607dd39bc5e98ef0b0a0593f1130997",
+      "short_hash": "f75d8322",
+      "author": "haelyra",
+      "date": "2026-10-29T17:28:55-07:00",
+      "subject": "fix(context): rebind registry after verified review repairs",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "b37942d3c1e2955bbc39fe192bec565d07e7e361",
+      "short_hash": "b37942d3",
+      "author": "haelyra",
+      "date": "2026-10-29T17:37:52-07:00",
+      "subject": "fix(summary): preserve work before the earlier compaction boundary",
+      "coauthors": [],
+      "additions": 24,
+      "deletions": 9,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "5fd527cf668a55fe553772c37c1043ad39c1d126",
+      "short_hash": "5fd527cf",
+      "author": "haelyra",
+      "date": "2026-10-29T17:41:29-07:00",
+      "subject": "fix(ci): verify pinned Windows ripgrep without Chocolatey",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "6cd41995f4f2d36f69a20545559ff0719d1871ba",
+      "short_hash": "6cd41995",
+      "author": "haelyra",
+      "date": "2026-10-29T17:43:55-07:00",
+      "subject": "fix(hooks): attribute native activity to the registered ECC session",
+      "coauthors": [],
+      "additions": 45,
+      "deletions": 11,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "96996a13c76a9c8417ef2abc6506ad8b62a608a6",
+      "short_hash": "96996a13",
+      "author": "haelyra",
+      "date": "2026-10-29T17:43:59-07:00",
+      "subject": "docs: separate summary budgets from context capacity guidance",
+      "coauthors": [],
+      "additions": 10,
+      "deletions": 6,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "e4b8b8bf01dba16e886a550861687398ecbd19f4",
+      "short_hash": "e4b8b8bf",
+      "author": "haelyra",
+      "date": "2026-10-29T17:44:04-07:00",
+      "subject": "docs(tinystruct): qualify symlinked static-root protection",
+      "coauthors": [],
+      "additions": 12,
+      "deletions": 6,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "794d8cd8d1ffaae25bce596e3874f22119a3dcb5",
+      "short_hash": "794d8cd8",
+      "author": "haelyra",
+      "date": "2026-10-29T17:45:08-07:00",
+      "subject": "fix(context): bind final reviewed guidance registry",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "3dca6e2e8871f7f052c6b335e210108d8964846b",
+      "short_hash": "3dca6e2e",
+      "author": "haelyra",
+      "date": "2026-10-29T18:57:29-07:00",
+      "subject": "fix(hooks): preserve provider conversation identity under inherited environments",
+      "coauthors": [],
+      "additions": 31,
+      "deletions": 7,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "eb267762a12909fd5b0679498ac7543761f2ec73",
+      "short_hash": "eb267762",
+      "author": "haelyra",
+      "date": "2026-10-29T19:14:07-07:00",
+      "subject": "test(x402): reject a provably invalid ECDSA scalar",
+      "coauthors": [],
+      "additions": 14,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "05bc52ae8360106382bdce4b6f5c379991093421",
+      "short_hash": "05bc52ae",
+      "author": "haelyra",
+      "date": "2026-10-29T19:15:02-07:00",
+      "subject": "test(insaits): report captured monitor failure diagnostics",
+      "coauthors": [],
+      "additions": 8,
+      "deletions": 2,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "e4f2f88a3213d27b910691dfd61777dd6acb4826",
+      "short_hash": "e4f2f88a",
+      "author": "haelyra",
+      "date": "2026-10-29T19:40:29-07:00",
+      "subject": "docs(tinystruct): validate example login inputs before authentication",
+      "coauthors": [],
+      "additions": 22,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "35769d00d9cccf4f89b24fd1b096bdd5ce8bb5c5",
+      "short_hash": "35769d00",
+      "author": "haelyra",
+      "date": "2026-10-29T19:42:27-07:00",
+      "subject": "fix(context): validate budgets and remind before native compaction",
+      "coauthors": [],
+      "additions": 131,
+      "deletions": 9,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "66d7b0587bf5784fa9173020719f173b2d65d198",
+      "short_hash": "66d7b058",
+      "author": "haelyra",
+      "date": "2026-10-29T19:43:24-07:00",
+      "subject": "chore(context): bind curated triggers to reviewed guidance repairs",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

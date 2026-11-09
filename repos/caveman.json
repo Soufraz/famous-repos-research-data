@@ -1,0 +1,698 @@
+{
+  "repo": "caveman",
+  "full_name": "JuliusBrussee/caveman",
+  "stars": 118218,
+  "stars_source": "github-api 2026-11-08T08:58:30Z",
+  "selection_topics": [
+    "prompt-engineering"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2026-04-04T10:03:00Z",
+    "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
+    "fork": false,
+    "forks": 6876,
+    "full_name": "JuliusBrussee/caveman",
+    "pushed_at": "2026-11-08T07:43:36Z",
+    "stars": 118218,
+    "fetched_at": "2026-11-08T08:58:30Z"
+  },
+  "url": "https://github.com/JuliusBrussee/caveman",
+  "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "1e91f1306d602d4ca23618701b1185575ae1869b",
+    "head_date": "2026-11-07T20:13:56-08:00",
+    "history_complete": true,
+    "non_merge_commits": 1759,
+    "merge_commits": 267,
+    "maintenance_bot_commits": 43,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 1351,
+    "explicit_ai_pct": 78.7,
+    "by_tool": {
+      "claude": 1342,
+      "cursor": 6,
+      "codex": 2,
+      "copilot": 1
+    },
+    "by_signal": {
+      "co-author": 1297,
+      "agent-author": 54
+    },
+    "recent_180d": {
+      "commits": 1585,
+      "ai_pct": 82.3,
+      "fix_pct": 58.0
+    },
+    "first_365d": {
+      "commits": 1716,
+      "ai_pct": 78.7,
+      "fix_pct": 55.5
+    },
+    "bot_commit_count": 43,
+    "agent_config": {
+      "files": {
+        ".codex/": "2026-04-11T11:48:34+02:00",
+        "AGENTS.md": "2026-04-11T11:15:03+02:00",
+        "CLAUDE.md": "2026-04-11T11:56:02+02:00",
+        "GEMINI.md": "2026-04-11T11:15:03+02:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2026-04-11T11:15:03+02:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 1716,
+    "first_commit_date": "2026-04-04T12:02:51+02:00",
+    "last_commit_date": "2026-11-08T04:53:32+01:00",
+    "current_loc": 365768,
+    "total_historical_additions": 511565,
+    "total_historical_deletions": 146180,
+    "total_churn": 657745,
+    "churn_ratio": 1.8,
+    "survival_rate_pct": 71.5,
+    "code": {
+      "current_loc": 347821,
+      "additions": 474849,
+      "deletions": 127400,
+      "churn_ratio": 1.73,
+      "survival_rate_pct": 73.2
+    },
+    "docs": {
+      "current_loc": 17947,
+      "additions": 36716,
+      "deletions": 18780,
+      "churn_ratio": 3.09,
+      "survival_rate_pct": 48.9
+    },
+    "fix_commits": 953,
+    "fix_pct": 55.5,
+    "revert_commits": 3,
+    "revert_pct": 0.2,
+    "trial_error_commits": 963,
+    "trial_error_pct": 56.1,
+    "rapid_fire_commits": 684,
+    "rapid_fire_pct": 39.9,
+    "trial_error_chains": 411,
+    "suspicious_additions_count": 47,
+    "top5_hotspot_volatility_pct": 7.9
+  },
+  "code_hygiene": {
+    "total_files": 1237,
+    "docs_files": 173,
+    "avg_file_loc": 281.2,
+    "test_loc": 173736,
+    "test_files": 713,
+    "test_ratio_pct": 49.9,
+    "comment_ratio_pct": 10.3,
+    "monolith_count": 45,
+    "top_languages": {
+      ".go": 191931,
+      ".mjs": 65412,
+      ".ts": 38601,
+      ".py": 32335,
+      ".js": 16125
+    }
+  },
+  "authors": {
+    "unique_authors": 121,
+    "top_authors": [
+      {
+        "name": "Julius Brussee",
+        "commits": 1226,
+        "pct": 71.4
+      },
+      {
+        "name": "Claude",
+        "commits": 190,
+        "pct": 11.1
+      },
+      {
+        "name": "Nik Pushkarski",
+        "commits": 21,
+        "pct": 1.2
+      },
+      {
+        "name": "Amir Fathi",
+        "commits": 15,
+        "pct": 0.9
+      },
+      {
+        "name": "Douglas J Hunley",
+        "commits": 13,
+        "pct": 0.8
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 33.4,
+    "p75": 456.0,
+    "p90": 5520.0,
+    "p95": 16860.0,
+    "p99": 78900.0,
+    "avg": 4191.7
+  },
+  "hotspots": [
+    {
+      "file": "packages/cli/src/index.ts",
+      "commits": 271,
+      "additions": 25925,
+      "deletions": 2405,
+      "churn": 28330,
+      "first_seen": "2026-08-11T14:55:46+02:00",
+      "last_seen": "2026-11-06T02:02:01+01:00"
+    },
+    {
+      "file": "README.md",
+      "commits": 167,
+      "additions": 3599,
+      "deletions": 3254,
+      "churn": 6853,
+      "first_seen": "2026-04-04T12:06:14+02:00",
+      "last_seen": "2026-11-06T01:48:33+01:00"
+    },
+    {
+      "file": "packages/cli/tests/native-enable.runtime.mjs",
+      "commits": 89,
+      "additions": 4074,
+      "deletions": 173,
+      "churn": 4247,
+      "first_seen": "2026-08-11T14:55:46+02:00",
+      "last_seen": "2026-10-16T23:14:38-07:00"
+    },
+    {
+      "file": "proxy/internal/gateway/proxy.go",
+      "commits": 76,
+      "additions": 2937,
+      "deletions": 572,
+      "churn": 3509,
+      "first_seen": "2026-08-11T14:55:46+02:00",
+      "last_seen": "2026-11-06T01:30:57+01:00"
+    },
+    {
+      "file": "proxy/CLAUDE.md",
+      "commits": 75,
+      "additions": 705,
+      "deletions": 366,
+      "churn": 1071,
+      "first_seen": "2026-08-11T14:55:46+02:00",
+      "last_seen": "2026-11-06T01:31:55+01:00"
+    },
+    {
+      "file": "bin/install.js",
+      "commits": 75,
+      "additions": 4495,
+      "deletions": 441,
+      "churn": 4936,
+      "first_seen": "2026-05-10T14:11:17+02:00",
+      "last_seen": "2026-10-06T07:20:51Z"
+    },
+    {
+      "file": "proxy/AGENTS.md",
+      "commits": 71,
+      "additions": 677,
+      "deletions": 359,
+      "churn": 1036,
+      "first_seen": "2026-08-11T14:55:46+02:00",
+      "last_seen": "2026-11-06T01:31:55+01:00"
+    },
+    {
+      "file": "INSTALL.md",
+      "commits": 69,
+      "additions": 812,
+      "deletions": 233,
+      "churn": 1045,
+      "first_seen": "2026-05-10T13:20:46+02:00",
+      "last_seen": "2026-11-06T01:43:27+01:00"
+    },
+    {
+      "file": "CLAUDE.md",
+      "commits": 61,
+      "additions": 667,
+      "deletions": 231,
+      "churn": 898,
+      "first_seen": "2026-04-11T11:56:02+02:00",
+      "last_seen": "2026-11-06T01:50:03+01:00"
+    },
+    {
+      "file": "installer/install.js",
+      "commits": 54,
+      "additions": 648,
+      "deletions": 195,
+      "churn": 843,
+      "first_seen": "2026-10-05T22:41:34-07:00",
+      "last_seen": "2026-11-06T01:43:27+01:00"
+    },
+    {
+      "file": "skills/caveman-compress/scripts/compress.py",
+      "commits": 49,
+      "additions": 1395,
+      "deletions": 385,
+      "churn": 1780,
+      "first_seen": "2026-05-10T13:21:42+02:00",
+      "last_seen": "2026-11-06T02:03:52+01:00"
+    },
+    {
+      "file": "tests/verify_repo.py",
+      "commits": 46,
+      "additions": 1493,
+      "deletions": 188,
+      "churn": 1681,
+      "first_seen": "2026-04-11T12:14:46+02:00",
+      "last_seen": "2026-10-30T07:18:57Z"
+    },
+    {
+      "file": "proxy/internal/cloudlink/link.go",
+      "commits": 45,
+      "additions": 1986,
+      "deletions": 442,
+      "churn": 2428,
+      "first_seen": "2026-10-05T20:09:45-07:00",
+      "last_seen": "2026-10-17T07:12:12Z"
+    },
+    {
+      "file": "proxy/cmd/caveman-proxy/main.go",
+      "commits": 42,
+      "additions": 1474,
+      "deletions": 115,
+      "churn": 1589,
+      "first_seen": "2026-08-11T14:55:46+02:00",
+      "last_seen": "2026-11-06T01:52:11+01:00"
+    },
+    {
+      "file": "SECURITY.md",
+      "commits": 40,
+      "additions": 572,
+      "deletions": 165,
+      "churn": 737,
+      "first_seen": "2026-07-02T17:57:40+05:30",
+      "last_seen": "2026-11-06T01:52:11+01:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "packages/cli/src/index.ts",
+      "loc": 23435
+    },
+    {
+      "file": "packages/cli/tests/native-enable.runtime.mjs",
+      "loc": 3906
+    },
+    {
+      "file": "installer/install.js",
+      "loc": 2981
+    },
+    {
+      "file": "packages/sdk/python/caveman_cloud/core.py",
+      "loc": 2676
+    },
+    {
+      "file": "packages/sdk/typescript/src/index.ts",
+      "loc": 2507
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "6408d8cb53518c47d227173f65396868a2a5d987",
+      "short_hash": "6408d8cb",
+      "author": "Tej",
+      "date": "2026-10-17T16:22:30+05:30",
+      "subject": "fix(installer): open dest file synchronously to fix unlink race",
+      "coauthors": [],
+      "additions": 4,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "5461ff0050602dd4681df18908e24b2ebe9edf1f",
+      "short_hash": "5461ff00",
+      "author": "Julius Brussee",
+      "date": "2026-11-06T01:54:52+01:00",
+      "subject": "fix(deps): bump klauspost/compress to v1.20.3 for GO-2026-6865",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "d679959afb10e6a1455426589da169c5c0437184",
+      "short_hash": "d679959a",
+      "author": "Julius Brussee",
+      "date": "2026-11-06T01:55:13+01:00",
+      "subject": "chore(deps): bump the npm dev group with lockfiles that install",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "3dfdbd10019eaddd8e15257cae35adf2bf436081",
+      "short_hash": "3dfdbd10",
+      "author": "Julius Brussee",
+      "date": "2026-11-06T02:02:02+01:00",
+      "subject": "docs(engine): record how the CCR store frees room and refuses damage",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 1,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "a52cd7548605760692b30d72ca85a3935bddc09e",
+      "short_hash": "a52cd754",
+      "author": "Julius Brussee",
+      "date": "2026-11-06T02:02:01+01:00",
+      "subject": "fix(cli): say when the recovery store stops compression, and why",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 147,
+      "deletions": 3,
+      "files_count": 6,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "bdf80bf3e003439f71128ec92fac81fbbd265e0f",
+      "short_hash": "bdf80bf3",
+      "author": "Julius Brussee",
+      "date": "2026-11-06T01:52:11+01:00",
+      "subject": "feat(ccr): check, report and repair the recovery store",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 1297,
+      "deletions": 18,
+      "files_count": 9,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "b7fd2f5aea3f5f987ab3d7e37c9c127e27b644a1",
+      "short_hash": "b7fd2f5a",
+      "author": "Julius Brussee",
+      "date": "2026-11-06T01:43:46+01:00",
+      "subject": "fix(ccr): free room in a full store instead of refusing every write",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 1027,
+      "deletions": 125,
+      "files_count": 9,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "15119e8565a9b3ff6719c016f5d79c921f9f7efe",
+      "short_hash": "15119e85",
+      "author": "Julius Brussee",
+      "date": "2026-11-06T01:39:34+01:00",
+      "subject": "fix(ccr): refuse writes to a damaged store and check it once per release",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 448,
+      "deletions": 5,
+      "files_count": 6,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "0d39ede8ce138064d71b7fab2dc9d0483cf34342",
+      "short_hash": "0d39ede8",
+      "author": "Julius Brussee",
+      "date": "2026-11-06T01:31:55+01:00",
+      "subject": "fix(store): move cache component digests out of request rows",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 698,
+      "deletions": 40,
+      "files_count": 7,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "8c32cffcba5ef6eaf9275a0e40bfe658eb0c3d52",
+      "short_hash": "8c32cffc",
+      "author": "Zsolt Gaspar",
+      "date": "2026-10-23T15:06:18+02:00",
+      "subject": "fix(ccr): serialize writes and pin read snapshots for dedup maps",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 519,
+      "deletions": 35,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "dea549e3d28a93309bb38808986f8592a1557ff7",
+      "short_hash": "dea549e3",
+      "author": "Zsolt Gaspar",
+      "date": "2026-10-23T17:55:00+02:00",
+      "subject": "test(ccr): check the page cap on a second connection",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 26,
+      "deletions": 11,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "c464460bbd08a7bf88d42ab63cbf6d27812cea99",
+      "short_hash": "c464460b",
+      "author": "Zsolt Gaspar",
+      "date": "2026-10-23T17:43:14+02:00",
+      "subject": "test(ccr): close the replaced connection in the test goroutine",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 9,
+      "deletions": 4,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "4c6cc73b80fdbe0337a17b4b6c1dd6e8de754ee2",
+      "short_hash": "4c6cc73b",
+      "author": "Zsolt Gaspar",
+      "date": "2026-10-23T14:49:01+02:00",
+      "subject": "fix(ccr): apply the page cap on every store connection",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 624,
+      "deletions": 12,
+      "files_count": 6,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "cc88124908d0e5aa6caeefe5afb28a0f774983c3",
+      "short_hash": "cc881249",
+      "author": "Julius Brussee",
+      "date": "2026-11-06T02:03:52+01:00",
+      "subject": "fix(compress): preserve HTML comments, show warnings, skip generated files",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 136,
+      "deletions": 8,
+      "files_count": 7,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "1bcc3925be6034349ef0d7de048cfa614a9af15a",
+      "short_hash": "1bcc3925",
+      "author": "Julius Brussee",
+      "date": "2026-11-06T02:05:49+01:00",
+      "subject": "ci: move first-run and release smoke off the retired macos-14 image",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "81475c3fb6fecefb2953b59c4798cad6a86357a4",
+      "short_hash": "81475c3f",
+      "author": "Julius Brussee",
+      "date": "2026-11-06T02:08:28+01:00",
+      "subject": "chore(release): @caveman-ai/middleware 1.1.0, caveman-middleware 1.0.1, 4.1.0 notes draft",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 67,
+      "deletions": 5,
+      "files_count": 5,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "a9e74b98263d56405a83d31b0904f68d4b95b2ab",
+      "short_hash": "a9e74b98",
+      "author": "Julius Brussee",
+      "date": "2026-11-06T02:15:45+01:00",
+      "subject": "docs(release): add the recovery-store changes to the 4.1.0 notes draft",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 9,
+      "deletions": 2,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "b1764608b42980ad4811efc3901c289ec4d5f719",
+      "short_hash": "b1764608",
+      "author": "Julius Brussee",
+      "date": "2026-11-06T02:17:07+01:00",
+      "subject": "test(installer): compare long Windows temp paths in the Bun PowerShell fallback test",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 4,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "e3e8b0f23c59a2bd44494874d27fdaf745ccfa47",
+      "short_hash": "e3e8b0f2",
+      "author": "Julius Brussee",
+      "date": "2026-11-07T03:04:03+01:00",
+      "subject": "chore(release): date the 4.1.0 package changelogs 2026-11-07",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "a83cc5171b6ad94084b7e408b27acda81fc70be1",
+      "short_hash": "a83cc517",
+      "author": "Julius Brussee",
+      "date": "2026-11-08T04:53:32+01:00",
+      "subject": "fix(pi): override undici to 8.12.4 so the release audit passes",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "repo": "context-mode",
+  "head_commit": "2000abba",
+  "published_results": [
+    {
+      "claim": "On the 36 bench rows with 10 KB or more of raw output, the plugin's median reply is 99.4% smaller than the raw output.",
+      "metric": "output bytes kept out of context (1 - bytes entering context / raw output bytes), offline, no model; tokens estimated as bytes/4",
+      "value": "99.4% median over 36 rows; full scripted session 281,261 B -> 3,266 B (98.8%); compaction resume 442,893 B transcript -> 2,019 B block",
+      "baseline": "raw tool output entering the context unchanged (no plugin)",
+      "evidence_type": "harness+results",
+      "files": [
+        "README.md:29",
+        "README.md:360",
+        "README.md:379",
+        "README.md:405",
+        "bench/README.md:6",
+        "bench/run.mjs:122",
+        "bench/results/2026-11-01-darwin-arm64.json",
+        "bench/results/2026-11-01-darwin-arm64.md:93"
+      ],
+      "reproduce_command": "cd bench && node run.mjs"
+    },
+    {
+      "claim": "Hook time over a bare `node` start, per agent | 7.5 ms to 12.3 ms; ctx_search 1.62 ms median, 6.70 ms max; ctx_index 150 ms per MB",
+      "metric": "latency / overhead (ms)",
+      "value": "hook 7.5-12.3 ms over bare node; ctx_search median 1.62 ms, max 6.70 ms (20 queries); ctx_index 150 ms per MB",
+      "baseline": "bare `node` process start (for hook time)",
+      "evidence_type": "harness+results",
+      "files": [
+        "README.md:415",
+        "README.md:416",
+        "README.md:417",
+        "bench/results/2026-11-01-darwin-arm64.md:118",
+        "bench/results/2026-11-01-darwin-arm64.md:124",
+        "bench/results/2026-11-01-darwin-arm64.md:131",
+        "bench/results/2026-11-01-darwin-arm64.md:132",
+        "bench/g-overhead/index.mjs",
+        "docs/performance.md:13"
+      ],
+      "reproduce_command": "cd bench && node run.mjs g-overhead"
+    },
+    {
+      "claim": "Try-it prompts: 1,039,898 B raw, 393 B reached the context, 99.96% saved (and 96.5%, 99.7%, 95.7% for three other prompts)",
+      "metric": "bytes reaching context vs raw source size, live Claude Code 2.1.312 + claude-haiku-5-5",
+      "value": "96.5% (docs page), 99.96% (API JSON), 99.7% (large log), 95.7% (web page); one run per prompt; in 4 of 8 prompts the agent used its own shell pipe instead of ctx tools",
+      "baseline": "raw source data size measured with a direct command outside the run (not a no-plugin agent run)",
+      "evidence_type": "results_only",
+      "files": [
+        "README.md:283",
+        "README.md:288",
+        "README.md:292",
+        "README.md:296",
+        "README.md:300",
+        "bench/evidence/try-it-2026-11-02/README.md:7",
+        "bench/evidence/try-it-2026-11-02/04-api-json.json"
+      ],
+      "reproduce_command": "claude -p \"$(node -e 'console.log(require(process.argv[1]).find(p=>p.id===\"04-api-json\").prompt)' \"$OLDPWD/prompts.json\")\" --model claude-haiku-5-5 --output-format stream-json --verbose > 04-api-json.jsonl"
+    },
+    {
+      "claim": "v2 cuts the bytes the model reads when the output is large (734.5 vs 4,694.5, 84 % fewer); v2 does not save session tokens vs off in this run",
+      "metric": "median tool_result bytes, median session tokens, task pass rate, list-price cost (live A/B, claude-sonnet-5-5, 81 sessions, 3 runs per cell)",
+      "value": "LARGE: bytes 734.5 vs 4,694.5 (off); token saving vs off -19.6% (19.6% worse); pass 12/12 per arm; cost $0.391 vs $0.607. SMALL: token saving vs off -5.7% (5.7% worse); pass 15/15 per arm. Later 'Final A/B 3' run: LARGE tokens +3.8% saving vs off, bytes 564.5 vs 4,608",
+      "baseline": "off arm (Claude Code with --strict-mcp-config, no plugin) and v1 (1.0.169)",
+      "evidence_type": "harness+results",
+      "files": [
+        "bench/RESULTS.md:11",
+        "bench/RESULTS.md:12",
+        "bench/RESULTS.md:15",
+        "bench/RESULTS.md:460",
+        "bench/RESULTS.md:466",
+        "bench/RESULTS.md:485",
+        "bench/live/ab-quick.mjs:102",
+        "bench/live/results/ab-final2.json",
+        "bench/live/results/ab-final3.json",
+        "bench/evidence/README.md:58"
+      ],
+      "reproduce_command": "node bench/live/ab-quick.mjs --v1 <v1 dir> --runs 3 --tasks multi-1,big-tests,big-json --out ab-final2-large"
+    },
+    {
+      "claim": "Replace live proof: outputs of 8,893 to 60,090 bytes reached the model as 152 to 190 chars; answer correct 16 of 16",
+      "metric": "tool_result chars seen by model; answer correctness",
+      "value": "16/16 correct; 8,893 B -> 152, 19,998 B -> 187, 28,003 B -> 182, 60,090 B -> 190 chars (2 runs x git/non-git per size)",
+      "baseline": "full Bash `seq 1 N` output size",
+      "evidence_type": "results_only",
+      "files": [
+        "bench/RESULTS.md:9",
+        "bench/RESULTS.md:445",
+        "bench/evidence/README.md:46",
+        "bench/evidence/data/replace-live-proof.json"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Saving score, median of 3 runs: M1 94.21, M2 87.23 (target 90: M1 met, M2 not met); guardsOk false in all 3 runs",
+      "metric": "M1 = offline replay byte saving on >4 KB results of the owner's transcript corpus; M2 = median live tool_result-byte saving over 4 scored tasks",
+      "value": "M1 94.21, M2 87.23 (runs 89.32, 85.83, 87.23); committed bench/saving-score-last.json holds an older run (M1 94.21, M2 84.02, 2026-10-20)",
+      "baseline": "off arm (no plugin) for M2; bytes the model received in the original transcripts for M1",
+      "evidence_type": "harness+results",
+      "files": [
+        "bench/RESULTS.md:10",
+        "bench/RESULTS.md:254",
+        "bench/saving-score.mjs",
+        "bench/saving-score.lock",
+        "bench/saving-score-last.json"
+      ],
+      "reproduce_command": "node bench/saving-score.mjs"
+    },
+    {
+      "claim": "Offline replay over real transcripts: corpus saving goes from 1.1% to 6.8%",
+      "metric": "bytes the model would receive under v2 policy vs bytes actually received, 23,203 paired tool calls from 821 sessions (not a model run, no quality check)",
+      "value": "6.8% corpus saving (5.2% with re-run bound); earlier policy 1.1% (-1.5% with bound); 16-64 KB bucket 46.5%",
+      "baseline": "bytes received in the original Claude Code sessions (some already ran with v1 hooks)",
+      "evidence_type": "harness+results",
+      "files": [
+        "bench/RESULTS.md:84",
+        "bench/RESULTS.md:41",
+        "bench/RESULTS.md:61",
+        "bench/replay.mjs",
+        "bench/offline-aggregate.json",
+        "bench/README.md:109"
+      ],
+      "reproduce_command": "node bench/replay.mjs [--out <aggregate.json>]"
+    },
+    {
+      "claim": "OSS plugin v1 cost 34.6% more than Claude Code alone; v2 cost 2.2% more; published gateway rows cost 24.5% less. Of the 13 README numbers we could check, 2 hold and 11 differ.",
+      "metric": "paired mean list-price USD per task (Opus 5.5), task pass rate",
+      "value": "Six short tasks, 48 pairs: v1 +34.6%, v2 +2.2%, gateway (published, 88 pairs) -24.5%. README try-it prompts, 20 pairs: v1 +33.1%, v2 +15.5%, gateway -43.8%; pass direct 20/20, v1 17/20, v2 18/20, gateway 15/20. README also cites a gateway long-session result of -37.6% in dollars, data hosted only at contextmode.ai",
+      "baseline": "direct Claude Code (no plugin), same day, paired per task",
+      "evidence_type": "harness+results",
+      "files": [
+        "bench/evidence/gateway/README.md:3",
+        "bench/evidence/gateway/README.md:122",
+        "bench/evidence/gateway/analyze.mjs",
+        "bench/evidence/gateway/ab.json",
+        "bench/evidence/gateway/published/v3-opus55-short.json",
+        "bench/evidence/try-it/README.md:3",
+        "bench/evidence/try-it/README.md:175",
+        "bench/evidence/try-it/runs/large-json.jsonl",
+        "README.md:656",
+        "README.md:657"
+      ],
+      "reproduce_command": "node analyze.mjs --check"
+    },
+    {
+      "claim": "\"MCP server that reduces Claude Code context consumption by 98%\" reached the front page",
+      "metric": "",
+      "value": "98%",
+      "baseline": null,
+      "evidence_type": "external",
+      "files": [
+        "README.md:40"
+      ],
+      "reproduce_command": null
+    }
+  ],
+  "strongest_evidence_type": "harness+results",
+  "summary": "context-mode ships an offline benchmark suite (bench/run.mjs, 66 scenarios) with a committed results file, from which the README's 99.4% median byte saving recomputes (36 rows with 10 KB or more of raw output); these are byte counts on fixtures with tokens estimated as bytes / 4, not model runs. Live A/B runs in Claude Code with claude-sonnet-5-5 (scripts and committed aggregates; rerunning needs the `claude` CLI and paid model calls) found v2 cut the median tool_result bytes on large tasks by 84% (734.5 vs 4,694.5) with 12 of 12 large-task sessions passing in every arm, while session tokens were 5.7% worse than no plugin on small tasks and 19.6% worse on large ones; a later run put v2's session tokens 3.8% below no plugin on large tasks and 5.6% above on small ones. A paired cost study with committed run files and an analysis script found the open-source plugin cost more than Claude Code alone on six short tasks (v1 34.6% more, v2 2.2% more) and the hosted Context Mode Gateway's published rows 24.5% less, and the repo's own check of 13 numbers from the README's Try It section (commit a92cf6a7, measured on v1) found that 2 hold and 11 differ.",
+  "result_focus": "outcome",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself",
+  "accuracy_check": {
+    "date": "2026-11-08",
+    "numbers_checked": 169,
+    "corrections": [
+      "published_results[3].value: 'tokens -19.6% vs off' and 'SMALL: tokens -5.7% vs off' read as reductions; the repo reports a token saving of -19.6% / -5.7%, i.e. 19.6% and 5.7% worse than off (bench/RESULTS.md:460, bench/RESULTS.md:466) -> 'token saving vs off -19.6% (19.6% worse)' / '-5.7% (5.7% worse)'"
+    ]
+  }
+}

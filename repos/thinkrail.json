@@ -1,0 +1,683 @@
+{
+  "repo": "thinkrail",
+  "full_name": "JetBrains/thinkrail",
+  "stars": 7921,
+  "stars_source": "github-api 2026-11-08T09:06:56Z",
+  "selection_topics": [
+    "spec-driven-development"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2026-07-08T07:40:43Z",
+    "description": "ThinkRail is the agentic IDE that gets better every time you use it",
+    "fork": false,
+    "forks": 491,
+    "full_name": "JetBrains/thinkrail",
+    "pushed_at": "2026-11-08T06:54:04Z",
+    "stars": 7921,
+    "fetched_at": "2026-11-08T09:06:56Z"
+  },
+  "url": "https://github.com/JetBrains/thinkrail",
+  "description": "ThinkRail is the agentic IDE that gets better every time you use it",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "519286befe0f15cc2dd270e251ecd8cdb9d0a01c",
+    "head_date": "2026-11-06T20:04:58Z",
+    "history_complete": true,
+    "non_merge_commits": 684,
+    "merge_commits": 1,
+    "maintenance_bot_commits": 0,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 42,
+    "explicit_ai_pct": 6.1,
+    "by_tool": {
+      "claude": 38,
+      "other": 3,
+      "devin": 1
+    },
+    "by_signal": {
+      "co-author": 42
+    },
+    "recent_180d": {
+      "commits": 684,
+      "ai_pct": 6.1,
+      "fix_pct": 31.0
+    },
+    "first_365d": {
+      "commits": 684,
+      "ai_pct": 6.1,
+      "fix_pct": 31.0
+    },
+    "bot_commit_count": 0,
+    "agent_config": {
+      "files": {
+        "AGENTS.md": "2026-07-14T13:50:42+02:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2026-07-14T13:50:42+02:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 684,
+    "first_commit_date": "2026-06-22T18:58:26+02:00",
+    "last_commit_date": "2026-11-06T20:04:58Z",
+    "current_loc": 395057,
+    "total_historical_additions": 506832,
+    "total_historical_deletions": 112035,
+    "total_churn": 618867,
+    "churn_ratio": 1.57,
+    "survival_rate_pct": 77.9,
+    "code": {
+      "current_loc": 363343,
+      "additions": 458044,
+      "deletions": 94961,
+      "churn_ratio": 1.52,
+      "survival_rate_pct": 79.3
+    },
+    "docs": {
+      "current_loc": 31714,
+      "additions": 48788,
+      "deletions": 17074,
+      "churn_ratio": 2.08,
+      "survival_rate_pct": 65.0
+    },
+    "fix_commits": 212,
+    "fix_pct": 31.0,
+    "revert_commits": 3,
+    "revert_pct": 0.4,
+    "trial_error_commits": 221,
+    "trial_error_pct": 32.3,
+    "rapid_fire_commits": 82,
+    "rapid_fire_pct": 12.0,
+    "trial_error_chains": 30,
+    "suspicious_additions_count": 132,
+    "top5_hotspot_volatility_pct": 22.2
+  },
+  "code_hygiene": {
+    "total_files": 1877,
+    "docs_files": 166,
+    "avg_file_loc": 193.6,
+    "test_loc": 172280,
+    "test_files": 707,
+    "test_ratio_pct": 47.4,
+    "comment_ratio_pct": 0.4,
+    "monolith_count": 41,
+    "top_languages": {
+      ".ts": 290118,
+      ".tsx": 70627,
+      ".astro": 1293,
+      ".sh": 740,
+      ".ps1": 361
+    }
+  },
+  "authors": {
+    "unique_authors": 45,
+    "top_authors": [
+      {
+        "name": "Rinat S",
+        "commits": 242,
+        "pct": 35.4
+      },
+      {
+        "name": "danyaberezun",
+        "commits": 189,
+        "pct": 27.6
+      },
+      {
+        "name": "Olga Lavrichenko",
+        "commits": 53,
+        "pct": 7.7
+      },
+      {
+        "name": "Andrey Markin",
+        "commits": 36,
+        "pct": 5.3
+      },
+      {
+        "name": "rsolmano",
+        "commits": 34,
+        "pct": 5.0
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 5.6,
+    "p75": 30.0,
+    "p90": 276.2,
+    "p95": 1623.9,
+    "p99": 65220.0,
+    "avg": 2711.8
+  },
+  "hotspots": [
+    {
+      "file": "apps/web/src/panels/SPEC.md",
+      "commits": 192,
+      "additions": 4153,
+      "deletions": 1678,
+      "churn": 5831,
+      "first_seen": "2026-06-24T14:45:30+02:00",
+      "last_seen": "2026-11-06T12:07:21Z"
+    },
+    {
+      "file": "packages/contracts/SPEC.md",
+      "commits": 159,
+      "additions": 1896,
+      "deletions": 631,
+      "churn": 2527,
+      "first_seen": "2026-06-22T18:58:26+02:00",
+      "last_seen": "2026-11-06T12:07:21Z"
+    },
+    {
+      "file": "apps/web/src/store/appStore.ts",
+      "commits": 141,
+      "additions": 7124,
+      "deletions": 2344,
+      "churn": 9468,
+      "first_seen": "2026-06-22T22:19:16+02:00",
+      "last_seen": "2026-11-06T12:07:21Z"
+    },
+    {
+      "file": "apps/web/src/chat/SPEC.md",
+      "commits": 140,
+      "additions": 2658,
+      "deletions": 961,
+      "churn": 3619,
+      "first_seen": "2026-06-26T10:18:05+02:00",
+      "last_seen": "2026-11-06T12:07:21Z"
+    },
+    {
+      "file": "apps/web/src/store/SPEC.md",
+      "commits": 128,
+      "additions": 1563,
+      "deletions": 715,
+      "churn": 2278,
+      "first_seen": "2026-06-24T14:45:30+02:00",
+      "last_seen": "2026-11-06T12:07:21Z"
+    },
+    {
+      "file": "packages/contracts/src/wsProtocol.ts",
+      "commits": 117,
+      "additions": 2082,
+      "deletions": 713,
+      "churn": 2795,
+      "first_seen": "2026-06-22T21:56:44+02:00",
+      "last_seen": "2026-11-06T12:07:21Z"
+    },
+    {
+      "file": "packages/server/src/agent/SPEC.md",
+      "commits": 115,
+      "additions": 2557,
+      "deletions": 868,
+      "churn": 3425,
+      "first_seen": "2026-06-24T14:29:53+02:00",
+      "last_seen": "2026-11-06T12:07:21Z"
+    },
+    {
+      "file": "packages/server/src/host/handlers.ts",
+      "commits": 113,
+      "additions": 2507,
+      "deletions": 962,
+      "churn": 3469,
+      "first_seen": "2026-06-24T14:24:02+02:00",
+      "last_seen": "2026-11-06T10:18:48+01:00"
+    },
+    {
+      "file": "packages/server/src/host/SPEC.md",
+      "commits": 100,
+      "additions": 1332,
+      "deletions": 540,
+      "churn": 1872,
+      "first_seen": "2026-06-24T14:29:53+02:00",
+      "last_seen": "2026-11-06T12:07:21Z"
+    },
+    {
+      "file": "packages/contracts/src/domain.ts",
+      "commits": 99,
+      "additions": 2833,
+      "deletions": 700,
+      "churn": 3533,
+      "first_seen": "2026-06-22T21:56:44+02:00",
+      "last_seen": "2026-11-06T12:07:21Z"
+    },
+    {
+      "file": "apps/web/SPEC.md",
+      "commits": 97,
+      "additions": 780,
+      "deletions": 364,
+      "churn": 1144,
+      "first_seen": "2026-06-22T18:58:26+02:00",
+      "last_seen": "2026-11-06T12:07:21Z"
+    },
+    {
+      "file": "packages/server/src/agent/agentSessionManager.ts",
+      "commits": 88,
+      "additions": 4235,
+      "deletions": 1197,
+      "churn": 5432,
+      "first_seen": "2026-06-24T14:24:02+02:00",
+      "last_seen": "2026-11-06T12:07:21Z"
+    },
+    {
+      "file": "apps/web/src/store/appStore.test.ts",
+      "commits": 88,
+      "additions": 6075,
+      "deletions": 1011,
+      "churn": 7086,
+      "first_seen": "2026-06-26T20:21:00+02:00",
+      "last_seen": "2026-11-02T16:05:49Z"
+    },
+    {
+      "file": "e2e/SPEC.md",
+      "commits": 86,
+      "additions": 836,
+      "deletions": 261,
+      "churn": 1097,
+      "first_seen": "2026-08-12T14:24:34+02:00",
+      "last_seen": "2026-11-06T12:07:21Z"
+    },
+    {
+      "file": "apps/web/src/chat/ChatView.tsx",
+      "commits": 86,
+      "additions": 2913,
+      "deletions": 1979,
+      "churn": 4892,
+      "first_seen": "2026-06-26T10:18:05+02:00",
+      "last_seen": "2026-11-03T10:14:16Z"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "apps/web/src/store/appStore.test.ts",
+      "loc": 5064
+    },
+    {
+      "file": "apps/web/src/store/appStore.ts",
+      "loc": 4780
+    },
+    {
+      "file": "packages/server/src/agent/agentSessionManager.test.ts",
+      "loc": 4299
+    },
+    {
+      "file": "packages/server/src/agent/agentSessionManager.ts",
+      "loc": 3156
+    },
+    {
+      "file": "packages/contracts/src/domain.ts",
+      "loc": 2133
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "12584f27e74f2799365db664b9270da258b354ed",
+      "short_hash": "12584f27",
+      "author": "Afloat",
+      "date": "2026-11-05T10:38:04Z",
+      "subject": "fix(fs): detect AVIF compatible brands within ftyp (#1185)",
+      "coauthors": [],
+      "additions": 51,
+      "deletions": 4,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "1a490f9d725ac6110dc7d2c3ec7f244952c11e0c",
+      "short_hash": "1a490f9d",
+      "author": "Harshal Paltse",
+      "date": "2026-11-05T10:41:37Z",
+      "subject": "fix(dev): parse THINKRAIL_PORT strictly in the dev launchers (#1156)",
+      "coauthors": [],
+      "additions": 52,
+      "deletions": 8,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "e84b0962a24140a744852d193bae554911061a3b",
+      "short_hash": "e84b0962",
+      "author": "Harshal Paltse",
+      "date": "2026-11-05T10:43:46Z",
+      "subject": "fix(web): parse THINKRAIL_WEB_PORT and THINKRAIL_PORT strictly in vite config (#1190)",
+      "coauthors": [],
+      "additions": 13,
+      "deletions": 3,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "b91834a5b7a372a14949190ba1559ffd0b24d710",
+      "short_hash": "b91834a5",
+      "author": "eatmoreduck 多吃鸭",
+      "date": "2026-11-05T10:47:49Z",
+      "subject": "fix(desktop): release the menu command latch after a deadline (#1200)",
+      "coauthors": [
+        "OLavrik"
+      ],
+      "additions": 96,
+      "deletions": 8,
+      "files_count": 7,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "e716ae50412bc58cb453bf3edb7c00881b8f9996",
+      "short_hash": "e716ae50",
+      "author": "Olga Lavrichenko",
+      "date": "2026-11-05T12:12:15Z",
+      "subject": "Assert the tall questionnaire's follow state against the reader's actual edge distance, since wheeling to the bottom-most Submit row can legitimately re-attach follow. (#1213)",
+      "coauthors": [
+        "Rinat S"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "91aeac18ae63b5c5b793e016146ddda6fd1f0ae0",
+      "short_hash": "91aeac18",
+      "author": "Afloat",
+      "date": "2026-11-05T12:43:09Z",
+      "subject": "fix(terminal): preserve Unicode boundaries when truncating output (#1186)",
+      "coauthors": [
+        "OLavrik",
+        "Olga Lavrichenko"
+      ],
+      "additions": 36,
+      "deletions": 2,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "28fbec2671164877174f756aa357222af6c616e3",
+      "short_hash": "28fbec26",
+      "author": "Harsh Vardhan Chauhan",
+      "date": "2026-11-05T12:56:05Z",
+      "subject": "fix(server): derive githubSlug from the parsed remote so it agrees with providerFromRemoteUrl (#1119)",
+      "coauthors": [
+        "Olga Lavrichenko"
+      ],
+      "additions": 15,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "99faa30eb8cd8019fc70f7f3be2817485a9eb5d8",
+      "short_hash": "99faa30e",
+      "author": "kevin",
+      "date": "2026-11-05T12:56:24Z",
+      "subject": "fix(resource-renderers): show the next unit when an LFS size rounds to 1024 (#1139)",
+      "coauthors": [
+        "OLavrik"
+      ],
+      "additions": 13,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "00ed682daa55eea809430d6ab0851e017e931f0c",
+      "short_hash": "00ed682d",
+      "author": "Harsh Vardhan Chauhan",
+      "date": "2026-11-05T12:56:50Z",
+      "subject": "fix(server): list symlinks to in-worktree directories as dirs (#1118)",
+      "coauthors": [
+        "OLavrik"
+      ],
+      "additions": 39,
+      "deletions": 4,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "36cf0acb22bac6391231ce5487c7a374e0a1bacd",
+      "short_hash": "36cf0acb",
+      "author": "Tongyuxiu Zhou",
+      "date": "2026-11-05T13:00:22Z",
+      "subject": "fix(desktop): center the main window on startup (#1133)",
+      "coauthors": [
+        "OLavrik"
+      ],
+      "additions": 1,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "8ef02866e2c19127a12a18c6331573d891b72806",
+      "short_hash": "8ef02866",
+      "author": "Glaz-j",
+      "date": "2026-11-05T13:01:17Z",
+      "subject": "fix(server): keep worktree cleanup asynchronous (#1174)",
+      "coauthors": [
+        "OLavrik"
+      ],
+      "additions": 54,
+      "deletions": 19,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "5e5409643efa832263dbd1794b39252bb66f9563",
+      "short_hash": "5e540964",
+      "author": "Andrew Barnes",
+      "date": "2026-11-05T13:13:41Z",
+      "subject": "fix(pi-dag): stop creating storage directories at the filesystem root (#1167)",
+      "coauthors": [
+        "Olga Lavrichenko"
+      ],
+      "additions": 28,
+      "deletions": 4,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "1bc1a9bc5b0bb9d2c029da32125fadf0bd29d544",
+      "short_hash": "1bc1a9bc",
+      "author": "Aleks Volochnev",
+      "date": "2026-11-05T23:12:26Z",
+      "subject": "fix(website): stop the CLI install tabs from clipping behind scrollbars (#1220)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "5be6856d8dc76dfe8c270b70aee06257b879c64f",
+      "short_hash": "5be6856d",
+      "author": "Rinat S",
+      "date": "2026-11-06T10:18:48+01:00",
+      "subject": "fix(workspaces): create worktrees in the background so a large checkout never freezes the app (#1202)",
+      "coauthors": [],
+      "additions": 3061,
+      "deletions": 255,
+      "files_count": 42,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "0b076d8cbd0a2a78473d9f7e809f1f6e2bca84a6",
+      "short_hash": "0b076d8c",
+      "author": "Rinat S",
+      "date": "2026-11-06T10:29:50+01:00",
+      "subject": "chore(github): remove SBOne-Kenobi from CODEOWNERS (#1230)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "e0373b5bc1612f1943090d8e51515dcabc3d34eb",
+      "short_hash": "e0373b5b",
+      "author": "Andrey Markin",
+      "date": "2026-11-06T10:24:41Z",
+      "subject": "fix(web): highlight every catalog language in chat (#1187)",
+      "coauthors": [],
+      "additions": 69,
+      "deletions": 46,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "b400185ea600bfad81821619b4a332701e395da4",
+      "short_hash": "b400185e",
+      "author": "Rinat S",
+      "date": "2026-11-06T11:49:58Z",
+      "subject": "fix(workspaces): send the last checkout progress when git exits inside the push throttle (#1231)",
+      "coauthors": [],
+      "additions": 39,
+      "deletions": 2,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "a3c4d2731d2b05909912488fe64e0f3209a52d8b",
+      "short_hash": "a3c4d273",
+      "author": "danyaberezun",
+      "date": "2026-11-06T12:07:21Z",
+      "subject": "feat(ask-user-question): redesign the questionnaire card — stable height, notes and Other in place, rich previews, Discuss, receipt (#1192)",
+      "coauthors": [
+        "OLavrik",
+        "rsolmano"
+      ],
+      "additions": 6652,
+      "deletions": 1955,
+      "files_count": 111,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "d39ef8bc8504de6e6a66c6358aa02b4095d55b33",
+      "short_hash": "d39ef8bc",
+      "author": "Afloat",
+      "date": "2026-11-06T13:18:55Z",
+      "subject": "fix(fs): identify SVG by its document root (#1184)",
+      "coauthors": [
+        "Rinat S"
+      ],
+      "additions": 83,
+      "deletions": 9,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "519286befe0f15cc2dd270e251ecd8cdb9d0a01c",
+      "short_hash": "519286be",
+      "author": "Harshal Paltse",
+      "date": "2026-11-06T20:04:58Z",
+      "subject": "fix(cli): reject empty/non-decimal --port and --host, ignore invalid env values (#1125)",
+      "coauthors": [
+        "Rinat S"
+      ],
+      "additions": 40,
+      "deletions": 9,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    }
+  ]
+}

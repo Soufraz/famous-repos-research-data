@@ -1,0 +1,85 @@
+{
+  "repo": "BMAD-METHOD",
+  "head_commit": "a867e160",
+  "published_results": [
+    {
+      "claim": "Measured catch-rate improvement of 50% to 100% on a real regression, at a 19% token cost per run.",
+      "metric": "Edge Case Hunter (code-review layer) catch rate with the named-set generalization pass (#2524), and its token cost per run (v6.10.0 release note)",
+      "value": "catch-rate improvement of 50% to 100%; 19% token cost per run",
+      "baseline": "Edge Case Hunter before the named-set pass, on one real regression (no further detail given)",
+      "evidence_type": "claim_only",
+      "files": [
+        "CHANGELOG.md:153"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "The `bmad` skill is available directly in your AI session and handles over 80% of questions",
+      "metric": "Share of user questions about BMad that the `bmad` help skill handles",
+      "value": "over 80%",
+      "baseline": null,
+      "evidence_type": "claim_only",
+      "files": [
+        "docs/start/get-answers-about-bmad.md:10"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Web Bundles Guide: Comprehensive documentation with 60-80% cost savings strategies",
+      "metric": "Cost savings from the web-bundle usage strategies documented in the Web Bundles Guide (6.0.0-alpha.9 release note)",
+      "value": "60-80%",
+      "baseline": null,
+      "evidence_type": "claim_only",
+      "files": [
+        "CHANGELOG.md:1967"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Cross-File Reference Validator: Comprehensive tool to detect broken file references, preventing 59 known bugs (~25% of historical issues)",
+      "metric": "Historical bugs that the repository's cross-file reference validator (tools/validate_file_refs.py) would catch (6.0.0-Beta.6 release note)",
+      "value": "59 known bugs (~25% of historical issues)",
+      "baseline": null,
+      "evidence_type": "claim_only",
+      "files": [
+        "CHANGELOG.md:749"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Reduce npm tarball from 533 to 348 files (91% size reduction, 6.2 MB → 555 KB) via .npmignore (#1900)",
+      "metric": "npm package tarball file count and size (6.1.0 release note)",
+      "value": "348 files, 555 KB (91% size reduction)",
+      "baseline": "533 files, 6.2 MB",
+      "evidence_type": "claim_only",
+      "files": [
+        "CHANGELOG.md:551"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "baseline against the bare model, variant against a stripped or prior version, quality against a rubric, and trigger accuracy of the description",
+      "metric": "bmad-eval runner (scripts/run_evals.py, run_triggers.py, aggregate_benchmark.py) for skill evals in baseline, variant, quality and trigger modes; committed eval cases for 2 skills (cases.json) and trigger queries for 8 skills (triggers.json); run folders are written to the reports folder or ~/bmad-evals/, outside the repository",
+      "value": "No results committed",
+      "baseline": "bare model (baseline mode) or a stripped or prior skill version (variant mode)",
+      "evidence_type": "harness_only",
+      "files": [
+        "skills/bmad-eval/SKILL.md:3",
+        "skills/bmad-eval/SKILL.md:37-58",
+        "docs/reference/eval-format.md:104-121",
+        "skills/bmad-advanced-elicitation/evals/cases.json",
+        "skills/bmad-shard-pro/evals/cases.json"
+      ],
+      "reproduce_command": "uv run {skill-root}/scripts/run_evals.py --cases <cases-file> --skill-path <skill> --output-dir <dir> --mode quality|baseline|variant [--variant-path <skill>] --label <skill-name>-<mode> [--runs N]"
+    }
+  ],
+  "strongest_evidence_type": "harness_only",
+  "summary": "BMAD-METHOD publishes no benchmark results for its own workflows; its quantitative statements are single release-note or doc lines without data: a catch-rate improvement of 50% to 100% at a 19% token cost per run for the Edge Case Hunter named-set pass (v6.10.0), the `bmad` skill handling over 80% of questions, 60-80% cost savings for web bundles, 59 known bugs (~25% of historical issues) for the reference validator, and a 91% npm tarball size reduction (6.2 MB to 555 KB). The bmad-eval skill ships a runner for baseline, variant, quality and trigger evals with committed cases for 2 skills and trigger queries for 8, but no run results are committed. The pass rates in docs/existing-codebases/theory-of-project-context.md (53% to 100%) come from cited third-party studies, not from runs of BMad.",
+  "result_focus": "none",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself",
+  "accuracy_check": {
+    "date": "2026-11-08",
+    "numbers_checked": 16,
+    "corrections": []
+  }
+}

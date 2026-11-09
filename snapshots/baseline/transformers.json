@@ -1,0 +1,63 @@
+{
+  "repo": "transformers",
+  "full_name": "huggingface/transformers",
+  "group": "baseline",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "b832d5bb8a6dfc5965015b828e577677eace601e",
+      "snapshot_date": "2019-04-25T21:37:47+02:00",
+      "first_commit_date": "2018-10-29T14:56:02+01:00",
+      "commits": 622,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 29.9,
+      "revert_pct": 0.2,
+      "churn_ratio": 4.99,
+      "survival_rate_pct": 33.4,
+      "code": {
+        "current_loc": 13878,
+        "additions": 42928,
+        "deletions": 28999,
+        "churn_ratio": 5.18,
+        "survival_rate_pct": 32.3
+      },
+      "docs": {
+        "current_loc": 1509,
+        "additions": 3171,
+        "deletions": 1662,
+        "churn_ratio": 3.2,
+        "survival_rate_pct": 47.6
+      },
+      "rapid_fire_pct": 15.3,
+      "unique_authors": 81
+    },
+    "365": {
+      "snapshot_commit": "079bfb32fba4f2b39d344ca7af88d79a3ff27c7c",
+      "snapshot_date": "2019-10-28T10:18:58-04:00",
+      "first_commit_date": "2018-10-29T14:56:02+01:00",
+      "commits": 1618,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 27.9,
+      "revert_pct": 0.2,
+      "churn_ratio": 4.27,
+      "survival_rate_pct": 37.8,
+      "code": {
+        "current_loc": 42261,
+        "additions": 110779,
+        "deletions": 67751,
+        "churn_ratio": 4.22,
+        "survival_rate_pct": 38.1
+      },
+      "docs": {
+        "current_loc": 3666,
+        "additions": 10733,
+        "deletions": 7068,
+        "churn_ratio": 4.86,
+        "survival_rate_pct": 34.2
+      },
+      "rapid_fire_pct": 12.5,
+      "unique_authors": 189
+    }
+  }
+}

@@ -1,0 +1,655 @@
+{
+  "repo": "agents",
+  "full_name": "wshobson/agents",
+  "stars": 42294,
+  "stars_source": "github-api 2026-11-08T09:01:01Z",
+  "selection_topics": [
+    "coding-agents"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2025-07-24T23:28:14Z",
+    "description": "",
+    "fork": false,
+    "forks": 4471,
+    "full_name": "wshobson/agents",
+    "pushed_at": "2026-11-05T15:57:30Z",
+    "stars": 42294,
+    "fetched_at": "2026-11-08T09:01:01Z"
+  },
+  "url": "https://github.com/wshobson/agents",
+  "description": "",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "4bde3168b43c0655c4d00ea2726e631719908a6d",
+    "head_date": "2026-11-05T10:57:29-05:00",
+    "history_complete": true,
+    "non_merge_commits": 553,
+    "merge_commits": 84,
+    "maintenance_bot_commits": 50,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 60,
+    "explicit_ai_pct": 11.9,
+    "by_tool": {
+      "copilot": 33,
+      "claude": 22,
+      "gemini": 4,
+      "cursor": 1
+    },
+    "by_signal": {
+      "co-author": 33,
+      "agent-author": 27
+    },
+    "recent_180d": {
+      "commits": 195,
+      "ai_pct": 20.5,
+      "fix_pct": 42.6
+    },
+    "first_365d": {
+      "commits": 420,
+      "ai_pct": 14.0,
+      "fix_pct": 26.2
+    },
+    "bot_commit_count": 50,
+    "agent_config": {
+      "files": {
+        ".agents/": "2026-05-29T13:02:40-04:00",
+        ".cursor/": "2026-05-29T13:02:40-04:00",
+        "AGENTS.md": "2026-05-22T11:16:39-04:00",
+        "CLAUDE.md": "2026-03-26T17:40:56-04:00"
+      },
+      "ci_agent_workflows": [
+        ".github/workflows/claude-code-review.yml",
+        ".github/workflows/claude.yml"
+      ],
+      "has_agent_config": true,
+      "first_config_date": "2026-03-26T17:40:56-04:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 503,
+    "first_commit_date": "2025-07-24T19:29:24-04:00",
+    "last_commit_date": "2026-11-05T18:57:29+03:00",
+    "current_loc": 226619,
+    "total_historical_additions": 387184,
+    "total_historical_deletions": 124008,
+    "total_churn": 511192,
+    "churn_ratio": 2.26,
+    "survival_rate_pct": 58.5,
+    "code": {
+      "current_loc": 22094,
+      "additions": 29063,
+      "deletions": 6969,
+      "churn_ratio": 1.63,
+      "survival_rate_pct": 76.0
+    },
+    "docs": {
+      "current_loc": 204525,
+      "additions": 358121,
+      "deletions": 117039,
+      "churn_ratio": 2.32,
+      "survival_rate_pct": 57.1
+    },
+    "fix_commits": 150,
+    "fix_pct": 29.8,
+    "revert_commits": 3,
+    "revert_pct": 0.6,
+    "trial_error_commits": 154,
+    "trial_error_pct": 30.6,
+    "rapid_fire_commits": 116,
+    "rapid_fire_pct": 23.1,
+    "trial_error_chains": 33,
+    "suspicious_additions_count": 35,
+    "top5_hotspot_volatility_pct": 11.7
+  },
+  "code_hygiene": {
+    "total_files": 82,
+    "docs_files": 794,
+    "avg_file_loc": 269.4,
+    "test_loc": 9457,
+    "test_files": 33,
+    "test_ratio_pct": 42.8,
+    "comment_ratio_pct": 7.7,
+    "monolith_count": 2,
+    "top_languages": {
+      ".py": 20340,
+      ".sh": 895,
+      ".cs": 859
+    }
+  },
+  "authors": {
+    "unique_authors": 96,
+    "top_authors": [
+      {
+        "name": "Seth Hobson",
+        "commits": 301,
+        "pct": 59.8
+      },
+      {
+        "name": "GitHub Copilot",
+        "commits": 32,
+        "pct": 6.4
+      },
+      {
+        "name": "jau123",
+        "commits": 10,
+        "pct": 2.0
+      },
+      {
+        "name": "tommylauren",
+        "commits": 9,
+        "pct": 1.8
+      },
+      {
+        "name": "Dpakkk",
+        "commits": 6,
+        "pct": 1.2
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 6.7,
+    "p75": 50.7,
+    "p90": 1120.0,
+    "p95": 4337.1,
+    "p99": 46200.0,
+    "avg": 1334.4
+  },
+  "hotspots": [
+    {
+      "file": "README.md",
+      "commits": 152,
+      "additions": 5001,
+      "deletions": 5226,
+      "churn": 10227,
+      "first_seen": "2025-07-24T19:29:24-04:00",
+      "last_seen": "2026-11-05T18:57:29+03:00"
+    },
+    {
+      "file": "docs/plugins.md",
+      "commits": 42,
+      "additions": 675,
+      "deletions": 248,
+      "churn": 923,
+      "first_seen": "2025-10-16T20:33:27-04:00",
+      "last_seen": "2026-11-05T18:57:29+03:00"
+    },
+    {
+      "file": "AGENTS.md",
+      "commits": 35,
+      "additions": 178,
+      "deletions": 94,
+      "churn": 272,
+      "first_seen": "2026-05-22T11:16:39-04:00",
+      "last_seen": "2026-11-05T18:57:29+03:00"
+    },
+    {
+      "file": "docs/architecture.md",
+      "commits": 33,
+      "additions": 580,
+      "deletions": 182,
+      "churn": 762,
+      "first_seen": "2025-10-16T20:33:27-04:00",
+      "last_seen": "2026-11-05T18:57:29+03:00"
+    },
+    {
+      "file": "docs/usage.md",
+      "commits": 31,
+      "additions": 562,
+      "deletions": 140,
+      "churn": 702,
+      "first_seen": "2025-10-16T20:33:27-04:00",
+      "last_seen": "2026-11-05T18:57:29+03:00"
+    },
+    {
+      "file": "docs/agent-skills.md",
+      "commits": 31,
+      "additions": 720,
+      "deletions": 211,
+      "churn": 931,
+      "first_seen": "2025-10-16T20:33:27-04:00",
+      "last_seen": "2026-10-15T09:34:38-04:00"
+    },
+    {
+      "file": "ARCHITECTURE.md",
+      "commits": 25,
+      "additions": 151,
+      "deletions": 44,
+      "churn": 195,
+      "first_seen": "2026-05-22T11:16:39-04:00",
+      "last_seen": "2026-11-05T18:57:29+03:00"
+    },
+    {
+      "file": "docs/agents.md",
+      "commits": 25,
+      "additions": 594,
+      "deletions": 208,
+      "churn": 802,
+      "first_seen": "2025-10-16T20:33:27-04:00",
+      "last_seen": "2026-10-04T09:27:36-04:00"
+    },
+    {
+      "file": "tools/validate_generated.py",
+      "commits": 22,
+      "additions": 1209,
+      "deletions": 316,
+      "churn": 1525,
+      "first_seen": "2026-05-22T08:18:21-04:00",
+      "last_seen": "2026-09-13T09:51:18-04:00"
+    },
+    {
+      "file": "tools/doc_gardener.py",
+      "commits": 21,
+      "additions": 1134,
+      "deletions": 141,
+      "churn": 1275,
+      "first_seen": "2026-05-22T08:18:21-04:00",
+      "last_seen": "2026-10-30T19:34:46-04:00"
+    },
+    {
+      "file": "tools/tests/test_adapters.py",
+      "commits": 21,
+      "additions": 2842,
+      "deletions": 514,
+      "churn": 3356,
+      "first_seen": "2026-05-22T08:18:21-04:00",
+      "last_seen": "2026-10-15T08:21:12-04:00"
+    },
+    {
+      "file": "tools/tests/test_round_trip.py",
+      "commits": 18,
+      "additions": 702,
+      "deletions": 200,
+      "churn": 902,
+      "first_seen": "2026-05-22T08:18:21-04:00",
+      "last_seen": "2026-10-04T15:40:38-04:00"
+    },
+    {
+      "file": "docs/authoring.md",
+      "commits": 17,
+      "additions": 307,
+      "deletions": 65,
+      "churn": 372,
+      "first_seen": "2026-05-22T08:18:21-04:00",
+      "last_seen": "2026-10-30T19:34:46-04:00"
+    },
+    {
+      "file": "tools/adapters/copilot.py",
+      "commits": 17,
+      "additions": 376,
+      "deletions": 136,
+      "churn": 512,
+      "first_seen": "2026-05-24T13:36:48-05:00",
+      "last_seen": "2026-10-15T08:21:12-04:00"
+    },
+    {
+      "file": "tools/generate.py",
+      "commits": 17,
+      "additions": 431,
+      "deletions": 70,
+      "churn": 501,
+      "first_seen": "2026-05-22T08:18:21-04:00",
+      "last_seen": "2026-09-13T09:51:18-04:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "tools/tests/test_adapters.py",
+      "loc": 2328
+    },
+    {
+      "file": "tools/tests/test_doc_gardener.py",
+      "loc": 1486
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "1f8ac5288e0801d492993a47b5d79d42a9b21015",
+      "short_hash": "1f8ac52",
+      "author": "Nick Smit",
+      "date": "2026-10-15T14:30:12+02:00",
+      "subject": "fix(skills): repair broken examples in three skills (#772)",
+      "coauthors": [],
+      "additions": 8,
+      "deletions": 13,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "f8d632bfc668cbf3a9a49aa80078e88b70484439",
+      "short_hash": "f8d632b",
+      "author": "Seth Hobson",
+      "date": "2026-10-15T08:30:30-04:00",
+      "subject": "fix(protect-mcp): pin evaluate to 0.31.1 and raise plugin versions (#774)",
+      "coauthors": [],
+      "additions": 8,
+      "deletions": 8,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "7257c27db333ed9784900d32f6a3779468d95c53",
+      "short_hash": "7257c27",
+      "author": "Seth Hobson",
+      "date": "2026-10-15T09:34:38-04:00",
+      "subject": "feat(content-marketing): add social-evidence-research skill (#775)",
+      "coauthors": [],
+      "additions": 444,
+      "deletions": 11,
+      "files_count": 10,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "00da14c841988675273285e7b0223a344e601e0d",
+      "short_hash": "00da14c",
+      "author": "Wen Castillo",
+      "date": "2026-10-15T11:14:11-03:00",
+      "subject": "fix(api-scaffolding): restrict CORS origins and make fastapi-templates runnable (#765)",
+      "coauthors": [],
+      "additions": 97,
+      "deletions": 56,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "52a4561da419e805377037f994ebb364100fcb46",
+      "short_hash": "52a4561",
+      "author": "Wen Castillo",
+      "date": "2026-10-15T11:30:51-03:00",
+      "subject": "fix(developer-essentials): update monorepo-management to Turborepo 2 and pnpm workspaces (#766)",
+      "coauthors": [],
+      "additions": 8,
+      "deletions": 6,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "8cc4f423e5b31cae9305e8ee476658259eb90015",
+      "short_hash": "8cc4f42",
+      "author": "Wen Castillo",
+      "date": "2026-10-15T11:30:58-03:00",
+      "subject": "fix(developer-essentials): correct Cypress and Playwright APIs in e2e-testing-patterns (#767)",
+      "coauthors": [],
+      "additions": 15,
+      "deletions": 24,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "02f339e42ed73f762c9de2afd47f4102a6847c26",
+      "short_hash": "02f339e",
+      "author": "Wen Castillo",
+      "date": "2026-10-15T11:31:05-03:00",
+      "subject": "fix(developer-essentials): correct reflog expiry and warn before reset --hard (#768)",
+      "coauthors": [],
+      "additions": 5,
+      "deletions": 2,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "044b4b21f083948e69ec878a7b07c8d0951a6ffa",
+      "short_hash": "044b4b2",
+      "author": "Seth Hobson",
+      "date": "2026-10-15T11:11:55-04:00",
+      "subject": "docs(developer-essentials): fix the reflog expiry comment and note the deploy script (#776)",
+      "coauthors": [],
+      "additions": 5,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "0874a27b17a22e2b7c2e2bcd725768e0803cad06",
+      "short_hash": "0874a27",
+      "author": "Hasan Sezer Taşan",
+      "date": "2026-10-18T00:39:17+03:00",
+      "subject": "docs(documentation-generation): avoid overwriting ADR README in toc example (#778)",
+      "coauthors": [],
+      "additions": 3,
+      "deletions": 2,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "24818e3549f72b2886817608e5810faff5965a41",
+      "short_hash": "24818e3",
+      "author": "Gokulraj K G",
+      "date": "2026-10-31T04:16:03+05:30",
+      "subject": "fix: include dev dependencies in test targets (#785)",
+      "coauthors": [
+        "gokulrajmisox"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "fa128d5c6e281215de4df67331620708b27de919",
+      "short_hash": "fa128d5",
+      "author": "yi111",
+      "date": "2026-10-31T06:46:07+08:00",
+      "subject": "fix(security-scanning): remove references to unshipped SAST helper files (#792)",
+      "coauthors": [
+        "Yi-111-a"
+      ],
+      "additions": 8,
+      "deletions": 2,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "62f05a18c48e1243f9ae33af5e864b51b720a2d2",
+      "short_hash": "62f05a1",
+      "author": "Seth Hobson",
+      "date": "2026-10-30T19:33:59-04:00",
+      "subject": "fix(deps): resolve open Dependabot security alerts (#798)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "0f73766f80b0b5eb6aa9faaa2fdf90df85a6793f",
+      "short_hash": "0f73766",
+      "author": "Seth Hobson",
+      "date": "2026-10-30T19:34:03-04:00",
+      "subject": "fix: correct 22 broken code examples reported in #790 (#797)",
+      "coauthors": [],
+      "additions": 134,
+      "deletions": 59,
+      "files_count": 19,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "7e2fb559cf4b824b27f1fec49fe88f7511066d26",
+      "short_hash": "7e2fb55",
+      "author": "Seth Hobson",
+      "date": "2026-10-30T19:34:46-04:00",
+      "subject": "fix: bump changed plugins and require version bumps in CI (#799)",
+      "coauthors": [],
+      "additions": 398,
+      "deletions": 4,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "67424ce3f7c3dcd6448e8023c8088155217fa737",
+      "short_hash": "67424ce",
+      "author": "Seth Hobson",
+      "date": "2026-11-05T09:28:41-05:00",
+      "subject": "docs: lead the README with the adapter and validation design (#809)",
+      "coauthors": [],
+      "additions": 30,
+      "deletions": 28,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "cdf92953b37e212cf94691b052637b2690ac9b46",
+      "short_hash": "cdf9295",
+      "author": "Cheney Zhang",
+      "date": "2026-11-05T22:57:40+08:00",
+      "subject": "Add a compact Milvus Lite recipe to the RAG reference (#804)",
+      "coauthors": [],
+      "additions": 31,
+      "deletions": 1,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "9ecda7f8fe82dde1b0f6a7d4d26e3b6f1f2f3cca",
+      "short_hash": "9ecda7f",
+      "author": "TJF",
+      "date": "2026-11-06T02:22:02+11:00",
+      "subject": "fix: upgrade governance initialization and evaluation to 0.32.4 (#805)",
+      "coauthors": [],
+      "additions": 81,
+      "deletions": 13,
+      "files_count": 11,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "42f100825a765deb078f7bb5a3ad24203a169705",
+      "short_hash": "42f1008",
+      "author": "Seth Hobson",
+      "date": "2026-11-05T10:25:48-05:00",
+      "subject": "chore(marketplace): remove the external hol-guard entry (#811)",
+      "coauthors": [],
+      "additions": 14,
+      "deletions": 30,
+      "files_count": 7,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "8883212879cc7275fa765752ad155a91a1685dab",
+      "short_hash": "8883212",
+      "author": "Seth Hobson",
+      "date": "2026-11-05T10:45:03-05:00",
+      "subject": "fix(plugin-eval): exclude code spans and fenced blocks from cross-reference extraction (#810)",
+      "coauthors": [
+        "MerverliPy"
+      ],
+      "additions": 318,
+      "deletions": 4,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "4bde3168b43c0655c4d00ea2726e631719908a6d",
+      "short_hash": "4bde316",
+      "author": "Vlad Shulcz",
+      "date": "2026-11-05T18:57:29+03:00",
+      "subject": "feat(marketplace): add external deja-vu memory entry (#812)",
+      "coauthors": [],
+      "additions": 14,
+      "deletions": 13,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

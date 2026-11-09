@@ -1,0 +1,80 @@
+{
+  "repo": "openrig",
+  "head_commit": "7d15cefc8",
+  "published_results": [
+    {
+      "claim": "every compaction-restore now costs ~192 tokens instead of ~909",
+      "metric": "Output tokens of `rig whoami` default payload",
+      "value": "~192 tokens",
+      "baseline": "~909 tokens (pre-v0.4.0 full payload)",
+      "evidence_type": "claim_only",
+      "files": [
+        "docs/releases/v0.4.0.md:85",
+        "CHANGELOG.md:6506"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Closes the largest measured bomb (~79,000 tokens) on the read-command surface",
+      "metric": "Output tokens of `rig restore-check` before compact default",
+      "value": "~79,000 tokens (pre-change size; post-change size not stated)",
+      "baseline": null,
+      "evidence_type": "claim_only",
+      "files": [
+        "docs/releases/v0.4.0.md:114-115"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "The bare unscoped firehose that aggregated cross-rig + full-history (~64,000 tokens on the live host) is retired as a default",
+      "metric": "Output tokens of unscoped `rig queue list` (pre-change size; post-change size not stated)",
+      "value": "~64,000 tokens",
+      "baseline": null,
+      "evidence_type": "claim_only",
+      "files": [
+        "docs/releases/v0.4.0.md:104-106"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "plan for roughly ~2 GB RSS per seat as an observed baseline",
+      "metric": "Memory (RSS) per agent seat",
+      "value": "~2 GB",
+      "baseline": null,
+      "evidence_type": "claim_only",
+      "files": [
+        "docs/releases/v0.4.7.md:51",
+        "CHANGELOG.md:6111"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "VM inspection was accepted on September 14: generally zero-to-two-second loading with occasional timeouts ... This observed result is not a general latency or availability guarantee.",
+      "metric": "UI loading time (manual VM inspection)",
+      "value": "generally zero-to-two seconds, occasional timeouts",
+      "baseline": null,
+      "evidence_type": "claim_only",
+      "files": [
+        "docs/releases/v0.5.14.md:116-118"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Door grade = deterministic expected-command-pattern match ... live `--provider rig` runs are manual, and CI does not run them.",
+      "metric": "Live-model context-selection/loading eval (does a seat run `rig context get <ref>` before acting); 1-5 rubric with optional deferred LLM judge",
+      "value": "No results committed",
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "packages/test-system/evals/README.md:1-37",
+        "packages/test-system/evals/cases/selection.yaml",
+        "packages/test-system/evals/cases/loading.yaml"
+      ],
+      "reproduce_command": "npm run eval -w packages/daemon -- [args]  (--provider rig for a live seat; default --provider fake grades --transcripts)"
+    }
+  ],
+  "strongest_evidence_type": "harness_only",
+  "summary": "OpenRig publishes no benchmark results; its release notes repeatedly disclaim latency, accuracy and reliability claims ('These changes reduce measured work; they do not establish a latency guarantee'). The only numbers are unsupported release-note figures (rig whoami ~909 -> ~192 tokens, ~79,000/~64,000-token payloads retired, ~2 GB RSS per seat, 0-2 s loading on a VM), and the one eval harness (live-model context-selection evals in packages/test-system/evals) is manual-only with no committed results. The 29%/84%/54% figures in skills/_canonical/process/context-engineering/SKILL.md are quoted third-party results (Anthropic, Manus, LangChain), not claims about OpenRig.",
+  "result_focus": "engineering",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}

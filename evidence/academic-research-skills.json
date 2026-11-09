@@ -1,0 +1,149 @@
+{
+  "repo": "academic-research-skills",
+  "head_commit": "6d938867",
+  "published_results": [
+    {
+      "claim": "strict recall PASS (improved, overall and critical band); clean-control false findings PASS (decreased); severity agreement FAIL as frozen-measured",
+      "metric": "Reviewer panel (academic-paper-reviewer, 5 seats) on synthetic seeded-defect manuscripts: strict recall of planted defects on two defective manuscripts (MS01, MS02), false findings on a clean control manuscript, severity agreement; claude-opus-5, 2 replicates per fixture, #581 behavior-batch prompts vs pre-#581 prompts; run records and raw panel outputs committed",
+      "value": "MS01 recall 1.00 (10/10 both replicates), MS02 1.00 (9/9 both), clean-control false findings 2 / 1 (mean 1.5), severity agreement 0.536",
+      "baseline": "pre-#581 prompts, same model and dispatch: MS01 0.95 (10/10 + 9/10), MS02 1.00, clean-control false findings 4 / 2 (mean 3.0), severity agreement 0.663",
+      "evidence_type": "harness+results",
+      "files": [
+        "evals/heldout/reviewer_seeded_defects/README.md:287-291",
+        "CHANGELOG.md:499"
+      ],
+      "reproduce_command": "python3 scripts/dispatch_e4_panel.py --fixture ms01_quant --condition post --replicate 1 --date 2026-08-01 --work-dir /tmp/e4-ms01-post-r1"
+    },
+    {
+      "claim": "receipt-backed strict recompute recall 4/4 in BOTH replicates ... severity agreement FAIL as frozen-measured (0.672 → 0.607)",
+      "metric": "Same seeded-defect suite (fixtures v0.2), #610 recompute-receipt prompts vs the adjudicated v0.2 baseline: strict recall, receipt-backed recompute recall on the 4 statistical recompute defects, clean-control false findings, severity agreement; claude-opus-5 via scripts/dispatch_e4_panel.py",
+      "value": "MS01 recall 1.00 (11/11 both replicates), MS02 1.00 (9/9 both), recompute recall 4/4 in both replicates, clean-control false findings 0, severity agreement 0.607",
+      "baseline": "v0.2 baseline (2026-08-04/05): recall 1.00 / 1.00, recompute recall 3/4 (r1) / 2/4 (r3), clean-control false findings 0, severity agreement 0.672",
+      "evidence_type": "harness+results",
+      "files": [
+        "evals/heldout/reviewer_seeded_defects/README.md:295-296",
+        "evals/heldout/reviewer_seeded_defects/README.md:298-310"
+      ],
+      "reproduce_command": "python3 scripts/dispatch_e4_panel.py --fixture ms01_quant --condition post --replicate 1 --date 2026-08-01 --work-dir /tmp/e4-ms01-post-r1"
+    },
+    {
+      "claim": "the false-claim rate is reported only as a range, 12/805 (1.5%) to 104/805 (12.9%), and no per-seat rate is computed",
+      "metric": "Share of 805 review-panel claims (weaknesses and Devil's Advocate CRITICAL/MAJOR rows of 17 E4 panels) that the manuscript contradicts, judged by gpt-6-astra and Gemini 4 Argon (2 replicates each) with a contrast-sentence gate; adjudication of 92 claims deferred; results are written up in PREREGISTRATION.md, raw judge outputs and a measurement row are not in the repository",
+      "value": "12 agreed-false claims in 6 of 17 panels (0.35); false-claim rate between 12/805 (0.015) and 104/805 (0.129); both judges marked 51/51 false contrast sentences false and 0/51 accurate ones; Claude Opus 5.5 and Claude Fable 5.1 as contrast-only judges also 51/51 and 0/51",
+      "baseline": "preregistered decision bars: false_claim_rate at least 0.03 or panels_with_false_claim at least 0.30",
+      "evidence_type": "harness+results",
+      "files": [
+        "evals/heldout/panel_claim_factuality/PREREGISTRATION.md:10-14",
+        "evals/heldout/panel_claim_factuality/PREREGISTRATION.md:68-74",
+        "evals/heldout/panel_claim_factuality/PREREGISTRATION.md:77-84",
+        "CHANGELOG.md:53",
+        "CHANGELOG.md:55"
+      ],
+      "reproduce_command": "python3 scripts/extract_panel_claims.py --runs evals/heldout/reviewer_seeded_defects/runs --out $W/claims --expect-bundles 17 --expect-claims 805, then scripts/dispatch_panel_claim_audit.py generate / build / run / score (evals/heldout/panel_claim_factuality/README.md steps 1-7)"
+    },
+    {
+      "claim": "unguarded 7/16 = 0.4375 vs guarded 1/16 = 0.0625 item-replicate drift",
+      "metric": "Claim-strength/hedge drift when revising under pressure on 8 held-out items x 2 replicates (claude-fable-5 subject, codex gpt-5.6-sol judge, maintainer adjudication); the guarded arm carries a guard block condensed from draft_writer_agent's revision-mode ladder, not the shipped pipeline path; plus deterministic numeric/citation drift",
+      "value": "guarded arm 1/16 = 0.0625 (1/8 items); unauthorized numeric/citation deltas 0/16",
+      "baseline": "unguarded arm 7/16 = 0.4375 (4/8 items), numeric/citation deltas 4/16; 2026-07-22 pre-guard baseline 2/8 = 0.25",
+      "evidence_type": "harness+results",
+      "files": [
+        "evals/heldout/revision_claim_drift/README.md:58-66",
+        "evals/heldout/revision_claim_drift/README.md:192-226",
+        "CHANGELOG.md:508"
+      ],
+      "reproduce_command": "python3 scripts/check_revision_token_conservation.py pair --source <original> --revision <revised> (deterministic layer; judged layer per runs/2026-08-07/RUN_PLAN.md)"
+    },
+    {
+      "claim": "overall miss 0.375/0.344 → **0.094 in all four post-#505 runs**",
+      "metric": "Miss rate and false-fire rate of the Socratic mentor's Wording-Pattern Advisory on a 48-item held-out set (32 AI-typical RQ shells, 16 hard negatives), isolated claude-sonnet-5 judge; acceptance line FNR < 0.30",
+      "value": "overall miss 0.094 in all four post-#505 runs; false-fire 0/16 in every run",
+      "baseline": "pre-#503 0.375 (single run); post-#503 0.375 and 0.344; off-list miss 0.778",
+      "evidence_type": "results_only",
+      "files": [
+        "evals/heldout/rq_framing_offlist/README.md:70-71",
+        "evals/heldout/rq_framing_offlist/README.md:85-93",
+        "evals/heldout/rq_framing_offlist/README.md:107-124",
+        "audits/rq-advisory-heldout-measurement-2026-07-11.md:36-40",
+        "CHANGELOG.md:616"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "fabrication recall 0.90 vs 0.80, p95 latency 25.0 s vs 49.6 s nearest-rank, grounded completion tied at 0.900",
+      "metric": "ARS cross-model citation verification over the codex subscription transport, verifier gpt-5.6-sol vs gpt-5.5: fabrication recall (10 fabricated refs), false disagreement (20 real), grounded-search completion, receipt-guard misfires, p95 latency; 30 refs x 3 repeats x 2 models, counterbalanced; receipts and offline scorer committed",
+      "value": "gpt-5.6-sol: fabrication recall 0.90, p95 25.0 s, grounded completion 0.900, false disagreement 0.00, misfires 0",
+      "baseline": "gpt-5.5 on the same transport: fabrication recall 0.80, p95 49.6 s, grounded completion 0.900, false disagreement 0.00, misfires 0",
+      "evidence_type": "harness+results",
+      "files": [
+        "audits/bakeoff-gpt-5-6-sol-codex-2026-08-19.md:66-85",
+        "CHANGELOG.md:327",
+        "evals/bakeoff/2026-08-19-gpt-5-6-sol-codex/score_run.py:1-11"
+      ],
+      "reproduce_command": "python3 evals/bakeoff/2026-08-19-gpt-5-6-sol-codex/score_run.py"
+    },
+    {
+      "claim": "Cases 01 and 03–08 passed; case 02 timed out after loading both files (7/8 overall).",
+      "metric": "`claude plugin eval` citation-check suite (8 synthetic cases with LLM-judged rubrics), --ablation none, one attempt per case, claude-sonnet-5 agent, opus judge; loading/routing and output-quality rubrics, not a with/without ablation; outputs not committed",
+      "value": "7/8 cases passed; case 02 across final-candidate attempts: 3 passed, 2 timed out",
+      "baseline": null,
+      "evidence_type": "harness+results",
+      "files": [
+        "plugin-evals-citation-check/README.md:26",
+        "plugin-evals-citation-check/README.md:101-115",
+        "CHANGELOG.md:235"
+      ],
+      "reproduce_command": "claude plugin eval . --eval-dir plugin-evals-citation-check --ablation with-without --judge-model opus"
+    },
+    {
+      "claim": "on a plugin install, Claude Fable 5.1 honored the mid-message token in 6 of 6 sessions before the change and 3 of 6 after it, so the acceptance rule fixed before the run is not met",
+      "metric": "Routing fixture 06 (a mid-message [direct-mode] token must not bypass workflow clarification) on Claude Fable 5.1, one claude -p session per run; plus all 21 #133 routing fixtures after the change",
+      "value": "plugin install: 3 of 6 sessions passed after the change; all fixtures post-change: Opus 5.5 plugin 20 of 21, Opus 5.5 repo 21 of 21, Fable 5.1 plugin 20 of 21, Fable 5.1 repo 20 of 21",
+      "baseline": "plugin install before the change: 0 of 6 passed; repo clone after the change: 6 of 6",
+      "evidence_type": "results_only",
+      "files": [
+        "CHANGELOG.md:101",
+        "tests/fixtures/issue_133_routing/CALIBRATION_LOG.md:396-399",
+        "tests/fixtures/issue_133_routing/CALIBRATION_LOG.md:427",
+        "tests/fixtures/issue_133_routing/CALIBRATION_LOG.md:440-445"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "In one synthetic fixture run six times (three sessions each on Claude Opus 5.5 and Claude Fable 5.1, web tools off), every session recorded the access note",
+      "metric": "Whether Stage 2.5/4.5 Phase E follows the cited-version rule (#1006): records UNVERIFIABLE_ACCESS, asks for the cited version, issues no verdict from a readable working paper",
+      "value": "every session of six (three on Claude Opus 5.5, three on Claude Fable 5.1)",
+      "baseline": null,
+      "evidence_type": "claim_only",
+      "files": [
+        "CHANGELOG.md:87"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "a single end-to-end run can exceed 200K input + 100K output tokens",
+      "metric": "Estimated token usage and cost per skill/mode (~15,000-word paper, ~60 references; costs measured on Opus 4.x at Anthropic API pricing as of April 2026)",
+      "value": "full pipeline ~200K+ input, ~100K+ output, ~$4-6; deep-research full ~60K / ~30K / ~$1.20; academic-paper-reviewer quick ~15K / ~8K / ~$0.30; 2026-09 list-price re-derivation ~$7 (Fable 5.1) and ~$2.80 (Opus 5.5), stated as arithmetic, not a re-measurement",
+      "baseline": null,
+      "evidence_type": "claim_only",
+      "files": [
+        "docs/PERFORMANCE.md:9",
+        "docs/PERFORMANCE.md:15-27",
+        "docs/PERFORMANCE.md:29"
+      ],
+      "reproduce_command": null
+    }
+  ],
+  "strongest_evidence_type": "harness+results",
+  "summary": "academic-research-skills commits held-out measurement suites with preregistrations, run records and raw outputs: on seeded-defect manuscripts the reviewer panel reached recall 1.00 on both defective fixtures with 0 clean-control false findings while severity agreement fell from 0.672 to 0.607 (and from 0.663 to 0.536 after the #581 batch), and a preregistered audit put the panel's false-claim rate between 12/805 (1.5%) and 104/805 (12.9%). A guard prompt lowered judged claim-strength drift from 7/16 to 1/16 without eliminating it, the Wording-Pattern Advisory's held-out miss rate went from 0.375/0.344 to 0.094 with 0/16 false fires (judge protocol, no runner script), and the gpt-5.6-sol citation-verifier bakeoff recorded recall 0.90 vs 0.80 on 10 non-existent references (p95 latency 25.0 s vs 49.6 s) from committed receipts and an offline scorer. Smaller checks are reported as session counts, including a routing fix that passed 3 of 6 sessions and did not meet its preregistered acceptance rule; the per-mode token and cost table in docs/PERFORMANCE.md is an estimate measured on Opus 4.x, and several release notes mark prompt-level changes as unmeasured.",
+  "result_focus": "outcome",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself",
+  "accuracy_check": {
+    "date": "2026-11-08",
+    "numbers_checked": 112,
+    "corrections": [
+      "Seeded-defect metric: removed per-fixture defect counts (MS01 10, MS02 9) that were not stated as such at the cited lines; recall cells are quoted instead",
+      "Added evals/heldout/rq_framing_offlist/README.md:70-71 for the 48-item set composition, and plugin-evals-citation-check/README.md:101-103 plus CHANGELOG.md:235 for the run settings and the eight-case count"
+    ]
+  }
+}

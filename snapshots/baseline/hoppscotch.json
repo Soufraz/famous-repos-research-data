@@ -1,0 +1,63 @@
+{
+  "repo": "hoppscotch",
+  "full_name": "hoppscotch/hoppscotch",
+  "group": "baseline",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "112c140ce7ac28c0c11d0439c8e8e526277c0e8a",
+      "snapshot_date": "2020-02-15T13:40:48+05:30",
+      "first_commit_date": "2019-08-21T18:48:20+05:30",
+      "commits": 894,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 20.8,
+      "revert_pct": 0.8,
+      "churn_ratio": 4.45,
+      "survival_rate_pct": 36.5,
+      "code": {
+        "current_loc": 12941,
+        "additions": 35977,
+        "deletions": 22637,
+        "churn_ratio": 4.53,
+        "survival_rate_pct": 36.0
+      },
+      "docs": {
+        "current_loc": 729,
+        "additions": 1490,
+        "deletions": 762,
+        "churn_ratio": 3.09,
+        "survival_rate_pct": 48.9
+      },
+      "rapid_fire_pct": 15.1,
+      "unique_authors": 72
+    },
+    "365": {
+      "snapshot_commit": "9734e4d859e46453fcd3ca3366c4f54a81354417",
+      "snapshot_date": "2020-08-19T16:16:49-04:00",
+      "first_commit_date": "2019-08-21T18:48:20+05:30",
+      "commits": 1299,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 21.0,
+      "revert_pct": 0.8,
+      "churn_ratio": 6.47,
+      "survival_rate_pct": 26.6,
+      "code": {
+        "current_loc": 15073,
+        "additions": 57903,
+        "deletions": 42072,
+        "churn_ratio": 6.63,
+        "survival_rate_pct": 26.0
+      },
+      "docs": {
+        "current_loc": 882,
+        "additions": 2028,
+        "deletions": 1147,
+        "churn_ratio": 3.6,
+        "survival_rate_pct": 43.5
+      },
+      "rapid_fire_pct": 13.0,
+      "unique_authors": 95
+    }
+  }
+}

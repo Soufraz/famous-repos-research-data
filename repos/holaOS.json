@@ -1,0 +1,683 @@
+{
+  "repo": "holaOS",
+  "full_name": "holaboss-ai/holaOS",
+  "stars": 11434,
+  "stars_source": "github-api 2026-11-08T09:04:35Z",
+  "selection_topics": [
+    "agent-harness"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2026-03-22T07:36:16Z",
+    "description": "Open-source agentic workspace enterprises can make their own. Connect the systems you already run — 100+ integrations, MCP, chat tools, apps, browser, local files — with shared memory. Any agent (Claude Code, Codex), any model, or BYOK. Set up in clicks, not months. Local-first: your data never leaves your machines.",
+    "fork": false,
+    "forks": 721,
+    "full_name": "holaboss-ai/holaOS",
+    "pushed_at": "2026-11-06T16:41:22Z",
+    "stars": 11434,
+    "fetched_at": "2026-11-08T09:04:35Z"
+  },
+  "url": "https://github.com/holaboss-ai/holaOS",
+  "description": "Open-source agentic workspace enterprises can make their own. Connect the systems you already run — 100+ integrations, MCP, chat tools, apps, browser, local files — with shared memory. Any agent (Claude Code, Codex), any model, or BYOK. Set up in clicks, not months. Local-first: your data never leaves your machines.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "4684714ee133794cdbb86630e42b7d93447fb2e2",
+    "head_date": "2026-08-21T20:32:29+08:00",
+    "history_complete": true,
+    "non_merge_commits": 156,
+    "merge_commits": 1,
+    "maintenance_bot_commits": 1,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 132,
+    "explicit_ai_pct": 85.2,
+    "by_tool": {
+      "claude": 132
+    },
+    "by_signal": {
+      "co-author": 130,
+      "footer": 2
+    },
+    "recent_180d": {
+      "commits": 155,
+      "ai_pct": 85.2,
+      "fix_pct": 42.6
+    },
+    "first_365d": {
+      "commits": 155,
+      "ai_pct": 85.2,
+      "fix_pct": 42.6
+    },
+    "bot_commit_count": 1,
+    "agent_config": {
+      "files": {
+        "AGENTS.md": "2026-07-26T15:48:18+08:00",
+        "CLAUDE.md": "2026-07-26T15:48:18+08:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2026-07-26T15:48:18+08:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 155,
+    "first_commit_date": "2026-07-26T15:48:18+08:00",
+    "last_commit_date": "2026-08-21T20:32:29+08:00",
+    "current_loc": 545033,
+    "total_historical_additions": 555150,
+    "total_historical_deletions": 10117,
+    "total_churn": 565267,
+    "churn_ratio": 1.04,
+    "survival_rate_pct": 98.2,
+    "code": {
+      "current_loc": 502684,
+      "additions": 512522,
+      "deletions": 9838,
+      "churn_ratio": 1.04,
+      "survival_rate_pct": 98.1
+    },
+    "docs": {
+      "current_loc": 42349,
+      "additions": 42628,
+      "deletions": 279,
+      "churn_ratio": 1.01,
+      "survival_rate_pct": 99.3
+    },
+    "fix_commits": 66,
+    "fix_pct": 42.6,
+    "revert_commits": 0,
+    "revert_pct": 0.0,
+    "trial_error_commits": 68,
+    "trial_error_pct": 43.9,
+    "rapid_fire_commits": 34,
+    "rapid_fire_pct": 21.9,
+    "trial_error_chains": 20,
+    "suspicious_additions_count": 3,
+    "top5_hotspot_volatility_pct": 13.0
+  },
+  "code_hygiene": {
+    "total_files": 1560,
+    "docs_files": 192,
+    "avg_file_loc": 322.2,
+    "test_loc": 126162,
+    "test_files": 412,
+    "test_ratio_pct": 25.1,
+    "comment_ratio_pct": 7.3,
+    "monolith_count": 67,
+    "top_languages": {
+      ".ts": 378662,
+      ".tsx": 102444,
+      ".mjs": 18685,
+      ".sh": 1500,
+      ".mts": 842
+    }
+  },
+  "authors": {
+    "unique_authors": 6,
+    "top_authors": [
+      {
+        "name": "Jeffrey Li",
+        "commits": 132,
+        "pct": 85.2
+      },
+      {
+        "name": "Joshua Li",
+        "commits": 14,
+        "pct": 9.0
+      },
+      {
+        "name": "Joshua",
+        "commits": 5,
+        "pct": 3.2
+      },
+      {
+        "name": "Waqas Ahmed",
+        "commits": 2,
+        "pct": 1.3
+      },
+      {
+        "name": "nb213",
+        "commits": 1,
+        "pct": 0.6
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 4.4,
+    "p75": 43.4,
+    "p90": 703.6,
+    "p95": 1578.0,
+    "p99": 19800.0,
+    "avg": 814.8
+  },
+  "hotspots": [
+    {
+      "file": "apps/desktop/electron/main.ts",
+      "commits": 30,
+      "additions": 30025,
+      "deletions": 277,
+      "churn": 30302,
+      "first_seen": "2026-07-26T15:48:18+08:00",
+      "last_seen": "2026-08-21T14:47:53+08:00"
+    },
+    {
+      "file": "README.md",
+      "commits": 24,
+      "additions": 449,
+      "deletions": 173,
+      "churn": 622,
+      "first_seen": "2026-07-26T15:48:18+08:00",
+      "last_seen": "2026-08-21T12:37:36+08:00"
+    },
+    {
+      "file": "apps/desktop/src/components/panes/ChatPane/index.tsx",
+      "commits": 18,
+      "additions": 11368,
+      "deletions": 167,
+      "churn": 11535,
+      "first_seen": "2026-07-26T15:48:18+08:00",
+      "last_seen": "2026-08-21T20:32:29+08:00"
+    },
+    {
+      "file": "runtime/harness-host/src/pi.ts",
+      "commits": 17,
+      "additions": 4767,
+      "deletions": 210,
+      "churn": 4977,
+      "first_seen": "2026-07-26T15:48:18+08:00",
+      "last_seen": "2026-08-21T14:28:08+08:00"
+    },
+    {
+      "file": "runtime/api-server/src/app.ts",
+      "commits": 12,
+      "additions": 13068,
+      "deletions": 42,
+      "churn": 13110,
+      "first_seen": "2026-07-26T15:48:18+08:00",
+      "last_seen": "2026-08-21T14:32:53+08:00"
+    },
+    {
+      "file": "apps/desktop/src/components/panes/ChatPane.test.mjs",
+      "commits": 9,
+      "additions": 2474,
+      "deletions": 514,
+      "churn": 2988,
+      "first_seen": "2026-07-26T15:48:18+08:00",
+      "last_seen": "2026-08-21T20:32:29+08:00"
+    },
+    {
+      "file": "apps/desktop/electron/preload.ts",
+      "commits": 9,
+      "additions": 3216,
+      "deletions": 7,
+      "churn": 3223,
+      "first_seen": "2026-07-26T15:48:18+08:00",
+      "last_seen": "2026-08-19T20:15:22+08:00"
+    },
+    {
+      "file": "apps/desktop/src/types/electron.d.ts",
+      "commits": 9,
+      "additions": 3262,
+      "deletions": 8,
+      "churn": 3270,
+      "first_seen": "2026-07-26T15:48:18+08:00",
+      "last_seen": "2026-08-19T20:15:22+08:00"
+    },
+    {
+      "file": "runtime/api-server/src/ts-runner.ts",
+      "commits": 9,
+      "additions": 3255,
+      "deletions": 25,
+      "churn": 3280,
+      "first_seen": "2026-07-26T15:48:18+08:00",
+      "last_seen": "2026-08-19T17:18:06+08:00"
+    },
+    {
+      "file": "apps/desktop/electron/release-channel-policy.test.mjs",
+      "commits": 8,
+      "additions": 353,
+      "deletions": 24,
+      "churn": 377,
+      "first_seen": "2026-07-26T15:48:18+08:00",
+      "last_seen": "2026-08-20T01:31:28+08:00"
+    },
+    {
+      "file": "runtime/state-store/src/store.ts",
+      "commits": 8,
+      "additions": 19503,
+      "deletions": 8,
+      "churn": 19511,
+      "first_seen": "2026-07-26T15:48:18+08:00",
+      "last_seen": "2026-08-19T13:00:37+08:00"
+    },
+    {
+      "file": "apps/desktop/src/components/layout/SettingsScreenRoot.tsx",
+      "commits": 7,
+      "additions": 1010,
+      "deletions": 43,
+      "churn": 1053,
+      "first_seen": "2026-07-26T15:48:18+08:00",
+      "last_seen": "2026-08-18T18:55:48+08:00"
+    },
+    {
+      "file": "runtime/api-server/src/runner-worker.ts",
+      "commits": 6,
+      "additions": 1220,
+      "deletions": 10,
+      "churn": 1230,
+      "first_seen": "2026-07-26T15:48:18+08:00",
+      "last_seen": "2026-08-19T22:29:38+08:00"
+    },
+    {
+      "file": "apps/desktop/src/components/layout/shell/state/ui.ts",
+      "commits": 6,
+      "additions": 723,
+      "deletions": 48,
+      "churn": 771,
+      "first_seen": "2026-07-26T15:48:18+08:00",
+      "last_seen": "2026-08-18T18:55:48+08:00"
+    },
+    {
+      "file": "apps/desktop/src/components/panes/WebAppSurfacePane.tsx",
+      "commits": 6,
+      "additions": 495,
+      "deletions": 8,
+      "churn": 503,
+      "first_seen": "2026-07-26T15:48:18+08:00",
+      "last_seen": "2026-08-04T12:59:46+08:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "apps/desktop/electron/main.ts",
+      "loc": 29748
+    },
+    {
+      "file": "runtime/state-store/src/store.ts",
+      "loc": 19495
+    },
+    {
+      "file": "runtime/api-server/src/app.test.ts",
+      "loc": 14509
+    },
+    {
+      "file": "runtime/api-server/src/app.ts",
+      "loc": 13026
+    },
+    {
+      "file": "apps/docs/worker-configuration.d.ts",
+      "loc": 13007
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "5823f2702c73f84ba4f75d36b1c9732eb24405a5",
+      "short_hash": "5823f27",
+      "author": "Jeffrey Li",
+      "date": "2026-08-19T04:14:56+08:00",
+      "subject": "fix(runtime): bound turn_request_snapshots, the last unpruned table",
+      "coauthors": [
+        "Claude Opus 5 (1M context) <noreply@anthropic.com>"
+      ],
+      "additions": 329,
+      "deletions": 3,
+      "files_count": 5,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "79b2a10c899307acfbb5442b35653900675b0656",
+      "short_hash": "79b2a10",
+      "author": "Jeffrey Li",
+      "date": "2026-08-19T13:00:37+08:00",
+      "subject": "fix(runtime): reclaim dead sessions before truncating live ones",
+      "coauthors": [
+        "Claude Opus 5 (1M context) <noreply@anthropic.com>"
+      ],
+      "additions": 246,
+      "deletions": 0,
+      "files_count": 3,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "e561ceed1cf0ca54d6883d23d5487a06d9603177",
+      "short_hash": "e561cee",
+      "author": "Jeffrey Li",
+      "date": "2026-08-19T13:48:54+08:00",
+      "subject": "fix(release): stop packaging harness-host twice, and raise the open-file limit where it's used (#523)",
+      "coauthors": [
+        "Claude Opus 5 (1M context) <noreply@anthropic.com>"
+      ],
+      "additions": 236,
+      "deletions": 6,
+      "files_count": 4,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "a1241a882206add94ae3ea3c48def78a902b249e",
+      "short_hash": "a1241a8",
+      "author": "Jeffrey Li",
+      "date": "2026-08-19T13:54:50+08:00",
+      "subject": "test(runtime): cover resume, SIGTERM deferral and compaction automatically (#525)",
+      "coauthors": [
+        "Claude Opus 5 (1M context) <noreply@anthropic.com>"
+      ],
+      "additions": 676,
+      "deletions": 29,
+      "files_count": 6,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "840723355d0a2e188a1ed010c85636c884294948",
+      "short_hash": "8407233",
+      "author": "Jeffrey Li",
+      "date": "2026-08-19T17:18:06+08:00",
+      "subject": "fix(runtime): let end-of-turn compaction finish — grace window (POSIX) and force-kill (Windows) (#526)",
+      "coauthors": [
+        "Claude Opus 5 (1M context) <noreply@anthropic.com>"
+      ],
+      "additions": 246,
+      "deletions": 5,
+      "files_count": 5,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "c06043a293f56aa42b8630a12cf6d3023954089e",
+      "short_hash": "c06043a",
+      "author": "Jeffrey Li",
+      "date": "2026-08-19T17:35:54+08:00",
+      "subject": "ci: install rg and fd from upstream releases instead of apt (#527)",
+      "coauthors": [
+        "Claude Opus 5 (1M context) <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "2e8589fe8ac60d420087cfe7d2746586cd15f722",
+      "short_hash": "2e8589f",
+      "author": "Jeffrey Li",
+      "date": "2026-08-19T19:03:39+08:00",
+      "subject": "fix(desktop): stop the end-of-turn flash, and show a new session in the sidebar immediately (#528)",
+      "coauthors": [
+        "Claude Opus 5 (1M context) <noreply@anthropic.com>"
+      ],
+      "additions": 344,
+      "deletions": 9,
+      "files_count": 7,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "e0c64d5de1df6471e80363b1fe2c676f2cb9cdb7",
+      "short_hash": "e0c64d5",
+      "author": "Jeffrey Li",
+      "date": "2026-08-19T20:15:22+08:00",
+      "subject": "fix(desktop): stop the chat flashing, nudging, and hiding new sessions (#529)",
+      "coauthors": [
+        "Claude Opus 5 (1M context) <noreply@anthropic.com>"
+      ],
+      "additions": 404,
+      "deletions": 16,
+      "files_count": 13,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "3ffd8429dab1840bdd78a4fb1fd416af920bc6fc",
+      "short_hash": "3ffd842",
+      "author": "Jeffrey Li",
+      "date": "2026-08-19T22:29:38+08:00",
+      "subject": "fix(runtime): surface end-of-turn compaction failures in runtime.log (#531)",
+      "coauthors": [
+        "Claude Opus 5 (1M context) <noreply@anthropic.com>"
+      ],
+      "additions": 89,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "f6013b57c548287fb6d40856ac7d3af8e5feae06",
+      "short_hash": "f6013b5",
+      "author": "Jeffrey Li",
+      "date": "2026-08-19T23:11:16+08:00",
+      "subject": "fix(harness): add Opus 5 and Sonnet 5 to the Claude Code model picker (#532)",
+      "coauthors": [
+        "Claude Opus 5 (1M context) <noreply@anthropic.com>"
+      ],
+      "additions": 107,
+      "deletions": 4,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "6acf8218b02d96b014ae8e033b397b486f51719a",
+      "short_hash": "6acf821",
+      "author": "Jeffrey Li",
+      "date": "2026-08-20T01:31:28+08:00",
+      "subject": "ci(release): retry the R2 mirror, and let a failed publish job be re-run (#533)",
+      "coauthors": [
+        "Claude Opus 5 (1M context) <noreply@anthropic.com>"
+      ],
+      "additions": 20,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "de16a0580eb89548eaff1f0d35eb9cfaf44f6fa5",
+      "short_hash": "de16a05",
+      "author": "Jeffrey Li",
+      "date": "2026-08-20T01:31:51+08:00",
+      "subject": "fix(runtime): follow session-cookie rotation instead of holding the spawn-time one (#534)",
+      "coauthors": [
+        "Claude Opus 5 (1M context) <noreply@anthropic.com>"
+      ],
+      "additions": 185,
+      "deletions": 3,
+      "files_count": 5,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "406f298781769cad7a093925282bc7a6b0d9970f",
+      "short_hash": "406f298",
+      "author": "Joshua Li",
+      "date": "2026-08-20T02:23:38+08:00",
+      "subject": "feat(desktop): take the referral amounts from the API, not local constants (#535)",
+      "coauthors": [
+        "Claude Opus 5 (1M context) <noreply@anthropic.com>"
+      ],
+      "additions": 23,
+      "deletions": 9,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "59201e241a5d692a5a7340853f06c4747776218e",
+      "short_hash": "59201e2",
+      "author": "Jeffrey Li",
+      "date": "2026-08-21T12:37:36+08:00",
+      "subject": "docs: readme update",
+      "coauthors": [],
+      "additions": 75,
+      "deletions": 35,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "51a58c3f0278423628020d04aed992f144bb4cc5",
+      "short_hash": "51a58c3",
+      "author": "Jeffrey Li",
+      "date": "2026-08-21T14:28:08+08:00",
+      "subject": "fix(runtime): surface integration toolkits that failed to resolve (#544)",
+      "coauthors": [],
+      "additions": 85,
+      "deletions": 1,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "aa5e3ebf91f1eb45b400e2a64884f14dae1bafc8",
+      "short_hash": "aa5e3eb",
+      "author": "Jeffrey Li",
+      "date": "2026-08-21T14:32:53+08:00",
+      "subject": "fix(runtime): invalidate the Composio tool listing when the resolved tool set changes (#540)",
+      "coauthors": [],
+      "additions": 218,
+      "deletions": 5,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "2f8ce70f970d35457b808cdb39a25001c11ab5fa",
+      "short_hash": "2f8ce70",
+      "author": "Jeffrey Li",
+      "date": "2026-08-21T14:33:17+08:00",
+      "subject": "fix(desktop): make the post-connect hook refresh tools instead of calling a deleted route (#542)",
+      "coauthors": [],
+      "additions": 107,
+      "deletions": 5,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "8649950340d7dd536605ebc0c4cb07526dd4ab82",
+      "short_hash": "8649950",
+      "author": "Jeffrey Li",
+      "date": "2026-08-21T14:47:53+08:00",
+      "subject": "fix(desktop): follow tools/list pagination so an app's later tools reach the agent (#543)",
+      "coauthors": [],
+      "additions": 571,
+      "deletions": 62,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "dde20a5f79d647e3e79376cdc0eca11ef1200edf",
+      "short_hash": "dde20a5",
+      "author": "Jeffrey Li",
+      "date": "2026-08-21T16:05:25+08:00",
+      "subject": "fix(runtime): clip oversized embedding inputs so memory recall stops failing silently (#541)",
+      "coauthors": [],
+      "additions": 337,
+      "deletions": 2,
+      "files_count": 8,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "4684714ee133794cdbb86630e42b7d93447fb2e2",
+      "short_hash": "4684714",
+      "author": "Jeffrey Li",
+      "date": "2026-08-21T20:32:29+08:00",
+      "subject": "fix(desktop): show a sentence, not raw JSON, when a run fails on credits (#547)",
+      "coauthors": [
+        "Claude Opus 5 (1M context) <noreply@anthropic.com>"
+      ],
+      "additions": 662,
+      "deletions": 54,
+      "files_count": 4,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    }
+  ]
+}

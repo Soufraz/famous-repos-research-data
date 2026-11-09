@@ -1,0 +1,641 @@
+{
+  "repo": "gentle-ai",
+  "full_name": "Gentleman-Programming/gentle-ai",
+  "stars": 8586,
+  "stars_source": "github-api 2026-11-08T09:06:25Z",
+  "selection_topics": [
+    "spec-driven-development"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2026-02-27T23:28:01Z",
+    "description": "Gentle-AI configures the AI coding agents you already use: Claude Code, Cursor, OpenCode, Codex, Pi, and more. Choose persistent memory, Organic-Driven Development, curated skills, MCP servers, personas, and optional bounded review. Open source, no agent lock-in.",
+    "fork": false,
+    "forks": 886,
+    "full_name": "Gentleman-Programming/gentle-ai",
+    "pushed_at": "2026-11-08T09:06:24Z",
+    "stars": 8586,
+    "fetched_at": "2026-11-08T09:06:25Z"
+  },
+  "url": "https://github.com/Gentleman-Programming/gentle-ai",
+  "description": "Gentle-AI configures the AI coding agents you already use: Claude Code, Cursor, OpenCode, Codex, Pi, and more. Choose persistent memory, Organic-Driven Development, curated skills, MCP servers, personas, and optional bounded review. Open source, no agent lock-in.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "55240afb100ad6d2ef5fbe16f7be33a7693f77ad",
+    "head_date": "2026-11-07T17:34:05+01:00",
+    "history_complete": true,
+    "non_merge_commits": 3589,
+    "merge_commits": 1357,
+    "maintenance_bot_commits": 0,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 12,
+    "explicit_ai_pct": 0.3,
+    "by_tool": {
+      "claude": 12
+    },
+    "by_signal": {
+      "agent-author": 6,
+      "co-author": 6
+    },
+    "recent_180d": {
+      "commits": 3167,
+      "ai_pct": 0.1,
+      "fix_pct": 55.8
+    },
+    "first_365d": {
+      "commits": 3589,
+      "ai_pct": 0.3,
+      "fix_pct": 55.1
+    },
+    "bot_commit_count": 0,
+    "agent_config": {
+      "files": {
+        ".claude/": "2026-04-13T16:25:15+02:00",
+        "AGENTS.md": "2026-03-15T21:56:31+01:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2026-03-15T21:56:31+01:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 3589,
+    "first_commit_date": "2026-02-28T00:27:56+01:00",
+    "last_commit_date": "2026-11-07T17:34:05+01:00",
+    "current_loc": 582168,
+    "total_historical_additions": 973436,
+    "total_historical_deletions": 390386,
+    "total_churn": 1363822,
+    "churn_ratio": 2.34,
+    "survival_rate_pct": 59.8,
+    "code": {
+      "current_loc": 545632,
+      "additions": 855004,
+      "deletions": 310071,
+      "churn_ratio": 2.14,
+      "survival_rate_pct": 63.8
+    },
+    "docs": {
+      "current_loc": 36536,
+      "additions": 118432,
+      "deletions": 80315,
+      "churn_ratio": 5.44,
+      "survival_rate_pct": 30.8
+    },
+    "fix_commits": 1979,
+    "fix_pct": 55.1,
+    "revert_commits": 9,
+    "revert_pct": 0.3,
+    "trial_error_commits": 1980,
+    "trial_error_pct": 55.2,
+    "rapid_fire_commits": 518,
+    "rapid_fire_pct": 14.4,
+    "trial_error_chains": 243,
+    "suspicious_additions_count": 134,
+    "top5_hotspot_volatility_pct": 5.7
+  },
+  "code_hygiene": {
+    "total_files": 2157,
+    "docs_files": 368,
+    "avg_file_loc": 253.0,
+    "test_loc": 330533,
+    "test_files": 1291,
+    "test_ratio_pct": 60.6,
+    "comment_ratio_pct": 9.5,
+    "monolith_count": 86,
+    "top_languages": {
+      ".go": 519498,
+      ".py": 7556,
+      ".sh": 6280,
+      ".mjs": 5522,
+      ".ts": 5373
+    }
+  },
+  "authors": {
+    "unique_authors": 120,
+    "top_authors": [
+      {
+        "name": "Alan Buscaglia",
+        "commits": 1235,
+        "pct": 34.4
+      },
+      {
+        "name": "Alan-TheGentleman",
+        "commits": 984,
+        "pct": 27.4
+      },
+      {
+        "name": "Matías D.",
+        "commits": 466,
+        "pct": 13.0
+      },
+      {
+        "name": "Daniel Rosales",
+        "commits": 225,
+        "pct": 6.3
+      },
+      {
+        "name": "Test User",
+        "commits": 68,
+        "pct": 1.9
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 7.6,
+    "p75": 46.2,
+    "p90": 1323.4,
+    "p95": 6885.0,
+    "p99": 31980.0,
+    "avg": 1639.6
+  },
+  "hotspots": [
+    {
+      "file": "internal/cli/review_facade.go",
+      "commits": 232,
+      "additions": 7996,
+      "deletions": 4604,
+      "churn": 12600,
+      "first_seen": "2026-07-11T20:10:08+02:00",
+      "last_seen": "2026-10-30T03:38:23+01:00"
+    },
+    {
+      "file": "internal/cli/run.go",
+      "commits": 226,
+      "additions": 7037,
+      "deletions": 1881,
+      "churn": 8918,
+      "first_seen": "2026-02-28T00:27:56+01:00",
+      "last_seen": "2026-11-07T17:08:58+01:00"
+    },
+    {
+      "file": "internal/components/sdd/inject_test.go",
+      "commits": 200,
+      "additions": 11114,
+      "deletions": 11271,
+      "churn": 22385,
+      "first_seen": "2026-02-28T00:27:56+01:00",
+      "last_seen": "2026-09-25T01:06:57+02:00"
+    },
+    {
+      "file": "internal/assets/assets_test.go",
+      "commits": 180,
+      "additions": 4905,
+      "deletions": 3079,
+      "churn": 7984,
+      "first_seen": "2026-02-28T13:32:29+01:00",
+      "last_seen": "2026-10-15T05:13:17+02:00"
+    },
+    {
+      "file": "internal/components/sdd/inject.go",
+      "commits": 180,
+      "additions": 5365,
+      "deletions": 5409,
+      "churn": 10774,
+      "first_seen": "2026-02-28T00:27:56+01:00",
+      "last_seen": "2026-09-25T01:06:57+02:00"
+    },
+    {
+      "file": "internal/tui/model.go",
+      "commits": 173,
+      "additions": 7757,
+      "deletions": 2776,
+      "churn": 10533,
+      "first_seen": "2026-02-28T00:27:56+01:00",
+      "last_seen": "2026-11-06T13:01:25+01:00"
+    },
+    {
+      "file": "README.md",
+      "commits": 141,
+      "additions": 2590,
+      "deletions": 2195,
+      "churn": 4785,
+      "first_seen": "2026-02-28T00:27:56+01:00",
+      "last_seen": "2026-10-25T18:28:45+01:00"
+    },
+    {
+      "file": "internal/cli/sync.go",
+      "commits": 139,
+      "additions": 4177,
+      "deletions": 1304,
+      "churn": 5481,
+      "first_seen": "2026-03-22T18:59:27+01:00",
+      "last_seen": "2026-11-06T13:02:29-03:00"
+    },
+    {
+      "file": "internal/tui/model_test.go",
+      "commits": 139,
+      "additions": 10900,
+      "deletions": 3047,
+      "churn": 13947,
+      "first_seen": "2026-02-28T00:27:56+01:00",
+      "last_seen": "2026-11-03T12:30:24+01:00"
+    },
+    {
+      "file": "internal/cli/sync_test.go",
+      "commits": 124,
+      "additions": 8981,
+      "deletions": 1657,
+      "churn": 10638,
+      "first_seen": "2026-03-22T18:59:27+01:00",
+      "last_seen": "2026-11-06T13:02:29-03:00"
+    },
+    {
+      "file": "internal/components/sdd/review_ledger_contract_test.go",
+      "commits": 120,
+      "additions": 2120,
+      "deletions": 2064,
+      "churn": 4184,
+      "first_seen": "2026-07-08T18:23:29+02:00",
+      "last_seen": "2026-09-25T01:06:57+02:00"
+    },
+    {
+      "file": "docs/review-integration.md",
+      "commits": 115,
+      "additions": 960,
+      "deletions": 609,
+      "churn": 1569,
+      "first_seen": "2026-07-16T00:24:30+02:00",
+      "last_seen": "2026-11-06T23:04:25+01:00"
+    },
+    {
+      "file": "internal/app/app_test.go",
+      "commits": 113,
+      "additions": 3722,
+      "deletions": 882,
+      "churn": 4604,
+      "first_seen": "2026-03-22T20:13:07+01:00",
+      "last_seen": "2026-11-03T12:26:21+01:00"
+    },
+    {
+      "file": "internal/app/app.go",
+      "commits": 111,
+      "additions": 1747,
+      "deletions": 454,
+      "churn": 2201,
+      "first_seen": "2026-02-28T00:27:56+01:00",
+      "last_seen": "2026-11-06T21:28:23+01:00"
+    },
+    {
+      "file": "internal/assets/codex/sdd-orchestrator.md",
+      "commits": 104,
+      "additions": 1092,
+      "deletions": 1115,
+      "churn": 2207,
+      "first_seen": "2026-03-21T22:15:09+01:00",
+      "last_seen": "2026-09-25T01:06:57+02:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "internal/tui/model_test.go",
+      "loc": 7881
+    },
+    {
+      "file": "internal/cli/sync_test.go",
+      "loc": 7464
+    },
+    {
+      "file": "internal/cli/run.go",
+      "loc": 5191
+    },
+    {
+      "file": "internal/tui/model.go",
+      "loc": 4984
+    },
+    {
+      "file": "e2e/organicruntime/organic_runtime_test.go",
+      "loc": 4635
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "5a51837821c7a9e2049c4886979e75968a11ad4c",
+      "short_hash": "5a518378",
+      "author": "Miguel Galera",
+      "date": "2026-11-06T17:31:10+01:00",
+      "subject": "fix(uninstall): remove only the managed context7 entry from the workspace Claude config (#2695)",
+      "coauthors": [],
+      "additions": 360,
+      "deletions": 31,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "8100af568aebefc90dd7502fb053721bb401fea9",
+      "short_hash": "8100af56",
+      "author": "Benivinilo",
+      "date": "2026-11-06T19:44:30+02:00",
+      "subject": "fix(review): START echoes an explicitly supplied commit-id base-ref verbatim (#5068)",
+      "coauthors": [],
+      "additions": 90,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "5cf53bdcd754c75bf2cfe94831e4ebca5625a71a",
+      "short_hash": "5cf53bdc",
+      "author": "aroman",
+      "date": "2026-11-06T19:45:53+01:00",
+      "subject": "feat(communitytool): reconcile version-aware CodeGraph install gate (#984) — slice 1/3 (#5171)",
+      "coauthors": [
+        "ardelperal",
+        "Alan Buscaglia"
+      ],
+      "additions": 241,
+      "deletions": 44,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "33fd5525543ac0fd6739512d1d46baaef70a161e",
+      "short_hash": "33fd5525",
+      "author": "Danielgap",
+      "date": "2026-11-06T20:10:14+01:00",
+      "subject": "feat(bench): add the canonical path token normalizer (#5649)",
+      "coauthors": [],
+      "additions": 301,
+      "deletions": 0,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "4e3bc0c604ed463ce9c6009f745ff2ca0b740c00",
+      "short_hash": "4e3bc0c6",
+      "author": "Alan Buscaglia",
+      "date": "2026-11-06T20:12:48+01:00",
+      "subject": "fix(theme): keep the sync settings contract while skipping the gentleman overlay (#6005)",
+      "coauthors": [],
+      "additions": 116,
+      "deletions": 4,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "33fb9cd044cd02b12cc109a23471a90d7302fc19",
+      "short_hash": "33fb9cd0",
+      "author": "danielxxomg",
+      "date": "2026-11-06T14:18:45-05:00",
+      "subject": "feat(verify): add NoRollback policy for failures that must not revert work (#5228)",
+      "coauthors": [],
+      "additions": 362,
+      "deletions": 8,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "97b63d8ee7f40dd8f727956734768f53303b56f6",
+      "short_hash": "97b63d8e",
+      "author": "Alan Buscaglia",
+      "date": "2026-11-06T20:25:22+01:00",
+      "subject": "fix(review): publish the string form of intended-untracked selections (#6006)",
+      "coauthors": [],
+      "additions": 97,
+      "deletions": 2,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "4ff8377a9c15ed11cf5ccc8bf9e65b5b7dccfd84",
+      "short_hash": "4ff8377a",
+      "author": "Alan Buscaglia",
+      "date": "2026-11-06T21:12:53+01:00",
+      "subject": "feat(cli): --force-community-tools reinstalls community tools at latest (#6007)",
+      "coauthors": [],
+      "additions": 302,
+      "deletions": 17,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "41d6c2bb2135d3693924c5b06b0e13c308085c64",
+      "short_hash": "41d6c2bb",
+      "author": "Alan Buscaglia",
+      "date": "2026-11-06T21:28:23+01:00",
+      "subject": "fix(restore): authorize a workspace root present in uninstall manifests (#6008)",
+      "coauthors": [],
+      "additions": 211,
+      "deletions": 5,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "7800afff15e0ddab1777cca8917754f004f91526",
+      "short_hash": "7800afff",
+      "author": "Alan Buscaglia",
+      "date": "2026-11-06T21:32:11+01:00",
+      "subject": "docs(usage): document --force-community-tools (#6009)",
+      "coauthors": [],
+      "additions": 1,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "113f42969d532037f14ebb50efd6629e51e92224",
+      "short_hash": "113f4296",
+      "author": "Danielgap",
+      "date": "2026-11-06T23:04:25+01:00",
+      "subject": "docs(review): qualify the corrected-inspection binding entrypoint (#5962)",
+      "coauthors": [],
+      "additions": 127,
+      "deletions": 9,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "44e935a97c4ab76a547c3860d6bc7deb61364c79",
+      "short_hash": "44e935a9",
+      "author": "Alan Buscaglia",
+      "date": "2026-11-07T11:43:17+01:00",
+      "subject": "fix(opencode): tolerate a UTF-8 BOM when detecting CodeGraph wiring (#6019)",
+      "coauthors": [],
+      "additions": 108,
+      "deletions": 2,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "eb01855fbb211f0f9a9639189e8101d9f1c2161f",
+      "short_hash": "eb01855f",
+      "author": "Alan Buscaglia",
+      "date": "2026-11-07T12:10:24+01:00",
+      "subject": "fix(review): let a read-only STATUS timeout be retried (#6018)",
+      "coauthors": [],
+      "additions": 205,
+      "deletions": 6,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "01a0e7c88a5103208ba29ebeac77e698dc7c8045",
+      "short_hash": "01a0e7c8",
+      "author": "Alan Buscaglia",
+      "date": "2026-11-07T12:18:10+01:00",
+      "subject": "fix(filemerge): keep user config when a JSON file starts with a UTF-8 BOM (#6021)",
+      "coauthors": [],
+      "additions": 357,
+      "deletions": 2,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "95fe9784a693047de02a4f41102367fad9e50bc6",
+      "short_hash": "95fe9784",
+      "author": "Alan Buscaglia",
+      "date": "2026-11-07T14:13:40+01:00",
+      "subject": "test(windows): canonicalize expected paths and isolate APPDATA in restore tests (#6023)",
+      "coauthors": [],
+      "additions": 17,
+      "deletions": 3,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "7bce945e46347e3ea0ecf9875ff29ee2316f9136",
+      "short_hash": "7bce945e",
+      "author": "Alan Buscaglia",
+      "date": "2026-11-07T14:45:27+01:00",
+      "subject": "ci(windows): run Windows Full Suite on pull requests (#6026)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "cfa4e6395a432b71f8f4e812c082b69730d6c1ec",
+      "short_hash": "cfa4e639",
+      "author": "Alan Buscaglia",
+      "date": "2026-11-07T16:11:03+01:00",
+      "subject": "fix(restore): admit redirected APPDATA gga config dir as a restore root (#6027)",
+      "coauthors": [],
+      "additions": 1058,
+      "deletions": 24,
+      "files_count": 8,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "81dd493b8c424aa67f5196447273a903d82eb6ca",
+      "short_hash": "81dd493b",
+      "author": "Alan Buscaglia",
+      "date": "2026-11-07T17:08:58+01:00",
+      "subject": "fix(rollback): admit product config roots when rolling back install and sync (#6031)",
+      "coauthors": [],
+      "additions": 167,
+      "deletions": 3,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "55240afb100ad6d2ef5fbe16f7be33a7693f77ad",
+      "short_hash": "55240afb",
+      "author": "Alan Buscaglia",
+      "date": "2026-11-07T17:34:05+01:00",
+      "subject": "fix(restore): admit adapter User folders under a redirected APPDATA (#6032)",
+      "coauthors": [],
+      "additions": 841,
+      "deletions": 29,
+      "files_count": 14,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    }
+  ]
+}

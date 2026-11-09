@@ -1,0 +1,660 @@
+{
+  "repo": "ollama",
+  "full_name": "ollama/ollama",
+  "stars": 186319,
+  "stars_source": "github-api 2026-11-08T10:03:12Z",
+  "selection_topics": [
+    "llm"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2023-06-26T19:39:32Z",
+    "description": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+    "fork": false,
+    "forks": 18964,
+    "full_name": "ollama/ollama",
+    "pushed_at": "2026-11-08T00:36:55Z",
+    "stars": 186319,
+    "fetched_at": "2026-11-08T10:03:12Z"
+  },
+  "url": "https://github.com/ollama/ollama",
+  "description": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "d63b702609c4300a2ca07be2bdb0adb9834725e5",
+    "head_date": "2026-11-07T16:36:53-08:00",
+    "history_complete": true,
+    "non_merge_commits": 5164,
+    "merge_commits": 820,
+    "maintenance_bot_commits": 0,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 4,
+    "explicit_ai_pct": 0.1,
+    "by_tool": {
+      "claude": 2,
+      "copilot": 1,
+      "codex": 1
+    },
+    "by_signal": {
+      "co-author": 4
+    },
+    "recent_180d": {
+      "commits": 585,
+      "ai_pct": 0.2,
+      "fix_pct": 7.9
+    },
+    "first_365d": {
+      "commits": 2346,
+      "ai_pct": 0.0,
+      "fix_pct": 14.8
+    },
+    "agent_config": {
+      "files": {
+        "AGENTS.md": "2026-06-07T10:57:59-07:00",
+        "CLAUDE.md": "2026-06-07T10:57:59-07:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2026-06-07T10:57:59-07:00"
+    },
+    "bot_commit_count": 0
+  },
+  "churn_and_stability": {
+    "total_commits": 5164,
+    "first_commit_date": "2023-06-22T12:45:31-04:00",
+    "last_commit_date": "2026-11-07T16:36:53-08:00",
+    "current_loc": 502460,
+    "total_historical_additions": 1368528,
+    "total_historical_deletions": 866304,
+    "total_churn": 2234832,
+    "churn_ratio": 4.45,
+    "survival_rate_pct": 36.7,
+    "code": {
+      "current_loc": 491336,
+      "additions": 1336678,
+      "deletions": 845366,
+      "churn_ratio": 4.44,
+      "survival_rate_pct": 36.8
+    },
+    "docs": {
+      "current_loc": 11124,
+      "additions": 31850,
+      "deletions": 20938,
+      "churn_ratio": 4.75,
+      "survival_rate_pct": 34.9
+    },
+    "fix_commits": 782,
+    "fix_pct": 15.1,
+    "revert_commits": 73,
+    "revert_pct": 1.4,
+    "trial_error_commits": 895,
+    "trial_error_pct": 17.3,
+    "rapid_fire_commits": 503,
+    "rapid_fire_pct": 9.7,
+    "trial_error_chains": 67,
+    "suspicious_additions_count": 190,
+    "top5_hotspot_volatility_pct": 7.5
+  },
+  "code_hygiene": {
+    "total_files": 1254,
+    "docs_files": 80,
+    "avg_file_loc": 391.8,
+    "test_loc": 214228,
+    "test_files": 510,
+    "test_ratio_pct": 43.6,
+    "comment_ratio_pct": 8.1,
+    "monolith_count": 89,
+    "top_languages": {
+      ".go": 379618,
+      ".h": 74162,
+      ".tsx": 17525,
+      ".ts": 5605,
+      ".cpp": 4165
+    }
+  },
+  "authors": {
+    "unique_authors": 630,
+    "top_authors": [
+      {
+        "name": "Jeffrey Morgan",
+        "commits": 894,
+        "pct": 17.3
+      },
+      {
+        "name": "Michael Yang",
+        "commits": 883,
+        "pct": 17.1
+      },
+      {
+        "name": "Daniel Hiltgen",
+        "commits": 821,
+        "pct": 15.9
+      },
+      {
+        "name": "Bruce MacDonald",
+        "commits": 330,
+        "pct": 6.4
+      },
+      {
+        "name": "Jesse Gross",
+        "commits": 311,
+        "pct": 6.0
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 1.2,
+    "p75": 13.6,
+    "p90": 930.0,
+    "p95": 4740.0,
+    "p99": 37800.0,
+    "avg": 1633.4
+  },
+  "hotspots": [
+    {
+      "file": "README.md",
+      "commits": 552,
+      "additions": 2843,
+      "deletions": 2482,
+      "churn": 5325,
+      "first_seen": "2023-06-22T12:45:31-04:00",
+      "last_seen": "2026-11-06T21:41:45+01:00"
+    },
+    {
+      "file": "server/routes.go",
+      "commits": 493,
+      "additions": 9517,
+      "deletions": 5829,
+      "churn": 15346,
+      "first_seen": "2023-07-03T15:22:44-04:00",
+      "last_seen": "2026-11-04T09:47:37-08:00"
+    },
+    {
+      "file": "cmd/cmd.go",
+      "commits": 361,
+      "additions": 7058,
+      "deletions": 4168,
+      "churn": 11226,
+      "first_seen": "2023-07-03T15:22:44-04:00",
+      "last_seen": "2026-11-05T10:41:22-08:00"
+    },
+    {
+      "file": "server/images.go",
+      "commits": 321,
+      "additions": 6762,
+      "deletions": 4874,
+      "churn": 11636,
+      "first_seen": "2023-07-16T17:02:22-07:00",
+      "last_seen": "2026-10-27T18:56:22-07:00"
+    },
+    {
+      "file": "api/types.go",
+      "commits": 214,
+      "additions": 2693,
+      "deletions": 1311,
+      "churn": 4004,
+      "first_seen": "2023-07-03T15:22:44-04:00",
+      "last_seen": "2026-10-23T16:15:08-07:00"
+    },
+    {
+      "file": "llm/server.go",
+      "commits": 209,
+      "additions": 4601,
+      "deletions": 4315,
+      "churn": 8916,
+      "first_seen": "2024-03-14T10:24:13-07:00",
+      "last_seen": "2026-10-10T14:26:20-07:00"
+    },
+    {
+      "file": "docs/api.md",
+      "commits": 133,
+      "additions": 5030,
+      "deletions": 1285,
+      "churn": 6315,
+      "first_seen": "2023-08-04T11:55:00-07:00",
+      "last_seen": "2026-10-07T10:00:44-07:00"
+    },
+    {
+      "file": "ml/backend/ggml/ggml.go",
+      "commits": 129,
+      "additions": 3322,
+      "deletions": 3322,
+      "churn": 6644,
+      "first_seen": "2025-02-14T00:31:21Z",
+      "last_seen": "2026-05-29T13:35:47-07:00"
+    },
+    {
+      "file": "server/sched.go",
+      "commits": 113,
+      "additions": 2989,
+      "deletions": 1147,
+      "churn": 4136,
+      "first_seen": "2024-03-30T09:50:05-07:00",
+      "last_seen": "2026-11-05T09:22:54-08:00"
+    },
+    {
+      "file": "llama/llama.go",
+      "commits": 101,
+      "additions": 2359,
+      "deletions": 1920,
+      "churn": 4279,
+      "first_seen": "2023-07-03T16:32:48-04:00",
+      "last_seen": "2026-05-29T13:35:47-07:00"
+    },
+    {
+      "file": "llm/llama.go",
+      "commits": 87,
+      "additions": 1365,
+      "deletions": 2491,
+      "churn": 3856,
+      "first_seen": "2023-07-21T13:33:56-07:00",
+      "last_seen": "2024-03-14T10:24:13-07:00"
+    },
+    {
+      "file": "api/client.go",
+      "commits": 86,
+      "additions": 1148,
+      "deletions": 597,
+      "churn": 1745,
+      "first_seen": "2023-07-03T15:22:44-04:00",
+      "last_seen": "2026-10-13T12:39:05-07:00"
+    },
+    {
+      "file": "gpu/gpu.go",
+      "commits": 86,
+      "additions": 1875,
+      "deletions": 1125,
+      "churn": 3000,
+      "first_seen": "2023-11-29T11:00:37-08:00",
+      "last_seen": "2024-10-15T11:36:08-07:00"
+    },
+    {
+      "file": "runner/ollamarunner/runner.go",
+      "commits": 84,
+      "additions": 2485,
+      "deletions": 2485,
+      "churn": 4970,
+      "first_seen": "2024-12-17T19:59:41-08:00",
+      "last_seen": "2026-05-29T13:35:47-07:00"
+    },
+    {
+      "file": "fs/ggml/ggml.go",
+      "commits": 79,
+      "additions": 847,
+      "deletions": 1408,
+      "churn": 2255,
+      "first_seen": "2025-02-14T00:31:21Z",
+      "last_seen": "2026-09-14T20:32:36-07:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "app/webview/WebView2.h",
+      "loc": 57256
+    },
+    {
+      "file": "mlx/generated.h",
+      "loc": 7922
+    },
+    {
+      "file": "cmd/launch/launch_test.go",
+      "loc": 4529
+    },
+    {
+      "file": "llm/llama_server_test.go",
+      "loc": 4070
+    },
+    {
+      "file": "app/webview/webview.h",
+      "loc": 3997
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "ddf22489b61e67b48fd2a3bad753a1da35d78bd4",
+      "short_hash": "ddf22489",
+      "author": "Daniel Hiltgen",
+      "date": "2026-11-03T06:45:30-08:00",
+      "subject": "mlx: load bundled CUDA libraries in-process on Linux (#19433)",
+      "coauthors": [],
+      "additions": 181,
+      "deletions": 1,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "355eaee353f81f598932faf3226344d39e482860",
+      "short_hash": "355eaee3",
+      "author": "Daniel Hiltgen",
+      "date": "2026-11-03T07:09:06-08:00",
+      "subject": "model: add MiMo V2.6 renderer for Qwen3.5 (#19400)",
+      "coauthors": [],
+      "additions": 313,
+      "deletions": 0,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "e9fde36d75fea66579d84099956ce1430792737a",
+      "short_hash": "e9fde36d",
+      "author": "Eva H",
+      "date": "2026-11-03T18:26:02-05:00",
+      "subject": "launch: populate Pi models automatically (#19460)",
+      "coauthors": [],
+      "additions": 1665,
+      "deletions": 115,
+      "files_count": 8,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "d666cdb246504d6f0039fbe44674dd659fa4b0e8",
+      "short_hash": "d666cdb2",
+      "author": "Daniel Hiltgen",
+      "date": "2026-11-04T09:47:37-08:00",
+      "subject": "Add AutoTrust decision model to MLX (#19399)",
+      "coauthors": [],
+      "additions": 841,
+      "deletions": 19,
+      "files_count": 16,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "2e7b870fbcec32da4b8864a1f715d7809c801490",
+      "short_hash": "2e7b870f",
+      "author": "Daniel Hiltgen",
+      "date": "2026-11-04T09:57:25-08:00",
+      "subject": "mlx: reject unsupported CUDA devices (#19521)",
+      "coauthors": [],
+      "additions": 295,
+      "deletions": 7,
+      "files_count": 8,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "cdd4b55b43ae14ea56946802f30f0661223a05cf",
+      "short_hash": "cdd4b55b",
+      "author": "Patrick Devine",
+      "date": "2026-11-04T14:14:32-08:00",
+      "subject": "mlx: support YaRN scaling in Qwen3 and Qwen3.5 (#19231)",
+      "coauthors": [],
+      "additions": 752,
+      "deletions": 43,
+      "files_count": 8,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "a6d33251620eef7629c73b09e672f2df243eb363",
+      "short_hash": "a6d33251",
+      "author": "Daniel Hiltgen",
+      "date": "2026-11-04T17:31:38-08:00",
+      "subject": "llama.cpp: version bump b12111 (#19530)",
+      "coauthors": [],
+      "additions": 13,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "84dc81db1fa22ea3a7e6279b85cadcd955cb61f8",
+      "short_hash": "84dc81db",
+      "author": "Daniel Hiltgen",
+      "date": "2026-11-05T09:22:54-08:00",
+      "subject": "llama-server: allow parallel requests for recurrent and vision models (#19545)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 7,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "32ce4379ccee95f8d6cd21fbf822a464cafeb14f",
+      "short_hash": "32ce4379",
+      "author": "Parth Sareen",
+      "date": "2026-11-05T10:40:54-08:00",
+      "subject": "cmd/launch: show gateway model names in Claude Desktop's model picker (#19533)",
+      "coauthors": [],
+      "additions": 176,
+      "deletions": 8,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "f60dd2060f670263a9b0078f0d5108a92cce4807",
+      "short_hash": "f60dd206",
+      "author": "Parth Sareen",
+      "date": "2026-11-05T10:41:22-08:00",
+      "subject": "cmd: restore the no-argument launcher (#19478)",
+      "coauthors": [
+        "Jeffrey Morgan"
+      ],
+      "additions": 168,
+      "deletions": 51,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "8e264f8989b524c3534678cebbb1bb11adf9bde7",
+      "short_hash": "8e264f89",
+      "author": "Patrick Devine",
+      "date": "2026-11-05T12:59:06-08:00",
+      "subject": "mlxrunner: close generation cache on shutdown (#19550)",
+      "coauthors": [],
+      "additions": 80,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "02480ca2a47153e1f9c31cbe1e05536da97ce1ba",
+      "short_hash": "02480ca2",
+      "author": "J Berg",
+      "date": "2026-11-05T13:41:21-08:00",
+      "subject": "cmd/launch: add Kimi Code CLI support (#19506)",
+      "coauthors": [],
+      "additions": 1943,
+      "deletions": 41,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "e968efb60ad8e50f6f3340fe18a0836c80262759",
+      "short_hash": "e968efb6",
+      "author": "Marlon Ferreira",
+      "date": "2026-11-05T21:56:45-03:00",
+      "subject": "openai: forward truncation option in responses requests (#19501)",
+      "coauthors": [
+        "Eva Ho"
+      ],
+      "additions": 191,
+      "deletions": 2,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "6362e0a30887bdd4f69e07a94e8a513383576204",
+      "short_hash": "6362e0a3",
+      "author": "liangliang205",
+      "date": "2026-11-06T08:57:40+08:00",
+      "subject": "openai: return an empty array for /v1/models when no models are installed (#19539)",
+      "coauthors": [],
+      "additions": 31,
+      "deletions": 2,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "7ed1eb9c0138cbecbea96805ecc1e2b4fc68fad1",
+      "short_hash": "7ed1eb9c",
+      "author": "Daniel Hiltgen",
+      "date": "2026-11-06T12:00:00-08:00",
+      "subject": "llama.cpp: version bump b12177 (#19576)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "51e7030f9442e13e93a4a7880cd95ebad4112e49",
+      "short_hash": "51e7030f",
+      "author": "Matteo Celani",
+      "date": "2026-11-06T21:41:45+01:00",
+      "subject": "README: add Quock to Mobile community integrations (#19361)",
+      "coauthors": [],
+      "additions": 1,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "eaf3f28586b93aea8f96d02d8e416d7734f7b7eb",
+      "short_hash": "eaf3f285",
+      "author": "Daniel Hiltgen",
+      "date": "2026-11-06T13:33:36-08:00",
+      "subject": "windows: add CUDA 13.5 and SM 103 for ARM64 (#19580)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "c053d1e98537f208b24165446369bd376a015999",
+      "short_hash": "c053d1e9",
+      "author": "Daniel Hiltgen",
+      "date": "2026-11-06T13:39:21-08:00",
+      "subject": "MLX: make Qwen3.8 Flash Next memory efficient (#18078)",
+      "coauthors": [],
+      "additions": 2116,
+      "deletions": 910,
+      "files_count": 26,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "5e983d4f800053c6f5691496b675c3212aa8099d",
+      "short_hash": "5e983d4f",
+      "author": "Eva H",
+      "date": "2026-11-06T21:28:13-05:00",
+      "subject": "launch: fix Claude Code routing and retired model errors (#19587)",
+      "coauthors": [],
+      "additions": 86,
+      "deletions": 38,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "d63b702609c4300a2ca07be2bdb0adb9834725e5",
+      "short_hash": "d63b7026",
+      "author": "Patrick Devine",
+      "date": "2026-11-07T16:36:53-08:00",
+      "subject": "Add ripple preview support to the MLX runner (#19592)",
+      "coauthors": [],
+      "additions": 3826,
+      "deletions": 200,
+      "files_count": 19,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

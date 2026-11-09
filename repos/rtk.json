@@ -1,0 +1,683 @@
+{
+  "repo": "rtk",
+  "full_name": "rtk-ai/rtk",
+  "stars": 85862,
+  "stars_source": "github-api 2026-11-08T09:07:41Z",
+  "selection_topics": [
+    "core-audit"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2026-01-22T16:54:16Z",
+    "description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
+    "fork": false,
+    "forks": 5498,
+    "full_name": "rtk-ai/rtk",
+    "pushed_at": "2026-11-07T15:25:51Z",
+    "stars": 85862,
+    "fetched_at": "2026-11-08T09:07:41Z"
+  },
+  "url": "https://github.com/rtk-ai/rtk",
+  "description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "bd7f87eb6e21a17c47ee3c78f698e81b64d7fee5",
+    "head_date": "2026-11-07T16:10:13+01:00",
+    "history_complete": true,
+    "non_merge_commits": 1936,
+    "merge_commits": 785,
+    "maintenance_bot_commits": 110,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 635,
+    "explicit_ai_pct": 34.8,
+    "by_tool": {
+      "claude": 633,
+      "cursor": 2
+    },
+    "by_signal": {
+      "co-author": 629,
+      "agent-author": 6
+    },
+    "recent_180d": {
+      "commits": 1206,
+      "ai_pct": 35.2,
+      "fix_pct": 61.4
+    },
+    "first_365d": {
+      "commits": 1826,
+      "ai_pct": 34.8,
+      "fix_pct": 60.1
+    },
+    "bot_commit_count": 110,
+    "agent_config": {
+      "files": {
+        ".claude/": "2026-02-01T14:20:25+01:00",
+        ".github/copilot-instructions.md": "2026-03-18T16:21:07+01:00",
+        "CLAUDE.md": "2026-01-28T15:48:44+01:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2026-01-28T15:48:44+01:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 1826,
+    "first_commit_date": "2026-01-22T18:10:30+01:00",
+    "last_commit_date": "2026-11-05T19:26:34+01:00",
+    "current_loc": 248137,
+    "total_historical_additions": 345775,
+    "total_historical_deletions": 98959,
+    "total_churn": 444734,
+    "churn_ratio": 1.79,
+    "survival_rate_pct": 71.8,
+    "code": {
+      "current_loc": 224237,
+      "additions": 307232,
+      "deletions": 80801,
+      "churn_ratio": 1.73,
+      "survival_rate_pct": 73.0
+    },
+    "docs": {
+      "current_loc": 23900,
+      "additions": 38543,
+      "deletions": 18158,
+      "churn_ratio": 2.37,
+      "survival_rate_pct": 62.0
+    },
+    "fix_commits": 1097,
+    "fix_pct": 60.1,
+    "revert_commits": 6,
+    "revert_pct": 0.3,
+    "trial_error_commits": 1105,
+    "trial_error_pct": 60.5,
+    "rapid_fire_commits": 241,
+    "rapid_fire_pct": 13.2,
+    "trial_error_chains": 116,
+    "suspicious_additions_count": 50,
+    "top5_hotspot_volatility_pct": 8.9
+  },
+  "code_hygiene": {
+    "total_files": 365,
+    "docs_files": 138,
+    "avg_file_loc": 614.3,
+    "test_loc": 21980,
+    "test_files": 77,
+    "test_ratio_pct": 9.8,
+    "comment_ratio_pct": 13.7,
+    "monolith_count": 57,
+    "top_languages": {
+      ".rs": 217139,
+      ".sh": 4398,
+      ".ts": 1485,
+      ".py": 670,
+      ".mjs": 287
+    }
+  },
+  "authors": {
+    "unique_authors": 213,
+    "top_authors": [
+      {
+        "name": "Nicolas Le Cam",
+        "commits": 365,
+        "pct": 20.0
+      },
+      {
+        "name": "aesoft",
+        "commits": 204,
+        "pct": 11.2
+      },
+      {
+        "name": "Adrien Eppling",
+        "commits": 161,
+        "pct": 8.8
+      },
+      {
+        "name": "Florian BRUNIAUX",
+        "commits": 138,
+        "pct": 7.6
+      },
+      {
+        "name": "Patrick szymkowiak",
+        "commits": 66,
+        "pct": 3.6
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 4.7,
+    "p75": 180.0,
+    "p90": 6000.0,
+    "p95": 14100.0,
+    "p99": 48840.0,
+    "avg": 4411.9
+  },
+  "hotspots": [
+    {
+      "file": "src/main.rs",
+      "commits": 269,
+      "additions": 8032,
+      "deletions": 7351,
+      "churn": 15383,
+      "first_seen": "2026-01-22T18:10:30+01:00",
+      "last_seen": "2026-10-05T08:31:05Z"
+    },
+    {
+      "file": "src/discover/registry.rs",
+      "commits": 165,
+      "additions": 11103,
+      "deletions": 2096,
+      "churn": 13199,
+      "first_seen": "2026-02-01T16:31:34+01:00",
+      "last_seen": "2026-11-05T19:26:34+01:00"
+    },
+    {
+      "file": "README.md",
+      "commits": 145,
+      "additions": 2150,
+      "deletions": 1674,
+      "churn": 3824,
+      "first_seen": "2026-01-23T07:49:17+01:00",
+      "last_seen": "2026-10-30T12:59:13+01:00"
+    },
+    {
+      "file": "src/hooks/init.rs",
+      "commits": 123,
+      "additions": 14483,
+      "deletions": 17443,
+      "churn": 31926,
+      "first_seen": "2026-03-24T22:14:35+01:00",
+      "last_seen": "2026-09-24T01:57:49+02:00"
+    },
+    {
+      "file": "src/cmds/git/git.rs",
+      "commits": 113,
+      "additions": 7181,
+      "deletions": 3001,
+      "churn": 10182,
+      "first_seen": "2026-03-24T22:14:35+01:00",
+      "last_seen": "2026-09-14T01:26:21+02:00"
+    },
+    {
+      "file": "src/hooks/hook_cmd.rs",
+      "commits": 104,
+      "additions": 5350,
+      "deletions": 1994,
+      "churn": 7344,
+      "first_seen": "2026-03-24T22:14:35+01:00",
+      "last_seen": "2026-11-02T00:42:36+01:00"
+    },
+    {
+      "file": "src/discover/rules.rs",
+      "commits": 70,
+      "additions": 1805,
+      "deletions": 605,
+      "churn": 2410,
+      "first_seen": "2026-03-05T14:20:01+01:00",
+      "last_seen": "2026-10-18T10:13:30-04:00"
+    },
+    {
+      "file": "src/cmds/rust/cargo_cmd.rs",
+      "commits": 62,
+      "additions": 2351,
+      "deletions": 761,
+      "churn": 3112,
+      "first_seen": "2026-03-24T22:14:35+01:00",
+      "last_seen": "2026-10-30T17:27:30+03:00"
+    },
+    {
+      "file": "src/cmds/dotnet/dotnet_cmd.rs",
+      "commits": 62,
+      "additions": 2498,
+      "deletions": 1196,
+      "churn": 3694,
+      "first_seen": "2026-03-24T22:14:35+01:00",
+      "last_seen": "2026-10-30T00:53:10+01:00"
+    },
+    {
+      "file": "src/core/tracking.rs",
+      "commits": 58,
+      "additions": 4556,
+      "deletions": 992,
+      "churn": 5548,
+      "first_seen": "2026-03-24T22:14:35+01:00",
+      "last_seen": "2026-11-03T00:55:59+01:00"
+    },
+    {
+      "file": "src/hooks/permissions.rs",
+      "commits": 55,
+      "additions": 2742,
+      "deletions": 503,
+      "churn": 3245,
+      "first_seen": "2026-03-29T00:17:02+01:00",
+      "last_seen": "2026-11-04T13:45:25+01:00"
+    },
+    {
+      "file": "docs/guide/getting-started/supported-agents.md",
+      "commits": 50,
+      "additions": 474,
+      "deletions": 114,
+      "churn": 588,
+      "first_seen": "2026-04-05T00:09:14+02:00",
+      "last_seen": "2026-09-26T19:50:09+02:00"
+    },
+    {
+      "file": "src/core/runner.rs",
+      "commits": 48,
+      "additions": 3535,
+      "deletions": 996,
+      "churn": 4531,
+      "first_seen": "2026-03-28T18:23:54+01:00",
+      "last_seen": "2026-10-15T21:21:52-03:00"
+    },
+    {
+      "file": "src/cmds/system/search.rs",
+      "commits": 46,
+      "additions": 2506,
+      "deletions": 1641,
+      "churn": 4147,
+      "first_seen": "2026-06-26T11:32:51+02:00",
+      "last_seen": "2026-10-12T10:41:22+02:00"
+    },
+    {
+      "file": "src/git.rs",
+      "commits": 44,
+      "additions": 3019,
+      "deletions": 607,
+      "churn": 3626,
+      "first_seen": "2026-01-22T20:19:54+01:00",
+      "last_seen": "2026-03-25T22:30:22+01:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "src/discover/registry.rs",
+      "loc": 9004
+    },
+    {
+      "file": "src/cmds/git/git_cmd.rs",
+      "loc": 8689
+    },
+    {
+      "file": "src/cmds/git/diff_cmd.rs",
+      "loc": 7437
+    },
+    {
+      "file": "src/lib.rs",
+      "loc": 6020
+    },
+    {
+      "file": "src/cmds/jvm/mvn_cmd.rs",
+      "loc": 5725
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "95c67680bb22f0b17853c93079cd130b1b4782f9",
+      "short_hash": "95c67680",
+      "author": "Adrien EPPLING",
+      "date": "2026-11-02T16:17:56+01:00",
+      "subject": "fix(pipeline): keep a line that runs rtk anywhere out of the swap",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 33,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "3fd23a901dfca857820e4d4812979975db580385",
+      "short_hash": "3fd23a90",
+      "author": "Adrien EPPLING",
+      "date": "2026-11-02T16:18:06+01:00",
+      "subject": "refactor(pipeline): drop the swap's heredoc and arithmetic checks",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 27,
+      "deletions": 2,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "81f1ccc3f76cb48139e95cb6ee3eeb8a8f49e253",
+      "short_hash": "81f1ccc3",
+      "author": "Adrien EPPLING",
+      "date": "2026-11-02T16:18:12+01:00",
+      "subject": "refactor(pipeline): read the transparent prefixes once per swap",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 3,
+      "deletions": 4,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "1e832ee8d7b9523f39644d4ed64a7f2ed1179a63",
+      "short_hash": "1e832ee8",
+      "author": "Adrien EPPLING",
+      "date": "2026-11-02T16:18:13+01:00",
+      "subject": "docs(pipeline): say which excluded and rtk lines a swap leaves as typed",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 1,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "743f5e71551d8abe645ce661a1ec5a570d98ebac",
+      "short_hash": "743f5e71",
+      "author": "Nicolas Le Cam",
+      "date": "2026-11-03T00:55:59+01:00",
+      "subject": "docs(tracking): state which stored labels count as timed",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 14,
+      "deletions": 11,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "380d2130d0adc48d996bc73102678578dae1dfa2",
+      "short_hash": "380d2130",
+      "author": "Nicolas Le Cam",
+      "date": "2026-11-03T00:51:19+01:00",
+      "subject": "test(init): pin the builtin list and the dropped safety promise",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 53,
+      "deletions": 20,
+      "files_count": 5,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "ad8727509fca7445b3137859eed3e04519cafbf1",
+      "short_hash": "ad872750",
+      "author": "Nicolas Le Cam",
+      "date": "2026-11-03T01:42:46+01:00",
+      "subject": "test: cut process spawns in the two slowest git test suites",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 127,
+      "deletions": 37,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "646937f401c5c1f6a91982c41faf55ac0cea4922",
+      "short_hash": "646937f4",
+      "author": "Nicolas Le Cam",
+      "date": "2026-11-03T08:24:35+01:00",
+      "subject": "test(help): run the wrapped tools side by side",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 73,
+      "deletions": 34,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "980ae9869c92d42f8905a086726a23eef29950a9",
+      "short_hash": "980ae986",
+      "author": "Nicolas Le Cam",
+      "date": "2026-11-04T00:54:43+01:00",
+      "subject": "fix(benchmark): stop booking compile output, colour and target/ as savings",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 18,
+      "deletions": 3,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "50ebcea5f48ba5a1484991d3caafa31ebeac3eb2",
+      "short_hash": "50ebcea5",
+      "author": "Nicolas Le Cam",
+      "date": "2026-11-04T01:19:53+01:00",
+      "subject": "ci(benchmark): stop running the whole test suite in the benchmark job",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 23,
+      "deletions": 11,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "eb6518629845735cb6d862f5cf668cec958c600d",
+      "short_hash": "eb651862",
+      "author": "Adrien EPPLING",
+      "date": "2026-11-04T13:45:25+01:00",
+      "subject": "fix(pipeline): let an allow rule on rtk cover a swapped command",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 8,
+      "deletions": 29,
+      "files_count": 3,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "68e8a38b9809579bf2cbb2908f9228818128f668",
+      "short_hash": "68e8a38b",
+      "author": "Adrien EPPLING",
+      "date": "2026-11-04T14:10:09+01:00",
+      "subject": "refactor(pipeline): drop the swap's no-filter check, covered by the exclusion matcher",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 2,
+      "deletions": 5,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "f1546677cf8c6a54c21d079103d43c3106f41a63",
+      "short_hash": "f1546677",
+      "author": "Adrien EPPLING",
+      "date": "2026-11-04T14:10:09+01:00",
+      "subject": "test(pipeline): pin a lone backslash and a /dev/null heredoc out of the swap",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 2,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "c8be23610a539373b41212fb974086414c0fc0d2",
+      "short_hash": "c8be2361",
+      "author": "aesoft",
+      "date": "2026-11-05T11:14:58+01:00",
+      "subject": "docs(contributing): add out of scope feature - conflicts with pro",
+      "coauthors": [],
+      "additions": 9,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "3f5b950925ad99c629b6c83d8093e4885d13f5f0",
+      "short_hash": "3f5b9509",
+      "author": "Adrien EPPLING",
+      "date": "2026-11-05T15:00:38+01:00",
+      "subject": "docs(install): list the static aarch64 assets and the arm64 packages",
+      "coauthors": [],
+      "additions": 5,
+      "deletions": 5,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "2b8574bc2f9670f4eab1a0238ec41c1d9286bdde",
+      "short_hash": "2b8574bc",
+      "author": "Adrien EPPLING",
+      "date": "2026-11-05T15:00:38+01:00",
+      "subject": "fix(install): install the static aarch64 build, fall back to gnu for older releases",
+      "coauthors": [],
+      "additions": 15,
+      "deletions": 8,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "5fa24dde014549fb651b6c3dd283aff4eff34cc3",
+      "short_hash": "5fa24dde",
+      "author": "Adrien EPPLING",
+      "date": "2026-11-05T15:00:38+01:00",
+      "subject": "fix(cicd): build the deb, rpm and aarch64 Linux binaries as static musl",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "0646636132f9990f26674d034e6c2e8be723f63b",
+      "short_hash": "06466361",
+      "author": "Adrien EPPLING",
+      "date": "2026-11-05T15:00:38+01:00",
+      "subject": "perf(proxy): use mimalloc as the global allocator on musl builds",
+      "coauthors": [],
+      "additions": 4,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "e54ea6daaa1b6c728ba5561c8a52c33587a74677",
+      "short_hash": "e54ea6da",
+      "author": "Takayuki Maeda",
+      "date": "2026-11-06T03:07:13+09:00",
+      "subject": "ci: pin rust-toolchain action SHA and reuse YAML anchors",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "c5c6ae918da40fb860add6f28b672b936805b347",
+      "short_hash": "c5c6ae91",
+      "author": "Adrien EPPLING",
+      "date": "2026-11-05T19:26:34+01:00",
+      "subject": "fix(hooks): honour exclude_commands for a swapped program called by path",
+      "coauthors": [],
+      "additions": 19,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    }
+  ]
+}

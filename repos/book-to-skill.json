@@ -1,0 +1,653 @@
+{
+  "repo": "book-to-skill",
+  "full_name": "virgiliojr94/book-to-skill",
+  "stars": 37242,
+  "stars_source": "github-api 2026-11-08T10:25:24Z",
+  "selection_topics": [
+    "context-engineering"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2026-05-01T02:09:39Z",
+    "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+    "fork": false,
+    "forks": 3942,
+    "full_name": "virgiliojr94/book-to-skill",
+    "pushed_at": "2026-11-03T17:53:25Z",
+    "stars": 37242,
+    "fetched_at": "2026-11-08T10:25:24Z"
+  },
+  "url": "https://github.com/virgiliojr94/book-to-skill",
+  "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "e7bb659d3261491c8b28793dcb9102fa64a46c22",
+    "head_date": "2026-11-03T13:53:10-04:00",
+    "history_complete": true,
+    "non_merge_commits": 243,
+    "merge_commits": 3,
+    "maintenance_bot_commits": 11,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 63,
+    "explicit_ai_pct": 27.2,
+    "by_tool": {
+      "claude": 49,
+      "copilot": 10,
+      "amp": 3,
+      "cursor": 1
+    },
+    "by_signal": {
+      "co-author": 63
+    },
+    "recent_180d": {
+      "commits": 221,
+      "ai_pct": 24.4,
+      "fix_pct": 44.8
+    },
+    "first_365d": {
+      "commits": 232,
+      "ai_pct": 27.2,
+      "fix_pct": 42.7
+    },
+    "agent_config": {
+      "files": {
+        "AGENTS.md": "2026-08-23T19:04:41-04:00",
+        "CLAUDE.md": "2026-08-23T19:04:41-04:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2026-08-23T19:04:41-04:00"
+    },
+    "bot_commit_count": 11
+  },
+  "churn_and_stability": {
+    "total_commits": 232,
+    "first_commit_date": "2026-04-30T22:09:33-04:00",
+    "last_commit_date": "2026-11-03T13:53:10-04:00",
+    "current_loc": 20334,
+    "total_historical_additions": 23228,
+    "total_historical_deletions": 2894,
+    "total_churn": 26122,
+    "churn_ratio": 1.28,
+    "survival_rate_pct": 87.5,
+    "code": {
+      "current_loc": 16876,
+      "additions": 18886,
+      "deletions": 2010,
+      "churn_ratio": 1.24,
+      "survival_rate_pct": 89.4
+    },
+    "docs": {
+      "current_loc": 3458,
+      "additions": 4342,
+      "deletions": 884,
+      "churn_ratio": 1.51,
+      "survival_rate_pct": 79.6
+    },
+    "fix_commits": 99,
+    "fix_pct": 42.7,
+    "revert_commits": 0,
+    "revert_pct": 0.0,
+    "trial_error_commits": 99,
+    "trial_error_pct": 42.7,
+    "rapid_fire_commits": 76,
+    "rapid_fire_pct": 32.8,
+    "trial_error_chains": 43,
+    "suspicious_additions_count": 0,
+    "top5_hotspot_volatility_pct": 18.4
+  },
+  "code_hygiene": {
+    "total_files": 93,
+    "docs_files": 23,
+    "avg_file_loc": 181.5,
+    "test_loc": 11261,
+    "test_files": 68,
+    "test_ratio_pct": 66.7,
+    "comment_ratio_pct": 10.3,
+    "monolith_count": 2,
+    "top_languages": {
+      ".py": 16876
+    }
+  },
+  "authors": {
+    "unique_authors": 59,
+    "top_authors": [
+      {
+        "name": "Virgilio Junior",
+        "commits": 45,
+        "pct": 19.4
+      },
+      {
+        "name": "Virgilio Borges",
+        "commits": 34,
+        "pct": 14.7
+      },
+      {
+        "name": "Shubham Srivastava",
+        "commits": 30,
+        "pct": 12.9
+      },
+      {
+        "name": "Stamina9",
+        "commits": 18,
+        "pct": 7.8
+      },
+      {
+        "name": "Hotragn Pettugani",
+        "commits": 11,
+        "pct": 4.7
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 11.8,
+    "p75": 93.9,
+    "p90": 444.0,
+    "p95": 1220.0,
+    "p99": 3730.0,
+    "avg": 235.6
+  },
+  "hotspots": [
+    {
+      "file": "book_to_skill/utils.py",
+      "commits": 64,
+      "additions": 1536,
+      "deletions": 172,
+      "churn": 1708,
+      "first_seen": "2026-06-18T00:12:04+02:00",
+      "last_seen": "2026-11-03T13:47:12-04:00"
+    },
+    {
+      "file": "tests/test_book_to_skill.py",
+      "commits": 54,
+      "additions": 2081,
+      "deletions": 92,
+      "churn": 2173,
+      "first_seen": "2026-06-18T00:12:04+02:00",
+      "last_seen": "2026-11-03T13:53:10-04:00"
+    },
+    {
+      "file": "README.md",
+      "commits": 50,
+      "additions": 729,
+      "deletions": 464,
+      "churn": 1193,
+      "first_seen": "2026-04-30T22:09:33-04:00",
+      "last_seen": "2026-10-27T18:52:39+04:00"
+    },
+    {
+      "file": "SKILL.md",
+      "commits": 31,
+      "additions": 1158,
+      "deletions": 278,
+      "churn": 1436,
+      "first_seen": "2026-04-30T22:09:33-04:00",
+      "last_seen": "2026-11-03T13:47:12-04:00"
+    },
+    {
+      "file": "scripts/extract.py",
+      "commits": 15,
+      "additions": 1163,
+      "deletions": 1129,
+      "churn": 2292,
+      "first_seen": "2026-04-30T22:09:33-04:00",
+      "last_seen": "2026-09-23T01:30:17+08:00"
+    },
+    {
+      "file": "book_to_skill/parsers/pdf.py",
+      "commits": 13,
+      "additions": 263,
+      "deletions": 40,
+      "churn": 303,
+      "first_seen": "2026-06-18T00:12:04+02:00",
+      "last_seen": "2026-11-03T13:47:12-04:00"
+    },
+    {
+      "file": "scripts/extractor/utils.py",
+      "commits": 13,
+      "additions": 782,
+      "deletions": 105,
+      "churn": 887,
+      "first_seen": "2026-05-28T10:14:42+02:00",
+      "last_seen": "2026-06-17T20:27:21+01:00"
+    },
+    {
+      "file": "tests/test_extractor.py",
+      "commits": 12,
+      "additions": 967,
+      "deletions": 1,
+      "churn": 968,
+      "first_seen": "2026-06-03T23:55:37+02:00",
+      "last_seen": "2026-06-17T20:27:21+01:00"
+    },
+    {
+      "file": "tools/validate_skill.py",
+      "commits": 9,
+      "additions": 369,
+      "deletions": 51,
+      "churn": 420,
+      "first_seen": "2026-06-04T12:10:32-04:00",
+      "last_seen": "2026-10-27T18:52:39+04:00"
+    },
+    {
+      "file": "docs/index.md",
+      "commits": 9,
+      "additions": 141,
+      "deletions": 26,
+      "churn": 167,
+      "first_seen": "2026-06-18T18:34:32-04:00",
+      "last_seen": "2026-10-11T19:28:57+05:00"
+    },
+    {
+      "file": "docs/install.md",
+      "commits": 9,
+      "additions": 109,
+      "deletions": 17,
+      "churn": 126,
+      "first_seen": "2026-08-07T10:23:25-04:00",
+      "last_seen": "2026-09-29T22:08:10+08:00"
+    },
+    {
+      "file": "docs/architecture.md",
+      "commits": 8,
+      "additions": 53,
+      "deletions": 13,
+      "churn": 66,
+      "first_seen": "2026-08-07T10:23:25-04:00",
+      "last_seen": "2026-11-03T13:34:24-04:00"
+    },
+    {
+      "file": "book_to_skill/parsers/epub.py",
+      "commits": 8,
+      "additions": 155,
+      "deletions": 20,
+      "churn": 175,
+      "first_seen": "2026-06-18T00:12:04+02:00",
+      "last_seen": "2026-11-04T01:27:04+08:00"
+    },
+    {
+      "file": "book_to_skill/sanitize.py",
+      "commits": 8,
+      "additions": 279,
+      "deletions": 31,
+      "churn": 310,
+      "first_seen": "2026-07-23T14:52:29-04:00",
+      "last_seen": "2026-10-27T14:50:23Z"
+    },
+    {
+      "file": "book_to_skill/pdf_inspector_integration.py",
+      "commits": 7,
+      "additions": 318,
+      "deletions": 33,
+      "churn": 351,
+      "first_seen": "2026-08-31T14:51:44-04:00",
+      "last_seen": "2026-11-03T13:47:12-04:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "tests/test_book_to_skill.py",
+      "loc": 2955
+    },
+    {
+      "file": "book_to_skill/utils.py",
+      "loc": 2041
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "a5534cbb97d251c75cafa0243b2939305623d3b0",
+      "short_hash": "a5534cb",
+      "author": "Stamina9",
+      "date": "2026-10-11T22:33:04+08:00",
+      "subject": "fix(text): reject malformed BOM-encoded input (#292)",
+      "coauthors": [],
+      "additions": 37,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "a8af014c86547f978591d261ddca0ea7c555db5d",
+      "short_hash": "a8af014",
+      "author": "Virgilio Junior",
+      "date": "2026-10-11T11:04:05-04:00",
+      "subject": "Update README.md",
+      "coauthors": [],
+      "additions": 3,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "6f682c93f24e98c444c4cf4a0915f52e857d0cd0",
+      "short_hash": "6f682c9",
+      "author": "yi111",
+      "date": "2026-10-12T04:11:24+08:00",
+      "subject": "fix(sanitize): fold Kangxi radicals to their ideographs in extracted text (#277)",
+      "coauthors": [],
+      "additions": 165,
+      "deletions": 3,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "ceeb27098e58fa74346f3579a49b5e47cad5697c",
+      "short_hash": "ceeb270",
+      "author": "xiaofeilovecoding",
+      "date": "2026-10-27T22:43:40+08:00",
+      "subject": "fix(pdf): preserve fallback metadata for inspector results (#301)",
+      "coauthors": [
+        "xiaofeilovecoding"
+      ],
+      "additions": 52,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "fd332f46697a4fb9cf8185b17bcafa34dd4ec3fd",
+      "short_hash": "fd332f4",
+      "author": "Stamina9",
+      "date": "2026-10-27T22:45:24+08:00",
+      "subject": "fix(rtf): preserve surrogate pairs in fallback (#296)",
+      "coauthors": [],
+      "additions": 89,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "d26a4f27ee764da8d091add3f85fe80092ff5a8d",
+      "short_hash": "d26a4f2",
+      "author": "Ha1baraA1",
+      "date": "2026-10-27T22:46:49+08:00",
+      "subject": "fix(docx): preserve SDT wrapped paragraphs (#270)",
+      "coauthors": [],
+      "additions": 197,
+      "deletions": 16,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "6236146654bfc2faf0057f45b91ac246a9668169",
+      "short_hash": "6236146",
+      "author": "Shubham Srivastava",
+      "date": "2026-10-27T14:48:19Z",
+      "subject": "feat(extractor): detect Hebrew (פרק) chapter headings (#293)",
+      "coauthors": [],
+      "additions": 46,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "2296b08c073f35d900b30e198152ca99ee8a3781",
+      "short_hash": "2296b08",
+      "author": "Mattia Pastrello",
+      "date": "2026-10-27T15:49:21+01:00",
+      "subject": "fix(validate): read block-scalar descriptions so the 1024-char cap applies (#302)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 63,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "d2d4c53fa8b6fe5bf52fa7c12f590aa852573eb1",
+      "short_hash": "d2d4c53",
+      "author": "Dex Hünter",
+      "date": "2026-10-27T14:50:23Z",
+      "subject": "perf(sanitize): deduplicate Unicode checks -- 50% less extraction time (#304)",
+      "coauthors": [
+        "Aiden"
+      ],
+      "additions": 25,
+      "deletions": 18,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "65b2f64314bf5583442848fbde142c8d5bde00be",
+      "short_hash": "65b2f64",
+      "author": "Wasif",
+      "date": "2026-10-27T18:52:39+04:00",
+      "subject": "docs(validate_skill): make the documented lens list match the real one (#298)",
+      "coauthors": [],
+      "additions": 6,
+      "deletions": 11,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "7540eefbe74933f5fc84c86becac52486b347778",
+      "short_hash": "7540eef",
+      "author": "Stamina9",
+      "date": "2026-10-28T21:26:03+08:00",
+      "subject": "fix(epub): decode UTF-16 XML in stdlib fallback (#311)",
+      "coauthors": [],
+      "additions": 144,
+      "deletions": 4,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "fdb37c174e6226fc05079f3640e8ddda09f3725e",
+      "short_hash": "fdb37c1",
+      "author": "teachershuang",
+      "date": "2026-11-04T01:24:45+08:00",
+      "subject": "fix(epub): report text fallback in technical mode (#319)",
+      "coauthors": [],
+      "additions": 149,
+      "deletions": 1,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "e330b131c3d798aa38c1ee32cb7d35885cdcb3cf",
+      "short_hash": "e330b13",
+      "author": "Stamina9",
+      "date": "2026-11-04T01:26:13+08:00",
+      "subject": "fix(rtf): preserve required line breaks in fallback (#313)",
+      "coauthors": [],
+      "additions": 61,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "9fb0dacdeff231773c76a73bdf8519d993f1b0f3",
+      "short_hash": "9fb0dac",
+      "author": "Stamina9",
+      "date": "2026-11-04T01:27:04+08:00",
+      "subject": "fix(epub): decode container path XML references (#317)",
+      "coauthors": [],
+      "additions": 101,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "c41312b76e24a7e5c023195b589de64f2054ae53",
+      "short_hash": "c41312b",
+      "author": "Shubham Srivastava",
+      "date": "2026-11-03T17:27:54Z",
+      "subject": "feat(extractor): detect Armenian (Գլուխ) chapter headings (#314)",
+      "coauthors": [],
+      "additions": 38,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "9af24de500d0ee557832fb496b5080531992f6c5",
+      "short_hash": "9af24de",
+      "author": "Shubham Srivastava",
+      "date": "2026-11-03T17:28:50Z",
+      "subject": "feat(extractor): also detect Sinhala අධ්‍යාය chapter headings (#318)",
+      "coauthors": [],
+      "additions": 63,
+      "deletions": 11,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "6a8b75694edf75ccb9ac0efa1935280f4aa64b30",
+      "short_hash": "6a8b756",
+      "author": "virgiliojr94",
+      "date": "2026-11-03T13:34:24-04:00",
+      "subject": "feat(pdf): add opt-in physical-page evidence sidecar (#307)",
+      "coauthors": [],
+      "additions": 345,
+      "deletions": 1,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "182e1854782c2fce0e49af4f14c583e8c5a51673",
+      "short_hash": "182e185",
+      "author": "Amin Mortezaie",
+      "date": "2026-11-03T13:47:12-04:00",
+      "subject": "fix(pdf): detect chapters from the PDF outline and record chapter line ranges (#315)",
+      "coauthors": [
+        "Amin Mortezaie"
+      ],
+      "additions": 526,
+      "deletions": 2,
+      "files_count": 7,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "1efc6f43833c2c7ab96b8d1245fdabff3054b8bd",
+      "short_hash": "1efc6f4",
+      "author": "Carla Cristina",
+      "date": "2026-11-03T13:48:18-04:00",
+      "subject": "refactor(tests): reduce detected test smells (#321)",
+      "coauthors": [
+        "Kaylanne"
+      ],
+      "additions": 207,
+      "deletions": 169,
+      "files_count": 12,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "e7bb659d3261491c8b28793dcb9102fa64a46c22",
+      "short_hash": "e7bb659",
+      "author": "Adwait M.",
+      "date": "2026-11-03T13:53:10-04:00",
+      "subject": "test(cli): add entry-point tests for cli.py and __main__.py (#90)",
+      "coauthors": [
+        "Adwait M."
+      ],
+      "additions": 53,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

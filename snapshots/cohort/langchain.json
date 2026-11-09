@@ -1,0 +1,63 @@
+{
+  "repo": "langchain",
+  "full_name": "langchain-ai/langchain",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "3a1bdce3f51e302d468807e980455d676c0f5fd6",
+      "snapshot_date": "2023-04-22T09:35:03-07:00",
+      "first_commit_date": "2022-10-24T14:51:15-07:00",
+      "commits": 1467,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 18.5,
+      "revert_pct": 0.1,
+      "churn_ratio": 1.47,
+      "survival_rate_pct": 81.1,
+      "code": {
+        "current_loc": 61100,
+        "additions": 73413,
+        "deletions": 12313,
+        "churn_ratio": 1.4,
+        "survival_rate_pct": 83.2
+      },
+      "docs": {
+        "current_loc": 5439,
+        "additions": 8648,
+        "deletions": 3209,
+        "churn_ratio": 2.18,
+        "survival_rate_pct": 62.9
+      },
+      "rapid_fire_pct": 30.5,
+      "unique_authors": 394
+    },
+    "365": {
+      "snapshot_commit": "286a29a49ec16dc784543e31a610b8042716802f",
+      "snapshot_date": "2023-10-24T13:52:17-07:00",
+      "first_commit_date": "2022-10-24T14:51:15-07:00",
+      "commits": 5312,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 19.6,
+      "revert_pct": 0.4,
+      "churn_ratio": 1.79,
+      "survival_rate_pct": 71.5,
+      "code": {
+        "current_loc": 256258,
+        "additions": 337082,
+        "deletions": 78112,
+        "churn_ratio": 1.62,
+        "survival_rate_pct": 76.0
+      },
+      "docs": {
+        "current_loc": 23164,
+        "additions": 53518,
+        "deletions": 30313,
+        "churn_ratio": 3.62,
+        "survival_rate_pct": 43.3
+      },
+      "rapid_fire_pct": 26.9,
+      "unique_authors": 1467
+    }
+  }
+}

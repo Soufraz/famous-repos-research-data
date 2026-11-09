@@ -1,0 +1,691 @@
+{
+  "repo": "lobehub",
+  "full_name": "lobehub/lobehub",
+  "stars": 84366,
+  "stars_source": "github-api 2026-11-08T08:59:25Z",
+  "selection_topics": [
+    "agent-harness"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2023-05-21T07:19:12Z",
+    "description": "🤯 LobeHub - Super-Agents on Your Team. Add super-agents to the chats your team already uses.They take on work by themselves and get better every week.",
+    "fork": false,
+    "forks": 16137,
+    "full_name": "lobehub/lobehub",
+    "pushed_at": "2026-11-08T08:45:07Z",
+    "stars": 84366,
+    "fetched_at": "2026-11-08T08:59:25Z"
+  },
+  "url": "https://github.com/lobehub/lobehub",
+  "description": "🤯 LobeHub - Super-Agents on Your Team. Add super-agents to the chats your team already uses.They take on work by themselves and get better every week.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "56821836bbf87ad7fc70c1393b6553f4252bfcb6",
+    "head_date": "2026-11-08T13:58:33+08:00",
+    "history_complete": true,
+    "non_merge_commits": 15635,
+    "merge_commits": 233,
+    "maintenance_bot_commits": 2765,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 2829,
+    "explicit_ai_pct": 22.0,
+    "by_tool": {
+      "claude": 2752,
+      "other": 47,
+      "copilot": 19,
+      "cursor": 6,
+      "devin": 3,
+      "codex": 1,
+      "amp": 1
+    },
+    "by_signal": {
+      "co-author": 2812,
+      "footer": 13,
+      "agent-author": 4
+    },
+    "recent_180d": {
+      "commits": 5330,
+      "ai_pct": 40.7,
+      "fix_pct": 43.5
+    },
+    "first_365d": {
+      "commits": 1463,
+      "ai_pct": 0.0,
+      "fix_pct": 29.2
+    },
+    "bot_commit_count": 2765,
+    "agent_config": {
+      "files": {
+        ".agents/": "2026-01-22T17:39:01+08:00",
+        ".claude/": "2025-10-14T21:24:26+08:00",
+        ".codex/": "2026-01-20T16:19:16+08:00",
+        ".cursor/": "2025-04-23T00:54:22+08:00",
+        ".gemini/": "2026-10-01T10:46:02+08:00",
+        "AGENTS.md": "2025-08-29T15:52:02+08:00",
+        "GEMINI.md": "2025-11-27T20:10:40+08:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2025-04-23T00:54:22+08:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 12870,
+    "first_commit_date": "2023-05-21T07:19:20Z",
+    "last_commit_date": "2026-11-08T13:58:33+08:00",
+    "current_loc": 3508415,
+    "total_historical_additions": 5032996,
+    "total_historical_deletions": 1524122,
+    "total_churn": 6557118,
+    "churn_ratio": 1.87,
+    "survival_rate_pct": 69.7,
+    "code": {
+      "current_loc": 3381118,
+      "additions": 4782807,
+      "deletions": 1401717,
+      "churn_ratio": 1.83,
+      "survival_rate_pct": 70.7
+    },
+    "docs": {
+      "current_loc": 127297,
+      "additions": 250189,
+      "deletions": 122405,
+      "churn_ratio": 2.93,
+      "survival_rate_pct": 50.9
+    },
+    "fix_commits": 4494,
+    "fix_pct": 34.9,
+    "revert_commits": 25,
+    "revert_pct": 0.2,
+    "trial_error_commits": 4554,
+    "trial_error_pct": 35.4,
+    "rapid_fire_commits": 1669,
+    "rapid_fire_pct": 13.0,
+    "trial_error_chains": 636,
+    "suspicious_additions_count": 1198,
+    "top5_hotspot_volatility_pct": 2.1
+  },
+  "code_hygiene": {
+    "total_files": 21150,
+    "docs_files": 914,
+    "avg_file_loc": 159.9,
+    "test_loc": 1483155,
+    "test_files": 6324,
+    "test_ratio_pct": 43.9,
+    "comment_ratio_pct": 8.9,
+    "monolith_count": 288,
+    "top_languages": {
+      ".ts": 2771102,
+      ".tsx": 558473,
+      ".mjs": 19765,
+      ".sh": 9143,
+      ".sql": 8749
+    }
+  },
+  "authors": {
+    "unique_authors": 378,
+    "top_authors": [
+      {
+        "name": "Arvin Xu",
+        "commits": 4244,
+        "pct": 33.0
+      },
+      {
+        "name": "lobehubbot",
+        "commits": 1549,
+        "pct": 12.0
+      },
+      {
+        "name": "Innei",
+        "commits": 1125,
+        "pct": 8.7
+      },
+      {
+        "name": "YuTengjing",
+        "commits": 1101,
+        "pct": 8.6
+      },
+      {
+        "name": "arvinxx",
+        "commits": 496,
+        "pct": 3.9
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 6.9,
+    "p75": 44.2,
+    "p90": 289.4,
+    "p95": 1086.4,
+    "p99": 25080.0,
+    "avg": 2110.8
+  },
+  "hotspots": [
+    {
+      "file": "README.md",
+      "commits": 441,
+      "additions": 4371,
+      "deletions": 3850,
+      "churn": 8221,
+      "first_seen": "2023-05-21T07:19:20Z",
+      "last_seen": "2026-11-06T12:13:23+08:00"
+    },
+    {
+      "file": "README.zh-CN.md",
+      "commits": 398,
+      "additions": 3946,
+      "deletions": 3690,
+      "churn": 7636,
+      "first_seen": "2023-09-11T10:02:36Z",
+      "last_seen": "2026-11-06T12:13:23+08:00"
+    },
+    {
+      "file": "apps/server/src/services/aiAgent/index.ts",
+      "commits": 185,
+      "additions": 6758,
+      "deletions": 9073,
+      "churn": 15831,
+      "first_seen": "2026-06-09T18:09:26+08:00",
+      "last_seen": "2026-11-06T16:17:30+08:00"
+    },
+    {
+      "file": "src/store/global/initialState.ts",
+      "commits": 180,
+      "additions": 1033,
+      "deletions": 290,
+      "churn": 1323,
+      "first_seen": "2023-08-12T10:32:44+08:00",
+      "last_seen": "2026-11-06T11:02:22+08:00"
+    },
+    {
+      "file": "src/libs/swr/keys.ts",
+      "commits": 173,
+      "additions": 1990,
+      "deletions": 907,
+      "churn": 2897,
+      "first_seen": "2026-06-15T02:02:09+08:00",
+      "last_seen": "2026-11-06T11:02:22+08:00"
+    },
+    {
+      "file": "src/store/chat/slices/topic/action.ts",
+      "commits": 124,
+      "additions": 3616,
+      "deletions": 1804,
+      "churn": 5420,
+      "first_seen": "2023-12-23T17:33:59+08:00",
+      "last_seen": "2026-11-01T23:33:50+08:00"
+    },
+    {
+      "file": "src/server/services/aiAgent/index.ts",
+      "commits": 120,
+      "additions": 4380,
+      "deletions": 1103,
+      "churn": 5483,
+      "first_seen": "2025-12-20T22:37:22+08:00",
+      "last_seen": "2026-06-09T15:54:26+08:00"
+    },
+    {
+      "file": "packages/database/src/models/message.ts",
+      "commits": 119,
+      "additions": 7105,
+      "deletions": 7805,
+      "churn": 14910,
+      "first_seen": "2025-08-22T11:09:03+08:00",
+      "last_seen": "2026-10-18T21:04:34+08:00"
+    },
+    {
+      "file": "src/services/chat.ts",
+      "commits": 102,
+      "additions": 1466,
+      "deletions": 618,
+      "churn": 2084,
+      "first_seen": "2023-11-20T20:50:06+08:00",
+      "last_seen": "2025-08-30T23:52:42+08:00"
+    },
+    {
+      "file": "src/server/modules/AgentRuntime/RuntimeExecutors.ts",
+      "commits": 97,
+      "additions": 5865,
+      "deletions": 1862,
+      "churn": 7727,
+      "first_seen": "2025-12-20T22:37:22+08:00",
+      "last_seen": "2026-06-09T17:21:39+08:00"
+    },
+    {
+      "file": "src/store/chat/slices/agentRun/actions/transports/gateway/gateway.ts",
+      "commits": 94,
+      "additions": 3018,
+      "deletions": 1152,
+      "churn": 4170,
+      "first_seen": "2026-06-21T16:29:50+08:00",
+      "last_seen": "2026-11-06T15:27:18+08:00"
+    },
+    {
+      "file": "packages/types/src/user/preference.ts",
+      "commits": 94,
+      "additions": 576,
+      "deletions": 148,
+      "churn": 724,
+      "first_seen": "2025-11-04T18:35:49+08:00",
+      "last_seen": "2026-11-03T18:40:20+08:00"
+    },
+    {
+      "file": "src/features/Conversation/Error/index.tsx",
+      "commits": 94,
+      "additions": 1132,
+      "deletions": 526,
+      "churn": 1658,
+      "first_seen": "2024-01-03T13:42:11+08:00",
+      "last_seen": "2026-10-29T02:56:38-04:00"
+    },
+    {
+      "file": "apps/server/src/services/agentRuntime/AgentRuntimeService.ts",
+      "commits": 92,
+      "additions": 4478,
+      "deletions": 6431,
+      "churn": 10909,
+      "first_seen": "2026-06-09T18:09:26+08:00",
+      "last_seen": "2026-10-18T13:29:04+08:00"
+    },
+    {
+      "file": "packages/database/src/models/topic.ts",
+      "commits": 91,
+      "additions": 3664,
+      "deletions": 4003,
+      "churn": 7667,
+      "first_seen": "2025-08-22T11:09:03+08:00",
+      "last_seen": "2026-10-18T20:12:51+08:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "packages/sdk/src/generated/types.gen.ts",
+      "loc": 13123
+    },
+    {
+      "file": "apps/server/src/modules/AgentRuntime/__tests__/RuntimeExecutors.test.ts",
+      "loc": 6702
+    },
+    {
+      "file": "src/store/chat/slices/agentRun/actions/__tests__/conversationLifecycle.test.ts",
+      "loc": 6053
+    },
+    {
+      "file": "src/store/chat/slices/agentRun/actions/__tests__/heterogeneousAgentExecutor.test.ts",
+      "loc": 5787
+    },
+    {
+      "file": "apps/desktop/src/main/controllers/__tests__/HeterogeneousAgentCtr.test.ts",
+      "loc": 5482
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "efd400afe80b82cebd1208526a42abd14e42667c",
+      "short_hash": "efd400afe8",
+      "author": "Arvin Xu",
+      "date": "2026-11-07T22:38:08+08:00",
+      "subject": "🐛 fix(channel): show Agent profile card when hovering its message avatar (#22515)",
+      "coauthors": [],
+      "additions": 126,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "3d7712cf204a551863d4e8e3d54a0ecbdf7e9bb0",
+      "short_hash": "3d7712cf20",
+      "author": "Arvin Xu",
+      "date": "2026-11-07T22:59:56+08:00",
+      "subject": "✨ feat(agent-identity): agent mail chain, control plane, runtime and CLI (backend) (#22009)",
+      "coauthors": [],
+      "additions": 10207,
+      "deletions": 721,
+      "files_count": 101,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "0c137f27a2612ccbdce009972fe3b29fa8c78523",
+      "short_hash": "0c137f27a2",
+      "author": "Mocha",
+      "date": "2026-11-07T10:27:03-05:00",
+      "subject": "🐛 fix(agent-runtime): Agent Runtime Redis 客户端读取 REDIS_PASSWORD 等连接配置 (#22553)",
+      "coauthors": [],
+      "additions": 81,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "0227312e502829f92dae8bfa4333e54dfa9d2e37",
+      "short_hash": "0227312e50",
+      "author": "Arvin Xu",
+      "date": "2026-11-08T00:30:05+08:00",
+      "subject": "✨ feat(acceptance): let builders dispute acceptance checks, arbitrated by a three-model panel (#21239)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 2849,
+      "deletions": 111,
+      "files_count": 68,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "8b6594a5d189fdfb1ef4e93ea856ba26b76868e5",
+      "short_hash": "8b6594a5d1",
+      "author": "Lobehub Coder",
+      "date": "2026-11-08T00:34:21+08:00",
+      "subject": "🐛 fix(agent-runtime): deliver background sub-agent results again (#22530)",
+      "coauthors": [
+        "lobehub-coder"
+      ],
+      "additions": 111,
+      "deletions": 4,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "e12cd9a206b4687755098aabd850c031e597fbed",
+      "short_hash": "e12cd9a206",
+      "author": "Arvin Xu",
+      "date": "2026-11-08T01:10:25+08:00",
+      "subject": "💄 style(channel): tighten conversation side padding to 16px (#22562)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 6,
+      "deletions": 6,
+      "files_count": 5,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "97116219814647978d01fd208dfd5b10e000d548",
+      "short_hash": "9711621981",
+      "author": "Arvin Xu",
+      "date": "2026-11-08T01:16:57+08:00",
+      "subject": "🐛 fix(spend): label the inbox request trigger in usage tables (#22560)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "11af25573164cb16f603d406d57a84943ed73564",
+      "short_hash": "11af255731",
+      "author": "Arvin Xu",
+      "date": "2026-11-08T01:18:46+08:00",
+      "subject": "🗃️ feat(database): add agent account settings and an inbox topic index (#22557)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 91,
+      "deletions": 1,
+      "files_count": 7,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "5556624f6ca0d1d10bbb6344d8d52437651425b5",
+      "short_hash": "5556624f6c",
+      "author": "Arvin Xu",
+      "date": "2026-11-08T01:19:36+08:00",
+      "subject": "💄 style(channel): IM-style composer attachments and WeChat-style day dividers (#22556)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 569,
+      "deletions": 28,
+      "files_count": 9,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "b4a9ea8cbc7ca92267d5a38d67bf39eb76a05e1d",
+      "short_hash": "b4a9ea8cbc",
+      "author": "Arvin Xu",
+      "date": "2026-11-08T01:28:53+08:00",
+      "subject": "✨ feat(channel): direct-chat typing in header, icon message toolbar, open reply topic (#22559)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 520,
+      "deletions": 56,
+      "files_count": 15,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "a5df928141458071e2abc85c0187cf3caad974d1",
+      "short_hash": "a5df928141",
+      "author": "Innei",
+      "date": "2026-11-08T01:54:01+08:00",
+      "subject": "♻️ test: consolidate test simplification across modules (#22337)",
+      "coauthors": [],
+      "additions": 7721,
+      "deletions": 22441,
+      "files_count": 201,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "e3cd3d1ca2303dacd83cfb16b3c1bd860b44dfad",
+      "short_hash": "e3cd3d1ca2",
+      "author": "Bryan",
+      "date": "2026-11-08T02:00:14+08:00",
+      "subject": "🐛 fix(connector): derive default OAuth scopes from the protected resource (#22564)",
+      "coauthors": [],
+      "additions": 178,
+      "deletions": 18,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "69b0c8b7dfe38976c2514d65cba060aff66f111c",
+      "short_hash": "69b0c8b7df",
+      "author": "Mocha",
+      "date": "2026-11-07T21:28:09-05:00",
+      "subject": "✨ feat(heterogeneous-agents): run Copilot and Cursor ACP with full access by default (#22574)",
+      "coauthors": [],
+      "additions": 65,
+      "deletions": 6,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "3bdbad730ee235ffbec5d77c436c1b490fb14f77",
+      "short_hash": "3bdbad730e",
+      "author": "Mocha",
+      "date": "2026-11-07T21:28:34-05:00",
+      "subject": "🐛 fix(hetero): run Claude Code under the lobehub entrypoint (#22573)",
+      "coauthors": [],
+      "additions": 25,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "16c795ac62545f353a16cf0522f23dd6b3753b99",
+      "short_hash": "16c795ac62",
+      "author": "Arvin Xu",
+      "date": "2026-11-08T11:45:22+08:00",
+      "subject": "🐛 fix(model-runtime): classify a provider-closed stream as ProviderStreamInterrupted (#22565)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 73,
+      "deletions": 10,
+      "files_count": 11,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "f819a2d25b8220c3250d4830b2f9709642e95748",
+      "short_hash": "f819a2d25b",
+      "author": "Mocha",
+      "date": "2026-11-07T22:49:55-05:00",
+      "subject": "✨ feat(hetero): steer a running Claude Code session with queued follow-ups (#22575)",
+      "coauthors": [],
+      "additions": 1317,
+      "deletions": 17,
+      "files_count": 23,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "c40b59c8b5239d683d90cbd047016eba99d775a2",
+      "short_hash": "c40b59c8b5",
+      "author": "Arvin Xu",
+      "date": "2026-11-08T11:58:19+08:00",
+      "subject": "✨ feat(agent-identity): wake on mail by rules, fold the rest into a digest (#22555)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 2040,
+      "deletions": 41,
+      "files_count": 23,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "8a73747d95d23bc7967972475d93cb8c6b71a51d",
+      "short_hash": "8a73747d95",
+      "author": "Arvin Xu",
+      "date": "2026-11-08T12:18:39+08:00",
+      "subject": "🐛 fix(project): reject binding a working directory missing on its device (#22558)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 114,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "2f3181696c66477943bec29e154493ae631ab76b",
+      "short_hash": "2f3181696c",
+      "author": "Arvin Xu",
+      "date": "2026-11-08T13:57:50+08:00",
+      "subject": "✨ feat(channel): configure each Agent's reply strategy and record its wake decisions (#22551)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 891,
+      "deletions": 26,
+      "files_count": 22,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "56821836bbf87ad7fc70c1393b6553f4252bfcb6",
+      "short_hash": "56821836bb",
+      "author": "Arvin Xu",
+      "date": "2026-11-08T13:58:33+08:00",
+      "subject": "✨ feat(channel): tell a responder when unseen history is left out, and mark its own replies (#22550)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 147,
+      "deletions": 20,
+      "files_count": 9,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

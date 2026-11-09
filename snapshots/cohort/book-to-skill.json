@@ -1,0 +1,36 @@
+{
+  "repo": "book-to-skill",
+  "full_name": "virgiliojr94/book-to-skill",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "fece258123879acf4ac6535dc4986b32e13df0c9",
+      "snapshot_date": "2026-10-27T10:53:55-04:00",
+      "first_commit_date": "2026-04-30T22:09:33-04:00",
+      "commits": 222,
+      "ai_pct": 28.4,
+      "has_agent_config": true,
+      "fix_pct": 42.3,
+      "revert_pct": 0.0,
+      "churn_ratio": 1.29,
+      "survival_rate_pct": 87.4,
+      "code": {
+        "current_loc": 15394,
+        "additions": 17216,
+        "deletions": 1822,
+        "churn_ratio": 1.24,
+        "survival_rate_pct": 89.4
+      },
+      "docs": {
+        "current_loc": 3443,
+        "additions": 4325,
+        "deletions": 882,
+        "churn_ratio": 1.51,
+        "survival_rate_pct": 79.6
+      },
+      "rapid_fire_pct": 32.0,
+      "unique_authors": 56
+    },
+    "365": null
+  }
+}

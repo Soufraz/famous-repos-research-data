@@ -1,0 +1,36 @@
+{
+  "repo": "humanizer",
+  "full_name": "blader/humanizer",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "1b48564898e999219882660237fde01bf4843a0f",
+      "snapshot_date": "2026-06-29T13:43:04-07:00",
+      "first_commit_date": "2026-01-17T21:30:11-08:00",
+      "commits": 27,
+      "ai_pct": 25.9,
+      "has_agent_config": true,
+      "fix_pct": 25.9,
+      "revert_pct": 0.0,
+      "churn_ratio": 2.49,
+      "survival_rate_pct": 57.3,
+      "code": {
+        "current_loc": 0,
+        "additions": 0,
+        "deletions": 0,
+        "churn_ratio": 0.0,
+        "survival_rate_pct": 0.0
+      },
+      "docs": {
+        "current_loc": 863,
+        "additions": 1507,
+        "deletions": 644,
+        "churn_ratio": 2.49,
+        "survival_rate_pct": 57.3
+      },
+      "rapid_fire_pct": 7.4,
+      "unique_authors": 10
+    },
+    "365": null
+  }
+}

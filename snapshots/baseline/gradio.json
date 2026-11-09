@@ -1,0 +1,63 @@
+{
+  "repo": "gradio",
+  "full_name": "gradio-app/gradio",
+  "group": "baseline",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "3a7253087e0ef75ebf90117165f4603f3a932780",
+      "snapshot_date": "2019-03-18T05:38:10-07:00",
+      "first_commit_date": "2018-09-19T07:30:40-07:00",
+      "commits": 128,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 8.6,
+      "revert_pct": 0.8,
+      "churn_ratio": 6.05,
+      "survival_rate_pct": 28.4,
+      "code": {
+        "current_loc": 11024,
+        "additions": 38962,
+        "deletions": 27941,
+        "churn_ratio": 6.07,
+        "survival_rate_pct": 28.3
+      },
+      "docs": {
+        "current_loc": 73,
+        "additions": 134,
+        "deletions": 61,
+        "churn_ratio": 2.67,
+        "survival_rate_pct": 54.5
+      },
+      "rapid_fire_pct": 11.7,
+      "unique_authors": 5
+    },
+    "365": {
+      "snapshot_commit": "af13dafe494f9f5004a2f9c03ebe4ae83a46d6b8",
+      "snapshot_date": "2019-09-17T11:08:09-07:00",
+      "first_commit_date": "2018-09-19T07:30:40-07:00",
+      "commits": 289,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 12.1,
+      "revert_pct": 0.3,
+      "churn_ratio": 19.83,
+      "survival_rate_pct": 9.6,
+      "code": {
+        "current_loc": 4175,
+        "additions": 44197,
+        "deletions": 40154,
+        "churn_ratio": 20.2,
+        "survival_rate_pct": 9.4
+      },
+      "docs": {
+        "current_loc": 102,
+        "additions": 272,
+        "deletions": 170,
+        "churn_ratio": 4.33,
+        "survival_rate_pct": 37.5
+      },
+      "rapid_fire_pct": 15.2,
+      "unique_authors": 11
+    }
+  }
+}

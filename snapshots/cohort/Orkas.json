@@ -1,0 +1,36 @@
+{
+  "repo": "Orkas",
+  "full_name": "Orkas-AI/Orkas",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "b780de1e47caa49c6e1afa90a9520739b04339a9",
+      "snapshot_date": "2026-10-26T11:01:50+08:00",
+      "first_commit_date": "2026-04-29T20:00:15+08:00",
+      "commits": 562,
+      "ai_pct": 6.6,
+      "has_agent_config": false,
+      "fix_pct": 29.0,
+      "revert_pct": 0.0,
+      "churn_ratio": 1.17,
+      "survival_rate_pct": 92.0,
+      "code": {
+        "current_loc": 1777391,
+        "additions": 1921815,
+        "deletions": 144145,
+        "churn_ratio": 1.16,
+        "survival_rate_pct": 92.5
+      },
+      "docs": {
+        "current_loc": 34392,
+        "additions": 47183,
+        "deletions": 12791,
+        "churn_ratio": 1.74,
+        "survival_rate_pct": 72.9
+      },
+      "rapid_fire_pct": 35.1,
+      "unique_authors": 14
+    },
+    "365": null
+  }
+}

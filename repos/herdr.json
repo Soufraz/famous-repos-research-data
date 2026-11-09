@@ -1,0 +1,657 @@
+{
+  "repo": "herdr",
+  "full_name": "herdrdev/herdr",
+  "stars": 49219,
+  "stars_source": "github-api 2026-11-08T09:00:55Z",
+  "selection_topics": [
+    "coding-agents"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2026-03-27T17:54:33Z",
+    "description": "the runtime your coding agents live on",
+    "fork": false,
+    "forks": 3972,
+    "full_name": "herdrdev/herdr",
+    "pushed_at": "2026-11-07T12:32:55Z",
+    "stars": 49219,
+    "fetched_at": "2026-11-08T09:00:55Z"
+  },
+  "url": "https://github.com/herdrdev/herdr",
+  "description": "the runtime your coding agents live on",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "ee5bfb5041bb3e4a49d591c72308aae3c81ecdde",
+    "head_date": "2026-10-29T15:56:49+03:00",
+    "history_complete": true,
+    "non_merge_commits": 1875,
+    "merge_commits": 5,
+    "maintenance_bot_commits": 139,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 5,
+    "explicit_ai_pct": 0.3,
+    "by_tool": {
+      "claude": 2,
+      "cursor": 1,
+      "other": 1,
+      "copilot": 1
+    },
+    "by_signal": {
+      "co-author": 5
+    },
+    "recent_180d": {
+      "commits": 1432,
+      "ai_pct": 0.3,
+      "fix_pct": 59.4
+    },
+    "first_365d": {
+      "commits": 1736,
+      "ai_pct": 0.3,
+      "fix_pct": 55.1
+    },
+    "bot_commit_count": 139,
+    "agent_config": {
+      "files": {
+        ".agents/": "2026-07-25T20:58:20+03:00",
+        "AGENTS.md": "2026-03-27T21:37:05+03:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2026-03-27T21:37:05+03:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 1736,
+    "first_commit_date": "2026-03-23T00:36:52+03:00",
+    "last_commit_date": "2026-10-29T15:56:49+03:00",
+    "current_loc": 554894,
+    "total_historical_additions": 788347,
+    "total_historical_deletions": 234001,
+    "total_churn": 1022348,
+    "churn_ratio": 1.84,
+    "survival_rate_pct": 70.4,
+    "code": {
+      "current_loc": 344596,
+      "additions": 550706,
+      "deletions": 206123,
+      "churn_ratio": 2.2,
+      "survival_rate_pct": 62.6
+    },
+    "docs": {
+      "current_loc": 210298,
+      "additions": 237641,
+      "deletions": 27878,
+      "churn_ratio": 1.26,
+      "survival_rate_pct": 88.5
+    },
+    "fix_commits": 956,
+    "fix_pct": 55.1,
+    "revert_commits": 0,
+    "revert_pct": 0.0,
+    "trial_error_commits": 956,
+    "trial_error_pct": 55.1,
+    "rapid_fire_commits": 135,
+    "rapid_fire_pct": 7.8,
+    "trial_error_chains": 47,
+    "suspicious_additions_count": 110,
+    "top5_hotspot_volatility_pct": 10.4
+  },
+  "code_hygiene": {
+    "total_files": 538,
+    "docs_files": 1078,
+    "avg_file_loc": 640.5,
+    "test_loc": 58289,
+    "test_files": 73,
+    "test_ratio_pct": 16.9,
+    "comment_ratio_pct": 4.7,
+    "monolith_count": 84,
+    "top_languages": {
+      ".rs": 325939,
+      ".py": 7234,
+      ".ps1": 3734,
+      ".ts": 3577,
+      ".sh": 1900
+    }
+  },
+  "authors": {
+    "unique_authors": 91,
+    "top_authors": [
+      {
+        "name": "Ogulcan Celik",
+        "commits": 1134,
+        "pct": 65.3
+      },
+      {
+        "name": "Can Celik",
+        "commits": 176,
+        "pct": 10.1
+      },
+      {
+        "name": "JJ Liebig",
+        "commits": 150,
+        "pct": 8.6
+      },
+      {
+        "name": "akbash",
+        "commits": 128,
+        "pct": 7.4
+      },
+      {
+        "name": "Eric Yue",
+        "commits": 24,
+        "pct": 1.4
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 2.9,
+    "p75": 10.9,
+    "p90": 55.4,
+    "p95": 375.0,
+    "p99": 22920.0,
+    "avg": 1451.5
+  },
+  "hotspots": [
+    {
+      "file": "src/app/mod.rs",
+      "commits": 245,
+      "additions": 11026,
+      "deletions": 7496,
+      "churn": 18522,
+      "first_seen": "2026-03-23T00:36:52+03:00",
+      "last_seen": "2026-10-23T19:18:44+03:00"
+    },
+    {
+      "file": "src/main.rs",
+      "commits": 177,
+      "additions": 1429,
+      "deletions": 540,
+      "churn": 1969,
+      "first_seen": "2026-03-23T00:36:52+03:00",
+      "last_seen": "2026-10-06T00:46:23+03:00"
+    },
+    {
+      "file": "src/pane.rs",
+      "commits": 176,
+      "additions": 14769,
+      "deletions": 7925,
+      "churn": 22694,
+      "first_seen": "2026-03-23T00:36:52+03:00",
+      "last_seen": "2026-10-23T19:18:44+03:00"
+    },
+    {
+      "file": "src/server/headless.rs",
+      "commits": 163,
+      "additions": 16903,
+      "deletions": 13431,
+      "churn": 30334,
+      "first_seen": "2026-04-21T16:30:04+03:00",
+      "last_seen": "2026-10-23T19:18:44+03:00"
+    },
+    {
+      "file": "src/app/state.rs",
+      "commits": 141,
+      "additions": 3223,
+      "deletions": 1701,
+      "churn": 4924,
+      "first_seen": "2026-03-23T00:36:52+03:00",
+      "last_seen": "2026-10-03T02:21:24+03:00"
+    },
+    {
+      "file": "src/app/actions.rs",
+      "commits": 127,
+      "additions": 8477,
+      "deletions": 3747,
+      "churn": 12224,
+      "first_seen": "2026-03-23T00:36:52+03:00",
+      "last_seen": "2026-10-14T18:20:21+03:00"
+    },
+    {
+      "file": "src/ui.rs",
+      "commits": 115,
+      "additions": 7281,
+      "deletions": 7128,
+      "churn": 14409,
+      "first_seen": "2026-03-23T00:36:52+03:00",
+      "last_seen": "2026-10-03T02:21:24+03:00"
+    },
+    {
+      "file": "src/pane/terminal.rs",
+      "commits": 104,
+      "additions": 8881,
+      "deletions": 1257,
+      "churn": 10138,
+      "first_seen": "2026-04-21T16:30:04+03:00",
+      "last_seen": "2026-10-12T00:21:05+03:00"
+    },
+    {
+      "file": "docs/next/website/src/content/docs/configuration.mdx",
+      "commits": 103,
+      "additions": 967,
+      "deletions": 352,
+      "churn": 1319,
+      "first_seen": "2026-05-19T05:16:50+03:00",
+      "last_seen": "2026-09-30T18:56:30+02:00"
+    },
+    {
+      "file": "src/client/mod.rs",
+      "commits": 102,
+      "additions": 7498,
+      "deletions": 5107,
+      "churn": 12605,
+      "first_seen": "2026-04-21T16:30:04+03:00",
+      "last_seen": "2026-10-14T00:54:10+02:00"
+    },
+    {
+      "file": "src/app/api.rs",
+      "commits": 93,
+      "additions": 4913,
+      "deletions": 2398,
+      "churn": 7311,
+      "first_seen": "2026-04-13T23:45:46+03:00",
+      "last_seen": "2026-10-23T19:18:44+03:00"
+    },
+    {
+      "file": "README.md",
+      "commits": 91,
+      "additions": 1817,
+      "deletions": 1732,
+      "churn": 3549,
+      "first_seen": "2026-03-23T00:36:52+03:00",
+      "last_seen": "2026-09-29T13:19:53Z"
+    },
+    {
+      "file": "src/config/model.rs",
+      "commits": 83,
+      "additions": 2324,
+      "deletions": 207,
+      "churn": 2531,
+      "first_seen": "2026-04-21T16:30:04+03:00",
+      "last_seen": "2026-10-05T12:52:33+02:00"
+    },
+    {
+      "file": "tests/cli_wrapper.rs",
+      "commits": 82,
+      "additions": 6342,
+      "deletions": 6342,
+      "churn": 12684,
+      "first_seen": "2026-03-29T19:29:23+03:00",
+      "last_seen": "2026-07-19T23:52:20+03:00"
+    },
+    {
+      "file": "docs/next/website/src/content/docs/cli-reference.mdx",
+      "commits": 80,
+      "additions": 679,
+      "deletions": 103,
+      "churn": 782,
+      "first_seen": "2026-05-19T05:16:50+03:00",
+      "last_seen": "2026-10-13T16:39:00+02:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "src/server/headless/tests/mod.rs",
+      "loc": 8430
+    },
+    {
+      "file": "src/pane/terminal.rs",
+      "loc": 7624
+    },
+    {
+      "file": "src/pane.rs",
+      "loc": 6844
+    },
+    {
+      "file": "src/terminal/state.rs",
+      "loc": 6420
+    },
+    {
+      "file": "src/remote/attach.rs",
+      "loc": 6241
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "916fcf8de029c6cac965b50f3cdb9687cd7d1537",
+      "short_hash": "916fcf8d",
+      "author": "JJ Liebig",
+      "date": "2026-10-14T19:18:21+02:00",
+      "subject": "fix: probe windows remote hosts before /bin/sh (#5275)",
+      "coauthors": [],
+      "additions": 198,
+      "deletions": 25,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "77a176eb21617c5fb9f32977f10e951c190ce530",
+      "short_hash": "77a176eb",
+      "author": "JJ Liebig",
+      "date": "2026-10-15T18:48:45+02:00",
+      "subject": "fix: keep posix machine scripts intact through windows openssh (#5308)",
+      "coauthors": [],
+      "additions": 166,
+      "deletions": 16,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "e97c344ae016224e6bb255988ad417e8190da6e2",
+      "short_hash": "e97c344a",
+      "author": "Can Celik",
+      "date": "2026-10-15T20:18:01+03:00",
+      "subject": "fix: stop server crash when a cursor move carries a link onto a full page (#5303)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "b431a063e2cfdbfc3ca41bcd0dcbc329f92d217f",
+      "short_hash": "b431a063",
+      "author": "Can Celik",
+      "date": "2026-10-15T20:19:09+03:00",
+      "subject": "fix: keep the macos server running when its terminal quits (#5236)",
+      "coauthors": [],
+      "additions": 594,
+      "deletions": 1,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "143bf5fd4781d164260c63fe28e7dc08054ad32f",
+      "short_hash": "143bf5fd",
+      "author": "JJ Liebig",
+      "date": "2026-10-16T01:05:23+02:00",
+      "subject": "fix: keep polling when a resize samples a zero-sized grid (#5310)",
+      "coauthors": [],
+      "additions": 165,
+      "deletions": 24,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "ccc7521ad0cc9cfd2406bd7847f1ff8792c2e97a",
+      "short_hash": "ccc7521a",
+      "author": "JJ Liebig",
+      "date": "2026-10-21T16:12:50+02:00",
+      "subject": "fix: prevent windows ssh output from delaying typing (#5463)",
+      "coauthors": [],
+      "additions": 87,
+      "deletions": 28,
+      "files_count": 7,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "a2008661cd4a89ff6df22bf4a6b472bd413018be",
+      "short_hash": "a2008661",
+      "author": "JJ Liebig",
+      "date": "2026-10-21T18:36:36+02:00",
+      "subject": "test: stabilize plugin worker lease test (#5467)",
+      "coauthors": [],
+      "additions": 36,
+      "deletions": 17,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "5bd900d88c80d95f5b145397e45bbeea398b8165",
+      "short_hash": "5bd900d8",
+      "author": "JJ Liebig",
+      "date": "2026-10-21T23:28:59+02:00",
+      "subject": "test: synchronize shell and server startup checks (#5476)",
+      "coauthors": [],
+      "additions": 51,
+      "deletions": 12,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "9168dd332303cfe0d0beedfdc5a3ee6506c9a0e5",
+      "short_hash": "9168dd33",
+      "author": "JJ Liebig",
+      "date": "2026-10-23T14:32:13+02:00",
+      "subject": "fix: use newer stable releases on the preview channel",
+      "coauthors": [],
+      "additions": 335,
+      "deletions": 26,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "ff5881ef45086ffef98a907f0009f37f36565681",
+      "short_hash": "ff5881ef",
+      "author": "Can Celik",
+      "date": "2026-10-23T17:03:42+03:00",
+      "subject": "fix: keep a slow server's socket instead of treating a connect timeout as stale (#5511)",
+      "coauthors": [],
+      "additions": 6,
+      "deletions": 3,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "6b526626f66e22c08962a7f39a83fc9ac2ebda62",
+      "short_hash": "6b526626",
+      "author": "Can Celik",
+      "date": "2026-10-23T17:03:57+03:00",
+      "subject": "fix: keep the saved layout when panes die during host shutdown (#5510)",
+      "coauthors": [],
+      "additions": 156,
+      "deletions": 11,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "3f5032c963ee6a3e37eae7c8747b8196ef1dc1db",
+      "short_hash": "3f5032c9",
+      "author": "Can Celik",
+      "date": "2026-10-23T19:18:44+03:00",
+      "subject": "fix: send pane appearance changes only after the matching background (#5517)",
+      "coauthors": [],
+      "additions": 421,
+      "deletions": 35,
+      "files_count": 17,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "43b36b68caf593e7623fa389462d8ba097edcb11",
+      "short_hash": "43b36b68",
+      "author": "Can Celik",
+      "date": "2026-10-23T19:19:00+03:00",
+      "subject": "fix: detect hermes started by the newer installer launcher (#5518)",
+      "coauthors": [],
+      "additions": 91,
+      "deletions": 9,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "b796ca60ff01a15eef280a70e23143eb8150437e",
+      "short_hash": "b796ca60",
+      "author": "Ogulcan Celik",
+      "date": "2026-10-24T00:52:34+03:00",
+      "subject": "chore: remove the claude.md symlink",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "5608de0608918aba2f9d501e7793b984a0ca9cfa",
+      "short_hash": "5608de06",
+      "author": "Ogulcan Celik",
+      "date": "2026-10-24T00:54:08+03:00",
+      "subject": "test: wait for the hook to exit instead of a fixed timer in hook tests",
+      "coauthors": [],
+      "additions": 8,
+      "deletions": 3,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "de8503c190712d453573c0de228da36d56d464d1",
+      "short_hash": "de8503c1",
+      "author": "Can Celik",
+      "date": "2026-10-27T00:26:47+03:00",
+      "subject": "fix: bound clipboard helpers so a hung wl-copy or wl-paste can't freeze herdr (#5583)",
+      "coauthors": [],
+      "additions": 549,
+      "deletions": 186,
+      "files_count": 7,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "65da135f6211520da8e636f5279075a531a51dda",
+      "short_hash": "65da135f",
+      "author": "Can Celik",
+      "date": "2026-10-27T00:58:30+03:00",
+      "subject": "fix: make the remote ready marker work under tcsh login shells (#5519)",
+      "coauthors": [],
+      "additions": 26,
+      "deletions": 6,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "2713feb56e9c9db33992db0a262c68f7426d46dd",
+      "short_hash": "2713feb5",
+      "author": "Can Celik",
+      "date": "2026-10-27T01:00:51+03:00",
+      "subject": "fix: install opencode and kilo integrations under XDG_CONFIG_HOME (#5585)",
+      "coauthors": [],
+      "additions": 152,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "bc8c28988f75c538d4ca058b702f5adbea30566e",
+      "short_hash": "bc8c2898",
+      "author": "Ogulcan Celik",
+      "date": "2026-10-28T22:44:14+03:00",
+      "subject": "ci: close stale issues without outside engagement monthly",
+      "coauthors": [],
+      "additions": 233,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "ee5bfb5041bb3e4a49d591c72308aae3c81ecdde",
+      "short_hash": "ee5bfb50",
+      "author": "Ogulcan Celik",
+      "date": "2026-10-29T15:56:49+03:00",
+      "subject": "chore: point agents at the source instead of agent-guide and llms.txt",
+      "coauthors": [],
+      "additions": 10,
+      "deletions": 19,
+      "files_count": 8,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

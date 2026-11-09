@@ -1,0 +1,47 @@
+{
+  "repo": "agents",
+  "head_commit": "4bde316",
+  "published_results": [
+    {
+      "claim": "`static-score-snapshot.json` records how the plugin-eval static layer scores every skill at quick depth.",
+      "metric": "plugin-eval static-layer score per skill (static_score 0-1, composite 0-100, badge); sub-scores such as frontmatter_quality, token_efficiency, progressive_disclosure",
+      "value": "183 skill entries in the file (the repo publishes no aggregate). Badges in file: gold 13, silver 100, bronze 65, no_badge 5",
+      "baseline": null,
+      "evidence_type": "harness+results",
+      "files": [
+        "evals/README.md:7",
+        "evals/static-score-snapshot.json",
+        "Makefile:235",
+        "Makefile:236"
+      ],
+      "reproduce_command": "make eval-snapshot",
+      "notes": "NOT a performance outcome. The repo itself says 'The static layer is a lint' (plugins/plugin-eval/README.md:3-4); sub-scores are heuristics on file structure (line counts, MUST/NEVER density, trigger phrases; docs/plugin-eval.md:152-158). Used as a regression snapshot for the scoring code, not as evidence that skills improve agent results. Excluded from strongest_evidence_type."
+    },
+    {
+      "claim": "| **OpenCode** | 1.1.23 | ✅ pass | 191 / 191 subagents discovered | ... | **Pi** | 0.85.1 | ✅ pass | 105 / 105 prompt templates and 183 / 183 skills expand |",
+      "metric": "artifact load/discovery success in real harness CLIs",
+      "value": "OpenCode 191/191 subagents; Copilot 191 agent profiles, 155 skills, 25 commands validated; Pi 105/105 templates and 183/183 skills; gh skill 183/183; npx skills 183/183",
+      "baseline": null,
+      "evidence_type": "harness+results",
+      "files": [
+        "docs/round-trip-results.md:12",
+        "docs/round-trip-results.md:13",
+        "docs/round-trip-results.md:16",
+        "docs/round-trip-results.md:17",
+        "docs/round-trip-results.md:18",
+        "docs/round-trip-results.md:19"
+      ],
+      "reproduce_command": "make smoke-test",
+      "notes": "Pass/fail compatibility verification (do the generated files load), not a measured outcome of agent quality. Excluded from strongest_evidence_type."
+    }
+  ],
+  "strongest_evidence_type": "none",
+  "summary": "The repo publishes no measured outcome of its 202 agents / 185 skills (no accuracy, success-rate, token or cost results); evals/README.md:23-27 says the LLM-judge and Monte Carlo layers are unvalidated against human labels and the trace-based eval program is 'in progress' with traces kept outside the repo. What it does commit is a reproducible static-lint score snapshot for 183 skills (make eval-snapshot) and a real-CLI round-trip table showing generated artifacts load in 6+ harnesses (make smoke-test); both are structural checks, not performance evidence (the dimension table at docs/plugin-eval.md:437-442 is an illustrative sample report).",
+  "result_focus": "none",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself",
+  "accuracy_check": {
+    "date": "2026-11-08",
+    "numbers_checked": 14,
+    "corrections": []
+  }
+}

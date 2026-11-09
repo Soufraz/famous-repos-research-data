@@ -1,0 +1,662 @@
+{
+  "repo": "gsd-2",
+  "full_name": "gsd-build/gsd-2",
+  "stars": 7750,
+  "stars_source": "github-api 2026-11-08T09:07:01Z",
+  "selection_topics": [
+    "spec-driven-development"
+  ],
+  "github": {
+    "archived": true,
+    "created_at": "2026-03-11T04:28:49Z",
+    "description": "A powerful meta-prompting, context engineering and spec-driven development system that enables agents to work for long periods of time autonomously without losing track of the big picture",
+    "fork": false,
+    "forks": 753,
+    "full_name": "gsd-build/gsd-2",
+    "pushed_at": "2026-05-22T23:08:59Z",
+    "stars": 7750,
+    "fetched_at": "2026-11-08T09:07:01Z"
+  },
+  "url": "https://github.com/gsd-build/gsd-2",
+  "description": "A powerful meta-prompting, context engineering and spec-driven development system that enables agents to work for long periods of time autonomously without losing track of the big picture",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "33c00aaffa56e5d394bccce1c8df59fb842e84c5",
+    "head_date": "2026-05-22T18:08:55-05:00",
+    "history_complete": true,
+    "non_merge_commits": 5213,
+    "merge_commits": 1616,
+    "maintenance_bot_commits": 68,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 1323,
+    "explicit_ai_pct": 25.7,
+    "by_tool": {
+      "claude": 1266,
+      "copilot": 53,
+      "other": 4
+    },
+    "by_signal": {
+      "co-author": 1247,
+      "agent-author": 76
+    },
+    "recent_180d": {
+      "commits": 5145,
+      "ai_pct": 25.7,
+      "fix_pct": 64.6
+    },
+    "first_365d": {
+      "commits": 5145,
+      "ai_pct": 25.7,
+      "fix_pct": 64.6
+    },
+    "bot_commit_count": 68,
+    "agent_config": {
+      "files": {},
+      "ci_agent_workflows": [],
+      "has_agent_config": false,
+      "first_config_date": null
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 5145,
+    "first_commit_date": "2026-03-10T22:28:37-06:00",
+    "last_commit_date": "2026-05-22T17:41:46-05:00",
+    "current_loc": 807555,
+    "total_historical_additions": 1135109,
+    "total_historical_deletions": 308961,
+    "total_churn": 1444070,
+    "churn_ratio": 1.79,
+    "survival_rate_pct": 71.1,
+    "code": {
+      "current_loc": 715737,
+      "additions": 960312,
+      "deletions": 225383,
+      "churn_ratio": 1.66,
+      "survival_rate_pct": 74.5
+    },
+    "docs": {
+      "current_loc": 91818,
+      "additions": 174797,
+      "deletions": 83578,
+      "churn_ratio": 2.81,
+      "survival_rate_pct": 52.5
+    },
+    "fix_commits": 3326,
+    "fix_pct": 64.6,
+    "revert_commits": 10,
+    "revert_pct": 0.2,
+    "trial_error_commits": 3247,
+    "trial_error_pct": 63.1,
+    "rapid_fire_commits": 2120,
+    "rapid_fire_pct": 41.2,
+    "trial_error_chains": 1360,
+    "suspicious_additions_count": 166,
+    "top5_hotspot_volatility_pct": 4.3
+  },
+  "code_hygiene": {
+    "total_files": 2683,
+    "docs_files": 754,
+    "avg_file_loc": 266.8,
+    "test_loc": 302036,
+    "test_files": 1288,
+    "test_ratio_pct": 42.2,
+    "comment_ratio_pct": 10.4,
+    "monolith_count": 108,
+    "top_languages": {
+      ".ts": 647474,
+      ".tsx": 34758,
+      ".rs": 11361,
+      ".mjs": 10050,
+      ".js": 2817
+    }
+  },
+  "authors": {
+    "unique_authors": 109,
+    "top_authors": [
+      {
+        "name": "Jeremy",
+        "commits": 1511,
+        "pct": 29.4
+      },
+      {
+        "name": "Jeremy McSpadden",
+        "commits": 637,
+        "pct": 12.4
+      },
+      {
+        "name": "Lex Christopherson",
+        "commits": 549,
+        "pct": 10.7
+      },
+      {
+        "name": "Tom Boucher",
+        "commits": 520,
+        "pct": 10.1
+      },
+      {
+        "name": "TÂCHES",
+        "commits": 380,
+        "pct": 7.4
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 20.5,
+    "p75": 187.0,
+    "p90": 1671.4,
+    "p95": 5400.0,
+    "p99": 32040.0,
+    "avg": 1901.4
+  },
+  "hotspots": [
+    {
+      "file": "src/resources/extensions/gsd/auto.ts",
+      "commits": 417,
+      "additions": 12758,
+      "deletions": 9483,
+      "churn": 22241,
+      "first_seen": "2026-03-10T22:28:37-06:00",
+      "last_seen": "2026-05-20T16:55:40-05:00"
+    },
+    {
+      "file": "src/resources/extensions/gsd/guided-flow.ts",
+      "commits": 192,
+      "additions": 4453,
+      "deletions": 1566,
+      "churn": 6019,
+      "first_seen": "2026-03-10T22:28:37-06:00",
+      "last_seen": "2026-05-21T10:43:44-05:00"
+    },
+    {
+      "file": "src/resources/extensions/gsd/auto/phases.ts",
+      "commits": 185,
+      "additions": 4002,
+      "deletions": 983,
+      "churn": 4985,
+      "first_seen": "2026-03-21T10:40:38-04:00",
+      "last_seen": "2026-05-21T01:41:54-05:00"
+    },
+    {
+      "file": "src/resources/extensions/gsd/auto-worktree.ts",
+      "commits": 175,
+      "additions": 5345,
+      "deletions": 2683,
+      "churn": 8028,
+      "first_seen": "2026-03-14T22:31:37-06:00",
+      "last_seen": "2026-05-18T18:24:03-05:00"
+    },
+    {
+      "file": "src/resources/extensions/gsd/auto-dispatch.ts",
+      "commits": 149,
+      "additions": 3061,
+      "deletions": 1237,
+      "churn": 4298,
+      "first_seen": "2026-03-15T17:10:27-06:00",
+      "last_seen": "2026-05-20T13:56:46-05:00"
+    },
+    {
+      "file": "src/resources/extensions/gsd/auto-post-unit.ts",
+      "commits": 137,
+      "additions": 3891,
+      "deletions": 1291,
+      "churn": 5182,
+      "first_seen": "2026-03-17T22:26:05-06:00",
+      "last_seen": "2026-05-20T17:44:05-05:00"
+    },
+    {
+      "file": "src/resources/extensions/gsd/gsd-db.ts",
+      "commits": 133,
+      "additions": 6950,
+      "deletions": 3049,
+      "churn": 9999,
+      "first_seen": "2026-03-16T09:33:05-06:00",
+      "last_seen": "2026-05-20T23:41:10-05:00"
+    },
+    {
+      "file": "README.md",
+      "commits": 129,
+      "additions": 2114,
+      "deletions": 2076,
+      "churn": 4190,
+      "first_seen": "2026-03-10T22:28:37-06:00",
+      "last_seen": "2026-05-22T17:41:46-05:00"
+    },
+    {
+      "file": "src/resources/extensions/gsd/auto-prompts.ts",
+      "commits": 118,
+      "additions": 5392,
+      "deletions": 1300,
+      "churn": 6692,
+      "first_seen": "2026-03-15T16:43:48-06:00",
+      "last_seen": "2026-05-20T16:19:28-05:00"
+    },
+    {
+      "file": "src/resources/extensions/gsd/tests/auto-loop.test.ts",
+      "commits": 113,
+      "additions": 6576,
+      "deletions": 1058,
+      "churn": 7634,
+      "first_seen": "2026-03-19T14:56:00-06:00",
+      "last_seen": "2026-05-16T16:38:10-05:00"
+    },
+    {
+      "file": "src/resources/extensions/gsd/auto-start.ts",
+      "commits": 110,
+      "additions": 2558,
+      "deletions": 995,
+      "churn": 3553,
+      "first_seen": "2026-03-17T22:26:05-06:00",
+      "last_seen": "2026-05-19T22:08:50-05:00"
+    },
+    {
+      "file": "src/resources/extensions/gsd/state.ts",
+      "commits": 104,
+      "additions": 3567,
+      "deletions": 1338,
+      "churn": 4905,
+      "first_seen": "2026-03-10T22:28:37-06:00",
+      "last_seen": "2026-05-19T11:03:46-05:00"
+    },
+    {
+      "file": "src/resources/extensions/gsd/preferences.ts",
+      "commits": 103,
+      "additions": 2496,
+      "deletions": 1745,
+      "churn": 4241,
+      "first_seen": "2026-03-10T22:28:37-06:00",
+      "last_seen": "2026-05-19T18:16:52-05:00"
+    },
+    {
+      "file": "src/resources/extensions/gsd/auto/loop.ts",
+      "commits": 102,
+      "additions": 2451,
+      "deletions": 970,
+      "churn": 3421,
+      "first_seen": "2026-03-21T10:40:38-04:00",
+      "last_seen": "2026-05-21T17:21:45-05:00"
+    },
+    {
+      "file": "src/resources/extensions/gsd/git-service.ts",
+      "commits": 101,
+      "additions": 2543,
+      "deletions": 1101,
+      "churn": 3644,
+      "first_seen": "2026-03-12T10:56:10-06:00",
+      "last_seen": "2026-05-16T11:49:11-05:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "src/resources/extensions/gsd/tests/auto-loop.test.ts",
+      "loc": 5503
+    },
+    {
+      "file": "web/lib/gsd-workspace-store.tsx",
+      "loc": 5407
+    },
+    {
+      "file": "packages/pi-coding-agent/src/modes/interactive/interactive-mode.ts",
+      "loc": 4418
+    },
+    {
+      "file": "packages/pi-ai/src/models/generated/openrouter.ts",
+      "loc": 4291
+    },
+    {
+      "file": "src/resources/extensions/gsd/auto-prompts.ts",
+      "loc": 4108
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "6db6a20d13f16a087c9ffae3df3940483770239d",
+      "short_hash": "6db6a20d1",
+      "author": "PR Babysitter",
+      "date": "2026-05-16T18:07:40-05:00",
+      "subject": "fix(bug-2): Preflight stash fails on Windows reserved device names preflight now detects Windows reserved untracked names before stash and baseline `.gitignore` now blocks these names proactively.",
+      "coauthors": [],
+      "additions": 105,
+      "deletions": 0,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "e169acf9041b429d85cea7a5b3b983e627e47542",
+      "short_hash": "e169acf90",
+      "author": "PR Babysitter",
+      "date": "2026-05-16T18:26:27-05:00",
+      "subject": "Apply PatchDeck fixes for PR #6288",
+      "coauthors": [],
+      "additions": 16,
+      "deletions": 6,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "cf2fe41c64a54c035e58d5cc76b58afd401be3de",
+      "short_hash": "cf2fe41c6",
+      "author": "PatchDeck",
+      "date": "2026-05-21T02:48:40-05:00",
+      "subject": "Apply CI healing fixes for PR #6276",
+      "coauthors": [],
+      "additions": 3,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "72a2000ff0dbf0784374950fdeeee415f4773072",
+      "short_hash": "72a2000ff",
+      "author": "PatchDeck",
+      "date": "2026-05-21T03:03:19-05:00",
+      "subject": "Apply PatchDeck fixes for PR #6276",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "d921740cebb13756c4bd25c3fc1dedb97bd889a3",
+      "short_hash": "d921740ce",
+      "author": "PatchDeck",
+      "date": "2026-05-21T03:18:12-05:00",
+      "subject": "Apply PatchDeck fixes for PR #6276",
+      "coauthors": [],
+      "additions": 34,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "d40583c64bfc624e219f8daa45fbe65a12078145",
+      "short_hash": "d40583c64",
+      "author": "Jeremy",
+      "date": "2026-05-20T16:55:40-05:00",
+      "subject": "fix(gsd): keep completion rollup visible",
+      "coauthors": [],
+      "additions": 25,
+      "deletions": 12,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "ad5943fdafa29e8e0004d36a5fc73bbc44c0d912",
+      "short_hash": "ad5943fda",
+      "author": "PatchDeck",
+      "date": "2026-05-21T09:09:13-05:00",
+      "subject": "fix(lint): add secretscanignore entries for test-code false positives",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "7c1829cd5f41bcce2547a59c43d66c78553b2a50",
+      "short_hash": "7c1829cd5",
+      "author": "PatchDeck",
+      "date": "2026-05-21T09:25:04-05:00",
+      "subject": "chore: add secretscanignore exceptions for test-file false positives",
+      "coauthors": [
+        "PatchDeck"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "53b816f1010f72d63f5d9656b7ed8c53672a273e",
+      "short_hash": "53b816f10",
+      "author": "Jeremy",
+      "date": "2026-05-21T10:43:44-05:00",
+      "subject": "fix(headless): avoid duplicate auto start after milestone creation",
+      "coauthors": [],
+      "additions": 183,
+      "deletions": 18,
+      "files_count": 10,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "b30b8ef5c83bffae199184dede9e046737f5c9a6",
+      "short_hash": "b30b8ef5c",
+      "author": "PatchDeck",
+      "date": "2026-05-21T11:33:26-05:00",
+      "subject": "test(#5571): add recoverFailedMigration and no-orphan regression tests",
+      "coauthors": [
+        "Claude Sonnet 4.6 <noreply@anthropic.com>"
+      ],
+      "additions": 61,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "b5aa42df3c4677de10f77c9c42e912d0b01a1b3c",
+      "short_hash": "b5aa42df3",
+      "author": "PatchDeck",
+      "date": "2026-05-21T12:01:46-05:00",
+      "subject": "Apply CI healing fixes for PR #6037",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "5eca6dcd41e926eebb024f255230ce1112c82283",
+      "short_hash": "5eca6dcd4",
+      "author": "PatchDeck",
+      "date": "2026-05-21T13:04:48-05:00",
+      "subject": "test(issue-6309): regression tests for double-pause race in pauseAuto",
+      "coauthors": [
+        "Claude Sonnet 4.6 <noreply@anthropic.com>"
+      ],
+      "additions": 76,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "85c15e6f820d6e0837a817b1a61cd6f37b4dfbee",
+      "short_hash": "85c15e6f8",
+      "author": "PatchDeck",
+      "date": "2026-05-21T13:23:47-05:00",
+      "subject": "ci: retrigger CI against head with regression tests",
+      "coauthors": [
+        "Claude Sonnet 4.6 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "1b01b21788a226d8c249999e5b339f5a3af8ed1d",
+      "short_hash": "1b01b2178",
+      "author": "Jeremy",
+      "date": "2026-05-21T15:15:15-05:00",
+      "subject": "test(gsd): cover current worktree cleanup guard",
+      "coauthors": [],
+      "additions": 33,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "216b6d6986a943004b3ea17280ea2122ef9ad7ae",
+      "short_hash": "216b6d698",
+      "author": "PatchDeck",
+      "date": "2026-05-21T17:21:45-05:00",
+      "subject": "fix(bug-2): Idempotent advance guard stale state added clearLastAdvance() to clear lastFinalizedUnitKey after completeActiveUnit in the loop, with stuck-loop detector as the remaining safeguard.",
+      "coauthors": [],
+      "additions": 31,
+      "deletions": 0,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "ffa2127a73aba5ccd3b0fdc0be4801f86a9e51b9",
+      "short_hash": "ffa2127a7",
+      "author": "PatchDeck",
+      "date": "2026-05-21T17:21:45-05:00",
+      "subject": "fix(bug-1): ScheduleWakeup incompatibility (Feature Gap — covered by #4340) blocked ScheduleWakeup in the tool_call hook when auto-mode is active with a diagnostic message.",
+      "coauthors": [],
+      "additions": 16,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "6d8f92082e6541ab119109fb4c6fe7cab842fd89",
+      "short_hash": "6d8f92082",
+      "author": "jeremymcs",
+      "date": "2026-05-22T14:44:45-05:00",
+      "subject": "docs: redirect old repo to open gsd",
+      "coauthors": [],
+      "additions": 11,
+      "deletions": 995,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "0da9856be37072b0f95d2ce81b83798e50935b52",
+      "short_hash": "0da9856be",
+      "author": "Jeremy McSpadden",
+      "date": "2026-05-22T14:48:49-05:00",
+      "subject": "Update README.md",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 16,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "12648ffbc532a433d8ba7dab7396104ecd3252cd",
+      "short_hash": "12648ffbc",
+      "author": "jeremymcs",
+      "date": "2026-05-22T17:26:55-05:00",
+      "subject": "fix(github): redirect legacy forensics issues",
+      "coauthors": [],
+      "additions": 193,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "e43304538d6a1edae17399f03d54f999914a94b9",
+      "short_hash": "e43304538",
+      "author": "jeremymcs",
+      "date": "2026-05-22T17:41:46-05:00",
+      "subject": "fix(docs): keep canonical Discord invite in archive README",
+      "coauthors": [],
+      "additions": 3,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "repo": "BMAD-METHOD",
+  "full_name": "bmad-code-org/BMAD-METHOD",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "b4cc5790096cfac3b537e03d5cd2daa340d6c38c",
+      "snapshot_date": "2025-10-10T09:27:50-05:00",
+      "first_commit_date": "2025-04-13T09:54:25-05:00",
+      "commits": 552,
+      "ai_pct": 5.3,
+      "has_agent_config": false,
+      "fix_pct": 28.8,
+      "revert_pct": 0.0,
+      "churn_ratio": 14.67,
+      "survival_rate_pct": 12.8,
+      "code": {
+        "current_loc": 17691,
+        "additions": 38441,
+        "deletions": 20750,
+        "churn_ratio": 3.35,
+        "survival_rate_pct": 46.0
+      },
+      "docs": {
+        "current_loc": 38707,
+        "additions": 403454,
+        "deletions": 364739,
+        "churn_ratio": 19.85,
+        "survival_rate_pct": 9.6
+      },
+      "rapid_fire_pct": 13.4,
+      "unique_authors": 71
+    },
+    "365": {
+      "snapshot_commit": "b336cd09876a5dfe5df257afa883a7fd32557310",
+      "snapshot_date": "2026-04-13T01:13:06-05:00",
+      "first_commit_date": "2025-04-13T09:54:25-05:00",
+      "commits": 1567,
+      "ai_pct": 16.6,
+      "has_agent_config": true,
+      "fix_pct": 30.6,
+      "revert_pct": 0.1,
+      "churn_ratio": 28.06,
+      "survival_rate_pct": 6.9,
+      "code": {
+        "current_loc": 19372,
+        "additions": 109112,
+        "deletions": 89740,
+        "churn_ratio": 10.26,
+        "survival_rate_pct": 17.8
+      },
+      "docs": {
+        "current_loc": 54373,
+        "additions": 962351,
+        "deletions": 907970,
+        "churn_ratio": 34.4,
+        "survival_rate_pct": 5.7
+      },
+      "rapid_fire_pct": 12.4,
+      "unique_authors": 132
+    }
+  }
+}

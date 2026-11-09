@@ -1,0 +1,153 @@
+{
+  "repo": "caveman",
+  "head_commit": "1e91f130",
+  "published_results": [
+    {
+      "claim": "Read less: 33.2% fewer input tokens ... 18 of 18 right",
+      "metric": "provider-reported input tokens per whole Claude Code session (input + cache read + cache creation), exact-answer pass rate",
+      "value": "885,793 -> 591,673 tokens (33.2%), case-clustered 95% interval 14.6% to 48.5%, 18/18 exact answers; HTML case 9.9% worse; Headroom comparison 6.7%, 15/18",
+      "baseline": "direct Claude Code without caveman (Claude Code 2.1.223, claude-sonnet-5), 18 paired runs on six 60-95 KB tool-output fixtures",
+      "evidence_type": "results_only",
+      "files": [
+        "README.md:182",
+        "README.md:184",
+        "README.md:193",
+        "README.md:194",
+        "docs/WRAP-BENCHMARK.md:6",
+        "docs/WRAP-BENCHMARK.md:18",
+        "docs/WRAP-BENCHMARK.md:19",
+        "docs/WRAP-BENCHMARK.md:89"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "The file, through caveman: All six 130,611 -> 22,994, 82.4%",
+      "metric": "per-file token count after the compression engine alone (o200k_base counter, no model call); the fixture generator CorpusCases() lives in the Caveman-Cloud repo, not in this checkout",
+      "value": "82.4% overall; 98.5% to 99.1% per file for CSV, logs, YAML, test output, JSON; HTML 21,670 -> 21,670 (no compressor)",
+      "baseline": "uncompressed fixture file tokens",
+      "evidence_type": "results_only",
+      "files": [
+        "README.md:194",
+        "docs/WRAP-BENCHMARK.md:127",
+        "docs/WRAP-BENCHMARK.md:121-126",
+        "docs/WRAP-BENCHMARK.md:140"
+      ],
+      "reproduce_command": "engine.New(nil, nil).Simulate(payload, engine.Options{Mode: engine.ModeCompress, Query: question})"
+    },
+    {
+      "claim": "Auto costs 0.46× what Opus 5.5 at xhigh costs. That is 54% saved",
+      "metric": "task resolve rate and list-price cost per attempt on SWE-Interact + SWE-Together (interim, 85 of 169 paired tasks, one attempt each)",
+      "value": "resolved 43.7% vs 44.3% (difference -0.5 points, 95% CI -6.8 to +5.7); $3.59 vs $7.83 per attempt (0.46x); median time 15.9 vs 35.2 min",
+      "baseline": "Claude Code with Opus 5.5 at xhigh effort on every request",
+      "evidence_type": "results_only",
+      "files": [
+        "README.md:210",
+        "docs/AUTO-BENCHMARK.md:5",
+        "docs/AUTO-BENCHMARK.md:29-30",
+        "docs/AUTO-BENCHMARK.md:39",
+        "docs/AUTO-BENCHMARK.md:44-45",
+        "docs/AUTO-BENCHMARK.md:63"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "`/caveman` cuts 3% more at the median and `/ultracave` 35% more",
+      "metric": "output tokens (tiktoken o200k approximation) on 10 dev questions, claude-opus-5-5, single run",
+      "value": "totals: none 6,983; 'Answer concisely.' 4,334; /caveman 4,119; /ultracave 2,693; median reduction vs terse: caveman 3%, ultracave 35%, megacave 9%",
+      "baseline": "'Answer concisely.' system prompt (terse control); also no system prompt",
+      "evidence_type": "harness+results",
+      "files": [
+        "README.md:116",
+        "README.md:120",
+        "README.md:121-122",
+        "README.md:123",
+        "README.md:125",
+        "docs/HONEST-NUMBERS.md:16",
+        "evals/llm_run.py:94",
+        "evals/measure.py",
+        "evals/README.md:136",
+        "evals/snapshots/results.json:5"
+      ],
+      "reproduce_command": "uv run --with tiktoken python evals/measure.py"
+    },
+    {
+      "claim": "4,138 tokens instead of 6,198 across five files, 22.8% to 49.1% each",
+      "metric": "tiktoken o200k token count of memory files before/after /caveman-compress, plus structural validation",
+      "value": "6198 -> 4138 tokens (33.2%), 22.8% to 49.1% per file",
+      "baseline": "original (uncompressed) fixture files",
+      "evidence_type": "harness+results",
+      "files": [
+        "README.md:247",
+        "skills/caveman-compress/README.md:51",
+        "skills/caveman-compress/README.md:60",
+        "skills/caveman-compress/scripts/benchmark.py:58",
+        "tests/caveman-compress/claude-md-preferences.original.md"
+      ],
+      "reproduce_command": "uv run --with tiktoken python skills/caveman-compress/scripts/benchmark.py"
+    },
+    {
+      "claim": "121 tokens instead of 15,704 for a Playwright snapshot of a 200-row table. Tiny forms lose 2.3×.",
+      "metric": "offline o200k token count of one browser snapshot (median of 5 Chrome runs)",
+      "value": "focused query 121 tokens vs Playwright ariaSnapshot 15,704 (99.23% less); small form: caveman 157 / 111 vs Playwright 67 (2.34x / 1.66x larger)",
+      "baseline": "Playwright `locator(\"body\").ariaSnapshot()` text and raw Accessibility.getFullAXTree JSON",
+      "evidence_type": "harness+results",
+      "files": [
+        "README.md:246",
+        "browse/BENCHMARK.md:21",
+        "browse/BENCHMARK.md:34",
+        "browse/BENCHMARK.md:35",
+        "browse/BENCHMARK.md:36",
+        "browse/BENCHMARK.md:58",
+        "browse/cdp_integration_test.go:182",
+        "browse/scripts/playwright-aria-baseline.mjs",
+        "browse/testdata/order_dashboard.html"
+      ],
+      "reproduce_command": "CAVEMAN_BROWSE_CHROME=\"/path/to/Chrome\" go test -tags=integration -run 'TestCDPQueryScales|TestCDPFullTokenEfficient' -count=5 -v ./browse"
+    },
+    {
+      "claim": "397 → 76 tokens for one test run (Blocks vs `| tail -20`)",
+      "metric": "tokens the agent reads back",
+      "value": "go test 326 tests: 397 (tail -20) vs 76 (test-summary block); 1.4 MB JSON: 236 vs 227; 366-line Go file: 250 (grep -n) vs 489 (grep-defs, a loss)",
+      "baseline": "what agents type now (`| tail -20`, own heredoc, `grep -n`)",
+      "evidence_type": "claim_only",
+      "files": [
+        "README.md:18",
+        "README.md:225",
+        "README.md:226-227",
+        "README.md:229"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Outside labs: Adobe cost cut 1.4 to 2.4x; Elastic 63.6% fewer response tokens, \"Zero information loss\"; JetBrains no measurable quality loss (p = 0.82), 8.5% fewer output tokens",
+      "metric": "third-party cost, response/output tokens, quality",
+      "value": "Adobe Research 1.4-2.4x cost cut per model (up to 3x), eight models, five datasets; Elastic 63.6% fewer response tokens on eight live MCP scenarios; JetBrains 8.5% fewer output tokens, p = 0.82 on 86 tasks. Also HONEST-NUMBERS: LemonCrow billed output -44.1%, total cost +0.06%",
+      "baseline": "each third party's own no-caveman arm (not specified in the repo)",
+      "evidence_type": "external",
+      "files": [
+        "README.md:96",
+        "README.md:97",
+        "README.md:98",
+        "docs/HONEST-NUMBERS.md:45",
+        "docs/HONEST-NUMBERS.md:47"
+      ],
+      "reproduce_command": null
+    }
+  ],
+  "strongest_evidence_type": "harness+results",
+  "summary": "Caveman publishes three results with a runnable harness and committed data: a 10-prompt, single-run output snapshot on claude-opus-5-5 in which, on top of an 'Answer concisely.' control, `/caveman` cuts output a further 3% at the median and `/ultracave` 35%; the caveman-compress fixtures (6,198 → 4,138 tokens across five memory files); and a browser-snapshot benchmark (121 vs 15,704 tokens on a 200-row table, while on a small form caveman's full result is 2.34x larger than Playwright's). The headline input-token result (885,793 → 591,673 tokens, 33.2%, 18 of 18 answers right, with the HTML case 9.9% worse) and the Auto result (43.7% vs 44.3% resolved at 0.46x the cost, an interim run on 85 of 169 tasks) are committed as written reports: docs/WRAP-BENCHMARK.md states the first cannot be independently reproduced from this checkout, and docs/AUTO-BENCHMARK.md states the raw trajectories are not in the repository. The 63.6% (Elastic), 1.4 to 2.4x cost cut (Adobe Research) and p = 0.82 (JetBrains) figures are third-party results, and docs/HONEST-NUMBERS.md lists output reduction against default verbose replies as 'Not published' and states that no quality claim is published because no reviewed fidelity snapshot is committed.",
+  "result_focus": "outcome",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself",
+  "accuracy_check": {
+    "date": "2026-11-08",
+    "numbers_checked": 120,
+    "corrections": [
+      "'18 of 18 right', 'HTML 9.9% worse' and 'Headroom 6.7%, 15/18' were not on any cited line: added README.md:184, README.md:193, docs/WRAP-BENCHMARK.md:19",
+      "value 'HTML 0% (no compressor)' -> 'HTML 21,670 -> 21,670 (no compressor)', the source's own figures (docs/WRAP-BENCHMARK.md:126); per-file figures were on no cited line: added docs/WRAP-BENCHMARK.md:121-126",
+      "$3.59 vs $7.83 and 15.9 vs 35.2 min were on no cited line: added docs/AUTO-BENCHMARK.md:29-30 and docs/AUTO-BENCHMARK.md:44-45",
+      "4,334 and 4,119 were on no cited line: added README.md:121-122",
+      "Playwright 67 and caveman 111 / 1.66x were on no cited line: added browse/BENCHMARK.md:34 and browse/BENCHMARK.md:36",
+      "JSON 236 vs 227 and grep 250 vs 489 rows were on no cited line: added README.md:226-227"
+    ]
+  }
+}

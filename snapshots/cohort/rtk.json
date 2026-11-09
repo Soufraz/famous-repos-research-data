@@ -1,0 +1,36 @@
+{
+  "repo": "rtk",
+  "full_name": "rtk-ai/rtk",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "66e09cbefe02bf82b159a44278250e45e506810b",
+      "snapshot_date": "2026-07-21T00:52:30+02:00",
+      "first_commit_date": "2026-01-22T18:10:30+01:00",
+      "commits": 888,
+      "ai_pct": 25.8,
+      "has_agent_config": true,
+      "fix_pct": 57.9,
+      "revert_pct": 0.3,
+      "churn_ratio": 1.78,
+      "survival_rate_pct": 72.0,
+      "code": {
+        "current_loc": 88270,
+        "additions": 120361,
+        "deletions": 29937,
+        "churn_ratio": 1.7,
+        "survival_rate_pct": 73.3
+      },
+      "docs": {
+        "current_loc": 20391,
+        "additions": 30536,
+        "deletions": 12983,
+        "churn_ratio": 2.13,
+        "survival_rate_pct": 66.8
+      },
+      "rapid_fire_pct": 15.0,
+      "unique_authors": 128
+    },
+    "365": null
+  }
+}

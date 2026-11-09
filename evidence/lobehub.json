@@ -1,0 +1,45 @@
+{
+  "repo": "lobehub",
+  "head_commit": "56821836bb",
+  "published_results": [
+    {
+      "claim": "No published numbers. Server-side LOCOMO ingestion path for memory-extraction benchmarking (devtools/webhook handlers); it records job duration/status only and computes no accuracy score.",
+      "metric": "User-memory extraction on LOCOMO (no metric reported)",
+      "value": null,
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "apps/server/src/services/memory/userMemory/extract/benchmark.ts:23",
+        "apps/server/src/router-hono/devtools/handlers/memoryUserMemoryBenchmarkLocomo.ts",
+        "apps/server/src/router-hono/webhooks/handlers/memoryExtractionBenchmarkLocomo.ts"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "No published numbers. Micro-benchmark: \"Claude Code version parsing (${length} digits)\" for 10,000 / 100,000-digit inputs.",
+      "metric": "Version-string parse time (pathological input guard)",
+      "value": null,
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "packages/heterogeneous-agents/src/spawn/lobeHubCliPlugin.bench.ts:5-7"
+      ],
+      "reproduce_command": "bunx vitest bench --run --maxWorkers=1 --no-file-parallelism src/spawn/lobeHubCliPlugin.bench.ts"
+    },
+    {
+      "claim": "**[📊 MCPMark][mcpmark]:** A stress-testing benchmark for MCP. ... Built by EVAL SYS, LobeHub and the National University of Singapore",
+      "metric": "None about LobeHub itself; a co-authored external research benchmark for MCP agents",
+      "value": null,
+      "baseline": null,
+      "evidence_type": "external",
+      "files": [
+        "README.md:411-413"
+      ],
+      "reproduce_command": null
+    }
+  ],
+  "strongest_evidence_type": "harness_only",
+  "summary": "LobeHub publishes no quantitative results about its own performance: no accuracy, token, latency, or cost numbers in README, docs/ (543 files), or CHANGELOGs. The only measurement code is minimal: a LOCOMO memory-extraction ingestion path with no scoring, and one vitest micro-benchmark guarding version parsing on pathological input, with nothing committed from either. That is why it rates harness_only rather than none. Most 'eval'/'benchmark' code is a product feature (an in-app benchmark/dataset/run UI under src/routes/(main)/eval and src/store/eval). The README's Research section points to MCPMark, an external co-authored MCP benchmark that does not measure LobeHub; the only other numbers found describe third-party tools (e.g. docs/usage/providers/groq.mdx:21 on Groq tokens/sec).",
+  "result_focus": "engineering",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}

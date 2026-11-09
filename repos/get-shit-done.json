@@ -1,0 +1,684 @@
+{
+  "repo": "get-shit-done",
+  "full_name": "gsd-build/get-shit-done",
+  "stars": 64157,
+  "stars_source": "github-api 2026-11-08T09:00:44Z",
+  "selection_topics": [
+    "context-engineering",
+    "spec-driven-development"
+  ],
+  "github": {
+    "archived": true,
+    "created_at": "2025-12-14T14:17:12Z",
+    "description": "A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by TÂCHES.",
+    "fork": false,
+    "forks": 5444,
+    "full_name": "gsd-build/get-shit-done",
+    "pushed_at": "2026-05-31T17:46:54Z",
+    "stars": 64157,
+    "fetched_at": "2026-11-08T09:00:44Z"
+  },
+  "url": "https://github.com/gsd-build/get-shit-done",
+  "description": "A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by TÂCHES.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "bdcaab2c752d9a33a1a1ca9acf3a3c81fb991815",
+    "head_date": "2026-05-31T08:34:35-05:00",
+    "history_complete": true,
+    "non_merge_commits": 2565,
+    "merge_commits": 363,
+    "maintenance_bot_commits": 7,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 1278,
+    "explicit_ai_pct": 50.0,
+    "by_tool": {
+      "claude": 1272,
+      "copilot": 2,
+      "other": 2,
+      "cursor": 1,
+      "gemini": 1
+    },
+    "by_signal": {
+      "co-author": 1274,
+      "agent-author": 4
+    },
+    "recent_180d": {
+      "commits": 2558,
+      "ai_pct": 50.0,
+      "fix_pct": 43.3
+    },
+    "first_365d": {
+      "commits": 2558,
+      "ai_pct": 50.0,
+      "fix_pct": 43.3
+    },
+    "bot_commit_count": 7,
+    "agent_config": {
+      "files": {
+        ".clinerules": "2026-04-03T12:41:04-04:00",
+        "AGENTS.md": "2026-05-16T13:09:58-04:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2026-04-03T12:41:04-04:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 2558,
+    "first_commit_date": "2025-12-14T08:16:28-06:00",
+    "last_commit_date": "2026-05-31T08:32:27-05:00",
+    "current_loc": 369921,
+    "total_historical_additions": 524514,
+    "total_historical_deletions": 148590,
+    "total_churn": 673104,
+    "churn_ratio": 1.82,
+    "survival_rate_pct": 70.5,
+    "code": {
+      "current_loc": 253185,
+      "additions": 314724,
+      "deletions": 61447,
+      "churn_ratio": 1.49,
+      "survival_rate_pct": 80.4
+    },
+    "docs": {
+      "current_loc": 116736,
+      "additions": 209790,
+      "deletions": 87143,
+      "churn_ratio": 2.54,
+      "survival_rate_pct": 55.6
+    },
+    "fix_commits": 1107,
+    "fix_pct": 43.3,
+    "revert_commits": 11,
+    "revert_pct": 0.4,
+    "trial_error_commits": 1103,
+    "trial_error_pct": 43.1,
+    "rapid_fire_commits": 1044,
+    "rapid_fire_pct": 40.8,
+    "trial_error_chains": 428,
+    "suspicious_additions_count": 82,
+    "top5_hotspot_volatility_pct": 6.7
+  },
+  "code_hygiene": {
+    "total_files": 994,
+    "docs_files": 784,
+    "avg_file_loc": 254.7,
+    "test_loc": 166636,
+    "test_files": 685,
+    "test_ratio_pct": 65.8,
+    "comment_ratio_pct": 14.2,
+    "monolith_count": 30,
+    "top_languages": {
+      ".cjs": 166775,
+      ".ts": 70464,
+      ".js": 13278,
+      ".mjs": 1468,
+      ".sh": 1200
+    }
+  },
+  "authors": {
+    "unique_authors": 153,
+    "top_authors": [
+      {
+        "name": "Tom Boucher",
+        "commits": 1131,
+        "pct": 44.2
+      },
+      {
+        "name": "Lex Christopherson",
+        "commits": 866,
+        "pct": 33.9
+      },
+      {
+        "name": "Tibsfox",
+        "commits": 127,
+        "pct": 5.0
+      },
+      {
+        "name": "Jeremy McSpadden",
+        "commits": 53,
+        "pct": 2.1
+      },
+      {
+        "name": "TÂCHES",
+        "commits": 46,
+        "pct": 1.8
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 24.1,
+    "p75": 281.4,
+    "p90": 2520.0,
+    "p95": 6060.0,
+    "p99": 22560.0,
+    "avg": 1522.7
+  },
+  "hotspots": [
+    {
+      "file": "bin/install.js",
+      "commits": 268,
+      "additions": 16627,
+      "deletions": 5243,
+      "churn": 21870,
+      "first_seen": "2025-12-14T08:16:28-06:00",
+      "last_seen": "2026-05-20T23:13:50-04:00"
+    },
+    {
+      "file": "get-shit-done/workflows/execute-phase.md",
+      "commits": 174,
+      "additions": 6571,
+      "deletions": 3035,
+      "churn": 9606,
+      "first_seen": "2025-12-14T08:16:28-06:00",
+      "last_seen": "2026-05-20T15:22:12-04:00"
+    },
+    {
+      "file": "README.md",
+      "commits": 157,
+      "additions": 1865,
+      "deletions": 1858,
+      "churn": 3723,
+      "first_seen": "2025-12-14T08:16:28-06:00",
+      "last_seen": "2026-05-31T08:18:41-05:00"
+    },
+    {
+      "file": "get-shit-done/workflows/plan-phase.md",
+      "commits": 139,
+      "additions": 4437,
+      "deletions": 2648,
+      "churn": 7085,
+      "first_seen": "2025-12-14T08:16:28-06:00",
+      "last_seen": "2026-05-20T23:08:56-04:00"
+    },
+    {
+      "file": "get-shit-done/bin/lib/core.cjs",
+      "commits": 123,
+      "additions": 3201,
+      "deletions": 1300,
+      "churn": 4501,
+      "first_seen": "2026-02-20T10:40:45-05:00",
+      "last_seen": "2026-05-20T22:39:34-04:00"
+    },
+    {
+      "file": "get-shit-done/bin/gsd-tools.cjs",
+      "commits": 95,
+      "additions": 2416,
+      "deletions": 5573,
+      "churn": 7989,
+      "first_seen": "2026-02-15T11:03:22-06:00",
+      "last_seen": "2026-05-20T15:22:12-04:00"
+    },
+    {
+      "file": "get-shit-done/bin/lib/init.cjs",
+      "commits": 86,
+      "additions": 2605,
+      "deletions": 503,
+      "churn": 3108,
+      "first_seen": "2026-02-20T10:40:45-05:00",
+      "last_seen": "2026-05-20T22:39:34-04:00"
+    },
+    {
+      "file": "get-shit-done/workflows/discuss-phase.md",
+      "commits": 84,
+      "additions": 2217,
+      "deletions": 1718,
+      "churn": 3935,
+      "first_seen": "2025-12-14T08:16:28-06:00",
+      "last_seen": "2026-05-12T21:53:24-04:00"
+    },
+    {
+      "file": "agents/gsd-planner.md",
+      "commits": 82,
+      "additions": 2333,
+      "deletions": 1055,
+      "churn": 3388,
+      "first_seen": "2026-01-16T07:44:45-06:00",
+      "last_seen": "2026-05-15T22:56:32-04:00"
+    },
+    {
+      "file": "get-shit-done/bin/lib/config.cjs",
+      "commits": 70,
+      "additions": 925,
+      "deletions": 219,
+      "churn": 1144,
+      "first_seen": "2026-02-20T10:40:45-05:00",
+      "last_seen": "2026-05-15T23:57:38-04:00"
+    },
+    {
+      "file": "get-shit-done/workflows/execute-plan.md",
+      "commits": 67,
+      "additions": 993,
+      "deletions": 2202,
+      "churn": 3195,
+      "first_seen": "2026-01-12T12:38:43-06:00",
+      "last_seen": "2026-05-12T21:53:24-04:00"
+    },
+    {
+      "file": "get-shit-done/workflows/quick.md",
+      "commits": 64,
+      "additions": 1486,
+      "deletions": 309,
+      "churn": 1795,
+      "first_seen": "2026-02-07T11:08:45-06:00",
+      "last_seen": "2026-05-20T15:22:12-04:00"
+    },
+    {
+      "file": "docs/CONFIGURATION.md",
+      "commits": 63,
+      "additions": 1185,
+      "deletions": 74,
+      "churn": 1259,
+      "first_seen": "2026-03-16T10:55:08-04:00",
+      "last_seen": "2026-05-18T23:13:09-04:00"
+    },
+    {
+      "file": "agents/gsd-executor.md",
+      "commits": 62,
+      "additions": 1487,
+      "deletions": 713,
+      "churn": 2200,
+      "first_seen": "2026-01-15T09:34:26-06:00",
+      "last_seen": "2026-05-18T00:14:03-04:00"
+    },
+    {
+      "file": "docs/INVENTORY.md",
+      "commits": 61,
+      "additions": 631,
+      "deletions": 156,
+      "churn": 787,
+      "first_seen": "2026-04-20T09:31:34-04:00",
+      "last_seen": "2026-05-21T23:32:10-04:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "bin/install.js",
+      "loc": 11376
+    },
+    {
+      "file": "tests/phase.test.cjs",
+      "loc": 4566
+    },
+    {
+      "file": "sdk/src/phase-runner.test.ts",
+      "loc": 3660
+    },
+    {
+      "file": "tests/state.test.cjs",
+      "loc": 2625
+    },
+    {
+      "file": "tests/codex-config.test.cjs",
+      "loc": 2303
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "49dcabff264d576471dc840de2f7cc0ed284f414",
+      "short_hash": "49dcabff",
+      "author": "Tom Boucher",
+      "date": "2026-05-20T23:11:33-04:00",
+      "subject": "fix(3749): port strategy-branch switching to SDK commit handler (#3763)",
+      "coauthors": [
+        "Claude Sonnet 4.6 <noreply@anthropic.com>"
+      ],
+      "additions": 940,
+      "deletions": 6,
+      "files_count": 7,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "172e6920eb7f37197221b053edd27a2d71f73135",
+      "short_hash": "172e6920",
+      "author": "Tom Boucher",
+      "date": "2026-05-20T23:12:08-04:00",
+      "subject": "fix(3670): break migration lock self-deadlock on Windows (#3765)",
+      "coauthors": [
+        "Claude Sonnet 4.6 <noreply@anthropic.com>"
+      ],
+      "additions": 413,
+      "deletions": 9,
+      "files_count": 4,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "99b52a302af2f9e67495be659dc1e14bc1bdcc20",
+      "short_hash": "99b52a30",
+      "author": "Tom Boucher",
+      "date": "2026-05-20T23:12:44-04:00",
+      "subject": "fix(3659): applySurface prunes skill dirs on cluster disable (#3766)",
+      "coauthors": [
+        "Claude Sonnet 4.6 <noreply@anthropic.com>"
+      ],
+      "additions": 389,
+      "deletions": 48,
+      "files_count": 5,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "a7abc6df2fe2f46c7320da850033c90fad1433d2",
+      "short_hash": "a7abc6df",
+      "author": "Tom Boucher",
+      "date": "2026-05-20T23:13:25-04:00",
+      "subject": "fix(3657): skip false-fail when pristine hash drifts after GSD update (#3767)",
+      "coauthors": [
+        "Claude Sonnet 4.6 <noreply@anthropic.com>"
+      ],
+      "additions": 665,
+      "deletions": 5,
+      "files_count": 5,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "2d3027767b404c3c84c3ee6f0402cd0620ef6968",
+      "short_hash": "2d302776",
+      "author": "Tom Boucher",
+      "date": "2026-05-20T23:13:50-04:00",
+      "subject": "fix(3426): Codex Windows hooks use .cmd shim to avoid POSIX exec fail (#3768)",
+      "coauthors": [
+        "Claude Sonnet 4.6 <noreply@anthropic.com>"
+      ],
+      "additions": 625,
+      "deletions": 46,
+      "files_count": 8,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "c22e869becc88819cca5d428a314ff782dcd27d7",
+      "short_hash": "c22e869b",
+      "author": "Tom Boucher",
+      "date": "2026-05-20T23:22:40-04:00",
+      "subject": "test: redesign locking-bugs:180 with deterministic barrier (mirrors :235 fix) (#3790)",
+      "coauthors": [
+        "Claude Opus 4.7 (1M context) <noreply@anthropic.com>"
+      ],
+      "additions": 109,
+      "deletions": 6,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "5e071a329e0c258e4379c5559923bb9ee1e57141",
+      "short_hash": "5e071a32",
+      "author": "Tom Boucher",
+      "date": "2026-05-21T10:15:18-04:00",
+      "subject": "fix(3775): clarify deterministic design note and sentinel guard rationale (#3793)",
+      "coauthors": [
+        "Claude Sonnet 4.6 <noreply@anthropic.com>"
+      ],
+      "additions": 13,
+      "deletions": 6,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "420c64da4bb6d81f55088ed77fd799360be3b644",
+      "short_hash": "420c64da",
+      "author": "Tom Boucher",
+      "date": "2026-05-21T23:19:52-04:00",
+      "subject": "test(3646): add routing-block hyphen-form regression tests for workflow templates (#3800)",
+      "coauthors": [
+        "Claude Sonnet 4.6 <noreply@anthropic.com>"
+      ],
+      "additions": 214,
+      "deletions": 21,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "b533f71857ab96d1ccec3286294d669c60b0d0fc",
+      "short_hash": "b533f718",
+      "author": "Tom Boucher",
+      "date": "2026-05-21T23:32:10-04:00",
+      "subject": "chore: introduce CommandRoutingHub and migrate phase-command-router (PoC) (#3828)",
+      "coauthors": [
+        "Claude Sonnet 4.6 <noreply@anthropic.com>"
+      ],
+      "additions": 1455,
+      "deletions": 144,
+      "files_count": 10,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "126b6b9e84227c2548e9c4558ab611a3a3de71c7",
+      "short_hash": "126b6b9e",
+      "author": "Tom Boucher",
+      "date": "2026-05-22T08:31:33-04:00",
+      "subject": "WARNING: This repository appears compromised — use the fork at GSD-redux/get-shit-done-redux",
+      "coauthors": [],
+      "additions": 19,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "c58ee6c0443d0ec22c6468d69df01db2684613c9",
+      "short_hash": "c58ee6c0",
+      "author": "Tom Boucher",
+      "date": "2026-05-22T08:37:26-04:00",
+      "subject": "deprecate: redirect new issue picker to active fork",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "5e5df733dfd5ae9f1ed0c1d3d4c0183cf7949d9a",
+      "short_hash": "5e5df733",
+      "author": "Tom Boucher",
+      "date": "2026-05-22T08:37:40-04:00",
+      "subject": "deprecate: auto-close + lock new issues/PRs with redirect message",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "c7102d7cda821d3c070810a40d73c848352491dd",
+      "short_hash": "c7102d7c",
+      "author": "Tom Boucher",
+      "date": "2026-05-22T09:37:24-04:00",
+      "subject": "deprecate: point notice link to fork main (rebrand branch merged)",
+      "coauthors": [],
+      "additions": 1,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "da024a0261e2e28aa342f2b01cd28663e150749e",
+      "short_hash": "da024a02",
+      "author": "Jeremy McSpadden",
+      "date": "2026-05-22T17:49:26-05:00",
+      "subject": "Update README.md",
+      "coauthors": [],
+      "additions": 7,
+      "deletions": 286,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "ba20432cbe8e40d911598751f0b82041e0df3e81",
+      "short_hash": "ba20432c",
+      "author": "Jeremy McSpadden",
+      "date": "2026-05-22T17:49:53-05:00",
+      "subject": "Revise vulnerability reporting instructions",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 2,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "837114c1d0a4bec91983bb198a2b0d9f42a9446f",
+      "short_hash": "837114c1",
+      "author": "Jeremy McSpadden",
+      "date": "2026-05-22T19:31:54-05:00",
+      "subject": "docs: rename package references to @opengsd/get-shit-done-redux",
+      "coauthors": [],
+      "additions": 14,
+      "deletions": 14,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "6391b2d9694e2e621f7156aa010a84b764752ddc",
+      "short_hash": "6391b2d9",
+      "author": "Jeremy McSpadden",
+      "date": "2026-05-31T08:18:41-05:00",
+      "subject": "Update project name from 'GSD Redux' to 'GSD Core'",
+      "coauthors": [],
+      "additions": 2,
+      "deletions": 2,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "0502b8c05eb3b551eedb5ea14b3db4cb1b0428cc",
+      "short_hash": "0502b8c0",
+      "author": "Jeremy McSpadden",
+      "date": "2026-05-31T08:24:36-05:00",
+      "subject": "chore: simplify auto-close message to 'repository moved'",
+      "coauthors": [
+        "Claude Opus 4.8 (1M context) <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "b467c7e1f8a70047519bff435e0aa43c42c98797",
+      "short_hash": "b467c7e1",
+      "author": "Jeremy McSpadden",
+      "date": "2026-05-31T08:25:11-05:00",
+      "subject": "chore: point auto-close message to open-gsd/gsd-core",
+      "coauthors": [
+        "Claude Opus 4.8 (1M context) <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "b125c6324b1fabc35347b59a1fbc43d65ed44e2f",
+      "short_hash": "b125c632",
+      "author": "Jeremy McSpadden",
+      "date": "2026-05-31T08:32:27-05:00",
+      "subject": "chore: update Discord invite link",
+      "coauthors": [
+        "Claude Opus 4.8 (1M context) <noreply@anthropic.com>"
+      ],
+      "additions": 5,
+      "deletions": 5,
+      "files_count": 5,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

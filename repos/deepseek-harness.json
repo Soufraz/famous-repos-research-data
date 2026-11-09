@@ -1,0 +1,652 @@
+{
+  "repo": "deepseek-harness",
+  "full_name": "deepseek-ai/deepseek-harness",
+  "stars": 276014,
+  "stars_source": "github-api 2026-11-08T08:41:00Z",
+  "selection_topics": [
+    "ai-agents"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2026-08-13T11:56:32Z",
+    "description": "DeepSeek Harness: Everything is a Plugin.",
+    "fork": false,
+    "forks": 33770,
+    "full_name": "deepseek-ai/deepseek-harness",
+    "pushed_at": "2026-11-04T13:06:39Z",
+    "stars": 276014,
+    "fetched_at": "2026-11-08T08:41:00Z"
+  },
+  "url": "https://github.com/deepseek-ai/deepseek-harness",
+  "description": "DeepSeek Harness: Everything is a Plugin.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "fcc0ad462172522aaf5c93a7b2e01f6b9f0b0159",
+    "head_date": "2026-11-04T16:40:00+08:00",
+    "history_complete": true,
+    "non_merge_commits": 16203,
+    "merge_commits": 9645,
+    "maintenance_bot_commits": 11,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 0,
+    "explicit_ai_pct": 0.0,
+    "by_tool": {},
+    "by_signal": {},
+    "recent_180d": {
+      "commits": 16192,
+      "ai_pct": 0.0,
+      "fix_pct": 38.4
+    },
+    "first_365d": {
+      "commits": 16192,
+      "ai_pct": 0.0,
+      "fix_pct": 38.4
+    },
+    "bot_commit_count": 11,
+    "agent_config": {
+      "files": {
+        ".agents/": "2026-06-13T22:05:34+08:00",
+        ".claude/": "2026-06-13T22:05:34+08:00",
+        "AGENTS.md": "2026-06-10T22:58:56+08:00",
+        "CLAUDE.md": "2026-06-10T22:58:56+08:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2026-06-10T22:58:56+08:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 16192,
+    "first_commit_date": "2026-06-10T22:57:44+08:00",
+    "last_commit_date": "2026-11-04T16:39:36+08:00",
+    "current_loc": 2018360,
+    "total_historical_additions": 3484366,
+    "total_historical_deletions": 1430142,
+    "total_churn": 4914508,
+    "churn_ratio": 2.43,
+    "survival_rate_pct": 57.9,
+    "code": {
+      "current_loc": 1557314,
+      "additions": 2639469,
+      "deletions": 1058228,
+      "churn_ratio": 2.37,
+      "survival_rate_pct": 59.0
+    },
+    "docs": {
+      "current_loc": 461046,
+      "additions": 844897,
+      "deletions": 371914,
+      "churn_ratio": 2.64,
+      "survival_rate_pct": 54.6
+    },
+    "fix_commits": 6219,
+    "fix_pct": 38.4,
+    "revert_commits": 99,
+    "revert_pct": 0.6,
+    "trial_error_commits": 6355,
+    "trial_error_pct": 39.2,
+    "rapid_fire_commits": 5519,
+    "rapid_fire_pct": 34.1,
+    "trial_error_chains": 2079,
+    "suspicious_additions_count": 670,
+    "top5_hotspot_volatility_pct": 5.6
+  },
+  "code_hygiene": {
+    "total_files": 7412,
+    "docs_files": 5045,
+    "avg_file_loc": 210.1,
+    "test_loc": 909538,
+    "test_files": 3527,
+    "test_ratio_pct": 58.4,
+    "comment_ratio_pct": 10.9,
+    "monolith_count": 208,
+    "top_languages": {
+      ".ts": 1297434,
+      ".tsx": 202810,
+      ".py": 21230,
+      ".mjs": 18417,
+      ".swift": 7368
+    }
+  },
+  "authors": {
+    "unique_authors": 73,
+    "top_authors": [
+      {
+        "name": "Tianyi Cui",
+        "commits": 3510,
+        "pct": 21.7
+      },
+      {
+        "name": "imccyu",
+        "commits": 2176,
+        "pct": 13.4
+      },
+      {
+        "name": "Yichen Jiang",
+        "commits": 1720,
+        "pct": 10.6
+      },
+      {
+        "name": "creatixchu",
+        "commits": 1192,
+        "pct": 7.4
+      },
+      {
+        "name": "_Kerman",
+        "commits": 902,
+        "pct": 5.6
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 28.8,
+    "p75": 420.0,
+    "p90": 6060.0,
+    "p95": 19380.0,
+    "p99": 99930.0,
+    "avg": 4941.7
+  },
+  "hotspots": [
+    {
+      "file": "docs/config-catalog.md",
+      "commits": 1475,
+      "additions": 12125,
+      "deletions": 7049,
+      "churn": 19174,
+      "first_seen": "2026-07-06T21:57:17+08:00",
+      "last_seen": "2026-10-27T19:59:02+08:00"
+    },
+    {
+      "file": "docs/config-catalog.zh.md",
+      "commits": 860,
+      "additions": 9859,
+      "deletions": 4792,
+      "churn": 14651,
+      "first_seen": "2026-08-09T11:02:16+08:00",
+      "last_seen": "2026-10-27T19:59:02+08:00"
+    },
+    {
+      "file": "docs/module-graph.md",
+      "commits": 754,
+      "additions": 10852,
+      "deletions": 8688,
+      "churn": 19540,
+      "first_seen": "2026-06-16T21:00:24+08:00",
+      "last_seen": "2026-11-03T12:43:05+08:00"
+    },
+    {
+      "file": "docs/event-producer-consumer.md",
+      "commits": 752,
+      "additions": 3466,
+      "deletions": 3353,
+      "churn": 6819,
+      "first_seen": "2026-07-05T01:25:58+08:00",
+      "last_seen": "2026-11-03T12:43:05+08:00"
+    },
+    {
+      "file": "packages/extensions/tool-cordis/src/api-catalog.ts",
+      "commits": 708,
+      "additions": 12285,
+      "deletions": 5090,
+      "churn": 17375,
+      "first_seen": "2026-08-13T00:36:22+08:00",
+      "last_seen": "2026-11-03T15:52:36+08:00"
+    },
+    {
+      "file": "docs/cordis-catalog/services.md",
+      "commits": 550,
+      "additions": 6018,
+      "deletions": 5021,
+      "churn": 11039,
+      "first_seen": "2026-07-05T00:45:06+08:00",
+      "last_seen": "2026-08-09T02:17:56+08:00"
+    },
+    {
+      "file": "scripts/gen-cordis-catalog.ts",
+      "commits": 447,
+      "additions": 3600,
+      "deletions": 2107,
+      "churn": 5707,
+      "first_seen": "2026-06-20T19:47:09+08:00",
+      "last_seen": "2026-11-03T13:49:13+08:00"
+    },
+    {
+      "file": "docs/module-graph.zh.md",
+      "commits": 441,
+      "additions": 8078,
+      "deletions": 6199,
+      "churn": 14277,
+      "first_seen": "2026-08-09T11:02:16+08:00",
+      "last_seen": "2026-11-03T12:43:05+08:00"
+    },
+    {
+      "file": "docs/architecture.md",
+      "commits": 416,
+      "additions": 2021,
+      "deletions": 1833,
+      "churn": 3854,
+      "first_seen": "2026-06-11T10:55:05+08:00",
+      "last_seen": "2026-11-02T15:58:09+08:00"
+    },
+    {
+      "file": "docs/event-producer-consumer.zh.md",
+      "commits": 414,
+      "additions": 1656,
+      "deletions": 1535,
+      "churn": 3191,
+      "first_seen": "2026-08-09T11:02:16+08:00",
+      "last_seen": "2026-11-03T12:43:05+08:00"
+    },
+    {
+      "file": "docs/persistence-catalog.md",
+      "commits": 400,
+      "additions": 21590,
+      "deletions": 12197,
+      "churn": 33787,
+      "first_seen": "2026-07-06T22:26:06+08:00",
+      "last_seen": "2026-11-03T12:09:30+08:00"
+    },
+    {
+      "file": "packages/cordis/tool-cordis/src/api-catalog.ts",
+      "commits": 376,
+      "additions": 5105,
+      "deletions": 1904,
+      "churn": 7009,
+      "first_seen": "2026-07-08T11:45:46+08:00",
+      "last_seen": "2026-08-09T02:17:56+08:00"
+    },
+    {
+      "file": "packages/client/ui-conversation/README.md",
+      "commits": 339,
+      "additions": 680,
+      "deletions": 440,
+      "churn": 1120,
+      "first_seen": "2026-07-19T21:17:57+08:00",
+      "last_seen": "2026-11-04T13:27:41+08:00"
+    },
+    {
+      "file": "scripts/gen-doc-graphs.ts",
+      "commits": 335,
+      "additions": 3744,
+      "deletions": 1865,
+      "churn": 5609,
+      "first_seen": "2026-07-03T01:13:52+08:00",
+      "last_seen": "2026-11-03T12:43:05+08:00"
+    },
+    {
+      "file": "packages/client/ui-conversation/README.zh.md",
+      "commits": 325,
+      "additions": 696,
+      "deletions": 461,
+      "churn": 1157,
+      "first_seen": "2026-07-26T05:03:53+08:00",
+      "last_seen": "2026-11-04T13:27:41+08:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "packages/extensions/tool-cordis/src/api-catalog.ts",
+      "loc": 10408
+    },
+    {
+      "file": "packages/context/agent-instructions/tests/agent-instructions.spec.ts",
+      "loc": 6586
+    },
+    {
+      "file": "packages/experimental/ptc-runtime-python/tests/runtime.spec.ts",
+      "loc": 5873
+    },
+    {
+      "file": "packages/extensions/cordis-client-runner/src/client/slot-catalog.ts",
+      "loc": 5667
+    },
+    {
+      "file": "packages/client/ui-chat/tests/chat-view.client.spec.tsx",
+      "loc": 4769
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "d65fd521b536489e2618e38c35a4a72f951c1568",
+      "short_hash": "d65fd521b5",
+      "author": "winewill",
+      "date": "2026-11-04T13:51:39+08:00",
+      "subject": "fix(desktop): clarify workflow version mode names",
+      "coauthors": [],
+      "additions": 24,
+      "deletions": 17,
+      "files_count": 9,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "e0e2c63a9cce64b66e7ddc441711d0fd621bc07b",
+      "short_hash": "e0e2c63a9c",
+      "author": "winewill",
+      "date": "2026-11-04T13:57:19+08:00",
+      "subject": "fix(desktop): bridge workflow modes for older sources",
+      "coauthors": [],
+      "additions": 11,
+      "deletions": 9,
+      "files_count": 8,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "679f3fbb2c0bfb3d45db15eb7f47cbf45853c704",
+      "short_hash": "679f3fbb2c",
+      "author": "winewill",
+      "date": "2026-11-04T14:18:53+08:00",
+      "subject": "test(desktop): expect archive settings failure before runner validation",
+      "coauthors": [],
+      "additions": 2,
+      "deletions": 2,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "812f846489da031de8eace1e5306f220c6d7141f",
+      "short_hash": "812f846489",
+      "author": "winewill",
+      "date": "2026-11-04T14:19:21+08:00",
+      "subject": "docs(desktop): clarify version mode compatibility lifetime",
+      "coauthors": [],
+      "additions": 2,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "6447accb5fd9fe8d9aa07e4de7ee80ed5f7e69e0",
+      "short_hash": "6447accb5f",
+      "author": "winewill",
+      "date": "2026-11-04T14:28:46+08:00",
+      "subject": "docs(desktop): clarify retained archive naming and timestamps",
+      "coauthors": [],
+      "additions": 3,
+      "deletions": 2,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "001bc22978a330874b57fb233efbdcb864e21a09",
+      "short_hash": "001bc22978",
+      "author": "winewill",
+      "date": "2026-11-04T14:34:45+08:00",
+      "subject": "feat(desktop): configure staged rollout during publication",
+      "coauthors": [],
+      "additions": 60,
+      "deletions": 12,
+      "files_count": 11,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "e1cd73e4de77bcd0204abace491da80326893b34",
+      "short_hash": "e1cd73e4de",
+      "author": "winewill",
+      "date": "2026-11-04T14:35:43+08:00",
+      "subject": "fix(desktop): type omitted rollout percentage explicitly",
+      "coauthors": [],
+      "additions": 3,
+      "deletions": 3,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "6958fd4e3a6e2faa9fb0dd524047f98e86c18a52",
+      "short_hash": "6958fd4e3a",
+      "author": "winewill",
+      "date": "2026-11-04T14:38:16+08:00",
+      "subject": "fix(desktop): default publication rollout to 100 percent",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "16743ca0888172dc979ad53a4a39ac4ea8edba4e",
+      "short_hash": "16743ca088",
+      "author": "winewill",
+      "date": "2026-11-04T14:38:26+08:00",
+      "subject": "docs(desktop): document archive tool failure diagnostics",
+      "coauthors": [],
+      "additions": 5,
+      "deletions": 1,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "294a359142aa7686157b9254af2892d48cc3168e",
+      "short_hash": "294a359142",
+      "author": "Turtle",
+      "date": "2026-10-27T19:59:02+08:00",
+      "subject": "docs(config): regenerate catalog for the source-frame minimum",
+      "coauthors": [],
+      "additions": 2,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "e9273a7624c2cd4eaa49642ec5b370014da5cae2",
+      "short_hash": "e9273a7624",
+      "author": "Turtle",
+      "date": "2026-10-27T19:40:53+08:00",
+      "subject": "fix(inspector): reject source-frame limits without a Cordis snapshot budget",
+      "coauthors": [],
+      "additions": 23,
+      "deletions": 6,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "57aae9509792e076bd6a15d08a1058509550427e",
+      "short_hash": "57aae95097",
+      "author": "Turtle",
+      "date": "2026-10-27T19:03:55+08:00",
+      "subject": "fix(inspector): reserve record overhead in the Cordis snapshot budget",
+      "coauthors": [],
+      "additions": 48,
+      "deletions": 4,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "3a51d539661fb74934141da57e2b473398d184de",
+      "short_hash": "3a51d53966",
+      "author": "winewill",
+      "date": "2026-11-04T14:55:06+08:00",
+      "subject": "docs(desktop): centralize and clarify archival diagnostics",
+      "coauthors": [],
+      "additions": 6,
+      "deletions": 6,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "69db579d7aea734d9df00980e36ac87a87d90cac",
+      "short_hash": "69db579d7a",
+      "author": "winewill",
+      "date": "2026-11-04T15:04:24+08:00",
+      "subject": "docs(desktop): distinguish version mode and manual version",
+      "coauthors": [],
+      "additions": 2,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "c05d36d6f37aac100c4ef19ad4051d566f1b1854",
+      "short_hash": "c05d36d6f3",
+      "author": "winewill",
+      "date": "2026-11-04T15:08:59+08:00",
+      "subject": "test(desktop): update production rollout approval snapshots",
+      "coauthors": [],
+      "additions": 2,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "08afd883d7d792d8a4c98fa1ec6c6148d1478319",
+      "short_hash": "08afd883d7",
+      "author": "winewill",
+      "date": "2026-11-04T15:14:58+08:00",
+      "subject": "docs(desktop): scope build numbering to its version mode",
+      "coauthors": [],
+      "additions": 5,
+      "deletions": 5,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "c649fdae69b0a6321c6cd0141b87d3e80f53bb90",
+      "short_hash": "c649fdae69",
+      "author": "winewill",
+      "date": "2026-11-04T15:44:33+08:00",
+      "subject": "docs(desktop): preserve frozen stable channel migration guide",
+      "coauthors": [],
+      "additions": 2,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "60d811de43a819eb4317966845c9fc677c41b50d",
+      "short_hash": "60d811de43",
+      "author": "imccyu",
+      "date": "2026-11-04T15:48:54+08:00",
+      "subject": "release(vendor): cordis 4.1.0, cosmokit 1.9.0, group 1.1.0, hmr 1.1.0, include 1.1.0, loader 1.1.0, logger-console 1.1.0, schemastery 3.19.0, timer 1.2.0",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "2f97f60455605e915b8176d9170cae337bfedcc6",
+      "short_hash": "2f97f60455",
+      "author": "imccyu",
+      "date": "2026-11-04T15:50:06+08:00",
+      "subject": "release(dsh): 0.2.2-rc.1",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "0b4328d514c11654034ae6ac49fab41db6a41bd6",
+      "short_hash": "0b4328d514",
+      "author": "Xu Hanxiang",
+      "date": "2026-11-04T16:39:36+08:00",
+      "subject": "Merge pull request #7856 from deepseek-harness/docs/liveshare-surface-accuracy",
+      "coauthors": [],
+      "additions": 16,
+      "deletions": 12,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

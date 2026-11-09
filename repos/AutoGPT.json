@@ -1,0 +1,710 @@
+{
+  "repo": "AutoGPT",
+  "full_name": "Significant-Gravitas/AutoGPT",
+  "stars": 187937,
+  "stars_source": "github-api 2026-11-08T10:02:32Z",
+  "selection_topics": [
+    "llm"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2023-03-16T09:21:07Z",
+    "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+    "fork": false,
+    "forks": 45894,
+    "full_name": "Significant-Gravitas/AutoGPT",
+    "pushed_at": "2026-11-08T05:56:51Z",
+    "stars": 187937,
+    "fetched_at": "2026-11-08T10:02:32Z"
+  },
+  "url": "https://github.com/Significant-Gravitas/AutoGPT",
+  "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "9cb76f9026d388c9bf2e098af2beae1cc864f055",
+    "head_date": "2026-11-05T21:18:08Z",
+    "history_complete": true,
+    "non_merge_commits": 9644,
+    "merge_commits": 871,
+    "maintenance_bot_commits": 1338,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 1694,
+    "explicit_ai_pct": 20.4,
+    "by_tool": {
+      "claude": 1633,
+      "copilot": 34,
+      "cursor": 18,
+      "other": 6,
+      "gemini": 1,
+      "devin": 1,
+      "codex": 1
+    },
+    "by_signal": {
+      "co-author": 1660,
+      "footer": 34
+    },
+    "recent_180d": {
+      "commits": 1851,
+      "ai_pct": 73.6,
+      "fix_pct": 51.8
+    },
+    "first_365d": {
+      "commits": 3401,
+      "ai_pct": 0.0,
+      "fix_pct": 20.9
+    },
+    "agent_config": {
+      "files": {
+        ".agents/": "2026-04-01T09:08:51Z",
+        ".claude/": "2026-01-16T09:40:58-07:00",
+        ".github/copilot-instructions.md": "2025-08-21T21:00:19Z",
+        "AGENTS.md": "2025-05-22T15:54:02Z",
+        "CLAUDE.md": "2026-04-01T09:08:51Z"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2025-05-22T15:54:02Z"
+    },
+    "bot_commit_count": 1338
+  },
+  "churn_and_stability": {
+    "total_commits": 8306,
+    "first_commit_date": "2023-03-16T02:58:21Z",
+    "last_commit_date": "2026-11-05T21:18:08Z",
+    "current_loc": 1868899,
+    "total_historical_additions": 3326093,
+    "total_historical_deletions": 1439480,
+    "total_churn": 4765573,
+    "churn_ratio": 2.55,
+    "survival_rate_pct": 56.2,
+    "code": {
+      "current_loc": 1794028,
+      "additions": 3208758,
+      "deletions": 1397163,
+      "churn_ratio": 2.57,
+      "survival_rate_pct": 55.9
+    },
+    "docs": {
+      "current_loc": 74871,
+      "additions": 117335,
+      "deletions": 42317,
+      "churn_ratio": 2.13,
+      "survival_rate_pct": 63.8
+    },
+    "fix_commits": 3050,
+    "fix_pct": 36.7,
+    "revert_commits": 52,
+    "revert_pct": 0.6,
+    "trial_error_commits": 3089,
+    "trial_error_pct": 37.2,
+    "rapid_fire_commits": 1445,
+    "rapid_fire_pct": 17.4,
+    "trial_error_chains": 423,
+    "suspicious_additions_count": 640,
+    "top5_hotspot_volatility_pct": 2.6
+  },
+  "code_hygiene": {
+    "total_files": 8322,
+    "docs_files": 523,
+    "avg_file_loc": 215.6,
+    "test_loc": 872703,
+    "test_files": 2957,
+    "test_ratio_pct": 48.6,
+    "comment_ratio_pct": 6.1,
+    "monolith_count": 214,
+    "top_languages": {
+      ".py": 1176300,
+      ".tsx": 360333,
+      ".ts": 223663,
+      ".sql": 12773,
+      ".js": 7960
+    }
+  },
+  "authors": {
+    "unique_authors": 880,
+    "top_authors": [
+      {
+        "name": "Reinier van der Leer",
+        "commits": 1318,
+        "pct": 15.9
+      },
+      {
+        "name": "Zamil Majdy",
+        "commits": 879,
+        "pct": 10.6
+      },
+      {
+        "name": "Nicholas Tindle",
+        "commits": 826,
+        "pct": 9.9
+      },
+      {
+        "name": "Abhimanyu Yadav",
+        "commits": 464,
+        "pct": 5.6
+      },
+      {
+        "name": "Ubbe",
+        "commits": 377,
+        "pct": 4.5
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 2.6,
+    "p75": 19.5,
+    "p90": 128.5,
+    "p95": 573.7,
+    "p99": 17160.0,
+    "avg": 948.1
+  },
+  "hotspots": [
+    {
+      "file": "README.md",
+      "commits": 301,
+      "additions": 3113,
+      "deletions": 2617,
+      "churn": 5730,
+      "first_seen": "2023-03-16T10:00:21Z",
+      "last_seen": "2026-10-27T15:18:45Z"
+    },
+    {
+      "file": "autogpt_platform/backend/backend/executor/manager.py",
+      "commits": 211,
+      "additions": 5340,
+      "deletions": 3447,
+      "churn": 8787,
+      "first_seen": "2024-09-20T16:50:43+02:00",
+      "last_seen": "2026-11-04T13:40:43Z"
+    },
+    {
+      "file": "autogpt_platform/backend/backend/copilot/sdk/service.py",
+      "commits": 206,
+      "additions": 11949,
+      "deletions": 5363,
+      "churn": 17312,
+      "first_seen": "2026-02-17T17:15:28+01:00",
+      "last_seen": "2026-11-05T19:21:14Z"
+    },
+    {
+      "file": "autogpt_platform/backend/backend/util/settings.py",
+      "commits": 198,
+      "additions": 1765,
+      "deletions": 292,
+      "churn": 2057,
+      "first_seen": "2024-09-20T16:50:43+02:00",
+      "last_seen": "2026-11-04T02:46:37Z"
+    },
+    {
+      "file": "autogpt_platform/backend/backend/data/graph.py",
+      "commits": 146,
+      "additions": 4286,
+      "deletions": 2047,
+      "churn": 6333,
+      "first_seen": "2024-09-20T16:50:43+02:00",
+      "last_seen": "2026-11-04T10:37:44Z"
+    },
+    {
+      "file": "autogpt_platform/backend/backend/blocks/llm.py",
+      "commits": 146,
+      "additions": 4010,
+      "deletions": 2783,
+      "churn": 6793,
+      "first_seen": "2024-09-20T16:50:43+02:00",
+      "last_seen": "2026-11-04T08:50:11Z"
+    },
+    {
+      "file": "autogpt_platform/frontend/src/lib/autogpt-server-api/types.ts",
+      "commits": 142,
+      "additions": 1580,
+      "deletions": 626,
+      "churn": 2206,
+      "first_seen": "2024-09-20T16:50:43+02:00",
+      "last_seen": "2026-11-05T16:30:49Z"
+    },
+    {
+      "file": "autogpt_platform/backend/backend/executor/scheduler.py",
+      "commits": 133,
+      "additions": 6845,
+      "deletions": 1417,
+      "churn": 8262,
+      "first_seen": "2024-09-20T16:50:43+02:00",
+      "last_seen": "2026-11-04T11:08:19Z"
+    },
+    {
+      "file": "autogpt_platform/backend/backend/api/features/chat/routes.py",
+      "commits": 126,
+      "additions": 4310,
+      "deletions": 1704,
+      "churn": 6014,
+      "first_seen": "2025-12-20T21:33:10+01:00",
+      "last_seen": "2026-11-04T22:04:41Z"
+    },
+    {
+      "file": "autogpt_platform/backend/backend/data/execution.py",
+      "commits": 125,
+      "additions": 2760,
+      "deletions": 1090,
+      "churn": 3850,
+      "first_seen": "2024-09-20T16:50:43+02:00",
+      "last_seen": "2026-11-04T13:40:43Z"
+    },
+    {
+      "file": "autogpt_platform/backend/backend/data/credit.py",
+      "commits": 121,
+      "additions": 5613,
+      "deletions": 1878,
+      "churn": 7491,
+      "first_seen": "2024-09-20T16:50:43+02:00",
+      "last_seen": "2026-11-04T06:49:33Z"
+    },
+    {
+      "file": "scripts/main.py",
+      "commits": 109,
+      "additions": 1090,
+      "deletions": 787,
+      "churn": 1877,
+      "first_seen": "2023-03-31T22:49:17+01:00",
+      "last_seen": "2023-04-15T07:56:23-05:00"
+    },
+    {
+      "file": "autogpt_platform/backend/backend/executor/utils.py",
+      "commits": 107,
+      "additions": 3800,
+      "deletions": 1357,
+      "churn": 5157,
+      "first_seen": "2025-03-24T14:26:33+07:00",
+      "last_seen": "2026-11-05T16:30:49Z"
+    },
+    {
+      "file": "autogpt_platform/backend/backend/data/db_manager.py",
+      "commits": 104,
+      "additions": 1163,
+      "deletions": 111,
+      "churn": 1274,
+      "first_seen": "2026-02-17T17:15:28+01:00",
+      "last_seen": "2026-11-05T19:21:14Z"
+    },
+    {
+      "file": "autogpt_platform/backend/backend/server/routers/v1.py",
+      "commits": 104,
+      "additions": 2710,
+      "deletions": 1219,
+      "churn": 3929,
+      "first_seen": "2024-11-04T12:12:21+01:00",
+      "last_seen": "2025-12-19T21:05:16+01:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "autogpt_platform/backend/backend/api/features/experts/experts_db_test.py",
+      "loc": 7489
+    },
+    {
+      "file": "autogpt_platform/backend/backend/copilot/sdk/service.py",
+      "loc": 7385
+    },
+    {
+      "file": "autogpt_platform/backend/backend/blocks/google/sheets.py",
+      "loc": 6565
+    },
+    {
+      "file": "autogpt_platform/backend/backend/api/features/chat/routes_test.py",
+      "loc": 5889
+    },
+    {
+      "file": "autogpt_platform/backend/backend/executor/scheduler.py",
+      "loc": 5165
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "aed93addb5bf00df7385d2a8190e992506f0faf2",
+      "short_hash": "aed93addb",
+      "author": "Nicholas Tindle",
+      "date": "2026-11-04T22:01:10Z",
+      "subject": "fix(backend): omit Claude account emails from subscription logs (#16456)",
+      "coauthors": [
+        "GPT-6 Astra (Codex)"
+      ],
+      "additions": 121,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "d9f07c3b018b57d319c081ce6b258a84f8a7d632",
+      "short_hash": "d9f07c3b0",
+      "author": "Nicholas Tindle",
+      "date": "2026-11-04T22:04:41Z",
+      "subject": "fix(backend): recover terminal turn errors and honor explicit Stop (#16528)",
+      "coauthors": [
+        "GPT-6 Astra (Codex)"
+      ],
+      "additions": 1558,
+      "deletions": 36,
+      "files_count": 24,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "1badf90af8c81f7c7e26caf286b6653973df8d57",
+      "short_hash": "1badf90af",
+      "author": "Nicholas Tindle",
+      "date": "2026-11-04T22:22:52Z",
+      "subject": "fix(frontend): detect closed ChatGPT sign-in windows (#16451)",
+      "coauthors": [
+        "GPT-6 Astra (Codex)"
+      ],
+      "additions": 583,
+      "deletions": 37,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "300a43316989c55350662e2a3ebaf4d06b7c9191",
+      "short_hash": "300a43316",
+      "author": "Krzysztof Czerwinski",
+      "date": "2026-11-05T07:01:02Z",
+      "subject": "fix(backend/executor): fail credential blocks on a bad value in dry runs (#16639)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 121,
+      "deletions": 10,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "842dc11515d7fd979b2814ee886b96cf1ec9b348",
+      "short_hash": "842dc1151",
+      "author": "Toran Bruce Richards",
+      "date": "2026-11-05T07:03:36Z",
+      "subject": "feat(frontend/onboarding): polish the first onboarding screen (SECRT-3382) (#16623)",
+      "coauthors": [
+        "Toran Bruce Richards",
+        "Claude Opus 5.5 <noreply@anthropic.com>",
+        "Krzysztof Czerwinski"
+      ],
+      "additions": 600,
+      "deletions": 147,
+      "files_count": 10,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "a7ac10092b3d30a24a7544286170003332f885bc",
+      "short_hash": "a7ac10092",
+      "author": "Krzysztof Czerwinski",
+      "date": "2026-11-05T07:52:03Z",
+      "subject": "fix(platform): the side panel follows a file Otto overwrites (#16640)",
+      "coauthors": [
+        "Claude Opus 5.5 (Claude Code) <noreply@anthropic.com>"
+      ],
+      "additions": 1057,
+      "deletions": 13,
+      "files_count": 18,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "142773b9f08cab5565e3399c1db097d40f66702c",
+      "short_hash": "142773b9f",
+      "author": "John Ababseh",
+      "date": "2026-11-05T08:04:27Z",
+      "subject": "fix(frontend): send unfinished users back to onboarding and re-check on account switch (SECRT-3384) (#16629)",
+      "coauthors": [
+        "Claude <noreply@anthropic.com>",
+        "Krzysztof Czerwinski"
+      ],
+      "additions": 1346,
+      "deletions": 211,
+      "files_count": 20,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "ff7b0a6bb9ed188fa07f565c2bb19ff97d2ad5fc",
+      "short_hash": "ff7b0a6bb",
+      "author": "Krzysztof Czerwinski",
+      "date": "2026-11-05T21:16:47+09:00",
+      "subject": "fix(backend): paying early during a trial grants the plan (hotfix, SECRT-3388) (#16649)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 69,
+      "deletions": 1,
+      "files_count": 3,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "78749c15b4aebefb1a29ca42cd0514bb56d534ff",
+      "short_hash": "78749c15b",
+      "author": "Toran Bruce Richards",
+      "date": "2026-11-05T12:32:46Z",
+      "subject": "feat(blocks/firecrawl): add Firecrawl Alexandria data tool blocks (#16561)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 842,
+      "deletions": 0,
+      "files_count": 5,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "70d0b65e5eb03627f3ac2d6321454cce05eca316",
+      "short_hash": "70d0b65e5",
+      "author": "Toran Bruce Richards",
+      "date": "2026-11-05T16:30:49Z",
+      "subject": "feat(blocks): bring the Exa integration up to date with Exa's current API (#16395)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 15664,
+      "deletions": 3884,
+      "files_count": 127,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "b5409778fbaa5be2c51b841694dbbfe4b3892ce6",
+      "short_hash": "b5409778f",
+      "author": "Nicholas Tindle",
+      "date": "2026-11-05T18:10:11Z",
+      "subject": "fix(backend): normalize configurable copilot workspace prefixes (#16454)",
+      "coauthors": [
+        "GPT-6 Astra (Codex)"
+      ],
+      "additions": 335,
+      "deletions": 14,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "7695bf3a3387a919d7ad4b9632d056732f4a98f5",
+      "short_hash": "7695bf3a3",
+      "author": "Nicholas Tindle",
+      "date": "2026-11-05T18:27:55Z",
+      "subject": "fix(platform): support atomic runtime config writes on Windows (#16450)",
+      "coauthors": [
+        "GPT-6 Astra (Codex)"
+      ],
+      "additions": 121,
+      "deletions": 15,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "b03a0cfa7d956d63864a338f67ea9fa9658b96fe",
+      "short_hash": "b03a0cfa7",
+      "author": "Nicholas Tindle",
+      "date": "2026-11-05T18:30:34Z",
+      "subject": "fix(frontend): separate graph memory availability from skill learning (#16452)",
+      "coauthors": [
+        "GPT-6 Astra (Codex)"
+      ],
+      "additions": 575,
+      "deletions": 130,
+      "files_count": 14,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "b2e895bcd4408ebcd93212db06636bdd94dd9143",
+      "short_hash": "b2e895bcd",
+      "author": "Nicholas Tindle",
+      "date": "2026-11-05T18:52:05Z",
+      "subject": "fix(backend): validate the configured Claude CLI before subscription auth (#16457)",
+      "coauthors": [
+        "GPT-6 Astra (Codex)"
+      ],
+      "additions": 346,
+      "deletions": 20,
+      "files_count": 7,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "ba17311fd83b292210e918f8ad8d90f07b5e38ad",
+      "short_hash": "ba17311fd",
+      "author": "Nicholas Tindle",
+      "date": "2026-11-05T18:55:16Z",
+      "subject": "fix(backend): hide bash tool without a supported sandbox (#16455)",
+      "coauthors": [
+        "GPT-6 Astra (Codex)"
+      ],
+      "additions": 153,
+      "deletions": 11,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "afb5149fb82c875fb83823bbecd15dd5f1acceb5",
+      "short_hash": "afb5149fb",
+      "author": "Nicholas Tindle",
+      "date": "2026-11-05T19:21:14Z",
+      "subject": "fix(backend/copilot): reuse expert checks within a turn (#15534)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>",
+        "gpt-daybreak-blue-latest (Codex)"
+      ],
+      "additions": 2178,
+      "deletions": 73,
+      "files_count": 16,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "0865d245d265a46824094afa3f248e128a9a5d0f",
+      "short_hash": "0865d245d",
+      "author": "John Ababseh",
+      "date": "2026-11-05T20:10:24Z",
+      "subject": "docs(platform): Changelog v0.10.0 (#16315)",
+      "coauthors": [
+        "Claude <noreply@anthropic.com>"
+      ],
+      "additions": 90,
+      "deletions": 0,
+      "files_count": 3,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "5396938150abd99ff5fb01f8922b9a864c4e4496",
+      "short_hash": "539693815",
+      "author": "Nicholas Tindle",
+      "date": "2026-11-05T20:12:27Z",
+      "subject": "fix(backend/copilot): admit a chat turn in one statement after its lock (#15796)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>",
+        "gpt-6-astra (Codex)"
+      ],
+      "additions": 296,
+      "deletions": 49,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "30a2ba122119518259d0c30696cc5e86942136f1",
+      "short_hash": "30a2ba122",
+      "author": "Toran Bruce Richards",
+      "date": "2026-11-05T20:47:38Z",
+      "subject": "feat(blocks): add Treg blocks for people, company and web data (#16393)",
+      "coauthors": [
+        "Claude Opus 5.5 (Claude Code) <noreply@anthropic.com>"
+      ],
+      "additions": 4713,
+      "deletions": 0,
+      "files_count": 28,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "9cb76f9026d388c9bf2e098af2beae1cc864f055",
+      "short_hash": "9cb76f902",
+      "author": "John Ababseh",
+      "date": "2026-11-05T21:18:08Z",
+      "subject": "docs(platform): Changelog v0.11.0 (#16651)",
+      "coauthors": [
+        "Claude <noreply@anthropic.com>",
+        "Bentlybro"
+      ],
+      "additions": 65,
+      "deletions": 0,
+      "files_count": 3,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

@@ -1,0 +1,676 @@
+{
+  "repo": "anything-llm",
+  "full_name": "Mintplex-Labs/anything-llm",
+  "stars": 68053,
+  "stars_source": "github-api 2026-11-08T09:00:36Z",
+  "selection_topics": [
+    "agent-harness"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2023-06-04T02:29:14Z",
+    "description": "Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience ",
+    "fork": false,
+    "forks": 7684,
+    "full_name": "Mintplex-Labs/anything-llm",
+    "pushed_at": "2026-11-07T02:20:14Z",
+    "stars": 68053,
+    "fetched_at": "2026-11-08T09:00:36Z"
+  },
+  "url": "https://github.com/Mintplex-Labs/anything-llm",
+  "description": "Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience ",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "308b27662b2f6fd4947791d61c797945c609fcbc",
+    "head_date": "2026-11-05T20:09:55-08:00",
+    "history_complete": true,
+    "non_merge_commits": 2506,
+    "merge_commits": 156,
+    "maintenance_bot_commits": 0,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 9,
+    "explicit_ai_pct": 0.4,
+    "by_tool": {
+      "claude": 6,
+      "aider": 1,
+      "devin": 1,
+      "cursor": 1
+    },
+    "by_signal": {
+      "co-author": 9
+    },
+    "recent_180d": {
+      "commits": 623,
+      "ai_pct": 0.5,
+      "fix_pct": 48.5
+    },
+    "first_365d": {
+      "commits": 680,
+      "ai_pct": 0.0,
+      "fix_pct": 14.3
+    },
+    "bot_commit_count": 0,
+    "agent_config": {
+      "files": {},
+      "ci_agent_workflows": [],
+      "has_agent_config": false,
+      "first_config_date": null
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 2506,
+    "first_commit_date": "2023-06-03T19:28:07-07:00",
+    "last_commit_date": "2026-11-06T12:09:55+08:00",
+    "current_loc": 228206,
+    "total_historical_additions": 342058,
+    "total_historical_deletions": 113830,
+    "total_churn": 455888,
+    "churn_ratio": 2.0,
+    "survival_rate_pct": 66.7,
+    "code": {
+      "current_loc": 225999,
+      "additions": 337529,
+      "deletions": 111508,
+      "churn_ratio": 1.99,
+      "survival_rate_pct": 67.0
+    },
+    "docs": {
+      "current_loc": 2207,
+      "additions": 4529,
+      "deletions": 2322,
+      "churn_ratio": 3.1,
+      "survival_rate_pct": 48.7
+    },
+    "fix_commits": 634,
+    "fix_pct": 25.3,
+    "revert_commits": 10,
+    "revert_pct": 0.4,
+    "trial_error_commits": 791,
+    "trial_error_pct": 31.6,
+    "rapid_fire_commits": 219,
+    "rapid_fire_pct": 8.7,
+    "trial_error_chains": 89,
+    "suspicious_additions_count": 59,
+    "top5_hotspot_volatility_pct": 6.2
+  },
+  "code_hygiene": {
+    "total_files": 1269,
+    "docs_files": 26,
+    "avg_file_loc": 178.1,
+    "test_loc": 24602,
+    "test_files": 90,
+    "test_ratio_pct": 10.9,
+    "comment_ratio_pct": 8.8,
+    "monolith_count": 14,
+    "top_languages": {
+      ".js": 157362,
+      ".jsx": 67370,
+      ".sql": 574,
+      ".mjs": 526,
+      ".cjs": 85
+    }
+  },
+  "authors": {
+    "unique_authors": 301,
+    "top_authors": [
+      {
+        "name": "Timothy Carambat",
+        "commits": 921,
+        "pct": 36.8
+      },
+      {
+        "name": "timothycarambat",
+        "commits": 473,
+        "pct": 18.9
+      },
+      {
+        "name": "Sean Hatfield",
+        "commits": 439,
+        "pct": 17.5
+      },
+      {
+        "name": "Marcello Fitton",
+        "commits": 104,
+        "pct": 4.2
+      },
+      {
+        "name": "MarMar Labs",
+        "commits": 76,
+        "pct": 3.0
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 1.6,
+    "p75": 5.5,
+    "p90": 20.1,
+    "p95": 49.5,
+    "p99": 268.3,
+    "avg": 17.3
+  },
+  "hotspots": [
+    {
+      "file": "server/utils/helpers/updateENV.js",
+      "commits": 211,
+      "additions": 2055,
+      "deletions": 316,
+      "churn": 2371,
+      "first_seen": "2023-06-26T11:38:38-07:00",
+      "last_seen": "2026-11-02T19:24:27-03:00"
+    },
+    {
+      "file": "server/models/systemSettings.js",
+      "commits": 188,
+      "additions": 1968,
+      "deletions": 701,
+      "churn": 2669,
+      "first_seen": "2023-07-25T10:37:04-07:00",
+      "last_seen": "2026-11-02T19:24:27-03:00"
+    },
+    {
+      "file": "README.md",
+      "commits": 151,
+      "additions": 684,
+      "deletions": 354,
+      "churn": 1038,
+      "first_seen": "2023-06-03T19:28:07-07:00",
+      "last_seen": "2026-11-04T18:20:01-06:00"
+    },
+    {
+      "file": "server/endpoints/system.js",
+      "commits": 130,
+      "additions": 2458,
+      "deletions": 838,
+      "churn": 3296,
+      "first_seen": "2023-06-03T19:28:07-07:00",
+      "last_seen": "2026-10-21T18:59:42-07:00"
+    },
+    {
+      "file": "server/utils/helpers/index.js",
+      "commits": 100,
+      "additions": 992,
+      "deletions": 161,
+      "churn": 1153,
+      "first_seen": "2023-06-07T21:31:35-07:00",
+      "last_seen": "2026-10-15T13:20:11-07:00"
+    },
+    {
+      "file": "server/utils/helpers/customModels.js",
+      "commits": 89,
+      "additions": 2054,
+      "deletions": 294,
+      "churn": 2348,
+      "first_seen": "2023-10-31T11:38:28-07:00",
+      "last_seen": "2026-10-30T13:06:29-07:00"
+    },
+    {
+      "file": "server/utils/agents/index.js",
+      "commits": 80,
+      "additions": 1393,
+      "deletions": 344,
+      "churn": 1737,
+      "first_seen": "2024-04-16T10:50:10-07:00",
+      "last_seen": "2026-11-02T17:38:57-06:00"
+    },
+    {
+      "file": "frontend/src/pages/GeneralSettings/LLMPreference/index.jsx",
+      "commits": 75,
+      "additions": 1356,
+      "deletions": 766,
+      "churn": 2122,
+      "first_seen": "2023-10-23T13:10:34-07:00",
+      "last_seen": "2026-10-22T17:33:46-07:00"
+    },
+    {
+      "file": "server/utils/agents/aibitat/index.js",
+      "commits": 70,
+      "additions": 1886,
+      "deletions": 265,
+      "churn": 2151,
+      "first_seen": "2024-04-16T10:50:10-07:00",
+      "last_seen": "2026-10-27T11:28:41-07:00"
+    },
+    {
+      "file": "server/endpoints/workspaces.js",
+      "commits": 69,
+      "additions": 1721,
+      "deletions": 609,
+      "churn": 2330,
+      "first_seen": "2023-06-03T19:28:07-07:00",
+      "last_seen": "2026-10-27T14:46:31-07:00"
+    },
+    {
+      "file": "server/utils/agents/aibitat/providers/ai-provider.js",
+      "commits": 66,
+      "additions": 1154,
+      "deletions": 195,
+      "churn": 1349,
+      "first_seen": "2024-04-16T10:50:10-07:00",
+      "last_seen": "2026-11-05T04:22:53+06:00"
+    },
+    {
+      "file": "frontend/src/utils/paths.js",
+      "commits": 65,
+      "additions": 369,
+      "deletions": 108,
+      "churn": 477,
+      "first_seen": "2023-06-03T19:28:07-07:00",
+      "last_seen": "2026-11-04T18:20:01-06:00"
+    },
+    {
+      "file": "frontend/src/components/WorkspaceChat/ChatContainer/index.jsx",
+      "commits": 65,
+      "additions": 1000,
+      "deletions": 428,
+      "churn": 1428,
+      "first_seen": "2023-06-03T19:28:07-07:00",
+      "last_seen": "2026-11-03T15:45:48-06:00"
+    },
+    {
+      "file": "frontend/src/models/system.js",
+      "commits": 65,
+      "additions": 1096,
+      "deletions": 142,
+      "churn": 1238,
+      "first_seen": "2023-06-03T19:28:07-07:00",
+      "last_seen": "2026-09-01T14:49:08-07:00"
+    },
+    {
+      "file": "server/utils/chats/stream.js",
+      "commits": 59,
+      "additions": 1181,
+      "deletions": 754,
+      "churn": 1935,
+      "first_seen": "2023-11-13T15:07:30-08:00",
+      "last_seen": "2026-11-05T20:03:29-08:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "server/utils/agents/aibitat/plugins/web-browsing.js",
+      "loc": 1990
+    },
+    {
+      "file": "server/utils/helpers/customModels.js",
+      "loc": 1760
+    },
+    {
+      "file": "server/utils/helpers/updateENV.js",
+      "loc": 1739
+    },
+    {
+      "file": "server/utils/agents/aibitat/index.js",
+      "loc": 1621
+    },
+    {
+      "file": "server/endpoints/system.js",
+      "loc": 1620
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "eefa2a1fad299be91f5582ea3c33b7f779ecd11e",
+      "short_hash": "eefa2a1f",
+      "author": "Fahmid Arman",
+      "date": "2026-11-05T04:29:03+06:00",
+      "subject": "fix: read the Telegram /history count when the command includes @BotName (#7002)",
+      "coauthors": [
+        "Timothy Carambat"
+      ],
+      "additions": 2,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "183587c634d2ad5f156443186ba68d5b989f5eb6",
+      "short_hash": "183587c6",
+      "author": "Fahmid Arman",
+      "date": "2026-11-05T04:52:32+06:00",
+      "subject": "fix: accept null and JSON string arguments in prompt-based tool calls (#7006)",
+      "coauthors": [
+        "Timothy Carambat"
+      ],
+      "additions": 191,
+      "deletions": 36,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "226140d059c45e13f1c98cd764779492ef255474",
+      "short_hash": "226140d0",
+      "author": "Timothy Carambat",
+      "date": "2026-11-04T17:02:18-06:00",
+      "subject": "fix: use SambaNova completion_tokens_per_sec for non-streaming outputTps (#7010)",
+      "coauthors": [],
+      "additions": 1,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "557993315e9d3e9badc22e9afaa42eaf8f457ddd",
+      "short_hash": "55799331",
+      "author": "Fahmid Arman",
+      "date": "2026-11-05T05:25:52+06:00",
+      "subject": "fix: resolve local $ref pointers to other properties in dereferenceSchema (#7009)",
+      "coauthors": [
+        "Timothy Carambat"
+      ],
+      "additions": 62,
+      "deletions": 11,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "5c872bad50f2c8330c553299854bab8807121b33",
+      "short_hash": "5c872bad",
+      "author": "Timothy Carambat",
+      "date": "2026-11-04T17:50:44-06:00",
+      "subject": "test: fix mobile stream-chat mock and skip host-dependent suites locally (#7012)",
+      "coauthors": [],
+      "additions": 13,
+      "deletions": 7,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "e76048b57c7217f4e04b028c2752e7e1a4a76a03",
+      "short_hash": "e76048b5",
+      "author": "Timothy Carambat",
+      "date": "2026-11-04T17:54:08-06:00",
+      "subject": "fix: reject nested folder names and move destinations in document storage (#7011)",
+      "coauthors": [],
+      "additions": 93,
+      "deletions": 18,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "60c6f9153d13669ea9eb3fb14ab770567ba2442c",
+      "short_hash": "60c6f915",
+      "author": "Timothy Carambat",
+      "date": "2026-11-04T18:20:01-06:00",
+      "subject": "Replace Discord community links with GitHub Discussions and r/anythingllm (#6968)",
+      "coauthors": [],
+      "additions": 14,
+      "deletions": 10,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "cbaf3357c7d9810bfa1f91f075cae7f533554f80",
+      "short_hash": "cbaf3357",
+      "author": "Sean Hatfield",
+      "date": "2026-11-04T16:24:51-08:00",
+      "subject": "Add workspace and thread search to the mobile sidebar drawer (#7007)",
+      "coauthors": [],
+      "additions": 6,
+      "deletions": 29,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "9d93d050ede5e1df2bbffcc76410bfdac3bb45eb",
+      "short_hash": "9d93d050",
+      "author": "Sean Hatfield",
+      "date": "2026-11-05T16:10:11-08:00",
+      "subject": "Add shift, cmd/ctrl, and select-all shortcuts to the document picker (#7013)",
+      "coauthors": [
+        "Timothy Carambat"
+      ],
+      "additions": 346,
+      "deletions": 129,
+      "files_count": 7,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "88b09e4247e6359d64ebcac748a5256eaf31cd18",
+      "short_hash": "88b09e42",
+      "author": "Fahmid Arman",
+      "date": "2026-11-06T06:20:58+06:00",
+      "subject": "fix: keep multi-select picks when \"Other\" is opened but left empty (#7031)",
+      "coauthors": [],
+      "additions": 3,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "2ea016918dd2418f32193dfa77f724501ed8e119",
+      "short_hash": "2ea01691",
+      "author": "Timothy Carambat",
+      "date": "2026-11-05T19:19:16-06:00",
+      "subject": "feat: developer API endpoints for MCP server management (#7037)",
+      "coauthors": [],
+      "additions": 1071,
+      "deletions": 2,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "f5f537d38150d3196fa29a32c7a838e53cc91c2c",
+      "short_hash": "f5f537d3",
+      "author": "Mohammad Hijjawi",
+      "date": "2026-11-06T01:28:22Z",
+      "subject": "fix: match model router hour ranges that span midnight (#7035)",
+      "coauthors": [
+        "Sean Hatfield",
+        "Timothy Carambat"
+      ],
+      "additions": 26,
+      "deletions": 4,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "db4bb7c4a226c876d4ad01b2f7d40a017632caaa",
+      "short_hash": "db4bb7c4",
+      "author": "Timothy Carambat",
+      "date": "2026-11-05T19:59:15-06:00",
+      "subject": "Forward user and workspace identity to MCP servers (#7038)",
+      "coauthors": [],
+      "additions": 523,
+      "deletions": 18,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "44b1d514f2f44ced651ee90016096e18f9d63f77",
+      "short_hash": "44b1d514",
+      "author": "Wei-Lun Li",
+      "date": "2026-11-06T02:11:41Z",
+      "subject": "fix: keep non-Latin path text in single-link scrape titles (#7025)",
+      "coauthors": [
+        "Sean Hatfield"
+      ],
+      "additions": 25,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "e12b66b9713d62c6a3ae5839c17f34e76b63c9b8",
+      "short_hash": "e12b66b9",
+      "author": "Fahmid Arman",
+      "date": "2026-11-06T08:13:41+06:00",
+      "subject": "fix: send the parsed chart dataset to the UI (#7022)",
+      "coauthors": [
+        "shatfield4",
+        "Timothy Carambat"
+      ],
+      "additions": 8,
+      "deletions": 3,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "8d61e8c6691f12f5724ebab47a7a993ca2327981",
+      "short_hash": "8d61e8c6",
+      "author": "Fahmid Arman",
+      "date": "2026-11-06T08:17:14+06:00",
+      "subject": "fix: leave unanswered prompts out of the ephemeral agent history (#7020)",
+      "coauthors": [
+        "Timothy Carambat"
+      ],
+      "additions": 1,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "73534f40f113aeb0f5821167d68727b72593e64e",
+      "short_hash": "73534f40",
+      "author": "Fahmid Arman",
+      "date": "2026-11-06T08:35:47+06:00",
+      "subject": "fix: end JSON body strings at a quote after an escaped backslash in agent flows (#7018)",
+      "coauthors": [],
+      "additions": 33,
+      "deletions": 3,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "3082e52b4d2ed9bf9e1149ed2416b3821838bb74",
+      "short_hash": "3082e52b",
+      "author": "Max-Reisinger",
+      "date": "2026-11-06T10:42:12+08:00",
+      "subject": "fix: preserve literal data prefixes in OpenAI chat streams (#7015)",
+      "coauthors": [
+        "Timothy Carambat"
+      ],
+      "additions": 30,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "f131f9333c4246bd425af707c405c0d5d9e55a4b",
+      "short_hash": "f131f933",
+      "author": "Sean Hatfield",
+      "date": "2026-11-05T20:03:29-08:00",
+      "subject": "Allow editing prompt after aborting response (#7036)",
+      "coauthors": [
+        "Timothy Carambat"
+      ],
+      "additions": 43,
+      "deletions": 1,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "308b27662b2f6fd4947791d61c797945c609fcbc",
+      "short_hash": "308b2766",
+      "author": "Max-Reisinger",
+      "date": "2026-11-06T12:09:55+08:00",
+      "subject": "fix(mcp): scan saved servers after an individual start (#7042)",
+      "coauthors": [],
+      "additions": 117,
+      "deletions": 7,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    }
+  ]
+}

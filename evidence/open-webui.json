@@ -1,0 +1,123 @@
+{
+  "repo": "open-webui",
+  "head_commit": "c38885a1",
+  "published_results": [
+    {
+      "claim": "Searching your chats for a single word is now about 40% faster, as each chat is checked once instead of twice.",
+      "metric": "One-word chat search time (release 0.12.1, PR #32268)",
+      "value": "about 40% faster",
+      "baseline": "previous search, which checked each chat twice",
+      "evidence_type": "claim_only",
+      "files": [
+        "CHANGELOG.md:389"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "JSON is now read and written with orjson by default, ... which now encode about 17 times and decode about 3 times faster.",
+      "metric": "JSON encode/decode speed for request/response bodies, streamed provider responses and socket updates (release 0.12.0, PR #31616)",
+      "value": "encode about 17 times faster; decode about 3 times faster",
+      "baseline": "previous JSON library",
+      "evidence_type": "claim_only",
+      "files": [
+        "CHANGELOG.md:479"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "A slim build now comes down at around 175 MB, near enough 89% smaller than the last release",
+      "metric": "Slim Docker image download size (release 0.11.4)",
+      "value": "around 175 MB; near enough 89% smaller",
+      "baseline": "slim image of the previous release",
+      "evidence_type": "claim_only",
+      "files": [
+        "CHANGELOG.md:803"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "the work stops growing with the length of the reply, which on a long reply is around 190x less time spent on it.",
+      "metric": "Time spent re-examining a streaming reply for reasoning and code blocks (release 0.11.1, PR #28861)",
+      "value": "around 190x less time on a long reply",
+      "baseline": "re-examining the reply from the beginning on every chunk",
+      "evidence_type": "claim_only",
+      "files": [
+        "CHANGELOG.md:1148"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Page and markdown rendering are now approximately 25% faster across the board, with significantly less memory usage",
+      "metric": "Page and markdown rendering speed after the Svelte upgrade (release 0.8.11, issue #22611)",
+      "value": "approximately 25% faster",
+      "baseline": "rendering before the Svelte upgrade",
+      "evidence_type": "claim_only",
+      "files": [
+        "CHANGELOG.md:2566"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "The functions list API now returns only essential metadata without function source code, reducing payload sizes by over 99%",
+      "metric": "Functions list API payload size (release 0.8.11, PR #22788)",
+      "value": "over 99% smaller payload",
+      "baseline": "payload including function source code",
+      "evidence_type": "claim_only",
+      "files": [
+        "CHANGELOG.md:2569"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "reducing response payload from ~167 MB to ~10 KB for 60 notes ... The Notes tab now loads in seconds instead of tens of seconds.",
+      "metric": "Notes list/search response payload and Notes tab load time (release 0.8.4, PR #21549)",
+      "value": "~10 KB for 60 notes; loads in seconds",
+      "baseline": "~167 MB for 60 notes; tens of seconds",
+      "evidence_type": "claim_only",
+      "files": [
+        "CHANGELOG.md:2947"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "User authentication is now 34% faster ... SCIM group member lookups are now up to 13x faster ... Bulk feedback deletion and group member removal are now 4-5x faster ... Memory updates are now up to 39% faster",
+      "metric": "Database-query optimizations for authentication, SCIM group lookups, bulk deletion/removal and memory updates (release 0.8.0, PRs #21010, #21005, #21019, #21013)",
+      "value": "authentication 34% faster; SCIM lookups up to 13x faster; bulk operations 4-5x faster; memory updates up to 39% faster",
+      "baseline": "previous per-row / multi-query implementations",
+      "evidence_type": "claim_only",
+      "files": [
+        "CHANGELOG.md:3138",
+        "CHANGELOG.md:3146",
+        "CHANGELOG.md:3148",
+        "CHANGELOG.md:3149"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "reducing import time by up to 95% for large chat collections",
+      "metric": "Chat import time with a bulk import endpoint (release 0.6.37, PR #17861)",
+      "value": "up to 95% less import time",
+      "baseline": "individual per-chat API requests",
+      "evidence_type": "claim_only",
+      "files": [
+        "CHANGELOG.md:3609"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "reducing document processing time by 10-50x when using OpenAI, Azure OpenAI, or Ollama embedding providers, with large PDFs now processing in seconds instead of minutes.",
+      "metric": "Document processing time with parallel external embedding requests (release 0.6.37, PR #19296)",
+      "value": "10-50x less processing time; large PDFs in seconds",
+      "baseline": "sequential embedding batches; minutes",
+      "evidence_type": "claim_only",
+      "files": [
+        "CHANGELOG.md:3614"
+      ],
+      "reproduce_command": null
+    }
+  ],
+  "strongest_evidence_type": "claim_only",
+  "summary": "Open WebUI commits no benchmark, eval or results files and no performance harness: there are no bench/ or evals/ directories, the backend has no test files, and the release-candidate suite runs from the external open-webui/tests repository. Its quantitative statements about its own performance are CHANGELOG release notes linked to pull requests, such as one-word chat search 'about 40% faster' (0.12.1), JSON that encodes 'about 17 times' and decodes 'about 3 times faster' with orjson (0.12.0), a slim image 'around 175 MB, near enough 89% smaller' (0.11.4) and document processing '10-50x' faster with parallel embedding requests (0.6.37), none with data or a reproduction method in the repository.",
+  "result_focus": "none",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}

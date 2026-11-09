@@ -1,0 +1,688 @@
+{
+  "repo": "browser-use",
+  "full_name": "browser-use/browser-use",
+  "stars": 120289,
+  "stars_source": "github-api 2026-11-08T08:52:46Z",
+  "selection_topics": [
+    "ai-agents"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2024-10-31T16:00:56Z",
+    "description": "Open-source Python library for AI browser agents, plus Browser Use Cloud: stealth browsers and a hosted agent API.",
+    "fork": false,
+    "forks": 13432,
+    "full_name": "browser-use/browser-use",
+    "pushed_at": "2026-11-08T08:29:21Z",
+    "stars": 120289,
+    "fetched_at": "2026-11-08T08:52:46Z"
+  },
+  "url": "https://github.com/browser-use/browser-use",
+  "description": "Open-source Python library for AI browser agents, plus Browser Use Cloud: stealth browsers and a hosted agent API.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "b49a68e4060acb226da8f784194fef301c53a6d7",
+    "head_date": "2026-10-29T21:28:48-07:00",
+    "history_complete": true,
+    "non_merge_commits": 7082,
+    "merge_commits": 3356,
+    "maintenance_bot_commits": 1,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 347,
+    "explicit_ai_pct": 4.9,
+    "by_tool": {
+      "claude": 160,
+      "cursor": 97,
+      "other": 86,
+      "copilot": 3,
+      "gemini": 1
+    },
+    "by_signal": {
+      "co-author": 224,
+      "agent-author": 123
+    },
+    "recent_180d": {
+      "commits": 843,
+      "ai_pct": 5.6,
+      "fix_pct": 21.5
+    },
+    "first_365d": {
+      "commits": 5281,
+      "ai_pct": 3.3,
+      "fix_pct": 19.4
+    },
+    "bot_commit_count": 1,
+    "agent_config": {
+      "files": {
+        "AGENTS.md": "2025-11-05T14:40:48-08:00",
+        "CLAUDE.md": "2025-05-25T03:39:17-07:00"
+      },
+      "ci_agent_workflows": [
+        ".github/workflows/claude.yml"
+      ],
+      "has_agent_config": true,
+      "first_config_date": "2025-05-25T03:39:17-07:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 7081,
+    "first_commit_date": "2024-10-31T17:00:29+01:00",
+    "last_commit_date": "2026-10-29T20:01:47-07:00",
+    "current_loc": 124743,
+    "total_historical_additions": 409538,
+    "total_historical_deletions": 283655,
+    "total_churn": 693193,
+    "churn_ratio": 5.56,
+    "survival_rate_pct": 30.5,
+    "code": {
+      "current_loc": 114385,
+      "additions": 355178,
+      "deletions": 239777,
+      "churn_ratio": 5.2,
+      "survival_rate_pct": 32.2
+    },
+    "docs": {
+      "current_loc": 10358,
+      "additions": 54360,
+      "deletions": 43878,
+      "churn_ratio": 9.48,
+      "survival_rate_pct": 19.1
+    },
+    "fix_commits": 1573,
+    "fix_pct": 22.2,
+    "revert_commits": 42,
+    "revert_pct": 0.6,
+    "trial_error_commits": 1569,
+    "trial_error_pct": 22.2,
+    "rapid_fire_commits": 1429,
+    "rapid_fire_pct": 20.2,
+    "trial_error_chains": 245,
+    "suspicious_additions_count": 49,
+    "top5_hotspot_volatility_pct": 7.0
+  },
+  "code_hygiene": {
+    "total_files": 417,
+    "docs_files": 62,
+    "avg_file_loc": 274.3,
+    "test_loc": 37449,
+    "test_files": 133,
+    "test_ratio_pct": 32.7,
+    "comment_ratio_pct": 10.9,
+    "monolith_count": 17,
+    "top_languages": {
+      ".py": 114015,
+      ".sh": 370
+    }
+  },
+  "authors": {
+    "unique_authors": 420,
+    "top_authors": [
+      {
+        "name": "Magnus Müller",
+        "commits": 2031,
+        "pct": 28.7
+      },
+      {
+        "name": "Nick Sweeting",
+        "commits": 1318,
+        "pct": 18.6
+      },
+      {
+        "name": "Gregor Žunič",
+        "commits": 439,
+        "pct": 6.2
+      },
+      {
+        "name": "magmueller",
+        "commits": 410,
+        "pct": 5.8
+      },
+      {
+        "name": "mertunsall",
+        "commits": 372,
+        "pct": 5.3
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 2.0,
+    "p75": 9.6,
+    "p90": 44.6,
+    "p95": 180.0,
+    "p99": 3780.0,
+    "avg": 248.3
+  },
+  "hotspots": [
+    {
+      "file": "browser_use/agent/service.py",
+      "commits": 816,
+      "additions": 11381,
+      "deletions": 7314,
+      "churn": 18695,
+      "first_seen": "2024-11-06T18:18:00+01:00",
+      "last_seen": "2026-10-17T11:12:14-07:00"
+    },
+    {
+      "file": "browser_use/browser/session.py",
+      "commits": 673,
+      "additions": 23751,
+      "deletions": 22057,
+      "churn": 45808,
+      "first_seen": "2025-05-17T04:53:54-07:00",
+      "last_seen": "2026-10-16T22:14:17-07:00"
+    },
+    {
+      "file": "browser_use/controller/service.py",
+      "commits": 359,
+      "additions": 8151,
+      "deletions": 6857,
+      "churn": 15008,
+      "first_seen": "2024-11-06T18:18:00+01:00",
+      "last_seen": "2025-08-26T11:04:16-07:00"
+    },
+    {
+      "file": "RUST_AGENT_INTEGRATION_FEATURES.md",
+      "commits": 341,
+      "additions": 2597,
+      "deletions": 2249,
+      "churn": 4846,
+      "first_seen": "2026-06-02T20:54:20Z",
+      "last_seen": "2026-06-06T15:02:55Z"
+    },
+    {
+      "file": "README.md",
+      "commits": 283,
+      "additions": 2581,
+      "deletions": 2166,
+      "churn": 4747,
+      "first_seen": "2024-10-31T17:00:29+01:00",
+      "last_seen": "2026-10-22T09:51:19-07:00"
+    },
+    {
+      "file": "tests/ci/test_rust_agent.py",
+      "commits": 245,
+      "additions": 10628,
+      "deletions": 2907,
+      "churn": 13535,
+      "first_seen": "2026-06-02T20:43:18Z",
+      "last_seen": "2026-06-08T12:29:07-07:00"
+    },
+    {
+      "file": "browser_use/rust/service.py",
+      "commits": 238,
+      "additions": 7788,
+      "deletions": 1149,
+      "churn": 8937,
+      "first_seen": "2026-06-02T20:43:18Z",
+      "last_seen": "2026-06-08T11:39:38-07:00"
+    },
+    {
+      "file": "browser_use/tools/service.py",
+      "commits": 214,
+      "additions": 3892,
+      "deletions": 2542,
+      "churn": 6434,
+      "first_seen": "2025-08-26T11:06:28-07:00",
+      "last_seen": "2026-09-04T12:52:09-07:00"
+    },
+    {
+      "file": "browser_use/agent/views.py",
+      "commits": 201,
+      "additions": 1785,
+      "deletions": 831,
+      "churn": 2616,
+      "first_seen": "2024-11-06T18:18:00+01:00",
+      "last_seen": "2026-09-03T23:55:04+05:30"
+    },
+    {
+      "file": "browser_use/agent/message_manager/service.py",
+      "commits": 188,
+      "additions": 2896,
+      "deletions": 2296,
+      "churn": 5192,
+      "first_seen": "2024-11-22T10:32:37+01:00",
+      "last_seen": "2026-08-06T02:00:01+08:00"
+    },
+    {
+      "file": "browser_use/dom/service.py",
+      "commits": 181,
+      "additions": 4563,
+      "deletions": 3822,
+      "churn": 8385,
+      "first_seen": "2024-11-06T18:18:00+01:00",
+      "last_seen": "2026-09-01T19:25:39-07:00"
+    },
+    {
+      "file": "eval/service.py",
+      "commits": 180,
+      "additions": 7036,
+      "deletions": 6965,
+      "churn": 14001,
+      "first_seen": "2025-04-16T12:09:57-07:00",
+      "last_seen": "2025-07-11T22:34:58-07:00"
+    },
+    {
+      "file": "browser_use/agent/prompts.py",
+      "commits": 173,
+      "additions": 1400,
+      "deletions": 895,
+      "churn": 2295,
+      "first_seen": "2024-11-06T18:18:00+01:00",
+      "last_seen": "2026-07-24T11:45:53-07:00"
+    },
+    {
+      "file": "browser_use/browser/context.py",
+      "commits": 164,
+      "additions": 3421,
+      "deletions": 3374,
+      "churn": 6795,
+      "first_seen": "2024-12-01T20:17:10+01:00",
+      "last_seen": "2025-08-10T21:45:56-07:00"
+    },
+    {
+      "file": "browser_use/browser/profile.py",
+      "commits": 154,
+      "additions": 1515,
+      "deletions": 845,
+      "churn": 2360,
+      "first_seen": "2025-05-20T05:34:47-07:00",
+      "last_seen": "2026-08-30T22:57:42-07:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "tests/ci/test_beta_agent.py",
+      "loc": 7920
+    },
+    {
+      "file": "browser_use/beta/service.py",
+      "loc": 6810
+    },
+    {
+      "file": "browser_use/browser/session.py",
+      "loc": 4197
+    },
+    {
+      "file": "browser_use/agent/service.py",
+      "loc": 4188
+    },
+    {
+      "file": "browser_use/browser/watchdogs/default_action_watchdog.py",
+      "loc": 3758
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "d6134221735f4b8c5333516fcb51d9115841a1da",
+      "short_hash": "d6134221",
+      "author": "Gregor Žunič",
+      "date": "2026-10-15T21:53:39-07:00",
+      "subject": "Fix the dark-mode diagram link and the hosted-path wording",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 4,
+      "deletions": 3,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "b82de7e5412dfdf3630d645b0eb210fc479e8470",
+      "short_hash": "b82de7e5",
+      "author": "Gregor Žunič",
+      "date": "2026-10-15T22:27:22-07:00",
+      "subject": "README: one-sentence intro under the badges",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 1,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "f19f24588a3bb6db767689c74b84a5d218fa9ea6",
+      "short_hash": "f19f2458",
+      "author": "Gregor Žunič",
+      "date": "2026-10-15T22:31:54-07:00",
+      "subject": "README: key image first, intro centered below it",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 6,
+      "deletions": 2,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "1411abf458c3e4213c8d164fcfd0a522ead5f290",
+      "short_hash": "1411abf4",
+      "author": "Gregor Žunič",
+      "date": "2026-10-15T22:32:29-07:00",
+      "subject": "Allow browser-use-sdk >=3.10,<4 so the documented v4 import works",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "aadf9ecd91622be3ffefbca7ed626f329a4f2a3b",
+      "short_hash": "aadf9ecd",
+      "author": "Magnus Mueller",
+      "date": "2026-10-16T05:36:48Z",
+      "subject": "Recover OpenAI browser observations and preserve usable task files",
+      "coauthors": [],
+      "additions": 333,
+      "deletions": 65,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "84bb55ae1a806dc2e04a98172ea6b5a835ef54dc",
+      "short_hash": "84bb55ae",
+      "author": "Magnus Müller",
+      "date": "2026-10-16T08:32:54Z",
+      "subject": "Clean up failed browser reconnect initialization",
+      "coauthors": [],
+      "additions": 92,
+      "deletions": 35,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "e16388ba6e2975f539f597b9e81ab3a69451ee3d",
+      "short_hash": "e16388ba",
+      "author": "Magnus Mueller",
+      "date": "2026-10-16T09:53:56Z",
+      "subject": "Finish reconnect cleanup before propagating cancellation",
+      "coauthors": [],
+      "additions": 54,
+      "deletions": 12,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "f29c9960e918f1dc1c9d6434156ccd91384c271d",
+      "short_hash": "f29c9960",
+      "author": "Gregor Žunič",
+      "date": "2026-10-16T21:45:06-07:00",
+      "subject": "README: show the one-line switch to a cloud browser in the Python quickstart",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 10,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "1be5afaeba7db71b5bb498f51255f2f35a4ff2fb",
+      "short_hash": "1be5afae",
+      "author": "Gregor Žunič",
+      "date": "2026-10-16T21:48:47-07:00",
+      "subject": "Add context7.json: name Browser Use Cloud in Context7 description and rules",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "f0af8268b8eabd2b62a18f4b3e92fa885ed88441",
+      "short_hash": "f0af8268",
+      "author": "Gregor Žunič",
+      "date": "2026-10-16T22:14:17-07:00",
+      "subject": "Clear use_cloud missing-key error; captcha cloud hint only for non-cloud browsers",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 178,
+      "deletions": 43,
+      "files_count": 5,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "a02637aacac1e693f2bd8a8532238bdec336ba27",
+      "short_hash": "a02637aa",
+      "author": "Gregor Zunic",
+      "date": "2026-10-17T10:50:47-07:00",
+      "subject": "context7.json: drop $100 tier rung (pricing page says $200, backend $100)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "335a854123e548d702ce4d31343972b2b3e3e435",
+      "short_hash": "335a8541",
+      "author": "Gregor Zunic",
+      "date": "2026-10-17T11:04:39-07:00",
+      "subject": "context7.json: shared concurrency incl. $200 tier; use_cloud is a remote browser for the local agent",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "cfe146a02de4d0e36f1fd942d3cb7e09ea07be6a",
+      "short_hash": "cfe146a0",
+      "author": "Gregor Zunic",
+      "date": "2026-10-17T11:07:43-07:00",
+      "subject": "README: cloud step edits the existing browser= line instead of a new Agent",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 6,
+      "deletions": 2,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "ef62b60e6fdc5f96e6fa16866aa64fd665e999a7",
+      "short_hash": "ef62b60e",
+      "author": "Gregor Zunic",
+      "date": "2026-10-17T11:12:14-07:00",
+      "subject": "Captcha hint: explicit cdp_url decides cloud; tests cover hint silencing on launch failure, no mocks",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 25,
+      "deletions": 10,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "46d8171cbd742190def4b3978fe3a9a945de9ba9",
+      "short_hash": "46d8171c",
+      "author": "Gregor Žunič",
+      "date": "2026-10-17T11:51:04-07:00",
+      "subject": "context7.json: Tier 1 unlocks at $100, matching /pricing",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "c607f8b575fcd726d260674e4cae52a2febd9780",
+      "short_hash": "c607f8b5",
+      "author": "Gregor Žunič",
+      "date": "2026-10-22T09:43:26-07:00",
+      "subject": "README: FAQ on replaying a saved run without a model call per step (tested)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 28,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "702c737b8cfc74428b464d14192ec2165d267f6d",
+      "short_hash": "702c737b",
+      "author": "Gregor Žunič",
+      "date": "2026-10-22T09:51:19-07:00",
+      "subject": "README replay FAQ: saved runs can still contain secrets in page snapshots; replay needs the same sensitive_data (tested)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 1,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "fda47fe3f2726b762aae130b41a020209e03945a",
+      "short_hash": "fda47fe3",
+      "author": "katsugtgz",
+      "date": "2026-10-26T01:57:33+07:00",
+      "subject": "Bump aiohttp from 3.14.3 to 3.14.5",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "8da5813e8f6f2033ccd165a99cc31de3dcc2d4da",
+      "short_hash": "8da5813e",
+      "author": "Gregor Žunič",
+      "date": "2026-10-26T21:37:16Z",
+      "subject": "Prepare final Python runtime version 0.13.14",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "857de1fb41623a033a519f0276db61151ca9f91c",
+      "short_hash": "857de1fb",
+      "author": "Gregor Žunič",
+      "date": "2026-10-29T20:01:47-07:00",
+      "subject": "Add Fireworks model example",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 37,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

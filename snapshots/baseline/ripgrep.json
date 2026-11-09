@@ -1,0 +1,63 @@
+{
+  "repo": "ripgrep",
+  "full_name": "BurntSushi/ripgrep",
+  "group": "baseline",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "957f90c8988779fae8c466e2697dbc2ae542f0ff",
+      "snapshot_date": "2016-08-24T18:33:35-04:00",
+      "first_commit_date": "2016-02-27T11:07:26-05:00",
+      "commits": 16,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 0.0,
+      "revert_pct": 0.0,
+      "churn_ratio": 3.2,
+      "survival_rate_pct": 47.6,
+      "code": {
+        "current_loc": 743,
+        "additions": 1502,
+        "deletions": 759,
+        "churn_ratio": 3.04,
+        "survival_rate_pct": 49.5
+      },
+      "docs": {
+        "current_loc": 5,
+        "additions": 68,
+        "deletions": 63,
+        "churn_ratio": 26.2,
+        "survival_rate_pct": 7.4
+      },
+      "rapid_fire_pct": 6.2,
+      "unique_authors": 1
+    },
+    "365": {
+      "snapshot_commit": "4e8c0fc4ade785775005b416dc030295c684cb67",
+      "snapshot_date": "2017-02-25T18:43:13-05:00",
+      "first_commit_date": "2016-02-27T11:07:26-05:00",
+      "commits": 506,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 14.2,
+      "revert_pct": 0.0,
+      "churn_ratio": 2.29,
+      "survival_rate_pct": 60.8,
+      "code": {
+        "current_loc": 15746,
+        "additions": 25989,
+        "deletions": 10243,
+        "churn_ratio": 2.3,
+        "survival_rate_pct": 60.6
+      },
+      "docs": {
+        "current_loc": 1010,
+        "additions": 1588,
+        "deletions": 578,
+        "churn_ratio": 2.14,
+        "survival_rate_pct": 63.6
+      },
+      "rapid_fire_pct": 23.5,
+      "unique_authors": 62
+    }
+  }
+}

@@ -1,0 +1,691 @@
+{
+  "repo": "graphify",
+  "full_name": "Graphify-Labs/graphify",
+  "stars": 144135,
+  "stars_source": "github-api 2026-11-08T08:52:35Z",
+  "selection_topics": [
+    "ai-agents"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2026-04-03T15:49:07Z",
+    "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+    "fork": false,
+    "forks": 13797,
+    "full_name": "Graphify-Labs/graphify",
+    "pushed_at": "2026-11-08T00:52:14Z",
+    "stars": 144135,
+    "fetched_at": "2026-11-08T08:52:35Z"
+  },
+  "url": "https://github.com/Graphify-Labs/graphify",
+  "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "6c8002eca4acad58db6160eabcb466e61fc35afb",
+    "head_date": "2026-11-08T00:50:14Z",
+    "history_complete": true,
+    "non_merge_commits": 2840,
+    "merge_commits": 67,
+    "maintenance_bot_commits": 0,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 1432,
+    "explicit_ai_pct": 50.4,
+    "by_tool": {
+      "claude": 1376,
+      "codex": 41,
+      "cursor": 9,
+      "other": 2,
+      "devin": 2,
+      "gemini": 2
+    },
+    "by_signal": {
+      "co-author": 1431,
+      "agent-author": 1
+    },
+    "recent_180d": {
+      "commits": 2452,
+      "ai_pct": 52.7,
+      "fix_pct": 59.4
+    },
+    "first_365d": {
+      "commits": 2840,
+      "ai_pct": 50.4,
+      "fix_pct": 56.6
+    },
+    "bot_commit_count": 0,
+    "agent_config": {
+      "files": {
+        "AGENTS.md": "2026-04-15T00:32:02+01:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2026-04-15T00:32:02+01:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 2840,
+    "first_commit_date": "2026-04-03T18:56:14+01:00",
+    "last_commit_date": "2026-11-08T00:50:14Z",
+    "current_loc": 325850,
+    "total_historical_additions": 391790,
+    "total_historical_deletions": 66011,
+    "total_churn": 457801,
+    "churn_ratio": 1.4,
+    "survival_rate_pct": 83.2,
+    "code": {
+      "current_loc": 261339,
+      "additions": 301687,
+      "deletions": 40365,
+      "churn_ratio": 1.31,
+      "survival_rate_pct": 86.6
+    },
+    "docs": {
+      "current_loc": 64511,
+      "additions": 90103,
+      "deletions": 25646,
+      "churn_ratio": 1.79,
+      "survival_rate_pct": 71.6
+    },
+    "fix_commits": 1607,
+    "fix_pct": 56.6,
+    "revert_commits": 3,
+    "revert_pct": 0.1,
+    "trial_error_commits": 1540,
+    "trial_error_pct": 54.2,
+    "rapid_fire_commits": 836,
+    "rapid_fire_pct": 29.4,
+    "trial_error_chains": 442,
+    "suspicious_additions_count": 45,
+    "top5_hotspot_volatility_pct": 10.0
+  },
+  "code_hygiene": {
+    "total_files": 718,
+    "docs_files": 337,
+    "avg_file_loc": 364.0,
+    "test_loc": 160135,
+    "test_files": 603,
+    "test_ratio_pct": 61.3,
+    "comment_ratio_pct": 10.5,
+    "monolith_count": 46,
+    "top_languages": {
+      ".py": 259344,
+      ".ts": 693,
+      ".php": 161,
+      ".sql": 150,
+      ".cs": 126
+    }
+  },
+  "authors": {
+    "unique_authors": 433,
+    "top_authors": [
+      {
+        "name": "safishamsi",
+        "commits": 648,
+        "pct": 22.8
+      },
+      {
+        "name": "Safi",
+        "commits": 576,
+        "pct": 20.3
+      },
+      {
+        "name": "ayushcodes10",
+        "commits": 209,
+        "pct": 7.4
+      },
+      {
+        "name": "Deepjyoti-Sarmah",
+        "commits": 84,
+        "pct": 3.0
+      },
+      {
+        "name": "rohit-jsfreaky",
+        "commits": 60,
+        "pct": 2.1
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 118.1,
+    "p75": 2880.0,
+    "p90": 8880.0,
+    "p95": 14220.0,
+    "p99": 28800.0,
+    "avg": 3132.0
+  },
+  "hotspots": [
+    {
+      "file": "graphify/extract.py",
+      "commits": 502,
+      "additions": 30947,
+      "deletions": 18300,
+      "churn": 49247,
+      "first_seen": "2026-04-03T23:51:00+01:00",
+      "last_seen": "2026-11-06T15:54:40+05:30"
+    },
+    {
+      "file": "README.md",
+      "commits": 306,
+      "additions": 2363,
+      "deletions": 1787,
+      "churn": 4150,
+      "first_seen": "2026-04-03T18:56:14+01:00",
+      "last_seen": "2026-11-05T01:24:25+05:30"
+    },
+    {
+      "file": "graphify/__main__.py",
+      "commits": 227,
+      "additions": 7095,
+      "deletions": 5968,
+      "churn": 13063,
+      "first_seen": "2026-04-04T14:04:39+01:00",
+      "last_seen": "2026-10-25T06:10:06-05:00"
+    },
+    {
+      "file": "graphify/extractors/engine.py",
+      "commits": 199,
+      "additions": 12676,
+      "deletions": 1081,
+      "churn": 13757,
+      "first_seen": "2026-07-09T02:01:27+05:30",
+      "last_seen": "2026-11-06T20:55:52+05:30"
+    },
+    {
+      "file": "graphify/detect.py",
+      "commits": 185,
+      "additions": 4283,
+      "deletions": 972,
+      "churn": 5255,
+      "first_seen": "2026-04-03T23:51:00+01:00",
+      "last_seen": "2026-10-21T22:34:23+05:30"
+    },
+    {
+      "file": "graphify/watch.py",
+      "commits": 164,
+      "additions": 4474,
+      "deletions": 768,
+      "churn": 5242,
+      "first_seen": "2026-04-03T23:51:00+01:00",
+      "last_seen": "2026-11-05T11:03:59Z"
+    },
+    {
+      "file": "graphify/cli.py",
+      "commits": 160,
+      "additions": 6705,
+      "deletions": 713,
+      "churn": 7418,
+      "first_seen": "2026-07-09T02:13:04+05:30",
+      "last_seen": "2026-11-07T22:36:00Z"
+    },
+    {
+      "file": "graphify/build.py",
+      "commits": 152,
+      "additions": 3984,
+      "deletions": 662,
+      "churn": 4646,
+      "first_seen": "2026-04-03T23:51:00+01:00",
+      "last_seen": "2026-11-06T01:06:47+05:30"
+    },
+    {
+      "file": "tests/test_languages.py",
+      "commits": 144,
+      "additions": 6608,
+      "deletions": 239,
+      "churn": 6847,
+      "first_seen": "2026-04-04T17:28:35+01:00",
+      "last_seen": "2026-10-31T14:00:48+05:30"
+    },
+    {
+      "file": "graphify/llm.py",
+      "commits": 129,
+      "additions": 4769,
+      "deletions": 794,
+      "churn": 5563,
+      "first_seen": "2026-04-29T08:51:53+01:00",
+      "last_seen": "2026-11-02T09:28:02+05:30"
+    },
+    {
+      "file": "tests/test_extract.py",
+      "commits": 122,
+      "additions": 6708,
+      "deletions": 121,
+      "churn": 6829,
+      "first_seen": "2026-04-03T23:51:00+01:00",
+      "last_seen": "2026-11-04T02:51:57+09:00"
+    },
+    {
+      "file": "graphify/serve.py",
+      "commits": 121,
+      "additions": 4414,
+      "deletions": 881,
+      "churn": 5295,
+      "first_seen": "2026-04-03T23:51:00+01:00",
+      "last_seen": "2026-11-05T15:26:11Z"
+    },
+    {
+      "file": "graphify/cache.py",
+      "commits": 118,
+      "additions": 2412,
+      "deletions": 446,
+      "churn": 2858,
+      "first_seen": "2026-04-03T23:51:00+01:00",
+      "last_seen": "2026-11-07T17:22:22Z"
+    },
+    {
+      "file": "graphify/skill.md",
+      "commits": 102,
+      "additions": 2390,
+      "deletions": 1583,
+      "churn": 3973,
+      "first_seen": "2026-04-04T14:04:39+01:00",
+      "last_seen": "2026-11-07T23:06:22Z"
+    },
+    {
+      "file": "graphify/export.py",
+      "commits": 102,
+      "additions": 2754,
+      "deletions": 1273,
+      "churn": 4027,
+      "first_seen": "2026-04-03T23:51:00+01:00",
+      "last_seen": "2026-11-02T18:48:18+05:30"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "graphify/extract.py",
+      "loc": 12648
+    },
+    {
+      "file": "graphify/extractors/engine.py",
+      "loc": 11595
+    },
+    {
+      "file": "tests/test_extract.py",
+      "loc": 6663
+    },
+    {
+      "file": "tests/test_languages.py",
+      "loc": 6388
+    },
+    {
+      "file": "tests/test_watch.py",
+      "loc": 6150
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "444c164cfec2140a4360b5a24c7b5b8472ee1765",
+      "short_hash": "444c164c",
+      "author": "Shaikh Fardin",
+      "date": "2026-11-06T15:54:40+05:30",
+      "subject": "fix(extract): hash ambiguous Python import placeholders from root-relative data",
+      "coauthors": [
+        "Claude <noreply@anthropic.com>"
+      ],
+      "additions": 63,
+      "deletions": 3,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "2394fd3f98beb1a4d6b10fce16e8bc4abbbc871e",
+      "short_hash": "2394fd3f",
+      "author": "Peter Neumann",
+      "date": "2026-11-05T15:26:11Z",
+      "subject": "fix(query,serve): stop flagging fresh subfolder builds as pre-#1504",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 109,
+      "deletions": 5,
+      "files_count": 4,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "67c139e40362cbc3d3976728b7aaaa8d456d0047",
+      "short_hash": "67c139e4",
+      "author": "ayushcodes10",
+      "date": "2026-11-07T22:23:37+05:30",
+      "subject": "Add regression tests for CloudFormation intrinsic tag tolerance",
+      "coauthors": [],
+      "additions": 42,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "d458e272b9e7e2d125cd1ae915f4cea2c3a6b0aa",
+      "short_hash": "d458e272",
+      "author": "ayushcodes10",
+      "date": "2026-11-07T22:23:37+05:30",
+      "subject": "Tolerate CloudFormation intrinsic tags in the YAML extractor",
+      "coauthors": [],
+      "additions": 53,
+      "deletions": 5,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "c66ccae8530d9c416198e91654681df8cc7f2041",
+      "short_hash": "c66ccae8",
+      "author": "azizur100389",
+      "date": "2026-11-05T11:03:57Z",
+      "subject": "fix(watch): rebuild the full corpus when graph.json is missing",
+      "coauthors": [
+        "OpenAI Codex <noreply@openai.com>"
+      ],
+      "additions": 30,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": "codex",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "cd544010976fae1b62378c4f9e7f658d235179ee",
+      "short_hash": "cd544010",
+      "author": "azizur100389",
+      "date": "2026-11-05T11:04:00Z",
+      "subject": "fix(ingest): reserve URL capture names exclusively",
+      "coauthors": [
+        "OpenAI Codex <noreply@openai.com>"
+      ],
+      "additions": 67,
+      "deletions": 8,
+      "files_count": 3,
+      "ai_tool": "codex",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "4feadeda0dacf64e6eb0767bbd52417fbba06cd6",
+      "short_hash": "4feadeda",
+      "author": "azizur100389",
+      "date": "2026-11-05T11:03:59Z",
+      "subject": "fix(watch): refresh JS/TS imports after resolver input changes",
+      "coauthors": [
+        "OpenAI Codex <noreply@openai.com>"
+      ],
+      "additions": 101,
+      "deletions": 16,
+      "files_count": 2,
+      "ai_tool": "codex",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "204b50854d9595cf3eed9cbf49cc1d36838a0b0a",
+      "short_hash": "204b5085",
+      "author": "azizur100389",
+      "date": "2026-11-05T11:26:08Z",
+      "subject": "fix(reflect): preserve legacy null source fields",
+      "coauthors": [
+        "OpenAI Codex <noreply@openai.com>"
+      ],
+      "additions": 4,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": "codex",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "bf1e19dce953d3fbaece702c1ac1586b3f9563e3",
+      "short_hash": "bf1e19dc",
+      "author": "azizur100389",
+      "date": "2026-11-05T11:04:03Z",
+      "subject": "fix(reflect): isolate malformed learning overlay entries",
+      "coauthors": [
+        "OpenAI Codex <noreply@openai.com>"
+      ],
+      "additions": 38,
+      "deletions": 3,
+      "files_count": 2,
+      "ai_tool": "codex",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "1192efc63901ae8ee83cf71ab100b5d647124052",
+      "short_hash": "1192efc6",
+      "author": "azizur100389",
+      "date": "2026-11-05T11:04:06Z",
+      "subject": "fix(global): recover from malformed manifest objects",
+      "coauthors": [
+        "OpenAI Codex <noreply@openai.com>"
+      ],
+      "additions": 37,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": "codex",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "2ce70ce17d1dbef280f14977d4a2f93a25e35a2e",
+      "short_hash": "2ce70ce1",
+      "author": "safishamsi",
+      "date": "2026-11-07T22:33:44Z",
+      "subject": "fix(global): isolate a malformed repo entry instead of discarding all (#5020)",
+      "coauthors": [
+        "Claude Opus 4.8 <noreply@anthropic.com>"
+      ],
+      "additions": 50,
+      "deletions": 3,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "c018fc9f97533e130e8b50fdd4e1a94b85c9b1b4",
+      "short_hash": "c018fc9f",
+      "author": "Aditya kumar singh",
+      "date": "2026-11-06T01:06:47+05:30",
+      "subject": "fix(tree): support src and file aliases to prevent empty tree viewer",
+      "coauthors": [],
+      "additions": 29,
+      "deletions": 1,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "778c906a082e01e15456a4404e6d84c88ac3448c",
+      "short_hash": "778c906a",
+      "author": "Aditya kumar singh",
+      "date": "2026-11-06T01:08:28+05:30",
+      "subject": "fix(cli): support equals-syntax and safe float validation for provider pricing flags",
+      "coauthors": [],
+      "additions": 76,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "cd9634832c39ae0232fc340225e720e064d1772c",
+      "short_hash": "cd963483",
+      "author": "safishamsi",
+      "date": "2026-11-07T22:36:00Z",
+      "subject": "fix(cli): reject non-finite or negative provider pricing (#5031 follow-up)",
+      "coauthors": [
+        "Claude Opus 4.8 <noreply@anthropic.com>"
+      ],
+      "additions": 47,
+      "deletions": 9,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "6ee8e2258e8e3172748b7696e85c27cfaae59870",
+      "short_hash": "6ee8e225",
+      "author": "safishamsi",
+      "date": "2026-11-07T22:36:00Z",
+      "subject": "fix(tree): align node-alias precedence with the graph build (#5030 follow-up)",
+      "coauthors": [
+        "Claude Opus 4.8 <noreply@anthropic.com>"
+      ],
+      "additions": 5,
+      "deletions": 2,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "1a6c2521953780990761ed006bfc4fe277e8171b",
+      "short_hash": "1a6c2521",
+      "author": "safishamsi",
+      "date": "2026-11-07T22:36:35Z",
+      "subject": "docs(changelog): add the extractor/watch/ingest/query/cli batch to 0.9.104",
+      "coauthors": [
+        "Claude Opus 4.8 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "c3d5305eb2826c363cd24e1dc788ce9a2cdfff47",
+      "short_hash": "c3d5305e",
+      "author": "safishamsi",
+      "date": "2026-11-07T23:06:22Z",
+      "subject": "security(skill): read the scan root from .graphify_root, never substitute it (#4762)",
+      "coauthors": [
+        "Claude Opus 4.8 <noreply@anthropic.com>"
+      ],
+      "additions": 1156,
+      "deletions": 714,
+      "files_count": 75,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "cb5106e861c73f7c50d1787dec05b850b1e31192",
+      "short_hash": "cb5106e8",
+      "author": "safishamsi",
+      "date": "2026-11-07T23:13:24Z",
+      "subject": "chore(release): bump version to 0.9.104",
+      "coauthors": [
+        "Claude Opus 4.8 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "433a57a002908e74c9f0abd2ad93af8b302b71c4",
+      "short_hash": "433a57a0",
+      "author": "safishamsi",
+      "date": "2026-11-07T23:19:08Z",
+      "subject": "test(install): allow the lean-core line budget for the #4762 per-block reads",
+      "coauthors": [
+        "Claude Opus 4.8 <noreply@anthropic.com>"
+      ],
+      "additions": 4,
+      "deletions": 2,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "6c8002eca4acad58db6160eabcb466e61fc35afb",
+      "short_hash": "6c8002ec",
+      "author": "safishamsi",
+      "date": "2026-11-08T00:50:14Z",
+      "subject": "docs(changelog): cite the correct per-PR issues for the 0.9.104 robustness batch",
+      "coauthors": [
+        "Claude Opus 4.8 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

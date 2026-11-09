@@ -1,0 +1,63 @@
+{
+  "repo": "playwright",
+  "full_name": "microsoft/playwright",
+  "group": "baseline",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "f63ea3ffd25ef87e5badcd14542ab36d499394fb",
+      "snapshot_date": "2020-05-12T19:23:08-07:00",
+      "first_commit_date": "2019-11-15T10:32:47-08:00",
+      "commits": 1954,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 25.5,
+      "revert_pct": 1.1,
+      "churn_ratio": 4.29,
+      "survival_rate_pct": 37.8,
+      "code": {
+        "current_loc": 48197,
+        "additions": 123360,
+        "deletions": 75163,
+        "churn_ratio": 4.12,
+        "survival_rate_pct": 39.1
+      },
+      "docs": {
+        "current_loc": 8161,
+        "additions": 25583,
+        "deletions": 17422,
+        "churn_ratio": 5.27,
+        "survival_rate_pct": 31.9
+      },
+      "rapid_fire_pct": 16.5,
+      "unique_authors": 51
+    },
+    "365": {
+      "snapshot_commit": "732e83f48d514d9682923ccbc9e2c00f0daf2ead",
+      "snapshot_date": "2020-11-13T16:29:20-08:00",
+      "first_commit_date": "2019-11-15T10:32:47-08:00",
+      "commits": 3351,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 24.4,
+      "revert_pct": 1.0,
+      "churn_ratio": 4.25,
+      "survival_rate_pct": 38.1,
+      "code": {
+        "current_loc": 102631,
+        "additions": 267460,
+        "deletions": 164829,
+        "churn_ratio": 4.21,
+        "survival_rate_pct": 38.4
+      },
+      "docs": {
+        "current_loc": 10492,
+        "additions": 29513,
+        "deletions": 19021,
+        "churn_ratio": 4.63,
+        "survival_rate_pct": 35.6
+      },
+      "rapid_fire_pct": 14.0,
+      "unique_authors": 82
+    }
+  }
+}

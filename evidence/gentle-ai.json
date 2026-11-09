@@ -1,0 +1,114 @@
+{
+  "repo": "gentle-ai",
+  "head_commit": "55240afb",
+  "published_results": [
+    {
+      "claim": "commands_to_completion: 456; blocks in_band 29, out_of_band 39, by_design 1; journeys_counted 64",
+      "metric": "Deterministic review-lifecycle 'friction' dimensions (human_prompts 12, manual_tokens 4, commands_to_completion 456, recovery_round_trips 52, model_runs 40, human_surface_bytes 20734) over the driven corpus",
+      "value": "64 journeys counted, 0 unsupported, 0 failed; commands_to_completion 456; blocks out_of_band 39 / in_band 29 / by_design 1",
+      "baseline": null,
+      "evidence_type": "harness+results",
+      "files": [
+        "bench/results.json:12558",
+        "bench/results.json:12596",
+        "bench/main.go",
+        "bench/README.md:56-59"
+      ],
+      "reproduce_command": "cd bench && go build ./... && gentle-ai-bench run --binary /path/to/gentle-ai --out results-after.json"
+    },
+    {
+      "claim": "All 14 journeys completed; nothing was unsupported. Re-running produces byte-identical numbers",
+      "metric": "Friction dimensions for gentle-ai 1.49.1-0.20260726001603-c2b91ac966ca+dirty on the old 14-journey corpus",
+      "value": "human_prompts 6, manual_tokens 1, commands_to_completion 92, blocks 10 (in_band 3, out_of_band 7), recovery_round_trips 4, model_runs 15, human_surface_bytes 2605, git_subprocesses 2787",
+      "baseline": null,
+      "evidence_type": "results_only",
+      "files": [
+        "bench/README.md:409-431"
+      ],
+      "reproduce_command": "gentle-ai-bench run --binary /path/to/gentle-ai --out results-after.json"
+    },
+    {
+      "claim": "On the 5 comparable journeys, blocks fell from 10 to 3 — all seven removed blocks were `out_of_band`",
+      "metric": "Blocks and human_surface_bytes, before/after binary comparison",
+      "value": "blocks 10 -> 3; human_surface_bytes 604 -> 383; commands_to_completion unchanged at 16 (5 of 14 journeys comparable, 9 unsupported on v2.1.2)",
+      "baseline": "gentle-ai v2.1.2 (results-before.json)",
+      "evidence_type": "results_only",
+      "files": [
+        "bench/README.md:439-446",
+        "bench/.gitignore"
+      ],
+      "reproduce_command": "gentle-ai-bench compare --before results-before.json --after results-after.json"
+    },
+    {
+      "claim": "3-line bug in one function | 335 s · 56 turns · $0.339 | 77 s · 10 turns · $0.105",
+      "metric": "Wall time, agent turns, API-equivalent cost (Gentle Shell, n=1, local benchmark with hidden acceptance suites)",
+      "value": "77 s, 10 turns, $0.105",
+      "baseline": "Before proportional routing: 335 s, 56 turns, $0.339",
+      "evidence_type": "results_only",
+      "files": [
+        "README.md:164",
+        "README.md:168"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Bug rooted in shared logic | 479 s · $0.361 | 276 s · $0.207",
+      "metric": "Wall time and API-equivalent cost (n=1)",
+      "value": "276 s, $0.207",
+      "baseline": "Before routing change: 479 s, $0.361",
+      "evidence_type": "results_only",
+      "files": [
+        "README.md:169"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Data migration (high risk) | 559 s · $0.403 · needed a feedback round | 539 s · $0.555 · accepted on the first round",
+      "metric": "Wall time, cost, first-round acceptance (n=1)",
+      "value": "539 s, $0.555, accepted first round",
+      "baseline": "559 s, $0.403, needed a feedback round",
+      "evidence_type": "results_only",
+      "files": [
+        "README.md:170"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "73-line spec, 26 hidden checks | Paraphrased handoffs: 13 failing, still 23/26 after two feedback rounds | Spec passed by reference",
+      "metric": "Hidden acceptance checks passed",
+      "value": "Not stated numerically for the 'after' arm (only 'Spec passed by reference', linking gentle-shell#1718)",
+      "baseline": "Paraphrased handoffs: 13 failing, 23/26 after two feedback rounds",
+      "evidence_type": "external",
+      "files": [
+        "README.md:171",
+        "https://github.com/Gentleman-Programming/gentle-shell/pull/1718"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Against the same model in Codex CLI ... ranked higher on the medium (3 of 3 runs) ... The large task still took about three times longer (17.5–17.9 min vs 6.1 min)",
+      "metric": "Blind-review ranking and wall time vs Codex CLI",
+      "value": "ranked higher on medium task 3 of 3 runs; large task 17.5–17.9 min",
+      "baseline": "Codex CLI, same model: 6.1 min on large task",
+      "evidence_type": "external",
+      "files": [
+        "README.md:173",
+        "https://github.com/Gentleman-Programming/gentle-shell/pull/1723",
+        "https://github.com/Gentleman-Programming/gentle-shell/pull/1794",
+        "https://github.com/Gentleman-Programming/gentle-shell/issues/1713"
+      ],
+      "reproduce_command": null
+    }
+  ],
+  "strongest_evidence_type": "harness+results",
+  "summary": "gentle-ai ships a deterministic, offline Go harness (bench/, its own go.mod, run in CI at .github/workflows/ci.yml:100-163) that measures the friction of its review lifecycle, such as human prompts, commands to completion and blocks, with no model calls and no timing, and commits one full run (bench/results.json: 64 journeys counted, 0 failed); a second results.json at the repo root records 0 counted and 1 failed journey. The README's 14-journey totals and its comparison with v2.1.2 (blocks 10 to 3 on the 5 comparable journeys) come from results-after.json and results-before.json, which are gitignored and not in the repo. The README's agent-performance table reports single (n=1) Gentle Shell runs with no data or harness in this repo; in it the data-migration run cost $0.555 against $0.403 before, and was accepted on the first round. The spec row and the comparison with Codex CLI link to gentle-shell PRs and an issue (#1718, #1723, #1794, #1713); the comparison reports that the large task took about three times longer (17.5–17.9 min vs 6.1 min).",
+  "result_focus": "outcome",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself",
+  "accuracy_check": {
+    "date": "2026-11-08",
+    "numbers_checked": 95,
+    "corrections": [
+      "summary: said the n=1 agent-performance table was sourced to gentle-shell PR/issue URLs; the rows at README.md:168-170 have no source link, the links are on the spec row (README.md:171, #1718) and the Codex CLI comparison (README.md:173, #1723, #1794, #1713)"
+    ]
+  }
+}

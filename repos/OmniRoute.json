@@ -1,0 +1,631 @@
+{
+  "repo": "OmniRoute",
+  "full_name": "cheaper-inference/OmniRoute",
+  "stars": 85531,
+  "stars_source": "github-api 2026-11-08T09:08:22Z",
+  "selection_topics": [
+    "core-audit"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2026-02-13T12:38:31Z",
+    "description": "Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 900+ contributors",
+    "fork": false,
+    "forks": 12938,
+    "full_name": "cheaper-inference/OmniRoute",
+    "pushed_at": "2026-11-08T09:06:54Z",
+    "stars": 85531,
+    "fetched_at": "2026-11-08T09:08:22Z"
+  },
+  "url": "https://github.com/cheaper-inference/OmniRoute",
+  "description": "Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 900+ contributors",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "2a8dc2741f7c2b5ecb328e151545fbf6bc3e80ac",
+    "head_date": "2026-11-08T03:03:07-03:00",
+    "history_complete": true,
+    "non_merge_commits": 11423,
+    "merge_commits": 975,
+    "maintenance_bot_commits": 209,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 339,
+    "explicit_ai_pct": 3.0,
+    "by_tool": {
+      "claude": 191,
+      "gemini": 67,
+      "other": 44,
+      "cursor": 23,
+      "copilot": 9,
+      "codex": 3,
+      "devin": 2
+    },
+    "by_signal": {
+      "co-author": 275,
+      "agent-author": 64
+    },
+    "recent_180d": {
+      "commits": 9056,
+      "ai_pct": 1.7,
+      "fix_pct": 63.0
+    },
+    "first_365d": {
+      "commits": 11214,
+      "ai_pct": 3.0,
+      "fix_pct": 61.2
+    },
+    "bot_commit_count": 209,
+    "agent_config": {
+      "files": {
+        ".github/copilot-instructions.md": "2026-04-06T00:29:54-03:00",
+        "AGENTS.md": "2026-02-18T00:02:15-03:00",
+        "CLAUDE.md": "2026-04-13T13:10:22-03:00",
+        "GEMINI.md": "2026-04-16T16:07:44-03:00"
+      },
+      "ci_agent_workflows": [
+        ".github/workflows/claude.yml"
+      ],
+      "has_agent_config": true,
+      "first_config_date": "2026-02-18T00:02:15-03:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 11214,
+    "first_commit_date": "2026-02-18T00:02:15-03:00",
+    "last_commit_date": "2026-11-08T07:03:07+01:00",
+    "current_loc": 2993901,
+    "total_historical_additions": 5766277,
+    "total_historical_deletions": 1117172,
+    "total_churn": 6883449,
+    "churn_ratio": 2.3,
+    "survival_rate_pct": 51.9,
+    "code": {
+      "current_loc": 2903134,
+      "additions": 5308121,
+      "deletions": 802600,
+      "churn_ratio": 2.1,
+      "survival_rate_pct": 54.7
+    },
+    "docs": {
+      "current_loc": 90767,
+      "additions": 458156,
+      "deletions": 314572,
+      "churn_ratio": 8.51,
+      "survival_rate_pct": 19.8
+    },
+    "fix_commits": 6864,
+    "fix_pct": 61.2,
+    "revert_commits": 10,
+    "revert_pct": 0.1,
+    "trial_error_commits": 6888,
+    "trial_error_pct": 61.4,
+    "rapid_fire_commits": 6381,
+    "rapid_fire_pct": 56.9,
+    "trial_error_chains": 4196,
+    "suspicious_additions_count": 639,
+    "top5_hotspot_volatility_pct": 3.4
+  },
+  "code_hygiene": {
+    "total_files": 16261,
+    "docs_files": 397,
+    "avg_file_loc": 178.5,
+    "test_loc": 1617237,
+    "test_files": 9245,
+    "test_ratio_pct": 55.7,
+    "comment_ratio_pct": 9.4,
+    "monolith_count": 217,
+    "top_languages": {
+      ".ts": 2435854,
+      ".tsx": 333171,
+      ".mjs": 116460,
+      ".sql": 5967,
+      ".sh": 3748
+    }
+  },
+  "authors": {
+    "unique_authors": 938,
+    "top_authors": [
+      {
+        "name": "Diego Rodrigues de Sa e Souza",
+        "commits": 2911,
+        "pct": 26.0
+      },
+      {
+        "name": "diegosouzapw",
+        "commits": 2441,
+        "pct": 21.8
+      },
+      {
+        "name": "Dizzle",
+        "commits": 423,
+        "pct": 3.8
+      },
+      {
+        "name": "Bob.Hou",
+        "commits": 288,
+        "pct": 2.6
+      },
+      {
+        "name": "Paco Cartones",
+        "commits": 222,
+        "pct": 2.0
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 176.7,
+    "p75": 1068.0,
+    "p90": 3105.0,
+    "p95": 5680.0,
+    "p99": 18480.0,
+    "avg": 1560.3
+  },
+  "hotspots": [
+    {
+      "file": "open-sse/handlers/chatCore.ts",
+      "commits": 535,
+      "additions": 23745,
+      "deletions": 20522,
+      "churn": 44267,
+      "first_seen": "2026-02-18T00:02:15-03:00",
+      "last_seen": "2026-11-07T03:47:06-03:00"
+    },
+    {
+      "file": "docs/reference/ENVIRONMENT.md",
+      "commits": 432,
+      "additions": 4417,
+      "deletions": 2499,
+      "churn": 6916,
+      "first_seen": "2026-05-13T13:11:53-03:00",
+      "last_seen": "2026-11-07T21:49:36-05:00"
+    },
+    {
+      "file": "README.md",
+      "commits": 417,
+      "additions": 13901,
+      "deletions": 11412,
+      "churn": 25313,
+      "first_seen": "2026-02-18T00:02:15-03:00",
+      "last_seen": "2026-11-07T11:57:05-03:00"
+    },
+    {
+      "file": "src/sse/handlers/chat.ts",
+      "commits": 272,
+      "additions": 7136,
+      "deletions": 3075,
+      "churn": 10211,
+      "first_seen": "2026-02-18T00:02:15-03:00",
+      "last_seen": "2026-11-07T23:49:56-03:00"
+    },
+    {
+      "file": "open-sse/services/combo.ts",
+      "commits": 271,
+      "additions": 18501,
+      "deletions": 17486,
+      "churn": 35987,
+      "first_seen": "2026-02-18T00:02:15-03:00",
+      "last_seen": "2026-11-05T01:23:18+03:00"
+    },
+    {
+      "file": "src/sse/services/auth.ts",
+      "commits": 246,
+      "additions": 8400,
+      "deletions": 3565,
+      "churn": 11965,
+      "first_seen": "2026-02-18T00:02:15-03:00",
+      "last_seen": "2026-11-07T22:08:45-06:00"
+    },
+    {
+      "file": "open-sse/config/providerRegistry.ts",
+      "commits": 237,
+      "additions": 8115,
+      "deletions": 6905,
+      "churn": 15020,
+      "first_seen": "2026-02-18T00:02:15-03:00",
+      "last_seen": "2026-09-29T19:58:13-03:00"
+    },
+    {
+      "file": "src/shared/constants/providers.ts",
+      "commits": 231,
+      "additions": 4746,
+      "deletions": 3792,
+      "churn": 8538,
+      "first_seen": "2026-02-18T00:02:15-03:00",
+      "last_seen": "2026-11-07T22:08:45-06:00"
+    },
+    {
+      "file": "AGENTS.md",
+      "commits": 183,
+      "additions": 3079,
+      "deletions": 2760,
+      "churn": 5839,
+      "first_seen": "2026-02-18T00:02:15-03:00",
+      "last_seen": "2026-11-07T09:09:26-05:00"
+    },
+    {
+      "file": "src/app/api/v1/models/catalog.ts",
+      "commits": 178,
+      "additions": 5629,
+      "deletions": 2462,
+      "churn": 8091,
+      "first_seen": "2026-03-04T18:52:25-03:00",
+      "last_seen": "2026-11-08T05:07:31+01:00"
+    },
+    {
+      "file": "src/app/api/providers/[id]/models/route.ts",
+      "commits": 176,
+      "additions": 6451,
+      "deletions": 3189,
+      "churn": 9640,
+      "first_seen": "2026-02-18T00:02:15-03:00",
+      "last_seen": "2026-11-07T14:25:15-06:00"
+    },
+    {
+      "file": "open-sse/utils/stream.ts",
+      "commits": 173,
+      "additions": 7281,
+      "deletions": 2478,
+      "churn": 9759,
+      "first_seen": "2026-02-18T00:02:15-03:00",
+      "last_seen": "2026-11-05T02:41:12+01:00"
+    },
+    {
+      "file": "open-sse/services/accountFallback.ts",
+      "commits": 166,
+      "additions": 5444,
+      "deletions": 1917,
+      "churn": 7361,
+      "first_seen": "2026-02-18T00:02:15-03:00",
+      "last_seen": "2026-11-07T22:08:45-06:00"
+    },
+    {
+      "file": "src/app/(dashboard)/dashboard/providers/[id]/page.tsx",
+      "commits": 162,
+      "additions": 17773,
+      "deletions": 16968,
+      "churn": 34741,
+      "first_seen": "2026-02-18T00:02:15-03:00",
+      "last_seen": "2026-06-11T18:52:29-03:00"
+    },
+    {
+      "file": "open-sse/executors/base.ts",
+      "commits": 161,
+      "additions": 4481,
+      "deletions": 1975,
+      "churn": 6456,
+      "first_seen": "2026-02-18T00:02:15-03:00",
+      "last_seen": "2026-11-07T23:57:22+03:30"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "@omniroute/opencode-plugin/src/index.ts",
+      "loc": 5612
+    },
+    {
+      "file": "src/app/(dashboard)/dashboard/combos/page.tsx",
+      "loc": 5213
+    },
+    {
+      "file": "tests/unit/combo-routing-engine.test.ts",
+      "loc": 3720
+    },
+    {
+      "file": "open-sse/utils/stream.ts",
+      "loc": 3717
+    },
+    {
+      "file": "tests/unit/chatcore-translation-paths.test.ts",
+      "loc": 3606
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "ea743d29a59eb0d61c142fd78d003adc229ea371",
+      "short_hash": "ea743d29a5",
+      "author": "serenity",
+      "date": "2026-11-07T23:57:03+03:30",
+      "subject": "fix(sse): count Ollama prompt_eval_cached_count as cached tokens (#19004)",
+      "coauthors": [],
+      "additions": 41,
+      "deletions": 0,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "86ab2b8aa0e4e96bed826c889701cfa828ce6c5c",
+      "short_hash": "86ab2b8aa0",
+      "author": "serenity",
+      "date": "2026-11-07T23:57:22+03:30",
+      "subject": "fix(sse): keep the copilot-chat identity after the Copilot 403 fallback (#19024)",
+      "coauthors": [],
+      "additions": 98,
+      "deletions": 6,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "6b4a9fe156814abad0e9b4c6f00719790e327d0c",
+      "short_hash": "6b4a9fe156",
+      "author": "Praveen K Palaniswamy",
+      "date": "2026-11-07T15:27:43-05:00",
+      "subject": "fix(sse): drop reasoning_effort none for Cloudflare Workers AI (#19067)",
+      "coauthors": [],
+      "additions": 169,
+      "deletions": 8,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "6abb2980b35b1104b6c53d1ede6e4e0d0eb9845d",
+      "short_hash": "6abb2980b3",
+      "author": "serenity",
+      "date": "2026-11-07T23:58:04+03:30",
+      "subject": "fix(sse): prefix the forced Claude tool_choice like the declared tools (#19000)",
+      "coauthors": [],
+      "additions": 100,
+      "deletions": 0,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "fb51148e4c5c524a217031c05d6aa2b4bbf3f53a",
+      "short_hash": "fb51148e4c",
+      "author": "Minxi Hou",
+      "date": "2026-11-07T16:52:11-05:00",
+      "subject": "fix(combo): let codex paid credits keep a target reachable (#18883)",
+      "coauthors": [],
+      "additions": 551,
+      "deletions": 26,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "3f7d0341309b440ab85dd4837c64743fae9ddeb1",
+      "short_hash": "3f7d034130",
+      "author": "trespassmk",
+      "date": "2026-11-08T03:48:09+01:00",
+      "subject": "fix(sse): keep encrypted reasoning_details data out of text processing (#19249)",
+      "coauthors": [],
+      "additions": 184,
+      "deletions": 0,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "23133a34985246015ad1e35b8242cc14651cd03b",
+      "short_hash": "23133a3498",
+      "author": "小妍儿 ✨",
+      "date": "2026-11-08T10:48:33+08:00",
+      "subject": "fix(conversations): stop the reconnect search once no later start can win (#19213)",
+      "coauthors": [],
+      "additions": 232,
+      "deletions": 0,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "cd0cb25a5ad1911aaaa626fc049b5ea040bc88b7",
+      "short_hash": "cd0cb25a5a",
+      "author": "Praveen K Palaniswamy",
+      "date": "2026-11-07T21:48:55-05:00",
+      "subject": "fix(skills): return Anthropic web-search results as web_search_tool_result blocks (#19199)",
+      "coauthors": [],
+      "additions": 225,
+      "deletions": 8,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "23aa2ae64d94539687991780d37afc2406331540",
+      "short_hash": "23aa2ae64d",
+      "author": "Ankit",
+      "date": "2026-11-08T08:19:16+05:30",
+      "subject": "feat(dashboard): rank Cmd+K results by match quality instead of sidebar order (#17915) (#19175)",
+      "coauthors": [],
+      "additions": 208,
+      "deletions": 2,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "6efeb6a58cebda4eb162e7a4ad2d6857cfce686b",
+      "short_hash": "6efeb6a58c",
+      "author": "Minxi Hou",
+      "date": "2026-11-07T21:49:36-05:00",
+      "subject": "fix(a2a): run skill self-loop calls with the caller's key (#19119)",
+      "coauthors": [],
+      "additions": 1136,
+      "deletions": 60,
+      "files_count": 15,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "a952f49838625656a3341feceb6e8a60c962b150",
+      "short_hash": "a952f49838",
+      "author": "Diego Rodrigues de Sa e Souza",
+      "date": "2026-11-07T23:49:56-03:00",
+      "subject": "fix(sse): honor the live-test mark only on requests from this process (#19292)",
+      "coauthors": [],
+      "additions": 295,
+      "deletions": 13,
+      "files_count": 14,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "b471b8bb234cd25d5f60b1379669e298284a5b58",
+      "short_hash": "b471b8bb23",
+      "author": "RayJW",
+      "date": "2026-11-08T05:07:31+01:00",
+      "subject": "fix(catalog): prevent defaulted custom endpoint overlay from masking discovered endpoints (#19232)",
+      "coauthors": [],
+      "additions": 270,
+      "deletions": 7,
+      "files_count": 7,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "e67b87898c2034200f1f603ab097a961cb80f1b2",
+      "short_hash": "e67b87898c",
+      "author": "Markus Hartung",
+      "date": "2026-11-08T05:07:57+01:00",
+      "subject": "fix(responses): continue from completed responses with dropped log events (#19189)",
+      "coauthors": [],
+      "additions": 90,
+      "deletions": 8,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "69afe4acf7bb3343e9d90120a28653ff78a50f1f",
+      "short_hash": "69afe4acf7",
+      "author": "Ankit",
+      "date": "2026-11-08T09:38:20+05:30",
+      "subject": "fix(providers): find Chrome in its Windows install locations for ChatGPT Web Codex (#18850) (#19170)",
+      "coauthors": [],
+      "additions": 34,
+      "deletions": 0,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "d54eeb8e1dd16262b65917ad1ab433aa9b9146e8",
+      "short_hash": "d54eeb8e1d",
+      "author": "Aldo",
+      "date": "2026-11-07T22:08:45-06:00",
+      "subject": "feat(providers): native Microsoft 365 Copilot sign-in, routing, turns, conversation continuation and images (#19122)",
+      "coauthors": [],
+      "additions": 10409,
+      "deletions": 995,
+      "files_count": 86,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "ee84312803db0164d54409fbb05680116cff1a9d",
+      "short_hash": "ee84312803",
+      "author": "Szymon Żołnierczyk",
+      "date": "2026-11-08T05:09:09+01:00",
+      "subject": "fix(sse): flush Claude stream tails as typed deltas per content block (#19043)",
+      "coauthors": [],
+      "additions": 778,
+      "deletions": 105,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "a9c5c54a16e4d304273c6eb45f12a4cf01e2d47b",
+      "short_hash": "a9c5c54a16",
+      "author": "Minxi Hou",
+      "date": "2026-11-08T01:02:26-05:00",
+      "subject": "fix(sse): count decoded bytes against the upstream response cap (#19114)",
+      "coauthors": [],
+      "additions": 983,
+      "deletions": 139,
+      "files_count": 21,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "2a8dc2741f7c2b5ecb328e151545fbf6bc3e80ac",
+      "short_hash": "2a8dc2741f",
+      "author": "Dizzle",
+      "date": "2026-11-08T07:03:07+01:00",
+      "subject": "docs(compression): add CCR/dedup operator guide and fix MCP transport and storage claims (#18866)",
+      "coauthors": [],
+      "additions": 145,
+      "deletions": 12,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    }
+  ]
+}

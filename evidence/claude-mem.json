@@ -1,0 +1,139 @@
+{
+  "repo": "claude-mem",
+  "head_commit": "3ab6e1a21",
+  "published_results": [
+    {
+      "claim": "$0.077 vs $0.124 (-38%) | $0.171 vs $0.243 (-30%)",
+      "metric": "Mean cost per agent run answering the same walkthrough question with the File Read Gate ON vs OFF, on a 941-line / 49 KB file; graders check answer correctness",
+      "value": "-38% (claude-sonnet-5-5, 3 runs/case, $0.077 vs $0.124); -30% (claude-opus-5-5, 2 runs/case, $0.171 vs $0.243); small 19 KB file: -1% (Sonnet), 0% (Opus); all graders passed",
+      "baseline": "Same task with the gate OFF (whole-file Read allowed)",
+      "evidence_type": "harness+results",
+      "files": [
+        "tests/evals/read-gate/README.md:87",
+        "tests/evals/read-gate/README.md:89",
+        "tests/evals/read-gate/README.md:99",
+        "tests/evals/read-gate/README.md:113",
+        "tests/evals/read-gate/README.md:114",
+        "scripts/eval-read-gate.ts:1442",
+        "package.json:122"
+      ],
+      "reproduce_command": "npm run eval:read-gate"
+    },
+    {
+      "claim": "On the large file the same block saved 35% on Sonnet and 32% on Opus.",
+      "metric": "Cost change, gate ON vs OFF (earlier eval configuration, before the 32 KB deny size)",
+      "value": "large 49 KB file: -35% (Sonnet), -32% (Opus); small 19 KB file: -6% (Sonnet), +20% (Opus)",
+      "baseline": "Gate OFF",
+      "evidence_type": "harness+results",
+      "files": [
+        "tests/evals/read-gate/README.md:41",
+        "docs/public/file-read-gate.mdx:244",
+        "docs/public/file-read-gate.mdx:245"
+      ],
+      "reproduce_command": "npm run eval:read-gate"
+    },
+    {
+      "claim": "positive-cutoff publisher/Git/file-query median times fell from about 12.76/20.03/12.75 ms to 0.19/0.20/0.24 ms with identical rows/order",
+      "metric": "SQLite query median latency for the My Work view, baseline SQL vs index-selected SQL, synthetic 100k-row fixture; also new-reader and warm p95",
+      "value": "12.76/20.03/12.75 ms -> 0.19/0.20/0.24 ms; new-reader p95 82.93 ms; warm p95 6.22 ms (fixture ~77 MB)",
+      "baseline": "Same SQL with INDEXED BY hints removed (scripts/benchmark-work-view.ts:154)",
+      "evidence_type": "harness+results",
+      "files": [
+        "docs/development/viewer-sync-recovery.md:126",
+        "docs/development/viewer-sync-recovery.md:128",
+        "scripts/benchmark-work-view.ts:154",
+        "scripts/benchmark-work-view.ts:251"
+      ],
+      "reproduce_command": "rtk npm exec --yes --package=[email removed] -- bun scripts/benchmark-work-view.ts --output reports/work-view-benchmark.json"
+    },
+    {
+      "claim": "reduced median total product discovery from 927.09 ms to 26.74 ms including selection",
+      "metric": "Median total product-discovery latency on the author's real ~3 GB database (read-only --db run)",
+      "value": "927.09 ms -> 26.74 ms; publisher 537.04 -> 9.38 ms, Git 270.87 -> 13.65 ms, modified files 167.16 -> 3.65 ms; one new-reader sample 694.19 ms",
+      "baseline": "Original (non-index-selected) product discovery",
+      "evidence_type": "harness+results",
+      "files": [
+        "docs/development/viewer-sync-recovery.md:138",
+        "docs/development/viewer-sync-recovery.md:140"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "| Discovery (cross-file search) | ~14,200 tokens | ~252,500 tokens | **17.8x cheaper** |",
+      "metric": "Tokens consumed (and per-call latency) for code exploration: Smart Explore AST tools vs the standard Explore agent, 5 queries on the claude-mem src/ directory, Claude Opus 4.6",
+      "value": "Discovery 17.8x cheaper; targeted reads 19.4x cheaper; end-to-end 10-12x cheaper; speed 10-30x faster ('Under 2s per call' vs '5-66s per call'); completeness 5/5 vs 4/5",
+      "baseline": "Explore agent restricted to Glob/Grep/Read",
+      "evidence_type": "results_only",
+      "files": [
+        "docs/public/smart-explore-benchmark.mdx:14",
+        "docs/public/smart-explore-benchmark.mdx:15-17",
+        "docs/public/smart-explore-benchmark.mdx:18",
+        "docs/public/smart-explore-benchmark.mdx:25",
+        "docs/public/smart-explore-benchmark.mdx:55",
+        "docs/public/smart-explore-benchmark.mdx:92",
+        "docs/CHANGELOG.md:4312"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Total                                        ~2,600 tokens (about 88% less)",
+      "metric": "Estimated tokens for one worked example (changing WorkerService.shutdown()) with gate vs whole-file Read",
+      "value": "~22,000 tokens -> ~2,600 tokens (about 88% less); estimates at 4 characters per token",
+      "baseline": "Whole-file Read (~22,000 tokens)",
+      "evidence_type": "results_only",
+      "files": [
+        "docs/public/file-read-gate.mdx:192",
+        "docs/public/file-read-gate.mdx:200",
+        "docs/public/file-read-gate.mdx:203"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "**~10x token savings** by filtering before fetching details",
+      "metric": "Token savings from the 3-step MCP search workflow",
+      "value": "~10x",
+      "baseline": null,
+      "evidence_type": "claim_only",
+      "files": [
+        "README.md:314"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "**Token Savings**: ~2,250 tokens per session start (90% reduction)",
+      "metric": "Tool-definition tokens loaded at session start (v5.4.0: 9 MCP tools -> 1 skill)",
+      "value": "~2,250 tokens per session start (90% reduction)",
+      "baseline": "9 MCP tools (~2,500 tokens in tool definitions per session start)",
+      "evidence_type": "claim_only",
+      "files": [
+        "docs/CHANGELOG.md:8181"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Impact: 200x faster SessionStart for cached installations (10ms vs 2-5s)",
+      "metric": "SessionStart hook latency with cached install",
+      "value": "200x faster (10ms vs 2-5s)",
+      "baseline": "npm install on every SessionStart",
+      "evidence_type": "claim_only",
+      "files": [
+        "docs/CHANGELOG.md:8771"
+      ],
+      "reproduce_command": null
+    }
+  ],
+  "strongest_evidence_type": "harness+results",
+  "summary": "The read-gate eval (scripts/eval-read-gate.ts, `npm run eval:read-gate`) has a runnable harness and committed per-case tables: with the gate on, mean cost per run on a 49 KB file was $0.077 vs $0.124 (-38%) on Sonnet and $0.171 vs $0.243 (-30%) on Opus, and -1% and 0% on a 19 KB file, where an earlier version of the gate had cost Opus 20% more. The work-view SQLite benchmark (scripts/benchmark-work-view.ts) has its synthetic-fixture and approximately 3 GB real-database latencies summarized in docs/development/viewer-sync-recovery.md; the real database is not in the repository, raw reports from both benchmarks go to a gitignored reports/ directory, and the read-gate eval needs paid model calls. The Smart Explore comparison (17.8x fewer tokens for discovery, 19.4x for targeted reads) is a written A/B report with no script in the repository, and the README and CHANGELOG figures (~10x, 90%, 200x) are stated without data.",
+  "result_focus": "outcome",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself",
+  "accuracy_check": {
+    "date": "2026-11-08",
+    "numbers_checked": 110,
+    "corrections": [
+      "'3 runs/case' (Sonnet) and '2 runs/case' (Opus) were on no cited line: added tests/evals/read-gate/README.md:89 and :99",
+      "end-to-end 10-12x and completeness 5/5 vs 4/5 were on no cited line: added docs/public/smart-explore-benchmark.mdx:15-17",
+      "summary said the read gate showed 'no change on a small file'; the source gives -1% (Sonnet) and 0% (Opus) (tests/evals/read-gate/README.md:114)",
+      "summary called the speed figure '10-30x' the headline Smart Explore claim; the headline token figures are 17.8x and 19.4x (docs/public/smart-explore-benchmark.mdx:14-15)"
+    ]
+  }
+}

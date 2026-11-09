@@ -1,0 +1,112 @@
+{
+  "repo": "QwenPaw",
+  "head_commit": "2cf28d14",
+  "published_results": [
+    {
+      "claim": "\"id\": \"swebench-verified\" ... \"expected\": 500 ... \"score_sum\": 494.0 (qwenpaw-2.3.0-goal-qwen3.8-max-2026-10-28)",
+      "metric": "SWE-bench Verified resolved (score_sum over expected tasks; README rule: single score = score_sum / expected x 100), scorer [email removed]",
+      "value": "494.0 / 500 (goal mode, qwen3.8-max); 491.0 / 500 (default mode, qwen3.8-max, 2.3.0); 460.0 / 500 (default, glm-5.2, 2.3.0)",
+      "baseline": "QwenPaw 2.2.2 default mode, qwen3.8-max: 469.0 / 500 (with execution_error 10, timeout 9)",
+      "evidence_type": "results_only",
+      "files": [
+        "website/evaluation/results/official/qwenpaw-2.3.0-goal-qwen3.8-max-2026-10-28.json:135",
+        "website/evaluation/results/official/qwenpaw-2.3.0-default-qwen3.8-max-2026-10-29.json:136",
+        "website/evaluation/results/official/qwenpaw-2.3.0-default-glm-5.2-2026-10-28.json:135",
+        "website/evaluation/results/official/qwenpaw-2.2.2-default-qwen3.8-max-2026-10-16.json:146",
+        "website/evaluation/README.md:41"
+      ],
+      "reproduce_command": null,
+      "notes": "Aggregate summaries only. website/evaluation/README.md:3-24 states the site accepts only condensed schema_version 2 summaries, 'not per-question results or trajectories'; full records and the execution harness live in a separate repo 'qwenpaw-index' (not in this clone). Not mentioned in README.md."
+    },
+    {
+      "claim": "\"id\": \"gaia\" ... \"expected\": 165 ... \"score_sum\": 143.0 (qwenpaw-2.3.0-default-qwen3.8-max-2026-10-29)",
+      "metric": "GAIA score_sum over 165 tasks, programmatic scorer [email removed]",
+      "value": "143.0 / 165 (default, qwen3.8-max, 2.3.0); 141.0 (code mode); 137.0 (goal mode); 121.0 (default, glm-5.2)",
+      "baseline": "QwenPaw 2.2.2 default, qwen3.8-max: 135.0 / 165 (timeout 3)",
+      "evidence_type": "results_only",
+      "files": [
+        "website/evaluation/results/official/qwenpaw-2.3.0-default-qwen3.8-max-2026-10-29.json:37",
+        "website/evaluation/results/official/qwenpaw-2.3.0-goal-qwen3.8-max-2026-10-28.json:37",
+        "website/evaluation/results/official/qwenpaw-2.3.0-default-glm-5.2-2026-10-28.json:37",
+        "website/evaluation/results/official/qwenpaw-2.2.2-default-qwen3.8-max-2026-10-16.json:42"
+      ],
+      "reproduce_command": null,
+      "notes": "Each summary also carries model cost (e.g. 340.7064 CNY for GAIA) and runtime_seconds_sum; no per-task data."
+    },
+    {
+      "claim": "\"id\": \"spreadsheetbench-verified\" ... \"expected\": 400 ... \"score_sum\": 357.0",
+      "metric": "SpreadsheetBench Verified score_sum over 400 tasks, programmatic scorer",
+      "value": "357.0 / 400 (default, qwen3.8-max, 2.3.0); 356.0 (goal); 344.0 (default, glm-5.2)",
+      "baseline": "QwenPaw 2.2.2 default, qwen3.8-max: 353.0 / 400",
+      "evidence_type": "results_only",
+      "files": [
+        "website/evaluation/results/official/qwenpaw-2.3.0-default-qwen3.8-max-2026-10-29.json:104",
+        "website/evaluation/results/official/qwenpaw-2.3.0-goal-qwen3.8-max-2026-10-28.json:103",
+        "website/evaluation/results/official/qwenpaw-2.2.2-default-qwen3.8-max-2026-10-16.json:112"
+      ],
+      "reproduce_command": null,
+      "notes": null
+    },
+    {
+      "claim": "\"id\": \"pawbench\" ... \"revision\": \"agentscope-ai/pawbench@4\" ... \"judge\": {\"kind\": \"llm\", \"model\": \"qwen3.8-max\"} ... \"score_sum\": 110.640398",
+      "metric": "PawBench (vendor's own benchmark) LLM-judged score_sum over 150 tasks",
+      "value": "110.640398 / 150 (default, qwen3.8-max, 2.3.0); 113.563757 (goal, qwen3.8-max); 108.784874 (default, glm-5.2)",
+      "baseline": "QwenPaw 2.2.2 default, qwen3.8-max: 112.91919 / 150",
+      "evidence_type": "results_only",
+      "files": [
+        "website/evaluation/results/official/qwenpaw-2.3.0-default-qwen3.8-max-2026-10-29.json:54",
+        "website/evaluation/results/official/qwenpaw-2.3.0-default-qwen3.8-max-2026-10-29.json:69",
+        "website/evaluation/results/official/qwenpaw-2.3.0-goal-qwen3.8-max-2026-10-28.json:69",
+        "website/evaluation/results/official/qwenpaw-2.2.2-default-qwen3.8-max-2026-10-16.json:76"
+      ],
+      "reproduce_command": null,
+      "notes": "Judge is qwen3.8-max in all 8 summaries, including runs where the agent model is also qwen3.8-max (self-judging). Benchmark itself is vendor-authored."
+    },
+    {
+      "claim": "Low, Medium, and High reduced Input by **82.3%**, **87.8%**, and **86.8%** respectively.",
+      "metric": "input tokens and tasks passed with Visual Compression vs text-only history (9 tasks x 3 runs per mode, Qwen3.7-Plus)",
+      "value": "Input 563,740 / 389,183 / 419,363 tokens; tasks passed 25/27, 26/27, 25/27 (Low/Medium/High)",
+      "baseline": "Text only: Input 3,185,875 tokens; 27/27 tasks passed",
+      "evidence_type": "results_only",
+      "files": [
+        "website/public/blog/qwenPaw-visual-compression.en.md:90",
+        "website/public/blog/qwenPaw-visual-compression.en.md:92",
+        "website/public/blog/qwenPaw-visual-compression.en.md:95"
+      ],
+      "reproduce_command": null,
+      "notes": "Author-designed local scenario ('fictional e-commerce service incident'); scenario files and run logs not committed. Note the token savings came with lower task pass rate than the text-only baseline."
+    },
+    {
+      "claim": "Scroll reaches **94.8** on **LongMemEval_S**, **73.1** on **BEAM_10M** (**+5.1 over previous SOTA**), and **86.7** on **LOCA_256K** (**+37.4 over previous SOTA**).",
+      "metric": "long-context memory benchmark scores (Qwen 3.8 Max backbone)",
+      "value": "LongMemEval_S 94.8; BEAM_10M 73.1; LOCA_256K 86.7",
+      "baseline": "'previous SOTA' (unnamed): +5.1 on BEAM_10M, +37.4 on LOCA_256K",
+      "evidence_type": "external",
+      "files": [
+        "website/public/blog/qwenpaw-scroll-executable-memory.en.md:202",
+        "website/public/blog/qwenpaw-scroll-executable-memory.en.md:206"
+      ],
+      "reproduce_command": null,
+      "notes": "Points to 'QwenPaw Scroll Technical Report' https://arxiv.org/pdf/2608.21690 for reproducible results; no harness or data in repo."
+    },
+    {
+      "claim": "On LongMemEval cleaned-S, which contains 500 questions, ReMe achieved an overall Agentic score of **89.4%**",
+      "metric": "LongMemEval / BEAM agentic score of the ReMe memory backend",
+      "value": "LongMemEval cleaned-S 89.4%; BEAM 100K 66.1%; BEAM 1M 65.0%",
+      "baseline": null,
+      "evidence_type": "external",
+      "files": [
+        "website/public/blog/qwenpaw-long-term-memory.en.md:310",
+        "website/public/docs/memory.en.md:426",
+        "website/public/docs/memory.en.md:427",
+        "website/public/docs/memory.en.md:428"
+      ],
+      "reproduce_command": null,
+      "notes": "Results belong to the separate ReMe project: https://github.com/agentscope-ai/ReMe/tree/main/benchmark/longmemeval and https://github.com/agentscope-ai/ReMe/tree/main/benchmark/beam. The multimodal blog similarly cites ReMe Image 53.44% / 72.49% on MemLens-256K from https://reme.agentscope.io/en/blog_20261009 (qwenpaw-multimodal-memory.en.md:102)."
+    }
+  ],
+  "strongest_evidence_type": "results_only",
+  "summary": "QwenPaw commits eight 'official' aggregate result files (GAIA, SpreadsheetBench Verified, SWE-bench Verified, vendor-built PawBench) across versions, modes and two models, e.g. SWE-bench Verified score_sum 494.0/500, but by design omits per-task results and trajectories; the execution harness lives in a separate 'qwenpaw-index' repo, and PawBench is judged by qwen3.8-max even when it is also the agent. Memory-benchmark headlines (LongMemEval, BEAM, LOCA) are external (arXiv report, ReMe repo), and the visual-compression token savings come from an uncommitted single-author scenario.",
+  "result_focus": "outcome",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}

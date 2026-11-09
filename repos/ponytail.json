@@ -1,0 +1,670 @@
+{
+  "repo": "ponytail",
+  "full_name": "DietrichGebert/ponytail",
+  "stars": 186540,
+  "stars_source": "github-api 2026-11-08T08:52:32Z",
+  "selection_topics": [
+    "ai-agents",
+    "llm",
+    "prompt-engineering"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2026-06-12T00:52:37Z",
+    "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+    "fork": false,
+    "forks": 10333,
+    "full_name": "DietrichGebert/ponytail",
+    "pushed_at": "2026-10-29T11:59:31Z",
+    "stars": 186540,
+    "fetched_at": "2026-11-08T08:52:32Z"
+  },
+  "url": "https://github.com/DietrichGebert/ponytail",
+  "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846",
+    "head_date": "2026-10-29T12:59:31+01:00",
+    "history_complete": true,
+    "non_merge_commits": 361,
+    "merge_commits": 8,
+    "maintenance_bot_commits": 0,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 87,
+    "explicit_ai_pct": 24.1,
+    "by_tool": {
+      "claude": 80,
+      "cursor": 3,
+      "copilot": 2,
+      "gemini": 1,
+      "devin": 1
+    },
+    "by_signal": {
+      "co-author": 87
+    },
+    "recent_180d": {
+      "commits": 361,
+      "ai_pct": 24.1,
+      "fix_pct": 41.8
+    },
+    "first_365d": {
+      "commits": 361,
+      "ai_pct": 24.1,
+      "fix_pct": 41.8
+    },
+    "bot_commit_count": 0,
+    "agent_config": {
+      "files": {
+        ".agents/": "2026-06-12T08:49:33-04:00",
+        ".cursor/": "2026-06-12T03:25:15+02:00",
+        ".github/copilot-instructions.md": "2026-06-12T03:25:15+02:00",
+        ".kiro/": "2026-06-12T17:03:55+02:00",
+        ".opencode/": "2026-06-13T03:20:44+02:00",
+        ".windsurf/": "2026-06-12T03:25:15+02:00",
+        "AGENTS.md": "2026-06-12T03:25:15+02:00",
+        "opencode.json": "2026-06-13T03:20:44+02:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2026-06-12T03:25:15+02:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 361,
+    "first_commit_date": "2026-06-12T02:52:37+02:00",
+    "last_commit_date": "2026-10-29T12:59:31+01:00",
+    "current_loc": 16824,
+    "total_historical_additions": 22363,
+    "total_historical_deletions": 5542,
+    "total_churn": 27905,
+    "churn_ratio": 1.66,
+    "survival_rate_pct": 75.2,
+    "code": {
+      "current_loc": 11859,
+      "additions": 13709,
+      "deletions": 1852,
+      "churn_ratio": 1.31,
+      "survival_rate_pct": 86.5
+    },
+    "docs": {
+      "current_loc": 4965,
+      "additions": 8654,
+      "deletions": 3690,
+      "churn_ratio": 2.49,
+      "survival_rate_pct": 57.4
+    },
+    "fix_commits": 151,
+    "fix_pct": 41.8,
+    "revert_commits": 2,
+    "revert_pct": 0.6,
+    "trial_error_commits": 153,
+    "trial_error_pct": 42.4,
+    "rapid_fire_commits": 71,
+    "rapid_fire_pct": 19.7,
+    "trial_error_chains": 27,
+    "suspicious_additions_count": 4,
+    "top5_hotspot_volatility_pct": 13.6
+  },
+  "code_hygiene": {
+    "total_files": 62,
+    "docs_files": 56,
+    "avg_file_loc": 191.3,
+    "test_loc": 4563,
+    "test_files": 24,
+    "test_ratio_pct": 38.5,
+    "comment_ratio_pct": 11.4,
+    "monolith_count": 2,
+    "top_languages": {
+      ".js": 6553,
+      ".py": 3072,
+      ".tsx": 1015,
+      ".ts": 908,
+      ".mjs": 206
+    }
+  },
+  "authors": {
+    "unique_authors": 137,
+    "top_authors": [
+      {
+        "name": "DietrichGebert",
+        "commits": 133,
+        "pct": 36.8
+      },
+      {
+        "name": "Emeriko",
+        "commits": 21,
+        "pct": 5.8
+      },
+      {
+        "name": "Ben Younes",
+        "commits": 12,
+        "pct": 3.3
+      },
+      {
+        "name": "Dietrich Gebert",
+        "commits": 8,
+        "pct": 2.2
+      },
+      {
+        "name": "dgebert",
+        "commits": 7,
+        "pct": 1.9
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 2.1,
+    "p75": 7.0,
+    "p90": 38.4,
+    "p95": 160.0,
+    "p99": 4320.0,
+    "avg": 121.7
+  },
+  "hotspots": [
+    {
+      "file": "README.md",
+      "commits": 110,
+      "additions": 837,
+      "deletions": 606,
+      "churn": 1443,
+      "first_seen": "2026-06-12T02:52:37+02:00",
+      "last_seen": "2026-10-29T12:59:31+01:00"
+    },
+    {
+      "file": "tests/hooks.test.js",
+      "commits": 46,
+      "additions": 1123,
+      "deletions": 118,
+      "churn": 1241,
+      "first_seen": "2026-06-12T08:06:57-04:00",
+      "last_seen": "2026-10-17T00:59:25+02:00"
+    },
+    {
+      "file": "docs/agent-portability.md",
+      "commits": 39,
+      "additions": 76,
+      "deletions": 14,
+      "churn": 90,
+      "first_seen": "2026-06-12T22:39:15+07:00",
+      "last_seen": "2026-10-13T01:00:34+02:00"
+    },
+    {
+      "file": "README.es.md",
+      "commits": 28,
+      "additions": 457,
+      "deletions": 457,
+      "churn": 914,
+      "first_seen": "2026-06-18T18:24:26-04:00",
+      "last_seen": "2026-10-05T22:46:39+02:00"
+    },
+    {
+      "file": "hooks/ponytail-activate.js",
+      "commits": 23,
+      "additions": 487,
+      "deletions": 286,
+      "churn": 773,
+      "first_seen": "2026-06-12T03:25:15+02:00",
+      "last_seen": "2026-10-18T03:05:14+02:00"
+    },
+    {
+      "file": "pi-extension/index.js",
+      "commits": 23,
+      "additions": 290,
+      "deletions": 36,
+      "churn": 326,
+      "first_seen": "2026-06-12T17:55:24+02:00",
+      "last_seen": "2026-10-13T03:31:50+02:00"
+    },
+    {
+      "file": "README.ko.md",
+      "commits": 21,
+      "additions": 462,
+      "deletions": 462,
+      "churn": 924,
+      "first_seen": "2026-06-24T10:47:31+09:00",
+      "last_seen": "2026-10-05T22:46:39+02:00"
+    },
+    {
+      "file": "hooks/ponytail-mode-tracker.js",
+      "commits": 19,
+      "additions": 274,
+      "deletions": 58,
+      "churn": 332,
+      "first_seen": "2026-06-12T03:25:15+02:00",
+      "last_seen": "2026-10-17T00:59:25+02:00"
+    },
+    {
+      "file": "hooks/ponytail-runtime.js",
+      "commits": 17,
+      "additions": 234,
+      "deletions": 52,
+      "churn": 286,
+      "first_seen": "2026-06-12T08:06:57-04:00",
+      "last_seen": "2026-10-13T06:11:00+05:30"
+    },
+    {
+      "file": "skills/ponytail/SKILL.md",
+      "commits": 16,
+      "additions": 302,
+      "deletions": 250,
+      "churn": 552,
+      "first_seen": "2026-06-12T03:05:59+02:00",
+      "last_seen": "2026-10-16T09:43:16+02:00"
+    },
+    {
+      "file": "pi-extension/test/extension.test.js",
+      "commits": 15,
+      "additions": 373,
+      "deletions": 6,
+      "churn": 379,
+      "first_seen": "2026-06-12T17:55:24+02:00",
+      "last_seen": "2026-10-13T03:31:50+02:00"
+    },
+    {
+      "file": ".opencode/plugins/ponytail.mjs",
+      "commits": 15,
+      "additions": 289,
+      "deletions": 83,
+      "churn": 372,
+      "first_seen": "2026-06-13T03:20:44+02:00",
+      "last_seen": "2026-10-13T02:18:43+01:00"
+    },
+    {
+      "file": "skills/ponytail-help/SKILL.md",
+      "commits": 14,
+      "additions": 102,
+      "deletions": 26,
+      "churn": 128,
+      "first_seen": "2026-06-12T03:25:15+02:00",
+      "last_seen": "2026-10-17T00:59:25+02:00"
+    },
+    {
+      "file": "scripts/uninstall.js",
+      "commits": 14,
+      "additions": 125,
+      "deletions": 33,
+      "churn": 158,
+      "first_seen": "2026-06-24T03:08:06+05:30",
+      "last_seen": "2026-10-13T02:41:14+01:00"
+    },
+    {
+      "file": "benchmarks/README.md",
+      "commits": 14,
+      "additions": 137,
+      "deletions": 26,
+      "churn": 163,
+      "first_seen": "2026-06-13T05:08:55+02:00",
+      "last_seen": "2026-10-08T05:49:34+02:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "benchmarks/agentic/tasks.py",
+      "loc": 1544
+    },
+    {
+      "file": "tests/hooks.test.js",
+      "loc": 1005
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "f329330e6104f7ab771fb0ba9612011f401d73cc",
+      "short_hash": "f329330",
+      "author": "Aleksey Berezka",
+      "date": "2026-10-16T16:39:31+05:00",
+      "subject": "fix(band): stack other mods' bands below ours instead of replacing them (#1146)",
+      "coauthors": [],
+      "additions": 28,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "26f12397b793d8d2c1654560fb4bb31d618001e3",
+      "short_hash": "26f1239",
+      "author": "MHosein Forghani",
+      "date": "2026-10-16T14:56:26+02:00",
+      "subject": "fix(band): fall back to USERPROFILE when HOME is unset (#1144)",
+      "coauthors": [],
+      "additions": 25,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "713c609cb06d3872dcc8d1a6067f25498cd9a545",
+      "short_hash": "713c609",
+      "author": "MHosein Forghani",
+      "date": "2026-10-16T14:57:53+02:00",
+      "subject": "fix(band): write the ledger and board without mkdir (#1145)",
+      "coauthors": [],
+      "additions": 36,
+      "deletions": 4,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "6f1c2bfff0c837d268929a7c4e490918eb4fab29",
+      "short_hash": "6f1c2bf",
+      "author": "DietrichGebert",
+      "date": "2026-10-16T15:20:19+02:00",
+      "subject": "chore: release v5.3.1 (#1147)",
+      "coauthors": [
+        "Dietrich Gebert"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "ca88b4f377fd94f780ac9035808dc4dc54e7a9cf",
+      "short_hash": "ca88b4f",
+      "author": "DietrichGebert",
+      "date": "2026-10-17T00:59:25+02:00",
+      "subject": "feat(band): past sessions and the model on the board (#1152)",
+      "coauthors": [
+        "Dietrich Gebert"
+      ],
+      "additions": 457,
+      "deletions": 10,
+      "files_count": 12,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "16352ac229eb08a9598dcae48fe9f2b342567d86",
+      "short_hash": "16352ac",
+      "author": "DietrichGebert",
+      "date": "2026-10-17T01:04:13+02:00",
+      "subject": "chore: release v5.3.2 (#1153)",
+      "coauthors": [
+        "Dietrich Gebert"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "f6f6ab3b5ac623faecabf61c12a9a80fcdd7abd5",
+      "short_hash": "f6f6ab3",
+      "author": "Timofeev Artyom",
+      "date": "2026-10-18T04:01:07+05:00",
+      "subject": "fix(band): show the level again after /clear and /resume (#1161)",
+      "coauthors": [],
+      "additions": 51,
+      "deletions": 13,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "f7bfbb9aa5e84e72df17802f5dbec851311070b9",
+      "short_hash": "f7bfbb9",
+      "author": "Wasif",
+      "date": "2026-10-18T03:07:12+04:00",
+      "subject": "fix(map): raise the git ls-files buffer so large repos keep tracked files (#1156)",
+      "coauthors": [],
+      "additions": 4,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "37ad0f1338b36a24d77fc5125316cecf4c902150",
+      "short_hash": "37ad0f1",
+      "author": "Misha Lubich",
+      "date": "2026-10-17T17:11:51-07:00",
+      "subject": "ci: run agentic benchmark selftest in test workflow (#1154)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "1099dd9128da88e8470338679b6f2d266382482b",
+      "short_hash": "1099dd9",
+      "author": "Langning Zhang",
+      "date": "2026-10-18T08:15:53+08:00",
+      "subject": "docs: clarify Cursor mode state scope (#1135)",
+      "coauthors": [],
+      "additions": 9,
+      "deletions": 5,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "629158d41d1f1e2a65c06abe0a3d58bf76ad2745",
+      "short_hash": "629158d",
+      "author": "DietrichGebert",
+      "date": "2026-10-18T02:26:53+02:00",
+      "subject": "fix(codex): small composer icon instead of the 554 KB logo (#1164)",
+      "coauthors": [
+        "Dietrich Gebert"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "5a5a605fb1292a93095e9b8fcd5a7866f2fcc637",
+      "short_hash": "5a5a605",
+      "author": "DietrichGebert",
+      "date": "2026-10-18T02:47:07+02:00",
+      "subject": "fix(hooks): 15 s hook timeout so a slow node start on Windows keeps its output (#1165)",
+      "coauthors": [
+        "Dietrich Gebert"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "5117d0ef09e9fc040093d8d54182d8e28d3201b9",
+      "short_hash": "5117d0e",
+      "author": "DietrichGebert",
+      "date": "2026-10-18T03:05:14+02:00",
+      "subject": "fix(hooks): give the codebase map 3 s so a slow Windows start keeps it (#1166)",
+      "coauthors": [
+        "Dietrich Gebert"
+      ],
+      "additions": 7,
+      "deletions": 6,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "09c434ab73ca43761c5d8b0c5d341926c2fba710",
+      "short_hash": "09c434a",
+      "author": "OhMyCode",
+      "date": "2026-10-18T03:55:14+02:00",
+      "subject": "fix(bench): wait for the killed todo server before the workdir cleanup (#1116)",
+      "coauthors": [],
+      "additions": 1,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "6309875aa27a788030b8e3f43e29a1342a6370ee",
+      "short_hash": "6309875",
+      "author": "Troy Rhinehart",
+      "date": "2026-10-28T17:00:55-07:00",
+      "subject": "fix(band): find the transcript without a classic hook (#1242)",
+      "coauthors": [],
+      "additions": 71,
+      "deletions": 7,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "134b8e1a3a8078302b8ba77f86626c0802b2a6db",
+      "short_hash": "134b8e1",
+      "author": "D",
+      "date": "2026-10-29T02:02:48+01:00",
+      "subject": "fix(band): watch only /clear, /resume and /branch, so other plugins' output is not labelled ponytail (#1291)",
+      "coauthors": [],
+      "additions": 15,
+      "deletions": 5,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "172222eb88b6e7681674431e62a07224e1fc7fcd",
+      "short_hash": "172222e",
+      "author": "Michele Preti",
+      "date": "2026-10-29T03:38:44+01:00",
+      "subject": "fix(band): size the row to bodyColumns only in the terminal (#1302)",
+      "coauthors": [],
+      "additions": 17,
+      "deletions": 3,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "a3edb0ec9d44473f814d9b0e435b80e3cbb138df",
+      "short_hash": "a3edb0e",
+      "author": "DietrichGebert",
+      "date": "2026-10-29T03:41:36+01:00",
+      "subject": "fix(band): drop the duplicate? hint, count only project files, tighter details view (#1305)",
+      "coauthors": [],
+      "additions": 51,
+      "deletions": 45,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "7801d061243d7b753bad0e0b3c057cd250b11755",
+      "short_hash": "7801d06",
+      "author": "DietrichGebert",
+      "date": "2026-10-29T04:04:54+01:00",
+      "subject": "chore: release v5.3.3 (#1307)",
+      "coauthors": [
+        "Dietrich Gebert"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846",
+      "short_hash": "96608e0",
+      "author": "DietrichGebert",
+      "date": "2026-10-29T12:59:31+01:00",
+      "subject": "docs: add PhotoReunion to Already built with Ponytail (#1313)",
+      "coauthors": [
+        "Claude <noreply@anthropic.com>"
+      ],
+      "additions": 6,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

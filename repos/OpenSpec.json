@@ -1,0 +1,705 @@
+{
+  "repo": "OpenSpec",
+  "full_name": "Fission-AI/OpenSpec",
+  "stars": 74248,
+  "stars_source": "github-api 2026-11-08T09:00:32Z",
+  "selection_topics": [
+    "context-engineering",
+    "spec-driven-development"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2025-08-05T10:37:45Z",
+    "description": "Spec-driven development (SDD) for AI coding assistants.",
+    "fork": false,
+    "forks": 5096,
+    "full_name": "Fission-AI/OpenSpec",
+    "pushed_at": "2026-11-07T00:44:57Z",
+    "stars": 74248,
+    "fetched_at": "2026-11-08T09:00:32Z"
+  },
+  "url": "https://github.com/Fission-AI/OpenSpec",
+  "description": "Spec-driven development (SDD) for AI coding assistants.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "0fa4a9705c20ef1c571fe3ded74435733e4b73a1",
+    "head_date": "2026-11-07T00:36:11Z",
+    "history_complete": true,
+    "non_merge_commits": 973,
+    "merge_commits": 62,
+    "maintenance_bot_commits": 82,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 273,
+    "explicit_ai_pct": 30.6,
+    "by_tool": {
+      "claude": 262,
+      "other": 6,
+      "cursor": 3,
+      "copilot": 1,
+      "amp": 1
+    },
+    "by_signal": {
+      "co-author": 268,
+      "footer": 5
+    },
+    "recent_180d": {
+      "commits": 399,
+      "ai_pct": 63.9,
+      "fix_pct": 60.4
+    },
+    "first_365d": {
+      "commits": 640,
+      "ai_pct": 15.3,
+      "fix_pct": 35.2
+    },
+    "bot_commit_count": 82,
+    "agent_config": {
+      "files": {
+        ".agents/": "2026-07-10T14:56:31Z",
+        "AGENTS.md": "2025-09-06T02:22:38+10:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2025-09-06T02:22:38+10:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 891,
+    "first_commit_date": "2025-08-05T15:23:29+10:00",
+    "last_commit_date": "2026-11-06T19:55:56Z",
+    "current_loc": 227569,
+    "total_historical_additions": 302864,
+    "total_historical_deletions": 75301,
+    "total_churn": 378165,
+    "churn_ratio": 1.66,
+    "survival_rate_pct": 75.1,
+    "code": {
+      "current_loc": 146228,
+      "additions": 199602,
+      "deletions": 53374,
+      "churn_ratio": 1.73,
+      "survival_rate_pct": 73.3
+    },
+    "docs": {
+      "current_loc": 81341,
+      "additions": 103262,
+      "deletions": 21927,
+      "churn_ratio": 1.54,
+      "survival_rate_pct": 78.8
+    },
+    "fix_commits": 382,
+    "fix_pct": 42.9,
+    "revert_commits": 3,
+    "revert_pct": 0.3,
+    "trial_error_commits": 386,
+    "trial_error_pct": 43.3,
+    "rapid_fire_commits": 189,
+    "rapid_fire_pct": 21.2,
+    "trial_error_chains": 103,
+    "suspicious_additions_count": 57,
+    "top5_hotspot_volatility_pct": 9.3
+  },
+  "code_hygiene": {
+    "total_files": 507,
+    "docs_files": 721,
+    "avg_file_loc": 288.4,
+    "test_loc": 91167,
+    "test_files": 244,
+    "test_ratio_pct": 62.3,
+    "comment_ratio_pct": 11.1,
+    "monolith_count": 24,
+    "top_languages": {
+      ".ts": 143598,
+      ".mjs": 1343,
+      ".tsx": 536,
+      ".sh": 420,
+      ".ps1": 167
+    }
+  },
+  "authors": {
+    "unique_authors": 150,
+    "top_authors": [
+      {
+        "name": "Tabish Bidiwale",
+        "commits": 461,
+        "pct": 51.7
+      },
+      {
+        "name": "Clay Good",
+        "commits": 208,
+        "pct": 23.3
+      },
+      {
+        "name": "Dwin Gharibi",
+        "commits": 21,
+        "pct": 2.4
+      },
+      {
+        "name": "Ryan de Melo",
+        "commits": 9,
+        "pct": 1.0
+      },
+      {
+        "name": "Jun",
+        "commits": 7,
+        "pct": 0.8
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 7.2,
+    "p75": 51.7,
+    "p90": 2700.0,
+    "p95": 6703.6,
+    "p99": 16410.0,
+    "avg": 1227.9
+  },
+  "hotspots": [
+    {
+      "file": "test/core/init.test.ts",
+      "commits": 100,
+      "additions": 4778,
+      "deletions": 1874,
+      "churn": 6652,
+      "first_seen": "2025-08-07T00:42:31+10:00",
+      "last_seen": "2026-09-29T21:42:53Z"
+    },
+    {
+      "file": "README.md",
+      "commits": 87,
+      "additions": 1673,
+      "deletions": 1424,
+      "churn": 3097,
+      "first_seen": "2025-08-13T23:25:53+10:00",
+      "last_seen": "2026-10-30T22:04:56Z"
+    },
+    {
+      "file": "test/core/update.test.ts",
+      "commits": 82,
+      "additions": 6408,
+      "deletions": 1868,
+      "churn": 8276,
+      "first_seen": "2025-08-13T23:25:53+10:00",
+      "last_seen": "2026-09-29T21:42:53Z"
+    },
+    {
+      "file": "test/core/templates/skill-templates-parity.test.ts",
+      "commits": 78,
+      "additions": 2047,
+      "deletions": 719,
+      "churn": 2766,
+      "first_seen": "2026-02-15T23:13:52-08:00",
+      "last_seen": "2026-10-22T21:04:25Z"
+    },
+    {
+      "file": "src/core/config.ts",
+      "commits": 68,
+      "additions": 227,
+      "deletions": 79,
+      "churn": 306,
+      "first_seen": "2025-08-07T00:16:59+10:00",
+      "last_seen": "2026-09-29T21:42:57Z"
+    },
+    {
+      "file": "src/cli/index.ts",
+      "commits": 67,
+      "additions": 1211,
+      "deletions": 303,
+      "churn": 1514,
+      "first_seen": "2025-08-05T22:29:22+10:00",
+      "last_seen": "2026-11-06T17:56:42Z"
+    },
+    {
+      "file": "docs/cli.md",
+      "commits": 55,
+      "additions": 1773,
+      "deletions": 374,
+      "churn": 2147,
+      "first_seen": "2026-01-25T15:43:52-08:00",
+      "last_seen": "2026-10-22T21:12:21Z"
+    },
+    {
+      "file": "src/core/init.ts",
+      "commits": 55,
+      "additions": 3209,
+      "deletions": 1671,
+      "churn": 4880,
+      "first_seen": "2025-08-07T00:16:59+10:00",
+      "last_seen": "2026-09-29T18:25:36Z"
+    },
+    {
+      "file": "test/core/archive.test.ts",
+      "commits": 51,
+      "additions": 9450,
+      "deletions": 164,
+      "churn": 9614,
+      "first_seen": "2025-08-13T18:27:24+10:00",
+      "last_seen": "2026-11-06T17:56:47Z"
+    },
+    {
+      "file": "src/core/update.ts",
+      "commits": 45,
+      "additions": 2320,
+      "deletions": 727,
+      "churn": 3047,
+      "first_seen": "2025-08-11T21:37:46+10:00",
+      "last_seen": "2026-10-22T21:12:21Z"
+    },
+    {
+      "file": "src/core/archive.ts",
+      "commits": 41,
+      "additions": 3431,
+      "deletions": 1011,
+      "churn": 4442,
+      "first_seen": "2025-08-13T18:19:26+10:00",
+      "last_seen": "2026-10-14T19:12:52Z"
+    },
+    {
+      "file": "docs/supported-tools.md",
+      "commits": 40,
+      "additions": 367,
+      "deletions": 110,
+      "churn": 477,
+      "first_seen": "2026-01-25T15:43:52-08:00",
+      "last_seen": "2026-09-22T17:29:09Z"
+    },
+    {
+      "file": "src/core/validation/validator.ts",
+      "commits": 39,
+      "additions": 1388,
+      "deletions": 223,
+      "churn": 1611,
+      "first_seen": "2025-08-15T22:50:05+10:00",
+      "last_seen": "2026-11-06T17:57:00Z"
+    },
+    {
+      "file": "src/core/specs-apply.ts",
+      "commits": 34,
+      "additions": 1766,
+      "deletions": 336,
+      "churn": 2102,
+      "first_seen": "2026-01-06T16:32:22-08:00",
+      "last_seen": "2026-11-06T17:57:00Z"
+    },
+    {
+      "file": "docs-lab/reference/cli.md",
+      "commits": 31,
+      "additions": 2569,
+      "deletions": 50,
+      "churn": 2619,
+      "first_seen": "2026-08-21T20:45:19Z",
+      "last_seen": "2026-11-06T19:55:56Z"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "test/core/archive.test.ts",
+      "loc": 9286
+    },
+    {
+      "file": "test/core/update.test.ts",
+      "loc": 4540
+    },
+    {
+      "file": "test/core/init.test.ts",
+      "loc": 2904
+    },
+    {
+      "file": "src/core/archive.ts",
+      "loc": 2420
+    },
+    {
+      "file": "test/commands/artifact-workflow.test.ts",
+      "loc": 1858
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "d68fc51262a95957e4280756b10c61843ecb900b",
+      "short_hash": "d68fc512",
+      "author": "Clay Good",
+      "date": "2026-10-30T17:52:24Z",
+      "subject": "docs(install): simplify the install page and ship archives (#2160)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 143,
+      "deletions": 74,
+      "files_count": 10,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "a6cd3bc926c6151b89d3e0fbdf3676f8fc416ecb",
+      "short_hash": "a6cd3bc9",
+      "author": "kevin",
+      "date": "2026-10-30T17:54:44Z",
+      "subject": "fix(parser): don't open a fence on backtick lines with backticks in the info string (#2131)",
+      "coauthors": [
+        "Clay Good",
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 84,
+      "deletions": 1,
+      "files_count": 3,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "cb1adee51a472f872999afdafb68e0cc348b7935",
+      "short_hash": "cb1adee5",
+      "author": "kevin",
+      "date": "2026-10-30T17:54:49Z",
+      "subject": "fix(validate): match unspaced ###Requirement: headers in the main-spec structure check (#2133)",
+      "coauthors": [
+        "Clay Good",
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 100,
+      "deletions": 1,
+      "files_count": 4,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "6368683d01b3e9911090bf0d49bfd8fbb4dd043c",
+      "short_hash": "6368683d",
+      "author": "Clay Good",
+      "date": "2026-10-30T17:54:57Z",
+      "subject": "chore(deps): bump vite 8.3.5, eslint 10.13.0, @inquirer/core 12.0.5 (#2158)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "0c3d1c6cd664318eee6894a90a6a58b40f1b7a02",
+      "short_hash": "0c3d1c6c",
+      "author": "Tabish Bidiwale",
+      "date": "2026-10-30T17:55:13Z",
+      "subject": "fix(website): serve docs logo and favicons under /docs (#2161)",
+      "coauthors": [],
+      "additions": 12,
+      "deletions": 5,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "ae7ad75025b5b84f605e9616692ec97f9fb09f28",
+      "short_hash": "ae7ad750",
+      "author": "Clay Good",
+      "date": "2026-10-30T19:41:19Z",
+      "subject": "fix(validate): fail when config.yaml is not valid YAML (#2127)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>",
+        "TigerKid"
+      ],
+      "additions": 180,
+      "deletions": 3,
+      "files_count": 7,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "625834c8fe8b94b4ebc3ae6550e67cd7039fcde8",
+      "short_hash": "625834c8",
+      "author": "Ivan Ferić",
+      "date": "2026-10-30T19:41:22Z",
+      "subject": "docs(community-schemas): add epic-driven schema entry to customization (#2107)",
+      "coauthors": [
+        "coderabbitai[bot]"
+      ],
+      "additions": 1,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": "other",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "18a75a5d17c0711586dee1af171033dd632a4f78",
+      "short_hash": "18a75a5d",
+      "author": "Evgeniy",
+      "date": "2026-10-30T19:41:25Z",
+      "subject": "feat(store): suggest the store that matches the repo's origin name (#2077)",
+      "coauthors": [
+        "Clay Good",
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 400,
+      "deletions": 6,
+      "files_count": 7,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "dc37609827c8c3aba49e49347745f47aaa65cb1b",
+      "short_hash": "dc376098",
+      "author": "Artem Kuznetsov",
+      "date": "2026-10-30T19:42:06Z",
+      "subject": "feat(validate): warn when a scenario has no WHEN/GIVEN or THEN step (#2079)",
+      "coauthors": [
+        "Clay Good",
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 449,
+      "deletions": 12,
+      "files_count": 6,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "c499010178c46144c8370b2b5c9eb464a8a0e465",
+      "short_hash": "c4990101",
+      "author": "Clay Good",
+      "date": "2026-10-30T22:04:33Z",
+      "subject": "test(store): give the real-git store tests 30s on Windows (#2178)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 10,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "ebdd9a5314d6584980bd8619c6a0d800a1c0e634",
+      "short_hash": "ebdd9a53",
+      "author": "Clay Good",
+      "date": "2026-10-30T22:04:45Z",
+      "subject": "chore(openspec): archive 19 shipped changes and remove 5 stale entries (#2128)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 2321,
+      "deletions": 854,
+      "files_count": 142,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "33c6f93e3deeb6f26f0526f0f8577e30241db40f",
+      "short_hash": "33c6f93e",
+      "author": "Clay Good",
+      "date": "2026-10-30T22:04:56Z",
+      "subject": "build!: drop Node.js 20, require 22.12.0 or newer (#2159)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 22,
+      "deletions": 15,
+      "files_count": 10,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "05cc75f265d9233814f83364e390e54d5c2c8a3d",
+      "short_hash": "05cc75f2",
+      "author": "Clay Good",
+      "date": "2026-10-30T22:41:15Z",
+      "subject": "fix(completion): write the zsh block to $ZDOTDIR/.zshrc when set (#2172)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 266,
+      "deletions": 26,
+      "files_count": 7,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "e55e53377edd0f703359ac5774a3f88a6b3454be",
+      "short_hash": "e55e5337",
+      "author": "Clay Good",
+      "date": "2026-10-30T22:48:29Z",
+      "subject": "chore(deps-dev): bump typescript-eslint from 8.71.2 to 8.72.0 (#2179)",
+      "coauthors": [
+        "dependabot[bot]",
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "2bd5bc3be964404657439f538857fcdf550f7398",
+      "short_hash": "2bd5bc3b",
+      "author": "Clay Good",
+      "date": "2026-11-02T19:49:52Z",
+      "subject": "fix(deps): force minimatch >=11.0.1 for GHSA-g3hv-75wg-m249 (#2192)",
+      "coauthors": [
+        "Claude Opus 5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "3e4d5f0769e2857c8eb54f149cbf5e4f703fa04c",
+      "short_hash": "3e4d5f07",
+      "author": "Clay Good",
+      "date": "2026-11-04T17:05:54Z",
+      "subject": "chore(deps): consolidate the root dependency bumps and raise @types/node to 22 (#2194)",
+      "coauthors": [
+        "Claude Opus 5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "ef170faa2912fc642d59b9e82e7932d4aa9e71c3",
+      "short_hash": "ef170faa",
+      "author": "Clay Good",
+      "date": "2026-11-06T17:56:42Z",
+      "subject": "fix(version): run an explicit --check even when telemetry is off (#2204)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 187,
+      "deletions": 10,
+      "files_count": 5,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "c887ab073e0fd27dbce28e51aff078efe238e457",
+      "short_hash": "c887ab07",
+      "author": "Clay Good",
+      "date": "2026-11-06T17:56:47Z",
+      "subject": "fix(parser): accept closing # runs on section headings (#2205)",
+      "coauthors": [
+        "kevin9327",
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 273,
+      "deletions": 17,
+      "files_count": 11,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "83053dd821f03fbc63374d793aa5dfa185ac5600",
+      "short_hash": "83053dd8",
+      "author": "Clay Good",
+      "date": "2026-11-06T17:57:00Z",
+      "subject": "fix(validate): reject unrecognized requirement sections in delta specs (#2207)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 284,
+      "deletions": 12,
+      "files_count": 6,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "a1ae53669d25e7ffc6946f623f18abb7fecd3bce",
+      "short_hash": "a1ae5366",
+      "author": "Clay Good",
+      "date": "2026-11-06T19:55:56Z",
+      "subject": "fix(version): only offer standalone updates that have been released (#2206)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 323,
+      "deletions": 46,
+      "files_count": 4,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    }
+  ]
+}

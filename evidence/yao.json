@@ -1,0 +1,95 @@
+{
+  "repo": "yao",
+  "head_commit": "07b55742",
+  "published_results": [
+    {
+      "claim": "Duration: 1.57 seconds / Average: 1.57 ms/op / Throughput: ~636 ops/second / Success: 1,000/1,000 (100%)",
+      "metric": "Create-hook concurrent stress test (100 goroutines x 10 iterations, mixed scenarios): wall time, mean time/op, throughput, success count, memory growth",
+      "value": "1.57 s total; 1.57 ms/op; ~636 ops/s; 1,000/1,000; memory 472 MB -> 473 MB",
+      "baseline": null,
+      "evidence_type": "harness+results",
+      "files": [
+        "agent/assistant/hook/REALWORLD_PERFORMANCE_REPORT.md:71-87",
+        "agent/assistant/hook/stress_test.go:359"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Standard Mode (1,000 iterations): Growth: 11.65 MB (12.2 KB/iteration) ... Performance Mode (1,000 iterations): Growth: -0.15 MB",
+      "metric": "Memory growth per iteration in hook memory-leak tests",
+      "value": "Standard 11.65 MB (12.2 KB/iteration); Performance -0.15 MB; concurrent 1.73 MB (1.8 KB/iteration)",
+      "baseline": "Test thresholds (<15 KB/iteration)",
+      "evidence_type": "harness+results",
+      "files": [
+        "agent/assistant/hook/REALWORLD_PERFORMANCE_REPORT.md:100-123",
+        "agent/assistant/hook/stress_test.go:722",
+        "agent/assistant/hook/stress_test.go:777",
+        "agent/assistant/hook/stress_test.go:899"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Simple | Standard | 1.44 ms ... Simple | Performance | 0.33 ms ... Business | Standard | 3.33 ms ... Business | Performance | 0.35 ms",
+      "metric": "Hook execution time/op, memory/op, allocs/op (Go benchmark, V8 isolate per request vs pooled)",
+      "value": "Performance mode 0.33-0.35 ms/op, 33 KB/op",
+      "baseline": "Standard mode (isolate per request): 1.44 ms (simple), 3.33 ms (business)",
+      "evidence_type": "results_only",
+      "files": [
+        "agent/assistant/hook/REALWORLD_PERFORMANCE_REPORT.md:24-42"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Suitable For: SaaS platforms (500-1,000 concurrent online users per instance) ... Performance Rating: A (Excellent)",
+      "metric": "Estimated per-instance capacity (extrapolated from 1.57 ms hook time plus assumed 500-2000 ms LLM latency)",
+      "value": "500-1,000 concurrent online users per instance",
+      "baseline": null,
+      "evidence_type": "claim_only",
+      "files": [
+        "agent/assistant/hook/REALWORLD_PERFORMANCE_REPORT.md:138-170",
+        "agent/assistant/hook/REALWORLD_PERFORMANCE_REPORT.md:322-329"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Benchmark Results (Reference) | ContainerLifecycle | ~300ms | ~200ms | ~10s | ... | Exec | ~30ms | ~50ms | ~150ms",
+      "metric": "Sandbox v2 operation latency (Local / Remote / K8s)",
+      "value": "ContainerLifecycle ~300ms/~200ms/~10s; Create ~100ms/~80ms/~8s; Exec ~30ms/~50ms/~150ms; Remove ~180ms/~120ms/~220ms; Info ~5ms/~10ms/~30ms; StopStart ~2.2s/~2.2s/N/A",
+      "baseline": null,
+      "evidence_type": "results_only",
+      "files": [
+        "sandbox/v2/DESIGN.md:878-887"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Remove redundant Stop in Manager.Remove() | 2.14s | 177ms | 12x faster Docker remove",
+      "metric": "Docker sandbox remove latency",
+      "value": "177ms",
+      "baseline": "2.14s before optimization",
+      "evidence_type": "results_only",
+      "files": [
+        "sandbox/v2/IMPL.md:73"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "make benchmark: go test -bench=. -benchmem -benchtime=100x over ./agent/... ./trace/... ./event/...",
+      "metric": "Go micro-benchmarks (e.g. event/bench_test.go, workspace/bench_test.go, openapi/tests/agent BenchmarkListAssistants); 40 func Benchmark* in repo",
+      "value": "No results committed",
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "Makefile:378-394",
+        "event/bench_test.go",
+        "workspace/bench_test.go",
+        ".github/workflows/unit-test.yml:313"
+      ],
+      "reproduce_command": "make benchmark"
+    }
+  ],
+  "strongest_evidence_type": "harness+results",
+  "summary": "Yao's only substantial performance evidence is a hand-written REALWORLD_PERFORMANCE_REPORT.md (2025-11-28, one Apple M2 Max) for the agent create-hook: its stress and memory-leak numbers match Go tests that still exist (agent/assistant/hook/stress_test.go, needs the E2E environment), but its single-request benchmark table came from create_bench_test.go.bak, deleted on 2026-05-20, and its capacity/'Rating A' conclusions are extrapolations. The sandbox/v2 latency table and the '12x faster Docker remove' figure are results_only (sandbox/v2/bench_test.go was deleted on 2026-05-18); other Go micro-benchmarks run in CI via `make benchmark` with no committed output, and the README makes no quantitative claims.",
+  "result_focus": "engineering",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}

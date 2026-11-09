@@ -1,0 +1,81 @@
+{
+  "repo": "ragflow",
+  "head_commit": "3c6d2255a",
+  "published_results": [
+    {
+      "claim": "a harness with only BM25, grep, and MiniMax M3 answers 85% of BrowseComp-Plus and reaches 91% on the multi-hop FRAMES benchmark in our runs, without any compiled index and without any vector index.",
+      "metric": "Agentic search answer accuracy on BrowseComp-Plus and FRAMES",
+      "value": "BrowseComp-Plus 85%; FRAMES 91%",
+      "baseline": null,
+      "evidence_type": "results_only",
+      "files": [
+        "docs/basics/agent_native_database.md:18"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "A navigation tree whose leaves are claim–evidence pairs cuts total query tokens by 91% when the evidence suffices and adds 1.9% when it does not—a 38% average reduction. ... the measured rate on FRAMES is near 43%.",
+      "metric": "Total query tokens with vs without knowledge compilation; evidence-sufficiency rate",
+      "value": "−91% (sufficient) / +1.9% (insufficient); 38% average reduction; ~43% sufficiency on FRAMES",
+      "baseline": "agentic search without compiled navigation tree",
+      "evidence_type": "results_only",
+      "files": [
+        "docs/basics/agent_native_database.md:24"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Elasticsearch: Accelerates the retrieval process by removing unnecessary vector fetches during the main search phase, reducing latency by 50–100%.",
+      "metric": "Retrieval latency (Elasticsearch backend)",
+      "value": "50–100% reduction",
+      "baseline": "previous release",
+      "evidence_type": "claim_only",
+      "files": [
+        "docs/release_notes.md:414"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "No published numbers. \"RAGFlow HTTP Benchmark CLI\" for chat and retrieval (iterations, concurrency, JSON report).",
+      "metric": "HTTP chat/retrieval latency, throughput, success rate",
+      "value": null,
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "test/benchmark/README.md:1-40",
+        "test/benchmark/metrics.py",
+        "test/benchmark/report.py",
+        "test/benchmark/run_chat.sh"
+      ],
+      "reproduce_command": "PYTHONPATH=./test uv run -m benchmark [global flags] <chat|retrieval> [command flags]"
+    },
+    {
+      "claim": "No published numbers. \"TestMultiPDFThroughput parses every PDF in DEEPDOC_BENCH_DIR as a single request and reports how long each document takes, plus its peak resident memory.\"",
+      "metric": "DeepDoc PDF parse time and peak RSS per document",
+      "value": null,
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "internal/deepdoc/parser/pdf/bench/pdf_throughput_manual_test.go",
+        "internal/deepdoc/parser/pdf/pdf_benchmark_integration_test.go"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "No published numbers. \"Package evals provides an evaluation framework for agentcore agents ... with trajectory scoring, success assertions, and report generation.\"",
+      "metric": "Agent trajectory/success scoring",
+      "value": null,
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "internal/harness/core/evals/evals.go:1-12",
+        "internal/harness/core/evals/coding/coding_evals_test.go"
+      ],
+      "reproduce_command": null
+    }
+  ],
+  "strongest_evidence_type": "results_only",
+  "summary": "RAGFlow publishes almost no quantitative results about itself. The only accuracy and token numbers (BrowseComp-Plus 85%, FRAMES 91%, a 38% average token reduction) sit in one docs essay with no data or eval script, and a release note claims a 50–100% latency reduction without evidence. It does ship runnable harnesses (an HTTP chat/retrieval benchmark CLI, manual DeepDoc PDF throughput tests, a Go agent-eval framework) but commits no results from them. Retrieval benchmarking on ms_marco/trivia_qa/miracl is mentioned only in old release notes (docs/release_notes.md:1396-1399) and has no corresponding code in the current tree.",
+  "result_focus": "outcome",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}

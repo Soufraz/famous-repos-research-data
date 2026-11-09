@@ -1,0 +1,36 @@
+{
+  "repo": "conductor",
+  "full_name": "gemini-cli-extensions/conductor",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "c9a6a1873ee22fbebfc2e2274ef2e015a8cbdbc0",
+      "snapshot_date": "2026-05-19T20:02:04-04:00",
+      "first_commit_date": "2025-12-17T16:05:04Z",
+      "commits": 74,
+      "ai_pct": 0.0,
+      "has_agent_config": true,
+      "fix_pct": 33.8,
+      "revert_pct": 0.0,
+      "churn_ratio": 1.25,
+      "survival_rate_pct": 89.0,
+      "code": {
+        "current_loc": 0,
+        "additions": 0,
+        "deletions": 0,
+        "churn_ratio": 0.0,
+        "survival_rate_pct": 0.0
+      },
+      "docs": {
+        "current_loc": 1350,
+        "additions": 1517,
+        "deletions": 167,
+        "churn_ratio": 1.25,
+        "survival_rate_pct": 89.0
+      },
+      "rapid_fire_pct": 6.8,
+      "unique_authors": 15
+    },
+    "365": null
+  }
+}

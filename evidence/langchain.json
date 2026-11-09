@@ -1,0 +1,39 @@
+{
+  "repo": "langchain",
+  "head_commit": "d9caf083",
+  "published_results": [
+    {
+      "claim": "No published numbers. \"Runs benchmarks on changed packages and uploads results to CodSpeed.\"",
+      "metric": "Run time of langchain-core operations: import time of 12 public import paths (in a subprocess), model.stream with async callback handlers called from sync code, and tool-to-OpenAI schema conversion (warm and cold)",
+      "value": "No results committed",
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "libs/core/tests/benchmarks/test_imports.py:8-54",
+        "libs/core/tests/benchmarks/test_async_callbacks.py:47-56",
+        "libs/core/tests/benchmarks/test_tool_schema_conversion.py:1-7",
+        "libs/core/Makefile:73-74",
+        ".github/workflows/codspeed.yml:1-6",
+        ".github/workflows/codspeed.yml:78-84"
+      ],
+      "reproduce_command": "make benchmark (in libs/core; runs uv run pytest tests/benchmarks --codspeed)"
+    },
+    {
+      "claim": "No published numbers. \"run the create_agent benchmark quickly\"",
+      "metric": "create_agent instantiation time with a fake chat model, without and with three middlewares (TodoList, ToolRetry, ModelRetry)",
+      "value": "No results committed",
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "libs/langchain_v1/tests/benchmarks/test_create_agent.py:21-44",
+        "libs/langchain_v1/Makefile:49-50",
+        "libs/langchain_v1/Makefile:123"
+      ],
+      "reproduce_command": "make benchmark (in libs/langchain_v1; runs uv run --group test pytest tests/benchmarks/test_create_agent.py -m benchmark)"
+    }
+  ],
+  "strongest_evidence_type": "harness_only",
+  "summary": "LangChain publishes no quantitative results about its own performance: the root, package and partner READMEs contain no speed, memory, accuracy or cost numbers, and the repo has no docs/ tree or changelog (the bot-generated openwiki/ pages describe the benchmark setup but report no figures). It ships pytest-benchmark/CodSpeed micro-benchmarks for langchain-core (import time, async callbacks, tool-schema conversion) and for create_agent instantiation, which CI uploads to CodSpeed; no results are committed.",
+  "result_focus": "none",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}

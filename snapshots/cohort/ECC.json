@@ -1,0 +1,36 @@
+{
+  "repo": "ECC",
+  "full_name": "affaan-m/ECC",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "ed387446052dfbc6b52de149406b70efa65edc59",
+      "snapshot_date": "2026-07-13T21:31:12-04:00",
+      "first_commit_date": "2026-01-17T17:49:33-08:00",
+      "commits": 2003,
+      "ai_pct": 8.6,
+      "has_agent_config": true,
+      "fix_pct": 34.1,
+      "revert_pct": 0.6,
+      "churn_ratio": 1.68,
+      "survival_rate_pct": 74.3,
+      "code": {
+        "current_loc": 200560,
+        "additions": 235094,
+        "deletions": 29893,
+        "churn_ratio": 1.32,
+        "survival_rate_pct": 85.3
+      },
+      "docs": {
+        "current_loc": 442802,
+        "additions": 630786,
+        "deletions": 182603,
+        "churn_ratio": 1.84,
+        "survival_rate_pct": 70.2
+      },
+      "rapid_fire_pct": 27.3,
+      "unique_authors": 300
+    },
+    "365": null
+  }
+}

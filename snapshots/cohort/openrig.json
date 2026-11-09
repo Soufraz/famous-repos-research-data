@@ -1,0 +1,36 @@
+{
+  "repo": "openrig",
+  "full_name": "mvschwarz/openrig",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "cc75efdd17fb967bde7cff6c5805791986af78d8",
+      "snapshot_date": "2026-09-14T22:10:20Z",
+      "first_commit_date": "2026-03-23T00:09:13-07:00",
+      "commits": 2802,
+      "ai_pct": 44.5,
+      "has_agent_config": false,
+      "fix_pct": 40.1,
+      "revert_pct": 0.1,
+      "churn_ratio": 1.38,
+      "survival_rate_pct": 83.8,
+      "code": {
+        "current_loc": 566769,
+        "additions": 653220,
+        "deletions": 82465,
+        "churn_ratio": 1.3,
+        "survival_rate_pct": 86.8
+      },
+      "docs": {
+        "current_loc": 41823,
+        "additions": 73203,
+        "deletions": 31227,
+        "churn_ratio": 2.5,
+        "survival_rate_pct": 57.1
+      },
+      "rapid_fire_pct": 7.2,
+      "unique_authors": 8
+    },
+    "365": null
+  }
+}

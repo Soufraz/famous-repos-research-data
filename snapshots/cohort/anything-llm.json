@@ -1,0 +1,63 @@
+{
+  "repo": "anything-llm",
+  "full_name": "Mintplex-Labs/anything-llm",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "ca8bf52cce34ef23d88048096bb4b19605d851ee",
+      "snapshot_date": "2023-11-27T15:09:55-06:00",
+      "first_commit_date": "2023-06-03T19:28:07-07:00",
+      "commits": 216,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 12.5,
+      "revert_pct": 0.0,
+      "churn_ratio": 2.09,
+      "survival_rate_pct": 64.6,
+      "code": {
+        "current_loc": 24117,
+        "additions": 37564,
+        "deletions": 13447,
+        "churn_ratio": 2.12,
+        "survival_rate_pct": 64.2
+      },
+      "docs": {
+        "current_loc": 744,
+        "additions": 892,
+        "deletions": 148,
+        "churn_ratio": 1.4,
+        "survival_rate_pct": 83.4
+      },
+      "rapid_fire_pct": 5.1,
+      "unique_authors": 19
+    },
+    "365": {
+      "snapshot_commit": "9a38b32c746b790531975d27888fea5552050062",
+      "snapshot_date": "2024-05-31T13:52:00+08:00",
+      "first_commit_date": "2023-06-03T19:28:07-07:00",
+      "commits": 680,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 14.3,
+      "revert_pct": 0.0,
+      "churn_ratio": 2.15,
+      "survival_rate_pct": 63.6,
+      "code": {
+        "current_loc": 59833,
+        "additions": 94260,
+        "deletions": 34427,
+        "churn_ratio": 2.15,
+        "survival_rate_pct": 63.5
+      },
+      "docs": {
+        "current_loc": 1557,
+        "additions": 2296,
+        "deletions": 739,
+        "churn_ratio": 1.95,
+        "survival_rate_pct": 67.8
+      },
+      "rapid_fire_pct": 7.4,
+      "unique_authors": 46
+    }
+  }
+}

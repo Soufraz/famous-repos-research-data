@@ -1,0 +1,69 @@
+{
+  "repo": "agent-orchestrator",
+  "head_commit": "b30492e53",
+  "published_results": [
+    {
+      "claim": "| First fetch start (ms) | 2,070.2 (2,069.5–2,071.7) | 151.6 (151.4–151.9) | ... | Received burst fully visible (ms) | 2,856.7 (2,850.6–2,857.8) | 213.3 (213.1–215.8) |",
+      "metric": "chat renderer event-delivery and streaming latency (Playwright fixture with synthetic inputs; medians of 3 runs with ranges)",
+      "value": "first fetch start 151.6 ms; received burst fully visible 213.3 ms; anchor geometry reads 251.0",
+      "baseline": "commit a96322315: 2,070.2 ms; 2,856.7 ms; 60,001.0 anchor reads",
+      "evidence_type": "harness+results",
+      "files": [
+        "docs/performance/chat-responsiveness/README.md:33",
+        "docs/performance/chat-responsiveness/README.md:35",
+        "docs/performance/chat-responsiveness/README.md:38",
+        "docs/performance/chat-responsiveness/measurements.json",
+        "frontend/e2e/chat-performance.spec.ts",
+        "frontend/e2e/performance/harness.tsx"
+      ],
+      "reproduce_command": "AO_PERF_BENCH=1 AO_PERF_LABEL=after AO_PERF_DIR=\"$HOME/.ao/validation/chat-performance\" AO_E2E_PORT=5292 CI=true npm run test:e2e -- e2e/chat-performance.spec.ts --workers=1 --repeat-each=3",
+      "notes": "Run from frontend/. Raw samples committed (auditor checked: events firstRefreshMs baseline [2069.5, 2070.2, 2071.7], after [151.4, 151.6, 151.9], matching the doc medians). Doc is unusually candid: 'not real-provider latency measurements or a full packaged-app end-to-end test'; 'Three runs support descriptive medians/ranges, not population percentiles or a universal speedup claim'; the 213.3 ms figure was measured under a since-superseded flush policy ('re-run the streaming workload before quoting that number')."
+    },
+    {
+      "claim": "| Highlight maximum event-loop gap (ms) | 65.0 (63.0–68.9) | 27.2 (26.3–30.5) | | Highlight total completion time (ms) | 62.6 (60.6–66.8) | 128.5 (125.1–160.2) |",
+      "metric": "syntax highlighting of 10,000 lines: worst main-thread gap and total time (worker vs main thread)",
+      "value": "max gap 27.2 ms; total 128.5 ms",
+      "baseline": "main-thread tokenizer: max gap 65.0 ms; total 62.6 ms",
+      "evidence_type": "harness+results",
+      "files": [
+        "docs/performance/chat-responsiveness/README.md:36",
+        "docs/performance/chat-responsiveness/README.md:37",
+        "docs/performance/chat-responsiveness/measurements.json"
+      ],
+      "reproduce_command": "AO_PERF_BENCH=1 AO_PERF_LABEL=after AO_PERF_DIR=\"$HOME/.ao/validation/chat-performance\" AO_E2E_PORT=5292 CI=true npm run test:e2e -- e2e/chat-performance.spec.ts --workers=1 --repeat-each=3",
+      "notes": "Reports a regression honestly: total highlight time roughly doubled (documented as a tradeoff)."
+    },
+    {
+      "claim": "| Cold launch to first paint | 1,460 ms (745 to 2,184) | 4,429 ms (4,396 to 6,178) | ... | JS heap after settle | 24 MB | 87 MB |",
+      "metric": "desktop app cold launch, reload, heap, RSS, idle CPU, scroll fps, palette latency (AO nightly vs Linear desktop)",
+      "value": "AO: cold first paint 1,460 ms; heap 24 MB; RSS 245 MB; idle CPU 4.0%",
+      "baseline": "Linear 1.32.4: cold first paint 4,429 ms; heap 87 MB; RSS 161 MB; idle CPU 2.4%",
+      "evidence_type": "results_only",
+      "files": [
+        "docs/plans/2026-10-13-desktop-performance-overhaul.md:60",
+        "docs/plans/2026-10-13-desktop-performance-overhaul.md:64",
+        "docs/plans/2026-10-13-desktop-performance-overhaul.md:65",
+        "docs/plans/2026-10-13-desktop-performance-overhaul.md:339"
+      ],
+      "reproduce_command": null,
+      "notes": "Scripts (bench.mjs, switch-bench.mjs, api-bench.mjs) are listed as 'to be moved into the repo in Phase 0' and are not in the clone; no raw JSON committed. Doc caveats that measurements were taken in a background window and that 'user-perceived launch is worse than the table suggests'. AO is worse than Linear on RSS and idle CPU."
+    },
+    {
+      "claim": "11 `func BenchmarkXxx` Go micro-benchmarks in backend/ (e.g. BenchmarkWorkspaceManifestWarmRead, BenchmarkWorkspaceTreeNavigation)",
+      "metric": "Go micro-benchmark timings",
+      "value": "no results committed or documented",
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "backend/internal/service/session/workspace_files_benchmark_test.go:27",
+        "backend/internal/service/session/workspace_navigation_benchmark_test.go:16"
+      ],
+      "reproduce_command": null,
+      "notes": "Count (11) is from the auditor's grep. docs/performance/file-viewer.md and docs/superpowers/plans/2026-10-02-zero-lag-file-viewer.md give p95 targets (e.g. 'p95 click-to-paint under 16 ms'), not measured results."
+    }
+  ],
+  "strongest_evidence_type": "harness+results",
+  "summary": "agent-orchestrator's README makes no quantitative claims and publishes no measure of agent task outcomes. Its one well-evidenced result is a frontend chat-responsiveness study with a committed Playwright harness, raw measurements.json and a documented command (e.g. first fetch 2,070.2 -> 151.6 ms), explicitly scoped to synthetic inputs and 3 runs; an AO-vs-Linear desktop comparison exists only as plan-doc tables whose scripts are not yet in the repo.",
+  "result_focus": "engineering",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}

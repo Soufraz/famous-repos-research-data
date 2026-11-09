@@ -1,0 +1,661 @@
+{
+  "repo": "archify",
+  "full_name": "tt-a1i/archify",
+  "stars": 94563,
+  "stars_source": "github-api 2026-11-08T08:58:54Z",
+  "selection_topics": [
+    "coding-agents"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2026-04-15T05:27:37Z",
+    "description": "Turn any idea, plan, or codebase into a beautiful interactive diagram. An agent skill for Claude Code, Codex, and more.",
+    "fork": false,
+    "forks": 6444,
+    "full_name": "tt-a1i/archify",
+    "pushed_at": "2026-11-08T07:29:34Z",
+    "stars": 94563,
+    "fetched_at": "2026-11-08T08:58:54Z"
+  },
+  "url": "https://github.com/tt-a1i/archify",
+  "description": "Turn any idea, plan, or codebase into a beautiful interactive diagram. An agent skill for Claude Code, Codex, and more.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "a4065941f12be7967436261d9934784e381d423c",
+    "head_date": "2026-10-31T11:32:39+08:00",
+    "history_complete": true,
+    "non_merge_commits": 1203,
+    "merge_commits": 556,
+    "maintenance_bot_commits": 0,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 169,
+    "explicit_ai_pct": 14.0,
+    "by_tool": {
+      "devin": 131,
+      "claude": 25,
+      "cursor": 11,
+      "other": 2
+    },
+    "by_signal": {
+      "co-author": 167,
+      "agent-author": 2
+    },
+    "recent_180d": {
+      "commits": 1170,
+      "ai_pct": 14.4,
+      "fix_pct": 36.6
+    },
+    "first_365d": {
+      "commits": 1203,
+      "ai_pct": 14.0,
+      "fix_pct": 35.8
+    },
+    "bot_commit_count": 0,
+    "agent_config": {
+      "files": {
+        ".agents/": "2026-09-16T15:15:35+08:00",
+        "AGENTS.md": "2026-08-31T11:05:36-07:00",
+        "CLAUDE.md": "2026-08-31T11:05:36-07:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2026-08-31T11:05:36-07:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 1203,
+    "first_commit_date": "2026-04-15T13:27:32+08:00",
+    "last_commit_date": "2026-10-31T11:23:46+08:00",
+    "current_loc": 191715,
+    "total_historical_additions": 235353,
+    "total_historical_deletions": 39200,
+    "total_churn": 274553,
+    "churn_ratio": 1.43,
+    "survival_rate_pct": 81.5,
+    "code": {
+      "current_loc": 163385,
+      "additions": 198819,
+      "deletions": 31336,
+      "churn_ratio": 1.41,
+      "survival_rate_pct": 82.2
+    },
+    "docs": {
+      "current_loc": 28330,
+      "additions": 36534,
+      "deletions": 7864,
+      "churn_ratio": 1.57,
+      "survival_rate_pct": 77.5
+    },
+    "fix_commits": 431,
+    "fix_pct": 35.8,
+    "revert_commits": 4,
+    "revert_pct": 0.3,
+    "trial_error_commits": 434,
+    "trial_error_pct": 36.1,
+    "rapid_fire_commits": 233,
+    "rapid_fire_pct": 19.4,
+    "trial_error_chains": 64,
+    "suspicious_additions_count": 34,
+    "top5_hotspot_volatility_pct": 11.9
+  },
+  "code_hygiene": {
+    "total_files": 480,
+    "docs_files": 175,
+    "avg_file_loc": 340.4,
+    "test_loc": 88986,
+    "test_files": 288,
+    "test_ratio_pct": 54.5,
+    "comment_ratio_pct": 2.8,
+    "monolith_count": 42,
+    "top_languages": {
+      ".mjs": 149483,
+      ".js": 12042,
+      ".astro": 1483,
+      ".sh": 158,
+      ".ps1": 78
+    }
+  },
+  "authors": {
+    "unique_authors": 104,
+    "top_authors": [
+      {
+        "name": "tt-a1i",
+        "commits": 760,
+        "pct": 63.2
+      },
+      {
+        "name": "杨嘉伟",
+        "commits": 72,
+        "pct": 6.0
+      },
+      {
+        "name": "sunsunsun",
+        "commits": 45,
+        "pct": 3.7
+      },
+      {
+        "name": "momoyeyu",
+        "commits": 44,
+        "pct": 3.7
+      },
+      {
+        "name": "goatliamia",
+        "commits": 27,
+        "pct": 2.2
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 4.0,
+    "p75": 23.2,
+    "p90": 780.0,
+    "p95": 3720.0,
+    "p99": 18060.0,
+    "avg": 1207.6
+  },
+  "hotspots": [
+    {
+      "file": "README.md",
+      "commits": 179,
+      "additions": 1989,
+      "deletions": 1457,
+      "churn": 3446,
+      "first_seen": "2026-04-15T13:27:32+08:00",
+      "last_seen": "2026-10-31T11:06:46+08:00"
+    },
+    {
+      "file": "README_EN.md",
+      "commits": 168,
+      "additions": 1568,
+      "deletions": 1040,
+      "churn": 2608,
+      "first_seen": "2026-04-15T15:03:35+08:00",
+      "last_seen": "2026-10-31T11:06:46+08:00"
+    },
+    {
+      "file": "README_ZH.md",
+      "commits": 155,
+      "additions": 1546,
+      "deletions": 1010,
+      "churn": 2556,
+      "first_seen": "2026-06-14T11:47:32+08:00",
+      "last_seen": "2026-10-31T11:06:46+08:00"
+    },
+    {
+      "file": "archify/SKILL.md",
+      "commits": 138,
+      "additions": 1210,
+      "deletions": 1066,
+      "churn": 2276,
+      "first_seen": "2026-04-15T13:27:32+08:00",
+      "last_seen": "2026-10-25T12:40:33+08:00"
+    },
+    {
+      "file": "archify/bin/archify.mjs",
+      "commits": 74,
+      "additions": 8317,
+      "deletions": 1029,
+      "churn": 9346,
+      "first_seen": "2026-07-03T22:02:07+08:00",
+      "last_seen": "2026-10-18T23:15:08+08:00"
+    },
+    {
+      "file": "archify/references/authoring-contract.md",
+      "commits": 67,
+      "additions": 822,
+      "deletions": 182,
+      "churn": 1004,
+      "first_seen": "2026-07-27T21:25:24+08:00",
+      "last_seen": "2026-10-15T11:49:20+08:00"
+    },
+    {
+      "file": "archify/renderers/workflow/workflow-compiler.mjs",
+      "commits": 60,
+      "additions": 7213,
+      "deletions": 1092,
+      "churn": 8305,
+      "first_seen": "2026-08-30T12:36:57+08:00",
+      "last_seen": "2026-10-13T22:32:20+08:00"
+    },
+    {
+      "file": "archify/renderers/architecture/render-architecture.mjs",
+      "commits": 59,
+      "additions": 1910,
+      "deletions": 682,
+      "churn": 2592,
+      "first_seen": "2026-06-12T21:05:13+08:00",
+      "last_seen": "2026-10-13T22:32:20+08:00"
+    },
+    {
+      "file": "archify/renderers/lifecycle/render-lifecycle.mjs",
+      "commits": 56,
+      "additions": 2623,
+      "deletions": 1466,
+      "churn": 4089,
+      "first_seen": "2026-04-24T10:57:39+08:00",
+      "last_seen": "2026-10-13T22:32:20+08:00"
+    },
+    {
+      "file": "archify/references/delivery-contract.md",
+      "commits": 53,
+      "additions": 862,
+      "deletions": 194,
+      "churn": 1056,
+      "first_seen": "2026-07-27T21:25:24+08:00",
+      "last_seen": "2026-10-16T10:20:37+08:00"
+    },
+    {
+      "file": "archify/renderers/sequence/render-sequence.mjs",
+      "commits": 53,
+      "additions": 1571,
+      "deletions": 434,
+      "churn": 2005,
+      "first_seen": "2026-04-24T09:19:37+08:00",
+      "last_seen": "2026-10-13T22:32:20+08:00"
+    },
+    {
+      "file": "archify/renderers/dataflow/render-dataflow.mjs",
+      "commits": 51,
+      "additions": 1368,
+      "deletions": 1322,
+      "churn": 2690,
+      "first_seen": "2026-04-24T10:03:13+08:00",
+      "last_seen": "2026-10-13T22:32:20+08:00"
+    },
+    {
+      "file": "archify/renderers/shared/generated-validators.mjs",
+      "commits": 47,
+      "additions": 345,
+      "deletions": 66,
+      "churn": 411,
+      "first_seen": "2026-07-10T07:42:36+08:00",
+      "last_seen": "2026-10-18T11:50:39+08:00"
+    },
+    {
+      "file": "archify/renderers/shared/geometry.mjs",
+      "commits": 47,
+      "additions": 2309,
+      "deletions": 236,
+      "churn": 2545,
+      "first_seen": "2026-06-12T21:05:13+08:00",
+      "last_seen": "2026-10-13T22:32:20+08:00"
+    },
+    {
+      "file": "ROADMAP.md",
+      "commits": 45,
+      "additions": 574,
+      "deletions": 343,
+      "churn": 917,
+      "first_seen": "2026-04-15T14:42:47+08:00",
+      "last_seen": "2026-10-18T23:03:38+08:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "archify/bin/archify.mjs",
+      "loc": 7289
+    },
+    {
+      "file": "archify/renderers/workflow/workflow-compiler.mjs",
+      "loc": 5920
+    },
+    {
+      "file": "test/cli.test.mjs",
+      "loc": 4791
+    },
+    {
+      "file": "test/visual-check.test.mjs",
+      "loc": 3498
+    },
+    {
+      "file": "test/update-notifier.test.mjs",
+      "loc": 3176
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "ca47015663e9d2c40d300c767a0b096a123622e8",
+      "short_hash": "ca470156",
+      "author": "tt-a1i",
+      "date": "2026-10-18T23:15:32+08:00",
+      "subject": "test: expect CLI usage exit for unsupported preview",
+      "coauthors": [],
+      "additions": 2,
+      "deletions": 2,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "d34ff43d627a4e4321322ef08b9d81ed55a5b975",
+      "short_hash": "d34ff43d",
+      "author": "tt-a1i",
+      "date": "2026-10-18T23:20:55+08:00",
+      "subject": "release: refresh README motion proof and CLI help expectation",
+      "coauthors": [],
+      "additions": 1,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "9328b40c83285858c2eee4a6be0acea094ae84c3",
+      "short_hash": "9328b40c",
+      "author": "tt-a1i",
+      "date": "2026-10-19T08:23:14+08:00",
+      "subject": "fix(site): keep demo source cards inside the resizing frame",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "8667b00287ae73ef93ee61d0ce1c4c5502a44764",
+      "short_hash": "8667b002",
+      "author": "tt-a1i",
+      "date": "2026-10-19T08:44:10+08:00",
+      "subject": "release: publish verified v3.2.0 stable update manifest",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "f81975958b1afccc77ab0599cbf6ad8761ef75d2",
+      "short_hash": "f8197595",
+      "author": "tt-a1i",
+      "date": "2026-10-19T08:45:51+08:00",
+      "subject": "fix: keep release update summary within manifest limit",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "780dca6a197a46455b7fb7ea988b1e59b944c799",
+      "short_hash": "780dca6a",
+      "author": "tt-a1i",
+      "date": "2026-10-19T17:56:04+08:00",
+      "subject": "docs: translate stable changelog descriptions into English",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "d2e4aa880dd72dfcf6e283cdc2e3d69900845aac",
+      "short_hash": "d2e4aa88",
+      "author": "tt-a1i",
+      "date": "2026-10-19T19:36:37+08:00",
+      "subject": "Improve website path from architecture case to first use",
+      "coauthors": [],
+      "additions": 119,
+      "deletions": 2,
+      "files_count": 8,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "8bd80167c4add3c52564b0aa542b0d3754b6dbda",
+      "short_hash": "8bd80167",
+      "author": "tt-a1i",
+      "date": "2026-10-19T19:52:31+08:00",
+      "subject": "Clarify repository prompt fallback and cover homepage case links",
+      "coauthors": [],
+      "additions": 40,
+      "deletions": 4,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "9c306ee89dd096cb932719c81450cf979a098c47",
+      "short_hash": "9c306ee8",
+      "author": "tt-a1i",
+      "date": "2026-10-25T12:40:33+08:00",
+      "subject": "license: adopt Apache-2.0 while preserving historical MIT grants",
+      "coauthors": [],
+      "additions": 137,
+      "deletions": 60,
+      "files_count": 32,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "edf158c4e7a1d18d20cc329840f864289634c090",
+      "short_hash": "edf158c4",
+      "author": "tt-a1i",
+      "date": "2026-10-25T14:39:50+08:00",
+      "subject": "fix: retain standalone third-party notices and refresh stable evidence",
+      "coauthors": [],
+      "additions": 9,
+      "deletions": 2,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "81c6be8d87090670c45d08a8f97f9d29c5af0bec",
+      "short_hash": "81c6be8d",
+      "author": "tt-a1i",
+      "date": "2026-10-25T23:52:06+08:00",
+      "subject": "docs: refresh WeChat group QR code (#1105)",
+      "coauthors": [],
+      "additions": 4,
+      "deletions": 4,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "05720ab022d49a16eda42db8b61476af2ee80779",
+      "short_hash": "05720ab0",
+      "author": "tt-a1i",
+      "date": "2026-10-28T08:49:39+08:00",
+      "subject": "docs: publish the contributors wall on the default branch",
+      "coauthors": [
+        "Cursor Agent <cursoragent@cursor.com>"
+      ],
+      "additions": 630,
+      "deletions": 0,
+      "files_count": 8,
+      "ai_tool": "cursor",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "043fe1b91436ea01982afb89511934f12c1faa3b",
+      "short_hash": "043fe1b9",
+      "author": "tt-a1i",
+      "date": "2026-10-29T11:41:38+08:00",
+      "subject": "feat(dsh): prepare 1.1.0 snapshot and exact-host acceptance (#1153)",
+      "coauthors": [],
+      "additions": 186,
+      "deletions": 103,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "912518137c61beac1ab15068af03bf99d130fe20",
+      "short_hash": "91251813",
+      "author": "tt-a1i",
+      "date": "2026-10-29T11:54:46+08:00",
+      "subject": "docs(dsh): keep candidate notes in independent adapter changelog",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "22f949c1f350db24a9da1a21d71ae51d21a26a96",
+      "short_hash": "22f949c1",
+      "author": "tt-a1i",
+      "date": "2026-10-29T18:31:35+08:00",
+      "subject": "docs(dsh): clarify acceptance history and loaded-body contract",
+      "coauthors": [],
+      "additions": 10,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "f325d86230553e1dd15d3464324f1fcd01f02352",
+      "short_hash": "f325d862",
+      "author": "tt-a1i",
+      "date": "2026-10-30T14:43:01+08:00",
+      "subject": "docs: remove Raven sponsor entry from stable READMEs (#1161) (#1163)",
+      "coauthors": [],
+      "additions": 1,
+      "deletions": 6,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "ab8749dff9bda7564653017ccf16b37368e7c694",
+      "short_hash": "ab8749df",
+      "author": "tt-a1i",
+      "date": "2026-10-31T10:27:14+08:00",
+      "subject": "fix(distribution): preserve discovery assets in Pages upload",
+      "coauthors": [],
+      "additions": 5,
+      "deletions": 2,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "2a655c49e3facfb94920eef85491cff9b21a6101",
+      "short_hash": "2a655c49",
+      "author": "tt-a1i",
+      "date": "2026-10-31T09:45:38+08:00",
+      "subject": "feat(distribution): serve a verified Skill archive through website discovery",
+      "coauthors": [],
+      "additions": 125,
+      "deletions": 3,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "afcf783cb674afc0086db8dfa75d044faf59888c",
+      "short_hash": "afcf783c",
+      "author": "tt-a1i",
+      "date": "2026-10-31T11:06:46+08:00",
+      "subject": "feat(onboarding): promote agent installation entry to stable",
+      "coauthors": [],
+      "additions": 106,
+      "deletions": 47,
+      "files_count": 15,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "1341fd9c1cb0c6150db80df40ac29602de60f4d0",
+      "short_hash": "1341fd9c",
+      "author": "tt-a1i",
+      "date": "2026-10-31T11:23:46+08:00",
+      "subject": "docs(distribution): clarify update replaces installed files",
+      "coauthors": [],
+      "additions": 3,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

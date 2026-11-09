@@ -1,0 +1,36 @@
+{
+  "repo": "archify",
+  "full_name": "tt-a1i/archify",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "58ab0b98d2d0def8e49dced705c7b566936723ec",
+      "snapshot_date": "2026-10-10T19:49:39+08:00",
+      "first_commit_date": "2026-04-15T13:27:32+08:00",
+      "commits": 654,
+      "ai_pct": 9.3,
+      "has_agent_config": true,
+      "fix_pct": 36.2,
+      "revert_pct": 0.5,
+      "churn_ratio": 1.32,
+      "survival_rate_pct": 85.8,
+      "code": {
+        "current_loc": 126439,
+        "additions": 145327,
+        "deletions": 17729,
+        "churn_ratio": 1.29,
+        "survival_rate_pct": 87.0
+      },
+      "docs": {
+        "current_loc": 23709,
+        "additions": 29599,
+        "deletions": 6153,
+        "churn_ratio": 1.51,
+        "survival_rate_pct": 80.1
+      },
+      "rapid_fire_pct": 13.1,
+      "unique_authors": 83
+    },
+    "365": null
+  }
+}

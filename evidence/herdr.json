@@ -1,0 +1,67 @@
+{
+  "repo": "herdr",
+  "head_commit": "ee5bfb50",
+  "published_results": [
+    {
+      "claim": "No published numbers. Render-scaling profile: \"Non-gating full-render scaling profile for background workspaces and active panes\"",
+      "metric": "Render/resize timing (median, p95) at 1/15/50 workspaces or panes",
+      "value": null,
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "justfile:91-93",
+        "src/server/render_scale_benchmark.rs:15-18",
+        "src/server/render_scale_benchmark.rs:608",
+        ".agents/skills/herdr-pre-release-audit/references/pre-release-audit.md:83"
+      ],
+      "reproduce_command": "just bench-render-scale"
+    },
+    {
+      "claim": "No published numbers. \"~3-5 minute CPU comparison; downloads stable unless HERDR_PERF_BASELINE_BIN is set\"",
+      "metric": "CPU usage of candidate binary vs previous stable release",
+      "value": null,
+      "baseline": "latest stable release binary (or HERDR_PERF_BASELINE_BIN)",
+      "evidence_type": "harness_only",
+      "files": [
+        "justfile:116-119",
+        "scripts/release_perf_smoke.sh:1-40"
+      ],
+      "reproduce_command": "just bench-release-smoke"
+    },
+    {
+      "claim": "No published numbers. \"Profile first-batch latency and aggregate drain cost for external API bursts.\"",
+      "metric": "Socket API burst latency / drain cost",
+      "value": null,
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "justfile:112-114",
+        "src/server/headless/tests/event_fairness.rs:148"
+      ],
+      "reproduce_command": "just bench-api-fairness"
+    },
+    {
+      "claim": "No published numbers. Additional profiles: terminal target lookup, BSP layout, retained graphics, Windows process inspection.",
+      "metric": "Internal operation timing",
+      "value": null,
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "justfile:95-110",
+        "src/app/terminal_targets.rs:275",
+        "src/layout.rs:848",
+        "src/server/headless/tests/pane_graphics.rs:297"
+      ],
+      "reproduce_command": "just bench-terminal-targets | just bench-bsp-layout | just bench-retained-graphics"
+    }
+  ],
+  "strongest_evidence_type": "harness_only",
+  "summary": "herdr publishes no quantitative performance results in its README, docs or CHANGELOG; CHANGELOG performance notes are qualitative, e.g. docs/next/CHANGELOG.md:294 'reducing read latency for TUI agents', with no number. It ships runnable profiling harnesses: `just bench-*` recipes that run ignored cargo tests (render scaling at 1, 15 and 50 workspaces or panes, terminal target lookup, BSP layout, retained graphics, external API bursts) and a release CPU smoke comparison against the previous stable binary. Its pre-release audit checklist asks maintainers to record the 1, 15 and 50-count median and p95 render results, and none of those results are committed to the repository.",
+  "result_focus": "engineering",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself",
+  "accuracy_check": {
+    "date": "2026-11-08",
+    "numbers_checked": 5,
+    "corrections": []
+  }
+}

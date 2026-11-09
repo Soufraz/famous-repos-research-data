@@ -1,0 +1,124 @@
+{
+  "repo": "PageIndex",
+  "head_commit": "2ac8694",
+  "published_results": [
+    {
+      "claim": "Accuracy 100.0% (PageIndex) vs 54.0% / 74.6% / 79.4% / 87.3% (Gemini Embedding 2 vector search, top-k 10/30/50/100); Cost per 1,000 queries $110 vs $16 / $42 / $68 / $135",
+      "metric": "LLM-judged answer accuracy on 63 NVIDIA 10-K questions (FY2022-2026); USD cost per 1,000 queries",
+      "value": "PageIndex 100.0% accuracy, $110 per 1,000 queries",
+      "baseline": "Gemini Embedding 2 vector RAG at top-k 10/30/50/100: 54.0%/74.6%/79.4%/87.3% accuracy, $16/$42/$68/$135 per 1,000 queries; same generator (gpt-6-sol) for both",
+      "evidence_type": "harness+results",
+      "files": [
+        "cookbook/pageindex-vs-vector-10k/pageindex-vs-vector-10k.ipynb:603",
+        "cookbook/pageindex-vs-vector-10k/pageindex-vs-vector-10k.ipynb:604",
+        "cookbook/pageindex-vs-vector-10k/pageindex-vs-vector-10k.ipynb:642",
+        "cookbook/pageindex-vs-vector-10k/nvidia-10k-questions.json",
+        "cookbook/pageindex-vs-vector-10k/answers_pageindex.jsonl"
+      ],
+      "reproduce_command": null,
+      "notes": "Notebook with saved outputs ('our run on 2026-10-16 with pageindex 0.4.1'). Questions (63) and PageIndex answers are committed; the vector answers (answers_vector.jsonl) and judge grades (grades.jsonl) are NOT committed. Judge is an LLM (claude-opus-5.5). Questions authored by the vendor. Not linked from README."
+    },
+    {
+      "claim": "PageIndex: 100.0% of 63 questions, $110.48 per 1,000 queries ... Voyage 4 ... 92.1% (top-k 100)",
+      "metric": "LLM-judged accuracy and cost per 1,000 queries vs six embedding models x four top-k settings",
+      "value": "PageIndex 100.0%, $110.48 per 1,000 queries",
+      "baseline": "Best vector config shown: Voyage 4 top-k 100 = 92.1% at $134.32; Gemini Embedding 2 top-k 100 = 85.7% at $134.71; OpenAI 3-large top-k 10 = 42.9%",
+      "evidence_type": "harness+results",
+      "files": [
+        "cookbook/pageindex-vs-vector-10k/pageindex-vs-embeddings-10k.ipynb:574"
+      ],
+      "reproduce_command": null,
+      "notes": "Same 63 questions; per-embedding answer files and grades not committed. Gemini Embedding 2 numbers differ from the sibling notebook (55.6/76.2/82.5/85.7 vs 54.0/74.6/79.4/87.3), consistent with the notebook's own note that 'each run moves by a question or two'."
+    },
+    {
+      "claim": "On 315 answers from our study, it reached the same verdict as our blind grading on 314.",
+      "metric": "LLM judge agreement with blind human grading",
+      "value": "314 of 315",
+      "baseline": null,
+      "evidence_type": "results_only",
+      "files": [
+        "cookbook/pageindex-vs-vector-10k/pageindex-vs-vector-10k.ipynb:640"
+      ],
+      "reproduce_command": null,
+      "notes": "Human grades/study data not in the repo."
+    },
+    {
+      "claim": "Building a tree locally runs **about $0.001 per page** with `gpt-5.6-luna` as the index model",
+      "metric": "indexing cost per page (USD)",
+      "value": "about $0.001 per page (plot alt text: $0.0011-per-page reference line, nine PDFs from 9 to 1,098 pages)",
+      "baseline": null,
+      "evidence_type": "results_only",
+      "files": [
+        "README.md:120",
+        "README.md:125",
+        "assets/index-cost-light.png"
+      ],
+      "reproduce_command": null,
+      "notes": "Only a committed plot; no script for the 9-PDF benchmark. The related cookbook/pageindex-indexing-cost-demo.ipynb indexes a single 22-page PDF with gpt-6-luna and outputs '$0.160 per 1,000 pages' and 'PageIndex costs 0.85x the vector index to build' (Gemini Embedding 2 at $0.188 per 1,000 pages) -- a different model and setup than the README figure."
+    },
+    {
+      "claim": "the benchmark documents (9 to 1,098 pages) finished in roughly **13 seconds to 4.5 minutes**",
+      "metric": "local indexing wall time",
+      "value": "roughly 13 seconds to 4.5 minutes",
+      "baseline": null,
+      "evidence_type": "results_only",
+      "files": [
+        "README.md:129",
+        "assets/index-time-light.png"
+      ],
+      "reproduce_command": null,
+      "notes": "Plot only; no timing script or raw data committed; hardware not stated."
+    },
+    {
+      "claim": "native PDF input costs **2.1× more at 52 pages and 16.6× more at 420** (`gpt-5.6-sol`, prompt caching excluded)",
+      "metric": "cost per query relative to PageIndex retrieval",
+      "value": "2.1x (52 pages), 3.4x (85), 7.8x (198), 16.6x (420); exceeds context window at 805 pages",
+      "baseline": "passing the whole PDF natively to the model",
+      "evidence_type": "results_only",
+      "files": [
+        "README.md:154",
+        "README.md:159",
+        "assets/query-cost-light.png"
+      ],
+      "reproduce_command": null,
+      "notes": "No harness or raw data in the repo; 3.4x and 7.8x appear only in image alt text."
+    },
+    {
+      "claim": "PageIndex reached a state-of-the-art [**98.7% accuracy**](https://vectify.ai/blog/Mafin2.5) on FinanceBench ... vastly outperforming vector-based RAG.",
+      "metric": "FinanceBench accuracy",
+      "value": "98.7%",
+      "baseline": "vector RAG 50% (image alt text only)",
+      "evidence_type": "external",
+      "files": [
+        "README.md:165",
+        "README.md:171",
+        "README.md:176"
+      ],
+      "reproduce_command": null,
+      "notes": "Evidence lives off-repo at https://vectify.ai/blog/Mafin2.5 and https://github.com/VectifyAI/Mafin2.5-FinanceBench (vendor's own product Mafin 2.5, not this open-source code)."
+    },
+    {
+      "claim": "Page Search API ... *Cut 97% token cost on document question answering*; more accurate and faster than vector search ([benchmark](https://github.com/VectifyAI/page-search-benchmark))",
+      "metric": "token cost reduction",
+      "value": "97%",
+      "baseline": "not stated in repo (implied: sending whole documents / vector search)",
+      "evidence_type": "external",
+      "files": [
+        "README.md:33"
+      ],
+      "reproduce_command": null,
+      "notes": "Refers to a separate hosted product (search.pageindex.ai); benchmark at https://github.com/VectifyAI/page-search-benchmark. The PageIndex Financial QA Benchmark (34 configurations of 19 LLMs, 100 questions over 40 10-Ks, README.md:142-150) is likewise external: https://github.com/VectifyAI/pageindex-benchmarks/tree/main/financial-qa, with no numbers quoted in the README text."
+    }
+  ],
+  "strongest_evidence_type": "harness+results",
+  "summary": "The repo ships a real, re-runnable comparison notebook (63 vendor-written NVIDIA 10-K questions, LLM judge, saved outputs) showing PageIndex at 100.0% accuracy vs 42.9-92.1% for vector RAG configurations, though the vector answers and judge grades are not committed and the run depends on paid APIs. The headline README numbers (FinanceBench 98.7%, 97% token cut, financial-QA benchmark) point to external vendor repos/blogs, while the indexing cost/time and native-PDF cost ratios are plots with no committed harness.",
+  "result_focus": "outcome",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself",
+  "accuracy_check": {
+    "date": "2026-11-08",
+    "numbers_checked": 71,
+    "corrections": [
+      "summary: vector RAG accuracy range 54.0-92.1% -> 42.9-92.1% (lowest configuration is OpenAI 3-large top-k 10 at 42.9%, cookbook/pageindex-vs-vector-10k/pageindex-vs-embeddings-10k.ipynb:574)"
+    ]
+  }
+}

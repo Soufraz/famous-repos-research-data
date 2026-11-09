@@ -1,0 +1,662 @@
+{
+  "repo": "yao",
+  "full_name": "YaoApp/yao",
+  "stars": 8280,
+  "stars_source": "github-api 2026-11-08T09:06:44Z",
+  "selection_topics": [
+    "agent-harness"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2021-09-06T09:20:27Z",
+    "description": "✨ All your agents and workspaces in one place, on every device you own. Track tasks on a board, accessible from desktop, mobile, browser, or API. Self-hosted.",
+    "fork": false,
+    "forks": 735,
+    "full_name": "YaoApp/yao",
+    "pushed_at": "2026-11-06T09:27:40Z",
+    "stars": 8280,
+    "fetched_at": "2026-11-08T09:06:44Z"
+  },
+  "url": "https://github.com/YaoApp/yao",
+  "description": "✨ All your agents and workspaces in one place, on every device you own. Track tasks on a board, accessible from desktop, mobile, browser, or API. Self-hosted.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "07b55742a7ed9c7ecabc92d9f04fdf133e3cc644",
+    "head_date": "2026-11-06T17:27:40+08:00",
+    "history_complete": true,
+    "non_merge_commits": 2974,
+    "merge_commits": 1360,
+    "maintenance_bot_commits": 0,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 110,
+    "explicit_ai_pct": 3.7,
+    "by_tool": {
+      "cursor": 109,
+      "claude": 1
+    },
+    "by_signal": {
+      "co-author": 110
+    },
+    "recent_180d": {
+      "commits": 264,
+      "ai_pct": 33.0,
+      "fix_pct": 25.8
+    },
+    "first_365d": {
+      "commits": 547,
+      "ai_pct": 0.0,
+      "fix_pct": 17.7
+    },
+    "bot_commit_count": 0,
+    "agent_config": {
+      "files": {},
+      "ci_agent_workflows": [],
+      "has_agent_config": false,
+      "first_config_date": null
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 2974,
+    "first_commit_date": "2021-09-06T17:20:28+08:00",
+    "last_commit_date": "2026-11-06T17:26:30+08:00",
+    "current_loc": 510543,
+    "total_historical_additions": 895448,
+    "total_historical_deletions": 384905,
+    "total_churn": 1280353,
+    "churn_ratio": 2.51,
+    "survival_rate_pct": 57.0,
+    "code": {
+      "current_loc": 456876,
+      "additions": 809040,
+      "deletions": 352164,
+      "churn_ratio": 2.54,
+      "survival_rate_pct": 56.5
+    },
+    "docs": {
+      "current_loc": 53667,
+      "additions": 86408,
+      "deletions": 32741,
+      "churn_ratio": 2.22,
+      "survival_rate_pct": 62.1
+    },
+    "fix_commits": 346,
+    "fix_pct": 11.6,
+    "revert_commits": 3,
+    "revert_pct": 0.1,
+    "trial_error_commits": 354,
+    "trial_error_pct": 11.9,
+    "rapid_fire_commits": 108,
+    "rapid_fire_pct": 3.6,
+    "trial_error_chains": 16,
+    "suspicious_additions_count": 244,
+    "top5_hotspot_volatility_pct": 4.0
+  },
+  "code_hygiene": {
+    "total_files": 1876,
+    "docs_files": 128,
+    "avg_file_loc": 243.5,
+    "test_loc": 194336,
+    "test_files": 744,
+    "test_ratio_pct": 42.5,
+    "comment_ratio_pct": 8.4,
+    "monolith_count": 59,
+    "top_languages": {
+      ".go": 450616,
+      ".ts": 5145,
+      ".proto": 683,
+      ".sh": 428,
+      ".js": 4
+    }
+  },
+  "authors": {
+    "unique_authors": 13,
+    "top_authors": [
+      {
+        "name": "Max",
+        "commits": 2946,
+        "pct": 99.1
+      },
+      {
+        "name": "QJAutumn",
+        "commits": 7,
+        "pct": 0.2
+      },
+      {
+        "name": "yflau",
+        "commits": 4,
+        "pct": 0.1
+      },
+      {
+        "name": "Wendao",
+        "commits": 3,
+        "pct": 0.1
+      },
+      {
+        "name": "k0a1a",
+        "commits": 3,
+        "pct": 0.1
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 1.3,
+    "p75": 4.7,
+    "p90": 17.4,
+    "p95": 34.0,
+    "p99": 95.9,
+    "avg": 27.4
+  },
+  "hotspots": [
+    {
+      "file": "data/bindata.go",
+      "commits": 229,
+      "additions": 41013,
+      "deletions": 32353,
+      "churn": 73366,
+      "first_seen": "2021-10-01T12:44:13+08:00",
+      "last_seen": "2026-10-16T20:03:45+08:00"
+    },
+    {
+      "file": "engine/load.go",
+      "commits": 99,
+      "additions": 2041,
+      "deletions": 1224,
+      "churn": 3265,
+      "first_seen": "2021-10-18T22:01:25+08:00",
+      "last_seen": "2026-10-16T20:03:45+08:00"
+    },
+    {
+      "file": "share/const.go",
+      "commits": 97,
+      "additions": 137,
+      "deletions": 132,
+      "churn": 269,
+      "first_seen": "2021-10-19T09:27:53+08:00",
+      "last_seen": "2026-10-13T10:05:22+08:00"
+    },
+    {
+      "file": "cmd/start.go",
+      "commits": 96,
+      "additions": 1369,
+      "deletions": 683,
+      "churn": 2052,
+      "first_seen": "2021-09-14T12:12:07+08:00",
+      "last_seen": "2026-10-08T18:17:59+08:00"
+    },
+    {
+      "file": "agent/assistant/agent.go",
+      "commits": 79,
+      "additions": 1834,
+      "deletions": 1036,
+      "churn": 2870,
+      "first_seen": "2025-11-11T17:46:45+08:00",
+      "last_seen": "2026-10-16T20:03:45+08:00"
+    },
+    {
+      "file": "neo/assistant/api.go",
+      "commits": 77,
+      "additions": 2118,
+      "deletions": 841,
+      "churn": 2959,
+      "first_seen": "2025-01-01T17:34:17+08:00",
+      "last_seen": "2025-05-27T11:49:19+08:00"
+    },
+    {
+      "file": "neo/neo.go",
+      "commits": 76,
+      "additions": 2003,
+      "deletions": 2003,
+      "churn": 4006,
+      "first_seen": "2023-04-29T16:48:37+08:00",
+      "last_seen": "2025-11-06T18:13:54+08:00"
+    },
+    {
+      "file": "sui/core/build.go",
+      "commits": 75,
+      "additions": 1789,
+      "deletions": 909,
+      "churn": 2698,
+      "first_seen": "2023-10-10T21:12:53+08:00",
+      "last_seen": "2026-02-12T19:06:56+08:00"
+    },
+    {
+      "file": "sui/core/types.go",
+      "commits": 72,
+      "additions": 777,
+      "deletions": 288,
+      "churn": 1065,
+      "first_seen": "2023-09-24T17:27:03+08:00",
+      "last_seen": "2026-04-02T18:55:36+08:00"
+    },
+    {
+      "file": "sui/core/parser.go",
+      "commits": 65,
+      "additions": 1157,
+      "deletions": 480,
+      "churn": 1637,
+      "first_seen": "2023-11-23T13:00:07+08:00",
+      "last_seen": "2026-05-21T17:32:56+08:00"
+    },
+    {
+      "file": "cmd/root.go",
+      "commits": 59,
+      "additions": 450,
+      "deletions": 151,
+      "churn": 601,
+      "first_seen": "2021-09-14T12:12:07+08:00",
+      "last_seen": "2026-10-18T00:30:56+08:00"
+    },
+    {
+      "file": "widgets/app/app.go",
+      "commits": 53,
+      "additions": 1268,
+      "deletions": 433,
+      "churn": 1701,
+      "first_seen": "2022-09-21T00:03:04+08:00",
+      "last_seen": "2026-05-25T16:45:55+08:00"
+    },
+    {
+      "file": "openapi/user/types.go",
+      "commits": 51,
+      "additions": 1044,
+      "deletions": 277,
+      "churn": 1321,
+      "first_seen": "2025-09-18T09:02:54+08:00",
+      "last_seen": "2026-09-18T20:33:15+08:00"
+    },
+    {
+      "file": "agent/context/types.go",
+      "commits": 50,
+      "additions": 931,
+      "deletions": 221,
+      "churn": 1152,
+      "first_seen": "2025-11-10T17:30:53+08:00",
+      "last_seen": "2026-10-13T20:15:56+08:00"
+    },
+    {
+      "file": "README.md",
+      "commits": 48,
+      "additions": 919,
+      "deletions": 851,
+      "churn": 1770,
+      "first_seen": "2021-09-06T17:20:28+08:00",
+      "last_seen": "2026-11-06T17:26:30+08:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "data/bindata.go",
+      "loc": 9304
+    },
+    {
+      "file": "agent/sandbox/v2/dsh/parse_unit_test.go",
+      "loc": 2781
+    },
+    {
+      "file": "openapi/tests/user/member_test.go",
+      "loc": 2525
+    },
+    {
+      "file": "tai/volume/git_test.go",
+      "loc": 2016
+    },
+    {
+      "file": "attachment/manager_test.go",
+      "loc": 1900
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "35b589fb0fcd82fff59b9b1471b86bc98a6c62a6",
+      "short_hash": "35b589fb",
+      "author": "Max",
+      "date": "2026-10-05T21:28:02+08:00",
+      "subject": "fix(test): remove obsolete background jobs assertions",
+      "coauthors": [
+        "Cursor <cursoragent@cursor.com>"
+      ],
+      "additions": 0,
+      "deletions": 6,
+      "files_count": 1,
+      "ai_tool": "cursor",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "d3ca965d184073d4c13dda7f86251ba6f055a9bc",
+      "short_hash": "d3ca965d",
+      "author": "Max",
+      "date": "2026-10-08T18:17:59+08:00",
+      "subject": "feat(openapi): add user management endpoints and refine login error handling",
+      "coauthors": [],
+      "additions": 394,
+      "deletions": 37,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "a74a8e48b38e28a9069f8ead72389b5d3d527e7a",
+      "short_hash": "a74a8e48",
+      "author": "Max",
+      "date": "2026-10-08T19:47:06+08:00",
+      "subject": "feat(openapi): improve login error handling and user creation logic",
+      "coauthors": [],
+      "additions": 55,
+      "deletions": 12,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "0cfaa26b8a6fcf5ff8296d1638d5c0eda0d06e2f",
+      "short_hash": "0cfaa26b",
+      "author": "Max",
+      "date": "2026-10-13T09:38:21+08:00",
+      "subject": "feat(github): enhance release creation workflow with previous tag notes",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "254ae84ce419bd00961a4fa7eb082ba4c363d3a7",
+      "short_hash": "254ae84c",
+      "author": "Max",
+      "date": "2026-10-13T10:05:22+08:00",
+      "subject": "chore(share): update version constants to 2.0.0",
+      "coauthors": [],
+      "additions": 2,
+      "deletions": 2,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "3c315dfc7bf2de9f1e7fd3c8568344461e6ea0c6",
+      "short_hash": "3c315dfc",
+      "author": "Max",
+      "date": "2026-10-13T16:24:38+08:00",
+      "subject": "refactor(main): remove widget imports and update app structure",
+      "coauthors": [],
+      "additions": 188,
+      "deletions": 19108,
+      "files_count": 152,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "5f46b9d01db0534e028ebd2054cc3d5dde5ee13f",
+      "short_hash": "5f46b9d0",
+      "author": "Max",
+      "date": "2026-10-13T16:53:29+08:00",
+      "subject": "refactor(aigc): remove AIGC package and related tests",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 4218,
+      "files_count": 37,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "4f75354d529e57278fd777e43fcd41d9953e1dbe",
+      "short_hash": "4f75354d",
+      "author": "Max",
+      "date": "2026-10-13T18:44:11+08:00",
+      "subject": "refactor(agent): remove knowledge base (KB) references and related code",
+      "coauthors": [],
+      "additions": 577,
+      "deletions": 27260,
+      "files_count": 160,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "0f0b8ead992ca78d1f04cb9562433462ab1fd145",
+      "short_hash": "0f0b8ead",
+      "author": "Max",
+      "date": "2026-10-13T20:15:56+08:00",
+      "subject": "refactor(agent): remove trace-related code and simplify context handling",
+      "coauthors": [],
+      "additions": 465,
+      "deletions": 15406,
+      "files_count": 104,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "a513626f91058ee64caf44dfa54eb99a46d109ab",
+      "short_hash": "a513626f",
+      "author": "Max",
+      "date": "2026-10-13T20:29:46+08:00",
+      "subject": "refactor(agent): remove trace fields from context and metadata",
+      "coauthors": [],
+      "additions": 1,
+      "deletions": 3,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "d8ca08962831e68c218334ab731701adc524ca9b",
+      "short_hash": "d8ca0896",
+      "author": "Max",
+      "date": "2026-10-13T21:33:09+08:00",
+      "subject": "refactor(tests): simplify history integration tests and remove obsolete trace tests",
+      "coauthors": [],
+      "additions": 1,
+      "deletions": 501,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "ba8481a0934c2cdb1d5f69cd1145e4490d5bf18a",
+      "short_hash": "ba8481a0",
+      "author": "Max",
+      "date": "2026-10-15T17:09:48+08:00",
+      "subject": "feat(agent): add Tai session event messages and implement TaiRunner functionality",
+      "coauthors": [],
+      "additions": 2599,
+      "deletions": 7,
+      "files_count": 7,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "01e7eed5d5b7e9be7a8c030ea2622b2858fa9eca",
+      "short_hash": "01e7eed5",
+      "author": "Max",
+      "date": "2026-10-15T18:17:42+08:00",
+      "subject": "feat(tai): add subagent summary and semantic type tests",
+      "coauthors": [],
+      "additions": 80,
+      "deletions": 1,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "006a87152102187a16527e5b691a8383a3a5bc0d",
+      "short_hash": "006a8715",
+      "author": "Max",
+      "date": "2026-10-16T20:03:45+08:00",
+      "subject": "feat(agent): integrate new LLM provider and model management",
+      "coauthors": [],
+      "additions": 7661,
+      "deletions": 476,
+      "files_count": 33,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "669c370d251778e81dc4b3153ed34701a5758858",
+      "short_hash": "669c370d",
+      "author": "Max",
+      "date": "2026-10-18T00:30:56+08:00",
+      "subject": "feat(upgrade): add nightly build upgrade option and enhance version resolution",
+      "coauthors": [],
+      "additions": 99,
+      "deletions": 22,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "6ad09c4f757a86ca4542734ef1fa8864f048310b",
+      "short_hash": "6ad09c4f",
+      "author": "Max",
+      "date": "2026-10-18T08:57:08+08:00",
+      "subject": "fix(nightly): use upload-artifact for Linux container build",
+      "coauthors": [
+        "Cursor <cursoragent@cursor.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "cursor",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "9789d73c9a1642137778484686e9a2abbd019678",
+      "short_hash": "9789d73c",
+      "author": "Max",
+      "date": "2026-10-18T09:04:58+08:00",
+      "subject": "feat(nightly): add macOS notarization after code signing",
+      "coauthors": [
+        "Cursor <cursoragent@cursor.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "cursor",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "6848363262ff0a75b00502d3ca8aade2e4ac29cc",
+      "short_hash": "68483632",
+      "author": "Max",
+      "date": "2026-10-19T00:23:31+08:00",
+      "subject": "feat(dsh): session.completed/waiting signals, remove promptedSessionID filter",
+      "coauthors": [
+        "Cursor <cursoragent@cursor.com>"
+      ],
+      "additions": 159,
+      "deletions": 25,
+      "files_count": 2,
+      "ai_tool": "cursor",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "b654bb897c62479d846017008cd2a6c7d539672e",
+      "short_hash": "b654bb89",
+      "author": "Max",
+      "date": "2026-10-19T11:27:47+08:00",
+      "subject": "fix(upgrade): use spawn-helper for Windows self-update",
+      "coauthors": [
+        "Cursor <cursoragent@cursor.com>"
+      ],
+      "additions": 71,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": "cursor",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "abe84ba66448b4e0da7dd5291dfd24a18fdfdefd",
+      "short_hash": "abe84ba6",
+      "author": "Max",
+      "date": "2026-11-06T17:26:30+08:00",
+      "subject": "docs: update README files to indicate focus on v2.0 development",
+      "coauthors": [],
+      "additions": 4,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

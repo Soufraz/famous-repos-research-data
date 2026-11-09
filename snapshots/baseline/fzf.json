@@ -1,0 +1,63 @@
+{
+  "repo": "fzf",
+  "full_name": "junegunn/fzf",
+  "group": "baseline",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "fe22213b510dad8b23b91f886e8f785dea5598b9",
+      "snapshot_date": "2014-04-14T16:48:54+09:00",
+      "first_commit_date": "2013-10-23T10:26:55+09:00",
+      "commits": 233,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 12.9,
+      "revert_pct": 0.4,
+      "churn_ratio": 1.97,
+      "survival_rate_pct": 67.3,
+      "code": {
+        "current_loc": 850,
+        "additions": 1053,
+        "deletions": 202,
+        "churn_ratio": 1.48,
+        "survival_rate_pct": 80.7
+      },
+      "docs": {
+        "current_loc": 463,
+        "additions": 897,
+        "deletions": 434,
+        "churn_ratio": 2.87,
+        "survival_rate_pct": 51.6
+      },
+      "rapid_fire_pct": 9.0,
+      "unique_authors": 3
+    },
+    "365": {
+      "snapshot_commit": "6fd6fff3a65ec23cfd84d347d77648fde2b24ee9",
+      "snapshot_date": "2014-10-15T13:22:00+09:00",
+      "first_commit_date": "2013-10-23T10:26:55+09:00",
+      "commits": 315,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 12.4,
+      "revert_pct": 0.6,
+      "churn_ratio": 2.2,
+      "survival_rate_pct": 62.6,
+      "code": {
+        "current_loc": 958,
+        "additions": 1359,
+        "deletions": 400,
+        "churn_ratio": 1.84,
+        "survival_rate_pct": 70.5
+      },
+      "docs": {
+        "current_loc": 570,
+        "additions": 1083,
+        "deletions": 513,
+        "churn_ratio": 2.8,
+        "survival_rate_pct": 52.6
+      },
+      "rapid_fire_pct": 7.6,
+      "unique_authors": 11
+    }
+  }
+}

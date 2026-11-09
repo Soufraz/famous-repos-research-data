@@ -1,0 +1,4126 @@
+{
+  "generated_at": "2026-11-08",
+  "cohort": {
+    "repos": 52,
+    "topic_selected": 48,
+    "hand_picked": 4,
+    "hand_picked_repos": [
+      "OmniRoute",
+      "context-mode",
+      "rtk",
+      "superpowers"
+    ],
+    "topics_snapshot_date": "2026-11-08",
+    "topics": [
+      "agent-harness",
+      "ai-agents",
+      "coding-agents",
+      "context-engineering",
+      "llm",
+      "prompt-engineering",
+      "spec-driven-development"
+    ],
+    "created_2025_or_later": 39,
+    "created_before_2024": [
+      "AutoGPT",
+      "anything-llm",
+      "dify",
+      "go-zero",
+      "langchain",
+      "lobehub",
+      "ollama",
+      "open-webui",
+      "ragflow",
+      "transformers",
+      "yao"
+    ],
+    "authored_commits": 324088,
+    "excluded_merge_commits": 38229,
+    "excluded_bot_commits": 10346,
+    "code_loc": 47007629,
+    "docs_loc": 4462212,
+    "stars": {
+      "n": 52,
+      "median": 65125.5,
+      "q1": 15631.5,
+      "q3": 126250.5
+    },
+    "stars_fetched_at": "2026-11-08T10:25:24Z",
+    "shared_history": [
+      {
+        "repos": [
+          "get-shit-done",
+          "gsd-core"
+        ],
+        "shared_non_merge_commits": 2554,
+        "last_shared_commit_ts": 1779420730,
+        "last_shared_date": "2026-05-22"
+      }
+    ]
+  },
+  "ai": {
+    "signed_threshold_pct": 5.0,
+    "classes": {
+      "signed": [
+        "ECC",
+        "firecrawl",
+        "ponytail",
+        "graphify",
+        "browser-use",
+        "orca",
+        "caveman",
+        "claude-mem",
+        "archify",
+        "lobehub",
+        "headroom",
+        "OpenSpec",
+        "humanizer",
+        "get-shit-done",
+        "agents",
+        "go-zero",
+        "cmux",
+        "happy",
+        "Paradev",
+        "agent-orchestrator",
+        "holaOS",
+        "gsd-core",
+        "munder-difflin",
+        "Orkas",
+        "openrig",
+        "yao",
+        "failproofai",
+        "thinkrail",
+        "gsd-2",
+        "context-mode",
+        "rtk",
+        "superpowers",
+        "AutoGPT",
+        "transformers",
+        "dify",
+        "academic-research-skills",
+        "BMAD-METHOD",
+        "book-to-skill"
+      ],
+      "configured_unsigned": [
+        "deepseek-harness",
+        "hermes-agent",
+        "ragflow",
+        "herdr",
+        "elephant-goldfish-model",
+        "gentle-ai",
+        "OmniRoute",
+        "ollama",
+        "langchain"
+      ],
+      "no_visible_trace": [
+        "anything-llm",
+        "PageIndex",
+        "QwenPaw",
+        "conductor",
+        "open-webui"
+      ]
+    },
+    "class_counts": {
+      "signed": 38,
+      "configured_unsigned": 9,
+      "no_visible_trace": 5
+    },
+    "with_agent_config": 44,
+    "with_ci_agent": 7,
+    "signed_pct_all_time": {
+      "n": 52,
+      "median": 13.6,
+      "q1": 2.12,
+      "q3": 31.35
+    },
+    "signed_pct_recent": {
+      "n": 52,
+      "median": 16.95,
+      "q1": 2.75,
+      "q3": 37.02
+    },
+    "recent_ge_25": 21,
+    "recent_ge_50": 10,
+    "signed_commits": 36892,
+    "by_tool_commits": {
+      "claude": 31485,
+      "orca": 1901,
+      "other": 924,
+      "cursor": 855,
+      "copilot": 797,
+      "devin": 325,
+      "gemini": 303,
+      "codex": 215,
+      "aider": 70,
+      "amp": 17
+    },
+    "by_tool_repos": {
+      "claude": 49,
+      "cursor": 35,
+      "copilot": 32,
+      "other": 25,
+      "codex": 17,
+      "devin": 14,
+      "gemini": 14,
+      "amp": 6,
+      "orca": 2,
+      "aider": 2
+    },
+    "claude_share_of_signed_pct": 85.3,
+    "switched_recently": [
+      {
+        "repo": "go-zero",
+        "full_name": "zeromicro/go-zero",
+        "stars": 33420,
+        "created": "2020-08-07",
+        "ai_pct": 1.3,
+        "ai_pct_recent": 23.1
+      },
+      {
+        "repo": "yao",
+        "full_name": "YaoApp/yao",
+        "stars": 8280,
+        "created": "2021-09-06",
+        "ai_pct": 3.7,
+        "ai_pct_recent": 33.0
+      },
+      {
+        "repo": "AutoGPT",
+        "full_name": "Significant-Gravitas/AutoGPT",
+        "stars": 187937,
+        "created": "2023-03-16",
+        "ai_pct": 20.4,
+        "ai_pct_recent": 73.6
+      },
+      {
+        "repo": "lobehub",
+        "full_name": "lobehub/lobehub",
+        "stars": 84366,
+        "created": "2023-05-21",
+        "ai_pct": 22.0,
+        "ai_pct_recent": 40.7
+      },
+      {
+        "repo": "firecrawl",
+        "full_name": "firecrawl/firecrawl",
+        "stars": 199609,
+        "created": "2024-04-15",
+        "ai_pct": 13.1,
+        "ai_pct_recent": 42.1
+      },
+      {
+        "repo": "OpenSpec",
+        "full_name": "Fission-AI/OpenSpec",
+        "stars": 74248,
+        "created": "2025-08-05",
+        "ai_pct": 30.6,
+        "ai_pct_recent": 63.9
+      }
+    ],
+    "switch_threshold_points": 15.0,
+    "configured_unsigned": [
+      {
+        "repo": "deepseek-harness",
+        "full_name": "deepseek-ai/deepseek-harness",
+        "stars": 276014,
+        "ai_pct": 0.0,
+        "config_files": [
+          ".agents/",
+          ".claude/",
+          "AGENTS.md",
+          "CLAUDE.md"
+        ],
+        "ci_agent_workflows": []
+      },
+      {
+        "repo": "hermes-agent",
+        "full_name": "NousResearch/hermes-agent",
+        "stars": 261582,
+        "ai_pct": 2.9,
+        "config_files": [
+          "AGENTS.md"
+        ],
+        "ci_agent_workflows": []
+      },
+      {
+        "repo": "ollama",
+        "full_name": "ollama/ollama",
+        "stars": 186319,
+        "ai_pct": 0.1,
+        "config_files": [
+          "AGENTS.md",
+          "CLAUDE.md"
+        ],
+        "ci_agent_workflows": []
+      },
+      {
+        "repo": "langchain",
+        "full_name": "langchain-ai/langchain",
+        "stars": 149190,
+        "ai_pct": 0.3,
+        "config_files": [
+          "AGENTS.md"
+        ],
+        "ci_agent_workflows": []
+      },
+      {
+        "repo": "ragflow",
+        "full_name": "infiniflow/ragflow",
+        "stars": 93749,
+        "ai_pct": 2.4,
+        "config_files": [
+          ".agents/",
+          ".github/copilot-instructions.md",
+          "AGENTS.md"
+        ],
+        "ci_agent_workflows": []
+      },
+      {
+        "repo": "OmniRoute",
+        "full_name": "cheaper-inference/OmniRoute",
+        "stars": 85531,
+        "ai_pct": 3.0,
+        "config_files": [
+          ".github/copilot-instructions.md",
+          "AGENTS.md",
+          "CLAUDE.md",
+          "GEMINI.md"
+        ],
+        "ci_agent_workflows": [
+          ".github/workflows/claude.yml"
+        ]
+      },
+      {
+        "repo": "herdr",
+        "full_name": "herdrdev/herdr",
+        "stars": 49219,
+        "ai_pct": 0.3,
+        "config_files": [
+          ".agents/",
+          "AGENTS.md"
+        ],
+        "ci_agent_workflows": []
+      },
+      {
+        "repo": "elephant-goldfish-model",
+        "full_name": "google/elephant-goldfish-model",
+        "stars": 14254,
+        "ai_pct": 0.7,
+        "config_files": [
+          ".agents/",
+          ".gemini/",
+          "AGENTS.md"
+        ],
+        "ci_agent_workflows": []
+      },
+      {
+        "repo": "gentle-ai",
+        "full_name": "Gentleman-Programming/gentle-ai",
+        "stars": 8586,
+        "ai_pct": 0.3,
+        "config_files": [
+          ".claude/",
+          "AGENTS.md"
+        ],
+        "ci_agent_workflows": []
+      }
+    ],
+    "no_visible_trace": [
+      {
+        "repo": "anything-llm",
+        "full_name": "Mintplex-Labs/anything-llm",
+        "stars": 68053,
+        "ai_pct": 0.4
+      },
+      {
+        "repo": "PageIndex",
+        "full_name": "VectifyAI/PageIndex",
+        "stars": 40181,
+        "ai_pct": 0.6
+      },
+      {
+        "repo": "QwenPaw",
+        "full_name": "agentscope-ai/QwenPaw",
+        "stars": 37473,
+        "ai_pct": 0.3
+      },
+      {
+        "repo": "conductor",
+        "full_name": "gemini-cli-extensions/conductor",
+        "stars": 3777,
+        "ai_pct": 0.0
+      },
+      {
+        "repo": "open-webui",
+        "full_name": "open-webui/open-webui",
+        "stars": 158080,
+        "ai_pct": 1.3
+      }
+    ],
+    "top_recent": [
+      {
+        "repo": "holaOS",
+        "full_name": "holaboss-ai/holaOS",
+        "stars": 11434,
+        "ai_pct_recent": 85.2,
+        "top_tool": "claude"
+      },
+      {
+        "repo": "caveman",
+        "full_name": "JuliusBrussee/caveman",
+        "stars": 118218,
+        "ai_pct_recent": 82.3,
+        "top_tool": "claude"
+      },
+      {
+        "repo": "failproofai",
+        "full_name": "FailproofAI/failproofai",
+        "stars": 8230,
+        "ai_pct_recent": 79.3,
+        "top_tool": "claude"
+      },
+      {
+        "repo": "AutoGPT",
+        "full_name": "Significant-Gravitas/AutoGPT",
+        "stars": 187937,
+        "ai_pct_recent": 73.6,
+        "top_tool": "claude"
+      },
+      {
+        "repo": "munder-difflin",
+        "full_name": "HarnessMD/munder-difflin",
+        "stars": 9425,
+        "ai_pct_recent": 72.6,
+        "top_tool": "claude"
+      },
+      {
+        "repo": "academic-research-skills",
+        "full_name": "Imbad0202/academic-research-skills",
+        "stars": 55793,
+        "ai_pct_recent": 70.4,
+        "top_tool": "claude"
+      },
+      {
+        "repo": "claude-mem",
+        "full_name": "thedotmack/claude-mem",
+        "stars": 114633,
+        "ai_pct_recent": 66.9,
+        "top_tool": "claude"
+      },
+      {
+        "repo": "OpenSpec",
+        "full_name": "Fission-AI/OpenSpec",
+        "stars": 74248,
+        "ai_pct_recent": 63.9,
+        "top_tool": "claude"
+      },
+      {
+        "repo": "graphify",
+        "full_name": "Graphify-Labs/graphify",
+        "stars": 144135,
+        "ai_pct_recent": 52.7,
+        "top_tool": "claude"
+      },
+      {
+        "repo": "get-shit-done",
+        "full_name": "gsd-build/get-shit-done",
+        "stars": 64157,
+        "ai_pct_recent": 50.0,
+        "top_tool": "claude"
+      }
+    ]
+  },
+  "fame": {
+    "stars_vs_ai_signed": {
+      "rho": -0.15,
+      "p": 0.3,
+      "n": 52
+    },
+    "stars_vs_ai_signed_recent": {
+      "rho": -0.05,
+      "p": 0.716,
+      "n": 52
+    },
+    "stars_vs_fix_pct": {
+      "rho": -0.0,
+      "p": 0.988,
+      "n": 52
+    },
+    "stars_vs_churn_ratio": {
+      "rho": 0.33,
+      "p": 0.017,
+      "n": 52
+    },
+    "top10_by_stars": [
+      {
+        "repo": "superpowers",
+        "full_name": "obra/superpowers",
+        "stars": 314290,
+        "ai_pct": 13.3,
+        "ai_pct_recent": 6.1,
+        "ai_class": "signed"
+      },
+      {
+        "repo": "ECC",
+        "full_name": "affaan-m/ECC",
+        "stars": 299342,
+        "ai_pct": 8.1,
+        "ai_pct_recent": 7.9,
+        "ai_class": "signed"
+      },
+      {
+        "repo": "deepseek-harness",
+        "full_name": "deepseek-ai/deepseek-harness",
+        "stars": 276014,
+        "ai_pct": 0.0,
+        "ai_pct_recent": 0.0,
+        "ai_class": "configured_unsigned"
+      },
+      {
+        "repo": "hermes-agent",
+        "full_name": "NousResearch/hermes-agent",
+        "stars": 261582,
+        "ai_pct": 2.9,
+        "ai_pct_recent": 2.8,
+        "ai_class": "configured_unsigned"
+      },
+      {
+        "repo": "firecrawl",
+        "full_name": "firecrawl/firecrawl",
+        "stars": 199609,
+        "ai_pct": 13.1,
+        "ai_pct_recent": 42.1,
+        "ai_class": "signed"
+      },
+      {
+        "repo": "AutoGPT",
+        "full_name": "Significant-Gravitas/AutoGPT",
+        "stars": 187937,
+        "ai_pct": 20.4,
+        "ai_pct_recent": 73.6,
+        "ai_class": "signed"
+      },
+      {
+        "repo": "ponytail",
+        "full_name": "DietrichGebert/ponytail",
+        "stars": 186540,
+        "ai_pct": 24.1,
+        "ai_pct_recent": 24.1,
+        "ai_class": "signed"
+      },
+      {
+        "repo": "ollama",
+        "full_name": "ollama/ollama",
+        "stars": 186319,
+        "ai_pct": 0.1,
+        "ai_pct_recent": 0.2,
+        "ai_class": "configured_unsigned"
+      },
+      {
+        "repo": "transformers",
+        "full_name": "huggingface/transformers",
+        "stars": 168646,
+        "ai_pct": 1.0,
+        "ai_pct_recent": 10.0,
+        "ai_class": "signed"
+      },
+      {
+        "repo": "dify",
+        "full_name": "langgenius/dify",
+        "stars": 160649,
+        "ai_pct": 5.3,
+        "ai_pct_recent": 6.7,
+        "ai_class": "signed"
+      }
+    ]
+  },
+  "churn": {
+    "fix_pct": {
+      "n": 52,
+      "median": 36.25,
+      "q1": 27.6,
+      "q3": 47.23
+    },
+    "churn_ratio": {
+      "n": 52,
+      "median": 2.08,
+      "q1": 1.63,
+      "q3": 3.11
+    },
+    "survival_rate_pct": {
+      "n": 52,
+      "median": 64.95,
+      "q1": 48.95,
+      "q3": 75.75
+    },
+    "revert_pct": {
+      "n": 52,
+      "median": 0.35,
+      "q1": 0.1,
+      "q3": 0.5
+    },
+    "ai_vs": {
+      "fix_pct": {
+        "rho": 0.34,
+        "p": 0.017,
+        "n": 52
+      },
+      "churn_ratio": {
+        "rho": -0.23,
+        "p": 0.096,
+        "n": 52
+      },
+      "survival_rate_pct": {
+        "rho": 0.24,
+        "p": 0.087,
+        "n": 52
+      }
+    }
+  },
+  "baseline": {
+    "copilot_ga": "2022-06-21",
+    "repos": [
+      {
+        "full_name": "denoland/deno",
+        "first_commit_date": "2018-05-13",
+        "snapshots": {
+          "180": {
+            "snapshot_commit": "34b6b86c76111396dd46e46015ad5536d6baa883",
+            "snapshot_date": "2018-11-09T08:39:49-08:00",
+            "first_commit_date": "2018-05-13T23:32:01-04:00",
+            "commits": 911,
+            "ai_pct": 0.0,
+            "has_agent_config": false,
+            "fix_pct": 12.8,
+            "revert_pct": 0.3,
+            "churn_ratio": 3.66,
+            "survival_rate_pct": 42.8,
+            "code": {
+              "current_loc": 20458,
+              "additions": 47549,
+              "deletions": 26924,
+              "churn_ratio": 3.64,
+              "survival_rate_pct": 43.0
+            },
+            "docs": {
+              "current_loc": 664,
+              "additions": 1756,
+              "deletions": 1092,
+              "churn_ratio": 4.29,
+              "survival_rate_pct": 37.8
+            },
+            "rapid_fire_pct": 7.7,
+            "unique_authors": 75
+          },
+          "365": {
+            "snapshot_commit": "5e56e26c8baad08954cdc3ecac34923dcdc39c12",
+            "snapshot_date": "2019-05-13T07:38:03-04:00",
+            "first_commit_date": "2018-05-13T23:32:01-04:00",
+            "commits": 1572,
+            "ai_pct": 0.0,
+            "has_agent_config": false,
+            "fix_pct": 14.5,
+            "revert_pct": 0.8,
+            "churn_ratio": 3.69,
+            "survival_rate_pct": 42.6,
+            "code": {
+              "current_loc": 38950,
+              "additions": 91467,
+              "deletions": 52350,
+              "churn_ratio": 3.69,
+              "survival_rate_pct": 42.6
+            },
+            "docs": {
+              "current_loc": 1879,
+              "additions": 4340,
+              "deletions": 2461,
+              "churn_ratio": 3.62,
+              "survival_rate_pct": 43.3
+            },
+            "rapid_fire_pct": 9.2,
+            "unique_authors": 140
+          }
+        }
+      },
+      {
+        "full_name": "excalidraw/excalidraw",
+        "first_commit_date": "2020-01-01",
+        "snapshots": {
+          "180": {
+            "snapshot_commit": "a679ef78761186815c8743931c0661b76a492ed3",
+            "snapshot_date": "2020-06-29T20:22:27+02:00",
+            "first_commit_date": "2020-01-01T17:04:44-08:00",
+            "commits": 896,
+            "ai_pct": 0.0,
+            "has_agent_config": false,
+            "fix_pct": 18.9,
+            "revert_pct": 1.3,
+            "churn_ratio": 4.14,
+            "survival_rate_pct": 38.9,
+            "code": {
+              "current_loc": 19401,
+              "additions": 49935,
+              "deletions": 30532,
+              "churn_ratio": 4.15,
+              "survival_rate_pct": 38.9
+            },
+            "docs": {
+              "current_loc": 157,
+              "additions": 317,
+              "deletions": 160,
+              "churn_ratio": 3.04,
+              "survival_rate_pct": 49.5
+            },
+            "rapid_fire_pct": 8.5,
+            "unique_authors": 106
+          },
+          "365": {
+            "snapshot_commit": "aef3644c93eea3434357dfed4eaf16cdeb4a81c7",
+            "snapshot_date": "2020-12-29T21:03:34+01:00",
+            "first_commit_date": "2020-01-01T17:04:44-08:00",
+            "commits": 1214,
+            "ai_pct": 0.0,
+            "has_agent_config": false,
+            "fix_pct": 19.5,
+            "revert_pct": 1.3,
+            "churn_ratio": 3.55,
+            "survival_rate_pct": 43.9,
+            "code": {
+              "current_loc": 32383,
+              "additions": 74237,
+              "deletions": 41852,
+              "churn_ratio": 3.58,
+              "survival_rate_pct": 43.6
+            },
+            "docs": {
+              "current_loc": 597,
+              "additions": 865,
+              "deletions": 268,
+              "churn_ratio": 1.9,
+              "survival_rate_pct": 69.0
+            },
+            "rapid_fire_pct": 7.8,
+            "unique_authors": 139
+          }
+        }
+      },
+      {
+        "full_name": "fastapi/fastapi",
+        "first_commit_date": "2018-12-05",
+        "snapshots": {
+          "180": {
+            "snapshot_commit": "27964c5ffd7b6cf84c4e3219cf3623df38d43651",
+            "snapshot_date": "2019-06-01T10:00:26+04:00",
+            "first_commit_date": "2018-12-05T10:56:50+04:00",
+            "commits": 483,
+            "ai_pct": 0.0,
+            "has_agent_config": false,
+            "fix_pct": 15.7,
+            "revert_pct": 0.0,
+            "churn_ratio": 1.73,
+            "survival_rate_pct": 73.2,
+            "code": {
+              "current_loc": 19366,
+              "additions": 28286,
+              "deletions": 8920,
+              "churn_ratio": 1.92,
+              "survival_rate_pct": 68.5
+            },
+            "docs": {
+              "current_loc": 10532,
+              "additions": 12566,
+              "deletions": 2034,
+              "churn_ratio": 1.39,
+              "survival_rate_pct": 83.8
+            },
+            "rapid_fire_pct": 30.2,
+            "unique_authors": 29
+          },
+          "365": {
+            "snapshot_commit": "90236c813550030040474a7714428cf1fcc4f582",
+            "snapshot_date": "2019-12-05T00:17:04+01:00",
+            "first_commit_date": "2018-12-05T10:56:50+04:00",
+            "commits": 681,
+            "ai_pct": 0.0,
+            "has_agent_config": false,
+            "fix_pct": 15.7,
+            "revert_pct": 0.0,
+            "churn_ratio": 1.66,
+            "survival_rate_pct": 75.1,
+            "code": {
+              "current_loc": 25343,
+              "additions": 35403,
+              "deletions": 10060,
+              "churn_ratio": 1.79,
+              "survival_rate_pct": 71.6
+            },
+            "docs": {
+              "current_loc": 11928,
+              "additions": 14252,
+              "deletions": 2324,
+              "churn_ratio": 1.39,
+              "survival_rate_pct": 83.7
+            },
+            "rapid_fire_pct": 33.8,
+            "unique_authors": 67
+          }
+        }
+      },
+      {
+        "full_name": "junegunn/fzf",
+        "first_commit_date": "2013-10-23",
+        "snapshots": {
+          "180": {
+            "snapshot_commit": "fe22213b510dad8b23b91f886e8f785dea5598b9",
+            "snapshot_date": "2014-04-14T16:48:54+09:00",
+            "first_commit_date": "2013-10-23T10:26:55+09:00",
+            "commits": 233,
+            "ai_pct": 0.0,
+            "has_agent_config": false,
+            "fix_pct": 12.9,
+            "revert_pct": 0.4,
+            "churn_ratio": 1.97,
+            "survival_rate_pct": 67.3,
+            "code": {
+              "current_loc": 850,
+              "additions": 1053,
+              "deletions": 202,
+              "churn_ratio": 1.48,
+              "survival_rate_pct": 80.7
+            },
+            "docs": {
+              "current_loc": 463,
+              "additions": 897,
+              "deletions": 434,
+              "churn_ratio": 2.87,
+              "survival_rate_pct": 51.6
+            },
+            "rapid_fire_pct": 9.0,
+            "unique_authors": 3
+          },
+          "365": {
+            "snapshot_commit": "6fd6fff3a65ec23cfd84d347d77648fde2b24ee9",
+            "snapshot_date": "2014-10-15T13:22:00+09:00",
+            "first_commit_date": "2013-10-23T10:26:55+09:00",
+            "commits": 315,
+            "ai_pct": 0.0,
+            "has_agent_config": false,
+            "fix_pct": 12.4,
+            "revert_pct": 0.6,
+            "churn_ratio": 2.2,
+            "survival_rate_pct": 62.6,
+            "code": {
+              "current_loc": 958,
+              "additions": 1359,
+              "deletions": 400,
+              "churn_ratio": 1.84,
+              "survival_rate_pct": 70.5
+            },
+            "docs": {
+              "current_loc": 570,
+              "additions": 1083,
+              "deletions": 513,
+              "churn_ratio": 2.8,
+              "survival_rate_pct": 52.6
+            },
+            "rapid_fire_pct": 7.6,
+            "unique_authors": 11
+          }
+        }
+      },
+      {
+        "full_name": "gin-gonic/gin",
+        "first_commit_date": "2014-06-18",
+        "snapshots": {
+          "180": {
+            "snapshot_commit": "3b079bb6f79ae501e73a5401c41b589f6616b61e",
+            "snapshot_date": "2014-08-29T19:50:58+02:00",
+            "first_commit_date": "2014-06-18T01:42:34+02:00",
+            "commits": 159,
+            "ai_pct": 0.0,
+            "has_agent_config": false,
+            "fix_pct": 22.6,
+            "revert_pct": 0.0,
+            "churn_ratio": 2.3,
+            "survival_rate_pct": 60.6,
+            "code": {
+              "current_loc": 2198,
+              "additions": 3690,
+              "deletions": 1492,
+              "churn_ratio": 2.36,
+              "survival_rate_pct": 59.6
+            },
+            "docs": {
+              "current_loc": 587,
+              "additions": 909,
+              "deletions": 322,
+              "churn_ratio": 2.1,
+              "survival_rate_pct": 64.6
+            },
+            "rapid_fire_pct": 19.5,
+            "unique_authors": 29
+          },
+          "365": {
+            "snapshot_commit": "d6425f1692d4aa170ece887b62bb75c9c4da5829",
+            "snapshot_date": "2015-06-13T16:42:12+02:00",
+            "first_commit_date": "2014-06-18T01:42:34+02:00",
+            "commits": 460,
+            "ai_pct": 0.0,
+            "has_agent_config": false,
+            "fix_pct": 18.5,
+            "revert_pct": 0.0,
+            "churn_ratio": 2.72,
+            "survival_rate_pct": 55.1,
+            "code": {
+              "current_loc": 7554,
+              "additions": 13991,
+              "deletions": 7189,
+              "churn_ratio": 2.8,
+              "survival_rate_pct": 54.0
+            },
+            "docs": {
+              "current_loc": 1113,
+              "additions": 1734,
+              "deletions": 668,
+              "churn_ratio": 2.16,
+              "survival_rate_pct": 64.2
+            },
+            "rapid_fire_pct": 16.7,
+            "unique_authors": 70
+          }
+        }
+      },
+      {
+        "full_name": "gradio-app/gradio",
+        "first_commit_date": "2018-09-19",
+        "snapshots": {
+          "180": {
+            "snapshot_commit": "3a7253087e0ef75ebf90117165f4603f3a932780",
+            "snapshot_date": "2019-03-18T05:38:10-07:00",
+            "first_commit_date": "2018-09-19T07:30:40-07:00",
+            "commits": 128,
+            "ai_pct": 0.0,
+            "has_agent_config": false,
+            "fix_pct": 8.6,
+            "revert_pct": 0.8,
+            "churn_ratio": 6.05,
+            "survival_rate_pct": 28.4,
+            "code": {
+              "current_loc": 11024,
+              "additions": 38962,
+              "deletions": 27941,
+              "churn_ratio": 6.07,
+              "survival_rate_pct": 28.3
+            },
+            "docs": {
+              "current_loc": 73,
+              "additions": 134,
+              "deletions": 61,
+              "churn_ratio": 2.67,
+              "survival_rate_pct": 54.5
+            },
+            "rapid_fire_pct": 11.7,
+            "unique_authors": 5
+          },
+          "365": {
+            "snapshot_commit": "af13dafe494f9f5004a2f9c03ebe4ae83a46d6b8",
+            "snapshot_date": "2019-09-17T11:08:09-07:00",
+            "first_commit_date": "2018-09-19T07:30:40-07:00",
+            "commits": 289,
+            "ai_pct": 0.0,
+            "has_agent_config": false,
+            "fix_pct": 12.1,
+            "revert_pct": 0.3,
+            "churn_ratio": 19.83,
+            "survival_rate_pct": 9.6,
+            "code": {
+              "current_loc": 4175,
+              "additions": 44197,
+              "deletions": 40154,
+              "churn_ratio": 20.2,
+              "survival_rate_pct": 9.4
+            },
+            "docs": {
+              "current_loc": 102,
+              "additions": 272,
+              "deletions": 170,
+              "churn_ratio": 4.33,
+              "survival_rate_pct": 37.5
+            },
+            "rapid_fire_pct": 15.2,
+            "unique_authors": 11
+          }
+        }
+      },
+      {
+        "full_name": "hoppscotch/hoppscotch",
+        "first_commit_date": "2019-08-21",
+        "snapshots": {
+          "180": {
+            "snapshot_commit": "112c140ce7ac28c0c11d0439c8e8e526277c0e8a",
+            "snapshot_date": "2020-02-15T13:40:48+05:30",
+            "first_commit_date": "2019-08-21T18:48:20+05:30",
+            "commits": 894,
+            "ai_pct": 0.0,
+            "has_agent_config": false,
+            "fix_pct": 20.8,
+            "revert_pct": 0.8,
+            "churn_ratio": 4.45,
+            "survival_rate_pct": 36.5,
+            "code": {
+              "current_loc": 12941,
+              "additions": 35977,
+              "deletions": 22637,
+              "churn_ratio": 4.53,
+              "survival_rate_pct": 36.0
+            },
+            "docs": {
+              "current_loc": 729,
+              "additions": 1490,
+              "deletions": 762,
+              "churn_ratio": 3.09,
+              "survival_rate_pct": 48.9
+            },
+            "rapid_fire_pct": 15.1,
+            "unique_authors": 72
+          },
+          "365": {
+            "snapshot_commit": "9734e4d859e46453fcd3ca3366c4f54a81354417",
+            "snapshot_date": "2020-08-19T16:16:49-04:00",
+            "first_commit_date": "2019-08-21T18:48:20+05:30",
+            "commits": 1299,
+            "ai_pct": 0.0,
+            "has_agent_config": false,
+            "fix_pct": 21.0,
+            "revert_pct": 0.8,
+            "churn_ratio": 6.47,
+            "survival_rate_pct": 26.6,
+            "code": {
+              "current_loc": 15073,
+              "additions": 57903,
+              "deletions": 42072,
+              "churn_ratio": 6.63,
+              "survival_rate_pct": 26.0
+            },
+            "docs": {
+              "current_loc": 882,
+              "additions": 2028,
+              "deletions": 1147,
+              "churn_ratio": 3.6,
+              "survival_rate_pct": 43.5
+            },
+            "rapid_fire_pct": 13.0,
+            "unique_authors": 95
+          }
+        }
+      },
+      {
+        "full_name": "jesseduffield/lazygit",
+        "first_commit_date": "2018-05-13",
+        "snapshots": {
+          "180": {
+            "snapshot_commit": "c2eaeab1f07e692cfa5b49b8bd707f17f7d1f892",
+            "snapshot_date": "2018-11-08T17:55:54+11:00",
+            "first_commit_date": "2018-05-13T13:23:45+10:00",
+            "commits": 735,
+            "ai_pct": 0.0,
+            "has_agent_config": false,
+            "fix_pct": 8.4,
+            "revert_pct": 1.0,
+            "churn_ratio": 3.88,
+            "survival_rate_pct": 40.6,
+            "code": {
+              "current_loc": 8369,
+              "additions": 21123,
+              "deletions": 12369,
+              "churn_ratio": 4.0,
+              "survival_rate_pct": 39.6
+            },
+            "docs": {
+              "current_loc": 466,
+              "additions": 649,
+              "deletions": 177,
+              "churn_ratio": 1.77,
+              "survival_rate_pct": 71.8
+            },
+            "rapid_fire_pct": 20.7,
+            "unique_authors": 31
+          },
+          "365": {
+            "snapshot_commit": "c61bfbdd4cd46243ef6663533e0c9db05dd1f7bd",
+            "snapshot_date": "2019-05-12T17:59:49+10:00",
+            "first_commit_date": "2018-05-13T13:23:45+10:00",
+            "commits": 1025,
+            "ai_pct": 0.0,
+            "has_agent_config": false,
+            "fix_pct": 11.0,
+            "revert_pct": 0.9,
+            "churn_ratio": 3.58,
+            "survival_rate_pct": 43.4,
+            "code": {
+              "current_loc": 13277,
+              "additions": 31199,
+              "deletions": 17538,
+              "churn_ratio": 3.67,
+              "survival_rate_pct": 42.6
+            },
+            "docs": {
+              "current_loc": 798,
+              "additions": 1217,
+              "deletions": 413,
+              "churn_ratio": 2.04,
+              "survival_rate_pct": 65.6
+            },
+            "rapid_fire_pct": 17.8,
+            "unique_authors": 41
+          }
+        }
+      },
+      {
+        "full_name": "n8n-io/n8n",
+        "first_commit_date": "2019-06-23",
+        "snapshots": {
+          "180": {
+            "snapshot_commit": "9cb9ec2b93401cc0640fc839be5cda94a59f2e93",
+            "snapshot_date": "2019-12-19T22:34:28-06:00",
+            "first_commit_date": "2019-06-23T12:35:23+02:00",
+            "commits": 881,
+            "ai_pct": 0.0,
+            "has_agent_config": false,
+            "fix_pct": 20.7,
+            "revert_pct": 0.3,
+            "churn_ratio": 1.46,
+            "survival_rate_pct": 81.4,
+            "code": {
+              "current_loc": 79629,
+              "additions": 98076,
+              "deletions": 18413,
+              "churn_ratio": 1.46,
+              "survival_rate_pct": 81.2
+            },
+            "docs": {
+              "current_loc": 4217,
+              "additions": 4874,
+              "deletions": 657,
+              "churn_ratio": 1.31,
+              "survival_rate_pct": 86.5
+            },
+            "rapid_fire_pct": 29.5,
+            "unique_authors": 28
+          },
+          "365": {
+            "snapshot_commit": "54a670c0de778d6db8d64ecf39c21f50b9901f0f",
+            "snapshot_date": "2020-06-20T18:11:11+02:00",
+            "first_commit_date": "2019-06-23T12:35:23+02:00",
+            "commits": 1818,
+            "ai_pct": 0.0,
+            "has_agent_config": false,
+            "fix_pct": 20.8,
+            "revert_pct": 0.2,
+            "churn_ratio": 1.52,
+            "survival_rate_pct": 79.4,
+            "code": {
+              "current_loc": 181085,
+              "additions": 228360,
+              "deletions": 47562,
+              "churn_ratio": 1.52,
+              "survival_rate_pct": 79.3
+            },
+            "docs": {
+              "current_loc": 4704,
+              "additions": 5716,
+              "deletions": 1013,
+              "churn_ratio": 1.43,
+              "survival_rate_pct": 82.3
+            },
+            "rapid_fire_pct": 27.0,
+            "unique_authors": 69
+          }
+        }
+      },
+      {
+        "full_name": "microsoft/playwright",
+        "first_commit_date": "2019-11-15",
+        "snapshots": {
+          "180": {
+            "snapshot_commit": "f63ea3ffd25ef87e5badcd14542ab36d499394fb",
+            "snapshot_date": "2020-05-12T19:23:08-07:00",
+            "first_commit_date": "2019-11-15T10:32:47-08:00",
+            "commits": 1954,
+            "ai_pct": 0.0,
+            "has_agent_config": false,
+            "fix_pct": 25.5,
+            "revert_pct": 1.1,
+            "churn_ratio": 4.29,
+            "survival_rate_pct": 37.8,
+            "code": {
+              "current_loc": 48197,
+              "additions": 123360,
+              "deletions": 75163,
+              "churn_ratio": 4.12,
+              "survival_rate_pct": 39.1
+            },
+            "docs": {
+              "current_loc": 8161,
+              "additions": 25583,
+              "deletions": 17422,
+              "churn_ratio": 5.27,
+              "survival_rate_pct": 31.9
+            },
+            "rapid_fire_pct": 16.5,
+            "unique_authors": 51
+          },
+          "365": {
+            "snapshot_commit": "732e83f48d514d9682923ccbc9e2c00f0daf2ead",
+            "snapshot_date": "2020-11-13T16:29:20-08:00",
+            "first_commit_date": "2019-11-15T10:32:47-08:00",
+            "commits": 3351,
+            "ai_pct": 0.0,
+            "has_agent_config": false,
+            "fix_pct": 24.4,
+            "revert_pct": 1.0,
+            "churn_ratio": 4.25,
+            "survival_rate_pct": 38.1,
+            "code": {
+              "current_loc": 102631,
+              "additions": 267460,
+              "deletions": 164829,
+              "churn_ratio": 4.21,
+              "survival_rate_pct": 38.4
+            },
+            "docs": {
+              "current_loc": 10492,
+              "additions": 29513,
+              "deletions": 19021,
+              "churn_ratio": 4.63,
+              "survival_rate_pct": 35.6
+            },
+            "rapid_fire_pct": 14.0,
+            "unique_authors": 82
+          }
+        }
+      },
+      {
+        "full_name": "BurntSushi/ripgrep",
+        "first_commit_date": "2016-02-27",
+        "snapshots": {
+          "180": {
+            "snapshot_commit": "957f90c8988779fae8c466e2697dbc2ae542f0ff",
+            "snapshot_date": "2016-08-24T18:33:35-04:00",
+            "first_commit_date": "2016-02-27T11:07:26-05:00",
+            "commits": 16,
+            "ai_pct": 0.0,
+            "has_agent_config": false,
+            "fix_pct": 0.0,
+            "revert_pct": 0.0,
+            "churn_ratio": 3.2,
+            "survival_rate_pct": 47.6,
+            "code": {
+              "current_loc": 743,
+              "additions": 1502,
+              "deletions": 759,
+              "churn_ratio": 3.04,
+              "survival_rate_pct": 49.5
+            },
+            "docs": {
+              "current_loc": 5,
+              "additions": 68,
+              "deletions": 63,
+              "churn_ratio": 26.2,
+              "survival_rate_pct": 7.4
+            },
+            "rapid_fire_pct": 6.2,
+            "unique_authors": 1
+          },
+          "365": {
+            "snapshot_commit": "4e8c0fc4ade785775005b416dc030295c684cb67",
+            "snapshot_date": "2017-02-25T18:43:13-05:00",
+            "first_commit_date": "2016-02-27T11:07:26-05:00",
+            "commits": 506,
+            "ai_pct": 0.0,
+            "has_agent_config": false,
+            "fix_pct": 14.2,
+            "revert_pct": 0.0,
+            "churn_ratio": 2.29,
+            "survival_rate_pct": 60.8,
+            "code": {
+              "current_loc": 15746,
+              "additions": 25989,
+              "deletions": 10243,
+              "churn_ratio": 2.3,
+              "survival_rate_pct": 60.6
+            },
+            "docs": {
+              "current_loc": 1010,
+              "additions": 1588,
+              "deletions": 578,
+              "churn_ratio": 2.14,
+              "survival_rate_pct": 63.6
+            },
+            "rapid_fire_pct": 23.5,
+            "unique_authors": 62
+          }
+        }
+      },
+      {
+        "full_name": "huggingface/transformers",
+        "first_commit_date": "2018-10-29",
+        "snapshots": {
+          "180": {
+            "snapshot_commit": "b832d5bb8a6dfc5965015b828e577677eace601e",
+            "snapshot_date": "2019-04-25T21:37:47+02:00",
+            "first_commit_date": "2018-10-29T14:56:02+01:00",
+            "commits": 622,
+            "ai_pct": 0.0,
+            "has_agent_config": false,
+            "fix_pct": 29.9,
+            "revert_pct": 0.2,
+            "churn_ratio": 4.99,
+            "survival_rate_pct": 33.4,
+            "code": {
+              "current_loc": 13878,
+              "additions": 42928,
+              "deletions": 28999,
+              "churn_ratio": 5.18,
+              "survival_rate_pct": 32.3
+            },
+            "docs": {
+              "current_loc": 1509,
+              "additions": 3171,
+              "deletions": 1662,
+              "churn_ratio": 3.2,
+              "survival_rate_pct": 47.6
+            },
+            "rapid_fire_pct": 15.3,
+            "unique_authors": 81
+          },
+          "365": {
+            "snapshot_commit": "079bfb32fba4f2b39d344ca7af88d79a3ff27c7c",
+            "snapshot_date": "2019-10-28T10:18:58-04:00",
+            "first_commit_date": "2018-10-29T14:56:02+01:00",
+            "commits": 1618,
+            "ai_pct": 0.0,
+            "has_agent_config": false,
+            "fix_pct": 27.9,
+            "revert_pct": 0.2,
+            "churn_ratio": 4.27,
+            "survival_rate_pct": 37.8,
+            "code": {
+              "current_loc": 42261,
+              "additions": 110779,
+              "deletions": 67751,
+              "churn_ratio": 4.22,
+              "survival_rate_pct": 38.1
+            },
+            "docs": {
+              "current_loc": 3666,
+              "additions": 10733,
+              "deletions": 7068,
+              "churn_ratio": 4.86,
+              "survival_rate_pct": 34.2
+            },
+            "rapid_fire_pct": 12.5,
+            "unique_authors": 189
+          }
+        }
+      }
+    ],
+    "ages": {
+      "180": {
+        "cohort_n": 41,
+        "baseline_n": 12,
+        "cohort_excluded_pre_copilot": [
+          "go-zero",
+          "transformers",
+          "yao"
+        ],
+        "cohort_too_young": [
+          "deepseek-harness",
+          "elephant-goldfish-model",
+          "get-shit-done",
+          "gsd-2",
+          "holaOS",
+          "munder-difflin",
+          "ponytail",
+          "thinkrail"
+        ],
+        "metrics": {
+          "fix_pct": {
+            "cohort": {
+              "n": 41,
+              "median": 34.1,
+              "q1": 24.5,
+              "q3": 47.5
+            },
+            "baseline": {
+              "n": 12,
+              "median": 17.3,
+              "q1": 11.75,
+              "q3": 21.25
+            },
+            "test": {
+              "u": 429.0,
+              "prob_superiority": 0.87,
+              "p": 0.0
+            }
+          },
+          "churn_ratio": {
+            "cohort": {
+              "n": 41,
+              "median": 1.92,
+              "q1": 1.63,
+              "q3": 2.49
+            },
+            "baseline": {
+              "n": 12,
+              "median": 3.77,
+              "q1": 2.22,
+              "q3": 4.33
+            },
+            "test": {
+              "u": 125.0,
+              "prob_superiority": 0.25,
+              "p": 0.008
+            }
+          },
+          "survival_rate_pct": {
+            "cohort": {
+              "n": 41,
+              "median": 67.1,
+              "q1": 57.3,
+              "q3": 76.1
+            },
+            "baseline": {
+              "n": 12,
+              "median": 41.7,
+              "q1": 37.47,
+              "q3": 62.27
+            },
+            "test": {
+              "u": 364.5,
+              "prob_superiority": 0.74,
+              "p": 0.011
+            }
+          },
+          "commits": {
+            "cohort": {
+              "n": 41,
+              "median": 1318.0,
+              "q1": 552.0,
+              "q3": 1978.0
+            },
+            "baseline": {
+              "n": 12,
+              "median": 678.5,
+              "q1": 214.5,
+              "q3": 894.5
+            },
+            "test": {
+              "u": 329.0,
+              "prob_superiority": 0.67,
+              "p": 0.082
+            }
+          },
+          "revert_pct": {
+            "cohort": {
+              "n": 41,
+              "median": 0.1,
+              "q1": 0.0,
+              "q3": 0.6
+            },
+            "baseline": {
+              "n": 12,
+              "median": 0.35,
+              "q1": 0.15,
+              "q3": 0.85
+            },
+            "test": {
+              "u": 198.0,
+              "prob_superiority": 0.4,
+              "p": 0.308
+            }
+          }
+        },
+        "cohort_first_commit_years": [
+          2022,
+          2026
+        ],
+        "baseline_first_commit_years": [
+          2013,
+          2020
+        ],
+        "cohort_ai_signed_pct": {
+          "n": 41,
+          "median": 6.6,
+          "q1": 0.0,
+          "q3": 26.3
+        },
+        "within_cohort_ai_vs": {
+          "fix_pct": {
+            "rho": 0.46,
+            "p": 0.003,
+            "n": 41
+          },
+          "churn_ratio": {
+            "rho": -0.22,
+            "p": 0.172,
+            "n": 41
+          },
+          "survival_rate_pct": {
+            "rho": 0.21,
+            "p": 0.178,
+            "n": 41
+          }
+        },
+        "by_start": {
+          "recent_start_year": 2025,
+          "recent_n": 31,
+          "older_n": 10,
+          "recent_signed_n": 23,
+          "recent_unsigned_n": 8,
+          "older_signed_n": 0,
+          "ai_vs_start": {
+            "rho": 0.72,
+            "p": 0.0,
+            "n": 41
+          },
+          "metrics": {
+            "fix_pct": {
+              "recent": {
+                "n": 31,
+                "median": 35.5,
+                "q1": 28.9,
+                "q3": 49.8
+              },
+              "older": {
+                "n": 10,
+                "median": 22.0,
+                "q1": 18.35,
+                "q3": 23.15
+              },
+              "recent_signed": {
+                "n": 23,
+                "median": 36.2,
+                "q1": 30.85,
+                "q3": 49.8
+              },
+              "recent_unsigned": {
+                "n": 8,
+                "median": 34.65,
+                "q1": 23.35,
+                "q3": 43.3
+              },
+              "recent_vs_baseline": {
+                "u": 348.0,
+                "prob_superiority": 0.94,
+                "p": 0.0
+              },
+              "older_vs_baseline": {
+                "u": 81.0,
+                "prob_superiority": 0.68,
+                "p": 0.178
+              },
+              "recent_signed_vs_unsigned": {
+                "u": 109.0,
+                "prob_superiority": 0.59,
+                "p": 0.469
+              }
+            },
+            "churn_ratio": {
+              "recent": {
+                "n": 31,
+                "median": 1.87,
+                "q1": 1.55,
+                "q3": 2.34
+              },
+              "older": {
+                "n": 10,
+                "median": 2.79,
+                "q1": 2.17,
+                "q3": 3.55
+              },
+              "recent_signed": {
+                "n": 23,
+                "median": 1.89,
+                "q1": 1.55,
+                "q3": 2.42
+              },
+              "recent_unsigned": {
+                "n": 8,
+                "median": 1.86,
+                "q1": 1.74,
+                "q3": 1.9
+              },
+              "recent_vs_baseline": {
+                "u": 79.0,
+                "prob_superiority": 0.21,
+                "p": 0.003
+              },
+              "older_vs_baseline": {
+                "u": 46.0,
+                "prob_superiority": 0.38,
+                "p": 0.372
+              },
+              "recent_signed_vs_unsigned": {
+                "u": 105.0,
+                "prob_superiority": 0.57,
+                "p": 0.573
+              }
+            },
+            "survival_rate_pct": {
+              "recent": {
+                "n": 31,
+                "median": 69.2,
+                "q1": 59.2,
+                "q3": 78.25
+              },
+              "older": {
+                "n": 10,
+                "median": 52.95,
+                "q1": 43.55,
+                "q3": 63.12
+              },
+              "recent_signed": {
+                "n": 23,
+                "median": 69.2,
+                "q1": 57.9,
+                "q3": 78.5
+              },
+              "recent_unsigned": {
+                "n": 8,
+                "median": 69.25,
+                "q1": 67.77,
+                "q3": 73.05
+              },
+              "recent_vs_baseline": {
+                "u": 290.5,
+                "prob_superiority": 0.78,
+                "p": 0.003
+              },
+              "older_vs_baseline": {
+                "u": 74.0,
+                "prob_superiority": 0.62,
+                "p": 0.381
+              },
+              "recent_signed_vs_unsigned": {
+                "u": 80.0,
+                "prob_superiority": 0.43,
+                "p": 0.605
+              }
+            }
+          }
+        }
+      },
+      "365": {
+        "cohort_n": 20,
+        "baseline_n": 12,
+        "cohort_excluded_pre_copilot": [
+          "go-zero",
+          "transformers"
+        ],
+        "cohort_too_young": [
+          "ECC",
+          "OmniRoute",
+          "Orkas",
+          "QwenPaw",
+          "academic-research-skills",
+          "agent-orchestrator",
+          "archify",
+          "book-to-skill",
+          "caveman",
+          "cmux",
+          "conductor",
+          "context-mode",
+          "deepseek-harness",
+          "elephant-goldfish-model",
+          "failproofai",
+          "gentle-ai",
+          "get-shit-done",
+          "graphify",
+          "gsd-2",
+          "gsd-core",
+          "headroom",
+          "herdr",
+          "holaOS",
+          "humanizer",
+          "munder-difflin",
+          "openrig",
+          "orca",
+          "ponytail",
+          "rtk",
+          "thinkrail"
+        ],
+        "metrics": {
+          "fix_pct": {
+            "cohort": {
+              "n": 20,
+              "median": 27.3,
+              "q1": 20.57,
+              "q3": 32.95
+            },
+            "baseline": {
+              "n": 12,
+              "median": 17.1,
+              "q1": 13.75,
+              "q3": 20.85
+            },
+            "test": {
+              "u": 202.5,
+              "prob_superiority": 0.84,
+              "p": 0.0
+            }
+          },
+          "churn_ratio": {
+            "cohort": {
+              "n": 20,
+              "median": 2.47,
+              "q1": 2.17,
+              "q3": 3.57
+            },
+            "baseline": {
+              "n": 12,
+              "median": 3.56,
+              "q1": 2.27,
+              "q3": 4.25
+            },
+            "test": {
+              "u": 98.5,
+              "prob_superiority": 0.41,
+              "p": 0.413
+            }
+          },
+          "survival_rate_pct": {
+            "cohort": {
+              "n": 20,
+              "median": 57.55,
+              "q1": 43.8,
+              "q3": 63.0
+            },
+            "baseline": {
+              "n": 12,
+              "median": 43.65,
+              "q1": 38.02,
+              "q3": 61.25
+            },
+            "test": {
+              "u": 139.5,
+              "prob_superiority": 0.58,
+              "p": 0.46
+            }
+          },
+          "commits": {
+            "cohort": {
+              "n": 20,
+              "median": 2013.5,
+              "q1": 674.25,
+              "q3": 3680.5
+            },
+            "baseline": {
+              "n": 12,
+              "median": 1119.5,
+              "q1": 494.5,
+              "q3": 1583.5
+            },
+            "test": {
+              "u": 172.0,
+              "prob_superiority": 0.72,
+              "p": 0.045
+            }
+          },
+          "revert_pct": {
+            "cohort": {
+              "n": 20,
+              "median": 0.5,
+              "q1": 0.2,
+              "q3": 0.7
+            },
+            "baseline": {
+              "n": 12,
+              "median": 0.45,
+              "q1": 0.15,
+              "q3": 0.83
+            },
+            "test": {
+              "u": 125.5,
+              "prob_superiority": 0.52,
+              "p": 0.835
+            }
+          }
+        },
+        "cohort_first_commit_years": [
+          2021,
+          2025
+        ],
+        "baseline_first_commit_years": [
+          2013,
+          2020
+        ],
+        "cohort_ai_signed_pct": {
+          "n": 20,
+          "median": 0.75,
+          "q1": 0.0,
+          "q3": 13.18
+        },
+        "within_cohort_ai_vs": {
+          "fix_pct": {
+            "rho": 0.48,
+            "p": 0.031,
+            "n": 20
+          },
+          "churn_ratio": {
+            "rho": 0.07,
+            "p": 0.76,
+            "n": 20
+          },
+          "survival_rate_pct": {
+            "rho": -0.08,
+            "p": 0.746,
+            "n": 20
+          }
+        },
+        "by_start": {
+          "recent_start_year": 2025,
+          "recent_n": 9,
+          "older_n": 11,
+          "recent_signed_n": 6,
+          "recent_unsigned_n": 3,
+          "older_signed_n": 0,
+          "ai_vs_start": {
+            "rho": 0.87,
+            "p": 0.0,
+            "n": 20
+          },
+          "metrics": {
+            "fix_pct": {
+              "recent": {
+                "n": 9,
+                "median": 32.2,
+                "q1": 28.2,
+                "q3": 37.9
+              },
+              "older": {
+                "n": 11,
+                "median": 20.9,
+                "q1": 18.55,
+                "q3": 27.55
+              },
+              "recent_signed": {
+                "n": 6,
+                "median": 31.4,
+                "q1": 27.3,
+                "q3": 34.45
+              },
+              "recent_unsigned": {
+                "n": 3,
+                "median": 41.0,
+                "q1": 34.6,
+                "q3": 49.9
+              },
+              "recent_vs_baseline": {
+                "u": 105.5,
+                "prob_superiority": 0.98,
+                "p": 0.0
+              },
+              "older_vs_baseline": {
+                "u": 97.0,
+                "prob_superiority": 0.73,
+                "p": 0.063
+              },
+              "recent_signed_vs_unsigned": {
+                "u": 4.0,
+                "prob_superiority": 0.22,
+                "p": 0.265
+              }
+            },
+            "churn_ratio": {
+              "recent": {
+                "n": 9,
+                "median": 2.29,
+                "q1": 2.23,
+                "q3": 2.55
+              },
+              "older": {
+                "n": 11,
+                "median": 2.83,
+                "q1": 2.17,
+                "q3": 3.68
+              },
+              "recent_signed": {
+                "n": 6,
+                "median": 2.42,
+                "q1": 2.25,
+                "q3": 4.93
+              },
+              "recent_unsigned": {
+                "n": 3,
+                "median": 2.24,
+                "q1": 1.87,
+                "q3": 2.32
+              },
+              "recent_vs_baseline": {
+                "u": 41.5,
+                "prob_superiority": 0.38,
+                "p": 0.392
+              },
+              "older_vs_baseline": {
+                "u": 57.0,
+                "prob_superiority": 0.43,
+                "p": 0.606
+              },
+              "recent_signed_vs_unsigned": {
+                "u": 13.0,
+                "prob_superiority": 0.72,
+                "p": 0.388
+              }
+            },
+            "survival_rate_pct": {
+              "recent": {
+                "n": 9,
+                "median": 58.9,
+                "q1": 56.3,
+                "q3": 61.8
+              },
+              "older": {
+                "n": 11,
+                "median": 52.2,
+                "q1": 42.8,
+                "q3": 63.2
+              },
+              "recent_signed": {
+                "n": 6,
+                "median": 57.6,
+                "q1": 37.48,
+                "q3": 60.25
+              },
+              "recent_unsigned": {
+                "n": 3,
+                "median": 61.8,
+                "q1": 60.3,
+                "q3": 71.05
+              },
+              "recent_vs_baseline": {
+                "u": 65.0,
+                "prob_superiority": 0.6,
+                "p": 0.462
+              },
+              "older_vs_baseline": {
+                "u": 74.5,
+                "prob_superiority": 0.56,
+                "p": 0.615
+              },
+              "recent_signed_vs_unsigned": {
+                "u": 4.0,
+                "prob_superiority": 0.22,
+                "p": 0.268
+              }
+            }
+          }
+        }
+      }
+    },
+    "baseline_max_ai_signed_pct": 0.0,
+    "cohort_snapshots": {
+      "AutoGPT": {
+        "180": {
+          "snapshot_commit": "1d10919b9140402d209c4aaafac1afadb9bcc598",
+          "snapshot_date": "2023-09-11T19:21:43-07:00",
+          "first_commit_date": "2023-03-16T02:58:21Z",
+          "commits": 2212,
+          "ai_pct": 0.0,
+          "has_agent_config": false,
+          "fix_pct": 22.5,
+          "revert_pct": 0.7,
+          "churn_ratio": 3.93,
+          "survival_rate_pct": 40.5,
+          "code": {
+            "current_loc": 35677,
+            "additions": 87892,
+            "deletions": 52067,
+            "churn_ratio": 3.92,
+            "survival_rate_pct": 40.6
+          },
+          "docs": {
+            "current_loc": 2680,
+            "additions": 6814,
+            "deletions": 4110,
+            "churn_ratio": 4.08,
+            "survival_rate_pct": 39.3
+          },
+          "rapid_fire_pct": 16.6,
+          "unique_authors": 368
+        },
+        "365": {
+          "snapshot_commit": "ef35028ecb25d0454488051b3dffc2b0d1477446",
+          "snapshot_date": "2024-03-14T18:06:58+01:00",
+          "first_commit_date": "2023-03-16T02:58:21Z",
+          "commits": 3401,
+          "ai_pct": 0.0,
+          "has_agent_config": false,
+          "fix_pct": 20.9,
+          "revert_pct": 0.5,
+          "churn_ratio": 9.6,
+          "survival_rate_pct": 18.9,
+          "code": {
+            "current_loc": 148940,
+            "additions": 799277,
+            "deletions": 650189,
+            "churn_ratio": 9.73,
+            "survival_rate_pct": 18.6
+          },
+          "docs": {
+            "current_loc": 3931,
+            "additions": 11209,
+            "deletions": 7254,
+            "churn_ratio": 4.7,
+            "survival_rate_pct": 35.1
+          },
+          "rapid_fire_pct": 24.7,
+          "unique_authors": 728
+        }
+      },
+      "BMAD-METHOD": {
+        "180": {
+          "snapshot_commit": "b4cc5790096cfac3b537e03d5cd2daa340d6c38c",
+          "snapshot_date": "2025-10-10T09:27:50-05:00",
+          "first_commit_date": "2025-04-13T09:54:25-05:00",
+          "commits": 552,
+          "ai_pct": 5.3,
+          "has_agent_config": false,
+          "fix_pct": 28.8,
+          "revert_pct": 0.0,
+          "churn_ratio": 14.67,
+          "survival_rate_pct": 12.8,
+          "code": {
+            "current_loc": 17691,
+            "additions": 38441,
+            "deletions": 20750,
+            "churn_ratio": 3.35,
+            "survival_rate_pct": 46.0
+          },
+          "docs": {
+            "current_loc": 38707,
+            "additions": 403454,
+            "deletions": 364739,
+            "churn_ratio": 19.85,
+            "survival_rate_pct": 9.6
+          },
+          "rapid_fire_pct": 13.4,
+          "unique_authors": 71
+        },
+        "365": {
+          "snapshot_commit": "b336cd09876a5dfe5df257afa883a7fd32557310",
+          "snapshot_date": "2026-04-13T01:13:06-05:00",
+          "first_commit_date": "2025-04-13T09:54:25-05:00",
+          "commits": 1567,
+          "ai_pct": 16.6,
+          "has_agent_config": true,
+          "fix_pct": 30.6,
+          "revert_pct": 0.1,
+          "churn_ratio": 28.06,
+          "survival_rate_pct": 6.9,
+          "code": {
+            "current_loc": 19372,
+            "additions": 109112,
+            "deletions": 89740,
+            "churn_ratio": 10.26,
+            "survival_rate_pct": 17.8
+          },
+          "docs": {
+            "current_loc": 54373,
+            "additions": 962351,
+            "deletions": 907970,
+            "churn_ratio": 34.4,
+            "survival_rate_pct": 5.7
+          },
+          "rapid_fire_pct": 12.4,
+          "unique_authors": 132
+        }
+      },
+      "ECC": {
+        "180": {
+          "snapshot_commit": "ed387446052dfbc6b52de149406b70efa65edc59",
+          "snapshot_date": "2026-07-13T21:31:12-04:00",
+          "first_commit_date": "2026-01-17T17:49:33-08:00",
+          "commits": 2003,
+          "ai_pct": 8.6,
+          "has_agent_config": true,
+          "fix_pct": 34.1,
+          "revert_pct": 0.6,
+          "churn_ratio": 1.68,
+          "survival_rate_pct": 74.3,
+          "code": {
+            "current_loc": 200560,
+            "additions": 235094,
+            "deletions": 29893,
+            "churn_ratio": 1.32,
+            "survival_rate_pct": 85.3
+          },
+          "docs": {
+            "current_loc": 442802,
+            "additions": 630786,
+            "deletions": 182603,
+            "churn_ratio": 1.84,
+            "survival_rate_pct": 70.2
+          },
+          "rapid_fire_pct": 27.3,
+          "unique_authors": 300
+        },
+        "365": null
+      },
+      "OmniRoute": {
+        "180": {
+          "snapshot_commit": "e646fe84c76d2ddaf1aa8deb6bf49052852d839b",
+          "snapshot_date": "2026-08-16T03:29:37-03:00",
+          "first_commit_date": "2026-02-18T00:02:15-03:00",
+          "commits": 5941,
+          "ai_pct": 5.3,
+          "has_agent_config": true,
+          "fix_pct": 55.0,
+          "revert_pct": 0.1,
+          "churn_ratio": 2.1,
+          "survival_rate_pct": 59.3,
+          "code": {
+            "current_loc": 1642092,
+            "additions": 2503935,
+            "deletions": 413512,
+            "churn_ratio": 1.78,
+            "survival_rate_pct": 65.6
+          },
+          "docs": {
+            "current_loc": 58372,
+            "additions": 363335,
+            "deletions": 282591,
+            "churn_ratio": 11.07,
+            "survival_rate_pct": 16.1
+          },
+          "rapid_fire_pct": 45.4,
+          "unique_authors": 489
+        },
+        "365": null
+      },
+      "OpenSpec": {
+        "180": {
+          "snapshot_commit": "0541f93dddd1739c6c924c160ef6ec5266528b94",
+          "snapshot_date": "2026-01-31T19:30:43-08:00",
+          "first_commit_date": "2025-08-05T15:23:29+10:00",
+          "commits": 430,
+          "ai_pct": 2.3,
+          "has_agent_config": true,
+          "fix_pct": 25.8,
+          "revert_pct": 0.7,
+          "churn_ratio": 1.83,
+          "survival_rate_pct": 70.6,
+          "code": {
+            "current_loc": 40476,
+            "additions": 56731,
+            "deletions": 16255,
+            "churn_ratio": 1.8,
+            "survival_rate_pct": 71.3
+          },
+          "docs": {
+            "current_loc": 28260,
+            "additions": 40654,
+            "deletions": 12400,
+            "churn_ratio": 1.88,
+            "survival_rate_pct": 69.5
+          },
+          "rapid_fire_pct": 7.0,
+          "unique_authors": 36
+        },
+        "365": {
+          "snapshot_commit": "59bfb27a7607ebde62959a9dcbc2f563662c04ad",
+          "snapshot_date": "2026-08-05T01:43:49Z",
+          "first_commit_date": "2025-08-05T15:23:29+10:00",
+          "commits": 640,
+          "ai_pct": 15.3,
+          "has_agent_config": true,
+          "fix_pct": 35.2,
+          "revert_pct": 0.5,
+          "churn_ratio": 1.78,
+          "survival_rate_pct": 71.9,
+          "code": {
+            "current_loc": 99276,
+            "additions": 146112,
+            "deletions": 46836,
+            "churn_ratio": 1.94,
+            "survival_rate_pct": 67.9
+          },
+          "docs": {
+            "current_loc": 69285,
+            "additions": 88489,
+            "deletions": 19210,
+            "churn_ratio": 1.55,
+            "survival_rate_pct": 78.3
+          },
+          "rapid_fire_pct": 7.7,
+          "unique_authors": 89
+        }
+      },
+      "Orkas": {
+        "180": {
+          "snapshot_commit": "b780de1e47caa49c6e1afa90a9520739b04339a9",
+          "snapshot_date": "2026-10-26T11:01:50+08:00",
+          "first_commit_date": "2026-04-29T20:00:15+08:00",
+          "commits": 562,
+          "ai_pct": 6.6,
+          "has_agent_config": false,
+          "fix_pct": 29.0,
+          "revert_pct": 0.0,
+          "churn_ratio": 1.17,
+          "survival_rate_pct": 92.0,
+          "code": {
+            "current_loc": 1777391,
+            "additions": 1921815,
+            "deletions": 144145,
+            "churn_ratio": 1.16,
+            "survival_rate_pct": 92.5
+          },
+          "docs": {
+            "current_loc": 34392,
+            "additions": 47183,
+            "deletions": 12791,
+            "churn_ratio": 1.74,
+            "survival_rate_pct": 72.9
+          },
+          "rapid_fire_pct": 35.1,
+          "unique_authors": 14
+        },
+        "365": null
+      },
+      "PageIndex": {
+        "180": {
+          "snapshot_commit": "644d4bbda6a3c47df804cf77f14320a3326d5f2c",
+          "snapshot_date": "2025-09-20T01:10:25+08:00",
+          "first_commit_date": "2025-04-01T18:54:08+08:00",
+          "commits": 169,
+          "ai_pct": 0.0,
+          "has_agent_config": false,
+          "fix_pct": 35.5,
+          "revert_pct": 0.0,
+          "churn_ratio": 1.9,
+          "survival_rate_pct": 68.9,
+          "code": {
+            "current_loc": 2330,
+            "additions": 2868,
+            "deletions": 538,
+            "churn_ratio": 1.46,
+            "survival_rate_pct": 81.2
+          },
+          "docs": {
+            "current_loc": 449,
+            "additions": 1166,
+            "deletions": 717,
+            "churn_ratio": 4.19,
+            "survival_rate_pct": 38.5
+          },
+          "rapid_fire_pct": 15.4,
+          "unique_authors": 5
+        },
+        "365": {
+          "snapshot_commit": "8f1ed7783b9e1252ef8c44891ed68f7c22a0ab7d",
+          "snapshot_date": "2026-03-30T01:34:45+08:00",
+          "first_commit_date": "2025-04-01T18:54:08+08:00",
+          "commits": 252,
+          "ai_pct": 1.2,
+          "has_agent_config": true,
+          "fix_pct": 28.2,
+          "revert_pct": 0.0,
+          "churn_ratio": 2.24,
+          "survival_rate_pct": 61.8,
+          "code": {
+            "current_loc": 3249,
+            "additions": 4560,
+            "deletions": 1311,
+            "churn_ratio": 1.81,
+            "survival_rate_pct": 71.2
+          },
+          "docs": {
+            "current_loc": 607,
+            "additions": 1678,
+            "deletions": 1071,
+            "churn_ratio": 4.53,
+            "survival_rate_pct": 36.2
+          },
+          "rapid_fire_pct": 11.1,
+          "unique_authors": 11
+        }
+      },
+      "Paradev": {
+        "180": {
+          "snapshot_commit": "9c40d2dacccf9a35d5463fd0596325e085d2f3fa",
+          "snapshot_date": "2026-04-18T16:17:43-07:00",
+          "first_commit_date": "2025-10-21T16:20:02+07:00",
+          "commits": 2214,
+          "ai_pct": 7.2,
+          "has_agent_config": true,
+          "fix_pct": 35.2,
+          "revert_pct": 1.3,
+          "churn_ratio": 3.09,
+          "survival_rate_pct": 48.8,
+          "code": {
+            "current_loc": 316389,
+            "additions": 669630,
+            "deletions": 352740,
+            "churn_ratio": 3.23,
+            "survival_rate_pct": 47.2
+          },
+          "docs": {
+            "current_loc": 36466,
+            "additions": 52968,
+            "deletions": 16502,
+            "churn_ratio": 1.91,
+            "survival_rate_pct": 68.8
+          },
+          "rapid_fire_pct": 9.9,
+          "unique_authors": 57
+        },
+        "365": {
+          "snapshot_commit": "aca8060379e7b00fe7b57c3c2173856c80290af0",
+          "snapshot_date": "2026-10-21T00:13:49-07:00",
+          "first_commit_date": "2025-10-21T16:20:02+07:00",
+          "commits": 4959,
+          "ai_pct": 4.2,
+          "has_agent_config": true,
+          "fix_pct": 41.0,
+          "revert_pct": 1.2,
+          "churn_ratio": 2.4,
+          "survival_rate_pct": 58.8,
+          "code": {
+            "current_loc": 1010233,
+            "additions": 1758499,
+            "deletions": 747765,
+            "churn_ratio": 2.48,
+            "survival_rate_pct": 57.4
+          },
+          "docs": {
+            "current_loc": 106667,
+            "additions": 141971,
+            "deletions": 35304,
+            "churn_ratio": 1.66,
+            "survival_rate_pct": 75.1
+          },
+          "rapid_fire_pct": 12.2,
+          "unique_authors": 134
+        }
+      },
+      "QwenPaw": {
+        "180": {
+          "snapshot_commit": "f5693bdc26ace92c6c6bc410520db5896afdb7b9",
+          "snapshot_date": "2026-08-26T14:13:25+08:00",
+          "first_commit_date": "2026-02-27T14:19:13+08:00",
+          "commits": 2234,
+          "ai_pct": 0.4,
+          "has_agent_config": false,
+          "fix_pct": 39.8,
+          "revert_pct": 0.6,
+          "churn_ratio": 1.48,
+          "survival_rate_pct": 80.4,
+          "code": {
+            "current_loc": 994294,
+            "additions": 1227010,
+            "deletions": 229934,
+            "churn_ratio": 1.47,
+            "survival_rate_pct": 81.0
+          },
+          "docs": {
+            "current_loc": 88446,
+            "additions": 119502,
+            "deletions": 31056,
+            "churn_ratio": 1.7,
+            "survival_rate_pct": 74.0
+          },
+          "rapid_fire_pct": 19.7,
+          "unique_authors": 233
+        },
+        "365": null
+      },
+      "academic-research-skills": {
+        "180": {
+          "snapshot_commit": "127ff85e4bbfcdd10b95040537b6c6bd7ad17aeb",
+          "snapshot_date": "2026-08-24T17:36:07+08:00",
+          "first_commit_date": "2026-02-26T14:28:48+08:00",
+          "commits": 709,
+          "ai_pct": 74.0,
+          "has_agent_config": true,
+          "fix_pct": 24.5,
+          "revert_pct": 0.1,
+          "churn_ratio": 1.14,
+          "survival_rate_pct": 93.3,
+          "code": {
+            "current_loc": 260424,
+            "additions": 269311,
+            "deletions": 8887,
+            "churn_ratio": 1.07,
+            "survival_rate_pct": 96.7
+          },
+          "docs": {
+            "current_loc": 188595,
+            "additions": 211850,
+            "deletions": 23255,
+            "churn_ratio": 1.25,
+            "survival_rate_pct": 89.0
+          },
+          "rapid_fire_pct": 18.8,
+          "unique_authors": 17
+        },
+        "365": null
+      },
+      "agent-orchestrator": {
+        "180": {
+          "snapshot_commit": "5da0ce1579826a1c32082edeab7c94a67e1f898e",
+          "snapshot_date": "2026-08-12T15:13:27+05:30",
+          "first_commit_date": "2026-02-13T15:25:31+05:30",
+          "commits": 1978,
+          "ai_pct": 42.9,
+          "has_agent_config": true,
+          "fix_pct": 55.5,
+          "revert_pct": 0.6,
+          "churn_ratio": 1.63,
+          "survival_rate_pct": 76.1,
+          "code": {
+            "current_loc": 421487,
+            "additions": 533481,
+            "deletions": 112091,
+            "churn_ratio": 1.53,
+            "survival_rate_pct": 79.0
+          },
+          "docs": {
+            "current_loc": 12901,
+            "additions": 37340,
+            "deletions": 24439,
+            "churn_ratio": 4.79,
+            "survival_rate_pct": 34.6
+          },
+          "rapid_fire_pct": 12.7,
+          "unique_authors": 99
+        },
+        "365": null
+      },
+      "agents": {
+        "180": {
+          "snapshot_commit": "1135ac606247648d9e4724f027280d4114282858",
+          "snapshot_date": "2026-01-19T17:08:27-05:00",
+          "first_commit_date": "2025-07-24T19:29:24-04:00",
+          "commits": 181,
+          "ai_pct": 4.4,
+          "has_agent_config": false,
+          "fix_pct": 16.0,
+          "revert_pct": 0.0,
+          "churn_ratio": 1.85,
+          "survival_rate_pct": 65.3,
+          "code": {
+            "current_loc": 1564,
+            "additions": 1589,
+            "deletions": 25,
+            "churn_ratio": 1.03,
+            "survival_rate_pct": 98.4
+          },
+          "docs": {
+            "current_loc": 170842,
+            "additions": 262574,
+            "deletions": 55176,
+            "churn_ratio": 1.86,
+            "survival_rate_pct": 65.1
+          },
+          "rapid_fire_pct": 16.0,
+          "unique_authors": 33
+        },
+        "365": {
+          "snapshot_commit": "c4b82b0ad771190355eb8e204b1329732a18449a",
+          "snapshot_date": "2026-07-18T17:25:19-04:00",
+          "first_commit_date": "2025-07-24T19:29:24-04:00",
+          "commits": 420,
+          "ai_pct": 14.0,
+          "has_agent_config": true,
+          "fix_pct": 26.2,
+          "revert_pct": 0.7,
+          "churn_ratio": 2.23,
+          "survival_rate_pct": 58.9,
+          "code": {
+            "current_loc": 15510,
+            "additions": 18315,
+            "deletions": 2805,
+            "churn_ratio": 1.36,
+            "survival_rate_pct": 84.7
+          },
+          "docs": {
+            "current_loc": 201431,
+            "additions": 350207,
+            "deletions": 112219,
+            "churn_ratio": 2.3,
+            "survival_rate_pct": 57.5
+          },
+          "rapid_fire_pct": 22.1,
+          "unique_authors": 79
+        }
+      },
+      "anything-llm": {
+        "180": {
+          "snapshot_commit": "ca8bf52cce34ef23d88048096bb4b19605d851ee",
+          "snapshot_date": "2023-11-27T15:09:55-06:00",
+          "first_commit_date": "2023-06-03T19:28:07-07:00",
+          "commits": 216,
+          "ai_pct": 0.0,
+          "has_agent_config": false,
+          "fix_pct": 12.5,
+          "revert_pct": 0.0,
+          "churn_ratio": 2.09,
+          "survival_rate_pct": 64.6,
+          "code": {
+            "current_loc": 24117,
+            "additions": 37564,
+            "deletions": 13447,
+            "churn_ratio": 2.12,
+            "survival_rate_pct": 64.2
+          },
+          "docs": {
+            "current_loc": 744,
+            "additions": 892,
+            "deletions": 148,
+            "churn_ratio": 1.4,
+            "survival_rate_pct": 83.4
+          },
+          "rapid_fire_pct": 5.1,
+          "unique_authors": 19
+        },
+        "365": {
+          "snapshot_commit": "9a38b32c746b790531975d27888fea5552050062",
+          "snapshot_date": "2024-05-31T13:52:00+08:00",
+          "first_commit_date": "2023-06-03T19:28:07-07:00",
+          "commits": 680,
+          "ai_pct": 0.0,
+          "has_agent_config": false,
+          "fix_pct": 14.3,
+          "revert_pct": 0.0,
+          "churn_ratio": 2.15,
+          "survival_rate_pct": 63.6,
+          "code": {
+            "current_loc": 59833,
+            "additions": 94260,
+            "deletions": 34427,
+            "churn_ratio": 2.15,
+            "survival_rate_pct": 63.5
+          },
+          "docs": {
+            "current_loc": 1557,
+            "additions": 2296,
+            "deletions": 739,
+            "churn_ratio": 1.95,
+            "survival_rate_pct": 67.8
+          },
+          "rapid_fire_pct": 7.4,
+          "unique_authors": 46
+        }
+      },
+      "archify": {
+        "180": {
+          "snapshot_commit": "58ab0b98d2d0def8e49dced705c7b566936723ec",
+          "snapshot_date": "2026-10-10T19:49:39+08:00",
+          "first_commit_date": "2026-04-15T13:27:32+08:00",
+          "commits": 654,
+          "ai_pct": 9.3,
+          "has_agent_config": true,
+          "fix_pct": 36.2,
+          "revert_pct": 0.5,
+          "churn_ratio": 1.32,
+          "survival_rate_pct": 85.8,
+          "code": {
+            "current_loc": 126439,
+            "additions": 145327,
+            "deletions": 17729,
+            "churn_ratio": 1.29,
+            "survival_rate_pct": 87.0
+          },
+          "docs": {
+            "current_loc": 23709,
+            "additions": 29599,
+            "deletions": 6153,
+            "churn_ratio": 1.51,
+            "survival_rate_pct": 80.1
+          },
+          "rapid_fire_pct": 13.1,
+          "unique_authors": 83
+        },
+        "365": null
+      },
+      "book-to-skill": {
+        "180": {
+          "snapshot_commit": "fece258123879acf4ac6535dc4986b32e13df0c9",
+          "snapshot_date": "2026-10-27T10:53:55-04:00",
+          "first_commit_date": "2026-04-30T22:09:33-04:00",
+          "commits": 222,
+          "ai_pct": 28.4,
+          "has_agent_config": true,
+          "fix_pct": 42.3,
+          "revert_pct": 0.0,
+          "churn_ratio": 1.29,
+          "survival_rate_pct": 87.4,
+          "code": {
+            "current_loc": 15394,
+            "additions": 17216,
+            "deletions": 1822,
+            "churn_ratio": 1.24,
+            "survival_rate_pct": 89.4
+          },
+          "docs": {
+            "current_loc": 3443,
+            "additions": 4325,
+            "deletions": 882,
+            "churn_ratio": 1.51,
+            "survival_rate_pct": 79.6
+          },
+          "rapid_fire_pct": 32.0,
+          "unique_authors": 56
+        },
+        "365": null
+      },
+      "browser-use": {
+        "180": {
+          "snapshot_commit": "a42671c9581a9968e96c747e0d962d6241da1f7e",
+          "snapshot_date": "2025-04-28T15:49:44+02:00",
+          "first_commit_date": "2024-10-31T17:00:29+01:00",
+          "commits": 1396,
+          "ai_pct": 0.6,
+          "has_agent_config": false,
+          "fix_pct": 18.3,
+          "revert_pct": 0.6,
+          "churn_ratio": 3.76,
+          "survival_rate_pct": 41.2,
+          "code": {
+            "current_loc": 20429,
+            "additions": 51506,
+            "deletions": 29320,
+            "churn_ratio": 3.96,
+            "survival_rate_pct": 39.7
+          },
+          "docs": {
+            "current_loc": 2984,
+            "additions": 5284,
+            "deletions": 1957,
+            "churn_ratio": 2.43,
+            "survival_rate_pct": 56.5
+          },
+          "rapid_fire_pct": 20.3,
+          "unique_authors": 182
+        },
+        "365": {
+          "snapshot_commit": "55661ba26f293c74a464a884686efb1abe44675a",
+          "snapshot_date": "2025-10-30T23:37:56-07:00",
+          "first_commit_date": "2024-10-31T17:00:29+01:00",
+          "commits": 5250,
+          "ai_pct": 3.3,
+          "has_agent_config": true,
+          "fix_pct": 19.4,
+          "revert_pct": 0.6,
+          "churn_ratio": 6.5,
+          "survival_rate_pct": 26.6,
+          "code": {
+            "current_loc": 67888,
+            "additions": 254146,
+            "deletions": 185910,
+            "churn_ratio": 6.48,
+            "survival_rate_pct": 26.7
+          },
+          "docs": {
+            "current_loc": 7774,
+            "additions": 29803,
+            "deletions": 21921,
+            "churn_ratio": 6.65,
+            "survival_rate_pct": 26.1
+          },
+          "rapid_fire_pct": 23.3,
+          "unique_authors": 298
+        }
+      },
+      "caveman": {
+        "180": {
+          "snapshot_commit": "f5d729488caa8f6a5b6c8086fe2cccd3e8a63f91",
+          "snapshot_date": "2026-10-01T00:32:02+02:00",
+          "first_commit_date": "2026-04-04T12:02:51+02:00",
+          "commits": 695,
+          "ai_pct": 63.3,
+          "has_agent_config": true,
+          "fix_pct": 50.8,
+          "revert_pct": 0.0,
+          "churn_ratio": 1.89,
+          "survival_rate_pct": 69.2,
+          "code": {
+            "current_loc": 265291,
+            "additions": 374150,
+            "deletions": 109774,
+            "churn_ratio": 1.82,
+            "survival_rate_pct": 70.9
+          },
+          "docs": {
+            "current_loc": 16552,
+            "additions": 32927,
+            "deletions": 16417,
+            "churn_ratio": 2.98,
+            "survival_rate_pct": 50.3
+          },
+          "rapid_fire_pct": 34.0,
+          "unique_authors": 66
+        },
+        "365": null
+      },
+      "claude-mem": {
+        "180": {
+          "snapshot_commit": "ecb09df42002db222a57e117abcec188393ef984",
+          "snapshot_date": "2026-02-25T22:23:45-05:00",
+          "first_commit_date": "2025-09-06T19:34:53Z",
+          "commits": 1363,
+          "ai_pct": 53.5,
+          "has_agent_config": true,
+          "fix_pct": 25.2,
+          "revert_pct": 0.0,
+          "churn_ratio": 4.62,
+          "survival_rate_pct": 35.6,
+          "code": {
+            "current_loc": 75802,
+            "additions": 186908,
+            "deletions": 110980,
+            "churn_ratio": 3.93,
+            "survival_rate_pct": 40.6
+          },
+          "docs": {
+            "current_loc": 35833,
+            "additions": 126913,
+            "deletions": 90431,
+            "churn_ratio": 6.07,
+            "survival_rate_pct": 28.2
+          },
+          "rapid_fire_pct": 38.3,
+          "unique_authors": 63
+        },
+        "365": {
+          "snapshot_commit": "3939fbb2debe73e74a295553636e776e110df90a",
+          "snapshot_date": "2026-09-05T19:40:00-07:00",
+          "first_commit_date": "2025-09-06T19:34:53Z",
+          "commits": 2259,
+          "ai_pct": 57.5,
+          "has_agent_config": true,
+          "fix_pct": 32.2,
+          "revert_pct": 0.3,
+          "churn_ratio": 5.72,
+          "survival_rate_pct": 31.2,
+          "code": {
+            "current_loc": 187572,
+            "additions": 553643,
+            "deletions": 439398,
+            "churn_ratio": 5.29,
+            "survival_rate_pct": 33.9
+          },
+          "docs": {
+            "current_loc": 39730,
+            "additions": 174640,
+            "deletions": 133428,
+            "churn_ratio": 7.75,
+            "survival_rate_pct": 22.7
+          },
+          "rapid_fire_pct": 36.4,
+          "unique_authors": 140
+        }
+      },
+      "cmux": {
+        "180": {
+          "snapshot_commit": "1de332747f57cb246b80e425ed5d6478ccdf345d",
+          "snapshot_date": "2026-07-20T23:48:44-05:00",
+          "first_commit_date": "2026-01-22T01:16:24-08:00",
+          "commits": 5857,
+          "ai_pct": 22.0,
+          "has_agent_config": true,
+          "fix_pct": 34.7,
+          "revert_pct": 1.3,
+          "churn_ratio": 1.74,
+          "survival_rate_pct": 72.9,
+          "code": {
+            "current_loc": 1588862,
+            "additions": 2184450,
+            "deletions": 583535,
+            "churn_ratio": 1.74,
+            "survival_rate_pct": 72.7
+          },
+          "docs": {
+            "current_loc": 36073,
+            "additions": 44930,
+            "deletions": 8860,
+            "churn_ratio": 1.49,
+            "survival_rate_pct": 80.3
+          },
+          "rapid_fire_pct": 24.2,
+          "unique_authors": 140
+        },
+        "365": null
+      },
+      "conductor": {
+        "180": {
+          "snapshot_commit": "c9a6a1873ee22fbebfc2e2274ef2e015a8cbdbc0",
+          "snapshot_date": "2026-05-19T20:02:04-04:00",
+          "first_commit_date": "2025-12-17T16:05:04Z",
+          "commits": 74,
+          "ai_pct": 0.0,
+          "has_agent_config": true,
+          "fix_pct": 33.8,
+          "revert_pct": 0.0,
+          "churn_ratio": 1.25,
+          "survival_rate_pct": 89.0,
+          "code": {
+            "current_loc": 0,
+            "additions": 0,
+            "deletions": 0,
+            "churn_ratio": 0.0,
+            "survival_rate_pct": 0.0
+          },
+          "docs": {
+            "current_loc": 1350,
+            "additions": 1517,
+            "deletions": 167,
+            "churn_ratio": 1.25,
+            "survival_rate_pct": 89.0
+          },
+          "rapid_fire_pct": 6.8,
+          "unique_authors": 15
+        },
+        "365": null
+      },
+      "context-mode": {
+        "180": {
+          "snapshot_commit": "172e7030d0a082259f85d6b66c855d83a39be90c",
+          "snapshot_date": "2026-08-21T12:05:53Z",
+          "first_commit_date": "2026-02-23T09:02:37+03:00",
+          "commits": 1519,
+          "ai_pct": 39.0,
+          "has_agent_config": true,
+          "fix_pct": 48.8,
+          "revert_pct": 0.7,
+          "churn_ratio": 2.41,
+          "survival_rate_pct": 57.6,
+          "code": {
+            "current_loc": 144805,
+            "additions": 243094,
+            "deletions": 89477,
+            "churn_ratio": 2.3,
+            "survival_rate_pct": 59.6
+          },
+          "docs": {
+            "current_loc": 10701,
+            "additions": 26825,
+            "deletions": 16038,
+            "churn_ratio": 4.01,
+            "survival_rate_pct": 39.9
+          },
+          "rapid_fire_pct": 32.0,
+          "unique_authors": 120
+        },
+        "365": null
+      },
+      "deepseek-harness": {
+        "180": null,
+        "365": null
+      },
+      "dify": {
+        "180": {
+          "snapshot_commit": "92f594f5e76d9ab2a1b60cd173d3c505ba37f13f",
+          "snapshot_date": "2023-11-10T16:44:26+08:00",
+          "first_commit_date": "2023-05-15T08:51:32+08:00",
+          "commits": 741,
+          "ai_pct": 0.0,
+          "has_agent_config": false,
+          "fix_pct": 49.3,
+          "revert_pct": 0.1,
+          "churn_ratio": 1.54,
+          "survival_rate_pct": 78.6,
+          "code": {
+            "current_loc": 98213,
+            "additions": 125265,
+            "deletions": 27052,
+            "churn_ratio": 1.55,
+            "survival_rate_pct": 78.4
+          },
+          "docs": {
+            "current_loc": 4923,
+            "additions": 5936,
+            "deletions": 981,
+            "churn_ratio": 1.41,
+            "survival_rate_pct": 82.9
+          },
+          "rapid_fire_pct": 9.4,
+          "unique_authors": 50
+        },
+        "365": {
+          "snapshot_commit": "eee95190cc4cd2a86453fb5f39efdb5f26a06804",
+          "snapshot_date": "2024-05-14T03:18:26+08:00",
+          "first_commit_date": "2023-05-15T08:51:32+08:00",
+          "commits": 1975,
+          "ai_pct": 0.0,
+          "has_agent_config": false,
+          "fix_pct": 47.3,
+          "revert_pct": 0.2,
+          "churn_ratio": 1.72,
+          "survival_rate_pct": 73.4,
+          "code": {
+            "current_loc": 257443,
+            "additions": 352596,
+            "deletions": 95153,
+            "churn_ratio": 1.74,
+            "survival_rate_pct": 73.0
+          },
+          "docs": {
+            "current_loc": 14669,
+            "additions": 18171,
+            "deletions": 3470,
+            "churn_ratio": 1.48,
+            "survival_rate_pct": 80.7
+          },
+          "rapid_fire_pct": 11.4,
+          "unique_authors": 186
+        }
+      },
+      "elephant-goldfish-model": {
+        "180": null,
+        "365": null
+      },
+      "failproofai": {
+        "180": {
+          "snapshot_commit": "a7932a0a5065d7c3aa5aeea77f17c16e88310d76",
+          "snapshot_date": "2026-09-30T21:19:47+05:30",
+          "first_commit_date": "2026-04-06T02:03:16Z",
+          "commits": 319,
+          "ai_pct": 83.1,
+          "has_agent_config": true,
+          "fix_pct": 34.2,
+          "revert_pct": 0.0,
+          "churn_ratio": 2.39,
+          "survival_rate_pct": 59.1,
+          "code": {
+            "current_loc": 378740,
+            "additions": 402395,
+            "deletions": 23655,
+            "churn_ratio": 1.12,
+            "survival_rate_pct": 94.1
+          },
+          "docs": {
+            "current_loc": 212084,
+            "additions": 597912,
+            "deletions": 385828,
+            "churn_ratio": 4.64,
+            "survival_rate_pct": 35.5
+          },
+          "rapid_fire_pct": 6.6,
+          "unique_authors": 13
+        },
+        "365": null
+      },
+      "firecrawl": {
+        "180": {
+          "snapshot_commit": "35b15f1ee6d048092a2a1c1315bf9844a4164153",
+          "snapshot_date": "2024-10-12T17:59:50-03:00",
+          "first_commit_date": "2024-04-15T17:01:47-04:00",
+          "commits": 1522,
+          "ai_pct": 0.0,
+          "has_agent_config": false,
+          "fix_pct": 21.5,
+          "revert_pct": 0.8,
+          "churn_ratio": 2.94,
+          "survival_rate_pct": 50.9,
+          "code": {
+            "current_loc": 26291,
+            "additions": 53146,
+            "deletions": 27149,
+            "churn_ratio": 3.05,
+            "survival_rate_pct": 49.5
+          },
+          "docs": {
+            "current_loc": 2934,
+            "additions": 4309,
+            "deletions": 1375,
+            "churn_ratio": 1.94,
+            "survival_rate_pct": 68.1
+          },
+          "rapid_fire_pct": 17.6,
+          "unique_authors": 52
+        },
+        "365": {
+          "snapshot_commit": "31e24e907c2bd019b2db33a39e3c935144355543",
+          "snapshot_date": "2025-04-15T02:13:31-07:00",
+          "first_commit_date": "2024-04-15T17:01:47-04:00",
+          "commits": 2557,
+          "ai_pct": 0.3,
+          "has_agent_config": false,
+          "fix_pct": 25.1,
+          "revert_pct": 1.4,
+          "churn_ratio": 2.83,
+          "survival_rate_pct": 52.2,
+          "code": {
+            "current_loc": 72557,
+            "additions": 146171,
+            "deletions": 73940,
+            "churn_ratio": 3.03,
+            "survival_rate_pct": 49.6
+          },
+          "docs": {
+            "current_loc": 9606,
+            "additions": 11186,
+            "deletions": 1580,
+            "churn_ratio": 1.33,
+            "survival_rate_pct": 85.9
+          },
+          "rapid_fire_pct": 16.8,
+          "unique_authors": 90
+        }
+      },
+      "gentle-ai": {
+        "180": {
+          "snapshot_commit": "c6bf7177bdca1185148a67835d92edd64730d7e2",
+          "snapshot_date": "2026-08-26T23:26:56+02:00",
+          "first_commit_date": "2026-02-28T00:27:56+01:00",
+          "commits": 2087,
+          "ai_pct": 0.6,
+          "has_agent_config": true,
+          "fix_pct": 56.5,
+          "revert_pct": 0.3,
+          "churn_ratio": 1.87,
+          "survival_rate_pct": 69.6,
+          "code": {
+            "current_loc": 363334,
+            "additions": 530469,
+            "deletions": 166469,
+            "churn_ratio": 1.92,
+            "survival_rate_pct": 68.5
+          },
+          "docs": {
+            "current_loc": 71688,
+            "additions": 94617,
+            "deletions": 21298,
+            "churn_ratio": 1.62,
+            "survival_rate_pct": 75.8
+          },
+          "rapid_fire_pct": 16.1,
+          "unique_authors": 82
+        },
+        "365": null
+      },
+      "get-shit-done": {
+        "180": null,
+        "365": null
+      },
+      "go-zero": {
+        "180": {
+          "snapshot_commit": "a7849820301b36eacaaefdfd2f2755a582d7f470",
+          "snapshot_date": "2021-01-21T21:03:24+08:00",
+          "first_commit_date": "2020-07-26T17:09:05+08:00",
+          "commits": 606,
+          "ai_pct": 0.0,
+          "has_agent_config": false,
+          "fix_pct": 15.2,
+          "revert_pct": 0.2,
+          "churn_ratio": 1.84,
+          "survival_rate_pct": 70.4,
+          "code": {
+            "current_loc": 78831,
+            "additions": 105019,
+            "deletions": 26188,
+            "churn_ratio": 1.66,
+            "survival_rate_pct": 75.1
+          },
+          "docs": {
+            "current_loc": 2027,
+            "additions": 9888,
+            "deletions": 7861,
+            "churn_ratio": 8.76,
+            "survival_rate_pct": 20.5
+          },
+          "rapid_fire_pct": 6.9,
+          "unique_authors": 53
+        },
+        "365": {
+          "snapshot_commit": "603c93aa4aeb3ac10a60545cd2765541775c58ba",
+          "snapshot_date": "2021-07-24T22:29:02+08:00",
+          "first_commit_date": "2020-07-26T17:09:05+08:00",
+          "commits": 814,
+          "ai_pct": 0.0,
+          "has_agent_config": false,
+          "fix_pct": 22.7,
+          "revert_pct": 0.1,
+          "churn_ratio": 2.08,
+          "survival_rate_pct": 64.9,
+          "code": {
+            "current_loc": 79262,
+            "additions": 115101,
+            "deletions": 35839,
+            "churn_ratio": 1.9,
+            "survival_rate_pct": 68.9
+          },
+          "docs": {
+            "current_loc": 2461,
+            "additions": 10783,
+            "deletions": 8322,
+            "churn_ratio": 7.76,
+            "survival_rate_pct": 22.8
+          },
+          "rapid_fire_pct": 6.0,
+          "unique_authors": 78
+        }
+      },
+      "graphify": {
+        "180": {
+          "snapshot_commit": "ef4450d9c28acb2b8cdc22d369c1777b77148eef",
+          "snapshot_date": "2026-09-30T20:52:57+01:00",
+          "first_commit_date": "2026-04-03T18:56:14+01:00",
+          "commits": 1962,
+          "ai_pct": 52.9,
+          "has_agent_config": true,
+          "fix_pct": 53.5,
+          "revert_pct": 0.1,
+          "churn_ratio": 1.47,
+          "survival_rate_pct": 80.9,
+          "code": {
+            "current_loc": 184386,
+            "additions": 219195,
+            "deletions": 34826,
+            "churn_ratio": 1.38,
+            "survival_rate_pct": 84.1
+          },
+          "docs": {
+            "current_loc": 60023,
+            "additions": 83063,
+            "deletions": 23094,
+            "churn_ratio": 1.77,
+            "survival_rate_pct": 72.3
+          },
+          "rapid_fire_pct": 23.3,
+          "unique_authors": 312
+        },
+        "365": null
+      },
+      "gsd-2": {
+        "180": null,
+        "365": null
+      },
+      "gsd-core": {
+        "180": {
+          "snapshot_commit": "f116b761283afe7366817bc3947f963c4aecb0c3",
+          "snapshot_date": "2026-06-13T02:12:16-04:00",
+          "first_commit_date": "2025-12-14T08:16:28-06:00",
+          "commits": 3115,
+          "ai_pct": 52.8,
+          "has_agent_config": true,
+          "fix_pct": 43.9,
+          "revert_pct": 0.4,
+          "churn_ratio": 2.29,
+          "survival_rate_pct": 60.6,
+          "code": {
+            "current_loc": 292959,
+            "additions": 476208,
+            "deletions": 183157,
+            "churn_ratio": 2.25,
+            "survival_rate_pct": 61.5
+          },
+          "docs": {
+            "current_loc": 162754,
+            "additions": 276337,
+            "deletions": 107672,
+            "churn_ratio": 2.36,
+            "survival_rate_pct": 58.9
+          },
+          "rapid_fire_pct": 38.0,
+          "unique_authors": 156
+        },
+        "365": null
+      },
+      "happy": {
+        "180": {
+          "snapshot_commit": "8feb2cd99b444ac09c50c280d7a02fa53af2654e",
+          "snapshot_date": "2026-01-06T20:41:30-08:00",
+          "first_commit_date": "2025-07-12T19:09:56-07:00",
+          "commits": 615,
+          "ai_pct": 15.8,
+          "has_agent_config": true,
+          "fix_pct": 32.7,
+          "revert_pct": 1.5,
+          "churn_ratio": 2.43,
+          "survival_rate_pct": 58.2,
+          "code": {
+            "current_loc": 64906,
+            "additions": 112478,
+            "deletions": 46726,
+            "churn_ratio": 2.45,
+            "survival_rate_pct": 57.7
+          },
+          "docs": {
+            "current_loc": 1447,
+            "additions": 1604,
+            "deletions": 157,
+            "churn_ratio": 1.22,
+            "survival_rate_pct": 90.2
+          },
+          "rapid_fire_pct": 11.2,
+          "unique_authors": 21
+        },
+        "365": {
+          "snapshot_commit": "3f161de70541b1cedaf0b7547ed70889d8dae22d",
+          "snapshot_date": "2026-07-11T03:01:25-07:00",
+          "first_commit_date": "2025-07-12T17:57:05-07:00",
+          "commits": 2052,
+          "ai_pct": 24.4,
+          "has_agent_config": true,
+          "fix_pct": 37.9,
+          "revert_pct": 0.7,
+          "churn_ratio": 2.29,
+          "survival_rate_pct": 60.7,
+          "code": {
+            "current_loc": 184982,
+            "additions": 309650,
+            "deletions": 123737,
+            "churn_ratio": 2.34,
+            "survival_rate_pct": 59.7
+          },
+          "docs": {
+            "current_loc": 26988,
+            "additions": 39292,
+            "deletions": 12474,
+            "churn_ratio": 1.92,
+            "survival_rate_pct": 68.7
+          },
+          "rapid_fire_pct": 19.4,
+          "unique_authors": 74
+        }
+      },
+      "headroom": {
+        "180": {
+          "snapshot_commit": "88f935a1eb52ec81cdd60db44627279d411b74ab",
+          "snapshot_date": "2026-07-05T16:00:25-07:00",
+          "first_commit_date": "2026-01-06T23:16:58-08:00",
+          "commits": 1512,
+          "ai_pct": 26.3,
+          "has_agent_config": true,
+          "fix_pct": 52.2,
+          "revert_pct": 0.3,
+          "churn_ratio": 1.71,
+          "survival_rate_pct": 73.9,
+          "code": {
+            "current_loc": 469868,
+            "additions": 626616,
+            "deletions": 156733,
+            "churn_ratio": 1.67,
+            "survival_rate_pct": 75.0
+          },
+          "docs": {
+            "current_loc": 29922,
+            "additions": 49934,
+            "deletions": 20053,
+            "churn_ratio": 2.34,
+            "survival_rate_pct": 59.9
+          },
+          "rapid_fire_pct": 18.4,
+          "unique_authors": 168
+        },
+        "365": null
+      },
+      "herdr": {
+        "180": {
+          "snapshot_commit": "c958833fa81333bf07a255f7d1325e6892daca1e",
+          "snapshot_date": "2026-09-23T16:44:56+02:00",
+          "first_commit_date": "2026-03-23T00:36:52+03:00",
+          "commits": 1600,
+          "ai_pct": 0.2,
+          "has_agent_config": true,
+          "fix_pct": 53.8,
+          "revert_pct": 0.0,
+          "churn_ratio": 1.92,
+          "survival_rate_pct": 68.6,
+          "code": {
+            "current_loc": 313091,
+            "additions": 500973,
+            "deletions": 187895,
+            "churn_ratio": 2.2,
+            "survival_rate_pct": 62.5
+          },
+          "docs": {
+            "current_loc": 153901,
+            "additions": 180034,
+            "deletions": 26667,
+            "churn_ratio": 1.34,
+            "survival_rate_pct": 85.5
+          },
+          "rapid_fire_pct": 7.7,
+          "unique_authors": 89
+        },
+        "365": null
+      },
+      "hermes-agent": {
+        "180": {
+          "snapshot_commit": "6eb76c7c1a37f85984f5fd0cec72d50b7abfcbda",
+          "snapshot_date": "2026-01-18T10:11:59Z",
+          "first_commit_date": "2025-07-22T18:32:44-07:00",
+          "commits": 60,
+          "ai_pct": 0.0,
+          "has_agent_config": true,
+          "fix_pct": 10.0,
+          "revert_pct": 0.0,
+          "churn_ratio": 2.11,
+          "survival_rate_pct": 64.4,
+          "code": {
+            "current_loc": 9320,
+            "additions": 14706,
+            "deletions": 5392,
+            "churn_ratio": 2.16,
+            "survival_rate_pct": 63.4
+          },
+          "docs": {
+            "current_loc": 442,
+            "additions": 457,
+            "deletions": 15,
+            "churn_ratio": 1.07,
+            "survival_rate_pct": 96.7
+          },
+          "rapid_fire_pct": 13.3,
+          "unique_authors": 4
+        },
+        "365": {
+          "snapshot_commit": "e5b83633ecb7dc9e325d70de60515430f4c043a5",
+          "snapshot_date": "2026-07-23T11:21:03+10:00",
+          "first_commit_date": "2025-07-22T18:32:44-07:00",
+          "commits": 15572,
+          "ai_pct": 3.7,
+          "has_agent_config": true,
+          "fix_pct": 58.8,
+          "revert_pct": 0.4,
+          "churn_ratio": 1.49,
+          "survival_rate_pct": 80.3,
+          "code": {
+            "current_loc": 1903831,
+            "additions": 2346298,
+            "deletions": 441003,
+            "churn_ratio": 1.46,
+            "survival_rate_pct": 81.1
+          },
+          "docs": {
+            "current_loc": 346209,
+            "additions": 454768,
+            "deletions": 109895,
+            "churn_ratio": 1.63,
+            "survival_rate_pct": 76.1
+          },
+          "rapid_fire_pct": 27.9,
+          "unique_authors": 2096
+        }
+      },
+      "holaOS": {
+        "180": null,
+        "365": null
+      },
+      "humanizer": {
+        "180": {
+          "snapshot_commit": "1b48564898e999219882660237fde01bf4843a0f",
+          "snapshot_date": "2026-06-29T13:43:04-07:00",
+          "first_commit_date": "2026-01-17T21:30:11-08:00",
+          "commits": 27,
+          "ai_pct": 25.9,
+          "has_agent_config": true,
+          "fix_pct": 25.9,
+          "revert_pct": 0.0,
+          "churn_ratio": 2.49,
+          "survival_rate_pct": 57.3,
+          "code": {
+            "current_loc": 0,
+            "additions": 0,
+            "deletions": 0,
+            "churn_ratio": 0.0,
+            "survival_rate_pct": 0.0
+          },
+          "docs": {
+            "current_loc": 863,
+            "additions": 1507,
+            "deletions": 644,
+            "churn_ratio": 2.49,
+            "survival_rate_pct": 57.3
+          },
+          "rapid_fire_pct": 7.4,
+          "unique_authors": 10
+        },
+        "365": null
+      },
+      "langchain": {
+        "180": {
+          "snapshot_commit": "3a1bdce3f51e302d468807e980455d676c0f5fd6",
+          "snapshot_date": "2023-04-22T09:35:03-07:00",
+          "first_commit_date": "2022-10-24T14:51:15-07:00",
+          "commits": 1467,
+          "ai_pct": 0.0,
+          "has_agent_config": false,
+          "fix_pct": 18.5,
+          "revert_pct": 0.1,
+          "churn_ratio": 1.47,
+          "survival_rate_pct": 81.1,
+          "code": {
+            "current_loc": 61100,
+            "additions": 73413,
+            "deletions": 12313,
+            "churn_ratio": 1.4,
+            "survival_rate_pct": 83.2
+          },
+          "docs": {
+            "current_loc": 5439,
+            "additions": 8648,
+            "deletions": 3209,
+            "churn_ratio": 2.18,
+            "survival_rate_pct": 62.9
+          },
+          "rapid_fire_pct": 30.5,
+          "unique_authors": 394
+        },
+        "365": {
+          "snapshot_commit": "286a29a49ec16dc784543e31a610b8042716802f",
+          "snapshot_date": "2023-10-24T13:52:17-07:00",
+          "first_commit_date": "2022-10-24T14:51:15-07:00",
+          "commits": 5312,
+          "ai_pct": 0.0,
+          "has_agent_config": false,
+          "fix_pct": 19.6,
+          "revert_pct": 0.4,
+          "churn_ratio": 1.79,
+          "survival_rate_pct": 71.5,
+          "code": {
+            "current_loc": 256258,
+            "additions": 337082,
+            "deletions": 78112,
+            "churn_ratio": 1.62,
+            "survival_rate_pct": 76.0
+          },
+          "docs": {
+            "current_loc": 23164,
+            "additions": 53518,
+            "deletions": 30313,
+            "churn_ratio": 3.62,
+            "survival_rate_pct": 43.3
+          },
+          "rapid_fire_pct": 26.9,
+          "unique_authors": 1467
+        }
+      },
+      "lobehub": {
+        "180": {
+          "snapshot_commit": "98e1f99f6e59e140f85c651516af7fdd167c1a8f",
+          "snapshot_date": "2023-11-16T19:11:20Z",
+          "first_commit_date": "2023-05-21T07:19:20Z",
+          "commits": 679,
+          "ai_pct": 0.0,
+          "has_agent_config": false,
+          "fix_pct": 22.7,
+          "revert_pct": 0.0,
+          "churn_ratio": 2.64,
+          "survival_rate_pct": 55.0,
+          "code": {
+            "current_loc": 22555,
+            "additions": 42752,
+            "deletions": 20193,
+            "churn_ratio": 2.79,
+            "survival_rate_pct": 52.8
+          },
+          "docs": {
+            "current_loc": 3638,
+            "additions": 4906,
+            "deletions": 1268,
+            "churn_ratio": 1.7,
+            "survival_rate_pct": 74.2
+          },
+          "rapid_fire_pct": 13.7,
+          "unique_authors": 24
+        },
+        "365": {
+          "snapshot_commit": "6638c702d448cfcc156c505bec4d5e5cd6ab9c0f",
+          "snapshot_date": "2024-05-20T06:12:49Z",
+          "first_commit_date": "2023-05-21T07:19:20Z",
+          "commits": 1463,
+          "ai_pct": 0.0,
+          "has_agent_config": false,
+          "fix_pct": 29.2,
+          "revert_pct": 0.7,
+          "churn_ratio": 2.68,
+          "survival_rate_pct": 54.3,
+          "code": {
+            "current_loc": 77916,
+            "additions": 144035,
+            "deletions": 66115,
+            "churn_ratio": 2.7,
+            "survival_rate_pct": 54.1
+          },
+          "docs": {
+            "current_loc": 14733,
+            "additions": 26631,
+            "deletions": 11898,
+            "churn_ratio": 2.62,
+            "survival_rate_pct": 55.3
+          },
+          "rapid_fire_pct": 13.3,
+          "unique_authors": 111
+        }
+      },
+      "munder-difflin": {
+        "180": null,
+        "365": null
+      },
+      "ollama": {
+        "180": {
+          "snapshot_commit": "1ca484f67e6f607114496211004942013e5595eb",
+          "snapshot_date": "2023-12-19T14:04:52-05:00",
+          "first_commit_date": "2023-06-22T12:45:31-04:00",
+          "commits": 1318,
+          "ai_pct": 0.0,
+          "has_agent_config": false,
+          "fix_pct": 14.7,
+          "revert_pct": 0.5,
+          "churn_ratio": 8.81,
+          "survival_rate_pct": 20.4,
+          "code": {
+            "current_loc": 12199,
+            "additions": 67580,
+            "deletions": 55392,
+            "churn_ratio": 10.08,
+            "survival_rate_pct": 18.1
+          },
+          "docs": {
+            "current_loc": 2688,
+            "additions": 5401,
+            "deletions": 2717,
+            "churn_ratio": 3.02,
+            "survival_rate_pct": 49.8
+          },
+          "rapid_fire_pct": 13.8,
+          "unique_authors": 94
+        },
+        "365": {
+          "snapshot_commit": "189a43caa27a2fc23e80ff19126d8fa9864b3ad2",
+          "snapshot_date": "2024-06-21T13:44:34-07:00",
+          "first_commit_date": "2023-06-22T12:45:31-04:00",
+          "commits": 2344,
+          "ai_pct": 0.0,
+          "has_agent_config": false,
+          "fix_pct": 14.8,
+          "revert_pct": 1.2,
+          "churn_ratio": 3.46,
+          "survival_rate_pct": 44.8,
+          "code": {
+            "current_loc": 68555,
+            "additions": 153419,
+            "deletions": 84885,
+            "churn_ratio": 3.48,
+            "survival_rate_pct": 44.7
+          },
+          "docs": {
+            "current_loc": 3914,
+            "additions": 8167,
+            "deletions": 4257,
+            "churn_ratio": 3.17,
+            "survival_rate_pct": 47.9
+          },
+          "rapid_fire_pct": 12.8,
+          "unique_authors": 252
+        }
+      },
+      "open-webui": {
+        "180": {
+          "snapshot_commit": "5558514ff19c088fd0c8c87205d7a89a0d115a1c",
+          "snapshot_date": "2024-04-01T15:23:12-07:00",
+          "first_commit_date": "2023-10-06T17:08:27-05:00",
+          "commits": 1459,
+          "ai_pct": 0.0,
+          "has_agent_config": false,
+          "fix_pct": 27.9,
+          "revert_pct": 0.6,
+          "churn_ratio": 2.94,
+          "survival_rate_pct": 50.6,
+          "code": {
+            "current_loc": 29989,
+            "additions": 58939,
+            "deletions": 28743,
+            "churn_ratio": 2.92,
+            "survival_rate_pct": 50.9
+          },
+          "docs": {
+            "current_loc": 658,
+            "additions": 1591,
+            "deletions": 907,
+            "churn_ratio": 3.8,
+            "survival_rate_pct": 41.4
+          },
+          "rapid_fire_pct": 15.2,
+          "unique_authors": 93
+        },
+        "365": {
+          "snapshot_commit": "1d225dd804575af9ae5981528dfdce695f7f7040",
+          "snapshot_date": "2024-09-26T20:59:25+02:00",
+          "first_commit_date": "2023-10-06T17:08:27-05:00",
+          "commits": 4519,
+          "ai_pct": 0.0,
+          "has_agent_config": false,
+          "fix_pct": 26.4,
+          "revert_pct": 0.7,
+          "churn_ratio": 3.9,
+          "survival_rate_pct": 40.8,
+          "code": {
+            "current_loc": 67327,
+            "additions": 164831,
+            "deletions": 97114,
+            "churn_ratio": 3.89,
+            "survival_rate_pct": 40.8
+          },
+          "docs": {
+            "current_loc": 851,
+            "additions": 2267,
+            "deletions": 1390,
+            "churn_ratio": 4.3,
+            "survival_rate_pct": 37.5
+          },
+          "rapid_fire_pct": 16.4,
+          "unique_authors": 244
+        }
+      },
+      "openrig": {
+        "180": {
+          "snapshot_commit": "cc75efdd17fb967bde7cff6c5805791986af78d8",
+          "snapshot_date": "2026-09-14T22:10:20Z",
+          "first_commit_date": "2026-03-23T00:09:13-07:00",
+          "commits": 2802,
+          "ai_pct": 44.5,
+          "has_agent_config": false,
+          "fix_pct": 40.1,
+          "revert_pct": 0.1,
+          "churn_ratio": 1.38,
+          "survival_rate_pct": 83.8,
+          "code": {
+            "current_loc": 566769,
+            "additions": 653220,
+            "deletions": 82465,
+            "churn_ratio": 1.3,
+            "survival_rate_pct": 86.8
+          },
+          "docs": {
+            "current_loc": 41823,
+            "additions": 73203,
+            "deletions": 31227,
+            "churn_ratio": 2.5,
+            "survival_rate_pct": 57.1
+          },
+          "rapid_fire_pct": 7.2,
+          "unique_authors": 8
+        },
+        "365": null
+      },
+      "orca": {
+        "180": {
+          "snapshot_commit": "5127d1eb3b5cb1f32aaf9a568acc6f19a023d66c",
+          "snapshot_date": "2026-09-12T20:10:49-07:00",
+          "first_commit_date": "2026-03-16T20:29:24-07:00",
+          "commits": 9999,
+          "ai_pct": 22.2,
+          "has_agent_config": true,
+          "fix_pct": 47.5,
+          "revert_pct": 1.2,
+          "churn_ratio": 1.98,
+          "survival_rate_pct": 67.1,
+          "code": {
+            "current_loc": 4273578,
+            "additions": 6297516,
+            "deletions": 2023964,
+            "churn_ratio": 1.95,
+            "survival_rate_pct": 67.9
+          },
+          "docs": {
+            "current_loc": 26988,
+            "additions": 114147,
+            "deletions": 87159,
+            "churn_ratio": 7.46,
+            "survival_rate_pct": 23.6
+          },
+          "rapid_fire_pct": 32.1,
+          "unique_authors": 371
+        },
+        "365": null
+      },
+      "ponytail": {
+        "180": null,
+        "365": null
+      },
+      "ragflow": {
+        "180": {
+          "snapshot_commit": "f900e432f37219db71810dcd3cac29068d166913",
+          "snapshot_date": "2024-06-08T23:24:29+08:00",
+          "first_commit_date": "2023-12-12T14:13:13+08:00",
+          "commits": 558,
+          "ai_pct": 0.0,
+          "has_agent_config": false,
+          "fix_pct": 23.3,
+          "revert_pct": 0.0,
+          "churn_ratio": 2.41,
+          "survival_rate_pct": 58.7,
+          "code": {
+            "current_loc": 43326,
+            "additions": 73803,
+            "deletions": 30477,
+            "churn_ratio": 2.41,
+            "survival_rate_pct": 58.7
+          },
+          "docs": {
+            "current_loc": 3052,
+            "additions": 5195,
+            "deletions": 2143,
+            "churn_ratio": 2.4,
+            "survival_rate_pct": 58.7
+          },
+          "rapid_fire_pct": 9.7,
+          "unique_authors": 44
+        },
+        "365": {
+          "snapshot_commit": "74c6b21f3b996fd1cb8a3ab14b57770ac6a295cc",
+          "snapshot_date": "2024-12-11T12:38:57+08:00",
+          "first_commit_date": "2023-12-12T14:13:13+08:00",
+          "commits": 1850,
+          "ai_pct": 0.0,
+          "has_agent_config": false,
+          "fix_pct": 28.7,
+          "revert_pct": 0.2,
+          "churn_ratio": 3.13,
+          "survival_rate_pct": 48.4,
+          "code": {
+            "current_loc": 84010,
+            "additions": 168670,
+            "deletions": 84660,
+            "churn_ratio": 3.02,
+            "survival_rate_pct": 49.8
+          },
+          "docs": {
+            "current_loc": 9224,
+            "additions": 24091,
+            "deletions": 14867,
+            "churn_ratio": 4.22,
+            "survival_rate_pct": 38.3
+          },
+          "rapid_fire_pct": 12.7,
+          "unique_authors": 136
+        }
+      },
+      "rtk": {
+        "180": {
+          "snapshot_commit": "66e09cbefe02bf82b159a44278250e45e506810b",
+          "snapshot_date": "2026-07-21T00:52:30+02:00",
+          "first_commit_date": "2026-01-22T18:10:30+01:00",
+          "commits": 888,
+          "ai_pct": 25.8,
+          "has_agent_config": true,
+          "fix_pct": 57.9,
+          "revert_pct": 0.3,
+          "churn_ratio": 1.78,
+          "survival_rate_pct": 72.0,
+          "code": {
+            "current_loc": 88270,
+            "additions": 120361,
+            "deletions": 29937,
+            "churn_ratio": 1.7,
+            "survival_rate_pct": 73.3
+          },
+          "docs": {
+            "current_loc": 20391,
+            "additions": 30536,
+            "deletions": 12983,
+            "churn_ratio": 2.13,
+            "survival_rate_pct": 66.8
+          },
+          "rapid_fire_pct": 15.0,
+          "unique_authors": 128
+        },
+        "365": null
+      },
+      "superpowers": {
+        "180": {
+          "snapshot_commit": "917e5f53b16b115b70a3a355ed5f4993b9f8b73d",
+          "snapshot_date": "2026-04-06T15:48:58-07:00",
+          "first_commit_date": "2025-10-09T12:57:31-07:00",
+          "commits": 397,
+          "ai_pct": 16.6,
+          "has_agent_config": true,
+          "fix_pct": 25.7,
+          "revert_pct": 2.3,
+          "churn_ratio": 2.66,
+          "survival_rate_pct": 54.7,
+          "code": {
+            "current_loc": 5436,
+            "additions": 11416,
+            "deletions": 5980,
+            "churn_ratio": 3.2,
+            "survival_rate_pct": 47.6
+          },
+          "docs": {
+            "current_loc": 15600,
+            "additions": 27073,
+            "deletions": 11472,
+            "churn_ratio": 2.47,
+            "survival_rate_pct": 57.6
+          },
+          "rapid_fire_pct": 21.9,
+          "unique_authors": 32
+        },
+        "365": {
+          "snapshot_commit": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+          "snapshot_date": "2026-09-25T11:06:27-07:00",
+          "first_commit_date": "2025-10-09T12:57:31-07:00",
+          "commits": 657,
+          "ai_pct": 12.9,
+          "has_agent_config": true,
+          "fix_pct": 24.4,
+          "revert_pct": 1.8,
+          "churn_ratio": 2.55,
+          "survival_rate_pct": 56.3,
+          "code": {
+            "current_loc": 13087,
+            "additions": 27681,
+            "deletions": 14594,
+            "churn_ratio": 3.23,
+            "survival_rate_pct": 47.3
+          },
+          "docs": {
+            "current_loc": 32849,
+            "additions": 53868,
+            "deletions": 21019,
+            "churn_ratio": 2.28,
+            "survival_rate_pct": 61.0
+          },
+          "rapid_fire_pct": 14.2,
+          "unique_authors": 44
+        }
+      },
+      "thinkrail": {
+        "180": null,
+        "365": null
+      },
+      "transformers": {
+        "180": {
+          "snapshot_commit": "b832d5bb8a6dfc5965015b828e577677eace601e",
+          "snapshot_date": "2019-04-25T21:37:47+02:00",
+          "first_commit_date": "2018-10-29T14:56:02+01:00",
+          "commits": 622,
+          "ai_pct": 0.0,
+          "has_agent_config": false,
+          "fix_pct": 29.9,
+          "revert_pct": 0.2,
+          "churn_ratio": 4.99,
+          "survival_rate_pct": 33.4,
+          "code": {
+            "current_loc": 13878,
+            "additions": 42928,
+            "deletions": 28999,
+            "churn_ratio": 5.18,
+            "survival_rate_pct": 32.3
+          },
+          "docs": {
+            "current_loc": 1509,
+            "additions": 3171,
+            "deletions": 1662,
+            "churn_ratio": 3.2,
+            "survival_rate_pct": 47.6
+          },
+          "rapid_fire_pct": 15.3,
+          "unique_authors": 81
+        },
+        "365": {
+          "snapshot_commit": "079bfb32fba4f2b39d344ca7af88d79a3ff27c7c",
+          "snapshot_date": "2019-10-28T10:18:58-04:00",
+          "first_commit_date": "2018-10-29T14:56:02+01:00",
+          "commits": 1618,
+          "ai_pct": 0.0,
+          "has_agent_config": false,
+          "fix_pct": 27.9,
+          "revert_pct": 0.2,
+          "churn_ratio": 4.27,
+          "survival_rate_pct": 37.8,
+          "code": {
+            "current_loc": 42261,
+            "additions": 110779,
+            "deletions": 67751,
+            "churn_ratio": 4.22,
+            "survival_rate_pct": 38.1
+          },
+          "docs": {
+            "current_loc": 3666,
+            "additions": 10733,
+            "deletions": 7068,
+            "churn_ratio": 4.86,
+            "survival_rate_pct": 34.2
+          },
+          "rapid_fire_pct": 12.5,
+          "unique_authors": 189
+        }
+      },
+      "yao": {
+        "180": {
+          "snapshot_commit": "deb6ba9135e89cba56c531a2ca8b39fa7ac2058e",
+          "snapshot_date": "2022-03-04T21:43:19+08:00",
+          "first_commit_date": "2021-09-06T17:20:28+08:00",
+          "commits": 458,
+          "ai_pct": 0.0,
+          "has_agent_config": false,
+          "fix_pct": 17.2,
+          "revert_pct": 0.0,
+          "churn_ratio": 2.12,
+          "survival_rate_pct": 64.1,
+          "code": {
+            "current_loc": 13885,
+            "additions": 21260,
+            "deletions": 7375,
+            "churn_ratio": 2.06,
+            "survival_rate_pct": 65.3
+          },
+          "docs": {
+            "current_loc": 244,
+            "additions": 790,
+            "deletions": 546,
+            "churn_ratio": 5.48,
+            "survival_rate_pct": 30.9
+          },
+          "rapid_fire_pct": 9.2,
+          "unique_authors": 3
+        },
+        "365": {
+          "snapshot_commit": "b3cf0e2e89646fdb5435c83cbcf0681c7fe7c1bb",
+          "snapshot_date": "2022-09-03T23:26:09+08:00",
+          "first_commit_date": "2021-09-06T17:20:28+08:00",
+          "commits": 547,
+          "ai_pct": 0.0,
+          "has_agent_config": false,
+          "fix_pct": 17.7,
+          "revert_pct": 0.0,
+          "churn_ratio": 2.18,
+          "survival_rate_pct": 62.8,
+          "code": {
+            "current_loc": 16721,
+            "additions": 26206,
+            "deletions": 9485,
+            "churn_ratio": 2.13,
+            "survival_rate_pct": 63.8
+          },
+          "docs": {
+            "current_loc": 302,
+            "additions": 891,
+            "deletions": 589,
+            "churn_ratio": 4.9,
+            "survival_rate_pct": 33.9
+          },
+          "rapid_fire_pct": 7.9,
+          "unique_authors": 4
+        }
+      }
+    }
+  },
+  "evidence": {
+    "by_type": {
+      "harness+results": 24,
+      "harness_only": 12,
+      "results_only": 8,
+      "claim_only": 3,
+      "none": 3,
+      "external": 2
+    },
+    "by_focus": {
+      "outcome": 26,
+      "engineering": 17,
+      "none": 9
+    },
+    "outcome_harness_results": [
+      "ECC",
+      "hermes-agent",
+      "ponytail",
+      "graphify",
+      "caveman",
+      "claude-mem",
+      "archify",
+      "OmniRoute",
+      "headroom",
+      "academic-research-skills",
+      "PageIndex",
+      "book-to-skill",
+      "context-mode",
+      "gsd-core",
+      "gentle-ai"
+    ],
+    "outcome_harness_results_signed": [
+      "caveman",
+      "academic-research-skills",
+      "claude-mem",
+      "graphify",
+      "gsd-core",
+      "headroom",
+      "context-mode",
+      "book-to-skill",
+      "ponytail",
+      "archify",
+      "ECC"
+    ],
+    "engineering_harness_results": [
+      "AutoGPT",
+      "Paradev",
+      "agent-orchestrator",
+      "cmux",
+      "deepseek-harness",
+      "happy",
+      "orca",
+      "transformers",
+      "yao"
+    ],
+    "no_results": [
+      "agents",
+      "conductor",
+      "elephant-goldfish-model"
+    ],
+    "by_class": {
+      "signed": {
+        "harness+results": 19,
+        "results_only": 6,
+        "harness_only": 9,
+        "claim_only": 1,
+        "external": 2,
+        "none": 1
+      },
+      "configured_unsigned": {
+        "harness+results": 4,
+        "results_only": 1,
+        "harness_only": 3,
+        "none": 1
+      },
+      "no_visible_trace": {
+        "claim_only": 2,
+        "harness+results": 1,
+        "results_only": 1,
+        "none": 1
+      }
+    }
+  },
+  "robustness": {
+    "without_hand_picked": {
+      "repos": 48,
+      "class_counts": {
+        "signed": 35,
+        "configured_unsigned": 8,
+        "no_visible_trace": 5
+      },
+      "stars_vs_ai_signed_recent": {
+        "rho": -0.03,
+        "p": 0.817,
+        "n": 48
+      },
+      "day_180": {
+        "fix_pct": {
+          "cohort": {
+            "n": 37,
+            "median": 33.8,
+            "q1": 23.3,
+            "q3": 42.3
+          },
+          "baseline": {
+            "n": 12,
+            "median": 17.3,
+            "q1": 11.75,
+            "q3": 21.25
+          },
+          "test": {
+            "u": 382.0,
+            "prob_superiority": 0.86,
+            "p": 0.0
+          }
+        },
+        "churn_ratio": {
+          "cohort": {
+            "n": 37,
+            "median": 1.9,
+            "q1": 1.54,
+            "q3": 2.49
+          },
+          "baseline": {
+            "n": 12,
+            "median": 3.77,
+            "q1": 2.22,
+            "q3": 4.33
+          },
+          "test": {
+            "u": 112.0,
+            "prob_superiority": 0.25,
+            "p": 0.009
+          }
+        },
+        "survival_rate_pct": {
+          "cohort": {
+            "n": 37,
+            "median": 68.6,
+            "q1": 57.3,
+            "q3": 78.6
+          },
+          "baseline": {
+            "n": 12,
+            "median": 41.7,
+            "q1": 37.47,
+            "q3": 62.27
+          },
+          "test": {
+            "u": 330.5,
+            "prob_superiority": 0.74,
+            "p": 0.01
+          }
+        }
+      }
+    }
+  },
+  "repo_classes": {
+    "ECC": "signed",
+    "deepseek-harness": "configured_unsigned",
+    "hermes-agent": "configured_unsigned",
+    "firecrawl": "signed",
+    "ponytail": "signed",
+    "graphify": "signed",
+    "browser-use": "signed",
+    "orca": "signed",
+    "caveman": "signed",
+    "claude-mem": "signed",
+    "archify": "signed",
+    "ragflow": "configured_unsigned",
+    "lobehub": "signed",
+    "headroom": "signed",
+    "OpenSpec": "signed",
+    "anything-llm": "no_visible_trace",
+    "humanizer": "signed",
+    "get-shit-done": "signed",
+    "herdr": "configured_unsigned",
+    "agents": "signed",
+    "PageIndex": "no_visible_trace",
+    "QwenPaw": "no_visible_trace",
+    "go-zero": "signed",
+    "cmux": "signed",
+    "happy": "signed",
+    "Paradev": "signed",
+    "agent-orchestrator": "signed",
+    "elephant-goldfish-model": "configured_unsigned",
+    "holaOS": "signed",
+    "gsd-core": "signed",
+    "munder-difflin": "signed",
+    "Orkas": "signed",
+    "openrig": "signed",
+    "gentle-ai": "configured_unsigned",
+    "yao": "signed",
+    "failproofai": "signed",
+    "thinkrail": "signed",
+    "gsd-2": "signed",
+    "conductor": "no_visible_trace",
+    "context-mode": "signed",
+    "rtk": "signed",
+    "superpowers": "signed",
+    "OmniRoute": "configured_unsigned",
+    "AutoGPT": "signed",
+    "ollama": "configured_unsigned",
+    "transformers": "signed",
+    "dify": "signed",
+    "open-webui": "no_visible_trace",
+    "langchain": "configured_unsigned",
+    "academic-research-skills": "signed",
+    "BMAD-METHOD": "signed",
+    "book-to-skill": "signed"
+  }
+}

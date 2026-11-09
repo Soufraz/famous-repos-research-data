@@ -1,0 +1,35 @@
+{
+  "repo": "failproofai",
+  "head_commit": "fa9307f7",
+  "published_results": [
+    {
+      "claim": "40 built-in policies. Zero latency. Runs locally.",
+      "metric": "Hook/policy enforcement latency overhead",
+      "value": "Zero latency",
+      "baseline": null,
+      "evidence_type": "claim_only",
+      "files": [
+        "README.md:22"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "stopping a tool call before it runs is verified on all twelve, turn-end gates on eight",
+      "metric": "Per-harness enforcement coverage (live DENY observed in hook log, pass/fail per vendor CLI @latest)",
+      "value": "12 of 12 harnesses for pre-execution blocking; 8 for turn-end gates",
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "README.md:34-38",
+        "integration-suite/README.md:1-30",
+        "integration-suite/run.sh",
+        "integration-suite/report.js"
+      ],
+      "reproduce_command": "bash integration-suite/ci-entrypoint.sh"
+    }
+  ],
+  "strongest_evidence_type": "harness_only",
+  "summary": "failproofai publishes no benchmark or performance results about itself: the only performance number-like claim is the README tagline 'Zero latency' with no measurement behind it. Its 'evaluations' docs describe a product feature for users' agents, not results of its own, and the CHANGELOG's 'Measured' notes are one-off bug reproductions. The one quantitative capability claim (enforcement verified on 12 harnesses, turn-end gates on 8) is backed by a daily live canary (integration-suite/) that needs Docker, vendor credentials and gateway models, and no run reports are committed.",
+  "result_focus": "engineering",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}

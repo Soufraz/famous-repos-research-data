@@ -1,0 +1,63 @@
+{
+  "repo": "Paradev",
+  "full_name": "ParadevAI/Paradev",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "9c40d2dacccf9a35d5463fd0596325e085d2f3fa",
+      "snapshot_date": "2026-04-18T16:17:43-07:00",
+      "first_commit_date": "2025-10-21T16:20:02+07:00",
+      "commits": 2214,
+      "ai_pct": 7.2,
+      "has_agent_config": true,
+      "fix_pct": 35.2,
+      "revert_pct": 1.3,
+      "churn_ratio": 3.09,
+      "survival_rate_pct": 48.8,
+      "code": {
+        "current_loc": 316389,
+        "additions": 669630,
+        "deletions": 352740,
+        "churn_ratio": 3.23,
+        "survival_rate_pct": 47.2
+      },
+      "docs": {
+        "current_loc": 36466,
+        "additions": 52968,
+        "deletions": 16502,
+        "churn_ratio": 1.91,
+        "survival_rate_pct": 68.8
+      },
+      "rapid_fire_pct": 9.9,
+      "unique_authors": 57
+    },
+    "365": {
+      "snapshot_commit": "aca8060379e7b00fe7b57c3c2173856c80290af0",
+      "snapshot_date": "2026-10-21T00:13:49-07:00",
+      "first_commit_date": "2025-10-21T16:20:02+07:00",
+      "commits": 4959,
+      "ai_pct": 4.2,
+      "has_agent_config": true,
+      "fix_pct": 41.0,
+      "revert_pct": 1.2,
+      "churn_ratio": 2.4,
+      "survival_rate_pct": 58.8,
+      "code": {
+        "current_loc": 1010233,
+        "additions": 1758499,
+        "deletions": 747765,
+        "churn_ratio": 2.48,
+        "survival_rate_pct": 57.4
+      },
+      "docs": {
+        "current_loc": 106667,
+        "additions": 141971,
+        "deletions": 35304,
+        "churn_ratio": 1.66,
+        "survival_rate_pct": 75.1
+      },
+      "rapid_fire_pct": 12.2,
+      "unique_authors": 134
+    }
+  }
+}

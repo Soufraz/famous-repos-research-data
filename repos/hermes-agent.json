@@ -1,0 +1,663 @@
+{
+  "repo": "hermes-agent",
+  "full_name": "NousResearch/hermes-agent",
+  "stars": 261582,
+  "stars_source": "github-api 2026-11-08T08:43:53Z",
+  "selection_topics": [
+    "ai-agents",
+    "llm"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2025-07-22T22:22:28Z",
+    "description": "The agent that grows with you",
+    "fork": false,
+    "forks": 58074,
+    "full_name": "NousResearch/hermes-agent",
+    "pushed_at": "2026-11-08T08:43:23Z",
+    "stars": 261582,
+    "fetched_at": "2026-11-08T08:43:53Z"
+  },
+  "url": "https://github.com/NousResearch/hermes-agent",
+  "description": "The agent that grows with you",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "21ae0e1238fdf466fa52a85a6ebf75d6899e49da",
+    "head_date": "2026-11-07T19:38:20-08:00",
+    "history_complete": true,
+    "non_merge_commits": 60171,
+    "merge_commits": 3685,
+    "maintenance_bot_commits": 484,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 1713,
+    "explicit_ai_pct": 2.9,
+    "by_tool": {
+      "claude": 1080,
+      "other": 405,
+      "cursor": 178,
+      "copilot": 26,
+      "codex": 13,
+      "devin": 9,
+      "orca": 1,
+      "gemini": 1
+    },
+    "by_signal": {
+      "co-author": 1354,
+      "agent-author": 353,
+      "footer": 6
+    },
+    "recent_180d": {
+      "commits": 52395,
+      "ai_pct": 2.8,
+      "fix_pct": 53.0
+    },
+    "first_365d": {
+      "commits": 15627,
+      "ai_pct": 3.7,
+      "fix_pct": 58.7
+    },
+    "bot_commit_count": 484,
+    "agent_config": {
+      "files": {
+        "AGENTS.md": "2026-02-02T19:45:42-08:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2026-02-02T19:45:42-08:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 59687,
+    "first_commit_date": "2025-07-22T18:32:44-07:00",
+    "last_commit_date": "2026-10-09T02:46:42+08:00",
+    "current_loc": 4244896,
+    "total_historical_additions": 7897402,
+    "total_historical_deletions": 3687101,
+    "total_churn": 11584503,
+    "churn_ratio": 2.73,
+    "survival_rate_pct": 53.8,
+    "code": {
+      "current_loc": 3880145,
+      "additions": 7318067,
+      "deletions": 3471370,
+      "churn_ratio": 2.78,
+      "survival_rate_pct": 53.0
+    },
+    "docs": {
+      "current_loc": 364751,
+      "additions": 579335,
+      "deletions": 215731,
+      "churn_ratio": 2.18,
+      "survival_rate_pct": 63.0
+    },
+    "fix_commits": 31959,
+    "fix_pct": 53.5,
+    "revert_commits": 165,
+    "revert_pct": 0.3,
+    "trial_error_commits": 32111,
+    "trial_error_pct": 53.8,
+    "rapid_fire_commits": 16715,
+    "rapid_fire_pct": 28.0,
+    "trial_error_chains": 7309,
+    "suspicious_additions_count": 914,
+    "top5_hotspot_volatility_pct": 2.4
+  },
+  "code_hygiene": {
+    "total_files": 16562,
+    "docs_files": 1285,
+    "avg_file_loc": 234.3,
+    "test_loc": 2095721,
+    "test_files": 10324,
+    "test_ratio_pct": 54.0,
+    "comment_ratio_pct": 9.6,
+    "monolith_count": 534,
+    "top_languages": {
+      ".py": 2680070,
+      ".ts": 706375,
+      ".tsx": 389087,
+      ".mjs": 60513,
+      ".sh": 13722
+    }
+  },
+  "authors": {
+    "unique_authors": 4817,
+    "top_authors": [
+      {
+        "name": "Teknium",
+        "commits": 17421,
+        "pct": 29.2
+      },
+      {
+        "name": "teknium1",
+        "commits": 7300,
+        "pct": 12.2
+      },
+      {
+        "name": "kshitijk4poor",
+        "commits": 4716,
+        "pct": 7.9
+      },
+      {
+        "name": "Brooklyn Nicholson",
+        "commits": 3198,
+        "pct": 5.4
+      },
+      {
+        "name": "ethernet",
+        "commits": 1986,
+        "pct": 3.3
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 828.8,
+    "p75": 4980.0,
+    "p90": 12840.0,
+    "p95": 22080.0,
+    "p99": 76260.0,
+    "avg": 6401.9
+  },
+  "hotspots": [
+    {
+      "file": "gateway/run.py",
+      "commits": 2059,
+      "additions": 93882,
+      "deletions": 88501,
+      "churn": 182383,
+      "first_seen": "2026-02-02T19:01:51-08:00",
+      "last_seen": "2026-11-07T16:38:26+05:30"
+    },
+    {
+      "file": "scripts/release.py",
+      "commits": 1370,
+      "additions": 3861,
+      "deletions": 3128,
+      "churn": 6989,
+      "first_seen": "2026-03-12T01:35:47-07:00",
+      "last_seen": "2026-10-14T15:51:18-04:00"
+    },
+    {
+      "file": "run_agent.py",
+      "commits": 1359,
+      "additions": 39446,
+      "deletions": 37330,
+      "churn": 76776,
+      "first_seen": "2025-07-22T18:32:44-07:00",
+      "last_seen": "2026-11-07T04:38:18+05:30"
+    },
+    {
+      "file": "cli.py",
+      "commits": 1292,
+      "additions": 45488,
+      "deletions": 43787,
+      "churn": 89275,
+      "first_seen": "2026-01-31T06:30:48Z",
+      "last_seen": "2026-11-07T04:57:37+05:30"
+    },
+    {
+      "file": "hermes_cli/main.py",
+      "commits": 1230,
+      "additions": 40273,
+      "deletions": 37298,
+      "churn": 77571,
+      "first_seen": "2026-02-02T19:01:51-08:00",
+      "last_seen": "2026-11-07T04:38:18+05:30"
+    },
+    {
+      "file": "hermes_cli/config.py",
+      "commits": 1039,
+      "additions": 19735,
+      "deletions": 15799,
+      "churn": 35534,
+      "first_seen": "2026-02-02T19:01:51-08:00",
+      "last_seen": "2026-11-07T11:11:41+05:30"
+    },
+    {
+      "file": "tui_gateway/server.py",
+      "commits": 1022,
+      "additions": 39008,
+      "deletions": 36714,
+      "churn": 75722,
+      "first_seen": "2026-04-02T19:06:42-05:00",
+      "last_seen": "2026-09-29T12:34:47+10:00"
+    },
+    {
+      "file": "apps/desktop/electron/main.ts",
+      "commits": 941,
+      "additions": 28476,
+      "deletions": 17756,
+      "churn": 46232,
+      "first_seen": "2026-06-29T16:31:36-04:00",
+      "last_seen": "2026-11-07T15:14:02-08:00"
+    },
+    {
+      "file": "hermes_cli/web_server.py",
+      "commits": 779,
+      "additions": 32544,
+      "deletions": 30890,
+      "churn": 63434,
+      "first_seen": "2026-04-12T22:26:28-07:00",
+      "last_seen": "2026-11-07T01:24:14-08:00"
+    },
+    {
+      "file": "agent/auxiliary_client.py",
+      "commits": 720,
+      "additions": 26078,
+      "deletions": 17739,
+      "churn": 43817,
+      "first_seen": "2026-02-22T02:16:11-08:00",
+      "last_seen": "2026-11-01T21:00:42-08:00"
+    },
+    {
+      "file": "cron/scheduler.py",
+      "commits": 625,
+      "additions": 18851,
+      "deletions": 14346,
+      "churn": 33197,
+      "first_seen": "2026-02-02T08:26:42-08:00",
+      "last_seen": "2026-10-25T22:27:45-07:00"
+    },
+    {
+      "file": "hermes_state.py",
+      "commits": 602,
+      "additions": 34742,
+      "deletions": 33081,
+      "churn": 67823,
+      "first_seen": "2026-02-19T00:57:31-08:00",
+      "last_seen": "2026-11-07T04:56:17+05:30"
+    },
+    {
+      "file": "agent/context_compressor.py",
+      "commits": 590,
+      "additions": 19086,
+      "deletions": 13357,
+      "churn": 32443,
+      "first_seen": "2026-02-21T22:31:43-08:00",
+      "last_seen": "2026-11-07T16:38:26+05:30"
+    },
+    {
+      "file": "website/docs/user-guide/configuration.md",
+      "commits": 560,
+      "additions": 5376,
+      "deletions": 1748,
+      "churn": 7124,
+      "first_seen": "2026-03-05T05:24:55-08:00",
+      "last_seen": "2026-11-07T14:23:56-08:00"
+    },
+    {
+      "file": "hermes_cli/models.py",
+      "commits": 555,
+      "additions": 13769,
+      "deletions": 10961,
+      "churn": 24730,
+      "first_seen": "2026-02-22T02:16:11-08:00",
+      "last_seen": "2026-10-27T14:32:06-07:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "tests/tui_gateway/test_tui_gateway_server.py",
+      "loc": 22354
+    },
+    {
+      "file": "apps/desktop/electron/main.ts",
+      "loc": 18038
+    },
+    {
+      "file": "agent/auxiliary_client.py",
+      "loc": 8281
+    },
+    {
+      "file": "plugins/platforms/telegram/adapter.py",
+      "loc": 7385
+    },
+    {
+      "file": "plugins/platforms/discord/adapter.py",
+      "loc": 7308
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "a6c223a81170f51425cf3fa4985f7afda62fd182",
+      "short_hash": "a6c223a811",
+      "author": "Sarah Lam",
+      "date": "2026-11-06T13:39:27-05:00",
+      "subject": "catalog: add lovedone-family (LovedOne Family Inbox)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "2906e9b7505f27cdf0725f8f452981ceb67c31fb",
+      "short_hash": "2906e9b750",
+      "author": "Teknium",
+      "date": "2026-11-07T16:51:52-08:00",
+      "subject": "chore(catalog): review chores for lovedone-soft",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "6a6faeec0f8a8cc0fdb14452df5410d1021b8700",
+      "short_hash": "6a6faeec0f",
+      "author": "Sarah Lam",
+      "date": "2026-11-06T13:39:31-05:00",
+      "subject": "catalog: add lovedone-soft (LovedOne Soft)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "11b2b4414f8ac623ca0f12811d4048d1760d9a08",
+      "short_hash": "11b2b4414f",
+      "author": "Teknium",
+      "date": "2026-11-07T18:55:24-08:00",
+      "subject": "fix(catalog): payload scan treats JSON-LD and Turtle archive members as source",
+      "coauthors": [],
+      "additions": 4,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "c29e1ba5dca9ace045becddf2fa553bed28d7837",
+      "short_hash": "c29e1ba5dc",
+      "author": "Teknium",
+      "date": "2026-11-07T16:33:53-08:00",
+      "subject": "chore: map contributor email for blazephoenixxyz-crypto",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "edd3f4fa53733eaeba3582424b8ebe69e022b5ee",
+      "short_hash": "edd3f4fa53",
+      "author": "Mitra",
+      "date": "2026-11-07T00:11:45+01:00",
+      "subject": "plugin-catalog: add BlazePhoenix",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "c4ad21388d4b70b3aac9d33caaeee8237793b82a",
+      "short_hash": "c4ad21388d",
+      "author": "Teknium",
+      "date": "2026-11-07T18:50:24-08:00",
+      "subject": "chore(catalog): drop dxmt's manual uv pip known_issue (deps come from its pyproject via plugins install)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "62587c95e8f1f6761350db856b2a0198e87e1cc3",
+      "short_hash": "62587c95e8",
+      "author": "Teknium",
+      "date": "2026-11-07T16:55:28-08:00",
+      "subject": "chore: map contributor emails for the maintainer copies",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "a148dd7a603c2353eda7fe29c39c0c2c19dd468e",
+      "short_hash": "a148dd7a60",
+      "author": "Teknium",
+      "date": "2026-11-07T16:55:20-08:00",
+      "subject": "chore(catalog): review disclosures and floors for the maintainer copies",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "0ccdef01e0a8019db35e3b2e38616edc4ccf5897",
+      "short_hash": "0ccdef01e0",
+      "author": "Elie Habib",
+      "date": "2026-11-07T16:54:37-08:00",
+      "subject": "feat(plugin-catalog): add worldmonitor (#150167)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "e4ec13af8ab8aa4125f8871434b24edf51c0fb0b",
+      "short_hash": "e4ec13af8a",
+      "author": "Adarsh Divakaran",
+      "date": "2026-11-07T16:54:37-08:00",
+      "subject": "feat(plugin-catalog): add serpapi (#149658)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "ee9861092baf911ef87a66a507976ed623522f8e",
+      "short_hash": "ee9861092b",
+      "author": "pushkarsingh32",
+      "date": "2026-11-07T16:54:36-08:00",
+      "subject": "feat(plugin-catalog): add getyoutubetranscript (#150603)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "b697c6b49fc124a7d22eaba78da6185fdcc7f3c0",
+      "short_hash": "b697c6b49f",
+      "author": "HungryHippo14",
+      "date": "2026-11-07T16:54:35-08:00",
+      "subject": "feat(plugin-catalog): add loci (#150211)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "7569dd626553a01eca6a34ab7a2deb7dcbcfab40",
+      "short_hash": "7569dd6265",
+      "author": "Charles Bonetti",
+      "date": "2026-11-07T16:54:34-08:00",
+      "subject": "feat(plugin-catalog): add helm (#150160)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "7d03e61f68073c6d6b30be232bf0dc08242a91be",
+      "short_hash": "7d03e61f68",
+      "author": "eric-epsilla",
+      "date": "2026-11-07T16:54:33-08:00",
+      "subject": "feat(plugin-catalog): add dxmt (#150069)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "e0d06fefb1339162515f5a4d93cdcd6ec75e4ccb",
+      "short_hash": "e0d06fefb1",
+      "author": "bensynapse",
+      "date": "2026-11-07T16:54:32-08:00",
+      "subject": "feat(plugin-catalog): add faxforagents (#148907)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "6d968fdd3bc8b7ca2c1feb0866db2bcfac6a760c",
+      "short_hash": "6d968fdd3b",
+      "author": "Jorge de los Santos",
+      "date": "2026-11-07T16:54:32-08:00",
+      "subject": "feat(plugin-catalog): add eventforge (#149194)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "55f5204ab981f51784b7b405a8eb1bef85e24cee",
+      "short_hash": "55f5204ab9",
+      "author": "Teknium",
+      "date": "2026-11-07T16:34:53-08:00",
+      "subject": "chore: map contributor email for Grizaceo",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "62aec155dbabf1eb5d8d78413ab499243f295af0",
+      "short_hash": "62aec155db",
+      "author": "Grizaceo",
+      "date": "2026-11-06T20:02:20-03:00",
+      "subject": "feat(plugin-catalog): add dike plugin",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "21ae0e1238fdf466fa52a85a6ebf75d6899e49da",
+      "short_hash": "21ae0e1238",
+      "author": "liuhao1024",
+      "date": "2026-10-09T02:46:42+08:00",
+      "subject": "fix(deps): pin av 18.1.0 alongside faster-whisper 1.2.1",
+      "coauthors": [],
+      "additions": 33,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "repo": "browser-use",
+  "head_commit": "b49a68e4",
+  "published_results": [
+    {
+      "claim": "stealth browsers from $0.02/hour, top score (90.5%) on [Stealth Bench V2](https://browser-use.com/benchmarks/browsers).",
+      "metric": "Share of visits that got through bot protection (100 bot-protected sites, 2 visits each)",
+      "value": "90.5% (Browser Use Cloud)",
+      "baseline": "Anchor 82%, Kernel 80.5%, Browserbase 78.5% (CLOUD.md:26)",
+      "evidence_type": "external",
+      "files": [
+        "README.md:50",
+        "CLOUD.md:26"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Caveat: the sites were picked because Browser Use Cloud historically got through where stock Chrome with a US proxy did not, so they are hard on purpose and not a balanced sample",
+      "metric": "Selection-bias disclosure for Stealth Bench V2",
+      "value": null,
+      "baseline": null,
+      "evidence_type": "external",
+      "files": [
+        "CLOUD.md:26"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Browser Use Benchmark v2 - Mean rubric score by model and cost per task (image); \"Results shown are from a 60-task subset of BU Bench V2.\"",
+      "metric": "Mean rubric score vs cost per task (USD) per LLM driving the agent",
+      "value": "Only explicit printed value in the chart: \"GPT-6 ASTRA 77.3%\"; other models shown as named points without printed scores",
+      "baseline": "other LLMs on the same chart (no numeric labels)",
+      "evidence_type": "results_only",
+      "files": [
+        "README.md:223-227",
+        "static/hard_benchmark_v2.jpg"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "No published numbers. \"Runs all agent tasks in parallel ... Fails with exit code 1 if 0% of tasks pass.\"",
+      "metric": "LLM-judged agent task success on tests/agent_tasks/*.yaml (2 tasks)",
+      "value": null,
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "tests/ci/evaluate_tasks.py:1-5",
+        "tests/agent_tasks/README.md",
+        ".github/workflows/eval-on-pr.yml:12-40"
+      ],
+      "reproduce_command": null
+    }
+  ],
+  "strongest_evidence_type": "results_only",
+  "summary": "browser-use publishes two benchmarks of its own, both run outside this repository. On Stealth Bench V2 (100 bot-protected sites, 2 visits each), Browser Use Cloud got through on 90.5% of visits against Anchor 82%, Kernel 80.5% and Browserbase 78.5%, and CLOUD.md:26 states that the sites were picked because Browser Use Cloud historically got through where stock Chrome with a US proxy did not, so they are not a balanced sample. The BU Bench V2 chart in the README (a 60-task subset) is a JPEG that prints one score, 77.3% for GPT-6 ASTRA, and plots the other models without printed values. The runner and logs are in a separate repository (github.com/browser-use/benchmark), PR evaluations are sent to an eval platform whose URL and key are GitHub secrets (.github/workflows/eval-on-pr.yml:35-36), and tests/agent_tasks/README.md points to tests/ci/test_agent_real_tasks.py, which is not in the repository, so none of these numbers can be reproduced from this clone.",
+  "result_focus": "outcome",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself",
+  "accuracy_check": {
+    "date": "2026-11-08",
+    "numbers_checked": 9,
+    "corrections": [
+      "Secret references cited as .github/workflows/eval-on-pr.yml:34-35; EVAL_PLATFORM_URL and EVAL_PLATFORM_KEY are at lines 35-36",
+      "published_results[2].value said the other models are 'unlabelled points'; static/hard_benchmark_v2.jpg labels them by name but prints no scores for them"
+    ]
+  }
+}

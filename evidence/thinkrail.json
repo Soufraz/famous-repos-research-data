@@ -1,0 +1,35 @@
+{
+  "repo": "thinkrail",
+  "head_commit": "519286be",
+  "published_results": [
+    {
+      "claim": "Restored chats no longer sit blank for about 0.7 s waiting on the file watcher, and they skip an extra ~300 ms skeleton ... file opens skip a Monaco wrapper that cost 50–65 ms each time",
+      "metric": "UI latency removed (restored-chat blank time, skeleton time, per-file-open wrapper cost)",
+      "value": "about 0.7 s + ~300 ms removed on chat restore; 50–65 ms removed per file open",
+      "baseline": "Pre-0.3.0 behavior",
+      "evidence_type": "claim_only",
+      "files": [
+        "apps/website/content/blog/2026-10-29-thinkrail-0-3-0-whole-loop-one-window/index.md:85"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "`bun run perf:render [--runs N] [--out file] [--cpu N] [--scenario a,b] [playwright args]` is an opt-in ... the runner reports medians and run-to-run spread",
+      "metric": "Client render cost per scenario (React profiler commits/self ms, long tasks, rAF frame gaps p50/p95/max, CDP main-thread ms, heap delta) on replayed deterministic event streams",
+      "value": "No results committed (default output goes to $TMPDIR/thinkrail-render-profile.json)",
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "e2e/SPEC.md:179-226",
+        "e2e/perf/run.ts:16-18",
+        "e2e/perf/render.perf.ts",
+        "package.json (scripts.perf:render)"
+      ],
+      "reproduce_command": "bun run perf:render --runs 5"
+    }
+  ],
+  "strongest_evidence_type": "harness_only",
+  "summary": "ThinkRail publishes no benchmark or evaluation results: README and docs make no quantitative performance claims, and the only numbers are release-blog speed notes for 0.3.0 (about 0.7 s and ~300 ms removed from chat restore, 50–65 ms per file open) with no method or data. It does ship a well-specified opt-in Playwright render-profiling harness (bun run perf:render, e2e/perf/) that measures client rendering on replayed streams. The harness writes to a temp file, and no output is committed.",
+  "result_focus": "engineering",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}

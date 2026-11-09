@@ -1,0 +1,49 @@
+{
+  "repo": "dify",
+  "head_commit": "208a2489",
+  "published_results": [
+    {
+      "claim": "It measures connection counts, event throughput, time to first event (TTFE), stream duration, inter-event latency, and failures.",
+      "metric": "SSE streaming of POST /v1/workflows/run under Locust load against a local Dify instance with a mock OpenAI server",
+      "value": "No results committed (scripts/stress-test/reports/ is gitignored); README states the mock-provider workload 'does not establish real-model latency or a universal production capacity threshold'",
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "scripts/stress-test/README.md:1-3",
+        "scripts/stress-test/README.md:36-50",
+        "scripts/stress-test/README.md:76-87",
+        "scripts/stress-test/sse_benchmark.py"
+      ],
+      "reproduce_command": "./scripts/stress-test/run_locust_stress_test.sh (after uv run --project api python scripts/stress-test/setup_all.py and the mock provider are running)"
+    },
+    {
+      "claim": "End-to-end benchmarks that drive the real shellctl HTTP API in-process.",
+      "metric": "dify-agent-runtime shellctl POST /v1/jobs/run latency (Go benchmarks BenchmarkE2E_RunEcho, BenchmarkE2E_RunEchoParallel, BenchmarkE2E_RunEchoUnderMonitorLoad)",
+      "value": "No results committed; the header describes a before/after workflow (before.txt / after.txt) whose outputs are not in the repo, and perf_test.go referenced there is not in the tree",
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "dify-agent-runtime/benchmarks/e2e_test.go:1-20",
+        "dify-agent-runtime/benchmarks/e2e_test.go:154",
+        "dify-agent-runtime/benchmarks/e2e_test.go:174",
+        "dify-agent-runtime/benchmarks/e2e_test.go:193"
+      ],
+      "reproduce_command": "cd dify-agent-runtime && go test ./benchmarks/ -bench E2E -run '^$' -benchtime 200x"
+    },
+    {
+      "claim": "Benchmark: OceanBase vector store — old (single-row) vs new (batch) insertion, metadata query with/without functional index, and vector search across metrics.",
+      "metric": "Dify OceanBase vector-store adapter: insertion time (single-row vs batch), metadata query with/without functional index, vector search per distance metric",
+      "value": "No results committed",
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "api/providers/vdb/vdb-oceanbase/tests/e2e_tests/bench_oceanbase.py:1-7"
+      ],
+      "reproduce_command": "uv run --project api python api/packages/dify-vdb-oceanbase/tests/bench_oceanbase.py (documented path; the file is now at api/providers/vdb/vdb-oceanbase/tests/e2e_tests/bench_oceanbase.py)"
+    }
+  ],
+  "strongest_evidence_type": "harness_only",
+  "summary": "Dify publishes no quantitative results about its own performance: the README, docs/ and the package CHANGELOG contain no accuracy, latency, throughput or cost figures. It ships three runnable harnesses with no committed output: a Locust SSE stress test of POST /v1/workflows/run against a mock OpenAI server (whose README says the workload 'does not establish real-model latency or a universal production capacity threshold'), Go end-to-end benchmarks for the dify-agent-runtime shellctl API, and an OceanBase vector-store insertion/search benchmark.",
+  "result_focus": "none",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}

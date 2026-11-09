@@ -1,0 +1,649 @@
+{
+  "repo": "PageIndex",
+  "full_name": "VectifyAI/PageIndex",
+  "stars": 40181,
+  "stars_source": "github-api 2026-11-08T09:01:04Z",
+  "selection_topics": [
+    "context-engineering"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2025-04-01T10:53:54Z",
+    "description": "📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG",
+    "fork": false,
+    "forks": 3457,
+    "full_name": "VectifyAI/PageIndex",
+    "pushed_at": "2026-11-08T08:12:28Z",
+    "stars": 40181,
+    "fetched_at": "2026-11-08T09:01:04Z"
+  },
+  "url": "https://github.com/VectifyAI/PageIndex",
+  "description": "📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "2ac8694bf8fe89a3840dda9bdb88db5119b77fc4",
+    "head_date": "2026-11-05T22:45:45+08:00",
+    "history_complete": true,
+    "non_merge_commits": 503,
+    "merge_commits": 65,
+    "maintenance_bot_commits": 3,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 3,
+    "explicit_ai_pct": 0.6,
+    "by_tool": {
+      "copilot": 2,
+      "claude": 1
+    },
+    "by_signal": {
+      "agent-author": 2,
+      "co-author": 1
+    },
+    "recent_180d": {
+      "commits": 239,
+      "ai_pct": 0.0,
+      "fix_pct": 22.2
+    },
+    "first_365d": {
+      "commits": 252,
+      "ai_pct": 1.2,
+      "fix_pct": 28.2
+    },
+    "bot_commit_count": 3,
+    "agent_config": {
+      "files": {},
+      "ci_agent_workflows": [],
+      "has_agent_config": false,
+      "first_config_date": null
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 500,
+    "first_commit_date": "2025-04-01T18:54:08+08:00",
+    "last_commit_date": "2026-11-05T22:45:45+08:00",
+    "current_loc": 53630,
+    "total_historical_additions": 64133,
+    "total_historical_deletions": 10503,
+    "total_churn": 74636,
+    "churn_ratio": 1.39,
+    "survival_rate_pct": 83.6,
+    "code": {
+      "current_loc": 53287,
+      "additions": 61396,
+      "deletions": 8109,
+      "churn_ratio": 1.3,
+      "survival_rate_pct": 86.8
+    },
+    "docs": {
+      "current_loc": 343,
+      "additions": 2737,
+      "deletions": 2394,
+      "churn_ratio": 14.96,
+      "survival_rate_pct": 12.5
+    },
+    "fix_commits": 125,
+    "fix_pct": 25.0,
+    "revert_commits": 0,
+    "revert_pct": 0.0,
+    "trial_error_commits": 126,
+    "trial_error_pct": 25.2,
+    "rapid_fire_commits": 40,
+    "rapid_fire_pct": 8.0,
+    "trial_error_chains": 15,
+    "suspicious_additions_count": 12,
+    "top5_hotspot_volatility_pct": 16.9
+  },
+  "code_hygiene": {
+    "total_files": 113,
+    "docs_files": 2,
+    "avg_file_loc": 471.6,
+    "test_loc": 19924,
+    "test_files": 14,
+    "test_ratio_pct": 37.4,
+    "comment_ratio_pct": 8.7,
+    "monolith_count": 11,
+    "top_languages": {
+      ".py": 53287
+    }
+  },
+  "authors": {
+    "unique_authors": 18,
+    "top_authors": [
+      {
+        "name": "Ray",
+        "commits": 335,
+        "pct": 67.0
+      },
+      {
+        "name": "Mingtian Zhang",
+        "commits": 47,
+        "pct": 9.4
+      },
+      {
+        "name": "BukeLy",
+        "commits": 34,
+        "pct": 6.8
+      },
+      {
+        "name": "张鸣天",
+        "commits": 24,
+        "pct": 4.8
+      },
+      {
+        "name": "Savio Dsouza",
+        "commits": 16,
+        "pct": 3.2
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 0.8,
+    "p75": 2.4,
+    "p90": 15.1,
+    "p95": 133.9,
+    "p99": 4980.0,
+    "avg": 200.3
+  },
+  "hotspots": [
+    {
+      "file": "README.md",
+      "commits": 212,
+      "additions": 2191,
+      "deletions": 1928,
+      "churn": 4119,
+      "first_seen": "2025-04-01T18:54:08+08:00",
+      "last_seen": "2026-10-27T14:06:12Z"
+    },
+    {
+      "file": "pageindex/client.py",
+      "commits": 71,
+      "additions": 4314,
+      "deletions": 1273,
+      "churn": 5587,
+      "first_seen": "2026-03-26T23:19:50+08:00",
+      "last_seen": "2026-11-05T22:45:45+08:00"
+    },
+    {
+      "file": "pageindex/utils.py",
+      "commits": 49,
+      "additions": 2148,
+      "deletions": 615,
+      "churn": 2763,
+      "first_seen": "2025-04-06T21:49:16+08:00",
+      "last_seen": "2026-11-05T22:45:45+08:00"
+    },
+    {
+      "file": "tests/test_client.py",
+      "commits": 49,
+      "additions": 5162,
+      "deletions": 267,
+      "churn": 5429,
+      "first_seen": "2026-08-11T21:52:03+08:00",
+      "last_seen": "2026-11-05T22:45:45+08:00"
+    },
+    {
+      "file": "pageindex/local_chat.py",
+      "commits": 42,
+      "additions": 3727,
+      "deletions": 1066,
+      "churn": 4793,
+      "first_seen": "2026-08-13T07:32:11+08:00",
+      "last_seen": "2026-11-05T22:45:45+08:00"
+    },
+    {
+      "file": "pageindex/page_index.py",
+      "commits": 42,
+      "additions": 644,
+      "deletions": 416,
+      "churn": 1060,
+      "first_seen": "2025-04-06T21:49:16+08:00",
+      "last_seen": "2026-08-02T17:56:37+08:00"
+    },
+    {
+      "file": "tests/test_local_chat.py",
+      "commits": 36,
+      "additions": 7890,
+      "deletions": 586,
+      "churn": 8476,
+      "first_seen": "2026-08-13T07:32:11+08:00",
+      "last_seen": "2026-11-05T22:45:45+08:00"
+    },
+    {
+      "file": "run_pageindex.py",
+      "commits": 26,
+      "additions": 401,
+      "deletions": 185,
+      "churn": 586,
+      "first_seen": "2025-04-06T21:49:16+08:00",
+      "last_seen": "2026-11-05T22:45:45+08:00"
+    },
+    {
+      "file": "pageindex/cloud_api.py",
+      "commits": 25,
+      "additions": 750,
+      "deletions": 110,
+      "churn": 860,
+      "first_seen": "2026-08-11T21:52:03+08:00",
+      "last_seen": "2026-11-04T18:50:49+08:00"
+    },
+    {
+      "file": "tests/test_agent_tools.py",
+      "commits": 22,
+      "additions": 4064,
+      "deletions": 390,
+      "churn": 4454,
+      "first_seen": "2026-08-13T07:32:11+08:00",
+      "last_seen": "2026-10-30T06:22:48+08:00"
+    },
+    {
+      "file": "pageindex/agent_tools.py",
+      "commits": 21,
+      "additions": 2180,
+      "deletions": 399,
+      "churn": 2579,
+      "first_seen": "2026-08-13T07:32:11+08:00",
+      "last_seen": "2026-10-20T14:34:11+08:00"
+    },
+    {
+      "file": "pageindex/local_api.py",
+      "commits": 20,
+      "additions": 554,
+      "deletions": 116,
+      "churn": 670,
+      "first_seen": "2026-08-11T21:52:03+08:00",
+      "last_seen": "2026-11-05T22:45:45+08:00"
+    },
+    {
+      "file": "pageindex/flash/api.py",
+      "commits": 19,
+      "additions": 463,
+      "deletions": 143,
+      "churn": 606,
+      "first_seen": "2026-07-30T20:30:16+08:00",
+      "last_seen": "2026-11-05T22:45:45+08:00"
+    },
+    {
+      "file": "pageindex/tree_optimize.py",
+      "commits": 16,
+      "additions": 1278,
+      "deletions": 130,
+      "churn": 1408,
+      "first_seen": "2026-08-01T17:56:04+08:00",
+      "last_seen": "2026-10-30T06:22:48+08:00"
+    },
+    {
+      "file": "pageindex/page_index_md.py",
+      "commits": 16,
+      "additions": 448,
+      "deletions": 103,
+      "churn": 551,
+      "first_seen": "2025-08-25T20:57:44+01:00",
+      "last_seen": "2026-08-21T21:35:45+08:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "tests/test_local_chat.py",
+      "loc": 7304
+    },
+    {
+      "file": "tests/test_client.py",
+      "loc": 4895
+    },
+    {
+      "file": "tests/test_agent_tools.py",
+      "loc": 3674
+    },
+    {
+      "file": "pageindex/client.py",
+      "loc": 3041
+    },
+    {
+      "file": "pageindex/local_chat.py",
+      "loc": 2661
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "8e33c6581c0252359ba2c6a72c66f4bfef51e38f",
+      "short_hash": "8e33c65",
+      "author": "BukeLy",
+      "date": "2026-10-26T16:32:17+08:00",
+      "subject": "docs(cookbook): the metadata notebook declares fields only where none apply and ends at reading tags back",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "a71b3b0c654e58c28dc375d6747b8dd0d08768f1",
+      "short_hash": "a71b3b0",
+      "author": "BukeLy",
+      "date": "2026-10-26T16:34:08+08:00",
+      "subject": "docs(cookbook): the metadata notebook's tagline drops asking by tag, which moved to the search notebook",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "48cfbfe622a6faa3a39bd4ef678790fc98cdd14c",
+      "short_hash": "48cfbfe",
+      "author": "BukeLy",
+      "date": "2026-10-26T16:38:07+08:00",
+      "subject": "docs(cookbook): metadata notebooks drop the schema-missing guard, repeated rules and hedged wording",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "6c2f663bb18425f503276e5c45a2f6379f78abf0",
+      "short_hash": "6c2f663",
+      "author": "BukeLy",
+      "date": "2026-10-26T16:43:27+08:00",
+      "subject": "docs(cookbook): the search notebook stores each cell's streamed text as one output, as Jupyter saves it",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "beb3254797669cba14c310040d3b1d6d2d375da4",
+      "short_hash": "beb3254",
+      "author": "BukeLy",
+      "date": "2026-10-26T17:03:45+08:00",
+      "subject": "docs(cookbook): the metadata notebook shows the folder's declared fields after declaring them",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "9a981b90547dc2e49c18530bb81107fda06bedb6",
+      "short_hash": "9a981b9",
+      "author": "BukeLy",
+      "date": "2026-10-26T17:16:43+08:00",
+      "subject": "docs(cookbook): the search notebook says the companies' fiscal years end in different months; AMD's and Intel's both end in December",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "6f5f0b75bba850299a7015b222a0043a9603c441",
+      "short_hash": "6f5f0b7",
+      "author": "BukeLy",
+      "date": "2026-10-26T17:28:22+08:00",
+      "subject": "docs(cookbook): one metadata notebook, in two parts: tag two filings with your key, then ask a 120-filing library by tag with the demo key",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "74b4e479e760f045283492ce97bb6bd96b7cca10",
+      "short_hash": "74b4e47",
+      "author": "BukeLy",
+      "date": "2026-10-26T17:35:36+08:00",
+      "subject": "docs(cookbook): the two filings in examples/documents use EDGAR's own file names, nvda-20240728.pdf and amd-20250628.pdf",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "4246e6ac332ddf8ba2260ca5bf086f01e3cd0223",
+      "short_hash": "4246e6a",
+      "author": "BukeLy",
+      "date": "2026-10-26T17:36:40+08:00",
+      "subject": "docs(cookbook): a rule above each part heading sets Part 1 and Part 2 apart",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "cd36d96cd6f8a9662b621ccda9ff318fdfb7d277",
+      "short_hash": "cd36d96",
+      "author": "BukeLy",
+      "date": "2026-10-26T17:54:17+08:00",
+      "subject": "docs(cookbook): the metadata notebook says metadata, as the SDK docs do, instead of tags",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "f9518927df075fc3bf59b0feade5009e92d919ef",
+      "short_hash": "f951892",
+      "author": "张鸣天",
+      "date": "2026-10-27T14:06:12Z",
+      "subject": "README: Page Search API at the top of the updates",
+      "coauthors": [],
+      "additions": 2,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "2e0f4dd35aa6a24c2dedfcf54678b0b0ad323ce8",
+      "short_hash": "2e0f4dd",
+      "author": "Ray",
+      "date": "2026-10-30T06:22:48+08:00",
+      "subject": "fix: every route keeps its reasoning across tool calls, retries follow the official SDK rule, \"none\" turns Claude's thinking off, Claude caches through gateways, claude-code/ summaries run as one workflow, and outgrown workarounds retire (#622)",
+      "coauthors": [],
+      "additions": 4439,
+      "deletions": 536,
+      "files_count": 22,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "646deeb650005885f44001471d15ab9eab1bbc13",
+      "short_hash": "646deeb",
+      "author": "Bukely_",
+      "date": "2026-11-02T20:43:37-08:00",
+      "subject": "perf(flash): sequential parse holds one page at a time instead of the whole document (#645)",
+      "coauthors": [],
+      "additions": 141,
+      "deletions": 69,
+      "files_count": 7,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "5df70b0f595e098449921b037aaaa88955431f69",
+      "short_hash": "5df70b0",
+      "author": "BukeLy",
+      "date": "2026-11-04T15:49:44+08:00",
+      "subject": "feat(cloud): submit_document(mode=\"flash\") builds the tree with Flash on the cloud",
+      "coauthors": [],
+      "additions": 18,
+      "deletions": 4,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "1ba268359f37ab8531c7960993f1732095c30122",
+      "short_hash": "1ba2683",
+      "author": "Ray",
+      "date": "2026-11-04T16:14:31+08:00",
+      "subject": "fix(cloud): Flash uploads keep node text, and near-miss mode spellings raise",
+      "coauthors": [],
+      "additions": 20,
+      "deletions": 7,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "2fade4e4eea96e08535e254445c0f5dae05f7706",
+      "short_hash": "2fade4e",
+      "author": "Ray",
+      "date": "2026-11-04T16:34:43+08:00",
+      "subject": "fix(cloud): submit_document(mode=) accepts only \"standard\" and \"flash\"",
+      "coauthors": [],
+      "additions": 10,
+      "deletions": 16,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "7ca5c82e0557761ef9e697000571052b47cf3138",
+      "short_hash": "7ca5c82",
+      "author": "BukeLy",
+      "date": "2026-11-04T17:08:45+08:00",
+      "subject": "fix(cloud): Flash uploads rely on the API keeping node text by default",
+      "coauthors": [],
+      "additions": 3,
+      "deletions": 4,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "83f4c1c91fa57645fd6abdc6bae56f91f747aa16",
+      "short_hash": "83f4c1c",
+      "author": "Ray",
+      "date": "2026-11-04T17:11:51+08:00",
+      "subject": "fix(cloud): mode=\"standard\" is local-only; cloud takes None or \"flash\"",
+      "coauthors": [],
+      "additions": 7,
+      "deletions": 14,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "4876e026d17c04a4188bd0e7e693e2301eddb1ae",
+      "short_hash": "4876e02",
+      "author": "Ray",
+      "date": "2026-11-04T18:50:49+08:00",
+      "subject": "fix(cloud): CloudAPI.submit_document docstring drops the OCR claim; a rejected mode is proven to send nothing (#658)",
+      "coauthors": [],
+      "additions": 3,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "2ac8694bf8fe89a3840dda9bdb88db5119b77fc4",
+      "short_hash": "2ac8694",
+      "author": "Ray",
+      "date": "2026-11-05T22:45:45+08:00",
+      "subject": "perf: summaries think the least each model takes, indexing stops paying for cache writes it never reads, and a chosen reasoning effort arrives as chosen (#659)",
+      "coauthors": [],
+      "additions": 1605,
+      "deletions": 192,
+      "files_count": 9,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

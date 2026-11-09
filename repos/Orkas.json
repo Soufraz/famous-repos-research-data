@@ -1,0 +1,651 @@
+{
+  "repo": "Orkas",
+  "full_name": "Orkas-AI/Orkas",
+  "stars": 9098,
+  "stars_source": "github-api 2026-11-08T09:05:47Z",
+  "selection_topics": [
+    "agent-harness"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2026-04-29T12:19:08Z",
+    "description": "Orkas is an open-source (MIT), local-first AI team for your desktop: a Commander turns your goal into to-dos and coordinates 16 built-in specialist agents plus Claude Code, Codex, OpenCode, OpenClaw and Hermes, with projects, scheduled automations and connectors. Free app for macOS & Windows; built-in models or your own keys.",
+    "fork": false,
+    "forks": 526,
+    "full_name": "Orkas-AI/Orkas",
+    "pushed_at": "2026-11-08T01:24:58Z",
+    "stars": 9098,
+    "fetched_at": "2026-11-08T09:05:47Z"
+  },
+  "url": "https://github.com/Orkas-AI/Orkas",
+  "description": "Orkas is an open-source (MIT), local-first AI team for your desktop: a Commander turns your goal into to-dos and coordinates 16 built-in specialist agents plus Claude Code, Codex, OpenCode, OpenClaw and Hermes, with projects, scheduled automations and connectors. Free app for macOS & Windows; built-in models or your own keys.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "9ba0e36bd1cb2e40e306c3e26d744ffb061bbca3",
+    "head_date": "2026-11-08T09:24:57+08:00",
+    "history_complete": true,
+    "non_merge_commits": 735,
+    "merge_commits": 175,
+    "maintenance_bot_commits": 0,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 38,
+    "explicit_ai_pct": 5.2,
+    "by_tool": {
+      "claude": 38
+    },
+    "by_signal": {
+      "co-author": 38
+    },
+    "recent_180d": {
+      "commits": 579,
+      "ai_pct": 2.2,
+      "fix_pct": 30.2
+    },
+    "first_365d": {
+      "commits": 735,
+      "ai_pct": 5.2,
+      "fix_pct": 26.7
+    },
+    "bot_commit_count": 0,
+    "agent_config": {
+      "files": {},
+      "ci_agent_workflows": [],
+      "has_agent_config": false,
+      "first_config_date": null
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 735,
+    "first_commit_date": "2026-04-29T20:00:15+08:00",
+    "last_commit_date": "2026-11-08T09:18:26+08:00",
+    "current_loc": 1887103,
+    "total_historical_additions": 2061650,
+    "total_historical_deletions": 170757,
+    "total_churn": 2232407,
+    "churn_ratio": 1.18,
+    "survival_rate_pct": 91.5,
+    "code": {
+      "current_loc": 1848732,
+      "additions": 2009399,
+      "deletions": 157623,
+      "churn_ratio": 1.17,
+      "survival_rate_pct": 92.0
+    },
+    "docs": {
+      "current_loc": 38371,
+      "additions": 52251,
+      "deletions": 13134,
+      "churn_ratio": 1.7,
+      "survival_rate_pct": 73.4
+    },
+    "fix_commits": 196,
+    "fix_pct": 26.7,
+    "revert_commits": 0,
+    "revert_pct": 0.0,
+    "trial_error_commits": 199,
+    "trial_error_pct": 27.1,
+    "rapid_fire_commits": 250,
+    "rapid_fire_pct": 34.0,
+    "trial_error_chains": 40,
+    "suspicious_additions_count": 86,
+    "top5_hotspot_volatility_pct": 9.8
+  },
+  "code_hygiene": {
+    "total_files": 2226,
+    "docs_files": 364,
+    "avg_file_loc": 830.5,
+    "test_loc": 443822,
+    "test_files": 1253,
+    "test_ratio_pct": 24.0,
+    "comment_ratio_pct": 3.1,
+    "monolith_count": 170,
+    "top_languages": {
+      ".cjs": 1052406,
+      ".ts": 686474,
+      ".js": 80214,
+      ".py": 20454,
+      ".mjs": 8168
+    }
+  },
+  "authors": {
+    "unique_authors": 17,
+    "top_authors": [
+      {
+        "name": "wyt",
+        "commits": 465,
+        "pct": 63.3
+      },
+      {
+        "name": "BlueSkyID666",
+        "commits": 84,
+        "pct": 11.4
+      },
+      {
+        "name": "CloudTianTian",
+        "commits": 55,
+        "pct": 7.5
+      },
+      {
+        "name": "aiservice",
+        "commits": 38,
+        "pct": 5.2
+      },
+      {
+        "name": "claw2",
+        "commits": 29,
+        "pct": 3.9
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 39.8,
+    "p75": 1061.1,
+    "p90": 21900.0,
+    "p95": 92580.0,
+    "p99": 529800.0,
+    "avg": 126727.0
+  },
+  "hotspots": [
+    {
+      "file": "src/renderer/modules/conversation.js",
+      "commits": 94,
+      "additions": 27578,
+      "deletions": 9113,
+      "churn": 36691,
+      "first_seen": "2026-04-29T20:00:15+08:00",
+      "last_seen": "2026-11-06T09:21:22+08:00"
+    },
+    {
+      "file": "src/main/features/group_chat/bus.ts",
+      "commits": 75,
+      "additions": 16378,
+      "deletions": 4431,
+      "churn": 20809,
+      "first_seen": "2026-04-29T20:00:15+08:00",
+      "last_seen": "2026-11-06T09:21:22+08:00"
+    },
+    {
+      "file": "src/main/ipc/index.ts",
+      "commits": 69,
+      "additions": 5335,
+      "deletions": 862,
+      "churn": 6197,
+      "first_seen": "2026-04-29T20:00:15+08:00",
+      "last_seen": "2026-11-04T23:22:50+08:00"
+    },
+    {
+      "file": "src/main/index.ts",
+      "commits": 65,
+      "additions": 2828,
+      "deletions": 877,
+      "churn": 3705,
+      "first_seen": "2026-04-29T20:00:15+08:00",
+      "last_seen": "2026-11-06T09:14:21+08:00"
+    },
+    {
+      "file": "src/renderer/modules/agents.js",
+      "commits": 58,
+      "additions": 6895,
+      "deletions": 1997,
+      "churn": 8892,
+      "first_seen": "2026-04-29T20:00:15+08:00",
+      "last_seen": "2026-11-04T23:22:47+08:00"
+    },
+    {
+      "file": "README.md",
+      "commits": 57,
+      "additions": 728,
+      "deletions": 445,
+      "churn": 1173,
+      "first_seen": "2026-04-29T20:00:15+08:00",
+      "last_seen": "2026-11-04T15:45:40+08:00"
+    },
+    {
+      "file": "src/renderer/modules/settings.js",
+      "commits": 54,
+      "additions": 4503,
+      "deletions": 1223,
+      "churn": 5726,
+      "first_seen": "2026-04-29T20:00:15+08:00",
+      "last_seen": "2026-10-27T21:19:36+08:00"
+    },
+    {
+      "file": "README.zh-CN.md",
+      "commits": 52,
+      "additions": 733,
+      "deletions": 456,
+      "churn": 1189,
+      "first_seen": "2026-04-29T20:00:15+08:00",
+      "last_seen": "2026-11-04T15:45:40+08:00"
+    },
+    {
+      "file": "src/main/features/agents.ts",
+      "commits": 48,
+      "additions": 4617,
+      "deletions": 1173,
+      "churn": 5790,
+      "first_seen": "2026-04-29T20:00:15+08:00",
+      "last_seen": "2026-11-08T09:17:15+08:00"
+    },
+    {
+      "file": "src/main/model/core-agent/client.ts",
+      "commits": 44,
+      "additions": 3163,
+      "deletions": 595,
+      "churn": 3758,
+      "first_seen": "2026-04-29T20:00:15+08:00",
+      "last_seen": "2026-11-04T23:22:44+08:00"
+    },
+    {
+      "file": "src/main/features/skills.ts",
+      "commits": 43,
+      "additions": 5280,
+      "deletions": 1068,
+      "churn": 6348,
+      "first_seen": "2026-04-29T20:00:15+08:00",
+      "last_seen": "2026-11-08T09:18:26+08:00"
+    },
+    {
+      "file": "src/main/prompts/chat_commander.md",
+      "commits": 41,
+      "additions": 1149,
+      "deletions": 1008,
+      "churn": 2157,
+      "first_seen": "2026-04-29T20:00:15+08:00",
+      "last_seen": "2026-11-04T23:22:47+08:00"
+    },
+    {
+      "file": "src/main/model/core-agent/local-tools.ts",
+      "commits": 40,
+      "additions": 8298,
+      "deletions": 1806,
+      "churn": 10104,
+      "first_seen": "2026-04-29T20:00:15+08:00",
+      "last_seen": "2026-11-04T23:22:45+08:00"
+    },
+    {
+      "file": "src/main/model/core-agent/runner.ts",
+      "commits": 40,
+      "additions": 3256,
+      "deletions": 1115,
+      "churn": 4371,
+      "first_seen": "2026-04-29T20:00:15+08:00",
+      "last_seen": "2026-11-04T23:22:45+08:00"
+    },
+    {
+      "file": "src/main/paths.ts",
+      "commits": 40,
+      "additions": 1166,
+      "deletions": 293,
+      "churn": 1459,
+      "first_seen": "2026-04-29T20:00:15+08:00",
+      "last_seen": "2026-10-17T20:19:59+08:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "bin/commercelayer-api-contracts.cjs",
+      "loc": 227205
+    },
+    {
+      "file": "bin/amazon-api-contracts.cjs",
+      "loc": 127936
+    },
+    {
+      "file": "bin/shopline-api-contracts.cjs",
+      "loc": 110978
+    },
+    {
+      "file": "bin/douyin-api-contracts.cjs",
+      "loc": 103913
+    },
+    {
+      "file": "bin/bigcommerce-api-contracts.cjs",
+      "loc": 98629
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "563efdf497f45fcc7cba41b6fbe31e8940890337",
+      "short_hash": "563efdf4",
+      "author": "wyt",
+      "date": "2026-11-04T23:22:48+08:00",
+      "subject": "Preserve local app, preview and browser lifecycle boundaries",
+      "coauthors": [],
+      "additions": 1429,
+      "deletions": 114,
+      "files_count": 26,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "00a15996df26a6e577e9269bd730d9d7f698d7ed",
+      "short_hash": "00a15996",
+      "author": "wyt",
+      "date": "2026-11-04T23:22:48+08:00",
+      "subject": "Improve video composition, product capture and recovery",
+      "coauthors": [],
+      "additions": 7971,
+      "deletions": 321,
+      "files_count": 68,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "b35d6f6f803a64afbf46abe38a7fb642697d0d86",
+      "short_hash": "b35d6f6f",
+      "author": "wyt",
+      "date": "2026-11-04T23:22:49+08:00",
+      "subject": "Retain native dependencies and diagnostic test execution",
+      "coauthors": [],
+      "additions": 510,
+      "deletions": 71,
+      "files_count": 19,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "52a805074311997cfa7e44ffe5083f90e7f5e3c0",
+      "short_hash": "52a80507",
+      "author": "wyt",
+      "date": "2026-11-04T23:22:49+08:00",
+      "subject": "Preserve desktop startup, background work and shutdown",
+      "coauthors": [],
+      "additions": 1722,
+      "deletions": 75,
+      "files_count": 26,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "1bc583fa7750591b3a0e39f98689a5b1f5253d60",
+      "short_hash": "1bc583fa",
+      "author": "wyt",
+      "date": "2026-11-04T23:22:50+08:00",
+      "subject": "Wire shared desktop controls, localized states and feature boundaries",
+      "coauthors": [],
+      "additions": 907,
+      "deletions": 144,
+      "files_count": 27,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "99ae36aa15e9f6fc8cb48add8926a20463f958f3",
+      "short_hash": "99ae36aa",
+      "author": "wyt",
+      "date": "2026-11-04T23:37:04+08:00",
+      "subject": "Use the prepared FFmpeg runtime in recovery fixtures",
+      "coauthors": [],
+      "additions": 11,
+      "deletions": 2,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "306052663ae9733fa6a7f26487ae46c2e1e824f0",
+      "short_hash": "30605266",
+      "author": "wyt",
+      "date": "2026-11-04T23:58:51+08:00",
+      "subject": "v2026.11.4",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "af19c79cf84791d6236b7847d4fbfa3b2b082511",
+      "short_hash": "af19c79c",
+      "author": "kevin",
+      "date": "2026-11-05T08:12:56+09:00",
+      "subject": "Keep the word \"basic\" in log text that is not a Basic credential",
+      "coauthors": [],
+      "additions": 23,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "678f06cfbb786d4b9c02ff59ece4d710c4eb21fa",
+      "short_hash": "678f06cf",
+      "author": "CloudTianTian",
+      "date": "2026-11-05T09:07:40+08:00",
+      "subject": "Keep initial search results at the top",
+      "coauthors": [],
+      "additions": 103,
+      "deletions": 2,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "311d64afeb76f7a15fac24d7b83c0f0a409ae5ce",
+      "short_hash": "311d64af",
+      "author": "BlueSkyID666",
+      "date": "2026-11-05T09:15:11+08:00",
+      "subject": "Show unsupported file guidance in the owner window",
+      "coauthors": [],
+      "additions": 93,
+      "deletions": 7,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "b691acd48b1bb72b9a49855873a694ed9cabfda6",
+      "short_hash": "b691acd4",
+      "author": "CloudTianTian",
+      "date": "2026-11-05T09:22:32+08:00",
+      "subject": "Preserve structured video provider rejection reasons",
+      "coauthors": [],
+      "additions": 143,
+      "deletions": 6,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "967c46b0d082809af82e5d03561866d7efe2d62d",
+      "short_hash": "967c46b0",
+      "author": "BlueSkyID666",
+      "date": "2026-11-06T09:11:26+08:00",
+      "subject": "Wait for history cleanup before reopening worker lanes",
+      "coauthors": [],
+      "additions": 104,
+      "deletions": 6,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "310c162452a007d0e315db9fd908f0b630c7de26",
+      "short_hash": "310c1624",
+      "author": "BlueSkyID666",
+      "date": "2026-11-06T09:14:21+08:00",
+      "subject": "Wait for history cleanup before reopening worker lanes",
+      "coauthors": [],
+      "additions": 12,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "bac006307819bff3a4cd4d886939c6cb5f151ac7",
+      "short_hash": "bac00630",
+      "author": "CloudTianTian",
+      "date": "2026-11-06T09:21:22+08:00",
+      "subject": "Preserve reply order when restoring active conversations",
+      "coauthors": [],
+      "additions": 176,
+      "deletions": 21,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "304a40a0ec0eb63df1ebc52797fa3d86db1af517",
+      "short_hash": "304a40a0",
+      "author": "wyt",
+      "date": "2026-11-06T10:22:55+08:00",
+      "subject": "fix: preserve Basic authentication privacy in diagnostics",
+      "coauthors": [],
+      "additions": 91,
+      "deletions": 10,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "ca48c16d27c5581f252f9d828d56acc8940b5a79",
+      "short_hash": "ca48c16d",
+      "author": "BlueSkyID666",
+      "date": "2026-11-07T09:06:40+08:00",
+      "subject": "Render visualization references with optional titles",
+      "coauthors": [],
+      "additions": 28,
+      "deletions": 5,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "378d2fba9a565332e253afc4157934692b641525",
+      "short_hash": "378d2fba",
+      "author": "CloudTianTian",
+      "date": "2026-11-07T09:12:59+08:00",
+      "subject": "Avoid repeated ignore-path work during fallback search",
+      "coauthors": [],
+      "additions": 93,
+      "deletions": 9,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "ba32cd59e537860fa0759d40b59cc1df54d0369c",
+      "short_hash": "ba32cd59",
+      "author": "BlueSkyID666",
+      "date": "2026-11-08T09:11:39+08:00",
+      "subject": "Retain the final OpenCode record at end of stream",
+      "coauthors": [],
+      "additions": 97,
+      "deletions": 31,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "f16e165540c8d7fe188d34f17cd3b41e38c63ca2",
+      "short_hash": "f16e1655",
+      "author": "CloudTianTian",
+      "date": "2026-11-08T09:17:15+08:00",
+      "subject": "Keep healthy Agents available after a definition read failure",
+      "coauthors": [],
+      "additions": 195,
+      "deletions": 41,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "6d9a592954422d1fad405487b0bf1531aba47cef",
+      "short_hash": "6d9a5929",
+      "author": "BlueSkyID666",
+      "date": "2026-11-08T09:18:26+08:00",
+      "subject": "Keep healthy Skills available after a definition read failure",
+      "coauthors": [],
+      "additions": 185,
+      "deletions": 23,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

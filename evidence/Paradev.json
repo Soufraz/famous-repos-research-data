@@ -1,0 +1,95 @@
+{
+  "repo": "Paradev",
+  "head_commit": "b77bc046e",
+  "published_results": [
+    {
+      "claim": "| Input to echoed PTY output | 284.9 ms | 16.9 ms | ... Median per-run p99 input latency was 206.9 ms before and 6.5 ms after.",
+      "metric": "terminal input-echo latency during simultaneous initialization of two 50,000-file workspaces (worst of 3 runs; median per-run p99)",
+      "value": "worst 16.9 ms; median p99 6.5 ms; host event-loop stall 9.2 ms",
+      "baseline": "commit 19bf0e8c6f: worst 284.9 ms; median p99 206.9 ms; event-loop stall 168.8 ms",
+      "evidence_type": "harness+results",
+      "files": [
+        "packages/host-service/scripts/watcher-terminal-bench/README.md:10",
+        "packages/host-service/scripts/watcher-terminal-bench/README.md:14",
+        "packages/host-service/scripts/watcher-terminal-bench/results.json",
+        "packages/host-service/scripts/watcher-terminal-bench.ts"
+      ],
+      "reproduce_command": "BENCH_BASELINE=19bf0e8c6f4bf1f145de95d9a7caaabf13770578 bun packages/host-service/scripts/watcher-terminal-bench.ts .cache/watcher-terminal-full",
+      "notes": "All 12 runs committed. README self-limits: recorded runs predate a rebase, so they 'do not claim to measure current main against the final rebased PR'; host-side isolation benchmark on one Mac (macOS 26.6.2 arm64), 3 runs per variant."
+    },
+    {
+      "claim": "| Heap @ 130 cached worktree indexes | +6.87 MB | +2.02 MB | 71% |",
+      "metric": "heap growth from workspace-fs caches (cache-and-paths-memory bench)",
+      "value": "+2.02 MB (130 cached indexes); +2.54 MB (20k unique paths)",
+      "baseline": "+6.87 MB and +8.69 MB before the LRU caps",
+      "evidence_type": "harness+results",
+      "files": [
+        "plans/v2-paths-worktree-perf-fix-plan.md:37",
+        "plans/v2-paths-worktree-perf-fix-plan.md:38",
+        "packages/workspace-fs/src/cache-and-paths-memory.bench.ts"
+      ],
+      "reproduce_command": null,
+      "notes": "Results only in a plan doc (no raw output). The same doc lists '+6.87 MB | +0.6 MB' for the same metric at line 227 (apparently a target/earlier estimate), so the doc is internally inconsistent."
+    },
+    {
+      "claim": "| Real branch change → DB update latency | ≤ 30 s | **427 ms** (one measurement, N=5) |",
+      "metric": "branch-change-to-DB-update latency and idle git-subprocess cost (pull-requests-scaling bench)",
+      "value": "427 ms (single measurement, N=5 worktrees); idle tick cost 0 ms",
+      "baseline": "≤ 30 s polling; idle tick 1450 ms / 30 s = 48 ms/s at N=20",
+      "evidence_type": "harness+results",
+      "files": [
+        "plans/v2-paths-worktree-perf-fix-plan.md:46",
+        "plans/v2-paths-worktree-perf-fix-plan.md:47",
+        "packages/host-service/test/integration/pull-requests-scaling.bench.ts"
+      ],
+      "reproduce_command": null,
+      "notes": "Self-described as one measurement. Line 160 of the same doc gives a different idle-tick baseline (1542 ms, 80 git ops)."
+    },
+    {
+      "claim": "| watcher + worker-backed status refreshes, capped | **6.3 ms** | 107.4 ms | **5.34 s** |",
+      "metric": "host-service event-loop p99 delay under 8-worktree churn (20k-file repos)",
+      "value": "p99 6.3 ms (watcher + worker, capped); 13.6 ms (watcher only, capped)",
+      "baseline": "87.2 ms p99 with unbounded path collection",
+      "evidence_type": "harness+results",
+      "files": [
+        "plans/20260717-host-service-git-worker-pool.md:32",
+        "plans/20260717-host-service-git-worker-pool.md:33",
+        "plans/20260717-host-service-git-worker-pool.md:34",
+        "packages/host-service/scripts/git-status-large-repo-profile.ts"
+      ],
+      "reproduce_command": null,
+      "notes": "Results in a plan doc only; harness file present but the exact run command for this table is not documented. The same plan's earlier CDP stress tables (e.g. 'dead (15/15 timeouts)' echo under 1 flooder) use apps/desktop/scripts/cdp-terminal-flood-profile.ts, which needs an authenticated dev desktop."
+    },
+    {
+      "claim": "Worst-case stall on the UI thread 82.3 → 28.0 ms (3× smaller) ... Renderer JS heap 581 MB → 286 MB (−51%)",
+      "metric": "main-thread stall under git churn; renderer memory with 16 background terminals",
+      "value": "stall worst 28.0 ms, p99 10.7 ms; renderer JS heap 286 MB; RSS 838 MB",
+      "baseline": "stall worst 82.3 ms, p99 31.7 ms; heap 581 MB; RSS 1,127 MB",
+      "evidence_type": "results_only",
+      "files": [
+        "apps/marketing/content/changelog/2026-07-19-performance-memory-and-load.mdx:20",
+        "apps/marketing/content/changelog/2026-07-19-performance-memory-and-load.mdx:34",
+        "apps/marketing/content/changelog/2026-07-19-performance-memory-and-load.mdx:36",
+        "apps/marketing/content/changelog/2026-07-19-performance-memory-and-load.mdx:52"
+      ],
+      "reproduce_command": null,
+      "notes": "Public changelog with a described test setup but no linked harness or raw data; the stall figures (82.3/28.0) do not match the numbers in the corresponding plan doc (87.2/13.6/6.3), so they come from an uncommitted run."
+    },
+    {
+      "claim": "**Workspace deletion 12x faster** - Deletion now completes in ~4-5 seconds instead of ~60 seconds.",
+      "metric": "workspace deletion time",
+      "value": "~4-5 seconds",
+      "baseline": "~60 seconds",
+      "evidence_type": "claim_only",
+      "files": [
+        "apps/marketing/content/changelog/2026-02-02-file-explorer-workspace-improvements.mdx:11"
+      ],
+      "reproduce_command": null,
+      "notes": "Same changelog style: 'CodeMirror is ~97% smaller (150KB vs 5MB)' (2026-03-09-codemirror-workspace.mdx:19) and 'dragging costs about 3x less per move' (2026-09-06-changes-pane-ship-flow-image-diffs.mdx:67), all without method."
+    }
+  ],
+  "strongest_evidence_type": "harness+results",
+  "summary": "Paradev's README carries no quantitative claims; its evidence is internal desktop/host-service performance work. The best-supported item is the watcher-terminal benchmark (script plus all 12 raw runs in results.json, input-echo worst case 284.9 -> 16.9 ms); other bench harnesses exist with results only in plan docs, and the public changelog's figures (e.g. 82.3 -> 28.0 ms stalls, '12x faster' deletion) are not backed by committed data and partly disagree with the plan docs.",
+  "result_focus": "engineering",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}

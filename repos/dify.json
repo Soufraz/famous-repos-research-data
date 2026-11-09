@@ -1,0 +1,690 @@
+{
+  "repo": "dify",
+  "full_name": "langgenius/dify",
+  "stars": 160649,
+  "stars_source": "github-api 2026-11-08T10:04:44Z",
+  "selection_topics": [
+    "llm"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2023-04-12T07:40:24Z",
+    "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
+    "fork": false,
+    "forks": 25413,
+    "full_name": "langgenius/dify",
+    "pushed_at": "2026-11-08T09:45:38Z",
+    "stars": 160649,
+    "fetched_at": "2026-11-08T10:04:44Z"
+  },
+  "url": "https://github.com/langgenius/dify",
+  "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "208a2489f05f688afd701ba262a42d08289996a7",
+    "head_date": "2026-11-08T09:39:21Z",
+    "history_complete": true,
+    "non_merge_commits": 14957,
+    "merge_commits": 1,
+    "maintenance_bot_commits": 458,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 764,
+    "explicit_ai_pct": 5.3,
+    "by_tool": {
+      "claude": 244,
+      "copilot": 213,
+      "gemini": 205,
+      "codex": 76,
+      "devin": 14,
+      "cursor": 12
+    },
+    "by_signal": {
+      "co-author": 763,
+      "agent-author": 1
+    },
+    "recent_180d": {
+      "commits": 4256,
+      "ai_pct": 6.7,
+      "fix_pct": 37.6
+    },
+    "first_365d": {
+      "commits": 1975,
+      "ai_pct": 0.0,
+      "fix_pct": 47.3
+    },
+    "agent_config": {
+      "files": {
+        ".agents/": "2026-01-21T14:48:58+08:00",
+        ".claude/": "2025-08-28T14:38:36+08:00",
+        ".github/instructions/": "2026-11-04T03:22:06Z",
+        "AGENTS.md": "2025-08-27T10:21:55+08:00"
+      },
+      "ci_agent_workflows": [
+        ".github/workflows/translate-i18n-claude.yml"
+      ],
+      "has_agent_config": true,
+      "first_config_date": "2025-08-27T10:21:55+08:00"
+    },
+    "bot_commit_count": 458
+  },
+  "churn_and_stability": {
+    "total_commits": 14499,
+    "first_commit_date": "2023-05-15T08:51:32+08:00",
+    "last_commit_date": "2026-11-08T09:39:21Z",
+    "current_loc": 2705205,
+    "total_historical_additions": 6158691,
+    "total_historical_deletions": 3453454,
+    "total_churn": 9612145,
+    "churn_ratio": 3.55,
+    "survival_rate_pct": 43.9,
+    "code": {
+      "current_loc": 2632857,
+      "additions": 5983301,
+      "deletions": 3350444,
+      "churn_ratio": 3.55,
+      "survival_rate_pct": 44.0
+    },
+    "docs": {
+      "current_loc": 72348,
+      "additions": 175390,
+      "deletions": 103010,
+      "churn_ratio": 3.85,
+      "survival_rate_pct": 41.2
+    },
+    "fix_commits": 6183,
+    "fix_pct": 42.6,
+    "revert_commits": 63,
+    "revert_pct": 0.4,
+    "trial_error_commits": 6258,
+    "trial_error_pct": 43.2,
+    "rapid_fire_commits": 3192,
+    "rapid_fire_pct": 22.0,
+    "trial_error_chains": 1201,
+    "suspicious_additions_count": 856,
+    "top5_hotspot_volatility_pct": 1.6
+  },
+  "code_hygiene": {
+    "total_files": 12227,
+    "docs_files": 210,
+    "avg_file_loc": 215.3,
+    "test_loc": 1281410,
+    "test_files": 4627,
+    "test_ratio_pct": 48.7,
+    "comment_ratio_pct": 4.2,
+    "monolith_count": 352,
+    "top_languages": {
+      ".py": 1310614,
+      ".tsx": 750873,
+      ".ts": 491379,
+      ".js": 55016,
+      ".go": 14157
+    }
+  },
+  "authors": {
+    "unique_authors": 1582,
+    "top_authors": [
+      {
+        "name": "yyh",
+        "commits": 1169,
+        "pct": 8.1
+      },
+      {
+        "name": "Asuka Minato",
+        "commits": 825,
+        "pct": 5.7
+      },
+      {
+        "name": "-LAN-",
+        "commits": 750,
+        "pct": 5.2
+      },
+      {
+        "name": "Joel",
+        "commits": 655,
+        "pct": 4.5
+      },
+      {
+        "name": "非法操作",
+        "commits": 517,
+        "pct": 3.6
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 4.8,
+    "p75": 38.5,
+    "p90": 296.5,
+    "p95": 1202.7,
+    "p99": 15300.0,
+    "avg": 736.3
+  },
+  "hotspots": [
+    {
+      "file": "api/models/model.py",
+      "commits": 280,
+      "additions": 6404,
+      "deletions": 3701,
+      "churn": 10105,
+      "first_seen": "2023-05-15T08:51:32+08:00",
+      "last_seen": "2026-11-05T04:49:45Z"
+    },
+    {
+      "file": "api/services/dataset_service.py",
+      "commits": 261,
+      "additions": 8954,
+      "deletions": 4462,
+      "churn": 13416,
+      "first_seen": "2023-05-15T08:51:32+08:00",
+      "last_seen": "2026-09-24T08:41:12Z"
+    },
+    {
+      "file": "api/openapi/markdown/console-openapi.md",
+      "commits": 242,
+      "additions": 37935,
+      "deletions": 17937,
+      "churn": 55872,
+      "first_seen": "2026-06-12T16:52:19+09:00",
+      "last_seen": "2026-11-05T09:54:35Z"
+    },
+    {
+      "file": "api/controllers/console/datasets/datasets.py",
+      "commits": 188,
+      "additions": 3790,
+      "deletions": 2852,
+      "churn": 6642,
+      "first_seen": "2023-05-15T08:51:32+08:00",
+      "last_seen": "2026-11-02T11:13:21Z"
+    },
+    {
+      "file": "api/services/account_service.py",
+      "commits": 176,
+      "additions": 3885,
+      "deletions": 3885,
+      "churn": 7770,
+      "first_seen": "2023-05-15T08:51:32+08:00",
+      "last_seen": "2026-09-30T07:26:44Z"
+    },
+    {
+      "file": "api/models/workflow.py",
+      "commits": 172,
+      "additions": 3942,
+      "deletions": 1630,
+      "churn": 5572,
+      "first_seen": "2024-04-08T18:51:46+08:00",
+      "last_seen": "2026-11-07T11:36:45Z"
+    },
+    {
+      "file": "api/configs/feature/__init__.py",
+      "commits": 168,
+      "additions": 2544,
+      "deletions": 690,
+      "churn": 3234,
+      "first_seen": "2024-06-19T13:41:12+08:00",
+      "last_seen": "2026-11-08T05:38:19Z"
+    },
+    {
+      "file": "api/controllers/console/app/app.py",
+      "commits": 168,
+      "additions": 3943,
+      "deletions": 3225,
+      "churn": 7168,
+      "first_seen": "2023-05-15T08:51:32+08:00",
+      "last_seen": "2026-10-22T02:11:12Z"
+    },
+    {
+      "file": "api/config.py",
+      "commits": 160,
+      "additions": 811,
+      "deletions": 811,
+      "churn": 1622,
+      "first_seen": "2023-05-15T08:51:32+08:00",
+      "last_seen": "2024-06-25T15:48:02+08:00"
+    },
+    {
+      "file": "api/controllers/console/datasets/datasets_document.py",
+      "commits": 157,
+      "additions": 4596,
+      "deletions": 3637,
+      "churn": 8233,
+      "first_seen": "2023-05-15T08:51:32+08:00",
+      "last_seen": "2026-10-16T03:47:31Z"
+    },
+    {
+      "file": "api/models/dataset.py",
+      "commits": 154,
+      "additions": 4003,
+      "deletions": 2776,
+      "churn": 6779,
+      "first_seen": "2023-05-15T08:51:32+08:00",
+      "last_seen": "2026-10-30T04:28:19Z"
+    },
+    {
+      "file": "README.md",
+      "commits": 146,
+      "additions": 1050,
+      "deletions": 866,
+      "churn": 1916,
+      "first_seen": "2023-05-15T08:51:32+08:00",
+      "last_seen": "2026-11-03T06:04:49Z"
+    },
+    {
+      "file": "api/core/indexing_runner.py",
+      "commits": 146,
+      "additions": 3163,
+      "deletions": 3163,
+      "churn": 6326,
+      "first_seen": "2023-05-15T08:51:32+08:00",
+      "last_seen": "2026-09-29T08:42:31Z"
+    },
+    {
+      "file": "api/services/workflow_service.py",
+      "commits": 143,
+      "additions": 3986,
+      "deletions": 1838,
+      "churn": 5824,
+      "first_seen": "2024-04-08T18:51:46+08:00",
+      "last_seen": "2026-11-02T12:16:49+08:00"
+    },
+    {
+      "file": "api/core/rag/retrieval/dataset_retrieval.py",
+      "commits": 136,
+      "additions": 3514,
+      "deletions": 1544,
+      "churn": 5058,
+      "first_seen": "2024-04-08T18:51:46+08:00",
+      "last_seen": "2026-11-04T08:14:02Z"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "web/public/vs/language/typescript/tsWorker.js",
+      "loc": 51328
+    },
+    {
+      "file": "packages/contracts/generated/api/console/workspaces/types.gen.ts",
+      "loc": 11015
+    },
+    {
+      "file": "packages/contracts/generated/api/console/apps/types.gen.ts",
+      "loc": 9793
+    },
+    {
+      "file": "web/features/new-rag/documents/__tests__/page.spec.tsx",
+      "loc": 9445
+    },
+    {
+      "file": "packages/contracts/generated/api/service/types.gen.ts",
+      "loc": 9384
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "65b4e17d6ebeff39c7e66c832649afff01666adf",
+      "short_hash": "65b4e17d6e",
+      "author": "Eddy ZHANG",
+      "date": "2026-11-07T06:37:16Z",
+      "subject": "test(api): strictly type LLM utility contract tests (#45763)",
+      "coauthors": [],
+      "additions": 64,
+      "deletions": 54,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "aae1a50982ac670705d11603f72b6a6bfa8bfc3b",
+      "short_hash": "aae1a50982",
+      "author": "Stephen Zhou",
+      "date": "2026-11-07T09:46:27Z",
+      "subject": "test(web): move remaining auth forms to Browser Mode (#45758)",
+      "coauthors": [],
+      "additions": 754,
+      "deletions": 851,
+      "files_count": 9,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "0892d632192f11ea140d0f64b4d0c694d7e66110",
+      "short_hash": "0892d63219",
+      "author": "Stephen Zhou",
+      "date": "2026-11-07T09:51:56Z",
+      "subject": "test(web): move website crawl controls to Browser Mode (#45787)",
+      "coauthors": [],
+      "additions": 238,
+      "deletions": 233,
+      "files_count": 12,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "2f1fd4cb897b179847793aa3cdbfca2fde351092",
+      "short_hash": "2f1fd4cb89",
+      "author": "egg119",
+      "date": "2026-11-07T11:36:45Z",
+      "subject": "chore(models): remove redundant server_default from workflow run models (#45738)",
+      "coauthors": [
+        "egg119",
+        "Asuka Minato"
+      ],
+      "additions": 5,
+      "deletions": 5,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "2aa37250057e1eef899cdd2161a61f25a38ef437",
+      "short_hash": "2aa3725005",
+      "author": "Stephen Zhou",
+      "date": "2026-11-07T14:47:57Z",
+      "subject": "test(web): move creator profiles into browser mode (#45796)",
+      "coauthors": [],
+      "additions": 462,
+      "deletions": 545,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "6bffd5b93259cc413b7ee1423514959124781da1",
+      "short_hash": "6bffd5b932",
+      "author": "yetuge",
+      "date": "2026-11-08T04:24:35Z",
+      "subject": "test(api): annotate core tool tests for strict pyrefly (#45726)",
+      "coauthors": [
+        "yetuge"
+      ],
+      "additions": 80,
+      "deletions": 59,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "bb318051c8c69fb5ae3d6af2c9744da8996d4af2",
+      "short_hash": "bb318051c8",
+      "author": "Felix Shi",
+      "date": "2026-11-08T04:26:26Z",
+      "subject": "test(e2e): annotate two workflow service tests for strict pyrefly (#45773)",
+      "coauthors": [],
+      "additions": 21,
+      "deletions": 20,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "ebdf26b31e0206b7bac3a4cdddd3e80b10c1e7d3",
+      "short_hash": "ebdf26b31e",
+      "author": "Stephen Zhou",
+      "date": "2026-11-08T04:28:53Z",
+      "subject": "test(web): move markdown blocks into browser mode (#45807)",
+      "coauthors": [],
+      "additions": 302,
+      "deletions": 457,
+      "files_count": 8,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "0180bd037891c544ef3e020105dbdaff64a3332a",
+      "short_hash": "0180bd0378",
+      "author": "Denis Ermakov",
+      "date": "2026-11-08T05:38:19Z",
+      "subject": "refactor(api): replace pytz with zoneinfo (#43362)",
+      "coauthors": [
+        "JHC56",
+        "Byron Wang"
+      ],
+      "additions": 504,
+      "deletions": 134,
+      "files_count": 21,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "db530adfa9d59bddca3d3e68c07f8721a30a4768",
+      "short_hash": "db530adfa9",
+      "author": "AlexMultiAgent",
+      "date": "2026-11-08T05:43:48Z",
+      "subject": "fix(rag): close downloaded temp file before reopening it in WordExtractor (#39894)",
+      "coauthors": [
+        "Byron Wang"
+      ],
+      "additions": 141,
+      "deletions": 71,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "b10ba3bfee277f7ded101192b4f4d1343a012dec",
+      "short_hash": "b10ba3bfee",
+      "author": "Alter-xyz",
+      "date": "2026-11-08T05:46:55Z",
+      "subject": "fix(agent): pass declared app inputs to the agent run (#45425)",
+      "coauthors": [],
+      "additions": 164,
+      "deletions": 15,
+      "files_count": 7,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "a8eeb467cc1cd789722f0bddea0c2111e54518f4",
+      "short_hash": "a8eeb467cc",
+      "author": "Paul Y Hui",
+      "date": "2026-11-08T06:23:28Z",
+      "subject": "refactor(api): stop holding a database session across embedding model calls (#45788)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 115,
+      "deletions": 107,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "9ea42b882a6b746282f406cd09392a7119798510",
+      "short_hash": "9ea42b882a",
+      "author": "yetuge",
+      "date": "2026-11-08T07:24:03Z",
+      "subject": "test(api): annotate services helper and enterprise tests for strict pyrefly (#45725)",
+      "coauthors": [
+        "yetuge"
+      ],
+      "additions": 93,
+      "deletions": 96,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "82e4b51b1e0040f4a7c03c6efdc1b78ec02c977e",
+      "short_hash": "82e4b51b1e",
+      "author": "Felix Shi",
+      "date": "2026-11-08T07:25:30Z",
+      "subject": "refactor(api): enable strict typing for service-layer test files (#44888)",
+      "coauthors": [
+        "Felix Shi",
+        "Asuka Minato",
+        "autofix-ci[bot]"
+      ],
+      "additions": 50,
+      "deletions": 44,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "669d9acaccff7e5a1772893c1732c00a2ad34b35",
+      "short_hash": "669d9acacc",
+      "author": "Felix Shi",
+      "date": "2026-11-08T07:27:17Z",
+      "subject": "test(e2e): annotate two dataset service tests for strict pyrefly (#45772)",
+      "coauthors": [],
+      "additions": 57,
+      "deletions": 43,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "a53d96365ae3ee4c56d2acc50546b176e20fccef",
+      "short_hash": "a53d96365a",
+      "author": "Felix Shi",
+      "date": "2026-11-08T07:28:31Z",
+      "subject": "test(e2e): annotate factory and model tests for strict pyrefly (#45771)",
+      "coauthors": [],
+      "additions": 25,
+      "deletions": 23,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "b4374e0289fcc0761deaaa0beb9af026db26a1f2",
+      "short_hash": "b4374e0289",
+      "author": "yetuge",
+      "date": "2026-11-08T07:56:59Z",
+      "subject": "test(api): annotate callback and provider configuration tests for strict pyrefly (#45729)",
+      "coauthors": [
+        "yetuge"
+      ],
+      "additions": 25,
+      "deletions": 36,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "c68f6d5d44d634b9aef2fca0fcdc18c19339a181",
+      "short_hash": "c68f6d5d44",
+      "author": "yetuge",
+      "date": "2026-11-08T07:57:52Z",
+      "subject": "test(api): bring two command test modules under strict pyrefly (#45633)",
+      "coauthors": [
+        "yetuge"
+      ],
+      "additions": 74,
+      "deletions": 43,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "ee98137e7d2017d3ec2c2e5864f375310669736a",
+      "short_hash": "ee98137e7d",
+      "author": "TINGyu123644",
+      "date": "2026-11-08T07:58:06Z",
+      "subject": "test(api): add unit tests for metadata filtering entities (#45262)",
+      "coauthors": [
+        "autofix-ci[bot]"
+      ],
+      "additions": 105,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "208a2489f05f688afd701ba262a42d08289996a7",
+      "short_hash": "208a2489f0",
+      "author": "yetuge",
+      "date": "2026-11-08T09:39:21Z",
+      "subject": "test(api): bring the logging filter tests under strict pyrefly (#45823)",
+      "coauthors": [
+        "yetuge"
+      ],
+      "additions": 28,
+      "deletions": 17,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

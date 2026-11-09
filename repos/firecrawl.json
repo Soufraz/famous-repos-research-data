@@ -1,0 +1,699 @@
+{
+  "repo": "firecrawl",
+  "full_name": "firecrawl/firecrawl",
+  "stars": 199609,
+  "stars_source": "github-api 2026-11-08T08:52:23Z",
+  "selection_topics": [
+    "ai-agents",
+    "llm"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2024-04-15T21:02:29Z",
+    "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥",
+    "fork": false,
+    "forks": 10508,
+    "full_name": "firecrawl/firecrawl",
+    "pushed_at": "2026-11-08T07:53:15Z",
+    "stars": 199609,
+    "fetched_at": "2026-11-08T08:52:23Z"
+  },
+  "url": "https://github.com/firecrawl/firecrawl",
+  "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "033f42f87c270900a01fc027903fc718b9870d02",
+    "head_date": "2026-11-08T00:13:10Z",
+    "history_complete": true,
+    "non_merge_commits": 5919,
+    "merge_commits": 884,
+    "maintenance_bot_commits": 240,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 743,
+    "explicit_ai_pct": 13.1,
+    "by_tool": {
+      "claude": 336,
+      "other": 197,
+      "devin": 142,
+      "cursor": 65,
+      "copilot": 3
+    },
+    "by_signal": {
+      "co-author": 659,
+      "agent-author": 68,
+      "footer": 16
+    },
+    "recent_180d": {
+      "commits": 1246,
+      "ai_pct": 42.1,
+      "fix_pct": 38.0
+    },
+    "first_365d": {
+      "commits": 2564,
+      "ai_pct": 0.3,
+      "fix_pct": 25.0
+    },
+    "bot_commit_count": 240,
+    "agent_config": {
+      "files": {
+        "AGENTS.md": "2026-06-13T16:46:57-07:00",
+        "CLAUDE.md": "2025-08-07T00:30:40+02:00"
+      },
+      "ci_agent_workflows": [
+        ".github/workflows/npm-audit-claude-remediation.yml"
+      ],
+      "has_agent_config": true,
+      "first_config_date": "2025-08-07T00:30:40+02:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 5679,
+    "first_commit_date": "2024-04-15T17:01:47-04:00",
+    "last_commit_date": "2026-11-07T19:13:10-05:00",
+    "current_loc": 441093,
+    "total_historical_additions": 698199,
+    "total_historical_deletions": 253934,
+    "total_churn": 952133,
+    "churn_ratio": 2.16,
+    "survival_rate_pct": 63.2,
+    "code": {
+      "current_loc": 425175,
+      "additions": 678213,
+      "deletions": 249884,
+      "churn_ratio": 2.18,
+      "survival_rate_pct": 62.7
+    },
+    "docs": {
+      "current_loc": 15918,
+      "additions": 19986,
+      "deletions": 4050,
+      "churn_ratio": 1.51,
+      "survival_rate_pct": 79.6
+    },
+    "fix_commits": 1837,
+    "fix_pct": 32.3,
+    "revert_commits": 96,
+    "revert_pct": 1.7,
+    "trial_error_commits": 1881,
+    "trial_error_pct": 33.1,
+    "rapid_fire_commits": 793,
+    "rapid_fire_pct": 14.0,
+    "trial_error_chains": 213,
+    "suspicious_additions_count": 120,
+    "top5_hotspot_volatility_pct": 5.0
+  },
+  "code_hygiene": {
+    "total_files": 1767,
+    "docs_files": 97,
+    "avg_file_loc": 240.6,
+    "test_loc": 161254,
+    "test_files": 653,
+    "test_ratio_pct": 37.9,
+    "comment_ratio_pct": 7.1,
+    "monolith_count": 68,
+    "top_languages": {
+      ".ts": 312898,
+      ".py": 52674,
+      ".rs": 14261,
+      ".java": 9752,
+      ".php": 9505
+    }
+  },
+  "authors": {
+    "unique_authors": 185,
+    "top_authors": [
+      {
+        "name": "Gergő Móricz",
+        "commits": 1515,
+        "pct": 26.7
+      },
+      {
+        "name": "Nicolas",
+        "commits": 1395,
+        "pct": 24.6
+      },
+      {
+        "name": "Abimael Martell",
+        "commits": 363,
+        "pct": 6.4
+      },
+      {
+        "name": "rafaelsideguide",
+        "commits": 334,
+        "pct": 5.9
+      },
+      {
+        "name": "Developers Digest",
+        "commits": 222,
+        "pct": 3.9
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 1.3,
+    "p75": 6.2,
+    "p90": 46.7,
+    "p95": 284.7,
+    "p99": 6360.0,
+    "avg": 286.7
+  },
+  "hotspots": [
+    {
+      "file": "apps/api/src/controllers/v1/types.ts",
+      "commits": 357,
+      "additions": 4079,
+      "deletions": 2278,
+      "churn": 6357,
+      "first_seen": "2024-08-15T21:51:59+02:00",
+      "last_seen": "2026-11-07T17:48:43+01:00"
+    },
+    {
+      "file": "apps/api/src/services/queue-worker.ts",
+      "commits": 342,
+      "additions": 4888,
+      "deletions": 5544,
+      "churn": 10432,
+      "first_seen": "2024-04-15T17:01:47-04:00",
+      "last_seen": "2026-09-23T11:28:54+02:00"
+    },
+    {
+      "file": "apps/api/src/controllers/v2/types.ts",
+      "commits": 261,
+      "additions": 6842,
+      "deletions": 2455,
+      "churn": 9297,
+      "first_seen": "2025-07-24T17:22:16-03:00",
+      "last_seen": "2026-11-07T17:48:43+01:00"
+    },
+    {
+      "file": "apps/api/src/controllers/auth.ts",
+      "commits": 241,
+      "additions": 3147,
+      "deletions": 1825,
+      "churn": 4972,
+      "first_seen": "2024-04-20T16:38:05-07:00",
+      "last_seen": "2026-11-07T17:48:43+01:00"
+    },
+    {
+      "file": "apps/python-sdk/firecrawl/__init__.py",
+      "commits": 218,
+      "additions": 395,
+      "deletions": 248,
+      "churn": 643,
+      "first_seen": "2024-04-15T17:01:47-04:00",
+      "last_seen": "2026-11-06T16:15:09-05:00"
+    },
+    {
+      "file": "apps/api/src/scraper/scrapeURL/index.ts",
+      "commits": 199,
+      "additions": 4411,
+      "deletions": 2365,
+      "churn": 6776,
+      "first_seen": "2024-11-07T20:57:33+01:00",
+      "last_seen": "2026-11-06T16:48:14+01:00"
+    },
+    {
+      "file": "apps/js-sdk/firecrawl/src/index.ts",
+      "commits": 171,
+      "additions": 3954,
+      "deletions": 3825,
+      "churn": 7779,
+      "first_seen": "2024-04-16T14:02:16-03:00",
+      "last_seen": "2026-11-06T16:15:09-05:00"
+    },
+    {
+      "file": "apps/api/src/index.ts",
+      "commits": 168,
+      "additions": 2246,
+      "deletions": 1862,
+      "churn": 4108,
+      "first_seen": "2024-04-15T17:01:47-04:00",
+      "last_seen": "2026-11-06T17:54:51+01:00"
+    },
+    {
+      "file": "apps/api/src/config.ts",
+      "commits": 159,
+      "additions": 1202,
+      "deletions": 300,
+      "churn": 1502,
+      "first_seen": "2025-12-05T17:52:19Z",
+      "last_seen": "2026-11-06T18:08:49-05:00"
+    },
+    {
+      "file": "apps/api/src/scraper/WebScraper/crawler.ts",
+      "commits": 151,
+      "additions": 2622,
+      "deletions": 1487,
+      "churn": 4109,
+      "first_seen": "2024-04-15T17:01:47-04:00",
+      "last_seen": "2026-11-06T16:48:14+01:00"
+    },
+    {
+      "file": "apps/python-sdk/firecrawl/firecrawl.py",
+      "commits": 151,
+      "additions": 7241,
+      "deletions": 2594,
+      "churn": 9835,
+      "first_seen": "2024-04-15T17:01:47-04:00",
+      "last_seen": "2025-08-06T15:34:56-04:00"
+    },
+    {
+      "file": "README.md",
+      "commits": 148,
+      "additions": 2482,
+      "deletions": 1542,
+      "churn": 4024,
+      "first_seen": "2024-04-15T17:01:47-04:00",
+      "last_seen": "2026-10-19T00:40:57-07:00"
+    },
+    {
+      "file": "apps/api/src/controllers/v1/scrape.ts",
+      "commits": 144,
+      "additions": 1440,
+      "deletions": 891,
+      "churn": 2331,
+      "first_seen": "2024-08-06T15:24:45-03:00",
+      "last_seen": "2026-11-02T21:42:46+01:00"
+    },
+    {
+      "file": "apps/api/src/services/rate-limiter.ts",
+      "commits": 134,
+      "additions": 1356,
+      "deletions": 1060,
+      "churn": 2416,
+      "first_seen": "2024-04-15T17:01:47-04:00",
+      "last_seen": "2026-11-02T19:49:39+01:00"
+    },
+    {
+      "file": "apps/python-sdk/firecrawl/v2/types.py",
+      "commits": 132,
+      "additions": 3277,
+      "deletions": 411,
+      "churn": 3688,
+      "first_seen": "2025-08-05T17:41:12-03:00",
+      "last_seen": "2026-11-06T16:15:09-05:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "apps/api/src/lib/extract/usage/model-prices.ts",
+      "loc": 22429
+    },
+    {
+      "file": "apps/python-sdk/firecrawl/v1/client.py",
+      "loc": 5373
+    },
+    {
+      "file": "apps/python-sdk/firecrawl/firecrawl.backup.py",
+      "loc": 4635
+    },
+    {
+      "file": "apps/api/src/controllers/v2/types.ts",
+      "loc": 3107
+    },
+    {
+      "file": "apps/python-sdk/firecrawl/v2/types.py",
+      "loc": 2821
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "830fb0fb06c33360ad014e970338b263fd6723b5",
+      "short_hash": "830fb0fb0",
+      "author": "Karan Lokchandani",
+      "date": "2026-11-04T13:03:15+05:30",
+      "subject": "feat(research): add paper search sort and row dates to the API proxy and SDKs (#5571)",
+      "coauthors": [],
+      "additions": 171,
+      "deletions": 44,
+      "files_count": 26,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "4e7c68116dec23d26466072996034cd99b08eb71",
+      "short_hash": "4e7c68116",
+      "author": "capy-ai[bot]",
+      "date": "2026-11-04T16:51:03+01:00",
+      "subject": "fix(api): read the PDF service's region echo for US-only teams (#5553)",
+      "coauthors": [
+        "mogery",
+        "capy-ai[bot]"
+      ],
+      "additions": 162,
+      "deletions": 59,
+      "files_count": 12,
+      "ai_tool": "other",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "ec3b55bc9637fed1b64768959c76ed95ce6b622d",
+      "short_hash": "ec3b55bc9",
+      "author": "capy-ai[bot]",
+      "date": "2026-11-04T18:48:45+01:00",
+      "subject": "ci(js-sdk): pass the tarball to npm publish as a relative path (#5577)",
+      "coauthors": [
+        "capy-ai[bot]"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "other",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "d297ae5f9d8474811273aee02c6d4b7e6df88b90",
+      "short_hash": "d297ae5f9",
+      "author": "Evan McCarthy",
+      "date": "2026-11-04T11:03:12-07:00",
+      "subject": "feat(api): document the product variant gtin, mpn and condition fields (#5556)",
+      "coauthors": [
+        "E37U-A",
+        "capy-ai[bot]",
+        "Claude <noreply@anthropic.com>"
+      ],
+      "additions": 9,
+      "deletions": 0,
+      "files_count": 3,
+      "ai_tool": "other",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "b1c476dc39f5848f7c6d98b3b8bb1c84866a8418",
+      "short_hash": "b1c476dc3",
+      "author": "Max",
+      "date": "2026-11-04T13:14:14-06:00",
+      "subject": "fix(api): return alreadySubmitted for repeated feedback (#5572)",
+      "coauthors": [],
+      "additions": 293,
+      "deletions": 2,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "7d8e92dc5d270b1247d60e809c3fd32f52e0e47b",
+      "short_hash": "7d8e92dc5",
+      "author": "Developers Digest",
+      "date": "2026-11-04T15:30:57-05:00",
+      "subject": "Add skills search source (#5560)",
+      "coauthors": [
+        "Cursor Agent <cursoragent@cursor.com>",
+        "Developers Digest"
+      ],
+      "additions": 948,
+      "deletions": 44,
+      "files_count": 23,
+      "ai_tool": "cursor",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "edf02642c8f002576e9f26b9bbbb7b327313558c",
+      "short_hash": "edf02642c",
+      "author": "tomsideguide",
+      "date": "2026-11-05T15:12:49Z",
+      "subject": "fix(browser): close sessions Hangar no longer knows instead of failing DELETE (#5584)",
+      "coauthors": [],
+      "additions": 61,
+      "deletions": 30,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "6c044dbf8350ec486918f7aa5ccdaccd213f7663",
+      "short_hash": "6c044dbf8",
+      "author": "Kris Oei",
+      "date": "2026-11-06T06:47:31-08:00",
+      "subject": "feat(api): share each index's per-minute limit across every entry point (#5589)",
+      "coauthors": [],
+      "additions": 176,
+      "deletions": 11,
+      "files_count": 7,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "f9729cf88ac29203c1c835ea93e40861f1bd098c",
+      "short_hash": "f9729cf88",
+      "author": "Gergő Móricz",
+      "date": "2026-11-06T16:48:14+01:00",
+      "subject": "fix(api): pin US-only teams' page fetches to the US (#5594)",
+      "coauthors": [
+        "capy-ai[bot]"
+      ],
+      "additions": 805,
+      "deletions": 9,
+      "files_count": 28,
+      "ai_tool": "other",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "973f7c3535cbc0c5ed0b297a1fd4733cd1919991",
+      "short_hash": "973f7c353",
+      "author": "Gergő Móricz",
+      "date": "2026-11-06T17:16:56+01:00",
+      "subject": "feat(api): refuse labs search for US-only teams and relay research refusals as US_ONLY_UNAVAILABLE (#5557)",
+      "coauthors": [
+        "capy-ai[bot]"
+      ],
+      "additions": 260,
+      "deletions": 1,
+      "files_count": 4,
+      "ai_tool": "other",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "37a85335cdd6b29b995303c378507e8a608393cd",
+      "short_hash": "37a85335c",
+      "author": "Gergő Móricz",
+      "date": "2026-11-06T17:18:08+01:00",
+      "subject": "chore(playwright): upgrade service to 1.65.0 (#5592)",
+      "coauthors": [
+        "capy-ai[bot]"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "other",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "db605bb30ef41200c72221aef1ed123686d11bce",
+      "short_hash": "db605bb30",
+      "author": "Gergő Móricz",
+      "date": "2026-11-06T17:52:41+01:00",
+      "subject": "chore(js-sdk): remove unused index.backup.ts (#5608)",
+      "coauthors": [
+        "capy-ai[bot]"
+      ],
+      "additions": 0,
+      "deletions": 2146,
+      "files_count": 1,
+      "ai_tool": "other",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "5a4509c1b54b534de2f7590b0a3b462b1fcb8dea",
+      "short_hash": "5a4509c1b",
+      "author": "Gergő Móricz",
+      "date": "2026-11-06T17:52:52+01:00",
+      "subject": "chore(api): drop unused x402 and CDP variables from .env.example (#5609)",
+      "coauthors": [
+        "capy-ai[bot]"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "other",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "48a3f1bff71409baadf7859f454349e26f6b429d",
+      "short_hash": "48a3f1bff",
+      "author": "Gergő Móricz",
+      "date": "2026-11-06T17:54:51+01:00",
+      "subject": "feat(api): serve health probes at /health/liveness and /health/readiness (#5613)",
+      "coauthors": [
+        "capy-ai[bot]"
+      ],
+      "additions": 13,
+      "deletions": 11,
+      "files_count": 6,
+      "ai_tool": "other",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "5a9b1a551e3ea9463ace47450e39413a8e0726f6",
+      "short_hash": "5a9b1a551",
+      "author": "Nicolas",
+      "date": "2026-11-06T15:43:55-05:00",
+      "subject": "feat(alexandria): attribute feedback to provider calls and forward ratings to Exchange (#5596)",
+      "coauthors": [
+        "capy-ai[bot]"
+      ],
+      "additions": 1114,
+      "deletions": 30,
+      "files_count": 16,
+      "ai_tool": "other",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "590d7f9c7084bff8214efdf301ae7749f3b38fd8",
+      "short_hash": "590d7f9c7",
+      "author": "Nicolas",
+      "date": "2026-11-06T16:15:09-05:00",
+      "subject": "feat(sdks): surface Alexandria feedback tokens and accept them in Alexandria feedback (#5600)",
+      "coauthors": [
+        "capy-ai[bot]"
+      ],
+      "additions": 920,
+      "deletions": 5,
+      "files_count": 18,
+      "ai_tool": "other",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "db23872cf8fff0e1ae93f8256aa465dcfa371c7d",
+      "short_hash": "db23872cf",
+      "author": "Rakshith Ramprakash",
+      "date": "2026-11-06T18:04:03-05:00",
+      "subject": "feat(search): fuse rewrite tool discovery by reciprocal rank (flagged off) (#5595)",
+      "coauthors": [
+        "capy-ai[bot]"
+      ],
+      "additions": 278,
+      "deletions": 39,
+      "files_count": 8,
+      "ai_tool": "other",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "874a9ed17ca6565bda48723dac56db3bf854aac8",
+      "short_hash": "874a9ed17",
+      "author": "Rakshith Ramprakash",
+      "date": "2026-11-06T18:08:49-05:00",
+      "subject": "feat(search): turn on rewrite tool fusion by default (#5627)",
+      "coauthors": [
+        "capy-ai[bot]"
+      ],
+      "additions": 3,
+      "deletions": 2,
+      "files_count": 1,
+      "ai_tool": "other",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "bf6739d95caccfd6518d2bf1b5d07fad2b6bd34c",
+      "short_hash": "bf6739d95",
+      "author": "Gergő Móricz",
+      "date": "2026-11-07T17:48:43+01:00",
+      "subject": "feat(api): sunset dates and per-team extensions for deprecated routes (#5605)",
+      "coauthors": [
+        "capy-ai[bot]"
+      ],
+      "additions": 362,
+      "deletions": 32,
+      "files_count": 5,
+      "ai_tool": "other",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "033f42f87c270900a01fc027903fc718b9870d02",
+      "short_hash": "033f42f87",
+      "author": "Rakshith Ramprakash",
+      "date": "2026-11-07T19:13:10-05:00",
+      "subject": "feat(api): run hosted MCP browser sessions on the credits left (#5568)",
+      "coauthors": [
+        "capy-ai[bot]"
+      ],
+      "additions": 371,
+      "deletions": 72,
+      "files_count": 9,
+      "ai_tool": "other",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

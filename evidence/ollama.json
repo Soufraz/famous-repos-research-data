@@ -1,0 +1,60 @@
+{
+  "repo": "ollama",
+  "head_commit": "d63b7026",
+  "published_results": [
+    {
+      "claim": "A Go-based command-line tool for benchmarking Ollama models with configurable parameters, warmup phases, TTFT tracking, VRAM monitoring, and benchstat/CSV output.",
+      "metric": "Per-model prefill and generate rate (ns/token, tokens/s), time to first token, load time, total duration, model size and VRAM; a -decision mode reports accuracy, latency percentiles and requests/questions per second against an external JSONL corpus. Prompts can be sized from a bundled HumanEval set. The README's sample benchstat/CSV lines (e.g. 12800.00 and 51200.00 token/sec for gemma3) illustrate the output format.",
+      "value": "No results committed",
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "cmd/bench/README.md:1-29",
+        "cmd/bench/README.md:86-128",
+        "cmd/bench/README.md:157-198",
+        "cmd/bench/bench.go:1245-1265",
+        "cmd/bench/prompts/HumanEval.jsonl"
+      ],
+      "reproduce_command": "go run ./cmd/bench -model gemma3 -epochs 3"
+    },
+    {
+      "claim": "Smoke-run each benchmark once to catch panics and bit rot; this does ... not assert timings.",
+      "metric": "29 Go func Benchmark* outside vendored code (mlxrunner tokenizer encode/decode/load, mlx activation and top-k, dflash, flint precision, GGUF parsing, download/transfer, routes)",
+      "value": "No results committed",
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "mlxrunner/tokenizer/tokenizer_benchmark_test.go:89-196",
+        "mlxrunner/tokenizer/tokenizer_reference_benchmark_test.go:10",
+        ".github/workflows/test.yaml:465-467"
+      ],
+      "reproduce_command": "go test -count=1 -bench=. -benchtime=1x ./..."
+    },
+    {
+      "claim": "`q8_0` - 8-bit quantization, uses approximately 1/2 the memory of `f16` ... `q4_0` - 4-bit quantization, uses approximately 1/4 the memory of `f16`",
+      "metric": "K/V cache memory with OLLAMA_KV_CACHE_TYPE quantization (requires Flash Attention); nominal ratio stated without a measurement",
+      "value": "q8_0: approximately 1/2 of f16; q4_0: approximately 1/4 of f16",
+      "baseline": "f16 K/V cache (default)",
+      "evidence_type": "claim_only",
+      "files": [
+        "docs/faq.mdx:348-365"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "**Performance Gains**: Examples show significant speed improvements (e.g., 85.54 tokens/s vs 52.02 tokens/s) and full GPU layer utilization.",
+      "metric": "Generation speed under Ollama's new model scheduling (September 23, 2025), as summarized inside an example model response to a web-search tool call; no model, hardware or source URL given in the repo",
+      "value": "85.54 tokens/s",
+      "baseline": "52.02 tokens/s",
+      "evidence_type": "claim_only",
+      "files": [
+        "docs/capabilities/web-search.mdx:279-295"
+      ],
+      "reproduce_command": null
+    }
+  ],
+  "strongest_evidence_type": "harness_only",
+  "summary": "Ollama publishes no measured results about its own performance in its README or docs. It ships a benchmarking CLI (cmd/bench: prefill/generate tokens/s, TTFT, load time, VRAM, plus an accuracy-scoring mode for decision models) and 29 Go micro-benchmarks that CI runs once without checking timings, but commits no output from either. The only figures about Ollama itself are the FAQ's nominal K/V-cache sizes (q8_0 approximately 1/2 and q4_0 approximately 1/4 of f16 memory) and an example web-search response in the docs quoting 85.54 tokens/s vs 52.02 tokens/s from Ollama's model-scheduling announcement.",
+  "result_focus": "none",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}

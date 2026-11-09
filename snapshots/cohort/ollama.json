@@ -1,0 +1,63 @@
+{
+  "repo": "ollama",
+  "full_name": "ollama/ollama",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "1ca484f67e6f607114496211004942013e5595eb",
+      "snapshot_date": "2023-12-19T14:04:52-05:00",
+      "first_commit_date": "2023-06-22T12:45:31-04:00",
+      "commits": 1318,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 14.7,
+      "revert_pct": 0.5,
+      "churn_ratio": 8.81,
+      "survival_rate_pct": 20.4,
+      "code": {
+        "current_loc": 12199,
+        "additions": 67580,
+        "deletions": 55392,
+        "churn_ratio": 10.08,
+        "survival_rate_pct": 18.1
+      },
+      "docs": {
+        "current_loc": 2688,
+        "additions": 5401,
+        "deletions": 2717,
+        "churn_ratio": 3.02,
+        "survival_rate_pct": 49.8
+      },
+      "rapid_fire_pct": 13.8,
+      "unique_authors": 94
+    },
+    "365": {
+      "snapshot_commit": "189a43caa27a2fc23e80ff19126d8fa9864b3ad2",
+      "snapshot_date": "2024-06-21T13:44:34-07:00",
+      "first_commit_date": "2023-06-22T12:45:31-04:00",
+      "commits": 2344,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 14.8,
+      "revert_pct": 1.2,
+      "churn_ratio": 3.46,
+      "survival_rate_pct": 44.8,
+      "code": {
+        "current_loc": 68555,
+        "additions": 153419,
+        "deletions": 84885,
+        "churn_ratio": 3.48,
+        "survival_rate_pct": 44.7
+      },
+      "docs": {
+        "current_loc": 3914,
+        "additions": 8167,
+        "deletions": 4257,
+        "churn_ratio": 3.17,
+        "survival_rate_pct": 47.9
+      },
+      "rapid_fire_pct": 12.8,
+      "unique_authors": 252
+    }
+  }
+}

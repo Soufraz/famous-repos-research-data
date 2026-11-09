@@ -1,0 +1,63 @@
+{
+  "repo": "ragflow",
+  "full_name": "infiniflow/ragflow",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "f900e432f37219db71810dcd3cac29068d166913",
+      "snapshot_date": "2024-06-08T23:24:29+08:00",
+      "first_commit_date": "2023-12-12T14:13:13+08:00",
+      "commits": 558,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 23.3,
+      "revert_pct": 0.0,
+      "churn_ratio": 2.41,
+      "survival_rate_pct": 58.7,
+      "code": {
+        "current_loc": 43326,
+        "additions": 73803,
+        "deletions": 30477,
+        "churn_ratio": 2.41,
+        "survival_rate_pct": 58.7
+      },
+      "docs": {
+        "current_loc": 3052,
+        "additions": 5195,
+        "deletions": 2143,
+        "churn_ratio": 2.4,
+        "survival_rate_pct": 58.7
+      },
+      "rapid_fire_pct": 9.7,
+      "unique_authors": 44
+    },
+    "365": {
+      "snapshot_commit": "74c6b21f3b996fd1cb8a3ab14b57770ac6a295cc",
+      "snapshot_date": "2024-12-11T12:38:57+08:00",
+      "first_commit_date": "2023-12-12T14:13:13+08:00",
+      "commits": 1850,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 28.7,
+      "revert_pct": 0.2,
+      "churn_ratio": 3.13,
+      "survival_rate_pct": 48.4,
+      "code": {
+        "current_loc": 84010,
+        "additions": 168670,
+        "deletions": 84660,
+        "churn_ratio": 3.02,
+        "survival_rate_pct": 49.8
+      },
+      "docs": {
+        "current_loc": 9224,
+        "additions": 24091,
+        "deletions": 14867,
+        "churn_ratio": 4.22,
+        "survival_rate_pct": 38.3
+      },
+      "rapid_fire_pct": 12.7,
+      "unique_authors": 136
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "repo": "hermes-agent",
+  "head_commit": "21ae0e1238",
+  "published_results": [
+    {
+      "claim": "LEAN+RECOVERY BEATS CURRENT BY +22.5pts ON AVERAGE (68.3 vs 45.8) AT 3.3x FEWER TOKENS (49K vs 162K).",
+      "metric": "Post-compaction recall % (15-question LLM-judged exam per transcript, 4 real 500K-token transcripts) vs tokens retained",
+      "value": "68.3% avg recall @ ~49K tokens",
+      "baseline": "current compaction 45.8% @ 162K; uncompacted 96.7% @ 500K",
+      "evidence_type": "harness+results",
+      "files": [
+        "evals/compaction/results/SCORECARD-2026-08-15.md:18-21",
+        "evals/compaction/results/SCORECARD-2026-08-15.md:29",
+        "evals/compaction/runner.py",
+        "evals/compaction/README.md:20-30"
+      ],
+      "reproduce_command": "python evals/compaction/runner.py --transcript /path/to/lineage.json --policies current+recovery,lean+recovery --questions 15 --out evals/compaction/results/run1 (transcripts NOT committed: README.md:28 \"Transcripts are NOT committed (they contain real session data)\")"
+    },
+    {
+      "claim": "Apples-to-apples closed-book: lean 40.0% vs codex 36.7% ... With recovery: +31.6pts over codex.",
+      "metric": "Post-compaction recall %, Hermes vs real OpenAI Codex CLI (v0.147.0) on same transcripts and judge",
+      "value": "lean closed-book 40.0%; lean+recovery 68.3%",
+      "baseline": "Codex CLI post-compaction 36.7%",
+      "evidence_type": "harness+results",
+      "files": [
+        "evals/compaction/results/SCORECARD-2026-08-15.md:67",
+        "evals/compaction/results/SCORECARD-2026-08-15.md:74-76",
+        "evals/compaction/results/codex-arm-2026-08-15/sweep.json",
+        "evals/compaction/scripts/codex_arm.py"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Grand accuracy: base 0.923 vs pr 0.916 — flat within rep noise ... Tokens down on every model.",
+      "metric": "Task accuracy and total tokens, core-tool deferral A/B (288 live runs, 14 tasks x 3 reps x 3 models)",
+      "value": "pr accuracy 0.916; tokens −23% (gpt-5.6-terra), −11% (glm-5.3-flash), −7% (qwen3.8-27b)",
+      "baseline": "base (origin/main 3f36c87e1ebd) accuracy 0.923",
+      "evidence_type": "harness+results",
+      "files": [
+        "evals/core_tool_deferral/results/SUMMARY.md:1-20",
+        "evals/core_tool_deferral/orchestrator.py",
+        "evals/core_tool_deferral/README.md:45-49"
+      ],
+      "reproduce_command": "python3 orchestrator.py openai/gpt-5.6-terra 3 --parallel=5"
+    },
+    {
+      "claim": "| qwen3.8-max tokens | 122k | 26k | −79% | ... | score (both models) | 1.00 | 1.00 | held |",
+      "metric": "Tokens/turns/wall on a FIFO-hang read task, stat-guard A/B (3 reps)",
+      "value": "opus-4.8 −43% tokens; qwen3.8-max −79% tokens; score 1.00",
+      "baseline": "baseline arm without stat guard (score 1.00)",
+      "evidence_type": "harness+results",
+      "files": [
+        "evals/readtool/results/SUMMARY.md:10-19",
+        "evals/readtool/runner.py"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "opus4.8    pr     18/18     25934 ... -60% / kimi-k3    pr     18/18     19230 ... -66%",
+      "metric": "Mean task tokens at accuracy parity, browser_exec driver vs built-in browser_* toolset (6 hard tasks x 3 reps)",
+      "value": "18/18 ok; −60% tokens (opus4.8), −66% tokens (kimi-k3)",
+      "baseline": "base arm 18/18 ok, 64594 (opus4.8) / 56464 (kimi-k3) mean tokens",
+      "evidence_type": "harness+results",
+      "files": [
+        "evals/browser_use/README.md:52-64",
+        "evals/browser_use/orchestrate.py",
+        "evals/browser_use/report.py"
+      ],
+      "reproduce_command": "python3 orchestrate.py --tasks tasks/hard.json --reps 3 && python3 report.py results/results.jsonl"
+    },
+    {
+      "claim": "| **total** | 49/54 | **52/54** | 7.0k → 5.3k |",
+      "metric": "session_search task success and avg tokens/task, schema 'diet' A/B (108 runs, 3 models)",
+      "value": "52/54; 5.3k tok/task",
+      "baseline": "base 49/54; 7.0k tok/task",
+      "evidence_type": "harness+results",
+      "files": [
+        "evals/session_search_schema/README.md:57-67",
+        "evals/session_search_schema/results/pr95570/qwen_qwen3-coder-30b-a3b-instruct.jsonl",
+        "evals/session_search_schema/runner.py"
+      ],
+      "reproduce_command": "python3 evals/session_search_schema/runner.py ... && python3 evals/session_search_schema/report.py results/<model>.jsonl"
+    },
+    {
+      "claim": "The Aug 2026 batch measured −21% turns, −29% tool calls, errors→0, −23% wall on qwen3-coder-30b, with sonnet-4.5 at parity.",
+      "metric": "Turns, tool calls, errors, wall-clock, tool-performance fixes A/B (108 runs)",
+      "value": "−21% turns, −29% tool calls, −23% wall (qwen3-coder-30b)",
+      "baseline": "baseline tree without fixes",
+      "evidence_type": "harness_only",
+      "files": [
+        "evals/toolperf_abeval/README.md:76-79",
+        "evals/toolperf_abeval/ab_eval.py",
+        "evals/toolperf_abeval/run_all.sh"
+      ],
+      "reproduce_command": "./run_all.sh /tmp/abeval-baseline /path/to/fixes-tree 3 \"anthropic/claude-sonnet-4.5\" \"qwen/qwen3-coder-30b-a3b-instruct\""
+    }
+  ],
+  "strongest_evidence_type": "harness+results",
+  "summary": "hermes-agent commits per-PR A/B evals under evals/ with runnable harnesses and scorecards that report token savings next to measured accuracy: lean+recovery compaction recall 68.3% vs 45.8% for the current policy at 3.3x fewer tokens (49K vs 162K; 96.7% uncompacted), core-tool deferral −7% to −23% tokens with grand accuracy 0.916 vs 0.923, and browser_exec −60% to −66% tokens with 18/18 runs succeeding on both arms. The scorecards also record results that went against the change, such as gpt-5.6-terra accuracy falling from 0.938 to 0.879 and the clarify tool being used in 7/18 runs instead of 18/18 under core-tool deferral. The runs need live paid models, the compaction transcripts are not committed, and per-run rows for the deferral, read-tool and browser suites are gitignored, so those results are summary tables; the session_search eval commits all 108 per-run rows (52/54 vs 49/54 passed). The toolperf figures (−21% turns, −29% tool calls on qwen3-coder-30b) are stated in a README next to the harness, without committed results.",
+  "result_focus": "outcome",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself",
+  "accuracy_check": {
+    "date": "2026-11-08",
+    "numbers_checked": 58,
+    "corrections": [
+      "summary: '35 top-level probe scripts' -> the 35 top-level files under evals/ include evals/__init__.py and evals/output_caps_scope.md (33 scripts); count removed from the rewritten summary",
+      "summary: 'most raw per-run results are gitignored' made specific: evals/core_tool_deferral/results/, evals/readtool/results/ and evals/browser_use/results/ have .gitignore rules, while evals/session_search_schema/results/pr95570/*.jsonl (108 rows) is committed"
+    ]
+  }
+}

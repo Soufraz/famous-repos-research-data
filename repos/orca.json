@@ -1,0 +1,639 @@
+{
+  "repo": "orca",
+  "full_name": "stablyai/orca",
+  "stars": 118822,
+  "stars_source": "github-api 2026-11-08T08:52:53Z",
+  "selection_topics": [
+    "ai-agents"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2026-03-17T03:28:57Z",
+    "description": "Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and remote runtime.",
+    "fork": false,
+    "forks": 7543,
+    "full_name": "stablyai/orca",
+    "pushed_at": "2026-11-08T08:52:51Z",
+    "stars": 118822,
+    "fetched_at": "2026-11-08T08:52:53Z"
+  },
+  "url": "https://github.com/stablyai/orca",
+  "description": "Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and remote runtime.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "4e66fb5510ab7c8fbb55049777abd8720017ed57",
+    "head_date": "2026-11-07T23:02:27-08:00",
+    "history_complete": true,
+    "non_merge_commits": 19996,
+    "merge_commits": 6,
+    "maintenance_bot_commits": 912,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 2814,
+    "explicit_ai_pct": 14.7,
+    "by_tool": {
+      "orca": 1900,
+      "claude": 844,
+      "cursor": 23,
+      "copilot": 18,
+      "codex": 15,
+      "devin": 7,
+      "other": 6,
+      "amp": 1
+    },
+    "by_signal": {
+      "co-author": 2813,
+      "footer": 1
+    },
+    "recent_180d": {
+      "commits": 17554,
+      "ai_pct": 13.2,
+      "fix_pct": 46.9
+    },
+    "first_365d": {
+      "commits": 19084,
+      "ai_pct": 14.7,
+      "fix_pct": 46.6
+    },
+    "bot_commit_count": 912,
+    "agent_config": {
+      "files": {
+        ".claude/": "2026-03-17T00:34:22-07:00",
+        "AGENTS.md": "2026-03-23T16:49:12-07:00",
+        "opencode.json": "2026-10-04T19:34:47-07:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2026-03-17T00:34:22-07:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 19084,
+    "first_commit_date": "2026-03-16T20:29:24-07:00",
+    "last_commit_date": "2026-11-07T23:02:27-08:00",
+    "current_loc": 4981349,
+    "total_historical_additions": 11528202,
+    "total_historical_deletions": 6547577,
+    "total_churn": 18075779,
+    "churn_ratio": 3.63,
+    "survival_rate_pct": 43.2,
+    "code": {
+      "current_loc": 4955851,
+      "additions": 11387161,
+      "deletions": 6432034,
+      "churn_ratio": 3.6,
+      "survival_rate_pct": 43.5
+    },
+    "docs": {
+      "current_loc": 25498,
+      "additions": 141041,
+      "deletions": 115543,
+      "churn_ratio": 10.06,
+      "survival_rate_pct": 18.1
+    },
+    "fix_commits": 8893,
+    "fix_pct": 46.6,
+    "revert_commits": 155,
+    "revert_pct": 0.8,
+    "trial_error_commits": 9055,
+    "trial_error_pct": 47.4,
+    "rapid_fire_commits": 7218,
+    "rapid_fire_pct": 37.8,
+    "trial_error_chains": 3378,
+    "suspicious_additions_count": 2438,
+    "top5_hotspot_volatility_pct": 3.0
+  },
+  "code_hygiene": {
+    "total_files": 36935,
+    "docs_files": 241,
+    "avg_file_loc": 134.2,
+    "test_loc": 1914706,
+    "test_files": 11439,
+    "test_ratio_pct": 38.6,
+    "comment_ratio_pct": 2.9,
+    "monolith_count": 18,
+    "top_languages": {
+      ".ts": 4102756,
+      ".tsx": 666102,
+      ".mjs": 148977,
+      ".swift": 10649,
+      ".cjs": 9711
+    }
+  },
+  "authors": {
+    "unique_authors": 628,
+    "top_authors": [
+      {
+        "name": "Neil",
+        "commits": 7469,
+        "pct": 39.1
+      },
+      {
+        "name": "Brennan Benson",
+        "commits": 2931,
+        "pct": 15.4
+      },
+      {
+        "name": "Jinwoo Hong",
+        "commits": 2282,
+        "pct": 12.0
+      },
+      {
+        "name": "Jinjing",
+        "commits": 2201,
+        "pct": 11.5
+      },
+      {
+        "name": "OrcaWin",
+        "commits": 2091,
+        "pct": 11.0
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 56.2,
+    "p75": 297.4,
+    "p90": 1431.2,
+    "p95": 3505.7,
+    "p99": 14745.0,
+    "avg": 1609.8
+  },
+  "hotspots": [
+    {
+      "file": "src/main/runtime/orca-runtime.ts",
+      "commits": 749,
+      "additions": 59141,
+      "deletions": 58830,
+      "churn": 117971,
+      "first_seen": "2026-04-03T19:50:28-04:00",
+      "last_seen": "2026-11-07T22:24:34-08:00"
+    },
+    {
+      "file": "src/preload/index.ts",
+      "commits": 638,
+      "additions": 7449,
+      "deletions": 7225,
+      "churn": 14674,
+      "first_seen": "2026-03-16T20:29:24-07:00",
+      "last_seen": "2026-11-07T18:22:37-08:00"
+    },
+    {
+      "file": "src/shared/types.ts",
+      "commits": 569,
+      "additions": 5422,
+      "deletions": 5422,
+      "churn": 10844,
+      "first_seen": "2026-03-17T01:40:24-07:00",
+      "last_seen": "2026-08-13T22:48:24-07:00"
+    },
+    {
+      "file": "src/preload/api-types.ts",
+      "commits": 484,
+      "additions": 4087,
+      "deletions": 4701,
+      "churn": 8788,
+      "first_seen": "2026-04-27T21:46:17-07:00",
+      "last_seen": "2026-11-07T18:22:37-08:00"
+    },
+    {
+      "file": "src/main/runtime/orca-runtime.test.ts",
+      "commits": 455,
+      "additions": 57769,
+      "deletions": 57769,
+      "churn": 115538,
+      "first_seen": "2026-04-03T19:50:28-04:00",
+      "last_seen": "2026-11-07T22:24:34-08:00"
+    },
+    {
+      "file": "src/main/index.ts",
+      "commits": 403,
+      "additions": 6990,
+      "deletions": 6731,
+      "churn": 13721,
+      "first_seen": "2026-03-16T20:29:24-07:00",
+      "last_seen": "2026-11-06T17:14:56-08:00"
+    },
+    {
+      "file": "src/renderer/src/App.tsx",
+      "commits": 354,
+      "additions": 7423,
+      "deletions": 7282,
+      "churn": 14705,
+      "first_seen": "2026-03-16T20:29:24-07:00",
+      "last_seen": "2026-11-07T12:26:03-08:00"
+    },
+    {
+      "file": "src/renderer/src/components/terminal-pane/pty-connection.ts",
+      "commits": 350,
+      "additions": 15136,
+      "deletions": 15136,
+      "churn": 30272,
+      "first_seen": "2026-03-22T15:22:55-07:00",
+      "last_seen": "2026-11-06T15:23:27-08:00"
+    },
+    {
+      "file": "src/shared/constants.ts",
+      "commits": 333,
+      "additions": 912,
+      "deletions": 623,
+      "churn": 1535,
+      "first_seen": "2026-03-17T01:40:24-07:00",
+      "last_seen": "2026-11-07T18:26:32-08:00"
+    },
+    {
+      "file": "src/renderer/src/web/web-preload-api.ts",
+      "commits": 295,
+      "additions": 5583,
+      "deletions": 5399,
+      "churn": 10982,
+      "first_seen": "2026-05-15T05:44:25-04:00",
+      "last_seen": "2026-11-07T01:31:58Z"
+    },
+    {
+      "file": "src/renderer/src/components/sidebar/WorktreeList.tsx",
+      "commits": 294,
+      "additions": 13841,
+      "deletions": 13506,
+      "churn": 27347,
+      "first_seen": "2026-03-17T01:40:24-07:00",
+      "last_seen": "2026-10-31T17:45:22-07:00"
+    },
+    {
+      "file": "src/main/ipc/pty.ts",
+      "commits": 282,
+      "additions": 15049,
+      "deletions": 15049,
+      "churn": 30098,
+      "first_seen": "2026-03-17T01:40:24-07:00",
+      "last_seen": "2026-10-11T23:45:07-07:00"
+    },
+    {
+      "file": "src/renderer/src/components/terminal-pane/pty-connection.test.ts",
+      "commits": 282,
+      "additions": 30101,
+      "deletions": 30101,
+      "churn": 60202,
+      "first_seen": "2026-04-14T16:23:01-07:00",
+      "last_seen": "2026-08-15T00:54:20-07:00"
+    },
+    {
+      "file": "src/renderer/src/hooks/useIpcEvents.ts",
+      "commits": 267,
+      "additions": 7144,
+      "deletions": 7138,
+      "churn": 14282,
+      "first_seen": "2026-03-17T01:40:24-07:00",
+      "last_seen": "2026-10-25T04:05:46-07:00"
+    },
+    {
+      "file": "src/main/persistence.ts",
+      "commits": 256,
+      "additions": 10754,
+      "deletions": 10754,
+      "churn": 21508,
+      "first_seen": "2026-03-17T01:40:24-07:00",
+      "last_seen": "2026-11-01T09:48:22-08:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "cloud/apps/relay/src/assignment/assignment-store.ts",
+      "loc": 9838
+    },
+    {
+      "file": "native/computer-use-macos/Sources/OrcaComputerUseMacOS/main.swift",
+      "loc": 4521
+    },
+    {
+      "file": "src/renderer/src/components/terminal-pane/pty-transport/remote-runtime/remote-runtime-pty-transport.ts",
+      "loc": 4354
+    },
+    {
+      "file": "src/cli/bundled-skill-guides.ts",
+      "loc": 4282
+    },
+    {
+      "file": "cloud/apps/relay/src/assignment/assignment-store.test.ts",
+      "loc": 4268
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "800ed1976e58710a14c1e75dfbd5ffbf0dcdf1c0",
+      "short_hash": "800ed1976e",
+      "author": "OrcaWin",
+      "date": "2026-11-07T22:03:03-08:00",
+      "subject": "refactor(i18n): read render-path translations from useTranslate in the remaining renderer files (top-level components, app shell, entry points, hooks, lib) (#39427)",
+      "coauthors": [
+        "OrcaWin"
+      ],
+      "additions": 1657,
+      "deletions": 1681,
+      "files_count": 135,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "18eadb8628e0f678151afa379af254e7b8de94cf",
+      "short_hash": "18eadb8628",
+      "author": "Jinjing",
+      "date": "2026-11-07T22:05:03-08:00",
+      "subject": "Reorganize the worktree context menu (#39739)",
+      "coauthors": [],
+      "additions": 393,
+      "deletions": 427,
+      "files_count": 9,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "3e9ca6e85af57280d3eaea29dc8507881dea6d8a",
+      "short_hash": "3e9ca6e85a",
+      "author": "Kelvin Amoaba",
+      "date": "2026-11-08T06:12:07Z",
+      "subject": "perf(mobile): open the PR tab with its last state and refresh only what a write changed (#39709)",
+      "coauthors": [],
+      "additions": 1716,
+      "deletions": 3341,
+      "files_count": 47,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "0545d1d89e592f443bff67c1bec2a28928d0fc66",
+      "short_hash": "0545d1d89e",
+      "author": "OrcaWin",
+      "date": "2026-11-07T22:13:26-08:00",
+      "subject": "test: mount the settings nav language test inside TranslationScopeProvider (#39754)",
+      "coauthors": [
+        "OrcaWin"
+      ],
+      "additions": 2,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "1f5a5e155c30c7b754944368617a2118b619346e",
+      "short_hash": "1f5a5e155c",
+      "author": "Brennan Benson",
+      "date": "2026-11-07T22:14:45-08:00",
+      "subject": "/btw asks a side question in a fork beside the chat (#39268)",
+      "coauthors": [],
+      "additions": 2008,
+      "deletions": 165,
+      "files_count": 35,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "8f60fbb5a9820c32ea9f913654beafdf3c31277b",
+      "short_hash": "8f60fbb5a9",
+      "author": "OrcaWin",
+      "date": "2026-11-07T22:15:43-08:00",
+      "subject": "refactor(i18n): finish the review notes send menu and resume groups on useTranslate (#39755)",
+      "coauthors": [
+        "OrcaWin"
+      ],
+      "additions": 119,
+      "deletions": 102,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "3b6d5d4c15f918943616c26a6a2fc1374817e50c",
+      "short_hash": "3b6d5d4c15",
+      "author": "Kelvin Amoaba",
+      "date": "2026-11-08T06:26:49Z",
+      "subject": "feat(mobile): keep screen data on the phone between launches (#39719)",
+      "coauthors": [],
+      "additions": 1226,
+      "deletions": 125,
+      "files_count": 37,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "104d01b686b60212e45b9fd807ef8a40bf759ea4",
+      "short_hash": "104d01b686",
+      "author": "Brennan Benson",
+      "date": "2026-11-07T22:37:41-08:00",
+      "subject": "Simplify the new-tab agent launch menu (#39279)",
+      "coauthors": [],
+      "additions": 191,
+      "deletions": 81,
+      "files_count": 13,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "81c97bb124ae83e405c37d28ed643763910895e9",
+      "short_hash": "81c97bb124",
+      "author": "Kelvin Amoaba",
+      "date": "2026-11-08T06:42:18Z",
+      "subject": "perf(runtime): push worktree row changes; host list poll becomes a 10 s backstop (#39688)",
+      "coauthors": [],
+      "additions": 114,
+      "deletions": 15,
+      "files_count": 10,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "291d584903830613a5c6de405f761b4945f60ae8",
+      "short_hash": "291d584903",
+      "author": "Jinwoo Hong",
+      "date": "2026-11-08T01:43:36-05:00",
+      "subject": "fix(cli): refuse ambiguous orchestration check callers (#38460)",
+      "coauthors": [
+        "Seiya Iwaoka"
+      ],
+      "additions": 108,
+      "deletions": 14,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "29781fc694cfd79b5773069faf4edfbbf3358b8a",
+      "short_hash": "29781fc694",
+      "author": "Kelvin Amoaba",
+      "date": "2026-11-08T06:45:30Z",
+      "subject": "feat(mobile): keep automation drafts across kills (#39683)",
+      "coauthors": [],
+      "additions": 346,
+      "deletions": 30,
+      "files_count": 11,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "79c05e3f14cb03d60f33c8d1cb3ae2913196c748",
+      "short_hash": "79c05e3f14",
+      "author": "OrcaWin",
+      "date": "2026-11-07T22:50:03-08:00",
+      "subject": "refactor(i18n): read AgentLaunchSetupPanel's copy from useTranslate (#39761)",
+      "coauthors": [
+        "OrcaWin"
+      ],
+      "additions": 11,
+      "deletions": 12,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "d5ef05a97366566104945d4054ae8a13cec952ee",
+      "short_hash": "d5ef05a973",
+      "author": "Neil",
+      "date": "2026-11-07T22:53:05-08:00",
+      "subject": "relay: edge fence failures (stale/conflict) recorded and retried from the evacuation sweep; cap pushes under row lock at 8 in flight (2 s); jti on edge admin tokens (#39740)",
+      "coauthors": [],
+      "additions": 670,
+      "deletions": 27,
+      "files_count": 8,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "b40e868132894bb6a4514c6890941d6dd94f25ae",
+      "short_hash": "b40e868132",
+      "author": "Kelvin Amoaba",
+      "date": "2026-11-08T06:53:26Z",
+      "subject": "feat(mobile): offer to restore unsaved file and Markdown edits after the app is killed (#39710)",
+      "coauthors": [],
+      "additions": 671,
+      "deletions": 138,
+      "files_count": 13,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "5e361be0303b4a3c5191236e79ee711ee53e980b",
+      "short_hash": "5e361be030",
+      "author": "Kelvin Amoaba",
+      "date": "2026-11-08T06:54:05Z",
+      "subject": "fix(mobile): Jump back in follow-ups from W8b (#39702)",
+      "coauthors": [],
+      "additions": 418,
+      "deletions": 119,
+      "files_count": 10,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "cdc0f0306bff852b442b77ba920f2d5bc9f03f9d",
+      "short_hash": "cdc0f0306b",
+      "author": "Jinjing",
+      "date": "2026-11-07T22:54:20-08:00",
+      "subject": "Focus session search when switching sidebar tabs (#39763)",
+      "coauthors": [],
+      "additions": 171,
+      "deletions": 28,
+      "files_count": 8,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "82c3c05a70d5ab6ee5f3bf53e36f4fee4b302e1e",
+      "short_hash": "82c3c05a70",
+      "author": "Kelvin Amoaba",
+      "date": "2026-11-08T06:54:46Z",
+      "subject": "perf(mobile): switch back to a terminal without rebuilding it (#39705)",
+      "coauthors": [],
+      "additions": 435,
+      "deletions": 52,
+      "files_count": 22,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "4e66fb5510ab7c8fbb55049777abd8720017ed57",
+      "short_hash": "4e66fb5510",
+      "author": "Neil",
+      "date": "2026-11-07T23:02:27-08:00",
+      "subject": "fix(terminal): stop recovery snapshots from piling up on slow links; let opt-in pacing engage under floods (#39765)",
+      "coauthors": [],
+      "additions": 172,
+      "deletions": 7,
+      "files_count": 13,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    }
+  ]
+}

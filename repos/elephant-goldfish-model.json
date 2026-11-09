@@ -1,0 +1,650 @@
+{
+  "repo": "elephant-goldfish-model",
+  "full_name": "google/elephant-goldfish-model",
+  "stars": 14254,
+  "stars_source": "github-api 2026-11-08T09:04:32Z",
+  "selection_topics": [
+    "coding-agents",
+    "spec-driven-development"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2026-09-13T16:31:06Z",
+    "description": "Open-source plugin for designing and reviewing software with agents",
+    "fork": false,
+    "forks": 1044,
+    "full_name": "google/elephant-goldfish-model",
+    "pushed_at": "2026-11-08T01:58:36Z",
+    "stars": 14254,
+    "fetched_at": "2026-11-08T09:04:32Z"
+  },
+  "url": "https://github.com/google/elephant-goldfish-model",
+  "description": "Open-source plugin for designing and reviewing software with agents",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "e9e1f06aa4e26e95cd4ed37210a0632202c429e9",
+    "head_date": "2026-11-06T22:11:51-05:00",
+    "history_complete": true,
+    "non_merge_commits": 147,
+    "merge_commits": 15,
+    "maintenance_bot_commits": 8,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 1,
+    "explicit_ai_pct": 0.7,
+    "by_tool": {
+      "claude": 1
+    },
+    "by_signal": {
+      "co-author": 1
+    },
+    "recent_180d": {
+      "commits": 139,
+      "ai_pct": 0.7,
+      "fix_pct": 26.6
+    },
+    "first_365d": {
+      "commits": 139,
+      "ai_pct": 0.7,
+      "fix_pct": 26.6
+    },
+    "bot_commit_count": 8,
+    "agent_config": {
+      "files": {
+        ".agents/": "2026-10-22T18:13:12-04:00",
+        ".gemini/": "2026-11-06T15:53:42-05:00",
+        "AGENTS.md": "2026-10-21T16:17:43Z"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2026-10-21T16:17:43Z"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 139,
+    "first_commit_date": "2026-10-21T16:17:43Z",
+    "last_commit_date": "2026-11-06T21:11:51-06:00",
+    "current_loc": 21545,
+    "total_historical_additions": 26467,
+    "total_historical_deletions": 4955,
+    "total_churn": 31422,
+    "churn_ratio": 1.46,
+    "survival_rate_pct": 81.4,
+    "code": {
+      "current_loc": 6333,
+      "additions": 7582,
+      "deletions": 1249,
+      "churn_ratio": 1.39,
+      "survival_rate_pct": 83.5
+    },
+    "docs": {
+      "current_loc": 15212,
+      "additions": 18885,
+      "deletions": 3706,
+      "churn_ratio": 1.49,
+      "survival_rate_pct": 80.6
+    },
+    "fix_commits": 37,
+    "fix_pct": 26.6,
+    "revert_commits": 0,
+    "revert_pct": 0.0,
+    "trial_error_commits": 37,
+    "trial_error_pct": 26.6,
+    "rapid_fire_commits": 32,
+    "rapid_fire_pct": 23.0,
+    "trial_error_chains": 11,
+    "suspicious_additions_count": 3,
+    "top5_hotspot_volatility_pct": 14.4
+  },
+  "code_hygiene": {
+    "total_files": 47,
+    "docs_files": 150,
+    "avg_file_loc": 134.7,
+    "test_loc": 4278,
+    "test_files": 27,
+    "test_ratio_pct": 67.6,
+    "comment_ratio_pct": 5.1,
+    "monolith_count": 0,
+    "top_languages": {
+      ".py": 4296,
+      ".astro": 1365,
+      ".mjs": 451,
+      ".cjs": 221
+    }
+  },
+  "authors": {
+    "unique_authors": 29,
+    "top_authors": [
+      {
+        "name": "n3wth",
+        "commits": 52,
+        "pct": 37.4
+      },
+      {
+        "name": "Oliver",
+        "commits": 25,
+        "pct": 18.0
+      },
+      {
+        "name": "Oliver Newth",
+        "commits": 11,
+        "pct": 7.9
+      },
+      {
+        "name": "Aryan Atre",
+        "commits": 7,
+        "pct": 5.0
+      },
+      {
+        "name": "Mohab Fekry",
+        "commits": 5,
+        "pct": 3.6
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 278.2,
+    "p75": 1680.0,
+    "p90": 6720.0,
+    "p95": 17280.0,
+    "p99": 134100.0,
+    "avg": 6399.5
+  },
+  "hotspots": [
+    {
+      "file": "README.md",
+      "commits": 30,
+      "additions": 469,
+      "deletions": 334,
+      "churn": 803,
+      "first_seen": "2026-10-21T16:17:43Z",
+      "last_seen": "2026-11-06T13:36:57-08:00"
+    },
+    {
+      "file": "distributions/claude/README.md",
+      "commits": 27,
+      "additions": 423,
+      "deletions": 288,
+      "churn": 711,
+      "first_seen": "2026-10-24T08:23:34-07:00",
+      "last_seen": "2026-11-06T13:36:57-08:00"
+    },
+    {
+      "file": "TESTING.md",
+      "commits": 15,
+      "additions": 190,
+      "deletions": 16,
+      "churn": 206,
+      "first_seen": "2026-10-21T16:17:43Z",
+      "last_seen": "2026-11-02T17:46:36-08:00"
+    },
+    {
+      "file": "docs/designs/README.md",
+      "commits": 14,
+      "additions": 35,
+      "deletions": 10,
+      "churn": 45,
+      "first_seen": "2026-10-21T16:17:43Z",
+      "last_seen": "2026-11-06T13:47:01-08:00"
+    },
+    {
+      "file": "scripts/pack_plugin.py",
+      "commits": 14,
+      "additions": 177,
+      "deletions": 40,
+      "churn": 217,
+      "first_seen": "2026-10-24T08:23:34-07:00",
+      "last_seen": "2026-11-05T16:31:23-06:00"
+    },
+    {
+      "file": "tests/unit/test_packaging.py",
+      "commits": 14,
+      "additions": 418,
+      "deletions": 25,
+      "churn": 443,
+      "first_seen": "2026-10-24T08:23:34-07:00",
+      "last_seen": "2026-11-03T13:14:13+05:30"
+    },
+    {
+      "file": "tests/unit/test_harnesses.py",
+      "commits": 13,
+      "additions": 328,
+      "deletions": 63,
+      "churn": 391,
+      "first_seen": "2026-10-22T15:13:12-07:00",
+      "last_seen": "2026-11-06T14:45:43-08:00"
+    },
+    {
+      "file": "docs/harnesses.md",
+      "commits": 13,
+      "additions": 204,
+      "deletions": 25,
+      "churn": 229,
+      "first_seen": "2026-10-21T16:17:43Z",
+      "last_seen": "2026-11-05T16:31:23-06:00"
+    },
+    {
+      "file": "distributions/claude/docs/harnesses.md",
+      "commits": 10,
+      "additions": 194,
+      "deletions": 16,
+      "churn": 210,
+      "first_seen": "2026-10-24T08:23:34-07:00",
+      "last_seen": "2026-11-05T16:31:23-06:00"
+    },
+    {
+      "file": "site/src/components/Skills.astro",
+      "commits": 10,
+      "additions": 373,
+      "deletions": 229,
+      "churn": 602,
+      "first_seen": "2026-10-21T16:17:43Z",
+      "last_seen": "2026-10-27T18:22:54Z"
+    },
+    {
+      "file": "docs/designs/architecture.md",
+      "commits": 9,
+      "additions": 225,
+      "deletions": 23,
+      "churn": 248,
+      "first_seen": "2026-10-21T16:17:43Z",
+      "last_seen": "2026-11-05T16:31:23-06:00"
+    },
+    {
+      "file": "docs/claude.md",
+      "commits": 9,
+      "additions": 202,
+      "deletions": 23,
+      "churn": 225,
+      "first_seen": "2026-10-22T15:13:12-07:00",
+      "last_seen": "2026-11-03T04:29:14+05:30"
+    },
+    {
+      "file": "docs/designs/review.md",
+      "commits": 7,
+      "additions": 239,
+      "deletions": 41,
+      "churn": 280,
+      "first_seen": "2026-10-21T16:17:43Z",
+      "last_seen": "2026-11-05T16:31:23-06:00"
+    },
+    {
+      "file": "docs/codex.md",
+      "commits": 7,
+      "additions": 140,
+      "deletions": 7,
+      "churn": 147,
+      "first_seen": "2026-10-22T15:13:12-07:00",
+      "last_seen": "2026-11-05T13:11:05-08:00"
+    },
+    {
+      "file": "site/src/components/Footer.astro",
+      "commits": 7,
+      "additions": 170,
+      "deletions": 39,
+      "churn": 209,
+      "first_seen": "2026-10-21T16:17:43Z",
+      "last_seen": "2026-11-02T08:09:05-08:00"
+    }
+  ],
+  "monoliths": [],
+  "commits_sample": [
+    {
+      "hash": "5ba5afa03f62627639fa4f71b7ac3bd4d8d07e24",
+      "short_hash": "5ba5afa",
+      "author": "Rishab Dugar Jain",
+      "date": "2026-11-03T07:53:13+05:30",
+      "subject": "fix(packaging): read plugin manifests as UTF-8 (#283)",
+      "coauthors": [],
+      "additions": 17,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "86f751a480522f81f422057867425d9034430722",
+      "short_hash": "86f751a",
+      "author": "Rishab Dugar Jain",
+      "date": "2026-11-03T12:58:29+05:30",
+      "subject": "docs: fix stale icon path and tests workflow comment (#284)",
+      "coauthors": [],
+      "additions": 1,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "ccd79fe1b3b7faaff9b276063806f982d8b1a7a9",
+      "short_hash": "ccd79fe",
+      "author": "JAYADITYA",
+      "date": "2026-11-03T13:05:40+05:30",
+      "subject": "docs: forbid design doc creation for bug fixes in AGENTS.md (#259)",
+      "coauthors": [
+        "n3wth"
+      ],
+      "additions": 3,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "394aa38db6ceb641d4e37adc552e0a56535aa093",
+      "short_hash": "394aa38",
+      "author": "Smit Parmar",
+      "date": "2026-11-03T02:35:46-05:00",
+      "subject": "Propose the egm-ask contextual help command (#218)",
+      "coauthors": [
+        "Oliver Newth"
+      ],
+      "additions": 318,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "464db031e7dd1b9a79803ac8ea45f55c7c20c5bc",
+      "short_hash": "464db03",
+      "author": "Rup Sarmah",
+      "date": "2026-11-03T13:14:13+05:30",
+      "subject": "fix(packaging): check codex manifest icons in the openai zip (#286)",
+      "coauthors": [],
+      "additions": 21,
+      "deletions": 6,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "113a3afc44e8f4f54722d7150d5701f65cc8ef7f",
+      "short_hash": "113a3af",
+      "author": "Aryan Atre",
+      "date": "2026-11-03T14:56:47-05:00",
+      "subject": "fix(review): save GoldfishContext URLs as files (#289)",
+      "coauthors": [
+        "n3wth"
+      ],
+      "additions": 25,
+      "deletions": 9,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "0dfb5bf3eebd551d1e805c3ab16cbaa9b1c2c42a",
+      "short_hash": "0dfb5bf",
+      "author": "briansuchy",
+      "date": "2026-11-04T13:11:39-06:00",
+      "subject": "Propose the TRIZ inventive catalyst design specification (#290)",
+      "coauthors": [
+        "Brian Suchy"
+      ],
+      "additions": 607,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "ccf79c5c0fb5df7815685d5e4994fd9aad8954bd",
+      "short_hash": "ccf79c5",
+      "author": "n3wth",
+      "date": "2026-11-05T13:11:05-08:00",
+      "subject": "docs(install): link the published desktop plugin (#301)",
+      "coauthors": [],
+      "additions": 32,
+      "deletions": 8,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "6a8001ea31ccf72430ba0603a467ec6df9f69dd7",
+      "short_hash": "6a8001e",
+      "author": "briansuchy",
+      "date": "2026-11-05T16:31:23-06:00",
+      "subject": "feat(agents): add the TRIZ inventive catalyst reviewer (#299)",
+      "coauthors": [
+        "Brian Suchy"
+      ],
+      "additions": 390,
+      "deletions": 72,
+      "files_count": 33,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "19fb46143f0644d5fa556e7c325f6c2d7215442c",
+      "short_hash": "19fb461",
+      "author": "n3wth",
+      "date": "2026-11-06T12:40:47-08:00",
+      "subject": "docs(site): propose the documentation architecture (#304)",
+      "coauthors": [],
+      "additions": 419,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "886a50d40bad15a700f76a8d128cd417cea0409c",
+      "short_hash": "886a50d",
+      "author": "n3wth",
+      "date": "2026-11-06T12:41:29-08:00",
+      "subject": "docs(contributing): clarify the first contribution (#330)",
+      "coauthors": [],
+      "additions": 9,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "6a381dfe9467c0653531aa5fffb61dcb7413b3c4",
+      "short_hash": "6a381df",
+      "author": "n3wth",
+      "date": "2026-11-06T12:43:29-08:00",
+      "subject": "docs(prs): simplify the pull request template (#331)",
+      "coauthors": [],
+      "additions": 22,
+      "deletions": 25,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "99129631d5520a2bd2c29581bd3cd635c7d8fed3",
+      "short_hash": "9912963",
+      "author": "n3wth",
+      "date": "2026-11-06T12:48:17-08:00",
+      "subject": "fix(plugin): separate publisher policy destinations (#314)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "49d94155543c9ad8469782c874373bc22caff8bb",
+      "short_hash": "49d9415",
+      "author": "n3wth",
+      "date": "2026-11-06T12:53:42-08:00",
+      "subject": "Configure Gemini Code Assist review threshold and styleguide (#320)",
+      "coauthors": [],
+      "additions": 28,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "4034de5eb2ccb2eddfc1eafb8d31762970edbab9",
+      "short_hash": "4034de5",
+      "author": "n3wth",
+      "date": "2026-11-06T13:36:57-08:00",
+      "subject": "feat(plugin): update listing and prepare v0.1.1 (#316)",
+      "coauthors": [],
+      "additions": 38,
+      "deletions": 6,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "9c582585cca5bc58e6320c7bfd519fff6741cb9f",
+      "short_hash": "9c58258",
+      "author": "n3wth",
+      "date": "2026-11-06T13:47:01-08:00",
+      "subject": "docs(plugin): define the listing presentation scope (#305)",
+      "coauthors": [],
+      "additions": 325,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "dea7761de06ce5b51c177ebb9bba0469f24af5a4",
+      "short_hash": "dea7761",
+      "author": "n3wth",
+      "date": "2026-11-06T13:47:05-08:00",
+      "subject": "feat(site): add documentation dependencies and primitives (#306)",
+      "coauthors": [],
+      "additions": 21,
+      "deletions": 0,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "4298a12012d2d4165ee35ef7be534f66340611e5",
+      "short_hash": "4298a12",
+      "author": "n3wth",
+      "date": "2026-11-06T14:45:43-08:00",
+      "subject": "Add displayName and logo to root plugin manifest (#336)",
+      "coauthors": [
+        "Oliver Newth"
+      ],
+      "additions": 3,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "7bd119c1031c58e6a6f4e2031b397a2635872124",
+      "short_hash": "7bd119c",
+      "author": "briansuchy",
+      "date": "2026-11-06T16:51:10-06:00",
+      "subject": "Route CODEOWNERS reviews through @google/egm-maintainers (#340)",
+      "coauthors": [
+        "Brian Suchy"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "e9e1f06aa4e26e95cd4ed37210a0632202c429e9",
+      "short_hash": "e9e1f06",
+      "author": "briansuchy",
+      "date": "2026-11-06T21:11:51-06:00",
+      "subject": "Harden pr-scope-advisory workflow for pull_request_target policy (#341)",
+      "coauthors": [
+        "Brian Suchy"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

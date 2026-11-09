@@ -1,0 +1,63 @@
+{
+  "repo": "gin",
+  "full_name": "gin-gonic/gin",
+  "group": "baseline",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "3b079bb6f79ae501e73a5401c41b589f6616b61e",
+      "snapshot_date": "2014-08-29T19:50:58+02:00",
+      "first_commit_date": "2014-06-18T01:42:34+02:00",
+      "commits": 159,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 22.6,
+      "revert_pct": 0.0,
+      "churn_ratio": 2.3,
+      "survival_rate_pct": 60.6,
+      "code": {
+        "current_loc": 2198,
+        "additions": 3690,
+        "deletions": 1492,
+        "churn_ratio": 2.36,
+        "survival_rate_pct": 59.6
+      },
+      "docs": {
+        "current_loc": 587,
+        "additions": 909,
+        "deletions": 322,
+        "churn_ratio": 2.1,
+        "survival_rate_pct": 64.6
+      },
+      "rapid_fire_pct": 19.5,
+      "unique_authors": 29
+    },
+    "365": {
+      "snapshot_commit": "d6425f1692d4aa170ece887b62bb75c9c4da5829",
+      "snapshot_date": "2015-06-13T16:42:12+02:00",
+      "first_commit_date": "2014-06-18T01:42:34+02:00",
+      "commits": 460,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 18.5,
+      "revert_pct": 0.0,
+      "churn_ratio": 2.72,
+      "survival_rate_pct": 55.1,
+      "code": {
+        "current_loc": 7554,
+        "additions": 13991,
+        "deletions": 7189,
+        "churn_ratio": 2.8,
+        "survival_rate_pct": 54.0
+      },
+      "docs": {
+        "current_loc": 1113,
+        "additions": 1734,
+        "deletions": 668,
+        "churn_ratio": 2.16,
+        "survival_rate_pct": 64.2
+      },
+      "rapid_fire_pct": 16.7,
+      "unique_authors": 70
+    }
+  }
+}

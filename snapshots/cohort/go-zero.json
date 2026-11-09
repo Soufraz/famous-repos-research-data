@@ -1,0 +1,63 @@
+{
+  "repo": "go-zero",
+  "full_name": "zeromicro/go-zero",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "a7849820301b36eacaaefdfd2f2755a582d7f470",
+      "snapshot_date": "2021-01-21T21:03:24+08:00",
+      "first_commit_date": "2020-07-26T17:09:05+08:00",
+      "commits": 606,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 15.2,
+      "revert_pct": 0.2,
+      "churn_ratio": 1.84,
+      "survival_rate_pct": 70.4,
+      "code": {
+        "current_loc": 78831,
+        "additions": 105019,
+        "deletions": 26188,
+        "churn_ratio": 1.66,
+        "survival_rate_pct": 75.1
+      },
+      "docs": {
+        "current_loc": 2027,
+        "additions": 9888,
+        "deletions": 7861,
+        "churn_ratio": 8.76,
+        "survival_rate_pct": 20.5
+      },
+      "rapid_fire_pct": 6.9,
+      "unique_authors": 53
+    },
+    "365": {
+      "snapshot_commit": "603c93aa4aeb3ac10a60545cd2765541775c58ba",
+      "snapshot_date": "2021-07-24T22:29:02+08:00",
+      "first_commit_date": "2020-07-26T17:09:05+08:00",
+      "commits": 814,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 22.7,
+      "revert_pct": 0.1,
+      "churn_ratio": 2.08,
+      "survival_rate_pct": 64.9,
+      "code": {
+        "current_loc": 79262,
+        "additions": 115101,
+        "deletions": 35839,
+        "churn_ratio": 1.9,
+        "survival_rate_pct": 68.9
+      },
+      "docs": {
+        "current_loc": 2461,
+        "additions": 10783,
+        "deletions": 8322,
+        "churn_ratio": 7.76,
+        "survival_rate_pct": 22.8
+      },
+      "rapid_fire_pct": 6.0,
+      "unique_authors": 78
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "repo": "rtk",
+  "head_commit": "bd7f87eb",
+  "published_results": [
+    {
+      "claim": "RTK cuts **up to 90% of the bash output** your agent reads.",
+      "metric": "Reduction in bash command output bytes (estimated tokens = bytes/4)",
+      "value": "up to 90%",
+      "baseline": "Raw (unfiltered) command output",
+      "evidence_type": "claim_only",
+      "files": [
+        "docs/guide/resources/savings-explained.md:10",
+        "README.md:8",
+        "docs/usage/FEATURES.md:3",
+        "docs/guide/getting-started/supported-agents.md:14"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "WARNING: $GOOD_PCT% good (target 60%)",
+      "metric": "Per-command estimated tokens (characters/4) of raw vs rtk-filtered output across 84 bench cases (many conditional on installed tools) run on the rtk repo; a case is GOOD at >=60% savings, and the run fails on any negative or empty filter",
+      "value": "No committed result. Output goes to CI stdout and to gitignored scripts/benchmark/{unix,rtk,diff}/",
+      "baseline": "Same command run without rtk",
+      "evidence_type": "harness_only",
+      "files": [
+        "scripts/benchmark.sh:45-118",
+        "scripts/benchmark.sh:875-917",
+        ".github/workflows/ci.yml:292-327",
+        ".gitignore:41-44"
+      ],
+      "reproduce_command": "./scripts/benchmark.sh"
+    },
+    {
+      "claim": "Single Rust binary, 100+ supported commands, <10ms overhead.",
+      "metric": "Startup/overhead per command",
+      "value": "<10ms (docs/contributing/TECHNICAL.md:377-379 lists it as a 'Target'; no measurement committed)",
+      "baseline": "Raw command (hyperfine 'rtk git status' vs 'git status')",
+      "evidence_type": "harness_only",
+      "files": [
+        "README.md:45",
+        "docs/usage/FEATURES.md:5",
+        "docs/contributing/TECHNICAL.md:375-382",
+        "scripts/benchmark/run.ts:351-372"
+      ],
+      "reproduce_command": "hyperfine 'rtk git status' 'git status'"
+    },
+    {
+      "claim": "~5-15ms proxy overhead per command",
+      "metric": "Per-command overhead",
+      "value": "~5-15ms (contradicts the '<10ms' headline)",
+      "baseline": null,
+      "evidence_type": "claim_only",
+      "files": [
+        "docs/contributing/ARCHITECTURE.md:34",
+        "docs/contributing/ARCHITECTURE.md:936"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "failures only (85-90% reduction)",
+      "metric": "Per-filter output reduction",
+      "value": "rake/Minitest 85-90%; pytest 90%+; go 75-90%; cargo install 80-90%",
+      "baseline": "Raw command output",
+      "evidence_type": "claim_only",
+      "files": [
+        "src/cmds/ruby/README.md:7",
+        "docs/contributing/ARCHITECTURE.md:387",
+        "docs/contributing/ARCHITECTURE.md:431",
+        "docs/contributing/ARCHITECTURE.md:484",
+        "CHANGELOG.md:1422"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "# Tests Cargo (-90%)",
+      "metric": "Per-command output reduction listed in translated READMEs",
+      "value": "Tests Python/Go/Cargo -90%; Build Cargo / Clippy / ruff -80% (absent from the English README.md)",
+      "baseline": null,
+      "evidence_type": "claim_only",
+      "files": [
+        "README_fr.md:175-187",
+        "README_es.md:166-177",
+        "README_ko.md:166-176"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Negligible overhead: <0.1ms per command",
+      "metric": "Overhead of the execution-time tracking feature (v0.7.1)",
+      "value": "<0.1ms per command",
+      "baseline": null,
+      "evidence_type": "claim_only",
+      "files": [
+        "CHANGELOG.md:1529-1541"
+      ],
+      "reproduce_command": null
+    }
+  ],
+  "strongest_evidence_type": "harness_only",
+  "summary": "RTK publishes no measured results. Its headline figures, 'up to 90% of the bash output' and '<10ms overhead', are stated without data, and docs/contributing/TECHNICAL.md:377-379 lists <10ms as a target. scripts/benchmark.sh defines 84 bench cases that compare raw and filtered output, runs live in CI and fails on negative or empty filters, but its output is not committed and its inputs are the state of the machine and repository it runs on. docs/guide/resources/savings-explained.md states that token counts are estimates (bytes / 4) and that a command showing 90% fewer output bytes does not make a session 90% cheaper; scripts/benchmark-sessions/lib/runner.py imports modules (.config, .manifest, .session, .terminal_bench, .vm) that are not in the repository, so it cannot run.",
+  "result_focus": "outcome",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself",
+  "accuracy_check": {
+    "date": "2026-11-08",
+    "numbers_checked": 5,
+    "corrections": []
+  }
+}

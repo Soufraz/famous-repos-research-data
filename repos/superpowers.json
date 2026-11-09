@@ -1,0 +1,535 @@
+{
+  "repo": "superpowers",
+  "full_name": "obra/superpowers",
+  "stars": 314290,
+  "stars_source": "github-api 2026-11-08T09:08:02Z",
+  "selection_topics": [
+    "core-audit"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2025-10-09T19:45:18Z",
+    "description": "An agentic skills framework & software development methodology that works.",
+    "fork": false,
+    "forks": 27965,
+    "full_name": "obra/superpowers",
+    "pushed_at": "2026-11-03T23:24:58Z",
+    "stars": 314290,
+    "fetched_at": "2026-11-08T09:08:02Z"
+  },
+  "url": "https://github.com/obra/superpowers",
+  "description": "An agentic skills framework & software development methodology that works.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+    "head_date": "2026-11-03T14:17:07-08:00",
+    "history_complete": true,
+    "non_merge_commits": 661,
+    "merge_commits": 26,
+    "maintenance_bot_commits": 0,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 88,
+    "explicit_ai_pct": 13.3,
+    "by_tool": {
+      "claude": 84,
+      "cursor": 4
+    },
+    "by_signal": {
+      "co-author": 86,
+      "agent-author": 2
+    },
+    "recent_180d": {
+      "commits": 247,
+      "ai_pct": 6.1,
+      "fix_pct": 24.3
+    },
+    "first_365d": {
+      "commits": 657,
+      "ai_pct": 12.9,
+      "fix_pct": 24.4
+    },
+    "bot_commit_count": 0,
+    "agent_config": {
+      "files": {
+        ".agents/": "2026-06-30T11:29:15-07:00",
+        ".opencode/": "2025-11-22T12:29:50-08:00",
+        "AGENTS.md": "2026-03-31T14:14:19-07:00",
+        "GEMINI.md": "2026-03-09T19:26:18-07:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2025-11-22T12:29:50-08:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 661,
+    "first_commit_date": "2025-10-09T12:57:31-07:00",
+    "last_commit_date": "2026-11-03T14:17:07-08:00",
+    "current_loc": 35338,
+    "total_historical_additions": 85843,
+    "total_historical_deletions": 50505,
+    "total_churn": 136348,
+    "churn_ratio": 3.86,
+    "survival_rate_pct": 41.2,
+    "code": {
+      "current_loc": 14874,
+      "additions": 29610,
+      "deletions": 14736,
+      "churn_ratio": 2.98,
+      "survival_rate_pct": 50.2
+    },
+    "docs": {
+      "current_loc": 20464,
+      "additions": 56233,
+      "deletions": 35769,
+      "churn_ratio": 4.5,
+      "survival_rate_pct": 36.4
+    },
+    "fix_commits": 162,
+    "fix_pct": 24.5,
+    "revert_commits": 12,
+    "revert_pct": 1.8,
+    "trial_error_commits": 174,
+    "trial_error_pct": 26.3,
+    "rapid_fire_commits": 93,
+    "rapid_fire_pct": 14.1,
+    "trial_error_chains": 19,
+    "suspicious_additions_count": 14,
+    "top5_hotspot_volatility_pct": 7.9
+  },
+  "code_hygiene": {
+    "total_files": 77,
+    "docs_files": 112,
+    "avg_file_loc": 193.2,
+    "test_loc": 11208,
+    "test_files": 61,
+    "test_ratio_pct": 75.4,
+    "comment_ratio_pct": 10.7,
+    "monolith_count": 0,
+    "top_languages": {
+      ".sh": 9016,
+      ".js": 3247,
+      ".mjs": 993,
+      ".cjs": 723,
+      ".py": 621
+    }
+  },
+  "authors": {
+    "unique_authors": 44,
+    "top_authors": [
+      {
+        "name": "Jesse Vincent",
+        "commits": 503,
+        "pct": 76.1
+      },
+      {
+        "name": "Drew Ritter",
+        "commits": 86,
+        "pct": 13.0
+      },
+      {
+        "name": "jesse",
+        "commits": 13,
+        "pct": 2.0
+      },
+      {
+        "name": "CL Kao",
+        "commits": 8,
+        "pct": 1.2
+      },
+      {
+        "name": "Joshua Shanks",
+        "commits": 3,
+        "pct": 0.5
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 310.0,
+    "p75": 2820.0,
+    "p90": 11640.0,
+    "p95": 23400.0,
+    "p99": 67560.0,
+    "avg": 6519.4
+  },
+  "hotspots": [
+    {
+      "file": "RELEASE-NOTES.md",
+      "commits": 85,
+      "additions": 1622,
+      "deletions": 232,
+      "churn": 1854,
+      "first_seen": "2025-10-11T13:49:28-07:00",
+      "last_seen": "2026-11-03T14:17:07-08:00"
+    },
+    {
+      "file": "README.md",
+      "commits": 67,
+      "additions": 995,
+      "deletions": 595,
+      "churn": 1590,
+      "first_seen": "2025-10-09T12:57:31-07:00",
+      "last_seen": "2026-10-20T16:13:37-04:00"
+    },
+    {
+      "file": "skills/subagent-driven-development/SKILL.md",
+      "commits": 52,
+      "additions": 1363,
+      "deletions": 1024,
+      "churn": 2387,
+      "first_seen": "2025-10-16T07:19:00-07:00",
+      "last_seen": "2026-11-03T14:17:07-08:00"
+    },
+    {
+      "file": "skills/brainstorming/SKILL.md",
+      "commits": 31,
+      "additions": 1011,
+      "deletions": 695,
+      "churn": 1706,
+      "first_seen": "2025-10-16T07:19:00-07:00",
+      "last_seen": "2026-11-03T14:17:07-08:00"
+    },
+    {
+      "file": "skills/writing-skills/SKILL.md",
+      "commits": 26,
+      "additions": 789,
+      "deletions": 390,
+      "churn": 1179,
+      "first_seen": "2025-10-16T07:19:00-07:00",
+      "last_seen": "2026-10-21T17:00:49-04:00"
+    },
+    {
+      "file": "skills/using-superpowers/SKILL.md",
+      "commits": 26,
+      "additions": 267,
+      "deletions": 202,
+      "churn": 469,
+      "first_seen": "2025-10-16T07:35:57-07:00",
+      "last_seen": "2026-09-18T17:31:35-07:00"
+    },
+    {
+      "file": "skills/brainstorming/scripts/start-server.sh",
+      "commits": 24,
+      "additions": 141,
+      "deletions": 54,
+      "churn": 195,
+      "first_seen": "2026-03-09T19:43:48-07:00",
+      "last_seen": "2026-11-03T14:17:07-08:00"
+    },
+    {
+      "file": "skills/writing-plans/SKILL.md",
+      "commits": 24,
+      "additions": 340,
+      "deletions": 136,
+      "churn": 476,
+      "first_seen": "2025-10-16T07:19:00-07:00",
+      "last_seen": "2026-09-25T11:06:27-07:00"
+    },
+    {
+      "file": "skills/brainstorming/scripts/server.cjs",
+      "commits": 23,
+      "additions": 503,
+      "deletions": 118,
+      "churn": 621,
+      "first_seen": "2026-03-17T19:44:46+05:30",
+      "last_seen": "2026-10-09T17:28:04-07:00"
+    },
+    {
+      "file": ".opencode/plugin/superpowers.js",
+      "commits": 23,
+      "additions": 529,
+      "deletions": 434,
+      "churn": 963,
+      "first_seen": "2025-11-22T12:29:50-08:00",
+      "last_seen": "2026-01-22T13:29:30-08:00"
+    },
+    {
+      "file": "skills/brainstorming/visual-companion.md",
+      "commits": 21,
+      "additions": 402,
+      "deletions": 103,
+      "churn": 505,
+      "first_seen": "2026-03-06T12:55:29-08:00",
+      "last_seen": "2026-09-18T17:31:35-07:00"
+    },
+    {
+      "file": "hooks/session-start.sh",
+      "commits": 21,
+      "additions": 150,
+      "deletions": 150,
+      "churn": 300,
+      "first_seen": "2025-10-09T13:11:12-07:00",
+      "last_seen": "2026-02-10T18:34:58-08:00"
+    },
+    {
+      "file": "scripts/sync-to-codex-plugin.sh",
+      "commits": 20,
+      "additions": 775,
+      "deletions": 303,
+      "churn": 1078,
+      "first_seen": "2026-04-14T12:03:59-07:00",
+      "last_seen": "2026-11-03T14:17:07-08:00"
+    },
+    {
+      "file": "tests/brainstorm-server/server.test.js",
+      "commits": 19,
+      "additions": 894,
+      "deletions": 238,
+      "churn": 1132,
+      "first_seen": "2026-03-06T12:55:18-08:00",
+      "last_seen": "2026-11-03T14:17:07-08:00"
+    },
+    {
+      "file": ".opencode/INSTALL.md",
+      "commits": 18,
+      "additions": 369,
+      "deletions": 203,
+      "churn": 572,
+      "first_seen": "2025-11-22T12:34:06-08:00",
+      "last_seen": "2026-11-03T14:17:07-08:00"
+    }
+  ],
+  "monoliths": [],
+  "commits_sample": [
+    {
+      "hash": "517a9c64191145ed69afbff4b4785c751eb65dbb",
+      "short_hash": "517a9c6",
+      "author": "Jesse Vincent",
+      "date": "2026-07-05T17:47:02-04:00",
+      "subject": "refactor(skills): compress writing-good-tests additions; doc changes earn no tests",
+      "coauthors": [],
+      "additions": 18,
+      "deletions": 20,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "e8a9748a3fa9ecd1e480ace6cb3ea073ee58d899",
+      "short_hash": "e8a9748",
+      "author": "Jesse Vincent",
+      "date": "2026-07-05T13:03:35-07:00",
+      "subject": "fix(skills): close the change-detector hole in writing-good-tests",
+      "coauthors": [],
+      "additions": 24,
+      "deletions": 4,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "9d8630d5d933d93b2958d6a0cd9e759d4df1539b",
+      "short_hash": "9d8630d",
+      "author": "Jesse Vincent",
+      "date": "2026-07-05T12:59:56-07:00",
+      "subject": "feat(skills): absorb falsifiability discipline into writing-good-tests",
+      "coauthors": [],
+      "additions": 145,
+      "deletions": 13,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "50025d16acd7458e0232850f53a55a2f41e9b626",
+      "short_hash": "50025d1",
+      "author": "Jesse Vincent",
+      "date": "2026-07-05T12:51:57-07:00",
+      "subject": "fix(skills): broaden writing-good-tests trigger to any test writing",
+      "coauthors": [],
+      "additions": 1,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "e74961c110488b52169f0854eea47c8fcee15e23",
+      "short_hash": "e74961c",
+      "author": "Jesse Vincent",
+      "date": "2026-07-05T12:49:52-07:00",
+      "subject": "refactor(skills): reframe testing-anti-patterns as writing-good-tests",
+      "coauthors": [],
+      "additions": 253,
+      "deletions": 306,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "0b47219ac864352eed51237b81633986f88f3aa6",
+      "short_hash": "0b47219",
+      "author": "Jesse Vincent",
+      "date": "2026-07-05T12:00:35-07:00",
+      "subject": "fix(skills): capture worktree path before Step 5 changes directory",
+      "coauthors": [],
+      "additions": 12,
+      "deletions": 13,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "fbb6dba450a74154baae931293ecffc8d836c1a3",
+      "short_hash": "fbb6dba",
+      "author": "Jesse Vincent",
+      "date": "2026-07-05T11:43:34-07:00",
+      "subject": "refactor(skills): compress finishing-a-development-branch, adopt rationalization table",
+      "coauthors": [],
+      "additions": 50,
+      "deletions": 105,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "bcfe79869a4aeba201cf9300f2a8426647e11787",
+      "short_hash": "bcfe798",
+      "author": "Jesse Vincent",
+      "date": "2026-07-05T11:25:59-07:00",
+      "subject": "refactor(skills): make PR creation forge-agnostic in finishing-a-development-branch",
+      "coauthors": [],
+      "additions": 4,
+      "deletions": 4,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "9dff1a901f120a9d30e59d1658d2a417d863d499",
+      "short_hash": "9dff1a9",
+      "author": "Jesse Vincent",
+      "date": "2026-07-05T11:09:48-07:00",
+      "subject": "refactor(skills): stop offering to discard work in finishing-a-development-branch",
+      "coauthors": [],
+      "additions": 38,
+      "deletions": 22,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "af67e03f85baace34c5564c3bf934f45e3c2d36d",
+      "short_hash": "af67e03",
+      "author": "Jesse Vincent",
+      "date": "2026-07-05T10:50:42-07:00",
+      "subject": "refactor(skills): fold systematic-debugging Related-skills block into Phase 4",
+      "coauthors": [],
+      "additions": 1,
+      "deletions": 4,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "03147d23992d0ae80b04fc24af67063607dfac3b",
+      "short_hash": "03147d2",
+      "author": "Jesse Vincent",
+      "date": "2026-07-05T10:21:28-07:00",
+      "subject": "refactor(skills): fold Integration skill lists into points of use",
+      "coauthors": [],
+      "additions": 8,
+      "deletions": 25,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "1d4c8d2aafb8fa0de3e5d7df80ff44899fa7e402",
+      "short_hash": "1d4c8d2",
+      "author": "Ada Sen",
+      "date": "2026-07-10T15:12:38Z",
+      "subject": "Revert \"Remove Gemini CLI support\"",
+      "coauthors": [],
+      "additions": 88,
+      "deletions": 4,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": true
+    },
+    {
+      "hash": "44c9b2d6e889982ac18c27d05a19fefe335194e1",
+      "short_hash": "44c9b2d",
+      "author": "Jesse Vincent",
+      "date": "2026-07-27T11:43:14-07:00",
+      "subject": "docs: remove the \"We're Hiring\" section from the README",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 6,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "b739a8af570e10a95898f2bdf6cec97467fa6c12",
+      "short_hash": "b739a8a",
+      "author": "Jesse Vincent",
+      "date": "2026-10-20T16:13:37-04:00",
+      "subject": "Templates: require a human-written summary and the filer's instructions (#2570)",
+      "coauthors": [],
+      "additions": 110,
+      "deletions": 72,
+      "files_count": 11,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

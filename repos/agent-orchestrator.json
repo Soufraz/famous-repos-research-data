@@ -1,0 +1,699 @@
+{
+  "repo": "agent-orchestrator",
+  "full_name": "OrchestratorInc/agent-orchestrator",
+  "stars": 14256,
+  "stars_source": "github-api 2026-11-08T09:04:15Z",
+  "selection_topics": [
+    "coding-agents"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2026-02-13T09:52:36Z",
+    "description": "Plan, run and supervise fleets of agents from task to merged PR. Desktop (macOS, Windows, Linux) + iPhone & Android apps.  Supports Claude Code, Codex & 35+ coding agents.",
+    "fork": false,
+    "forks": 1945,
+    "full_name": "OrchestratorInc/agent-orchestrator",
+    "pushed_at": "2026-11-08T08:52:12Z",
+    "stars": 14256,
+    "fetched_at": "2026-11-08T09:04:15Z"
+  },
+  "url": "https://github.com/OrchestratorInc/agent-orchestrator",
+  "description": "Plan, run and supervise fleets of agents from task to merged PR. Desktop (macOS, Windows, Linux) + iPhone & Android apps.  Supports Claude Code, Codex & 35+ coding agents.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "b30492e53435ecec1921a1a2ec2dc8df699e9d42",
+    "head_date": "2026-11-08T12:42:34+05:30",
+    "history_complete": true,
+    "non_merge_commits": 3681,
+    "merge_commits": 200,
+    "maintenance_bot_commits": 11,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 1481,
+    "explicit_ai_pct": 40.4,
+    "by_tool": {
+      "claude": 1364,
+      "cursor": 97,
+      "copilot": 12,
+      "other": 7,
+      "amp": 1
+    },
+    "by_signal": {
+      "co-author": 1480,
+      "agent-author": 1
+    },
+    "recent_180d": {
+      "commits": 2627,
+      "ai_pct": 34.9,
+      "fix_pct": 58.6
+    },
+    "first_365d": {
+      "commits": 3670,
+      "ai_pct": 40.4,
+      "fix_pct": 58.6
+    },
+    "bot_commit_count": 11,
+    "agent_config": {
+      "files": {
+        ".agents/": "2026-08-03T14:15:35-07:00",
+        ".claude/": "2026-08-03T14:15:35-07:00",
+        "AGENTS.md": "2026-06-03T04:24:04+05:30",
+        "CLAUDE.md": "2026-06-03T04:24:04+05:30"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2026-06-03T04:24:04+05:30"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 3670,
+    "first_commit_date": "2026-02-13T15:25:31+05:30",
+    "last_commit_date": "2026-11-08T12:42:34+05:30",
+    "current_loc": 1339969,
+    "total_historical_additions": 1956994,
+    "total_historical_deletions": 615789,
+    "total_churn": 2572783,
+    "churn_ratio": 1.92,
+    "survival_rate_pct": 68.5,
+    "code": {
+      "current_loc": 1314260,
+      "additions": 1890262,
+      "deletions": 574769,
+      "churn_ratio": 1.88,
+      "survival_rate_pct": 69.5
+    },
+    "docs": {
+      "current_loc": 25709,
+      "additions": 66732,
+      "deletions": 41020,
+      "churn_ratio": 4.19,
+      "survival_rate_pct": 38.5
+    },
+    "fix_commits": 2151,
+    "fix_pct": 58.6,
+    "revert_commits": 20,
+    "revert_pct": 0.5,
+    "trial_error_commits": 2160,
+    "trial_error_pct": 58.9,
+    "rapid_fire_commits": 439,
+    "rapid_fire_pct": 12.0,
+    "trial_error_chains": 269,
+    "suspicious_additions_count": 397,
+    "top5_hotspot_volatility_pct": 6.1
+  },
+  "code_hygiene": {
+    "total_files": 5481,
+    "docs_files": 187,
+    "avg_file_loc": 239.8,
+    "test_loc": 638733,
+    "test_files": 2389,
+    "test_ratio_pct": 48.6,
+    "comment_ratio_pct": 8.3,
+    "monolith_count": 203,
+    "top_languages": {
+      ".go": 694867,
+      ".tsx": 302139,
+      ".ts": 281264,
+      ".sql": 16658,
+      ".mjs": 8157
+    }
+  },
+  "authors": {
+    "unique_authors": 156,
+    "top_authors": [
+      {
+        "name": "Dhruv Sharma",
+        "commits": 329,
+        "pct": 9.0
+      },
+      {
+        "name": "prateek",
+        "commits": 273,
+        "pct": 7.4
+      },
+      {
+        "name": "ronish",
+        "commits": 272,
+        "pct": 7.4
+      },
+      {
+        "name": "harshitsinghbhandari",
+        "commits": 222,
+        "pct": 6.0
+      },
+      {
+        "name": "Harshit Singh Bhandari",
+        "commits": 208,
+        "pct": 5.7
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 7.8,
+    "p75": 40.4,
+    "p90": 210.0,
+    "p95": 536.7,
+    "p99": 6924.0,
+    "avg": 2072.2
+  },
+  "hotspots": [
+    {
+      "file": "frontend/src/api/schema.ts",
+      "commits": 284,
+      "additions": 26868,
+      "deletions": 1913,
+      "churn": 28781,
+      "first_seen": "2026-06-05T14:45:10+05:30",
+      "last_seen": "2026-11-08T11:20:24+05:30"
+    },
+    {
+      "file": "backend/internal/httpd/controllers/dto.go",
+      "commits": 223,
+      "additions": 4834,
+      "deletions": 792,
+      "churn": 5626,
+      "first_seen": "2026-06-02T01:26:48+05:30",
+      "last_seen": "2026-11-08T00:20:29+05:30"
+    },
+    {
+      "file": "frontend/src/main.ts",
+      "commits": 208,
+      "additions": 5689,
+      "deletions": 1269,
+      "churn": 6958,
+      "first_seen": "2026-05-26T15:22:36+05:30",
+      "last_seen": "2026-11-08T00:09:15+05:30"
+    },
+    {
+      "file": "backend/internal/session_manager/manager.go",
+      "commits": 203,
+      "additions": 10149,
+      "deletions": 3048,
+      "churn": 13197,
+      "first_seen": "2026-06-01T23:31:21+05:30",
+      "last_seen": "2026-11-07T10:47:30-03:00"
+    },
+    {
+      "file": "frontend/src/renderer/components/Sidebar.tsx",
+      "commits": 194,
+      "additions": 10835,
+      "deletions": 6788,
+      "churn": 17623,
+      "first_seen": "2026-06-10T11:40:17+05:30",
+      "last_seen": "2026-11-08T12:24:28+05:30"
+    },
+    {
+      "file": "frontend/src/renderer/components/chat/ChatWorkspace.tsx",
+      "commits": 180,
+      "additions": 9436,
+      "deletions": 3419,
+      "churn": 12855,
+      "first_seen": "2026-08-06T18:46:46+05:30",
+      "last_seen": "2026-11-08T12:42:34+05:30"
+    },
+    {
+      "file": "backend/internal/daemon/daemon.go",
+      "commits": 179,
+      "additions": 2382,
+      "deletions": 680,
+      "churn": 3062,
+      "first_seen": "2026-05-31T21:10:04+05:30",
+      "last_seen": "2026-11-08T11:22:03+05:30"
+    },
+    {
+      "file": "frontend/src/renderer/components/SessionView.tsx",
+      "commits": 178,
+      "additions": 6537,
+      "deletions": 3429,
+      "churn": 9966,
+      "first_seen": "2026-06-11T16:45:00+05:30",
+      "last_seen": "2026-11-08T12:07:56+05:30"
+    },
+    {
+      "file": "backend/internal/httpd/apispec/specgen/build.go",
+      "commits": 156,
+      "additions": 4430,
+      "deletions": 457,
+      "churn": 4887,
+      "first_seen": "2026-06-02T01:26:48+05:30",
+      "last_seen": "2026-11-08T00:20:29+05:30"
+    },
+    {
+      "file": "frontend/src/renderer/components/SessionInspector.tsx",
+      "commits": 155,
+      "additions": 8003,
+      "deletions": 5122,
+      "churn": 13125,
+      "first_seen": "2026-06-11T16:45:00+05:30",
+      "last_seen": "2026-11-08T03:52:38+05:30"
+    },
+    {
+      "file": "frontend/src/renderer/routes/_shell.tsx",
+      "commits": 155,
+      "additions": 2869,
+      "deletions": 1211,
+      "churn": 4080,
+      "first_seen": "2026-06-11T16:45:00+05:30",
+      "last_seen": "2026-11-08T00:20:29+05:30"
+    },
+    {
+      "file": "backend/internal/session_manager/manager_test.go",
+      "commits": 155,
+      "additions": 12989,
+      "deletions": 997,
+      "churn": 13986,
+      "first_seen": "2026-06-01T23:31:21+05:30",
+      "last_seen": "2026-11-07T10:47:30-03:00"
+    },
+    {
+      "file": "frontend/src/renderer/components/Sidebar.test.tsx",
+      "commits": 150,
+      "additions": 6264,
+      "deletions": 1980,
+      "churn": 8244,
+      "first_seen": "2026-06-13T12:18:55+05:30",
+      "last_seen": "2026-11-06T22:48:52+05:30"
+    },
+    {
+      "file": "frontend/src/renderer/components/SessionView.test.tsx",
+      "commits": 140,
+      "additions": 7959,
+      "deletions": 1465,
+      "churn": 9424,
+      "first_seen": "2026-06-11T16:45:00+05:30",
+      "last_seen": "2026-11-08T12:07:56+05:30"
+    },
+    {
+      "file": "backend/internal/storage/sqlite/migrate_burned_versions_test.go",
+      "commits": 133,
+      "additions": 602,
+      "deletions": 111,
+      "churn": 713,
+      "first_seen": "2026-08-05T10:28:31+05:30",
+      "last_seen": "2026-11-08T03:33:18+05:30"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "frontend/src/api/schema.ts",
+      "loc": 24955
+    },
+    {
+      "file": "backend/internal/session_manager/manager_test.go",
+      "loc": 12232
+    },
+    {
+      "file": "packages/cloud-client/src/schema.ts",
+      "loc": 9433
+    },
+    {
+      "file": "backend/internal/session_manager/manager.go",
+      "loc": 7431
+    },
+    {
+      "file": "backend/internal/service/chat/controller_test.go",
+      "loc": 7359
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "d2b042f38507de999b0e4dff7cb567d4d689a5a6",
+      "short_hash": "d2b042f38",
+      "author": "MoChak",
+      "date": "2026-11-07T15:33:33+05:30",
+      "subject": "fix(desktop): a Cloud worker defaults to its orchestrator's model (#7896)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>",
+        "t"
+      ],
+      "additions": 846,
+      "deletions": 27,
+      "files_count": 15,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "049a10c917b01d62500c2a56f55d2eb6ac5c982c",
+      "short_hash": "049a10c91",
+      "author": "Md Meraj Alam",
+      "date": "2026-11-07T16:10:38+05:30",
+      "subject": "fix(opencode-v2): show a failed compaction as failed (#7869)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 210,
+      "deletions": 0,
+      "files_count": 3,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "4f8c4fd1136335e3627b5f5d855bec05393f9d52",
+      "short_hash": "4f8c4fd11",
+      "author": "Just_Anniee",
+      "date": "2026-11-07T18:15:26+05:30",
+      "subject": "feat(clone): stream git clone steps into the clone dialog (#7860)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 788,
+      "deletions": 55,
+      "files_count": 25,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "3093e39cfca79f9cc86dafa80c627502233720ed",
+      "short_hash": "3093e39cf",
+      "author": "ronish",
+      "date": "2026-11-07T18:45:46+05:30",
+      "subject": "fix(desktop): even, always-visible dividers between top bar tabs (#7918)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "b7b391e98e6b5b7c333b2579df298c7642711839",
+      "short_hash": "b7b391e98",
+      "author": "MoChak",
+      "date": "2026-11-07T18:59:06+05:30",
+      "subject": "feat(cloud): share dialog in the Google Docs pattern, with General access and Copy link (#7888)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>",
+        "t"
+      ],
+      "additions": 3421,
+      "deletions": 1028,
+      "files_count": 32,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "6ec8ff3ab88378025603b0231f85c398a915aae9",
+      "short_hash": "6ec8ff3ab",
+      "author": "wesleymatosdev",
+      "date": "2026-11-07T10:47:30-03:00",
+      "subject": "fix(session): let a degraded fresh TUI keep its messaged Chat archived (#7740)",
+      "coauthors": [
+        "wesleymatosdev"
+      ],
+      "additions": 431,
+      "deletions": 17,
+      "files_count": 9,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "8bf36847091d0fe2767a199f95b8f6f48ccc35db",
+      "short_hash": "8bf368470",
+      "author": "Dhruv Sharma",
+      "date": "2026-11-07T19:26:00+05:30",
+      "subject": "feat(settings): subscription accounts for everyone; remove the Subscriptions page (#7899)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 270,
+      "deletions": 2763,
+      "files_count": 43,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "d672970c3a830a0a188c300b597c3f9c59c94a86",
+      "short_hash": "d672970c3",
+      "author": "Dhruv Sharma",
+      "date": "2026-11-08T00:09:15+05:30",
+      "subject": "fix(onboarding): clone GitHub repos from the web URL, not the API URL (#7927)",
+      "coauthors": [],
+      "additions": 2,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "80342361ef7aa7fa88197334e0b3d99cbb5130a7",
+      "short_hash": "80342361e",
+      "author": "Dhruv Sharma",
+      "date": "2026-11-08T00:20:29+05:30",
+      "subject": "feat(remote): open remote chats instantly and keep them readable offline (#7789)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 1146,
+      "deletions": 159,
+      "files_count": 36,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "4f9b0429eff6752a823d15145053679204910925",
+      "short_hash": "4f9b0429e",
+      "author": "Dhruv Sharma",
+      "date": "2026-11-08T02:40:29+05:30",
+      "subject": "fix(chat): open cloud chat links in the session's Browser tab (#7933)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 28,
+      "deletions": 5,
+      "files_count": 4,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "876e3de784fbf4ff64cd9eb8b77b709b8395ca21",
+      "short_hash": "876e3de78",
+      "author": "Dhruv Sharma",
+      "date": "2026-11-08T03:33:18+05:30",
+      "subject": "fix(session): stop session deletes from stalling the daemon writer (#7928)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 214,
+      "deletions": 30,
+      "files_count": 5,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "5cde191aad88cf58867c49e5a841f24816815118",
+      "short_hash": "5cde191aa",
+      "author": "Dhruv Sharma",
+      "date": "2026-11-08T03:52:38+05:30",
+      "subject": "fix(inspector): hide Create PR once the session's PR is merged (#7934)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 50,
+      "deletions": 8,
+      "files_count": 8,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "7ed6fbfcce23d1ca1665e132c295ce3b1fae907a",
+      "short_hash": "7ed6fbfcc",
+      "author": "ronish",
+      "date": "2026-11-08T10:48:31+05:30",
+      "subject": "fix(desktop): take render check screenshots from the paint frame, not capturePage (#7920)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 92,
+      "deletions": 30,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "28c1319f4705f07285a2d157b78b8e5a378d5eed",
+      "short_hash": "28c1319f4",
+      "author": "ronish",
+      "date": "2026-11-08T11:07:08+05:30",
+      "subject": "fix(desktop): no divider after the last top bar tab (#7945)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "b235e55b5c9732528c06ee0b2d565a0f967784bc",
+      "short_hash": "b235e55b5",
+      "author": "ronish",
+      "date": "2026-11-08T11:20:24+05:30",
+      "subject": "fix: follow GitHub repo renames for project avatars (#7947)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 575,
+      "deletions": 13,
+      "files_count": 13,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "426805362b0591d45e2a1b0448dd3d187b1513b5",
+      "short_hash": "426805362",
+      "author": "ronish",
+      "date": "2026-11-08T11:22:03+05:30",
+      "subject": "fix(claim-pr): accept PRs on a renamed or transferred GitHub origin (#7951)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 125,
+      "deletions": 0,
+      "files_count": 4,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "c903429fbd980fc7e6f6c0715ef6dc1b902ed2d8",
+      "short_hash": "c903429fb",
+      "author": "ronish",
+      "date": "2026-11-08T11:22:15+05:30",
+      "subject": "fix(chat): stop auto-opening links from finished agent replies (#7946)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 32,
+      "deletions": 271,
+      "files_count": 4,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "850d1ad0e201f4e708ba7a9517817826165b6641",
+      "short_hash": "850d1ad0e",
+      "author": "ronish",
+      "date": "2026-11-08T12:07:56+05:30",
+      "subject": "fix(desktop): tab ⋮ menu and right-click menu list the same rows (#7955)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 905,
+      "deletions": 509,
+      "files_count": 16,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "c7c850a345bfd5481d99ee335291dd6bfcb69986",
+      "short_hash": "c7c850a34",
+      "author": "ronish",
+      "date": "2026-11-08T12:24:28+05:30",
+      "subject": "fix(chat): show the working state while Claude runs a cycle on its own (#7953)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 308,
+      "deletions": 27,
+      "files_count": 10,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "b30492e53435ecec1921a1a2ec2dc8df699e9d42",
+      "short_hash": "b30492e53",
+      "author": "ronish",
+      "date": "2026-11-08T12:42:34+05:30",
+      "subject": "feat(chat): show MCP tool calls in plain words (#7956)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 793,
+      "deletions": 10,
+      "files_count": 7,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

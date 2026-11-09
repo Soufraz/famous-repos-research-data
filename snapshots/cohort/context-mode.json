@@ -1,0 +1,36 @@
+{
+  "repo": "context-mode",
+  "full_name": "mksglu/context-mode",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "172e7030d0a082259f85d6b66c855d83a39be90c",
+      "snapshot_date": "2026-08-21T12:05:53Z",
+      "first_commit_date": "2026-02-23T09:02:37+03:00",
+      "commits": 1519,
+      "ai_pct": 39.0,
+      "has_agent_config": true,
+      "fix_pct": 48.8,
+      "revert_pct": 0.7,
+      "churn_ratio": 2.41,
+      "survival_rate_pct": 57.6,
+      "code": {
+        "current_loc": 144805,
+        "additions": 243094,
+        "deletions": 89477,
+        "churn_ratio": 2.3,
+        "survival_rate_pct": 59.6
+      },
+      "docs": {
+        "current_loc": 10701,
+        "additions": 26825,
+        "deletions": 16038,
+        "churn_ratio": 4.01,
+        "survival_rate_pct": 39.9
+      },
+      "rapid_fire_pct": 32.0,
+      "unique_authors": 120
+    },
+    "365": null
+  }
+}

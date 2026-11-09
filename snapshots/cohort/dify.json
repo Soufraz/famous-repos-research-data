@@ -1,0 +1,63 @@
+{
+  "repo": "dify",
+  "full_name": "langgenius/dify",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "92f594f5e76d9ab2a1b60cd173d3c505ba37f13f",
+      "snapshot_date": "2023-11-10T16:44:26+08:00",
+      "first_commit_date": "2023-05-15T08:51:32+08:00",
+      "commits": 741,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 49.3,
+      "revert_pct": 0.1,
+      "churn_ratio": 1.54,
+      "survival_rate_pct": 78.6,
+      "code": {
+        "current_loc": 98213,
+        "additions": 125265,
+        "deletions": 27052,
+        "churn_ratio": 1.55,
+        "survival_rate_pct": 78.4
+      },
+      "docs": {
+        "current_loc": 4923,
+        "additions": 5936,
+        "deletions": 981,
+        "churn_ratio": 1.41,
+        "survival_rate_pct": 82.9
+      },
+      "rapid_fire_pct": 9.4,
+      "unique_authors": 50
+    },
+    "365": {
+      "snapshot_commit": "eee95190cc4cd2a86453fb5f39efdb5f26a06804",
+      "snapshot_date": "2024-05-14T03:18:26+08:00",
+      "first_commit_date": "2023-05-15T08:51:32+08:00",
+      "commits": 1975,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 47.3,
+      "revert_pct": 0.2,
+      "churn_ratio": 1.72,
+      "survival_rate_pct": 73.4,
+      "code": {
+        "current_loc": 257443,
+        "additions": 352596,
+        "deletions": 95153,
+        "churn_ratio": 1.74,
+        "survival_rate_pct": 73.0
+      },
+      "docs": {
+        "current_loc": 14669,
+        "additions": 18171,
+        "deletions": 3470,
+        "churn_ratio": 1.48,
+        "survival_rate_pct": 80.7
+      },
+      "rapid_fire_pct": 11.4,
+      "unique_authors": 186
+    }
+  }
+}

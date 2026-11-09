@@ -1,0 +1,671 @@
+{
+  "repo": "munder-difflin",
+  "full_name": "HarnessMD/munder-difflin",
+  "stars": 9425,
+  "stars_source": "github-api 2026-11-08T09:05:42Z",
+  "selection_topics": [
+    "agent-harness"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2026-05-31T15:25:05Z",
+    "description": "an open-source alternative to the dots, bots and muses of the world, run an office of claude code/codex like agents on your laptop, sandboxes or anywhere, uses your existing subscriptions",
+    "fork": false,
+    "forks": 1329,
+    "full_name": "HarnessMD/munder-difflin",
+    "pushed_at": "2026-11-08T04:14:47Z",
+    "stars": 9425,
+    "fetched_at": "2026-11-08T09:05:42Z"
+  },
+  "url": "https://github.com/HarnessMD/munder-difflin",
+  "description": "an open-source alternative to the dots, bots and muses of the world, run an office of claude code/codex like agents on your laptop, sandboxes or anywhere, uses your existing subscriptions",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "7cea9a71ff6a08721d0b28fb5dc972ed35f5e2af",
+    "head_date": "2026-11-08T02:31:05+05:30",
+    "history_complete": true,
+    "non_merge_commits": 1143,
+    "merge_commits": 300,
+    "maintenance_bot_commits": 31,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 807,
+    "explicit_ai_pct": 72.6,
+    "by_tool": {
+      "claude": 801,
+      "cursor": 6
+    },
+    "by_signal": {
+      "co-author": 807
+    },
+    "recent_180d": {
+      "commits": 1112,
+      "ai_pct": 72.6,
+      "fix_pct": 34.5
+    },
+    "first_365d": {
+      "commits": 1112,
+      "ai_pct": 72.6,
+      "fix_pct": 34.5
+    },
+    "bot_commit_count": 31,
+    "agent_config": {
+      "files": {
+        ".claude/": "2026-08-19T11:40:48+05:30"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2026-08-19T11:40:48+05:30"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 1112,
+    "first_commit_date": "2026-05-31T05:08:03+05:30",
+    "last_commit_date": "2026-11-08T02:31:05+05:30",
+    "current_loc": 203453,
+    "total_historical_additions": 546403,
+    "total_historical_deletions": 342993,
+    "total_churn": 889396,
+    "churn_ratio": 4.37,
+    "survival_rate_pct": 37.2,
+    "code": {
+      "current_loc": 162667,
+      "additions": 497757,
+      "deletions": 335132,
+      "churn_ratio": 5.12,
+      "survival_rate_pct": 32.7
+    },
+    "docs": {
+      "current_loc": 40786,
+      "additions": 48646,
+      "deletions": 7861,
+      "churn_ratio": 1.39,
+      "survival_rate_pct": 83.8
+    },
+    "fix_commits": 384,
+    "fix_pct": 34.5,
+    "revert_commits": 5,
+    "revert_pct": 0.4,
+    "trial_error_commits": 389,
+    "trial_error_pct": 35.0,
+    "rapid_fire_commits": 238,
+    "rapid_fire_pct": 21.4,
+    "trial_error_chains": 74,
+    "suspicious_additions_count": 47,
+    "top5_hotspot_volatility_pct": 10.1
+  },
+  "code_hygiene": {
+    "total_files": 644,
+    "docs_files": 351,
+    "avg_file_loc": 252.6,
+    "test_loc": 19141,
+    "test_files": 131,
+    "test_ratio_pct": 11.8,
+    "comment_ratio_pct": 13.9,
+    "monolith_count": 16,
+    "top_languages": {
+      ".js": 72937,
+      ".ts": 42935,
+      ".tsx": 24184,
+      ".cjs": 21146,
+      ".mjs": 1046
+    }
+  },
+  "authors": {
+    "unique_authors": 61,
+    "top_authors": [
+      {
+        "name": "Chaitanya Giri",
+        "commits": 630,
+        "pct": 56.7
+      },
+      {
+        "name": "chaitanyagiri",
+        "commits": 181,
+        "pct": 16.3
+      },
+      {
+        "name": "Gulum",
+        "commits": 56,
+        "pct": 5.0
+      },
+      {
+        "name": "Vyapak Goyal",
+        "commits": 46,
+        "pct": 4.1
+      },
+      {
+        "name": "Gastón Péchieu",
+        "commits": 27,
+        "pct": 2.4
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 10.4,
+    "p75": 102.3,
+    "p90": 910.9,
+    "p95": 3899.1,
+    "p99": 63000.0,
+    "avg": 2222.5
+  },
+  "hotspots": [
+    {
+      "file": "src/main/index.ts",
+      "commits": 194,
+      "additions": 6622,
+      "deletions": 1078,
+      "churn": 7700,
+      "first_seen": "2026-05-31T05:08:03+05:30",
+      "last_seen": "2026-09-25T18:14:34-04:00"
+    },
+    {
+      "file": "src/preload/index.ts",
+      "commits": 116,
+      "additions": 2258,
+      "deletions": 822,
+      "churn": 3080,
+      "first_seen": "2026-05-31T05:08:03+05:30",
+      "last_seen": "2026-09-04T11:46:29+05:30"
+    },
+    {
+      "file": "src/main/hive.ts",
+      "commits": 109,
+      "additions": 4206,
+      "deletions": 564,
+      "churn": 4770,
+      "first_seen": "2026-05-31T05:08:03+05:30",
+      "last_seen": "2026-09-20T05:47:03+08:00"
+    },
+    {
+      "file": "src/renderer/src/hooks/useHive.ts",
+      "commits": 72,
+      "additions": 1933,
+      "deletions": 660,
+      "churn": 2593,
+      "first_seen": "2026-05-31T05:08:03+05:30",
+      "last_seen": "2026-08-24T21:24:26+03:00"
+    },
+    {
+      "file": "src/main/config.ts",
+      "commits": 68,
+      "additions": 1198,
+      "deletions": 284,
+      "churn": 1482,
+      "first_seen": "2026-05-31T05:08:03+05:30",
+      "last_seen": "2026-09-25T18:14:19-04:00"
+    },
+    {
+      "file": "src/renderer/src/components/CommandCenterPanel.tsx",
+      "commits": 62,
+      "additions": 2272,
+      "deletions": 912,
+      "churn": 3184,
+      "first_seen": "2026-06-04T04:46:47+05:30",
+      "last_seen": "2026-09-26T06:14:41+08:00"
+    },
+    {
+      "file": "README.md",
+      "commits": 61,
+      "additions": 1259,
+      "deletions": 689,
+      "churn": 1948,
+      "first_seen": "2026-05-31T05:08:03+05:30",
+      "last_seen": "2026-10-17T03:14:35+05:30"
+    },
+    {
+      "file": "src/renderer/src/store/store.ts",
+      "commits": 60,
+      "additions": 1798,
+      "deletions": 744,
+      "churn": 2542,
+      "first_seen": "2026-05-31T05:08:03+05:30",
+      "last_seen": "2026-08-24T10:28:59+05:30"
+    },
+    {
+      "file": "RELEASE.md",
+      "commits": 55,
+      "additions": 1874,
+      "deletions": 1495,
+      "churn": 3369,
+      "first_seen": "2026-06-01T01:28:34+05:30",
+      "last_seen": "2026-08-27T06:12:15+05:30"
+    },
+    {
+      "file": "src/renderer/src/components/SettingsModal.tsx",
+      "commits": 46,
+      "additions": 3290,
+      "deletions": 1177,
+      "churn": 4467,
+      "first_seen": "2026-06-01T02:49:35+05:30",
+      "last_seen": "2026-09-04T11:46:29+05:30"
+    },
+    {
+      "file": "src/renderer/src/store/config.ts",
+      "commits": 45,
+      "additions": 743,
+      "deletions": 275,
+      "churn": 1018,
+      "first_seen": "2026-05-31T05:08:03+05:30",
+      "last_seen": "2026-09-04T11:46:29+05:30"
+    },
+    {
+      "file": "src/renderer/src/components/FullscreenTerminal.tsx",
+      "commits": 43,
+      "additions": 1518,
+      "deletions": 460,
+      "churn": 1978,
+      "first_seen": "2026-05-31T05:08:03+05:30",
+      "last_seen": "2026-08-27T04:54:05+05:30"
+    },
+    {
+      "file": "src/renderer/src/App.tsx",
+      "commits": 42,
+      "additions": 1054,
+      "deletions": 479,
+      "churn": 1533,
+      "first_seen": "2026-05-31T05:08:03+05:30",
+      "last_seen": "2026-08-27T04:54:05+05:30"
+    },
+    {
+      "file": "src/renderer/src/components/AddAgentModal.tsx",
+      "commits": 34,
+      "additions": 2107,
+      "deletions": 864,
+      "churn": 2971,
+      "first_seen": "2026-05-31T05:08:03+05:30",
+      "last_seen": "2026-08-27T04:54:05+05:30"
+    },
+    {
+      "file": "src/renderer/src/components/terminalPool.ts",
+      "commits": 32,
+      "additions": 1246,
+      "deletions": 214,
+      "churn": 1460,
+      "first_seen": "2026-05-31T05:08:03+05:30",
+      "last_seen": "2026-09-17T01:27:48+05:30"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "src/main/index.ts",
+      "loc": 5511
+    },
+    {
+      "file": "src/main/hive.ts",
+      "loc": 3669
+    },
+    {
+      "file": "src/renderer/src/components/SettingsModal.tsx",
+      "loc": 2121
+    },
+    {
+      "file": "docs/hires/manifests-data.js",
+      "loc": 1968
+    },
+    {
+      "file": "src/renderer/src/scene/office/OfficeFloor.tsx",
+      "loc": 1805
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "51a628e8918d9c808a4a99839acaf66fbea42e7e",
+      "short_hash": "51a628e8",
+      "author": "Chaitanya Giri",
+      "date": "2026-10-22T17:10:12+05:30",
+      "subject": "blog: position Munder Difflin for all knowledge work in posts from 16 to 22 Oct (#776)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 65,
+      "deletions": 65,
+      "files_count": 25,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "4d30bc47a7927c72e6786a62ce536ad194df166b",
+      "short_hash": "4d30bc47",
+      "author": "Chaitanya Giri",
+      "date": "2026-10-23T10:02:48+05:30",
+      "subject": "seo-engine: refresh how-much-does-claude-code-cost (India first title, prices rechecked 22 Oct, trim) (#780)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 46,
+      "deletions": 67,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "d3460def46bf145ea2667f0286ee4b82473f1b4c",
+      "short_hash": "d3460def",
+      "author": "Chaitanya Giri",
+      "date": "2026-10-25T15:35:51+05:30",
+      "subject": "seo-engine: day 26 AM, brief, Claude Duet app, agent office apps, Black October (#781)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 2750,
+      "deletions": 2,
+      "files_count": 15,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "5d436946c910297f71ffdb3d51ae080f2f2f5843",
+      "short_hash": "5d436946",
+      "author": "Chaitanya Giri",
+      "date": "2026-10-26T12:48:34+05:30",
+      "subject": "seo-engine: day 29 AM, brief 26 Oct, Codex alternatives, Cursor pricing (#790)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 1810,
+      "deletions": 2,
+      "files_count": 11,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "4857f67e9f3248d49bf016223c85f70a02a8ea13",
+      "short_hash": "4857f67e",
+      "author": "Chaitanya Giri",
+      "date": "2026-10-26T22:18:22+05:30",
+      "subject": "seo-engine: day 29 PM, Pi alternatives, CLAUDE.md best practices, Codex computer use; fix Cursor alternatives prices (#792)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 1887,
+      "deletions": 30,
+      "files_count": 16,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "4bd42ed579e7b733df96dcaa07793fbff0e4c8e5",
+      "short_hash": "4bd42ed5",
+      "author": "Chaitanya Giri",
+      "date": "2026-10-26T23:12:32+05:30",
+      "subject": "Razorpay review: Pricing, Refund and Cancellation, Contact Us pages and footer links (#791)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "a61e7de0928de950b859e1025a30ea973fdc7c1f",
+      "short_hash": "a61e7de0",
+      "author": "Chaitanya Giri",
+      "date": "2026-10-27T10:17:57+05:30",
+      "subject": "catalog: add GPT-6.1 Terra to the Codex model picker (#796)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "f797048cc88ca2ff94bfc6c8c93b16f47a201f15",
+      "short_hash": "f797048c",
+      "author": "Chaitanya Giri",
+      "date": "2026-10-27T10:18:59+05:30",
+      "subject": "seo-engine: launch desk 27 Oct 01:00 IST, GPT-6.1 Terra (#794)",
+      "coauthors": [],
+      "additions": 671,
+      "deletions": 1,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "6dcda2d2dada0ba0fc461486b65ac8ca5b57d3b4",
+      "short_hash": "6dcda2d2",
+      "author": "Chaitanya Giri",
+      "date": "2026-10-31T23:55:57+05:30",
+      "subject": "seo-engine: combine day 30 to day 34 pages (replaces #795, #797, #799, #801, #802, #803, #808, #809) (#810)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 7764,
+      "deletions": 400,
+      "files_count": 58,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "52077781d10346c651a7f847929db569e5efbae4",
+      "short_hash": "52077781",
+      "author": "Chaitanya Giri",
+      "date": "2026-11-02T15:42:40+05:30",
+      "subject": "seo-engine: day 35 AM, daily brief for 1 Nov 2026 (#812)",
+      "coauthors": [],
+      "additions": 323,
+      "deletions": 0,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "b06e687b8c2b9989df060e3c7e8610d53dd8836e",
+      "short_hash": "b06e687b",
+      "author": "chaitanyagiri",
+      "date": "2026-11-02T13:21:26+05:30",
+      "subject": "seo-engine: day 36 AM, daily brief for 2 Nov 2026",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 271,
+      "deletions": 0,
+      "files_count": 3,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "8702b73eb626f153258a3aa527e89ae5d0ca5218",
+      "short_hash": "8702b73e",
+      "author": "chaitanyagiri",
+      "date": "2026-11-02T22:26:22+05:30",
+      "subject": "seo-engine: day 36 PM, DeepSeek Harness alternatives",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 585,
+      "deletions": 1,
+      "files_count": 4,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "83acdc1de9eacf23f42df7a5d31b36d023ae64ec",
+      "short_hash": "83acdc1d",
+      "author": "chaitanyagiri",
+      "date": "2026-11-03T09:36:43+05:30",
+      "subject": "seo-engine: day 37 AM, daily brief for 3 Nov 2026, T3 Code alternatives, OpenCode fix",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 792,
+      "deletions": 6,
+      "files_count": 8,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "84b6dcfa6473fef78e0538d31901c7bf905ae889",
+      "short_hash": "84b6dcfa",
+      "author": "chaitanyagiri",
+      "date": "2026-11-04T14:04:16+05:30",
+      "subject": "seo-engine: day 38 AM, daily brief for 4 Nov 2026, agent-desktop and Worktrunk alternatives",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 1425,
+      "deletions": 2,
+      "files_count": 11,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "8b3cebf06f0b0c084d5ab28d2949a2e6c07d0806",
+      "short_hash": "8b3cebf0",
+      "author": "chaitanyagiri",
+      "date": "2026-11-05T17:16:13+05:30",
+      "subject": "seo-engine: day 39 AM, daily brief for 5 Nov 2026, Roo Code and Gemini CLI alternatives",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 1382,
+      "deletions": 2,
+      "files_count": 11,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "33798d44291dd2cb3755631cc53b340c10926b28",
+      "short_hash": "33798d44",
+      "author": "chaitanyagiri",
+      "date": "2026-11-06T22:08:44+05:30",
+      "subject": "seo-engine: day 40 PM, Orchestrator.inc vs Munder Difflin, Emdash alternatives, Windsurf rename date fix",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 1250,
+      "deletions": 1,
+      "files_count": 9,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "564665b7e987bd1f1ab20bf9753275a5477183f5",
+      "short_hash": "564665b7",
+      "author": "chaitanyagiri",
+      "date": "2026-11-06T09:42:28+05:30",
+      "subject": "seo-engine: day 40 AM, daily brief for 6 Nov 2026, Conductor and Windsurf alternatives",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 1426,
+      "deletions": 1,
+      "files_count": 11,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "80a1dbbe9c932c8c950cf2d3a3c387b78f919344",
+      "short_hash": "80a1dbbe",
+      "author": "chaitanyagiri",
+      "date": "2026-11-07T13:04:48+05:30",
+      "subject": "seo-engine: day 41 AM, Agent Tools Today 7 Nov",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 349,
+      "deletions": 0,
+      "files_count": 3,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "7cea9a71ff6a08721d0b28fb5dc972ed35f5e2af",
+      "short_hash": "7cea9a71",
+      "author": "Chaitanya Giri",
+      "date": "2026-11-08T02:31:05+05:30",
+      "subject": "seo-engine: day 41 PM, Paradev alternatives, Perplexity Teammates vs Munder Difflin, ChatGPT dots title (#832)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 1149,
+      "deletions": 4,
+      "files_count": 9,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "repo": "QwenPaw",
+  "full_name": "agentscope-ai/QwenPaw",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "f5693bdc26ace92c6c6bc410520db5896afdb7b9",
+      "snapshot_date": "2026-08-26T14:13:25+08:00",
+      "first_commit_date": "2026-02-27T14:19:13+08:00",
+      "commits": 2234,
+      "ai_pct": 0.4,
+      "has_agent_config": false,
+      "fix_pct": 39.8,
+      "revert_pct": 0.6,
+      "churn_ratio": 1.48,
+      "survival_rate_pct": 80.4,
+      "code": {
+        "current_loc": 994294,
+        "additions": 1227010,
+        "deletions": 229934,
+        "churn_ratio": 1.47,
+        "survival_rate_pct": 81.0
+      },
+      "docs": {
+        "current_loc": 88446,
+        "additions": 119502,
+        "deletions": 31056,
+        "churn_ratio": 1.7,
+        "survival_rate_pct": 74.0
+      },
+      "rapid_fire_pct": 19.7,
+      "unique_authors": 233
+    },
+    "365": null
+  }
+}

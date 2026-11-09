@@ -1,0 +1,80 @@
+{
+  "repo": "Orkas",
+  "head_commit": "9ba0e36b",
+  "published_results": [
+    {
+      "claim": "2026-08-08 的 fetch-only checkpoint `gpt-5.5` 实跑结果为 **90.8/100** ... 耗时 89.84 秒 ... CNY 4.5818",
+      "metric": "DeepResearcher agent score (/100), wall time, API-equivalent cost (fetch-only checkpoint, gpt-5.5, single run)",
+      "value": "90.8/100; 89.84 s; 7 tool loops; CNY 4.5818",
+      "baseline": "Same-day first batching implementation: 260.13 s, 16 loops, CNY 11.4010 (stated reductions 65.5%, 56.3%, 59.8%)",
+      "evidence_type": "results_only",
+      "files": [
+        "docs/test/deep-research-regression.md:101-106"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "2026-08-08 的完整交付实跑从上一正式轮的 54.0 分、433.06 秒、22 loop、953,596 token、CNY 19.7634，改善到 60.8 分、338.84 秒、13 loop、561,906 token、CNY 12.1343",
+      "metric": "DeepResearcher full-delivery score, wall time, loops, tokens, cost (single run)",
+      "value": "60.8 score; 338.84 s; 13 loops; 561,906 tokens; CNY 12.1343 (run still marked fail on a fetch-batch gate)",
+      "baseline": "Previous formal round: 54.0 score, 433.06 s, 22 loops, 953,596 tokens, CNY 19.7634",
+      "evidence_type": "results_only",
+      "files": [
+        "docs/test/deep-research-regression.md:70-73"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "最新 GPT-5.5 生产实跑 ... 9 loop、299.79 秒、393,991 token、CNY 8.1195；... 独立 Terra judge 给 58.8/100，因此总体仍 fail",
+      "metric": "DeepResearcher ordinary-user case: judge score, time, tokens, cost (single run)",
+      "value": "58.8/100 (judge); 299.79 s; 393,991 tokens; CNY 8.1195; overall fail",
+      "baseline": null,
+      "evidence_type": "results_only",
+      "files": [
+        "docs/test/deep-research-regression.md:86-89"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "报告生成的两个模型调用分别耗时 108.4 和 83.2 秒",
+      "metric": "Report-generation model call latency (single trace)",
+      "value": "108.4 s and 83.2 s",
+      "baseline": null,
+      "evidence_type": "results_only",
+      "files": [
+        "docs/test/deep-research-regression.md:93-94"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "npm run benchmark:local-agents -- --agents codex --k 1 --no-save",
+      "metric": "Pass/fail scorecard of local CLI agents (Claude, Codex, OpenCode) on 6 scripted scenarios (grounded brief, scoped edit, missing-authority stop, history reference, skill read, commander handoff)",
+      "value": "No results committed",
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "docs/test/local-agents-regression.md:268-292",
+        "package.json (scripts.benchmark:local-agents)",
+        "scripts/run-local-agents-live.mjs",
+        "scripts/local-agent-live-support.mjs",
+        "test/eval/local-agent-quality-benchmark.test.ts"
+      ],
+      "reproduce_command": "npm run benchmark:local-agents -- --agents codex --k 1 --no-save"
+    },
+    {
+      "claim": "真实向量质量由 `npm run benchmark:kb-retrieval -- --no-save` 验证 ... Recall@3/MRR、交互式关键词命中率，以及无关查询拒绝率",
+      "metric": "KB retrieval Recall@3 / MRR / keyword hit rate / irrelevant-query rejection rate",
+      "value": "No numbers published; the referenced npm script does not exist in package.json",
+      "baseline": null,
+      "evidence_type": "claim_only",
+      "files": [
+        "docs/test/search-regression.md:7"
+      ],
+      "reproduce_command": null
+    }
+  ],
+  "strongest_evidence_type": "results_only",
+  "summary": "Orkas publishes concrete single-run DeepResearcher numbers (e.g. 90.8/100 at 89.84 s and CNY 4.5818 vs 260.13 s / CNY 11.4010 earlier) only in a Chinese regression-test doc; the full audit is cited at Common/docs/evaluation/deep_researcher_agent_evaluation.md, which is not in this repo, and the 'Commander benchmark' / 'model canary' harness that produced them is also absent. The only runnable model benchmark shipped is the local-agents live runner (npm run benchmark:local-agents, 6 scenarios) with no committed results, and docs reference benchmark:kb-retrieval and eval/context-mechanism/run-benchmark.ts, neither of which exists; the README makes no quantitative claims.",
+  "result_focus": "outcome",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}

@@ -1,0 +1,687 @@
+{
+  "repo": "go-zero",
+  "full_name": "zeromicro/go-zero",
+  "stars": 33420,
+  "stars_source": "github-api 2026-11-08T09:01:16Z",
+  "selection_topics": [
+    "spec-driven-development"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2020-08-07T15:37:57Z",
+    "description": "A cloud-native Go microservices framework with cli tool for productivity.",
+    "fork": false,
+    "forks": 4331,
+    "full_name": "zeromicro/go-zero",
+    "pushed_at": "2026-11-08T03:38:07Z",
+    "stars": 33420,
+    "fetched_at": "2026-11-08T09:01:16Z"
+  },
+  "url": "https://github.com/zeromicro/go-zero",
+  "description": "A cloud-native Go microservices framework with cli tool for productivity.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "17efbb5174a486bb29b301617865a872a17beca0",
+    "head_date": "2026-11-08T11:38:04+08:00",
+    "history_complete": true,
+    "non_merge_commits": 3102,
+    "merge_commits": 3,
+    "maintenance_bot_commits": 481,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 34,
+    "explicit_ai_pct": 1.3,
+    "by_tool": {
+      "copilot": 34
+    },
+    "by_signal": {
+      "co-author": 33,
+      "agent-author": 1
+    },
+    "recent_180d": {
+      "commits": 52,
+      "ai_pct": 23.1,
+      "fix_pct": 61.5
+    },
+    "first_365d": {
+      "commits": 814,
+      "ai_pct": 0.0,
+      "fix_pct": 22.7
+    },
+    "bot_commit_count": 481,
+    "agent_config": {
+      "files": {
+        ".github/copilot-instructions.md": "2025-09-20T13:40:43+08:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2025-09-20T13:40:43+08:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 2621,
+    "first_commit_date": "2020-07-26T17:09:05+08:00",
+    "last_commit_date": "2026-11-05T22:55:05+08:00",
+    "current_loc": 164876,
+    "total_historical_additions": 271512,
+    "total_historical_deletions": 106636,
+    "total_churn": 378148,
+    "churn_ratio": 2.29,
+    "survival_rate_pct": 60.7,
+    "code": {
+      "current_loc": 156948,
+      "additions": 252316,
+      "deletions": 95368,
+      "churn_ratio": 2.22,
+      "survival_rate_pct": 62.2
+    },
+    "docs": {
+      "current_loc": 7928,
+      "additions": 19196,
+      "deletions": 11268,
+      "churn_ratio": 3.84,
+      "survival_rate_pct": 41.3
+    },
+    "fix_commits": 701,
+    "fix_pct": 26.7,
+    "revert_commits": 13,
+    "revert_pct": 0.5,
+    "trial_error_commits": 729,
+    "trial_error_pct": 27.8,
+    "rapid_fire_commits": 130,
+    "rapid_fire_pct": 5.0,
+    "trial_error_chains": 24,
+    "suspicious_additions_count": 25,
+    "top5_hotspot_volatility_pct": 4.8
+  },
+  "code_hygiene": {
+    "total_files": 1111,
+    "docs_files": 66,
+    "avg_file_loc": 141.3,
+    "test_loc": 79578,
+    "test_files": 435,
+    "test_ratio_pct": 50.7,
+    "comment_ratio_pct": 4.3,
+    "monolith_count": 15,
+    "top_languages": {
+      ".go": 154050,
+      ".sh": 1620,
+      ".proto": 968,
+      ".ts": 126,
+      ".sql": 119
+    }
+  },
+  "authors": {
+    "unique_authors": 359,
+    "top_authors": [
+      {
+        "name": "Kevin Wan",
+        "commits": 1228,
+        "pct": 46.9
+      },
+      {
+        "name": "kevin",
+        "commits": 363,
+        "pct": 13.8
+      },
+      {
+        "name": "anqiansong",
+        "commits": 125,
+        "pct": 4.8
+      },
+      {
+        "name": "kingxt",
+        "commits": 71,
+        "pct": 2.7
+      },
+      {
+        "name": "kesonan",
+        "commits": 57,
+        "pct": 2.2
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 0.7,
+    "p75": 2.7,
+    "p90": 12.4,
+    "p95": 63.6,
+    "p99": 3600.0,
+    "avg": 184.6
+  },
+  "hotspots": [
+    {
+      "file": "readme.md",
+      "commits": 180,
+      "additions": 1428,
+      "deletions": 1143,
+      "churn": 2571,
+      "first_seen": "2020-07-28T16:29:13+08:00",
+      "last_seen": "2026-10-30T14:08:19Z"
+    },
+    {
+      "file": "readme-cn.md",
+      "commits": 152,
+      "additions": 709,
+      "deletions": 360,
+      "churn": 1069,
+      "first_seen": "2021-02-02T16:58:45+08:00",
+      "last_seen": "2026-09-05T21:23:20+08:00"
+    },
+    {
+      "file": "core/mapping/unmarshaler.go",
+      "commits": 104,
+      "additions": 2451,
+      "deletions": 1212,
+      "churn": 3663,
+      "first_seen": "2020-07-26T17:09:05+08:00",
+      "last_seen": "2026-09-05T21:44:46+08:00"
+    },
+    {
+      "file": "tools/goctl/goctl.go",
+      "commits": 104,
+      "additions": 2100,
+      "deletions": 2087,
+      "churn": 4187,
+      "first_seen": "2020-07-29T17:11:41+08:00",
+      "last_seen": "2022-05-07T15:40:11+08:00"
+    },
+    {
+      "file": "core/mapping/unmarshaler_test.go",
+      "commits": 84,
+      "additions": 7873,
+      "deletions": 1559,
+      "churn": 9432,
+      "first_seen": "2020-07-26T17:09:05+08:00",
+      "last_seen": "2025-07-30T18:09:25+08:00"
+    },
+    {
+      "file": "core/stores/redis/redis.go",
+      "commits": 83,
+      "additions": 5241,
+      "deletions": 2392,
+      "churn": 7633,
+      "first_seen": "2020-07-26T17:09:05+08:00",
+      "last_seen": "2026-09-26T00:03:48+08:00"
+    },
+    {
+      "file": "core/stores/redis/redis_test.go",
+      "commits": 72,
+      "additions": 3496,
+      "deletions": 1005,
+      "churn": 4501,
+      "first_seen": "2020-07-26T17:09:05+08:00",
+      "last_seen": "2026-11-05T22:55:05+08:00"
+    },
+    {
+      "file": "tools/goctl/internal/version/version.go",
+      "commits": 72,
+      "additions": 85,
+      "deletions": 89,
+      "churn": 174,
+      "first_seen": "2021-09-05T21:57:44+08:00",
+      "last_seen": "2026-08-01T13:28:10+08:00"
+    },
+    {
+      "file": "core/logx/logs.go",
+      "commits": 55,
+      "additions": 1428,
+      "deletions": 819,
+      "churn": 2247,
+      "first_seen": "2020-07-26T17:09:05+08:00",
+      "last_seen": "2025-08-20T20:48:47+08:00"
+    },
+    {
+      "file": "rest/server.go",
+      "commits": 53,
+      "additions": 605,
+      "deletions": 407,
+      "churn": 1012,
+      "first_seen": "2020-07-31T11:14:48+08:00",
+      "last_seen": "2026-11-01T12:36:53+08:00"
+    },
+    {
+      "file": "tools/goctl/api/gogen/genhandlers.go",
+      "commits": 47,
+      "additions": 498,
+      "deletions": 358,
+      "churn": 856,
+      "first_seen": "2020-07-29T17:11:41+08:00",
+      "last_seen": "2025-10-08T19:56:52+08:00"
+    },
+    {
+      "file": "rest/engine.go",
+      "commits": 47,
+      "additions": 703,
+      "deletions": 292,
+      "churn": 995,
+      "first_seen": "2020-08-18T20:20:44+08:00",
+      "last_seen": "2025-09-27T20:48:35+08:00"
+    },
+    {
+      "file": "tools/goctl/model/sql/gen/gen.go",
+      "commits": 45,
+      "additions": 681,
+      "deletions": 253,
+      "churn": 934,
+      "first_seen": "2020-08-19T10:41:19+08:00",
+      "last_seen": "2026-03-22T14:26:56+08:00"
+    },
+    {
+      "file": "tools/goctl/api/gogen/genroutes.go",
+      "commits": 45,
+      "additions": 507,
+      "deletions": 189,
+      "churn": 696,
+      "first_seen": "2020-07-29T17:11:41+08:00",
+      "last_seen": "2025-08-19T20:29:41+08:00"
+    },
+    {
+      "file": "rest/server_test.go",
+      "commits": 42,
+      "additions": 853,
+      "deletions": 102,
+      "churn": 955,
+      "first_seen": "2020-08-18T20:20:44+08:00",
+      "last_seen": "2026-11-01T12:36:53+08:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "core/mapping/unmarshaler_test.go",
+      "loc": 6314
+    },
+    {
+      "file": "core/stores/redis/redis.go",
+      "loc": 2849
+    },
+    {
+      "file": "core/stores/redis/redis_test.go",
+      "loc": 2491
+    },
+    {
+      "file": "core/stores/sqlx/orm_test.go",
+      "loc": 2410
+    },
+    {
+      "file": "core/conf/config_test.go",
+      "loc": 1772
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "8c6f70fb79f0bc4113ca7547f5ca0da64b8cb631",
+      "short_hash": "8c6f70fb",
+      "author": "Kevin Wan",
+      "date": "2026-10-24T19:22:44+08:00",
+      "subject": "fix(ci): run required workflows for merge queue (#5845)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "db0138b411609088e27059891e087361faeedc12",
+      "short_hash": "db0138b4",
+      "author": "reheptin",
+      "date": "2026-10-24T13:01:43Z",
+      "subject": "fix: guard errorWindow count access in String (#5775)",
+      "coauthors": [
+        "kevin"
+      ],
+      "additions": 35,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "2b5efac95da1090616378c0441ed2b685270c57c",
+      "short_hash": "2b5efac9",
+      "author": "Little Fedya",
+      "date": "2026-10-24T13:14:03Z",
+      "subject": "fix(filex): only trim trailing newline on tail block in LastLine (#5790)",
+      "coauthors": [],
+      "additions": 48,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "98fe33f5390e62298e1c44c51bf76a0208d1dc4e",
+      "short_hash": "98fe33f5",
+      "author": "Ahmet Kamer Çivi",
+      "date": "2026-10-25T14:49:08Z",
+      "subject": "fix: stop text line scanner at empty EOF (#5798)",
+      "coauthors": [],
+      "additions": 24,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "fd59ce39ddd178a02a44294571db7bc64d974ee4",
+      "short_hash": "fd59ce39",
+      "author": "Ahmet Kamer Çivi",
+      "date": "2026-10-25T14:59:15Z",
+      "subject": "fix(filex): return EOF at range end (#5805)",
+      "coauthors": [
+        "kevin"
+      ],
+      "additions": 50,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "4fce4e76217ac218af910a6a696463b9d6694239",
+      "short_hash": "4fce4e76",
+      "author": "Suliman Abdulrazzaq",
+      "date": "2026-10-27T10:21:02Z",
+      "subject": "fix(zrpc): skip not-ready endpoints in kube resolver (#5786)",
+      "coauthors": [
+        "kevin"
+      ],
+      "additions": 160,
+      "deletions": 35,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "551eaf7116b6d263c28a840d607752bce0da91ee",
+      "short_hash": "551eaf71",
+      "author": "林桉",
+      "date": "2026-10-30T14:08:19Z",
+      "subject": "fix(zrpc): clarify Kubernetes EndpointSlice RBAC errors (#5710)",
+      "coauthors": [
+        "kevin",
+        "Copilot Autofix powered by AI"
+      ],
+      "additions": 221,
+      "deletions": 8,
+      "files_count": 3,
+      "ai_tool": "copilot",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "f753a411be1c74dc929806058f227d6ff2720c5b",
+      "short_hash": "f753a411",
+      "author": "Kevin Wan",
+      "date": "2026-10-31T10:50:15+08:00",
+      "subject": "fix(deps): bump go.opentelemetry.io/otel/exporters/zipkin to v1.46.0 in tools/goctl (#5862)",
+      "coauthors": [
+        "Copilot"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "copilot",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "963ae7ef2cbf8dcddfe163eaea3d6ef9a37a2032",
+      "short_hash": "963ae7ef",
+      "author": "Kevin Wan",
+      "date": "2026-10-31T19:34:53+08:00",
+      "subject": "fix(rest): avoid unbounded gzip body dump on JWT auth failure (#5865)",
+      "coauthors": [
+        "Copilot"
+      ],
+      "additions": 131,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": "copilot",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "8260102d3257f15a4347a2a7001c04c641057b85",
+      "short_hash": "8260102d",
+      "author": "Johnny Lee",
+      "date": "2026-10-31T12:56:29Z",
+      "subject": "fix(gateway): preserve upstream Content-Type in HTTP proxy responses (#5851)",
+      "coauthors": [],
+      "additions": 51,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "5e318f9fd4ca3591de2918821cf3fb2e633dd19b",
+      "short_hash": "5e318f9f",
+      "author": "Ahmet Kamer Çivi",
+      "date": "2026-10-31T13:19:10Z",
+      "subject": "fix(iox): close redirected pipe on restore (#5827)",
+      "coauthors": [
+        "kevin"
+      ],
+      "additions": 22,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "f3be7b00a87de1577233ca9cadb2899c7ccf9b0b",
+      "short_hash": "f3be7b00",
+      "author": "Ahmet Kamer Çivi",
+      "date": "2026-10-31T13:50:55Z",
+      "subject": "fix: preserve YAML null values (#5816)",
+      "coauthors": [],
+      "additions": 10,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "9aa4ea7b123d28cef028c5b55b401d27e94bda15",
+      "short_hash": "9aa4ea7b",
+      "author": "Kevin Wan",
+      "date": "2026-11-01T12:36:53+08:00",
+      "subject": "fix(rest): preserve CORS origin policy when adding headers (#5867)",
+      "coauthors": [
+        "Copilot"
+      ],
+      "additions": 286,
+      "deletions": 23,
+      "files_count": 5,
+      "ai_tool": "copilot",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "a48115b300ace8be5521d421e8becc381ebe46d5",
+      "short_hash": "a48115b3",
+      "author": "Ahmet Kamer Çivi",
+      "date": "2026-11-01T04:41:47Z",
+      "subject": "fix(goctl): track lines in block comments (#5826)",
+      "coauthors": [],
+      "additions": 21,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "20966e979fda81311d2ff13993555afd269f30de",
+      "short_hash": "20966e97",
+      "author": "Morax",
+      "date": "2026-11-01T04:54:43Z",
+      "subject": "feat(goctl): add client-only RPC generation (#5776)",
+      "coauthors": [
+        "kevin"
+      ],
+      "additions": 358,
+      "deletions": 23,
+      "files_count": 10,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "9dcf9508908bdf7a31f2103290f6925d3bcbb56d",
+      "short_hash": "9dcf9508",
+      "author": "prostomarkeloff",
+      "date": "2026-11-01T05:46:26Z",
+      "subject": "fix(goctl/api/javagen): map int16 to a Java integer type (#5847)",
+      "coauthors": [
+        "kevin"
+      ],
+      "additions": 36,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "f56630376b819f56d1f71247af05fdf0c7f9e0ce",
+      "short_hash": "f5663037",
+      "author": "FailSafe",
+      "date": "2026-11-01T06:28:00Z",
+      "subject": "fix(security): zrpc Authenticator fails open: unknown app or any Redis error authenticates the caller (#5848)",
+      "coauthors": [
+        "OpenClaw BountyBot",
+        "kevin"
+      ],
+      "additions": 126,
+      "deletions": 82,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "e58015d3dee42f9fa753e25379bb9fb58764e649",
+      "short_hash": "e58015d3",
+      "author": "Copilot",
+      "date": "2026-11-05T22:25:26+08:00",
+      "subject": "Prevent invalid stdout descriptors in logx tests (#5872)",
+      "coauthors": [
+        "copilot-swe-agent[bot]",
+        "kevwan"
+      ],
+      "additions": 21,
+      "deletions": 25,
+      "files_count": 1,
+      "ai_tool": "copilot",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "8e379d99984c9dff0e031bb538bc4deea1074305",
+      "short_hash": "8e379d99",
+      "author": "Amir",
+      "date": "2026-11-05T14:38:02Z",
+      "subject": "test(collection): cover keyLru.remove and Cache.Del with LRU limit (#5854)",
+      "coauthors": [
+        "Amir Zare"
+      ],
+      "additions": 78,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "43637355a69d11d2cb9241eabc71e85733faff0b",
+      "short_hash": "43637355",
+      "author": "dependabot[bot]",
+      "date": "2026-11-05T22:55:05+08:00",
+      "subject": "chore(deps): bump github.com/jackc/pgx/v5 from 5.11.0 to 5.12.0 (#5875)",
+      "coauthors": [
+        "dependabot[bot]",
+        "copilot-swe-agent[bot]",
+        "kevwan"
+      ],
+      "additions": 7,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": "copilot",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

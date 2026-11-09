@@ -1,0 +1,658 @@
+{
+  "repo": "QwenPaw",
+  "full_name": "agentscope-ai/QwenPaw",
+  "stars": 37473,
+  "stars_source": "github-api 2026-11-08T09:01:07Z",
+  "selection_topics": [
+    "agent-harness"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2026-02-24T03:42:56Z",
+    "description": "Your Personal AI Assistant; easy to install, deploy on your own machine or on the cloud; supports multiple chat apps with easily extensible capabilities.",
+    "fork": false,
+    "forks": 3265,
+    "full_name": "agentscope-ai/QwenPaw",
+    "pushed_at": "2026-11-06T10:39:00Z",
+    "stars": 37473,
+    "fetched_at": "2026-11-08T09:01:07Z"
+  },
+  "url": "https://github.com/agentscope-ai/QwenPaw",
+  "description": "Your Personal AI Assistant; easy to install, deploy on your own machine or on the cloud; supports multiple chat apps with easily extensible capabilities.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "2cf28d14a20c9f9c769cce2a9c0568ccf84e459c",
+    "head_date": "2026-11-06T18:38:59+08:00",
+    "history_complete": true,
+    "non_merge_commits": 2685,
+    "merge_commits": 3,
+    "maintenance_bot_commits": 0,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 8,
+    "explicit_ai_pct": 0.3,
+    "by_tool": {
+      "gemini": 3,
+      "copilot": 2,
+      "claude": 2,
+      "cursor": 1
+    },
+    "by_signal": {
+      "co-author": 8
+    },
+    "recent_180d": {
+      "commits": 1571,
+      "ai_pct": 0.2,
+      "fix_pct": 52.5
+    },
+    "first_365d": {
+      "commits": 2685,
+      "ai_pct": 0.3,
+      "fix_pct": 43.3
+    },
+    "bot_commit_count": 0,
+    "agent_config": {
+      "files": {},
+      "ci_agent_workflows": [],
+      "has_agent_config": false,
+      "first_config_date": null
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 2685,
+    "first_commit_date": "2026-02-27T14:19:13+08:00",
+    "last_commit_date": "2026-11-06T18:38:59+08:00",
+    "current_loc": 1640398,
+    "total_historical_additions": 2117357,
+    "total_historical_deletions": 474177,
+    "total_churn": 2591534,
+    "churn_ratio": 1.58,
+    "survival_rate_pct": 77.5,
+    "code": {
+      "current_loc": 1544633,
+      "additions": 1984476,
+      "deletions": 437061,
+      "churn_ratio": 1.57,
+      "survival_rate_pct": 77.8
+    },
+    "docs": {
+      "current_loc": 95765,
+      "additions": 132881,
+      "deletions": 37116,
+      "churn_ratio": 1.78,
+      "survival_rate_pct": 72.1
+    },
+    "fix_commits": 1163,
+    "fix_pct": 43.3,
+    "revert_commits": 13,
+    "revert_pct": 0.5,
+    "trial_error_commits": 1177,
+    "trial_error_pct": 43.8,
+    "rapid_fire_commits": 520,
+    "rapid_fire_pct": 19.4,
+    "trial_error_chains": 236,
+    "suspicious_additions_count": 298,
+    "top5_hotspot_volatility_pct": 4.8
+  },
+  "code_hygiene": {
+    "total_files": 5262,
+    "docs_files": 441,
+    "avg_file_loc": 293.5,
+    "test_loc": 652170,
+    "test_files": 1932,
+    "test_ratio_pct": 42.2,
+    "comment_ratio_pct": 5.5,
+    "monolith_count": 300,
+    "top_languages": {
+      ".py": 1092200,
+      ".tsx": 274236,
+      ".ts": 151726,
+      ".rs": 15237,
+      ".js": 4487
+    }
+  },
+  "authors": {
+    "unique_authors": 269,
+    "top_authors": [
+      {
+        "name": "zhaozhuang521",
+        "commits": 283,
+        "pct": 10.5
+      },
+      {
+        "name": "Weirui Kuang",
+        "commits": 274,
+        "pct": 10.2
+      },
+      {
+        "name": "zhijianma",
+        "commits": 230,
+        "pct": 8.6
+      },
+      {
+        "name": "hongxicheng",
+        "commits": 157,
+        "pct": 5.8
+      },
+      {
+        "name": "Yuexiang XIE",
+        "commits": 147,
+        "pct": 5.5
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 7.2,
+    "p75": 50.4,
+    "p90": 280.0,
+    "p95": 751.3,
+    "p99": 4348.9,
+    "avg": 295.1
+  },
+  "hotspots": [
+    {
+      "file": "console/src/pages/Chat/index.tsx",
+      "commits": 168,
+      "additions": 9668,
+      "deletions": 4798,
+      "churn": 14466,
+      "first_seen": "2026-02-27T14:19:13+08:00",
+      "last_seen": "2026-11-05T14:14:09+08:00"
+    },
+    {
+      "file": "src/qwenpaw/config/config.py",
+      "commits": 148,
+      "additions": 3914,
+      "deletions": 1022,
+      "churn": 4936,
+      "first_seen": "2026-04-12T16:44:46+08:00",
+      "last_seen": "2026-11-04T12:31:23+08:00"
+    },
+    {
+      "file": "README.md",
+      "commits": 114,
+      "additions": 1451,
+      "deletions": 908,
+      "churn": 2359,
+      "first_seen": "2026-02-27T14:19:13+08:00",
+      "last_seen": "2026-11-06T15:53:33+08:00"
+    },
+    {
+      "file": "README_zh.md",
+      "commits": 114,
+      "additions": 1505,
+      "deletions": 963,
+      "churn": 2468,
+      "first_seen": "2026-02-27T14:19:13+08:00",
+      "last_seen": "2026-11-06T15:53:33+08:00"
+    },
+    {
+      "file": "src/qwenpaw/__version__.py",
+      "commits": 99,
+      "additions": 99,
+      "deletions": 99,
+      "churn": 198,
+      "first_seen": "2026-04-12T16:44:46+08:00",
+      "last_seen": "2026-11-02T17:40:22+08:00"
+    },
+    {
+      "file": "console/src/pages/Control/Channels/components/ChannelDrawer.tsx",
+      "commits": 87,
+      "additions": 3775,
+      "deletions": 1355,
+      "churn": 5130,
+      "first_seen": "2026-02-27T14:19:13+08:00",
+      "last_seen": "2026-11-02T21:03:46+08:00"
+    },
+    {
+      "file": "README_ja.md",
+      "commits": 85,
+      "additions": 1432,
+      "deletions": 880,
+      "churn": 2312,
+      "first_seen": "2026-03-04T12:52:45+09:00",
+      "last_seen": "2026-10-15T14:01:34+08:00"
+    },
+    {
+      "file": "console/src/layouts/Sidebar.tsx",
+      "commits": 78,
+      "additions": 3727,
+      "deletions": 2460,
+      "churn": 6187,
+      "first_seen": "2026-02-27T14:19:13+08:00",
+      "last_seen": "2026-11-05T11:18:36+08:00"
+    },
+    {
+      "file": "src/qwenpaw/agents/react_agent.py",
+      "commits": 78,
+      "additions": 2835,
+      "deletions": 2007,
+      "churn": 4842,
+      "first_seen": "2026-04-12T16:44:46+08:00",
+      "last_seen": "2026-11-04T01:08:06-08:00"
+    },
+    {
+      "file": "src/qwenpaw/app/_app.py",
+      "commits": 67,
+      "additions": 1660,
+      "deletions": 1154,
+      "churn": 2814,
+      "first_seen": "2026-04-12T16:44:46+08:00",
+      "last_seen": "2026-11-02T21:03:11+08:00"
+    },
+    {
+      "file": "src/copaw/config/config.py",
+      "commits": 63,
+      "additions": 1636,
+      "deletions": 207,
+      "churn": 1843,
+      "first_seen": "2026-02-27T14:19:13+08:00",
+      "last_seen": "2026-04-09T19:00:25+08:00"
+    },
+    {
+      "file": "website/public/docs/config.en.md",
+      "commits": 59,
+      "additions": 1818,
+      "deletions": 877,
+      "churn": 2695,
+      "first_seen": "2026-02-27T14:19:13+08:00",
+      "last_seen": "2026-10-28T19:04:10+08:00"
+    },
+    {
+      "file": "README_ru.md",
+      "commits": 59,
+      "additions": 1200,
+      "deletions": 647,
+      "churn": 1847,
+      "first_seen": "2026-03-29T22:47:49+08:00",
+      "last_seen": "2026-10-15T14:01:34+08:00"
+    },
+    {
+      "file": "website/public/docs/config.zh.md",
+      "commits": 58,
+      "additions": 1698,
+      "deletions": 895,
+      "churn": 2593,
+      "first_seen": "2026-02-27T14:19:13+08:00",
+      "last_seen": "2026-10-28T19:04:10+08:00"
+    },
+    {
+      "file": "console/src/pages/Chat/sessionApi/index.ts",
+      "commits": 55,
+      "additions": 3367,
+      "deletions": 1357,
+      "churn": 4724,
+      "first_seen": "2026-02-27T14:19:13+08:00",
+      "last_seen": "2026-11-06T15:53:33+08:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "plugins/apps/qwenpaw-creator/backend/services/file_agent_runtime/driver.py",
+      "loc": 10363
+    },
+    {
+      "file": "src/qwenpaw/plugins/loader.py",
+      "loc": 5726
+    },
+    {
+      "file": "plugins/apps/qwenpaw-creator/backend/services/media_files/r2v_execution.py",
+      "loc": 5697
+    },
+    {
+      "file": "src/qwenpaw/agents/tools/deprecated_browser/browser_control.py",
+      "loc": 5629
+    },
+    {
+      "file": "plugins/apps/qwenpaw-creator/backend/services/media_files/local_execution.py",
+      "loc": 5199
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "e859104a83d7d24853ef01e61e35c03482ca2615",
+      "short_hash": "e859104a",
+      "author": "wangfei010313",
+      "date": "2026-11-05T14:05:07+08:00",
+      "subject": "fix(matrix): use scoped crypto store filenames (#8584)",
+      "coauthors": [],
+      "additions": 223,
+      "deletions": 12,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "275fd26ec01108a024d0f1e69973939709b89449",
+      "short_hash": "275fd26e",
+      "author": "zhaozhuang521",
+      "date": "2026-11-05T14:14:09+08:00",
+      "subject": "fix(console): preserve new task project directories (#8555) (#8582)",
+      "coauthors": [],
+      "additions": 901,
+      "deletions": 86,
+      "files_count": 12,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "c84ff8dc0800175de76954556deecef367c51d73",
+      "short_hash": "c84ff8dc",
+      "author": "hongxicheng",
+      "date": "2026-11-05T16:47:52+08:00",
+      "subject": "fix(matrix): simplify legacy state migration and device locking (#8558)",
+      "coauthors": [
+        "wangfly"
+      ],
+      "additions": 627,
+      "deletions": 567,
+      "files_count": 10,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "212d24057ccd8270fb7967d34d3c8f5c6f056656",
+      "short_hash": "212d2405",
+      "author": "ManJieqi",
+      "date": "2026-11-06T09:29:47+08:00",
+      "subject": "fix(console): add view_audio to tool catalog translations (#8597)",
+      "coauthors": [],
+      "additions": 2,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "46d62f7dbfccbdce4922e06e38c7d1b13c2e5b14",
+      "short_hash": "46d62f7d",
+      "author": "zhaozhuang521",
+      "date": "2026-11-06T10:57:17+08:00",
+      "subject": "fix(console): preserve settings navigation for plugin pages (#8593)",
+      "coauthors": [],
+      "additions": 699,
+      "deletions": 15,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "7415539f286f5ac4063047c1c119d03346af76a1",
+      "short_hash": "7415539f",
+      "author": "alexcastgonz",
+      "date": "2026-11-05T22:15:30-05:00",
+      "subject": "fix(console): disable nginx buffering for chat SSE (#8522)",
+      "coauthors": [],
+      "additions": 12,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "8ad817934a9dfeef9ec896b5d3286b3fce150cc3",
+      "short_hash": "8ad81793",
+      "author": "北沐城歌",
+      "date": "2026-11-06T11:43:43+08:00",
+      "subject": "fix(channels): repair CJK emphasis boundaries in rendered Markdown (#8067)",
+      "coauthors": [],
+      "additions": 571,
+      "deletions": 4,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "6d72f689debf9e5ef3d27dd9e59df7bd40f563b0",
+      "short_hash": "6d72f689",
+      "author": "zhijianma",
+      "date": "2026-11-06T12:27:52+08:00",
+      "subject": "test: stabilize browser timeout and plugin cleanup checks (#8589)",
+      "coauthors": [],
+      "additions": 13,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "42117d43cb964332424d417f949e714f561a2df1",
+      "short_hash": "42117d43",
+      "author": "Ziyang Guo",
+      "date": "2026-11-06T12:28:45+08:00",
+      "subject": "fix(providers): bound inline media per request, not just per file (#8034)",
+      "coauthors": [],
+      "additions": 2815,
+      "deletions": 85,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "514ab897269e23a91856e5295e621deafa6db4e5",
+      "short_hash": "514ab897",
+      "author": "Twot",
+      "date": "2026-11-06T11:29:11+07:00",
+      "subject": "fix(memory): require non-empty api_key for ReMe reranker enablement (#8276) (#8291)",
+      "coauthors": [],
+      "additions": 97,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "cb628c79d9d687aba16e8376d65d05ddfab16930",
+      "short_hash": "cb628c79",
+      "author": "lanjinzhoucode",
+      "date": "2026-11-06T12:29:53+08:00",
+      "subject": "fix(channels): ignore serialized response policy cache entries (#8564)",
+      "coauthors": [],
+      "additions": 122,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "f5cda1c4d9c59943989764043474744eaee3129e",
+      "short_hash": "f5cda1c4",
+      "author": "hehuang139",
+      "date": "2026-11-06T12:32:56+08:00",
+      "subject": "fix(cli): discover Ollama models before activation (#8309)",
+      "coauthors": [
+        "wangfly"
+      ],
+      "additions": 288,
+      "deletions": 12,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "e00511b0aacbab8037464d571f3b0c5597838df4",
+      "short_hash": "e00511b0",
+      "author": "wangfei010313",
+      "date": "2026-11-06T13:14:21+08:00",
+      "subject": "fix(matrix): preserve ADS data during legacy migration (#8599)",
+      "coauthors": [],
+      "additions": 90,
+      "deletions": 34,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "56254fa0b00534e9ec878e2b7554a016c841af12",
+      "short_hash": "56254fa0",
+      "author": "lalaliat",
+      "date": "2026-11-06T15:13:14+08:00",
+      "subject": "fix(sandbox): preserve cmd.exe quoting in NoneSandbox (#8602)",
+      "coauthors": [],
+      "additions": 28,
+      "deletions": 6,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "482332bbe077a6f86897b3e8e16ca1bd0a8cdf28",
+      "short_hash": "482332bb",
+      "author": "JasonH",
+      "date": "2026-11-06T15:53:33+08:00",
+      "subject": "fix(console): keep reset chats empty after reopening (#8600)",
+      "coauthors": [],
+      "additions": 311,
+      "deletions": 0,
+      "files_count": 7,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "6ea1751d2511451569732344a0ec2ebb8769a528",
+      "short_hash": "6ea1751d",
+      "author": "liuxuyang1236",
+      "date": "2026-11-06T16:18:20+08:00",
+      "subject": "fix(workspace): normalize dict requests before backend routing (#8535)",
+      "coauthors": [],
+      "additions": 75,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "019a89dc7956537008df594199fc1844d93bc52f",
+      "short_hash": "019a89dc",
+      "author": "lalaliat",
+      "date": "2026-11-06T18:08:49+08:00",
+      "subject": "fix(tests): prevent Windows shell cancellation tests from hanging (#8604)",
+      "coauthors": [],
+      "additions": 9,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "e147ce1f8fc3cee7a13fbec03b1becfbb100634d",
+      "short_hash": "e147ce1f",
+      "author": "Haohao Luo",
+      "date": "2026-11-06T18:36:33+08:00",
+      "subject": "fix(plugins): refactor dependency check (#8598)",
+      "coauthors": [],
+      "additions": 4903,
+      "deletions": 3558,
+      "files_count": 31,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "182644d9f1613e6533dd5a068f833b6a6a3e7cad",
+      "short_hash": "182644d9",
+      "author": "hehuang139",
+      "date": "2026-11-06T18:38:44+08:00",
+      "subject": "fix(matrix): recover cached sessions and missing device keys (#8411)",
+      "coauthors": [],
+      "additions": 994,
+      "deletions": 17,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "2cf28d14a20c9f9c769cce2a9c0568ccf84e459c",
+      "short_hash": "2cf28d14",
+      "author": "xiong-wei1",
+      "date": "2026-11-06T18:38:59+08:00",
+      "subject": "fix(providers): reject out-of-range model config values on the write path (#8550)",
+      "coauthors": [],
+      "additions": 894,
+      "deletions": 2,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    }
+  ]
+}

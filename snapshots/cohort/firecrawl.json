@@ -1,0 +1,63 @@
+{
+  "repo": "firecrawl",
+  "full_name": "firecrawl/firecrawl",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "35b15f1ee6d048092a2a1c1315bf9844a4164153",
+      "snapshot_date": "2024-10-12T17:59:50-03:00",
+      "first_commit_date": "2024-04-15T17:01:47-04:00",
+      "commits": 1522,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 21.5,
+      "revert_pct": 0.8,
+      "churn_ratio": 2.94,
+      "survival_rate_pct": 50.9,
+      "code": {
+        "current_loc": 26291,
+        "additions": 53146,
+        "deletions": 27149,
+        "churn_ratio": 3.05,
+        "survival_rate_pct": 49.5
+      },
+      "docs": {
+        "current_loc": 2934,
+        "additions": 4309,
+        "deletions": 1375,
+        "churn_ratio": 1.94,
+        "survival_rate_pct": 68.1
+      },
+      "rapid_fire_pct": 17.6,
+      "unique_authors": 52
+    },
+    "365": {
+      "snapshot_commit": "31e24e907c2bd019b2db33a39e3c935144355543",
+      "snapshot_date": "2025-04-15T02:13:31-07:00",
+      "first_commit_date": "2024-04-15T17:01:47-04:00",
+      "commits": 2557,
+      "ai_pct": 0.3,
+      "has_agent_config": false,
+      "fix_pct": 25.1,
+      "revert_pct": 1.4,
+      "churn_ratio": 2.83,
+      "survival_rate_pct": 52.2,
+      "code": {
+        "current_loc": 72557,
+        "additions": 146171,
+        "deletions": 73940,
+        "churn_ratio": 3.03,
+        "survival_rate_pct": 49.6
+      },
+      "docs": {
+        "current_loc": 9606,
+        "additions": 11186,
+        "deletions": 1580,
+        "churn_ratio": 1.33,
+        "survival_rate_pct": 85.9
+      },
+      "rapid_fire_pct": 16.8,
+      "unique_authors": 90
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "repo": "lazygit",
+  "full_name": "jesseduffield/lazygit",
+  "group": "baseline",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "c2eaeab1f07e692cfa5b49b8bd707f17f7d1f892",
+      "snapshot_date": "2018-11-08T17:55:54+11:00",
+      "first_commit_date": "2018-05-13T13:23:45+10:00",
+      "commits": 735,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 8.4,
+      "revert_pct": 1.0,
+      "churn_ratio": 3.88,
+      "survival_rate_pct": 40.6,
+      "code": {
+        "current_loc": 8369,
+        "additions": 21123,
+        "deletions": 12369,
+        "churn_ratio": 4.0,
+        "survival_rate_pct": 39.6
+      },
+      "docs": {
+        "current_loc": 466,
+        "additions": 649,
+        "deletions": 177,
+        "churn_ratio": 1.77,
+        "survival_rate_pct": 71.8
+      },
+      "rapid_fire_pct": 20.7,
+      "unique_authors": 31
+    },
+    "365": {
+      "snapshot_commit": "c61bfbdd4cd46243ef6663533e0c9db05dd1f7bd",
+      "snapshot_date": "2019-05-12T17:59:49+10:00",
+      "first_commit_date": "2018-05-13T13:23:45+10:00",
+      "commits": 1025,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 11.0,
+      "revert_pct": 0.9,
+      "churn_ratio": 3.58,
+      "survival_rate_pct": 43.4,
+      "code": {
+        "current_loc": 13277,
+        "additions": 31199,
+        "deletions": 17538,
+        "churn_ratio": 3.67,
+        "survival_rate_pct": 42.6
+      },
+      "docs": {
+        "current_loc": 798,
+        "additions": 1217,
+        "deletions": 413,
+        "churn_ratio": 2.04,
+        "survival_rate_pct": 65.6
+      },
+      "rapid_fire_pct": 17.8,
+      "unique_authors": 41
+    }
+  }
+}

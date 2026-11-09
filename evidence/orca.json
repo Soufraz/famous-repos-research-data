@@ -1,0 +1,130 @@
+{
+  "repo": "orca",
+  "head_commit": "4e66fb5510",
+  "published_results": [
+    {
+      "claim": "For the 256-key large transcript, scanner time alone fell from 81.494 ms to 0.724 ms, and append bytes read fell by 99.915%.",
+      "metric": "Claude usage-scan cost after a transcript append (median scanner+serialization time, bytes read), 8 counterbalanced rounds, Node v24.20.0, macOS arm64 Apple M4 Max",
+      "value": "32 MiB / 256 keys: 0.741 ms, 29,306 bytes read; 32 MiB / 16,384 keys: 10.651 ms",
+      "baseline": "Commit 51e7181850b022bae2d41091fe1229accef4bd50: 81.513 ms, 34,534,456 bytes read (256 keys); 124.310 ms (16,384 keys)",
+      "evidence_type": "harness+results",
+      "files": [
+        "docs/bug-reproductions/usage-scan-append/README.md:29-40",
+        "docs/bug-reproductions/usage-scan-append/comparison.jsonl",
+        "config/scripts/performance/claude-usage/claude-usage-append-benchmark.mjs"
+      ],
+      "reproduce_command": "ORCA_BACKGROUND_LAUNCH=1 ORCA_CLAUDE_USAGE_APPEND_BENCH_ROUNDS=8 ORCA_CLAUDE_USAGE_APPEND_BENCH_BASELINE=51e7181850b022bae2d41091fe1229accef4bd50 node config/scripts/claude-usage-append-benchmark.mjs --compare --verify"
+    },
+    {
+      "claim": "Small-file cold scans cost about 21.6 ms more across this thousand-file fixture, a 29.5% increase.",
+      "metric": "Cold scan time on 1,000 small transcripts (disclosed regression)",
+      "value": "94.872 ms cold (after)",
+      "baseline": "73.233 ms cold (before, commit 51e7181850b)",
+      "evidence_type": "harness+results",
+      "files": [
+        "docs/bug-reproductions/usage-scan-append/README.md:44-52",
+        "docs/bug-reproductions/usage-scan-append/comparison.jsonl"
+      ],
+      "reproduce_command": "ORCA_BACKGROUND_LAUNCH=1 ORCA_CLAUDE_USAGE_APPEND_BENCH_ROUNDS=8 ORCA_CLAUDE_USAGE_APPEND_BENCH_BASELINE=51e7181850b022bae2d41091fe1229accef4bd50 node config/scripts/claude-usage-append-benchmark.mjs --compare --verify"
+    },
+    {
+      "claim": "At 2,048 calls, reverse completion improved from 7.46 ms to 0.163 ms, a silent-call backlog from 13.02 ms to 0.244 ms",
+      "metric": "Native-chat tool-call/result pairing time (shared pairing function only), 8 counterbalanced sample pairs per workload",
+      "value": "reverse completion 0.163 ms; silent-call backlog 0.244 ms; immediate ordered pairs 47.3 µs",
+      "baseline": "Commit 51e7181850b: 7.46 ms; 13.02 ms; 92.0 µs",
+      "evidence_type": "harness+results",
+      "files": [
+        "docs/bug-reproductions/native-chat-tool-pairing/README.md:39-57",
+        "docs/bug-reproductions/native-chat-tool-pairing/benchmark.json",
+        "config/scripts/performance/native-chat/native-chat-tool-pairing-benchmark.mjs"
+      ],
+      "reproduce_command": "git show 51e7181850b:src/shared/native-chat-tool-fold.ts | ORCA_BACKGROUND_LAUNCH=1 node config/scripts/native-chat-tool-pairing-benchmark.mjs"
+    },
+    {
+      "claim": "8,192 reverse completions | 320.4727 → 3.7358 ms, about 86× ... 8,192 silent calls plus 8,192 later answered calls | 558.9641 → 5.5075 ms, about 101×",
+      "metric": "All-row projection + pairing time (raw-sample medians, 6 counterbalanced pairs); authors note these are adversarial-run gains, not frame-time",
+      "value": "3.7358 ms; 5.5075 ms; immediate pairs 2.5636 ms (slightly slower than original 2.4124 ms)",
+      "baseline": "Original 51e7181850b: 320.4727 ms; 558.9641 ms; 2.4124 ms (published b1e44269d655: 3.5954 / 5.5551 / 2.6577 ms)",
+      "evidence_type": "harness+results",
+      "files": [
+        "docs/bug-reproductions/native-chat-tool-pairing/README.md:79-112",
+        "docs/bug-reproductions/native-chat-tool-pairing/full-fold-benchmark.json",
+        "docs/bug-reproductions/native-chat-tool-pairing/full-fold-benchmark-receipt.json",
+        "config/scripts/performance/native-chat/native-chat-fold-benchmark.mjs"
+      ],
+      "reproduce_command": "ORCA_BACKGROUND_LAUNCH=1 node --expose-gc config/scripts/native-chat-fold-benchmark.mjs"
+    },
+    {
+      "claim": "\"label\": \"acl-fix\" ... \"totalToDidFinishLoad\": 2035.55 (vs \"label\": \"baseline\" ... \"aclGrantMs\": 15647, \"totalToDidFinishLoad\": 19313)",
+      "metric": "Windows startup time to did-finish-load (median ms), synthetic userData with 28,000 files, Intel Core Ultra 9 185H",
+      "value": "2035.55 ms (acl-fix, 4 iterations); 1795.3 ms (acl-fix-steady, 3 iterations)",
+      "baseline": "19313 ms (baseline, 3 iterations; aclGrantMs median 15647)",
+      "evidence_type": "harness+results",
+      "files": [
+        "tests/tools/benchmarks/results/startup-baseline-2026-06-10T19-36-01-305Z.json:353-361",
+        "tests/tools/benchmarks/results/startup-acl-fix-2026-06-10T19-37-58-671Z.json:435-443",
+        "tests/tools/benchmarks/results/startup-acl-fix-steady-2026-06-10T19-41-40-683Z.json:353-361",
+        "tests/tools/benchmarks/startup-time-bench.mjs:11-28"
+      ],
+      "reproduce_command": "node tests/tools/benchmarks/startup-time-bench.mjs --label baseline [--iterations 5] [--files 28000]"
+    },
+    {
+      "claim": "\"label\": \"fix-abdf\" summaries: tab-create, tab-switch, workspace-switch (8/24/12 samples, 0 timed out)",
+      "metric": "Terminal tab-create / tab-switch / workspace-switch latency (median and p95 ms), Windows 10.0.26200",
+      "value": "fix-abdf: tab-create ptyBindMs median 497 / p95 4817; tab-switch paintSettleMs median 76; workspace-switch paintSettleMs median 192",
+      "baseline": "baseline: tab-create ptyBindMs median 484 / p95 5854; tab-switch paintSettleMs median 80; workspace-switch paintSettleMs median 211",
+      "evidence_type": "harness+results",
+      "files": [
+        "tests/tools/benchmarks/results/terminal-perf-baseline-2026-07-02T07-23-46-933Z.json:382",
+        "tests/tools/benchmarks/results/terminal-perf-fix-abdf-2026-07-02T07-59-11-820Z.json:382",
+        "tests/tools/benchmarks/terminal-perf-bench.mjs:109"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "It then failed \"keeps active interactions responsive at 50 ACK-backpressured OpenCode PTYs\": the median typing latency was 104 ms against a 75 ms budget",
+      "metric": "Median terminal typing latency at 50 backpressured PTYs (Electron terminal perf scale suite, hosted 4-vCPU runner, run 40632739161)",
+      "value": "104 ms (failed)",
+      "baseline": "75 ms budget",
+      "evidence_type": "results_only",
+      "files": [
+        "docs/readme/terminal-perf.md:61-67",
+        "config/scripts/performance/terminal-reporting/terminal-perf-report-budgets.mjs"
+      ],
+      "reproduce_command": "ORCA_BACKGROUND_LAUNCH=1 SKIP_BUILD=1 pnpm test:e2e:terminal-perf:scale:report"
+    },
+    {
+      "claim": "Measured 2026-09-07 from a US-East vantage ... | Asia | 10.5 s | 5.8 s | 3.4 s | | US | 0.63 s | 0.29 s | 0.14 s |",
+      "metric": "Mobile-relay time to connected / relayHello / confirm by relay cell region",
+      "value": "US cell: 0.63 s to connected",
+      "baseline": "Asia cell: 10.5 s to connected",
+      "evidence_type": "harness+results",
+      "files": [
+        "tests/tools/relay-bench/README.md:183-192"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Compares Orca's direct Linux AT-SPI and Windows UI Automation providers with cua-driver 0.38.0.",
+      "metric": "Computer-use task completion and per-step/task time vs cua-driver (GitHub Actions workflow, artifacts not committed)",
+      "value": "No results committed",
+      "baseline": "cua-driver 0.38.0",
+      "evidence_type": "harness_only",
+      "files": [
+        "config/benchmarks/computer-use/README.md:1-9",
+        "config/benchmarks/computer-use/bench.py"
+      ],
+      "reproduce_command": null
+    }
+  ],
+  "strongest_evidence_type": "harness+results",
+  "summary": "Orca commits extensive engineering benchmarks: 139 tracked files under config/scripts/performance and 34 under tests/tools/benchmarks, plus committed raw artifacts (counterbalanced comparison.jsonl, benchmark.json and full-fold-benchmark.json with source hashes, and Windows startup/terminal result JSONs) that back specific before/after numbers (e.g. 81.513 -> 0.741 ms append scan, 19313 -> 2035.55 ms Windows startup on a 28k-file profile). The write-ups also report regressions and failures (+29.5% small-file cold scan, 104 ms vs 75 ms typing-latency budget). Reproducibility is limited: results are single-machine (Apple M4 Max or one Windows laptop), several documented commands point to old config/scripts/*.mjs paths that have since moved into config/scripts/performance/<area>/, and the computer-use benchmark (vs cua-driver) commits no results. The README's only figure is the tagline '100x builders', which is not a measurement.",
+  "result_focus": "engineering",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself",
+  "accuracy_check": {
+    "date": "2026-11-08",
+    "numbers_checked": 0,
+    "corrections": [],
+    "note": "wording only; numbers unchanged"
+  }
+}

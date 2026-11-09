@@ -1,0 +1,577 @@
+{
+  "repo": "humanizer",
+  "full_name": "blader/humanizer",
+  "stars": 66094,
+  "stars_source": "github-api 2026-11-08T09:00:41Z",
+  "selection_topics": [
+    "prompt-engineering"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2026-01-18T05:30:15Z",
+    "description": "Agent skill that removes signs of AI-generated writing from text",
+    "fork": false,
+    "forks": 5221,
+    "full_name": "blader/humanizer",
+    "pushed_at": "2026-10-28T07:17:33Z",
+    "stars": 66094,
+    "fetched_at": "2026-11-08T09:00:41Z"
+  },
+  "url": "https://github.com/blader/humanizer",
+  "description": "Agent skill that removes signs of AI-generated writing from text",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "0ef9fe5bc3572734fd3ae6c448fe00a30cd5dcf0",
+    "head_date": "2026-10-28T00:17:33-07:00",
+    "history_complete": true,
+    "non_merge_commits": 71,
+    "merge_commits": 32,
+    "maintenance_bot_commits": 0,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 23,
+    "explicit_ai_pct": 32.4,
+    "by_tool": {
+      "claude": 22,
+      "cursor": 1
+    },
+    "by_signal": {
+      "co-author": 22,
+      "agent-author": 1
+    },
+    "recent_180d": {
+      "commits": 53,
+      "ai_pct": 35.8,
+      "fix_pct": 22.6
+    },
+    "first_365d": {
+      "commits": 71,
+      "ai_pct": 32.4,
+      "fix_pct": 25.4
+    },
+    "bot_commit_count": 0,
+    "agent_config": {
+      "files": {
+        "AGENTS.md": "2026-05-26T19:18:18-07:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2026-05-26T19:18:18-07:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 71,
+    "first_commit_date": "2026-01-17T21:30:11-08:00",
+    "last_commit_date": "2026-10-16T12:12:03-07:00",
+    "current_loc": 806,
+    "total_historical_additions": 2850,
+    "total_historical_deletions": 2043,
+    "total_churn": 4893,
+    "churn_ratio": 6.07,
+    "survival_rate_pct": 28.3,
+    "code": {
+      "current_loc": 146,
+      "additions": 295,
+      "deletions": 149,
+      "churn_ratio": 3.04,
+      "survival_rate_pct": 49.5
+    },
+    "docs": {
+      "current_loc": 660,
+      "additions": 2555,
+      "deletions": 1894,
+      "churn_ratio": 6.74,
+      "survival_rate_pct": 25.8
+    },
+    "fix_commits": 18,
+    "fix_pct": 25.4,
+    "revert_commits": 0,
+    "revert_pct": 0.0,
+    "trial_error_commits": 18,
+    "trial_error_pct": 25.4,
+    "rapid_fire_commits": 13,
+    "rapid_fire_pct": 18.3,
+    "trial_error_chains": 2,
+    "suspicious_additions_count": 0,
+    "top5_hotspot_volatility_pct": 36.9
+  },
+  "code_hygiene": {
+    "total_files": 1,
+    "docs_files": 3,
+    "avg_file_loc": 146.0,
+    "test_loc": 0,
+    "test_files": 0,
+    "test_ratio_pct": 0.0,
+    "comment_ratio_pct": 4.1,
+    "monolith_count": 0,
+    "top_languages": {
+      ".py": 146
+    }
+  },
+  "authors": {
+    "unique_authors": 25,
+    "top_authors": [
+      {
+        "name": "Siqi Chen",
+        "commits": 32,
+        "pct": 45.1
+      },
+      {
+        "name": "blader",
+        "commits": 7,
+        "pct": 9.9
+      },
+      {
+        "name": "Matt Van Horn",
+        "commits": 5,
+        "pct": 7.0
+      },
+      {
+        "name": "Scott Emberson",
+        "commits": 5,
+        "pct": 7.0
+      },
+      {
+        "name": "dajiaohuang",
+        "commits": 2,
+        "pct": 2.8
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 7.6,
+    "p75": 17.1,
+    "p90": 40.2,
+    "p95": 67.1,
+    "p99": 83.1,
+    "avg": 13.4
+  },
+  "hotspots": [
+    {
+      "file": "README.md",
+      "commits": 51,
+      "additions": 778,
+      "deletions": 568,
+      "churn": 1346,
+      "first_seen": "2026-01-17T21:30:11-08:00",
+      "last_seen": "2026-10-16T12:12:03-07:00"
+    },
+    {
+      "file": "SKILL.md",
+      "commits": 49,
+      "additions": 1623,
+      "deletions": 1226,
+      "churn": 2849,
+      "first_seen": "2026-01-17T21:30:11-08:00",
+      "last_seen": "2026-09-27T21:47:28-07:00"
+    },
+    {
+      "file": "AGENTS.md",
+      "commits": 16,
+      "additions": 99,
+      "deletions": 45,
+      "churn": 144,
+      "first_seen": "2026-05-26T19:18:18-07:00",
+      "last_seen": "2026-09-27T21:47:28-07:00"
+    },
+    {
+      "file": "scripts/validate-package.py",
+      "commits": 12,
+      "additions": 244,
+      "deletions": 98,
+      "churn": 342,
+      "first_seen": "2026-07-21T23:25:52-07:00",
+      "last_seen": "2026-09-27T21:47:28-07:00"
+    },
+    {
+      "file": "WARP.md",
+      "commits": 3,
+      "additions": 54,
+      "deletions": 54,
+      "churn": 108,
+      "first_seen": "2026-01-18T17:39:57-08:00",
+      "last_seen": "2026-05-26T19:18:18-07:00"
+    },
+    {
+      "file": "scripts/build-skill-zip.py",
+      "commits": 2,
+      "additions": 51,
+      "deletions": 51,
+      "churn": 102,
+      "first_seen": "2026-08-17T17:59:03-07:00",
+      "last_seen": "2026-08-18T22:43:30-07:00"
+    },
+    {
+      "file": "skills/humanizer/SKILL.md",
+      "commits": 2,
+      "additions": 1,
+      "deletions": 1,
+      "churn": 2,
+      "first_seen": "2026-08-17T02:42:53-07:00",
+      "last_seen": "2026-08-18T22:43:30-07:00"
+    }
+  ],
+  "monoliths": [],
+  "commits_sample": [
+    {
+      "hash": "34ca949368d735eb5aca79ebd3d695aa5ec65fed",
+      "short_hash": "34ca949",
+      "author": "Siqi Chen",
+      "date": "2026-09-06T12:58:49-07:00",
+      "subject": "Rebuild the skill around one account and 25 patterns ordered by strength",
+      "coauthors": [],
+      "additions": 297,
+      "deletions": 412,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "c2c6cad02df325bc54ee38d87dd370d2fbfa68a2",
+      "short_hash": "c2c6cad",
+      "author": "Siqi Chen",
+      "date": "2026-09-06T13:06:10-07:00",
+      "subject": "Align the patterns with the current Wikipedia article",
+      "coauthors": [],
+      "additions": 49,
+      "deletions": 50,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "a62daa3a2df67ae72f1f065dc9e0190a23fd01e0",
+      "short_hash": "a62daa3",
+      "author": "Siqi Chen",
+      "date": "2026-09-06T13:13:36-07:00",
+      "subject": "Apply Humanizer to its own prose",
+      "coauthors": [],
+      "additions": 11,
+      "deletions": 11,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "9862685f575c65a8247f90369951df1b3416e3d6",
+      "short_hash": "9862685",
+      "author": "Siqi Chen",
+      "date": "2026-09-06T13:17:53-07:00",
+      "subject": "Smooth awkward phrasing in the skill and README",
+      "coauthors": [],
+      "additions": 12,
+      "deletions": 12,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "88ee4b599c29d709480b097b50ed0ff3afe48085",
+      "short_hash": "88ee4b5",
+      "author": "Matheus Lima",
+      "date": "2026-09-08T23:34:24-03:00",
+      "subject": "Add pattern #26 for replies that re-explain shared context (#269)",
+      "coauthors": [],
+      "additions": 30,
+      "deletions": 5,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "30b8e07273b31e3d15084f6fced6af58b94ce1e1",
+      "short_hash": "30b8e07",
+      "author": "dajiaohuang",
+      "date": "2026-09-11T02:00:08+08:00",
+      "subject": "Point the sample-dash rule at the dash pattern",
+      "coauthors": [],
+      "additions": 26,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "fbdde4cd807509a4afecf062c670515ce5bd7736",
+      "short_hash": "fbdde4c",
+      "author": "dajiaohuang",
+      "date": "2026-09-21T23:44:25+08:00",
+      "subject": "Fix marketplace schema reference",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "9f2cc4b29fc00b346f1a082d9bf590c3fac087db",
+      "short_hash": "9f2cc4b",
+      "author": "Cursor Agent",
+      "date": "2026-09-14T10:39:43Z",
+      "subject": "Add a Cursor plugin manifest for marketplace submission",
+      "coauthors": [
+        "jakub-zieba"
+      ],
+      "additions": 22,
+      "deletions": 4,
+      "files_count": 3,
+      "ai_tool": "cursor",
+      "ai_signal": "agent-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "d3e1a3bbf1fc96599f80d7aca1dead12b2d128bc",
+      "short_hash": "d3e1a3b",
+      "author": "Siqi Chen",
+      "date": "2026-09-27T21:22:50-07:00",
+      "subject": "Widen §25 to text that describes itself; add #277; state the detector non-goal",
+      "coauthors": [
+        "jkhereford",
+        "Claude Opus 5.5 (1M context) <noreply@anthropic.com>"
+      ],
+      "additions": 14,
+      "deletions": 7,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "1f89fd1813cf5560938f28f9ed154b8c69b2f9ea",
+      "short_hash": "1f89fd1",
+      "author": "Jonathan Abraham",
+      "date": "2026-09-28T14:28:26+10:00",
+      "subject": "Fold the example-restatement tell into §2",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 4,
+      "deletions": 4,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "d4b81278e6604e237bf32f0f7ce5c217aee94269",
+      "short_hash": "d4b8127",
+      "author": "Siqi Chen",
+      "date": "2026-09-27T21:47:28-07:00",
+      "subject": "Tighten the skill, fix the README example, and move history to CHANGELOG.md",
+      "coauthors": [
+        "Claude Opus 5.5 (1M context) <noreply@anthropic.com>"
+      ],
+      "additions": 76,
+      "deletions": 91,
+      "files_count": 4,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "f9f12c67c4fe6712aa2344a36e6a59dd4196511c",
+      "short_hash": "f9f12c6",
+      "author": "Siqi Chen",
+      "date": "2026-09-27T22:31:34-07:00",
+      "subject": "Open the README with a before/after and per-agent install",
+      "coauthors": [
+        "Claude Opus 5.5 (1M context) <noreply@anthropic.com>"
+      ],
+      "additions": 44,
+      "deletions": 12,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "c163acba804fa91fbb706dc122fbc33bd0d2caf2",
+      "short_hash": "c163acb",
+      "author": "Siqi Chen",
+      "date": "2026-09-27T22:38:34-07:00",
+      "subject": "Add the five strongest tells to the README; drop Cursor and OpenCode",
+      "coauthors": [
+        "Claude Opus 5.5 (1M context) <noreply@anthropic.com>"
+      ],
+      "additions": 13,
+      "deletions": 15,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "cb4b91c2f5ee39f69cc0783a8e588d7d0600100c",
+      "short_hash": "cb4b91c",
+      "author": "Siqi Chen",
+      "date": "2026-09-27T22:43:45-07:00",
+      "subject": "Rebuild the README examples so the rewrite keeps the draft's substance",
+      "coauthors": [
+        "Claude Opus 5.5 (1M context) <noreply@anthropic.com>"
+      ],
+      "additions": 12,
+      "deletions": 12,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "8039b2fa620a072197c3c15058b361b7dcebd833",
+      "short_hash": "8039b2f",
+      "author": "Siqi Chen",
+      "date": "2026-09-27T22:54:07-07:00",
+      "subject": "Describe this release's README changes in the changelog",
+      "coauthors": [
+        "Claude Opus 5.5 (1M context) <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "b6039ead39f824baf5527471dc3f71fd4774505a",
+      "short_hash": "b6039ea",
+      "author": "de Villiers du Toit",
+      "date": "2026-10-02T05:19:10+02:00",
+      "subject": "fix: remove $schema key from Claude plugin manifest",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "1fde9fa9845c4e6b1e0579fccacd929f7c8b3520",
+      "short_hash": "1fde9fa",
+      "author": "Siqi Chen",
+      "date": "2026-10-16T12:11:08-07:00",
+      "subject": "Update README with sponsorship and badges",
+      "coauthors": [],
+      "additions": 3,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "6be1fa4e0c768202b126f8bc5c9bf67ead9162bc",
+      "short_hash": "6be1fa4",
+      "author": "Siqi Chen",
+      "date": "2026-10-16T12:11:28-07:00",
+      "subject": "Update README.md",
+      "coauthors": [],
+      "additions": 2,
+      "deletions": 2,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "4f4035505d68dff2afd75494b334e3a5446db6d2",
+      "short_hash": "4f40355",
+      "author": "Siqi Chen",
+      "date": "2026-10-16T12:11:49-07:00",
+      "subject": "Update sponsorship formatting in README.md",
+      "coauthors": [],
+      "additions": 2,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "8c307f367c91bd974002f10f2be2965d642c13df",
+      "short_hash": "8c307f3",
+      "author": "Siqi Chen",
+      "date": "2026-10-16T12:12:03-07:00",
+      "subject": "Update README to fix sponsorship duplication",
+      "coauthors": [],
+      "additions": 2,
+      "deletions": 2,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    }
+  ]
+}

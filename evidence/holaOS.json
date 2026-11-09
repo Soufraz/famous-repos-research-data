@@ -1,0 +1,55 @@
+{
+  "repo": "holaOS",
+  "head_commit": "4684714",
+  "published_results": [
+    {
+      "claim": "| **fixed init (ours)** | **2,492 ms** | **1,251 ms** | **−1,241** |",
+      "metric": "per-turn fixed init latency before the model call (from the runtime's [ttft] telemetry line), spawn vs in-process harness",
+      "value": "1,251 ms (in-process); harness_load 787 ms",
+      "baseline": "2,492 ms with spawned harness process; harness_load 1,335 ms",
+      "evidence_type": "results_only",
+      "files": [
+        "runtime/docs/plans/2026-08-13-warm-harness-ttft-init.md:745",
+        "runtime/docs/plans/2026-08-13-warm-harness-ttft-init.md:751",
+        "runtime/docs/plans/2026-08-13-warm-harness-ttft-init.md:753",
+        "runtime/docs/plans/2026-08-13-warm-harness-ttft-init.md:176"
+      ],
+      "reproduce_command": null,
+      "notes": "One machine, 7 spawn turns vs 5 in-process turns; raw log for this A/B is not committed. The doc self-qualifies: first two in-process turns were warm-up, and 'Do not read total_ttft −1,870 ms as the win ... The defensible claim is ~1.2 s off our fixed init.' Timing instrumentation lives in runtime/api-server/src/ts-runner.ts, but there is no benchmark script."
+    },
+    {
+      "claim": "| **fixed init** | **3,284 ms** | **2,250 ms** | ... of which `composio_inline` | 653 ms | **1.4 ms** |",
+      "metric": "per-turn fixed init latency before/after a cross-turn composio cache (13 real desktop turns)",
+      "value": "2,250 ms (turns 5–13, post-cache); session_setup 62 ms",
+      "baseline": "3,284 ms (turns 1–4, pre-cache); session_setup 692 ms",
+      "evidence_type": "results_only",
+      "files": [
+        "runtime/docs/plans/2026-08-13-warm-harness-ttft-init.md:17",
+        "runtime/docs/plans/2026-08-13-warm-harness-ttft-init.md:28",
+        "runtime/docs/plans/2026-08-13-warm-harness-ttft-init.md:29",
+        "runtime/docs/plans/data/2026-08-18-ttft-sample.log"
+      ],
+      "reproduce_command": null,
+      "notes": "Raw 13-turn [ttft] log is committed (21 lines), so the table can be checked against data, but it is a single uncontrolled sample of live use (before/after split within one session), not a re-runnable benchmark."
+    },
+    {
+      "claim": "Usage: node scripts/memory-eval.mjs --workspace-id <workspace-id> [options] ... --output <path>  Write a JSON report to this file",
+      "metric": "workspace memory recall/retrieval eval over scripted scenarios (fixtures memory-eval-phase1/phase2/interaction/integration/mixed; phase2 has 12 scenarios)",
+      "value": "no results committed or documented",
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "scripts/memory-eval.mjs:36",
+        "package.json:34",
+        "package.json:37",
+        "scripts/fixtures/memory-eval-phase2.json"
+      ],
+      "reproduce_command": "node scripts/memory-eval.mjs --workspace-id <workspace-id>",
+      "notes": "Requires a live runtime (`runtime:start:evals`) and, for some scenarios, a live Gmail integration. No report JSON or summary numbers anywhere in the repo."
+    }
+  ],
+  "strongest_evidence_type": "results_only",
+  "summary": "holaOS publishes no quantitative claims in its README; the only measured results are internal engineering notes on per-turn init latency (e.g. fixed init 2,492 -> 1,251 ms), one of which is backed by a committed 13-turn raw telemetry log, all from a single machine with no benchmark script. A runnable memory-eval harness with scenario fixtures exists, but no results from it are committed.",
+  "result_focus": "engineering",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}

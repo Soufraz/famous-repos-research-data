@@ -1,0 +1,707 @@
+{
+  "repo": "cmux",
+  "full_name": "manaflow-ai/cmux",
+  "stars": 28745,
+  "stars_source": "github-api 2026-11-08T09:01:20Z",
+  "selection_topics": [
+    "coding-agents"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2026-01-28T10:03:24Z",
+    "description": "Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability.",
+    "fork": false,
+    "forks": 2637,
+    "full_name": "manaflow-ai/cmux",
+    "pushed_at": "2026-11-08T09:01:19Z",
+    "stars": 28745,
+    "fetched_at": "2026-11-08T09:01:20Z"
+  },
+  "url": "https://github.com/manaflow-ai/cmux",
+  "description": "Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "40455a2f4326d030f52b158684a0c48242b568ca",
+    "head_date": "2026-11-07T15:17:08-08:00",
+    "history_complete": true,
+    "non_merge_commits": 18362,
+    "merge_commits": 2755,
+    "maintenance_bot_commits": 4,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 4503,
+    "explicit_ai_pct": 24.5,
+    "by_tool": {
+      "claude": 4442,
+      "codex": 42,
+      "amp": 10,
+      "copilot": 6,
+      "cursor": 2,
+      "other": 1
+    },
+    "by_signal": {
+      "co-author": 4499,
+      "footer": 3,
+      "agent-author": 1
+    },
+    "recent_180d": {
+      "commits": 15960,
+      "ai_pct": 27.2,
+      "fix_pct": 34.5
+    },
+    "first_365d": {
+      "commits": 18358,
+      "ai_pct": 24.5,
+      "fix_pct": 35.0
+    },
+    "bot_commit_count": 4,
+    "agent_config": {
+      "files": {
+        ".agents/": "2026-06-09T12:06:54-05:00",
+        ".claude/": "2026-01-29T17:58:10-08:00",
+        ".cursor/": "2026-05-27T21:27:53-05:00",
+        "AGENTS.md": "2026-01-22T03:18:02-08:00",
+        "CLAUDE.md": "2026-01-22T01:16:24-08:00"
+      },
+      "ci_agent_workflows": [
+        ".github/workflows/claude.yml"
+      ],
+      "has_agent_config": true,
+      "first_config_date": "2026-01-22T01:16:24-08:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 18358,
+    "first_commit_date": "2026-01-22T01:16:24-08:00",
+    "last_commit_date": "2026-11-07T15:17:08-08:00",
+    "current_loc": 4632198,
+    "total_historical_additions": 6223324,
+    "total_historical_deletions": 1410919,
+    "total_churn": 7634243,
+    "churn_ratio": 1.65,
+    "survival_rate_pct": 74.4,
+    "code": {
+      "current_loc": 4546734,
+      "additions": 6105849,
+      "deletions": 1383382,
+      "churn_ratio": 1.65,
+      "survival_rate_pct": 74.5
+    },
+    "docs": {
+      "current_loc": 85464,
+      "additions": 117475,
+      "deletions": 27537,
+      "churn_ratio": 1.7,
+      "survival_rate_pct": 72.8
+    },
+    "fix_commits": 6426,
+    "fix_pct": 35.0,
+    "revert_commits": 127,
+    "revert_pct": 0.7,
+    "trial_error_commits": 6399,
+    "trial_error_pct": 34.9,
+    "rapid_fire_commits": 7245,
+    "rapid_fire_pct": 39.5,
+    "trial_error_chains": 2701,
+    "suspicious_additions_count": 1012,
+    "top5_hotspot_volatility_pct": 5.0
+  },
+  "code_hygiene": {
+    "total_files": 19591,
+    "docs_files": 525,
+    "avg_file_loc": 232.1,
+    "test_loc": 1026689,
+    "test_files": 4515,
+    "test_ratio_pct": 22.6,
+    "comment_ratio_pct": 10.1,
+    "monolith_count": 583,
+    "top_languages": {
+      ".swift": 2676632,
+      ".rs": 519453,
+      ".py": 436368,
+      ".ts": 435019,
+      ".go": 109010
+    }
+  },
+  "authors": {
+    "unique_authors": 273,
+    "top_authors": [
+      {
+        "name": "Lawrence Chen",
+        "commits": 5105,
+        "pct": 27.8
+      },
+      {
+        "name": "austinpower1258",
+        "commits": 3483,
+        "pct": 19.0
+      },
+      {
+        "name": "Austin Wang",
+        "commits": 2367,
+        "pct": 12.9
+      },
+      {
+        "name": "Leo",
+        "commits": 2350,
+        "pct": 12.8
+      },
+      {
+        "name": "lawrencecchen",
+        "commits": 1686,
+        "pct": 9.2
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 18.2,
+    "p75": 101.8,
+    "p90": 648.8,
+    "p95": 1932.2,
+    "p99": 12660.0,
+    "avg": 694.2
+  },
+  "hotspots": [
+    {
+      "file": "Sources/AppDelegate.swift",
+      "commits": 1064,
+      "additions": 37507,
+      "deletions": 15456,
+      "churn": 52963,
+      "first_seen": "2026-01-22T16:53:03-08:00",
+      "last_seen": "2026-11-04T13:51:44-08:00"
+    },
+    {
+      "file": "CLI/cmux.swift",
+      "commits": 923,
+      "additions": 72422,
+      "deletions": 26735,
+      "churn": 99157,
+      "first_seen": "2026-02-09T15:30:43-08:00",
+      "last_seen": "2026-11-03T22:54:45-05:00"
+    },
+    {
+      "file": "Sources/ContentView.swift",
+      "commits": 892,
+      "additions": 45099,
+      "deletions": 25677,
+      "churn": 70776,
+      "first_seen": "2026-01-22T01:16:24-08:00",
+      "last_seen": "2026-11-04T16:53:50-08:00"
+    },
+    {
+      "file": "Sources/Workspace.swift",
+      "commits": 858,
+      "additions": 43273,
+      "deletions": 27065,
+      "churn": 70338,
+      "first_seen": "2026-02-13T16:45:31-08:00",
+      "last_seen": "2026-11-04T17:17:38-08:00"
+    },
+    {
+      "file": "Sources/GhosttyTerminalView.swift",
+      "commits": 818,
+      "additions": 33183,
+      "deletions": 17751,
+      "churn": 50934,
+      "first_seen": "2026-01-22T01:16:24-08:00",
+      "last_seen": "2026-11-05T01:23:23-08:00"
+    },
+    {
+      "file": "Sources/TerminalController.swift",
+      "commits": 760,
+      "additions": 54686,
+      "deletions": 37268,
+      "churn": 91954,
+      "first_seen": "2026-01-22T02:20:51-08:00",
+      "last_seen": "2026-10-31T06:33:21-07:00"
+    },
+    {
+      "file": "Sources/TabManager.swift",
+      "commits": 539,
+      "additions": 22028,
+      "deletions": 13690,
+      "churn": 35718,
+      "first_seen": "2026-01-22T01:16:24-08:00",
+      "last_seen": "2026-11-04T17:09:37-08:00"
+    },
+    {
+      "file": "Sources/cmuxApp.swift",
+      "commits": 468,
+      "additions": 17294,
+      "deletions": 12247,
+      "churn": 29541,
+      "first_seen": "2026-01-26T03:05:03-08:00",
+      "last_seen": "2026-11-04T13:51:44-08:00"
+    },
+    {
+      "file": "Sources/Panels/BrowserPanel.swift",
+      "commits": 379,
+      "additions": 22906,
+      "deletions": 10306,
+      "churn": 33212,
+      "first_seen": "2026-02-13T16:45:31-08:00",
+      "last_seen": "2026-10-17T16:21:34-07:00"
+    },
+    {
+      "file": "cmux-tui/crates/cmux-tui/src/app.rs",
+      "commits": 330,
+      "additions": 60603,
+      "deletions": 13500,
+      "churn": 74103,
+      "first_seen": "2026-07-09T01:20:20-07:00",
+      "last_seen": "2026-09-30T13:05:31-07:00"
+    },
+    {
+      "file": "cmux-tui/crates/cmux-tui-core/src/mux.rs",
+      "commits": 275,
+      "additions": 46717,
+      "deletions": 14751,
+      "churn": 61468,
+      "first_seen": "2026-07-09T01:20:20-07:00",
+      "last_seen": "2026-11-02T23:25:00-08:00"
+    },
+    {
+      "file": "cmuxTests/CmuxWebViewKeyEquivalentTests.swift",
+      "commits": 248,
+      "additions": 15947,
+      "deletions": 17219,
+      "churn": 33166,
+      "first_seen": "2026-02-18T21:19:56-08:00",
+      "last_seen": "2026-03-18T01:17:25-07:00"
+    },
+    {
+      "file": "Packages/iOS/CmuxMobileShell/Sources/CmuxMobileShell/MobileShellComposite.swift",
+      "commits": 245,
+      "additions": 17508,
+      "deletions": 5656,
+      "churn": 23164,
+      "first_seen": "2026-06-16T18:13:17-07:00",
+      "last_seen": "2026-10-20T02:21:35-07:00"
+    },
+    {
+      "file": "Sources/Panels/BrowserPanelView.swift",
+      "commits": 245,
+      "additions": 12381,
+      "deletions": 4078,
+      "churn": 16459,
+      "first_seen": "2026-02-13T16:45:31-08:00",
+      "last_seen": "2026-10-10T13:58:26-07:00"
+    },
+    {
+      "file": "tests/test_ci_change_areas.py",
+      "commits": 216,
+      "additions": 8375,
+      "deletions": 1045,
+      "churn": 9420,
+      "first_seen": "2026-06-19T11:18:47-07:00",
+      "last_seen": "2026-10-30T16:37:10-07:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "cmux-tui/crates/cmux-tui/src/app.rs",
+      "loc": 47138
+    },
+    {
+      "file": "CLI/cmux.swift",
+      "loc": 46457
+    },
+    {
+      "file": "cmux-tui/crates/cmux-tui-core/src/mux.rs",
+      "loc": 33889
+    },
+    {
+      "file": "cmux-tui/bindings/go/raw/generated_presence_test.go",
+      "loc": 25353
+    },
+    {
+      "file": "cmux-tui/crates/cmux-tui-core/src/server.rs",
+      "loc": 25197
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "a62cc24518413c2ddb4fd07e733a667a34322058",
+      "short_hash": "a62cc24518",
+      "author": "Lawrence Chen",
+      "date": "2026-11-05T08:36:46-08:00",
+      "subject": "Cloud welcome: keep the progress rail finite when the playhead is unknown (Sentry CMUXTERM-MACOS-4GHY) (#36396)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 164,
+      "deletions": 4,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "47e115494abc19538e97ad83d1ba3b987a33bc9f",
+      "short_hash": "47e115494a",
+      "author": "Leo",
+      "date": "2026-11-05T15:29:26-08:00",
+      "subject": "ci: register cmux-next-perf-bench.yml on main so the resource budget dispatcher resolves it (#36867)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "611330117f9a7b582645e8260f1088509e07dfdb",
+      "short_hash": "611330117f",
+      "author": "Leo",
+      "date": "2026-11-05T15:49:37-08:00",
+      "subject": "ci(screen stream eval): the registration job reads the Linux pool, not GitHub-hosted Ubuntu (#36894)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "00c86cb899ac4e5a0d17ac6d00ab0619c1de2b2f",
+      "short_hash": "00c86cb899",
+      "author": "Leo",
+      "date": "2026-11-05T17:34:45-08:00",
+      "subject": "ci guard: hosted Ubuntu for any declared light job, never an open selector, build or release job (#36918)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 184,
+      "deletions": 25,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "f7b539b48583db656a675bcb8b718c32bdc40d5a",
+      "short_hash": "f7b539b485",
+      "author": "Leo",
+      "date": "2026-11-05T17:48:12-08:00",
+      "subject": "ci: risk tier and the defaults guard check out receipt_grammar.py with their scripts (#36947)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "f362b238df5a23de6195fc182122309354c6df2d",
+      "short_hash": "f362b238df",
+      "author": "Leo",
+      "date": "2026-11-05T17:54:17-08:00",
+      "subject": "ci guard: a declared light job may not build or publish through an action or its inputs (#36951)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 34,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "5a41a458dba982b8a5d892d224847197ece99591",
+      "short_hash": "5a41a458db",
+      "author": "Leo",
+      "date": "2026-11-05T21:13:57-08:00",
+      "subject": "ci: the defaults guard checks out risk_tier.py with its scripts (feat-cmux-next #36950 moved the receipt grammar there) (#36970)",
+      "coauthors": [
+        "Claude Sonnet 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "65aee07cd29d50b7267c9766d67cd9eb97ef68a8",
+      "short_hash": "65aee07cd2",
+      "author": "Leo",
+      "date": "2026-11-05T22:17:14-08:00",
+      "subject": "ci: the runs-on variable inventory passes CI_EVAL_STEP_GATEWAY (the three feat-cmux-next evals read it) (#37004)",
+      "coauthors": [
+        "Claude Sonnet 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "7bf8b3dc78db80762a6bd139a61324d63013dfe3",
+      "short_hash": "7bf8b3dc78",
+      "author": "Leo",
+      "date": "2026-11-06T02:32:19-08:00",
+      "subject": "ci: retain queued portable jobs when settled retries cannot repick (#35212)",
+      "coauthors": [
+        "Codex"
+      ],
+      "additions": 23,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": "codex",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "2616c4f6d852664628c1e61d8bd4e6bde408888b",
+      "short_hash": "2616c4f6d8",
+      "author": "Leo",
+      "date": "2026-11-06T05:51:59-08:00",
+      "subject": "ci: fetch the PR head for risk tier's merge base; list migration files 100 a page (#35690)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "4973271ec23723c8cd57b1bb56111b45b56edd70",
+      "short_hash": "4973271ec2",
+      "author": "Leo",
+      "date": "2026-11-06T05:52:12-08:00",
+      "subject": "ci: weekly real-login canaries, one per harness (#35335)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "2fc85bbda22813be53e6fcf7aeec49e370437792",
+      "short_hash": "2fc85bbda2",
+      "author": "Leo",
+      "date": "2026-11-06T05:52:29-08:00",
+      "subject": "feat(ci): publish hosted light candidates in pool artifact (#35256)",
+      "coauthors": [
+        "Codex"
+      ],
+      "additions": 242,
+      "deletions": 1,
+      "files_count": 3,
+      "ai_tool": "codex",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "12aaecdc289bab04ab8f4c07498fec6373025c8a",
+      "short_hash": "12aaecdc28",
+      "author": "Leo",
+      "date": "2026-11-06T10:45:43-08:00",
+      "subject": "ci(nightly-next): the scheduled canary and launch smoke run end to end on the nightly minis (#36872)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 62,
+      "deletions": 6,
+      "files_count": 5,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "be5e24339c6eabb8e929a7029c4e6f834e257c97",
+      "short_hash": "be5e24339c",
+      "author": "Leo",
+      "date": "2026-11-06T11:03:06-08:00",
+      "subject": "ci(cua driver sdk): dispatch workflow builds the Cua Driver SDK on a Mac and publishes it to R2 (#37157)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "25ef0c82e4c25a323a6d85afd5de05c425fd96f6",
+      "short_hash": "25ef0c82e4",
+      "author": "Leo",
+      "date": "2026-11-07T09:19:27-08:00",
+      "subject": "ci(cef): gated dispatch workflow publishes a fork release to the cmux-cef R2 bucket (#37825)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 300,
+      "deletions": 0,
+      "files_count": 3,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "07f5e9f66c0336648e9b46a575d84ca7c1e03cae",
+      "short_hash": "07f5e9f66c",
+      "author": "Leo",
+      "date": "2026-11-07T11:26:05-08:00",
+      "subject": "ci: bound hosted-light rescue reads and journal history (#35165)",
+      "coauthors": [
+        "Codex",
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 471,
+      "deletions": 30,
+      "files_count": 4,
+      "ai_tool": "codex",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "530a3527d5619924a307784a4e81ab4d259e558e",
+      "short_hash": "530a3527d5",
+      "author": "Leo",
+      "date": "2026-11-07T12:24:43-08:00",
+      "subject": "merge_freeze: list open freezes over GraphQL, not REST (#35689)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 100,
+      "deletions": 13,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "0d61f926efcef6838204a97d95757c7b8cc65a87",
+      "short_hash": "0d61f926ef",
+      "author": "Leo",
+      "date": "2026-11-07T12:29:25-08:00",
+      "subject": "perf(ci): skip nine-day risk history fetch for zero-deletion PRs (#38003)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 53,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "ef48f1b07bc970e0bcbdc82d945c0d06e13ae27a",
+      "short_hash": "ef48f1b07b",
+      "author": "Leo",
+      "date": "2026-11-07T15:05:47-08:00",
+      "subject": "ci(nightly-next): main's scheduled canary, launch smoke and rescue read the one feed (#37993)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 3,
+      "deletions": 3,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "40455a2f4326d030f52b158684a0c48242b568ca",
+      "short_hash": "40455a2f43",
+      "author": "Austin Wang",
+      "date": "2026-11-07T15:17:08-08:00",
+      "subject": "Fix MainActorTaskStore teardown hangs from SwiftUI @State churn (#34762)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 176,
+      "deletions": 76,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    }
+  ]
+}

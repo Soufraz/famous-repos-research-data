@@ -1,0 +1,128 @@
+{
+  "repo": "transformers",
+  "head_commit": "a6f5c867",
+  "published_results": [
+    {
+      "claim": "It can be either a 10x speedup or 5x slowdown depending ... # On GTX 970 ... Streaming no batching ... 5000/5000 [00:26<00:00, 187.52it/s] ... 5000/5000 [00:01<00:00, 2554.43it/s]",
+      "metric": "text-classification pipeline streaming throughput (items/s, tqdm it/s) by batch_size on a GTX 970: uniform short inputs vs a dataset with one 100x-longer input every 64 items. Inline runnable snippet with committed output; the second snippet's dataset returns 5000 items (line 184) but its output shows 1000/1000.",
+      "value": "Uniform inputs: 187.52 it/s (no batching), 1205.95 it/s (batch_size=8), 2478.24 it/s (64), 2554.43 it/s (256). Mixed lengths: 183.69 it/s (no batching), 265.74 it/s (8), 37.80 it/s (64); batch_size=256 fails with CUDA out of memory",
+      "baseline": "No batching (187.52 it/s uniform; 183.69 it/s mixed)",
+      "evidence_type": "harness+results",
+      "files": [
+        "docs/source/en/main_classes/pipelines.md:128-176",
+        "docs/source/en/main_classes/pipelines.md:179-216"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "The table below compares EP-only training with 2D EP+FSDP2 on 8xH100 GPUs. ... | `tp_size=8` | 3485 | 38.6 GB | ... | `tp_size=2, fsdp_size=4` | 2830 | 32.3 GB |",
+      "metric": "Full fine-tuning throughput (tokens/s/GPU) and peak memory/GPU for Qwen3-30B-A3B, bf16, sequence length 2048, 8xH100, expert parallelism alone vs EP+FSDP2 (DistributedConfig). No script or raw output in the repo.",
+      "value": "tp_size=8: 3485 tokens/s/GPU, 38.6 GB; tp_size=4, fsdp_size=2: 2900, 34.2 GB; tp_size=2, fsdp_size=4: 2830, 32.3 GB",
+      "baseline": "EP-only (tp_size=8): 3485 tokens/s/GPU, 38.6 GB",
+      "evidence_type": "results_only",
+      "files": [
+        "docs/source/en/expert_parallelism.md:188-194"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Here are some speed comparisons between the torchvision and PIL backends for the `DETR` and `RT-DETR` models, and how they impact overall inference time ... utilizing an NVIDIA A10G Tensor Core GPU.",
+      "metric": "Image preprocessing and full-pipeline inference time, torchvision vs PIL image-processor backends (DETR, RT-DETR; padded, batched, compiled, single), AWS g5.2xlarge with A10G",
+      "value": "Not stated in the repo text; numbers appear only in four PNG charts hosted at https://huggingface.co/datasets/huggingface/documentation-images (transformers/benchmark_results_full_pipeline_*.png)",
+      "baseline": "PIL backend",
+      "evidence_type": "external",
+      "files": [
+        "docs/source/en/main_classes/image_processor.md:58-74"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "GPU-accelerated and up to 33x faster than the PIL backend for batches of [torch.Tensor](https://pytorch.org/docs/stable/tensors.html) inputs.",
+      "metric": "Image preprocessing speed, TorchvisionBackend (default) vs PIL backend, batched torch.Tensor inputs; no model, hardware or batch size stated",
+      "value": "up to 33x faster",
+      "baseline": "PIL backend",
+      "evidence_type": "claim_only",
+      "files": [
+        "docs/source/en/image_processors.md:51"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Tensor parallelism significantly speeds up inference, especially for large batch sizes or long sequences. ... This chart shows the expected speedup for a single forward pass on [Llama](./model_doc/llama) with a sequence length of 512.",
+      "metric": "Single forward-pass speedup from tensor parallelism (Meta-Llama-3-8B-Instruct, sequence length 512, with compile per the image file name)",
+      "value": "Not stated in the repo text; numbers appear only in a chart image at https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/transformers/Meta-Llama-3-8B-Instruct%2C%20seqlen%20%3D%20512%2C%20python%2C%20w_%20compile.png",
+      "baseline": null,
+      "evidence_type": "external",
+      "files": [
+        "docs/source/en/perf_infer_gpu_multi.md:255-263"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Refer to the table below for performance benchmarks comparing the mean inference time in milliseconds with torch.compile enabled and disabled across various GPUs and batch sizes on the same image for different vision tasks.",
+      "metric": "Mean inference time (ms) of vision models with vs without torch.compile across GPUs and batch sizes (includes PyTorch nightly 2.1.0dev and reduce-overhead subsets)",
+      "value": "Not stated in the repo text; results only in the embedded Hub dataset viewer https://huggingface.co/datasets/docs-benchmarks/compile-benchmarks",
+      "baseline": "torch.compile disabled",
+      "evidence_type": "external",
+      "files": [
+        "docs/source/en/perf_torch_compile.md:60-71"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "It runs 1.66x faster than SDPA with `generate_batch` (gsm8k, Qwen2.5-0.5B-Instruct, fp16) and matches it token-for-token under greedy decoding.",
+      "metric": "Continuous-batching generation speed on Apple Silicon (MPS) with the Hub kernel kernels-community/metal-flash-sdpa vs SDPA. No output committed; examples/generate/continuous_batching.py loads gsm8k and accepts --attn but the doc does not reference it.",
+      "value": "1.66x faster",
+      "baseline": "SDPA",
+      "evidence_type": "claim_only",
+      "files": [
+        "docs/source/en/serve-cli/serving_optims.md:67"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "DeepGEMM is 3-6x faster than the Triton fallback.",
+      "metric": "FP8 linear-layer speed on Hopper (SM90+) and Blackwell (SM100+) GPUs: third-party DeepGEMM kernels (via kernels-community/deep-gemm) vs the Triton fallback; no setup stated",
+      "value": "3-6x faster",
+      "baseline": "Triton fallback",
+      "evidence_type": "claim_only",
+      "files": [
+        "docs/source/en/quantization/finegrained_fp8.md:66"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "A comprehensive benchmarking framework for transformer models that supports multiple execution modes (eager, compiled, kernelized), detailed performance metrics collection, and structured output format.",
+      "metric": "Generation latency, time to first token, tokens/s and GPU utilization/memory per model and configuration (eager/compiled/kernelized, attention implementations). CI (benchmark.yml) runs meta-llama/Llama-3.1-8B-Instruct with -b 32 -s 128 -n 256 --level 2 and pushes results to the Hub dataset hf-benchmarks/transformers; benchmark_results/ is gitignored. The README's sample JSON (latency mean 2.45, 87.3 tokens/sec) illustrates the output format, and several README flags (--warmup-iterations, --upload-to-hub, --include) are not defined in run_benchmarks.py.",
+      "value": "No results committed",
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "benchmark_v2/README.md:1-22",
+        "benchmark_v2/run_benchmarks.py:31-73",
+        ".github/workflows/benchmark.yml:13-14",
+        ".github/workflows/benchmark.yml:49",
+        "benchmark_v2/.gitignore:1-2"
+      ],
+      "reproduce_command": "python run_benchmarks.py"
+    },
+    {
+      "claim": "Runs CB in-process across many configurations: GSM8K-Platinum and IFEval (throughput + lighteval accuracy) ... Each entry records generation time, e2e wall-clock time, tokens, throughput, peak memory and optional accuracy.",
+      "metric": "Continuous-batching generation time, end-to-end wall-clock time, tokens, throughput, peak memory and optional lighteval accuracy (GSM8K-Platinum, IFEval, synthetic data, RL-style rollouts), with --compare-to against a saved run",
+      "value": "No results committed (runs are written to benchmark_v2/benchmark_results/cb_overall/, which is gitignored)",
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "benchmark_v2/benchmark_scripts/continuous_batching_overall.py:1-10",
+        "benchmark_v2/benchmark_scripts/continuous_batching_overall.py:37",
+        "benchmark_v2/benchmark_scripts/continuous_batching_overall.py:368",
+        "benchmark_v2/.gitignore:1"
+      ],
+      "reproduce_command": null
+    }
+  ],
+  "strongest_evidence_type": "harness+results",
+  "summary": "Transformers publishes few measured results about its own software, all in docs/source/en: a pipeline batching example with runnable code and committed output on a GTX 970 (187.52 it/s unbatched vs 2554.43 it/s at batch_size=256), an expert-parallel training table on 8xH100 (3485 vs 2830 tokens/s/GPU, 38.6 GB vs 32.3 GB peak memory) with no script, and single-sentence speedups (up to 33x for the torchvision image-processor backend, 1.66x for a Metal attention kernel, 3-6x for DeepGEMM FP8 kernels) with no data. Its torch.compile, tensor-parallel and image-processor benchmark figures exist only as Hub datasets and chart images, and the benchmark_v2 harness and continuous-batching benchmark script push results to Hub datasets (hf-benchmarks/transformers) with nothing committed to the repo.",
+  "result_focus": "engineering",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}

@@ -1,0 +1,63 @@
+{
+  "repo": "OpenSpec",
+  "full_name": "Fission-AI/OpenSpec",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "0541f93dddd1739c6c924c160ef6ec5266528b94",
+      "snapshot_date": "2026-01-31T19:30:43-08:00",
+      "first_commit_date": "2025-08-05T15:23:29+10:00",
+      "commits": 430,
+      "ai_pct": 2.3,
+      "has_agent_config": true,
+      "fix_pct": 25.8,
+      "revert_pct": 0.7,
+      "churn_ratio": 1.83,
+      "survival_rate_pct": 70.6,
+      "code": {
+        "current_loc": 40476,
+        "additions": 56731,
+        "deletions": 16255,
+        "churn_ratio": 1.8,
+        "survival_rate_pct": 71.3
+      },
+      "docs": {
+        "current_loc": 28260,
+        "additions": 40654,
+        "deletions": 12400,
+        "churn_ratio": 1.88,
+        "survival_rate_pct": 69.5
+      },
+      "rapid_fire_pct": 7.0,
+      "unique_authors": 36
+    },
+    "365": {
+      "snapshot_commit": "59bfb27a7607ebde62959a9dcbc2f563662c04ad",
+      "snapshot_date": "2026-08-05T01:43:49Z",
+      "first_commit_date": "2025-08-05T15:23:29+10:00",
+      "commits": 640,
+      "ai_pct": 15.3,
+      "has_agent_config": true,
+      "fix_pct": 35.2,
+      "revert_pct": 0.5,
+      "churn_ratio": 1.78,
+      "survival_rate_pct": 71.9,
+      "code": {
+        "current_loc": 99276,
+        "additions": 146112,
+        "deletions": 46836,
+        "churn_ratio": 1.94,
+        "survival_rate_pct": 67.9
+      },
+      "docs": {
+        "current_loc": 69285,
+        "additions": 88489,
+        "deletions": 19210,
+        "churn_ratio": 1.55,
+        "survival_rate_pct": 78.3
+      },
+      "rapid_fire_pct": 7.7,
+      "unique_authors": 89
+    }
+  }
+}

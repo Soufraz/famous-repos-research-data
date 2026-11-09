@@ -1,0 +1,242 @@
+[
+  {
+    "id": "cursor-did",
+    "group": "AI adoption and code quality",
+    "title": "Speed at the Cost of Quality: How Cursor AI Increases Short-Term Velocity and Long-Term Complexity in Open-Source Projects",
+    "authors": "He, Miller, Agarwal, Kästner, Vasilescu (Carnegie Mellon)",
+    "venue": "MSR 2026",
+    "url": "https://arxiv.org/abs/2511.04427",
+    "finding": "Compares GitHub projects that adopted Cursor (first commit touching Cursor configuration files such as .cursorrules) with matched non-adopters. Lines added rose 3-5x in the first month and faded after two; static-analysis warnings (+30%) and code complexity (+41%) rose persistently and predicted later slowdowns.",
+    "relation": "The closest study design. It measures the average effect of adoption; we describe the most-starred projects, which are survivors by construction. Its use of agent config files as an adoption signal is the same idea as our agent-config signal.",
+    "verified": {
+      "date": "2026-11-08",
+      "source_checked": "https://arxiv.org/pdf/2511.04427",
+      "status": "corrected",
+      "note": "Title was the arXiv v2 title; v3/MSR '26 title used. Added all 5 authors. Numbers confirmed (intro: 3-5x, 30%, 41%; Table 2: 30.3%, 41.6%). Adoption signal is .cursorrules files or .cursor folders."
+    }
+  },
+  {
+    "id": "gitclear",
+    "group": "AI adoption and code quality",
+    "title": "AI Copilot Code Quality: 2025 Look Back at 12 Months of Data (and the 2024 'Coding on Copilot' report)",
+    "authors": "GitClear",
+    "venue": "Industry report, 2024-2025",
+    "url": "https://www.gitclear.com/ai_assistant_code_quality_2025_research",
+    "finding": "211M changed lines (2020-2024): a spike in duplicated code blocks (copy/pasted lines rose from 8.3% to 12.3% of changed lines between 2021 and 2024 and exceeded moved lines for the first time), more short-term churn, and refactoring-associated lines falling from 25% of changed lines in 2021 to under 10% in 2024. Not peer reviewed; GitClear sells code-analysis tooling.",
+    "relation": "GitClear's churn means lines revised within two weeks; ours is lifetime churn relative to the code at HEAD. Both find churn rising with AI; neither measures whether the software works.",
+    "verified": {
+      "date": "2026-11-08",
+      "source_checked": "https://www.gitclear.com/ai_assistant_code_quality_2025_research",
+      "status": "corrected",
+      "note": "URL is GitClear's real report page (200, no redirect). 'Eightfold rise in duplicated blocks' is not on the public page (full PDF is behind an email form; page headline says '4x more code cloning'), so replaced with the page's own figures. Two-week churn definition confirmed on gitclear.com/coding_on_copilot_data_shows_ais_downward_pressure_on_code_quality."
+    }
+  },
+  {
+    "id": "debt-ai-boom",
+    "group": "AI adoption and code quality",
+    "title": "Debt Behind the AI Boom: A Large-Scale Empirical Study of AI-Generated Code in the Wild",
+    "authors": "Liu, Widyasari, Zhao, Irsan, Chen, Lo",
+    "venue": "arXiv 2603.28592, 2026",
+    "url": "https://arxiv.org/abs/2603.28592",
+    "finding": "302.6k AI-authored commits from 6,299 repositories and five assistants; runs static analysis before and after each commit and tracks introduced issues to HEAD.",
+    "relation": "Uses the same kind of commit attribution. It asks what defects AI commits introduce; we ask how heavily famous projects use AI and what results they publish.",
+    "verified": {
+      "date": "2026-11-08",
+      "source_checked": "https://arxiv.org/abs/2603.28592",
+      "status": "confirmed",
+      "note": "Title, 6 authors, 302.6k verified AI-authored commits, 6,299 repos, five assistants, before/after static analysis and tracking to latest revision all match. Attribution uses bot logins, author emails/names and Co-authored-by trailers (full text)."
+    }
+  },
+  {
+    "id": "agent-maintenance",
+    "group": "AI adoption and code quality",
+    "title": "To What Extent Does Agent-generated Code Require Maintenance? An Empirical Study",
+    "authors": "Sawada, Shirai, Kashiwa, Yamaguchi, Iwata, Iida",
+    "venue": "EASE 2026 (arXiv 2605.06464)",
+    "url": "https://arxiv.org/abs/2605.06464",
+    "finding": "Compares the later maintenance of 508 AI-generated and 508 human-written files across 100 repositories.",
+    "relation": "File-level maintenance comparison; our churn and survival metrics are repository-level and do not separate AI-written lines from human-written ones.",
+    "verified": {
+      "date": "2026-11-08",
+      "source_checked": "https://arxiv.org/pdf/2605.06464",
+      "status": "corrected",
+      "note": "Authors field held the arXiv ID; replaced with authors. Venue: accepted at EASE 2026. 508 AI-generated vs 508 human files from 100 repositories confirmed in full text."
+    }
+  },
+  {
+    "id": "claude-code-prs",
+    "group": "Measuring agent activity on GitHub",
+    "title": "On the Use of Agentic Coding: An Empirical Study of Pull Requests on GitHub",
+    "authors": "Watanabe, Li, Kashiwa, Reid, Iida, Hassan",
+    "venue": "ACM TOSEM (accepted); arXiv 2509.14745, 2025",
+    "url": "https://arxiv.org/abs/2509.14745",
+    "finding": "567 Claude Code pull requests across 157 projects; 34.1% of the commits made while revising them were co-authored by Claude.",
+    "relation": "Finds Claude Code PRs by the \"Generated with Claude Code\" description marker and measures AI co-authorship of revision commits with the same \"Co-Authored-By: Claude\" trailer that dominates our AI-signed counts.",
+    "verified": {
+      "date": "2026-11-08",
+      "source_checked": "https://arxiv.org/pdf/2509.14745",
+      "status": "corrected",
+      "note": "34.1% (298 of 873 revision commits co-authored by Claude) confirmed. Authors added; full text says accepted at ACM TOSEM. Relation fixed: PRs are found via 'Generated with Claude Code', the trailer is used only for revision commits."
+    }
+  },
+  {
+    "id": "agentic-prs",
+    "group": "Measuring agent activity on GitHub",
+    "title": "How Do AI Coding Agents Contribute to Software Development? An Empirical Study of Agentic Pull Requests",
+    "authors": "Mazloomzadeh, Morovati, Khomh",
+    "venue": "arXiv 2607.21832, 2026",
+    "url": "https://arxiv.org/abs/2607.21832",
+    "finding": "Compares pull requests from OpenAI Codex, GitHub Copilot, Cursor, Devin and Claude Code (AIDev dataset) with human PRs in Python repositories with more than 100 stars, over time. Agents are recognised by branch prefixes (codex/, copilot/, cursor/), the Devin bot account, and \"Co-Authored-By: Claude\" in the PR body.",
+    "relation": "Pull-request level view of the same tools whose signatures we count at commit level.",
+    "verified": {
+      "date": "2026-11-08",
+      "source_checked": "https://arxiv.org/pdf/2607.21832",
+      "status": "corrected",
+      "note": "Authors added. 'Identified by agent accounts and trailers' was incomplete: Codex/Copilot/Cursor are matched by branch prefix, Devin by bot account, Claude Code by a Co-Authored-By line in the PR body; scope is Python repos with >100 stars."
+    }
+  },
+  {
+    "id": "agent-census",
+    "group": "Measuring agent activity on GitHub",
+    "title": "Detecting AI Coding Agents in Open Source: A Validated Multi-Method Census of 180 Million Repositories",
+    "authors": "Khosravani, Mockus",
+    "venue": "arXiv 2606.24429, 2026",
+    "url": "https://arxiv.org/abs/2606.24429",
+    "finding": "Multi-method detection (configuration-file scanning, commit-message analysis, author-identity matching, bot-signature lookup) across World of Code's 180M+ Git repositories. Bot-account lookup alone recovers only 3.3% of the 850,157 Claude Code commits found in one snapshot, so single-signal estimates are biased low.",
+    "relation": "Ecosystem-scale detection that already combines commit signatures with agent-config files; we apply the same two kinds of signal to the cohort.",
+    "verified": {
+      "date": "2026-11-08",
+      "source_checked": "https://arxiv.org/abs/2606.24429",
+      "status": "corrected",
+      "note": "Authors added. Relation misdescribed the paper as signature-only at GitHub scale: it already scans config files (CLAUDE.md, AGENTS.md, .cursorrules) and covers World of Code (GitHub, GitLab, Bitbucket, others)."
+    }
+  },
+  {
+    "id": "unsigned-detection",
+    "group": "Measuring agent activity on GitHub",
+    "title": "Agent or Human? Detecting Commits by AI Coding Agents in the Absence of Authorship Signatures",
+    "authors": "Horikawa, Li, Kashiwa, Ouatiti, Sayagh, Adams, Iida, Hassan",
+    "venue": "arXiv 2610.36229, 2026",
+    "url": "https://arxiv.org/abs/2610.36229",
+    "finding": "With authorship signatures masked, detectors reach ROC AUC up to 0.859, but the best one has a precision of only 0.332 at the observed agent share, and detection transfers poorly to held-out agents (TF-IDF AUC only 0.524 for Claude Code). The authors conclude signature-based labels are a lower bound on agent activity.",
+    "relation": "Why an unsigned commit cannot be reliably attributed from its style, and why we report signed AI as a lower bound instead of guessing.",
+    "verified": {
+      "date": "2026-11-08",
+      "source_checked": "https://arxiv.org/pdf/2610.36229",
+      "status": "corrected",
+      "note": "TF-IDF AUC 0.524 for held-out Claude Code confirmed. 'Barely beat chance on held-out agents' overstated it: held-out XGBoost AUC is 0.702/0.706 with all CIs above 0.5, TF-IDF 0.630 for Copilot. Relation 'tells us nothing' softened. Authors added."
+    }
+  },
+  {
+    "id": "metr-rct",
+    "group": "Productivity",
+    "title": "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity",
+    "authors": "METR",
+    "venue": "arXiv 2507.09089, 2025",
+    "url": "https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/",
+    "finding": "Randomized trial: 16 experienced developers, 246 tasks in their own mature repositories. With early-2025 AI tools (mainly Cursor with Claude 3.5/3.7 Sonnet) tasks took 19% longer, while developers believed they were about 20% faster.",
+    "relation": "Measures individual speed on mature codebases; our cohort is mostly young projects and we do not measure speed.",
+    "verified": {
+      "date": "2026-11-08",
+      "source_checked": "https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/",
+      "status": "confirmed",
+      "note": "16 developers, 246 issues, 19% longer, believed AI sped them up by 20%, primarily Cursor Pro with Claude 3.5/3.7 Sonnet: all match the METR page and arXiv 2507.09089 abstract (authors Becker, Rush, Barnes, Rein)."
+    }
+  },
+  {
+    "id": "dora-2025",
+    "group": "Productivity",
+    "title": "2025 State of AI-assisted Software Development (DORA)",
+    "authors": "Google Cloud DORA",
+    "venue": "Industry survey, 2025",
+    "url": "https://dora.dev/dora-report-2025/",
+    "finding": "Survey of nearly 5,000 professionals: AI acts as an amplifier of existing team strengths and weaknesses; adoption is now linked to higher throughput but still to lower delivery stability.",
+    "relation": "Practice-level counterpart to our observation that some AI-heavy projects pair fast iteration with their own evaluation harnesses.",
+    "verified": {
+      "date": "2026-11-08",
+      "source_checked": "https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report",
+      "status": "confirmed",
+      "note": "Nearly 5,000 technology professionals, AI as amplifier, positive link to throughput and continued negative link to delivery stability confirmed. dora.dev URL redirects to https://dora.dev/research/2025/dora-report/ (amplifier wording confirmed there)."
+    }
+  },
+  {
+    "id": "vibe-grey-lit",
+    "group": "Vibe coding",
+    "title": "Vibe Coding in Practice: Motivations, Challenges, and a Future Outlook - a Grey Literature Review",
+    "authors": "Fawzy, Tahir, Blincoe",
+    "venue": "ICSE 2026 (SEIP)",
+    "url": "https://arxiv.org/abs/2510.00328",
+    "finding": "101 practitioner sources (518 firsthand accounts): vibe coders are motivated by speed and accessibility, most perceive the resulting code as fast but flawed, and QA practices are frequently overlooked.",
+    "relation": "Defines the practice qualitatively; we look for its footprint in the git history of famous projects.",
+    "verified": {
+      "date": "2026-11-08",
+      "source_checked": "https://arxiv.org/abs/2510.00328",
+      "status": "corrected",
+      "note": "Title, authors, 101 sources confirmed; ICSE 2026 SEIP confirmed on conf.researchr.org. 'Its risk comes from minimal review' replaced with the abstract's own findings."
+    }
+  },
+  {
+    "id": "eddops",
+    "group": "Vibe coding",
+    "title": "Evaluation-Driven Development and Operations of LLM Agents: A Process Model and Reference Architecture",
+    "authors": "Xia, Lu, Zhu, Xing, Zhao, Zhang",
+    "venue": "arXiv 2411.13768, 2024-2025",
+    "url": "https://arxiv.org/abs/2411.13768",
+    "finding": "From a multivocal literature review, proposes evaluation-driven development and operations (EDDOps): offline and online evaluation in a closed feedback loop, building on the iterative principles of TDD and BDD for LLM agents.",
+    "relation": "Names the practice visible in several cohort repos that commit their own eval harnesses and results, including null results.",
+    "verified": {
+      "date": "2026-11-08",
+      "source_checked": "https://arxiv.org/pdf/2411.13768",
+      "status": "corrected",
+      "note": "Authors field held the arXiv ID; replaced with authors. EDDOps expands to 'development and operations'; TDD/BDD link confirmed in full text ('builds on the iterative principles of TDD and BDD')."
+    }
+  },
+  {
+    "id": "relative-churn",
+    "group": "Churn and software evolution",
+    "title": "Use of Relative Code Churn Measures to Predict System Defect Density",
+    "authors": "Nagappan, Ball",
+    "venue": "ICSE 2005",
+    "url": "https://www.microsoft.com/en-us/research/?p=151819",
+    "finding": "On Windows Server 2003, relative churn measures predicted defect density (89% accuracy separating fault-prone binaries); absolute churn did not.",
+    "relation": "Why we report churn relative to code size, and why high churn is a known risk signal rather than a sign of success.",
+    "verified": {
+      "date": "2026-11-08",
+      "source_checked": "https://www.microsoft.com/en-us/research/publication/use-of-relative-code-churn-measures-to-predict-system-defect-density/",
+      "status": "confirmed",
+      "note": "URL resolves to the right publication (PDF named icse05churn.pdf, May 2005, ACM). Windows Server 2003, 89.0% accuracy and 'absolute measures are poor predictors' confirmed."
+    }
+  },
+  {
+    "id": "lehman-oss",
+    "group": "Churn and software evolution",
+    "title": "Towards a Better Understanding of Software Evolution: An Empirical Study on Open-Source Software",
+    "authors": "Neamtiu, Xie, Chen",
+    "venue": "Journal of Software: Evolution and Process, 2013",
+    "url": "https://www.cs.kent.edu/~jmaletic/cs63902/Papers/jsme11neamtiu.pdf",
+    "finding": "Across nine open-source projects, only Lehman's laws of continuing change and continuing growth held for every program.",
+    "relation": "Change is normal in living software, which is why we compare the cohort with famous pre-AI projects at the same age instead of judging churn in the abstract.",
+    "verified": {
+      "date": "2026-11-08",
+      "source_checked": "https://www.cs.kent.edu/~jmaletic/cs63902/Papers/jsme11neamtiu.pdf",
+      "status": "confirmed",
+      "note": "Nine projects and 'only continuing change and continuing growth confirmed for all programs' match. J. Softw.: Evol. and Proc. 2013; 25:193-218, DOI 10.1002/smr.564. URL is a course-site copy of the paper."
+    }
+  },
+  {
+    "id": "fake-stars",
+    "group": "Popularity signals",
+    "title": "Six Million (Suspected) Fake Stars in GitHub: A Growing Spiral of Popularity Contests, Spams, and Malware",
+    "authors": "He, Yang, Burckhardt, Kapravelos, Vasilescu, Kästner",
+    "venue": "ICSE 2026",
+    "url": "https://arxiv.org/abs/2412.13459",
+    "finding": "6.0M suspected fake stars across 18,617 repositories (July 2019-December 2024); fake stars give only a short-lived boost (less than two months) and become a liability in the long term.",
+    "relation": "Stars are our popularity measure and a noisy one; we use them to select famous projects, not as evidence of quality.",
+    "verified": {
+      "date": "2026-11-08",
+      "source_checked": "https://arxiv.org/pdf/2412.13459",
+      "status": "corrected",
+      "note": "Title says 'in GitHub', not 'on GitHub'. Authors listed (affiliations are CMU, Socket Inc and NC State). 6.0M and 18,617 confirmed; added the paper's long-term liability finding. ICSE 2026 confirmed."
+    }
+  }
+]

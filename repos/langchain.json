@@ -1,0 +1,670 @@
+{
+  "repo": "langchain",
+  "full_name": "langchain-ai/langchain",
+  "stars": 149190,
+  "stars_source": "github-api 2026-11-08T10:06:00Z",
+  "selection_topics": [
+    "ai-agents"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2022-10-17T02:58:36Z",
+    "description": "The agent engineering platform.",
+    "fork": false,
+    "forks": 25090,
+    "full_name": "langchain-ai/langchain",
+    "pushed_at": "2026-11-08T08:15:55Z",
+    "stars": 149190,
+    "fetched_at": "2026-11-08T10:06:00Z"
+  },
+  "url": "https://github.com/langchain-ai/langchain",
+  "description": "The agent engineering platform.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "d9caf083577c43a91c5bf6bd1f7dfc289581184d",
+    "head_date": "2026-11-06T17:38:34Z",
+    "history_complete": true,
+    "non_merge_commits": 17039,
+    "merge_commits": 114,
+    "maintenance_bot_commits": 903,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 50,
+    "explicit_ai_pct": 0.3,
+    "by_tool": {
+      "copilot": 27,
+      "claude": 21,
+      "other": 2
+    },
+    "by_signal": {
+      "co-author": 44,
+      "footer": 6
+    },
+    "recent_180d": {
+      "commits": 622,
+      "ai_pct": 2.1,
+      "fix_pct": 38.7
+    },
+    "first_365d": {
+      "commits": 5312,
+      "ai_pct": 0.0,
+      "fix_pct": 19.6
+    },
+    "agent_config": {
+      "files": {
+        "AGENTS.md": "2025-09-24T05:02:14Z"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2025-09-24T05:02:14Z"
+    },
+    "bot_commit_count": 903
+  },
+  "churn_and_stability": {
+    "total_commits": 16136,
+    "first_commit_date": "2022-10-24T14:51:15-07:00",
+    "last_commit_date": "2026-11-05T14:54:06-08:00",
+    "current_loc": 464274,
+    "total_historical_additions": 1540149,
+    "total_historical_deletions": 1073122,
+    "total_churn": 2613271,
+    "churn_ratio": 5.63,
+    "survival_rate_pct": 30.1,
+    "code": {
+      "current_loc": 427420,
+      "additions": 1387463,
+      "deletions": 957331,
+      "churn_ratio": 5.49,
+      "survival_rate_pct": 30.8
+    },
+    "docs": {
+      "current_loc": 36854,
+      "additions": 152686,
+      "deletions": 115791,
+      "churn_ratio": 7.28,
+      "survival_rate_pct": 24.1
+    },
+    "fix_commits": 3508,
+    "fix_pct": 21.7,
+    "revert_commits": 65,
+    "revert_pct": 0.4,
+    "trial_error_commits": 5458,
+    "trial_error_pct": 33.8,
+    "rapid_fire_commits": 3552,
+    "rapid_fire_pct": 22.0,
+    "trial_error_chains": 1222,
+    "suspicious_additions_count": 181,
+    "top5_hotspot_volatility_pct": 1.3
+  },
+  "code_hygiene": {
+    "total_files": 2483,
+    "docs_files": 100,
+    "avg_file_loc": 172.1,
+    "test_loc": 188875,
+    "test_files": 702,
+    "test_ratio_pct": 44.2,
+    "comment_ratio_pct": 8.6,
+    "monolith_count": 85,
+    "top_languages": {
+      ".py": 426557,
+      ".sh": 573,
+      ".js": 290
+    }
+  },
+  "authors": {
+    "unique_authors": 3636,
+    "top_authors": [
+      {
+        "name": "Bagatur",
+        "commits": 1352,
+        "pct": 8.4
+      },
+      {
+        "name": "Harrison Chase",
+        "commits": 1229,
+        "pct": 7.6
+      },
+      {
+        "name": "ccurme",
+        "commits": 1191,
+        "pct": 7.4
+      },
+      {
+        "name": "Mason Daugherty",
+        "commits": 978,
+        "pct": 6.1
+      },
+      {
+        "name": "Erick Friis",
+        "commits": 971,
+        "pct": 6.0
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 2.5,
+    "p75": 14.0,
+    "p90": 70.5,
+    "p95": 174.5,
+    "p99": 822.0,
+    "avg": 63.7
+  },
+  "hotspots": [
+    {
+      "file": "libs/partners/openai/langchain_openai/chat_models/base.py",
+      "commits": 300,
+      "additions": 10282,
+      "deletions": 4561,
+      "churn": 14843,
+      "first_seen": "2024-01-05T15:03:28-08:00",
+      "last_seen": "2026-11-03T14:53:17-08:00"
+    },
+    {
+      "file": "libs/partners/anthropic/langchain_anthropic/chat_models.py",
+      "commits": 240,
+      "additions": 9389,
+      "deletions": 5979,
+      "churn": 15368,
+      "first_seen": "2023-12-19T18:55:19-08:00",
+      "last_seen": "2026-11-05T11:23:57-05:00"
+    },
+    {
+      "file": "libs/core/langchain_core/runnables/base.py",
+      "commits": 208,
+      "additions": 11937,
+      "deletions": 5225,
+      "churn": 17162,
+      "first_seen": "2023-11-20T16:09:30-05:00",
+      "last_seen": "2026-11-04T19:08:07-05:00"
+    },
+    {
+      "file": "libs/core/langchain_core/language_models/chat_models.py",
+      "commits": 173,
+      "additions": 3839,
+      "deletions": 1780,
+      "churn": 5619,
+      "first_seen": "2023-11-21T08:35:29-08:00",
+      "last_seen": "2026-11-03T14:53:17-08:00"
+    },
+    {
+      "file": "libs/partners/openrouter/langchain_openrouter/data/_profiles.py",
+      "commits": 160,
+      "additions": 17538,
+      "deletions": 9115,
+      "churn": 26653,
+      "first_seen": "2026-02-15T02:09:13-05:00",
+      "last_seen": "2026-11-06T12:09:20-05:00"
+    },
+    {
+      "file": "README.md",
+      "commits": 134,
+      "additions": 982,
+      "deletions": 902,
+      "churn": 1884,
+      "first_seen": "2022-10-24T14:51:15-07:00",
+      "last_seen": "2026-09-24T03:17:50+05:30"
+    },
+    {
+      "file": "libs/core/tests/unit_tests/test_tools.py",
+      "commits": 133,
+      "additions": 5024,
+      "deletions": 780,
+      "churn": 5804,
+      "first_seen": "2023-11-21T08:35:29-08:00",
+      "last_seen": "2026-11-03T15:50:46-08:00"
+    },
+    {
+      "file": "libs/core/tests/unit_tests/runnables/test_runnable.py",
+      "commits": 132,
+      "additions": 4574,
+      "deletions": 2023,
+      "churn": 6597,
+      "first_seen": "2023-11-21T08:35:29-08:00",
+      "last_seen": "2026-11-04T19:08:07-05:00"
+    },
+    {
+      "file": "libs/partners/openai/tests/unit_tests/chat_models/test_base.py",
+      "commits": 131,
+      "additions": 6522,
+      "deletions": 459,
+      "churn": 6981,
+      "first_seen": "2024-01-05T15:03:28-08:00",
+      "last_seen": "2026-11-03T14:53:17-08:00"
+    },
+    {
+      "file": "libs/partners/anthropic/tests/unit_tests/test_chat_models.py",
+      "commits": 127,
+      "additions": 7598,
+      "deletions": 900,
+      "churn": 8498,
+      "first_seen": "2023-12-19T18:55:19-08:00",
+      "last_seen": "2026-11-05T11:19:54-05:00"
+    },
+    {
+      "file": "libs/core/langchain_core/version.py",
+      "commits": 123,
+      "additions": 125,
+      "deletions": 122,
+      "churn": 247,
+      "first_seen": "2025-04-10T14:15:02-04:00",
+      "last_seen": "2026-11-04T19:12:54-05:00"
+    },
+    {
+      "file": "libs/core/langchain_core/messages/utils.py",
+      "commits": 123,
+      "additions": 4150,
+      "deletions": 1703,
+      "churn": 5853,
+      "first_seen": "2024-03-20T06:25:09-07:00",
+      "last_seen": "2026-11-03T14:53:17-08:00"
+    },
+    {
+      "file": "langchain/document_loaders/__init__.py",
+      "commits": 118,
+      "additions": 418,
+      "deletions": 114,
+      "churn": 532,
+      "first_seen": "2023-02-05T23:02:07-08:00",
+      "last_seen": "2023-07-20T22:30:59-07:00"
+    },
+    {
+      "file": "libs/langchain/langchain/schema/runnable/base.py",
+      "commits": 116,
+      "additions": 3843,
+      "deletions": 5301,
+      "churn": 9144,
+      "first_seen": "2023-08-10T00:56:37-07:00",
+      "last_seen": "2025-07-07T18:49:38+02:00"
+    },
+    {
+      "file": "libs/core/langchain_core/tools/base.py",
+      "commits": 113,
+      "additions": 2105,
+      "deletions": 1906,
+      "churn": 4011,
+      "first_seen": "2024-08-14T07:00:17-07:00",
+      "last_seen": "2026-11-03T15:50:46-08:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "libs/partners/openrouter/langchain_openrouter/data/_profiles.py",
+      "loc": 8423
+    },
+    {
+      "file": "libs/core/langchain_core/runnables/base.py",
+      "loc": 6712
+    },
+    {
+      "file": "libs/partners/anthropic/tests/unit_tests/test_chat_models.py",
+      "loc": 6698
+    },
+    {
+      "file": "libs/core/tests/unit_tests/runnables/test_runnable.py",
+      "loc": 6501
+    },
+    {
+      "file": "libs/partners/openai/tests/unit_tests/chat_models/test_base.py",
+      "loc": 6063
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "4a9d4da63516bfaef2e36b6fcee3d9c7f914eb95",
+      "short_hash": "4a9d4da63",
+      "author": "ccurme",
+      "date": "2026-11-03T19:09:13-05:00",
+      "subject": "fix(infra): pin optional deps in min-version release checks (#41661)",
+      "coauthors": [],
+      "additions": 37,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "f1ca47ad7674907448bcd64bf08dd0ac7413958f",
+      "short_hash": "f1ca47ad7",
+      "author": "Thushanth Bengre",
+      "date": "2026-11-03T19:39:55-05:00",
+      "subject": "feat(core): translate Gemini safety blocks to refusal content blocks (#41658)",
+      "coauthors": [],
+      "additions": 118,
+      "deletions": 19,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "49b9dfbdec0b77722649213b60aa2d79d8857a51",
+      "short_hash": "49b9dfbde",
+      "author": "Hunter Lovell",
+      "date": "2026-11-03T17:43:37-08:00",
+      "subject": "release(core): 1.7.5 (#41665)",
+      "coauthors": [],
+      "additions": 1,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "aa2528fb980a290d2b06c83a1be43e60bc2348f9",
+      "short_hash": "aa2528fb9",
+      "author": "Zlatko Duric",
+      "date": "2026-11-04T09:36:21+01:00",
+      "subject": "feat(typesafe): accept a `classifier` in experimental middleware (#41657)",
+      "coauthors": [],
+      "additions": 46,
+      "deletions": 3,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "d5a9cd5a9b3129718f7b30bc51ba4732339772a6",
+      "short_hash": "d5a9cd5a9",
+      "author": "Thushanth Bengre",
+      "date": "2026-11-04T11:36:28-05:00",
+      "subject": "chore(deps): require `langchain-core>=1.7.5` for refusal handling (#41682)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "16a08bda1247010c23fcfa887e421259a5fced5e",
+      "short_hash": "16a08bda1",
+      "author": "ccurme",
+      "date": "2026-11-04T11:45:31-05:00",
+      "subject": "release(openai): 1.7.4 (#41683)",
+      "coauthors": [],
+      "additions": 1,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "bbcdd568cd02b81e5ede5aa525744e79e67c2278",
+      "short_hash": "bbcdd568c",
+      "author": "ccurme",
+      "date": "2026-11-04T11:47:14-05:00",
+      "subject": "release(anthropic): 1.7.10 (#41685)",
+      "coauthors": [],
+      "additions": 1,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "d1d95b79213b0212613ae1aa4fad38bea6f1dccf",
+      "short_hash": "d1d95b792",
+      "author": "ccurme",
+      "date": "2026-11-04T12:03:22-05:00",
+      "subject": "release(langchain): 1.4.9 (#41684)",
+      "coauthors": [],
+      "additions": 1,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "9d572787e888e0bad93bfca4b87f1f403b0cda3c",
+      "short_hash": "9d572787e",
+      "author": "nm-fireworks",
+      "date": "2026-11-04T11:25:23-08:00",
+      "subject": "fix(fireworks): report the served model in response metadata (#41686)",
+      "coauthors": [
+        "nm-fireworks"
+      ],
+      "additions": 178,
+      "deletions": 4,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "1f032fde01130b4827c5c43ab8ff858fdb9bad84",
+      "short_hash": "1f032fde0",
+      "author": "Mason Daugherty",
+      "date": "2026-11-04T14:29:19-05:00",
+      "subject": "release(fireworks): 1.7.2 (#41690)",
+      "coauthors": [],
+      "additions": 1,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "15306e3ccd8fec2ba65d5d620edc74195f4dc2ef",
+      "short_hash": "15306e3cc",
+      "author": "Mason Daugherty",
+      "date": "2026-11-04T15:09:49-05:00",
+      "subject": "fix(infra): use published `langchain` in min-version release check (#41691)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "d3b3a8da1e06a100cb68a0e81e1e4be908995e59",
+      "short_hash": "d3b3a8da1",
+      "author": "ccurme",
+      "date": "2026-11-04T15:12:44-05:00",
+      "subject": "fix(langchain): omit trace inputs from `ModelRefusalMiddleware` (#41689)",
+      "coauthors": [
+        "ccurme",
+        "open-swe[bot]"
+      ],
+      "additions": 4,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "6869934a613beadb8fa2a0b7ecabc224e40e7ee9",
+      "short_hash": "6869934a6",
+      "author": "Mason Daugherty",
+      "date": "2026-11-04T15:42:06-05:00",
+      "subject": "fix(fireworks): report streamed token usage once (#41693)",
+      "coauthors": [],
+      "additions": 133,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "7d72af05004d134a8ea2fbb582c639af33f3bcf9",
+      "short_hash": "7d72af050",
+      "author": "Mason Daugherty",
+      "date": "2026-11-04T18:25:44-05:00",
+      "subject": "perf(core): stop `parse_partial_json` from retrying one character at a time (#41467)",
+      "coauthors": [],
+      "additions": 48,
+      "deletions": 4,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "df8fd17c3261f66c86bf34defe61cbc8ba0478b0",
+      "short_hash": "df8fd17c3",
+      "author": "Mason Daugherty",
+      "date": "2026-11-04T19:08:07-05:00",
+      "subject": "perf(core): merge streamed `AIMessageChunk`s once when accumulating runnable streams (#41697)",
+      "coauthors": [
+        "Elior Nataf Lackritz"
+      ],
+      "additions": 486,
+      "deletions": 135,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "b4aa7e7d00c452251720ce30b8bc2c41ca44e1f5",
+      "short_hash": "b4aa7e7d0",
+      "author": "Mason Daugherty",
+      "date": "2026-11-04T19:12:54-05:00",
+      "subject": "release(core): 1.7.6 (#41698)",
+      "coauthors": [],
+      "additions": 1,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "e8660c952eefbbe8a8656c062de7b92bb866b68b",
+      "short_hash": "e8660c952",
+      "author": "John Kennedy",
+      "date": "2026-11-05T06:31:39-08:00",
+      "subject": "chore(deps): patch newer-python security lock resolutions (#41585)",
+      "coauthors": [
+        "langsmith-fleet[bot]",
+        "open-swe[bot]",
+        "John Kennedy"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "ce7d094fe0ed437036f1226f7ff8b4ba390efc74",
+      "short_hash": "ce7d094fe",
+      "author": "ccurme",
+      "date": "2026-11-05T11:19:54-05:00",
+      "subject": "fix(anthropic): preserve nested `caller` on server calls and results (#41678)",
+      "coauthors": [
+        "Manas Ganesh Dasari",
+        "open-swe[bot]",
+        "ccurme",
+        "neel004"
+      ],
+      "additions": 102,
+      "deletions": 0,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "98e4a0bd185c8c2cfba3547d46bf5d34dfea56cf",
+      "short_hash": "98e4a0bd1",
+      "author": "Thushanth Bengre",
+      "date": "2026-11-05T11:23:57-05:00",
+      "subject": "fix(anthropic): raise `ModelRefusalError` for refusals when tool calls are not forced (#41715)",
+      "coauthors": [],
+      "additions": 54,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "71881c7eac594cd7a3e0a4895bb6c500fb50a18f",
+      "short_hash": "71881c7ea",
+      "author": "Hunter Lovell",
+      "date": "2026-11-05T14:54:06-08:00",
+      "subject": "release(typesafe): 0.0.2 (#41720)",
+      "coauthors": [],
+      "additions": 1,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

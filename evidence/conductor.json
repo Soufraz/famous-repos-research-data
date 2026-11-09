@@ -1,0 +1,9 @@
+{
+  "repo": "conductor",
+  "head_commit": "6e8f9a8",
+  "published_results": [],
+  "strongest_evidence_type": "none",
+  "summary": "Conductor (28 tracked files: README, skills/*.md prompt files, one resume.py helper) publishes no quantitative results about its own performance: there is no benchmark, eval, or results file. The only performance-related statement is a qualitative caveat that its spec-driven approach 'can lead to increased token consumption' (README.md:150-155), with no number attached; the '>80% coverage' figures in skills/conductor-setup/assets/workflow.md are targets the plugin imposes on user projects, not measured outcomes.",
+  "result_focus": "none",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}

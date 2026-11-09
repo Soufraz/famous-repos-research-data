@@ -1,0 +1,56 @@
+{
+  "repo": "munder-difflin",
+  "head_commit": "7cea9a71",
+  "published_results": [
+    {
+      "claim": "In a replay of one office of 13 Claude agents over a week, with those two changes, token use fell about 37%. That is a replay, not a live measurement.",
+      "metric": "Token use reduction from default Compact + Clear-on-work-switch settings",
+      "value": "about 37%",
+      "baseline": "Same replayed office (13 Claude agents, one week) without the two default changes",
+      "evidence_type": "claim_only",
+      "files": [
+        "README.md:336-339"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "~350× faster warm usage reads — an incremental per-file transcript cache replaces re-reading every transcript on each poll (#111)",
+      "metric": "Warm usage-read speed",
+      "value": "~350×",
+      "baseline": "Re-reading every transcript on each poll (pre-#111)",
+      "evidence_type": "claim_only",
+      "files": [
+        "CHANGELOG.md:688"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "each interactive-shell launch cost ~1s of blocked main thread, paid twice per spawn, ×N on a team restore",
+      "metric": "Main-thread blocking per spawn (problem size motivating memoization fix)",
+      "value": "~1s per interactive-shell launch, twice per spawn",
+      "baseline": null,
+      "evidence_type": "claim_only",
+      "files": [
+        "CHANGELOG.md:689"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Before/after benchmark for the usage-cache cross-agent amplification fix ... final summary: wall-clock time AND total JSON.parse() calls",
+      "metric": "Wall-clock ms and JSON.parse() call count for N agents x W rounds over a dummy hive",
+      "value": "No numeric result committed in text; only screen recordings docs/evidence/usage-cache-fix-before.mp4 and usage-cache-fix-after.mp4",
+      "baseline": "Pre-fix transcript.ts (per (file, sessionId) cache)",
+      "evidence_type": "harness_only",
+      "files": [
+        "test/usage-cache-benchmark.manual.cjs:1-14",
+        "docs/evidence/usage-cache-fix-before.mp4",
+        "docs/evidence/usage-cache-fix-after.mp4"
+      ],
+      "reproduce_command": "node usage-cache-benchmark.cjs <path-to-transcript.ts> <label>  (BENCH_AGENTS / BENCH_ROUNDS env vars, defaults 10 / 30)"
+    }
+  ],
+  "strongest_evidence_type": "harness_only",
+  "summary": "Munder Difflin's only quantitative self-claims are a README 'token use fell about 37%' from a replay of 13 agents over a week (explicitly flagged as a replay, but no replay script or data is in the repo) and CHANGELOG perf notes (~350× faster warm usage reads, ~1s main-thread block per shell launch) with no method or data. One manual before/after micro-benchmark script exists (test/usage-cache-benchmark.manual.cjs) but its outputs are committed only as two mp4 screen recordings, not as numbers; the ~289 blog posts quote other vendors' benchmarks rather than measuring the product.",
+  "result_focus": "outcome",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}

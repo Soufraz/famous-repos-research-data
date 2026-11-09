@@ -1,0 +1,690 @@
+{
+  "repo": "context-mode",
+  "full_name": "mksglu/context-mode",
+  "stars": 33662,
+  "stars_source": "github-api 2026-11-08T09:07:34Z",
+  "selection_topics": [
+    "core-audit"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2026-02-23T05:56:28Z",
+    "description": "Free, local plugin that keeps tool output out of your coding agent's context window. Sandbox and SQLite FTS5 search, 99% fewer bytes in context. Works with Claude Code, Codex, Pi, OpenCode, Gemini CLI, Copilot CLI and 4 more agents. Zero telemetry.",
+    "fork": false,
+    "forks": 2307,
+    "full_name": "mksglu/context-mode",
+    "pushed_at": "2026-11-08T03:24:02Z",
+    "stars": 33662,
+    "fetched_at": "2026-11-08T09:07:34Z"
+  },
+  "url": "https://github.com/mksglu/context-mode",
+  "description": "Free, local plugin that keeps tool output out of your coding agent's context window. Sandbox and SQLite FTS5 search, 99% fewer bytes in context. Works with Claude Code, Codex, Pi, OpenCode, Gemini CLI, Copilot CLI and 4 more agents. Zero telemetry.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "2000abbadc1bdaf5f4328af010916837e1728962",
+    "head_date": "2026-11-08T03:24:01Z",
+    "history_complete": true,
+    "non_merge_commits": 4100,
+    "merge_commits": 360,
+    "maintenance_bot_commits": 604,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 1270,
+    "explicit_ai_pct": 36.3,
+    "by_tool": {
+      "claude": 1251,
+      "copilot": 11,
+      "codex": 8
+    },
+    "by_signal": {
+      "co-author": 1260,
+      "agent-author": 10
+    },
+    "recent_180d": {
+      "commits": 2457,
+      "ai_pct": 28.8,
+      "fix_pct": 24.5
+    },
+    "first_365d": {
+      "commits": 3496,
+      "ai_pct": 36.3,
+      "fix_pct": 31.6
+    },
+    "bot_commit_count": 604,
+    "agent_config": {
+      "files": {
+        ".agents/": "2026-05-03T00:05:27+03:00",
+        ".claude/": "2026-03-03T18:10:29+03:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2026-03-03T18:10:29+03:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 3496,
+    "first_commit_date": "2026-02-23T09:02:37+03:00",
+    "last_commit_date": "2026-11-08T00:52:38+03:00",
+    "current_loc": 282541,
+    "total_historical_additions": 639599,
+    "total_historical_deletions": 347908,
+    "total_churn": 987507,
+    "churn_ratio": 3.5,
+    "survival_rate_pct": 44.2,
+    "code": {
+      "current_loc": 260095,
+      "additions": 567310,
+      "deletions": 298164,
+      "churn_ratio": 3.33,
+      "survival_rate_pct": 45.8
+    },
+    "docs": {
+      "current_loc": 22446,
+      "additions": 72289,
+      "deletions": 49744,
+      "churn_ratio": 5.44,
+      "survival_rate_pct": 31.1
+    },
+    "fix_commits": 1104,
+    "fix_pct": 31.6,
+    "revert_commits": 13,
+    "revert_pct": 0.4,
+    "trial_error_commits": 1143,
+    "trial_error_pct": 32.7,
+    "rapid_fire_commits": 1509,
+    "rapid_fire_pct": 43.2,
+    "trial_error_chains": 353,
+    "suspicious_additions_count": 56,
+    "top5_hotspot_volatility_pct": 7.6
+  },
+  "code_hygiene": {
+    "total_files": 322,
+    "docs_files": 156,
+    "avg_file_loc": 807.7,
+    "test_loc": 37300,
+    "test_files": 46,
+    "test_ratio_pct": 14.3,
+    "comment_ratio_pct": 4.8,
+    "monolith_count": 24,
+    "top_languages": {
+      ".mjs": 139145,
+      ".js": 95314,
+      ".ts": 25581,
+      ".py": 55
+    }
+  },
+  "authors": {
+    "unique_authors": 121,
+    "top_authors": [
+      {
+        "name": "mksglu",
+        "commits": 1705,
+        "pct": 48.8
+      },
+      {
+        "name": "Mert Koseoglu",
+        "commits": 1212,
+        "pct": 34.7
+      },
+      {
+        "name": "Mert Köseoğlu",
+        "commits": 274,
+        "pct": 7.8
+      },
+      {
+        "name": "Pedro Almeida",
+        "commits": 33,
+        "pct": 0.9
+      },
+      {
+        "name": "Ben Younes",
+        "commits": 25,
+        "pct": 0.7
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 14.2,
+    "p75": 73.8,
+    "p90": 780.0,
+    "p95": 4680.0,
+    "p99": 34860.0,
+    "avg": 1753.1
+  },
+  "hotspots": [
+    {
+      "file": "docs/v2/impl/DEVIATIONS.md",
+      "commits": 334,
+      "additions": 863,
+      "deletions": 201,
+      "churn": 1064,
+      "first_seen": "2026-10-17T00:54:02+03:00",
+      "last_seen": "2026-11-01T03:26:08+03:00"
+    },
+    {
+      "file": "server.bundle.mjs",
+      "commits": 264,
+      "additions": 19322,
+      "deletions": 19626,
+      "churn": 38948,
+      "first_seen": "2026-02-24T16:26:27+03:00",
+      "last_seen": "2026-10-21T01:34:48+03:00"
+    },
+    {
+      "file": "src/server.ts",
+      "commits": 250,
+      "additions": 8545,
+      "deletions": 9453,
+      "churn": 17998,
+      "first_seen": "2026-02-23T09:02:37+03:00",
+      "last_seen": "2026-10-21T02:00:57+03:00"
+    },
+    {
+      "file": "README.md",
+      "commits": 243,
+      "additions": 5829,
+      "deletions": 5138,
+      "churn": 10967,
+      "first_seen": "2026-02-23T09:02:37+03:00",
+      "last_seen": "2026-11-05T23:13:37+03:00"
+    },
+    {
+      "file": "cli.bundle.mjs",
+      "commits": 238,
+      "additions": 24117,
+      "deletions": 24449,
+      "churn": 48566,
+      "first_seen": "2026-03-06T20:33:38+03:00",
+      "last_seen": "2026-10-21T01:34:48+03:00"
+    },
+    {
+      "file": "src/core/contracts/constants.ts",
+      "commits": 122,
+      "additions": 1191,
+      "deletions": 154,
+      "churn": 1345,
+      "first_seen": "2026-10-17T00:59:18+03:00",
+      "last_seen": "2026-11-08T00:52:38+03:00"
+    },
+    {
+      "file": "docs/v2/DEVIATIONS.md",
+      "commits": 112,
+      "additions": 129,
+      "deletions": 11,
+      "churn": 140,
+      "first_seen": "2026-10-26T19:54:43+03:00",
+      "last_seen": "2026-11-01T02:25:12+03:00"
+    },
+    {
+      "file": "src/cli.ts",
+      "commits": 109,
+      "additions": 3622,
+      "deletions": 4446,
+      "churn": 8068,
+      "first_seen": "2026-02-23T09:02:37+03:00",
+      "last_seen": "2026-10-21T02:00:57+03:00"
+    },
+    {
+      "file": "docs/architecture/DEVIATIONS.md",
+      "commits": 89,
+      "additions": 144,
+      "deletions": 6,
+      "churn": 150,
+      "first_seen": "2026-11-01T03:42:00+03:00",
+      "last_seen": "2026-11-08T00:52:38+03:00"
+    },
+    {
+      "file": "tests/core/server.test.ts",
+      "commits": 77,
+      "additions": 8556,
+      "deletions": 7238,
+      "churn": 15794,
+      "first_seen": "2026-03-16T16:41:40+03:00",
+      "last_seen": "2026-10-21T01:05:00+03:00"
+    },
+    {
+      "file": "src/setup/engine.ts",
+      "commits": 72,
+      "additions": 1507,
+      "deletions": 301,
+      "churn": 1808,
+      "first_seen": "2026-10-23T01:13:06+03:00",
+      "last_seen": "2026-11-07T23:15:29+03:00"
+    },
+    {
+      "file": "tests/core/cli.test.ts",
+      "commits": 68,
+      "additions": 4164,
+      "deletions": 4245,
+      "churn": 8409,
+      "first_seen": "2026-03-16T16:41:40+03:00",
+      "last_seen": "2026-10-21T01:05:00+03:00"
+    },
+    {
+      "file": "src/session/analytics.ts",
+      "commits": 56,
+      "additions": 5197,
+      "deletions": 4812,
+      "churn": 10009,
+      "first_seen": "2026-04-04T05:53:01+03:00",
+      "last_seen": "2026-10-21T02:00:57+03:00"
+    },
+    {
+      "file": "src/session/extract.ts",
+      "commits": 56,
+      "additions": 3053,
+      "deletions": 3414,
+      "churn": 6467,
+      "first_seen": "2026-03-05T01:34:46+03:00",
+      "last_seen": "2026-10-21T02:00:57+03:00"
+    },
+    {
+      "file": "docs/benchmarks/try-it/prereg-amendment-1.md",
+      "commits": 54,
+      "additions": 674,
+      "deletions": 14,
+      "churn": 688,
+      "first_seen": "2026-10-22T16:21:21+03:00",
+      "last_seen": "2026-10-22T18:29:14+03:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "plugins/claude-code/pi/index.js",
+      "loc": 61820
+    },
+    {
+      "file": "plugins/claude-code/server.mjs",
+      "loc": 58498
+    },
+    {
+      "file": "plugins/claude-code/opencode/plugin.js",
+      "loc": 33490
+    },
+    {
+      "file": "plugins/claude-code/cli.mjs",
+      "loc": 10765
+    },
+    {
+      "file": "plugins/claude-code/run.mjs",
+      "loc": 6680
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "6de334950b312db039dd51f783fc8dd23f542677",
+      "short_hash": "6de33495",
+      "author": "mksglu",
+      "date": "2026-11-05T22:25:15+03:00",
+      "subject": "fix: block more private fetch targets and bound line unit size",
+      "coauthors": [],
+      "additions": 144,
+      "deletions": 5,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "a13a6c80a1211d1d4f619f2dafef20b67beab283",
+      "short_hash": "a13a6c80",
+      "author": "mksglu",
+      "date": "2026-11-05T22:59:19+03:00",
+      "subject": "fix: ctx_upgrade uses each agent's own update command, no release-branch clone (#1309)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 179,
+      "deletions": 356,
+      "files_count": 13,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "7e4a5784c878d6ef075b2c2c7c7f969527f7cd19",
+      "short_hash": "7e4a5784",
+      "author": "mksglu",
+      "date": "2026-11-05T23:13:37+03:00",
+      "subject": "fix: ZCode native plugin install, Qwen project scope and Windows hook command, hook overhead as warning",
+      "coauthors": [
+        "Claude Sonnet 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 195,
+      "deletions": 34,
+      "files_count": 17,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "7d5c25f45380c683d06883ea6ec9cccb0f281e76",
+      "short_hash": "7d5c25f4",
+      "author": "mksglu",
+      "date": "2026-11-05T23:16:44+03:00",
+      "subject": "fix: VS Code server reads the workspace from MCP roots, setup writes no ${workspaceFolder} in the user mcp.json",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 81,
+      "deletions": 9,
+      "files_count": 7,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "54c4e2d0455dcdd6b184e8d925b9741388d2ebb8",
+      "short_hash": "54c4e2d0",
+      "author": "mksglu",
+      "date": "2026-11-05T23:35:28+03:00",
+      "subject": "fix: ctx_upgrade keeps v1 data and never follows a project link; hook reads persisted output only from its own session dir",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 166,
+      "deletions": 21,
+      "files_count": 9,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "ccc52707bde52f1fab92e9be7acbce3e0f6fed8e",
+      "short_hash": "ccc52707",
+      "author": "mksglu",
+      "date": "2026-11-05T23:39:06+03:00",
+      "subject": "fix: setup writes the stable Homebrew node link, so brew upgrade node keeps hooks and MCP running",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 56,
+      "deletions": 11,
+      "files_count": 7,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "b496e208f503714cb28500a0b5767799ba882039",
+      "short_hash": "b496e208",
+      "author": "mksglu",
+      "date": "2026-11-06T00:03:07+03:00",
+      "subject": "fix: guard test keeps the Claude Code Agent input unchanged on first call and resend (#1319)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 17,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "7bad9ac3501f34992bdef3d8d0da3f3334cc5325",
+      "short_hash": "7bad9ac3",
+      "author": "mksglu",
+      "date": "2026-11-06T03:31:36+03:00",
+      "subject": "fix: check every agent's hook replies against its host's own reply schema, in unit tests and doctor D5",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 182,
+      "deletions": 24,
+      "files_count": 5,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "417cab2e42350f55d298f30a2d194f572bcfa302",
+      "short_hash": "417cab2e",
+      "author": "mksglu",
+      "date": "2026-11-06T15:41:45+03:00",
+      "subject": "docs: ADR-0025 stored source in the sandbox (#1325) and the open 2.1.4 blockers, ADR and PRD in one file",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 121,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "281bbd960bf1a14e7a60cbf4c3e3c6b487f7f7e0",
+      "short_hash": "281bbd96",
+      "author": "mksglu",
+      "date": "2026-11-06T16:11:10+03:00",
+      "subject": "docs(adr): #1325 uses a ctx_execute input, no new tool",
+      "coauthors": [],
+      "additions": 6,
+      "deletions": 5,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "7882d35e071204c9a926b8399974da81b1ab22a1",
+      "short_hash": "7882d35e",
+      "author": "mksglu",
+      "date": "2026-11-06T17:31:38+03:00",
+      "subject": "fix: Read size deny skips images and PDFs the host shows as blocks (#1321, #1324)",
+      "coauthors": [],
+      "additions": 183,
+      "deletions": 14,
+      "files_count": 11,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "f75e51d580374d518a8ceefc1422a009ffe67311",
+      "short_hash": "f75e51d5",
+      "author": "mksglu",
+      "date": "2026-11-06T16:23:58+03:00",
+      "subject": "fix: doctor reads codex plugin list --json whole, no 1 MiB cut (#1322)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 74,
+      "deletions": 26,
+      "files_count": 5,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "cce4099e8a5af292b23d61ef2892431f3b20c5d6",
+      "short_hash": "cce4099e",
+      "author": "mksglu",
+      "date": "2026-11-06T16:01:32+03:00",
+      "subject": "fix: Codex Stop hook decodes and gets the empty reply; doctor D5 sends a Stop probe (#1323)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 125,
+      "deletions": 11,
+      "files_count": 9,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "2a8532ceb45c17b38951fd05a8d4de487d11ed53",
+      "short_hash": "2a8532ce",
+      "author": "mksglu",
+      "date": "2026-11-07T20:52:03+03:00",
+      "subject": "fix: issue intake sets type labels, reads setup reports, marks same-fingerprint duplicates",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 547,
+      "deletions": 13,
+      "files_count": 9,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "a3d3ace51d6e9855afdcf95159fa370a02616299",
+      "short_hash": "a3d3ace5",
+      "author": "mksglu",
+      "date": "2026-11-07T20:53:10+03:00",
+      "subject": "fix: ZCode Read of images over 16 KB reaches the model; doctor D5 sends the media probe for zcode (#1333)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 43,
+      "deletions": 2,
+      "files_count": 5,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "2a33f45b9024e502609f7378fdcc53aed868bc3a",
+      "short_hash": "2a33f45b",
+      "author": "mksglu",
+      "date": "2026-11-07T23:08:36+03:00",
+      "subject": "fix: codex MCP entry carries CODEX_HOME so doctor D3 passes in Codex Desktop (#1327)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 119,
+      "deletions": 12,
+      "files_count": 8,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "35d5098088774847ef74cb3c5406fe5c19871adb",
+      "short_hash": "35d50980",
+      "author": "mksglu",
+      "date": "2026-11-07T23:15:29+03:00",
+      "subject": "fix: setup checks Node first and names Node too old, one text for cli, server, hook and doctor D2 (#1328, #1329)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 80,
+      "deletions": 15,
+      "files_count": 13,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "f07a8fd8f6ad903d27289fc02238744a39cd8508",
+      "short_hash": "f07a8fd8",
+      "author": "mksglu",
+      "date": "2026-11-07T23:58:56+03:00",
+      "subject": "fix: post-compact recall queries the current prompt only, not the first prompt (#1330)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 77,
+      "deletions": 17,
+      "files_count": 7,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "2aed57aeb12401600fbe9323ab9de74bff65e899",
+      "short_hash": "2aed57ae",
+      "author": "mksglu",
+      "date": "2026-11-08T00:11:52+03:00",
+      "subject": "fix: OpenCode ctx_* tools go through OpenCode permission rules (#1331)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 209,
+      "deletions": 11,
+      "files_count": 9,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "ee0a1f6058f6abdb5af70b05f825a997bb15615d",
+      "short_hash": "ee0a1f60",
+      "author": "mksglu",
+      "date": "2026-11-08T00:52:38+03:00",
+      "subject": "fix: skill and rule files under the agent's config dir reach the model whole; Read deny names a route that works; CTX_REPLACE_TRIGGER_BYTES setting (#1326)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 299,
+      "deletions": 27,
+      "files_count": 18,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    }
+  ]
+}

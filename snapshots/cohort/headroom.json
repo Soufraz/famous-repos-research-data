@@ -1,0 +1,36 @@
+{
+  "repo": "headroom",
+  "full_name": "headroomlabs-ai/headroom",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "88f935a1eb52ec81cdd60db44627279d411b74ab",
+      "snapshot_date": "2026-07-05T16:00:25-07:00",
+      "first_commit_date": "2026-01-06T23:16:58-08:00",
+      "commits": 1512,
+      "ai_pct": 26.3,
+      "has_agent_config": true,
+      "fix_pct": 52.2,
+      "revert_pct": 0.3,
+      "churn_ratio": 1.71,
+      "survival_rate_pct": 73.9,
+      "code": {
+        "current_loc": 469868,
+        "additions": 626616,
+        "deletions": 156733,
+        "churn_ratio": 1.67,
+        "survival_rate_pct": 75.0
+      },
+      "docs": {
+        "current_loc": 29922,
+        "additions": 49934,
+        "deletions": 20053,
+        "churn_ratio": 2.34,
+        "survival_rate_pct": 59.9
+      },
+      "rapid_fire_pct": 18.4,
+      "unique_authors": 168
+    },
+    "365": null
+  }
+}

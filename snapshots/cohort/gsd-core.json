@@ -1,0 +1,36 @@
+{
+  "repo": "gsd-core",
+  "full_name": "open-gsd/gsd-core",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "f116b761283afe7366817bc3947f963c4aecb0c3",
+      "snapshot_date": "2026-06-13T02:12:16-04:00",
+      "first_commit_date": "2025-12-14T08:16:28-06:00",
+      "commits": 3115,
+      "ai_pct": 52.8,
+      "has_agent_config": true,
+      "fix_pct": 43.9,
+      "revert_pct": 0.4,
+      "churn_ratio": 2.29,
+      "survival_rate_pct": 60.6,
+      "code": {
+        "current_loc": 292959,
+        "additions": 476208,
+        "deletions": 183157,
+        "churn_ratio": 2.25,
+        "survival_rate_pct": 61.5
+      },
+      "docs": {
+        "current_loc": 162754,
+        "additions": 276337,
+        "deletions": 107672,
+        "churn_ratio": 2.36,
+        "survival_rate_pct": 58.9
+      },
+      "rapid_fire_pct": 38.0,
+      "unique_authors": 156
+    },
+    "365": null
+  }
+}

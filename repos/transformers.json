@@ -1,0 +1,681 @@
+{
+  "repo": "transformers",
+  "full_name": "huggingface/transformers",
+  "stars": 168646,
+  "stars_source": "github-api 2026-11-08T10:03:19Z",
+  "selection_topics": [
+    "llm"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2018-10-29T13:56:00Z",
+    "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+    "fork": false,
+    "forks": 35138,
+    "full_name": "huggingface/transformers",
+    "pushed_at": "2026-11-08T00:34:29Z",
+    "stars": 168646,
+    "fetched_at": "2026-11-08T10:03:19Z"
+  },
+  "url": "https://github.com/huggingface/transformers",
+  "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "a6f5c8676b158c367dc3389f68dde7a97fb619d6",
+    "head_date": "2026-11-07T21:57:00+01:00",
+    "history_complete": true,
+    "non_merge_commits": 24176,
+    "merge_commits": 521,
+    "maintenance_bot_commits": 194,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 235,
+    "explicit_ai_pct": 1.0,
+    "by_tool": {
+      "claude": 212,
+      "copilot": 7,
+      "cursor": 7,
+      "other": 4,
+      "codex": 3,
+      "gemini": 2
+    },
+    "by_signal": {
+      "co-author": 234,
+      "agent-author": 1
+    },
+    "recent_180d": {
+      "commits": 1832,
+      "ai_pct": 10.0,
+      "fix_pct": 40.1
+    },
+    "first_365d": {
+      "commits": 1707,
+      "ai_pct": 0.0,
+      "fix_pct": 27.1
+    },
+    "agent_config": {
+      "files": {
+        ".github/copilot-instructions.md": "2025-09-01T14:09:54+01:00",
+        "AGENTS.md": "2025-06-10T16:27:37Z",
+        "CLAUDE.md": "2026-02-24T14:48:34Z"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2025-06-10T16:27:37Z"
+    },
+    "bot_commit_count": 194
+  },
+  "churn_and_stability": {
+    "total_commits": 23982,
+    "first_commit_date": "2018-10-29T14:56:02+01:00",
+    "last_commit_date": "2026-11-07T21:57:00+01:00",
+    "current_loc": 2067926,
+    "total_historical_additions": 4528420,
+    "total_historical_deletions": 2459719,
+    "total_churn": 6988139,
+    "churn_ratio": 3.38,
+    "survival_rate_pct": 45.7,
+    "code": {
+      "current_loc": 1814070,
+      "additions": 4001702,
+      "deletions": 2186839,
+      "churn_ratio": 3.41,
+      "survival_rate_pct": 45.3
+    },
+    "docs": {
+      "current_loc": 253856,
+      "additions": 526718,
+      "deletions": 272880,
+      "churn_ratio": 3.15,
+      "survival_rate_pct": 48.2
+    },
+    "fix_commits": 7594,
+    "fix_pct": 31.7,
+    "revert_commits": 130,
+    "revert_pct": 0.5,
+    "trial_error_commits": 7823,
+    "trial_error_pct": 32.6,
+    "rapid_fire_commits": 2792,
+    "rapid_fire_pct": 11.6,
+    "trial_error_chains": 839,
+    "suspicious_additions_count": 979,
+    "top5_hotspot_volatility_pct": 3.8
+  },
+  "code_hygiene": {
+    "total_files": 4482,
+    "docs_files": 1406,
+    "avg_file_loc": 404.7,
+    "test_loc": 481942,
+    "test_files": 1178,
+    "test_ratio_pct": 26.6,
+    "comment_ratio_pct": 10.1,
+    "monolith_count": 438,
+    "top_languages": {
+      ".py": 1813993,
+      ".sh": 77
+    }
+  },
+  "authors": {
+    "unique_authors": 4075,
+    "top_authors": [
+      {
+        "name": "Yih-Dar",
+        "commits": 1604,
+        "pct": 6.7
+      },
+      {
+        "name": "Sylvain Gugger",
+        "commits": 1223,
+        "pct": 5.1
+      },
+      {
+        "name": "thomwolf",
+        "commits": 891,
+        "pct": 3.7
+      },
+      {
+        "name": "Patrick von Platen",
+        "commits": 752,
+        "pct": 3.1
+      },
+      {
+        "name": "Joao Gante",
+        "commits": 596,
+        "pct": 2.5
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 1.5,
+    "p75": 8.9,
+    "p90": 66.9,
+    "p95": 247.3,
+    "p99": 4320.0,
+    "avg": 302.7
+  },
+  "hotspots": [
+    {
+      "file": "src/transformers/modeling_utils.py",
+      "commits": 1115,
+      "additions": 21178,
+      "deletions": 17296,
+      "churn": 38474,
+      "first_seen": "2019-12-22T13:54:22+01:00",
+      "last_seen": "2026-11-06T19:27:25+01:00"
+    },
+    {
+      "file": "src/transformers/__init__.py",
+      "commits": 1050,
+      "additions": 15746,
+      "deletions": 15330,
+      "churn": 31076,
+      "first_seen": "2019-12-22T13:54:22+01:00",
+      "last_seen": "2026-10-30T16:23:16+09:00"
+    },
+    {
+      "file": "src/transformers/trainer.py",
+      "commits": 1016,
+      "additions": 17114,
+      "deletions": 12358,
+      "churn": 29472,
+      "first_seen": "2020-04-21T20:11:56-04:00",
+      "last_seen": "2026-11-06T03:23:42Z"
+    },
+    {
+      "file": "README.md",
+      "commits": 716,
+      "additions": 6034,
+      "deletions": 5696,
+      "churn": 11730,
+      "first_seen": "2018-10-29T14:56:02+01:00",
+      "last_seen": "2026-10-22T17:26:03+05:30"
+    },
+    {
+      "file": "tests/test_modeling_common.py",
+      "commits": 707,
+      "additions": 16397,
+      "deletions": 10456,
+      "churn": 26853,
+      "first_seen": "2019-12-22T13:44:13+01:00",
+      "last_seen": "2026-11-06T14:11:07Z"
+    },
+    {
+      "file": "setup.py",
+      "commits": 673,
+      "additions": 1844,
+      "deletions": 1463,
+      "churn": 3307,
+      "first_seen": "2018-11-15T20:56:10+01:00",
+      "last_seen": "2026-11-06T15:18:11Z"
+    },
+    {
+      "file": "src/transformers/models/auto/modeling_auto.py",
+      "commits": 638,
+      "additions": 4171,
+      "deletions": 3061,
+      "churn": 7232,
+      "first_seen": "2020-11-16T21:43:42-05:00",
+      "last_seen": "2026-11-05T15:16:08Z"
+    },
+    {
+      "file": "src/transformers/models/auto/configuration_auto.py",
+      "commits": 513,
+      "additions": 2428,
+      "deletions": 2306,
+      "churn": 4734,
+      "first_seen": "2020-11-16T21:43:42-05:00",
+      "last_seen": "2026-10-20T17:42:52+02:00"
+    },
+    {
+      "file": "src/transformers/training_args.py",
+      "commits": 510,
+      "additions": 7206,
+      "deletions": 4244,
+      "churn": 11450,
+      "first_seen": "2020-04-10T12:21:58-04:00",
+      "last_seen": "2026-11-06T19:55:30Z"
+    },
+    {
+      "file": "src/transformers/generation/utils.py",
+      "commits": 491,
+      "additions": 14649,
+      "deletions": 10130,
+      "churn": 24779,
+      "first_seen": "2022-11-09T15:34:08Z",
+      "last_seen": "2026-11-04T23:25:37+05:30"
+    },
+    {
+      "file": "src/transformers/models/__init__.py",
+      "commits": 467,
+      "additions": 921,
+      "deletions": 351,
+      "churn": 1272,
+      "first_seen": "2020-11-17T07:39:37-05:00",
+      "last_seen": "2026-11-05T15:16:08Z"
+    },
+    {
+      "file": "src/transformers/utils/dummy_pt_objects.py",
+      "commits": 453,
+      "additions": 17187,
+      "deletions": 16727,
+      "churn": 33914,
+      "first_seen": "2020-10-05T09:12:04-04:00",
+      "last_seen": "2026-10-12T15:36:21Z"
+    },
+    {
+      "file": "src/transformers/models/auto/tokenization_auto.py",
+      "commits": 418,
+      "additions": 3996,
+      "deletions": 3280,
+      "churn": 7276,
+      "first_seen": "2020-11-16T21:43:42-05:00",
+      "last_seen": "2026-10-30T13:51:50Z"
+    },
+    {
+      "file": "src/transformers/testing_utils.py",
+      "commits": 399,
+      "additions": 7172,
+      "deletions": 1776,
+      "churn": 8948,
+      "first_seen": "2020-07-01T10:31:17-04:00",
+      "last_seen": "2026-11-03T19:31:58+01:00"
+    },
+    {
+      "file": "src/transformers/tokenization_utils_base.py",
+      "commits": 395,
+      "additions": 11110,
+      "deletions": 7328,
+      "churn": 18438,
+      "first_seen": "2020-06-15T17:12:51-04:00",
+      "last_seen": "2026-11-03T22:32:42Z"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "tests/test_modeling_common.py",
+      "loc": 6839
+    },
+    {
+      "file": "tests/generation/test_utils.py",
+      "loc": 6180
+    },
+    {
+      "file": "src/transformers/testing_utils.py",
+      "loc": 5516
+    },
+    {
+      "file": "src/transformers/modeling_utils.py",
+      "loc": 5285
+    },
+    {
+      "file": "src/transformers/utils/auto_docstring.py",
+      "loc": 4862
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "8833c9181eec925f1b4e0096db516462044345df",
+      "short_hash": "8833c9181e",
+      "author": "Ferdinand Mom",
+      "date": "2026-11-06T03:23:42Z",
+      "subject": "[`distributed`] Trainer: reduce FSDP/HSDP gradients on the last micro-batch only (#50286)",
+      "coauthors": [
+        "Marc Sun"
+      ],
+      "additions": 107,
+      "deletions": 1,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "85db0e0663d95d2b030f6f31b2c7c1dcdc08b6a3",
+      "short_hash": "85db0e0663",
+      "author": "Raushan Turganbay",
+      "date": "2026-11-06T04:00:06Z",
+      "subject": "Subconfig creation in testers (#49528)",
+      "coauthors": [],
+      "additions": 667,
+      "deletions": 1505,
+      "files_count": 107,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "6df64031b9fa0ecebe50161df8ad42ed8d36595c",
+      "short_hash": "6df64031b9",
+      "author": "Harshal Janjani",
+      "date": "2026-11-06T06:17:01Z",
+      "subject": "[vLLM] Add Omni token counting and text replacement offsets for the Transformers backend (#49435)",
+      "coauthors": [],
+      "additions": 643,
+      "deletions": 487,
+      "files_count": 13,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "9fa60240cda17fa4a4de951c6fe92c2bff5524a1",
+      "short_hash": "9fa60240cd",
+      "author": "Harry Mellor",
+      "date": "2026-11-06T09:42:39Z",
+      "subject": "[VibeVoice] Avoid GPU syncs when removing audio padding (#50417)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 16,
+      "deletions": 12,
+      "files_count": 4,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "72b487d158496eb0b67977aa1ce93a67e685c777",
+      "short_hash": "72b487d158",
+      "author": "Ilyas Moutawwakil",
+      "date": "2026-11-06T10:13:33Z",
+      "subject": "OpenVINO exporter: let OpenVINO fuse attention, RoPE, the KV cache and compressed matmuls (#50311)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 516,
+      "deletions": 83,
+      "files_count": 6,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "c6329dd080cb60758fb8eba34f748a7015b285cb",
+      "short_hash": "c6329dd080",
+      "author": "Raushan Turganbay",
+      "date": "2026-11-06T11:48:35Z",
+      "subject": "Fix! (#50430)",
+      "coauthors": [],
+      "additions": 59,
+      "deletions": 18,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "d0efef1e61c43abbe901ffff5f4a428c8d5a8556",
+      "short_hash": "d0efef1e61",
+      "author": "Anton Vlasjuk",
+      "date": "2026-11-06T13:03:28+01:00",
+      "subject": "[`Colpali`] Fix offload tests (#50432)",
+      "coauthors": [],
+      "additions": 1,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "96cff524c025955adafc0919066b9073490b0442",
+      "short_hash": "96cff524c0",
+      "author": "Yih-Dar",
+      "date": "2026-11-06T15:08:14+01:00",
+      "subject": "[Mistral Large 4] Fix flaky test_cached_decode_matches_cacheless (#50435)",
+      "coauthors": [
+        "ydshieh"
+      ],
+      "additions": 18,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "c5bd76ec51a70c303be110cc04be3d78cf755299",
+      "short_hash": "c5bd76ec51",
+      "author": "Harry Mellor",
+      "date": "2026-11-06T14:11:07Z",
+      "subject": "Capture only the projected hidden states in VLM feature extraction (#49594)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 379,
+      "deletions": 230,
+      "files_count": 78,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "b6bb35a3b21584468f7cb014501a4658662e6fc5",
+      "short_hash": "b6bb35a3b2",
+      "author": "Cyril Vallez",
+      "date": "2026-11-06T15:33:06+01:00",
+      "subject": "[loading] Fix mismatched keys being silently ignored (#50433)",
+      "coauthors": [],
+      "additions": 30,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "7fb5f73b46f101d8fca9b2c102e2b107302671f2",
+      "short_hash": "7fb5f73b46",
+      "author": "benthecarman",
+      "date": "2026-11-06T06:46:28-08:00",
+      "subject": "Allow saving an unchanged generation config (#49914)",
+      "coauthors": [
+        "Cyril Vallez"
+      ],
+      "additions": 27,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "22c26e798b14b6e8c1dc1aaf63540a2387780f32",
+      "short_hash": "22c26e798b",
+      "author": "cherry77-cloud",
+      "date": "2026-11-06T23:00:43+08:00",
+      "subject": "Fix DeepSeek-V4 compression cache reordering for beam search (#50348)",
+      "coauthors": [],
+      "additions": 28,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "cea2686204c192ec7773823f8d017116fca30931",
+      "short_hash": "cea2686204",
+      "author": "Ilyas Moutawwakil",
+      "date": "2026-11-06T16:17:56+01:00",
+      "subject": "Weight loading: conversion ops declare many-to-many support, and four small loader fixes (#49773)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 66,
+      "deletions": 13,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "316217d3273c70f0b02532e181ad7fd86b5bc1b5",
+      "short_hash": "316217d327",
+      "author": "Matt",
+      "date": "2026-11-06T15:18:11Z",
+      "subject": "Harden our Jinja sandboxing (#50431)",
+      "coauthors": [],
+      "additions": 187,
+      "deletions": 7,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "826edb70cd5b7b4e5b8b66f396f90b88898fdec1",
+      "short_hash": "826edb70cd",
+      "author": "Yih-Dar",
+      "date": "2026-11-06T16:41:01+01:00",
+      "subject": "vLLM CI: fix install and KV-cache memory, add failure report job (#50436)",
+      "coauthors": [
+        "ydshieh"
+      ],
+      "additions": 1107,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "92b21f8daa4b226821ab9aa5774f4b4887af0225",
+      "short_hash": "92b21f8daa",
+      "author": "Alvaro Moran",
+      "date": "2026-11-06T16:21:00Z",
+      "subject": "[distributed - TPU] Fix tied-weight comparisons on TPUs when using TP (#50406)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 71,
+      "deletions": 4,
+      "files_count": 3,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "073a202c68492405e2f9ccbea5853a5394c8beb9",
+      "short_hash": "073a202c68",
+      "author": "Cyril Vallez",
+      "date": "2026-11-06T19:27:25+01:00",
+      "subject": "Fix duplicated docstring (#50446)",
+      "coauthors": [],
+      "additions": 18,
+      "deletions": 16,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "2c6a00f97fab4643f473c1b2e3d430399175abf5",
+      "short_hash": "2c6a00f97f",
+      "author": "pculliton",
+      "date": "2026-11-06T14:34:54-05:00",
+      "subject": "[Gemma4] Stop prefill at last KV-owning layer when logits_to_keep=1 (#49640)",
+      "coauthors": [
+        "Cyril Vallez",
+        "Cyril Vallez"
+      ],
+      "additions": 336,
+      "deletions": 8,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "0f53828e83f2212060233d2ea552cc76617b8712",
+      "short_hash": "0f53828e83",
+      "author": "adi274903",
+      "date": "2026-11-06T19:55:30Z",
+      "subject": "Clarify warmup_steps error message to warmup_steps >= 0 (#50364)",
+      "coauthors": [],
+      "additions": 2,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "a6f5c8676b158c367dc3389f68dde7a97fb619d6",
+      "short_hash": "a6f5c8676b",
+      "author": "Yih-Dar",
+      "date": "2026-11-07T21:57:00+01:00",
+      "subject": "[Docker] Update Nvidia CI and Flash Attn CI images to torch 2.15 / cu132 (#50467)",
+      "coauthors": [
+        "ydshieh"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

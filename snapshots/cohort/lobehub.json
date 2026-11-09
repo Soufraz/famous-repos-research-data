@@ -1,0 +1,63 @@
+{
+  "repo": "lobehub",
+  "full_name": "lobehub/lobehub",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "98e1f99f6e59e140f85c651516af7fdd167c1a8f",
+      "snapshot_date": "2023-11-16T19:11:20Z",
+      "first_commit_date": "2023-05-21T07:19:20Z",
+      "commits": 679,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 22.7,
+      "revert_pct": 0.0,
+      "churn_ratio": 2.64,
+      "survival_rate_pct": 55.0,
+      "code": {
+        "current_loc": 22555,
+        "additions": 42752,
+        "deletions": 20193,
+        "churn_ratio": 2.79,
+        "survival_rate_pct": 52.8
+      },
+      "docs": {
+        "current_loc": 3638,
+        "additions": 4906,
+        "deletions": 1268,
+        "churn_ratio": 1.7,
+        "survival_rate_pct": 74.2
+      },
+      "rapid_fire_pct": 13.7,
+      "unique_authors": 24
+    },
+    "365": {
+      "snapshot_commit": "6638c702d448cfcc156c505bec4d5e5cd6ab9c0f",
+      "snapshot_date": "2024-05-20T06:12:49Z",
+      "first_commit_date": "2023-05-21T07:19:20Z",
+      "commits": 1463,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 29.2,
+      "revert_pct": 0.7,
+      "churn_ratio": 2.68,
+      "survival_rate_pct": 54.3,
+      "code": {
+        "current_loc": 77916,
+        "additions": 144035,
+        "deletions": 66115,
+        "churn_ratio": 2.7,
+        "survival_rate_pct": 54.1
+      },
+      "docs": {
+        "current_loc": 14733,
+        "additions": 26631,
+        "deletions": 11898,
+        "churn_ratio": 2.62,
+        "survival_rate_pct": 55.3
+      },
+      "rapid_fire_pct": 13.3,
+      "unique_authors": 111
+    }
+  }
+}

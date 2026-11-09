@@ -1,0 +1,63 @@
+{
+  "repo": "PageIndex",
+  "full_name": "VectifyAI/PageIndex",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "644d4bbda6a3c47df804cf77f14320a3326d5f2c",
+      "snapshot_date": "2025-09-20T01:10:25+08:00",
+      "first_commit_date": "2025-04-01T18:54:08+08:00",
+      "commits": 169,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 35.5,
+      "revert_pct": 0.0,
+      "churn_ratio": 1.9,
+      "survival_rate_pct": 68.9,
+      "code": {
+        "current_loc": 2330,
+        "additions": 2868,
+        "deletions": 538,
+        "churn_ratio": 1.46,
+        "survival_rate_pct": 81.2
+      },
+      "docs": {
+        "current_loc": 449,
+        "additions": 1166,
+        "deletions": 717,
+        "churn_ratio": 4.19,
+        "survival_rate_pct": 38.5
+      },
+      "rapid_fire_pct": 15.4,
+      "unique_authors": 5
+    },
+    "365": {
+      "snapshot_commit": "8f1ed7783b9e1252ef8c44891ed68f7c22a0ab7d",
+      "snapshot_date": "2026-03-30T01:34:45+08:00",
+      "first_commit_date": "2025-04-01T18:54:08+08:00",
+      "commits": 252,
+      "ai_pct": 1.2,
+      "has_agent_config": true,
+      "fix_pct": 28.2,
+      "revert_pct": 0.0,
+      "churn_ratio": 2.24,
+      "survival_rate_pct": 61.8,
+      "code": {
+        "current_loc": 3249,
+        "additions": 4560,
+        "deletions": 1311,
+        "churn_ratio": 1.81,
+        "survival_rate_pct": 71.2
+      },
+      "docs": {
+        "current_loc": 607,
+        "additions": 1678,
+        "deletions": 1071,
+        "churn_ratio": 4.53,
+        "survival_rate_pct": 36.2
+      },
+      "rapid_fire_pct": 11.1,
+      "unique_authors": 11
+    }
+  }
+}

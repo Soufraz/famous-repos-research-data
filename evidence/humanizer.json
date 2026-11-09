@@ -1,0 +1,22 @@
+{
+  "repo": "humanizer",
+  "head_commit": "0ef9fe5",
+  "published_results": [
+    {
+      "claim": "In a blind test, judges preferred Humanizer's rewrite over the original AI text 16 times out of 16 ([#229](https://github.com/blader/humanizer/issues/229)).",
+      "metric": "blind pairwise human preference (rewrite vs original AI text)",
+      "value": "16 out of 16",
+      "baseline": "original AI-generated text",
+      "evidence_type": "external",
+      "files": [
+        "README.md:16"
+      ],
+      "reproduce_command": null,
+      "notes": "Only supporting material is the project's own GitHub issue https://github.com/blader/humanizer/issues/229 (not in the clone, not verifiable offline). No judge protocol, sample texts, or judge identities committed. Not an independent third-party evaluation."
+    }
+  ],
+  "strongest_evidence_type": "external",
+  "summary": "The only quantitative result is a single README line claiming judges preferred the rewrite 16 of 16 times in a blind test, backed only by a link to the project's own GitHub issue #229; no test texts, protocol, or harness exist in the repo (scripts/validate-package.py only lints package files). The README explicitly disclaims AI-detector evasion and states detectors still flag most output, without giving a number.",
+  "result_focus": "outcome",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}

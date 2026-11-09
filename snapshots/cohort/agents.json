@@ -1,0 +1,63 @@
+{
+  "repo": "agents",
+  "full_name": "wshobson/agents",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "1135ac606247648d9e4724f027280d4114282858",
+      "snapshot_date": "2026-01-19T17:08:27-05:00",
+      "first_commit_date": "2025-07-24T19:29:24-04:00",
+      "commits": 181,
+      "ai_pct": 4.4,
+      "has_agent_config": false,
+      "fix_pct": 16.0,
+      "revert_pct": 0.0,
+      "churn_ratio": 1.85,
+      "survival_rate_pct": 65.3,
+      "code": {
+        "current_loc": 1564,
+        "additions": 1589,
+        "deletions": 25,
+        "churn_ratio": 1.03,
+        "survival_rate_pct": 98.4
+      },
+      "docs": {
+        "current_loc": 170842,
+        "additions": 262574,
+        "deletions": 55176,
+        "churn_ratio": 1.86,
+        "survival_rate_pct": 65.1
+      },
+      "rapid_fire_pct": 16.0,
+      "unique_authors": 33
+    },
+    "365": {
+      "snapshot_commit": "c4b82b0ad771190355eb8e204b1329732a18449a",
+      "snapshot_date": "2026-07-18T17:25:19-04:00",
+      "first_commit_date": "2025-07-24T19:29:24-04:00",
+      "commits": 420,
+      "ai_pct": 14.0,
+      "has_agent_config": true,
+      "fix_pct": 26.2,
+      "revert_pct": 0.7,
+      "churn_ratio": 2.23,
+      "survival_rate_pct": 58.9,
+      "code": {
+        "current_loc": 15510,
+        "additions": 18315,
+        "deletions": 2805,
+        "churn_ratio": 1.36,
+        "survival_rate_pct": 84.7
+      },
+      "docs": {
+        "current_loc": 201431,
+        "additions": 350207,
+        "deletions": 112219,
+        "churn_ratio": 2.3,
+        "survival_rate_pct": 57.5
+      },
+      "rapid_fire_pct": 22.1,
+      "unique_authors": 79
+    }
+  }
+}

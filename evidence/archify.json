@@ -1,0 +1,76 @@
+{
+  "repo": "archify",
+  "head_commit": "a4065941",
+  "published_results": [
+    {
+      "claim": "The calibrated verifier reports 10/15 first-pass usable, with five deterministic visual-quality failures and no semantic or operational failures.",
+      "metric": "firstPassUsable (semantic + `validate --quality showcase` + identified visual review all pass on attempt 1)",
+      "value": "10/15",
+      "baseline": null,
+      "evidence_type": "harness+results",
+      "files": [
+        "benchmarks/ordinary-model-floor/README.md:96-100",
+        "benchmarks/ordinary-model-floor/results/2026-07-26-pi-three-models.json",
+        "benchmarks/ordinary-model-floor/benchmark.mjs"
+      ],
+      "reproduce_command": "node benchmarks/ordinary-model-floor/benchmark.mjs report --results /path/to/results.jsonl --manifest benchmarks/ordinary-model-floor/manifest.json"
+    },
+    {
+      "claim": "Under that same current verifier, both the original matrix and the post-fix matrix score 8/15: the single sample does **not** demonstrate an overall uplift.",
+      "metric": "firstPassUsable after verifier tightening, before vs after a fix",
+      "value": "8/15 (post-fix)",
+      "baseline": "8/15 (original matrix reverified with current verifier; originally recorded as 10/15)",
+      "evidence_type": "harness+results",
+      "files": [
+        "benchmarks/ordinary-model-floor/README.md:102-110",
+        "benchmarks/ordinary-model-floor/results/2026-07-26-pi-three-models-postfix.json"
+      ],
+      "reproduce_command": "node benchmarks/ordinary-model-floor/benchmark.mjs report --results /path/to/results.jsonl --manifest benchmarks/ordinary-model-floor/manifest.json"
+    },
+    {
+      "claim": "The post-fix distribution is MiniMax 4/5, DeepSeek 2/5, and Qwen 2/5.",
+      "metric": "firstPassUsable per model (minimax-m3, deepseek-v4-flash, qwen3.7-plus per results JSON)",
+      "value": "MiniMax 4/5, DeepSeek 2/5, Qwen 2/5",
+      "baseline": null,
+      "evidence_type": "harness+results",
+      "files": [
+        "benchmarks/ordinary-model-floor/README.md:111",
+        "benchmarks/ordinary-model-floor/results/2026-07-26-pi-three-models-postfix.json"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Reverification keeps the overall result at 8/15 (MiniMax 3/5, Qwen 3/5, DeepSeek 2/5), so it still does **not** demonstrate an overall uplift. The targeted lifecycle case improves from 0/3 to 1/3 and the architecture case from 2/3 to 3/3, while workflow and data-flow regress in this sample.",
+      "metric": "firstPassUsable, quality-first run vs prior runs",
+      "value": "8/15 overall; lifecycle 1/3; architecture 3/3",
+      "baseline": "8/15 overall; lifecycle 0/3; architecture 2/3 (prior run)",
+      "evidence_type": "harness+results",
+      "files": [
+        "benchmarks/ordinary-model-floor/README.md:117-127",
+        "benchmarks/ordinary-model-floor/results/2026-07-26-pi-three-models-quality-first.json"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "No published numbers. \"how efficiently do Archify receipts let a caller converge to a passing artifact?\" (rounds to pass, first-round disclosure rate, observable token cost)",
+      "metric": "Repair rounds, defect disclosure, lexical token estimate on synthetic injected defects",
+      "value": null,
+      "baseline": "oracle repair mode (upper bound)",
+      "evidence_type": "harness_only",
+      "files": [
+        "benchmarks/repair-rounds/README.md:5-18",
+        "benchmarks/repair-rounds/benchmark.mjs"
+      ],
+      "reproduce_command": "node benchmarks/repair-rounds/benchmark.mjs run --manifest benchmarks/repair-rounds/manifest.json > results.jsonl"
+    }
+  ],
+  "strongest_evidence_type": "harness+results",
+  "summary": "Archify publishes three committed 15-run matrices (3 models x 5 tasks) from its ordinary-model-floor benchmark, with per-run receipts and a runnable verifier and report harness. The first run recorded 10/15 first-pass usable; under the current verifier the original, post-fix and quality-first matrices each score 8/15, and the README states that the fixes do not demonstrate an overall uplift (lifecycle improved from 0/3 to 1/3 and architecture from 2/3 to 3/3, while workflow and data-flow regressed). Candidate generation uses an external runner and model providers that the repository does not ship, so the numbers can be re-verified from the committed candidates but not regenerated end to end from this checkout. A second harness, repair-rounds, has no published results.",
+  "result_focus": "outcome",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself",
+  "accuracy_check": {
+    "date": "2026-11-08",
+    "numbers_checked": 57,
+    "corrections": []
+  }
+}

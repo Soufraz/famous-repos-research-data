@@ -1,0 +1,661 @@
+{
+  "repo": "ragflow",
+  "full_name": "infiniflow/ragflow",
+  "stars": 93749,
+  "stars_source": "github-api 2026-11-08T08:58:59Z",
+  "selection_topics": [
+    "context-engineering",
+    "agent-harness"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2023-12-12T06:13:13Z",
+    "description": "RAGFlow is an agent-native database: a Retrieval-Augmented Generation (RAG) engine that grew into context infrastructure.",
+    "fork": false,
+    "forks": 11255,
+    "full_name": "infiniflow/ragflow",
+    "pushed_at": "2026-11-06T13:09:08Z",
+    "stars": 93749,
+    "fetched_at": "2026-11-08T08:58:59Z"
+  },
+  "url": "https://github.com/infiniflow/ragflow",
+  "description": "RAGFlow is an agent-native database: a Retrieval-Augmented Generation (RAG) engine that grew into context infrastructure.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "3c6d2255af06164f0818d0959af10de0afd8b8fa",
+    "head_date": "2026-11-06T20:47:08+08:00",
+    "history_complete": true,
+    "non_merge_commits": 10880,
+    "merge_commits": 0,
+    "maintenance_bot_commits": 92,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 260,
+    "explicit_ai_pct": 2.4,
+    "by_tool": {
+      "claude": 141,
+      "other": 59,
+      "cursor": 39,
+      "copilot": 19,
+      "codex": 2
+    },
+    "by_signal": {
+      "co-author": 246,
+      "footer": 14
+    },
+    "recent_180d": {
+      "commits": 4712,
+      "ai_pct": 4.3,
+      "fix_pct": 63.6
+    },
+    "first_365d": {
+      "commits": 1850,
+      "ai_pct": 0.0,
+      "fix_pct": 28.7
+    },
+    "bot_commit_count": 92,
+    "agent_config": {
+      "files": {
+        ".agents/": "2026-03-06T16:42:49+08:00",
+        ".github/copilot-instructions.md": "2025-12-09T16:23:37+08:00",
+        "AGENTS.md": "2025-12-09T16:23:37+08:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2025-12-09T16:23:37+08:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 10788,
+    "first_commit_date": "2023-12-12T14:13:13+08:00",
+    "last_commit_date": "2026-11-06T20:47:08+08:00",
+    "current_loc": 1353513,
+    "total_historical_additions": 2729732,
+    "total_historical_deletions": 1376219,
+    "total_churn": 4105951,
+    "churn_ratio": 3.03,
+    "survival_rate_pct": 49.6,
+    "code": {
+      "current_loc": 1316195,
+      "additions": 2624357,
+      "deletions": 1308162,
+      "churn_ratio": 2.99,
+      "survival_rate_pct": 50.2
+    },
+    "docs": {
+      "current_loc": 37318,
+      "additions": 105375,
+      "deletions": 68057,
+      "churn_ratio": 4.65,
+      "survival_rate_pct": 35.4
+    },
+    "fix_commits": 5314,
+    "fix_pct": 49.3,
+    "revert_commits": 49,
+    "revert_pct": 0.5,
+    "trial_error_commits": 5292,
+    "trial_error_pct": 49.1,
+    "rapid_fire_commits": 2721,
+    "rapid_fire_pct": 25.2,
+    "trial_error_chains": 1518,
+    "suspicious_additions_count": 497,
+    "top5_hotspot_volatility_pct": 2.6
+  },
+  "code_hygiene": {
+    "total_files": 5024,
+    "docs_files": 164,
+    "avg_file_loc": 262.0,
+    "test_loc": 541005,
+    "test_files": 1978,
+    "test_ratio_pct": 41.1,
+    "comment_ratio_pct": 11.9,
+    "monolith_count": 175,
+    "top_languages": {
+      ".go": 994765,
+      ".tsx": 148215,
+      ".ts": 79524,
+      ".py": 31283,
+      ".cpp": 23908
+    }
+  },
+  "authors": {
+    "unique_authors": 943,
+    "top_authors": [
+      {
+        "name": "balibabu",
+        "commits": 1473,
+        "pct": 13.7
+      },
+      {
+        "name": "Kevin Hu",
+        "commits": 790,
+        "pct": 7.3
+      },
+      {
+        "name": "Jin Hai",
+        "commits": 683,
+        "pct": 6.3
+      },
+      {
+        "name": "chanx",
+        "commits": 494,
+        "pct": 4.6
+      },
+      {
+        "name": "Wang Qi",
+        "commits": 411,
+        "pct": 3.8
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 5.3,
+    "p75": 42.6,
+    "p90": 245.5,
+    "p95": 697.5,
+    "p99": 3665.7,
+    "avg": 308.1
+  },
+  "hotspots": [
+    {
+      "file": "rag/llm/chat_model.py",
+      "commits": 303,
+      "additions": 7619,
+      "deletions": 7656,
+      "churn": 15275,
+      "first_seen": "2024-01-15T08:46:22+08:00",
+      "last_seen": "2026-09-28T16:26:02+08:00"
+    },
+    {
+      "file": "README.md",
+      "commits": 299,
+      "additions": 2242,
+      "deletions": 1891,
+      "churn": 4133,
+      "first_seen": "2023-12-12T14:13:13+08:00",
+      "last_seen": "2026-11-06T19:44:48+08:00"
+    },
+    {
+      "file": "rag/svr/task_executor.py",
+      "commits": 288,
+      "additions": 4408,
+      "deletions": 4694,
+      "churn": 9102,
+      "first_seen": "2024-01-31T19:57:45+08:00",
+      "last_seen": "2026-09-28T16:26:02+08:00"
+    },
+    {
+      "file": "README_zh.md",
+      "commits": 270,
+      "additions": 1405,
+      "deletions": 1036,
+      "churn": 2441,
+      "first_seen": "2024-02-28T15:01:12+08:00",
+      "last_seen": "2026-11-06T19:44:48+08:00"
+    },
+    {
+      "file": "docs/references/http_api_reference.md",
+      "commits": 238,
+      "additions": 12465,
+      "deletions": 6146,
+      "churn": 18611,
+      "first_seen": "2024-10-30T19:40:39+08:00",
+      "last_seen": "2026-11-05T18:04:35+08:00"
+    },
+    {
+      "file": "README_ja.md",
+      "commits": 235,
+      "additions": 1583,
+      "deletions": 1284,
+      "churn": 2867,
+      "first_seen": "2024-04-04T10:26:39+09:00",
+      "last_seen": "2026-11-06T19:44:48+08:00"
+    },
+    {
+      "file": "api/db/services/dialog_service.py",
+      "commits": 231,
+      "additions": 5401,
+      "deletions": 5436,
+      "churn": 10837,
+      "first_seen": "2024-01-17T09:43:27+08:00",
+      "last_seen": "2026-09-28T16:26:02+08:00"
+    },
+    {
+      "file": "internal/router/router.go",
+      "commits": 225,
+      "additions": 1803,
+      "deletions": 1077,
+      "churn": 2880,
+      "first_seen": "2026-03-04T19:17:16+08:00",
+      "last_seen": "2026-11-02T19:25:45+08:00"
+    },
+    {
+      "file": "web/src/utils/api.ts",
+      "commits": 212,
+      "additions": 1321,
+      "deletions": 765,
+      "churn": 2086,
+      "first_seen": "2024-01-17T09:37:01+08:00",
+      "last_seen": "2026-11-04T16:14:16+08:00"
+    },
+    {
+      "file": "rag/app/naive.py",
+      "commits": 197,
+      "additions": 3107,
+      "deletions": 3107,
+      "churn": 6214,
+      "first_seen": "2024-02-02T19:21:37+08:00",
+      "last_seen": "2026-09-28T16:26:02+08:00"
+    },
+    {
+      "file": "rag/llm/embedding_model.py",
+      "commits": 194,
+      "additions": 3027,
+      "deletions": 3027,
+      "churn": 6054,
+      "first_seen": "2024-01-15T08:46:22+08:00",
+      "last_seen": "2026-09-28T16:26:02+08:00"
+    },
+    {
+      "file": "api/db/services/document_service.py",
+      "commits": 181,
+      "additions": 3087,
+      "deletions": 3176,
+      "churn": 6263,
+      "first_seen": "2024-01-17T09:43:27+08:00",
+      "last_seen": "2026-09-28T16:26:02+08:00"
+    },
+    {
+      "file": "README_ko.md",
+      "commits": 176,
+      "additions": 1186,
+      "deletions": 886,
+      "churn": 2072,
+      "first_seen": "2024-08-22T13:33:01+09:00",
+      "last_seen": "2026-11-06T19:44:48+08:00"
+    },
+    {
+      "file": "rag/nlp/search.py",
+      "commits": 173,
+      "additions": 2090,
+      "deletions": 2342,
+      "churn": 4432,
+      "first_seen": "2024-01-15T08:46:22+08:00",
+      "last_seen": "2026-09-28T16:26:02+08:00"
+    },
+    {
+      "file": "api/apps/document_app.py",
+      "commits": 170,
+      "additions": 2813,
+      "deletions": 3093,
+      "churn": 5906,
+      "first_seen": "2024-01-17T09:43:27+08:00",
+      "last_seen": "2026-05-08T13:26:13+08:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "internal/binding/cpp/re2/unicode_groups.cc",
+      "loc": 6512
+    },
+    {
+      "file": "internal/service/document/document_test.go",
+      "loc": 5847
+    },
+    {
+      "file": "internal/service/chat_pipeline.go",
+      "loc": 5120
+    },
+    {
+      "file": "internal/cli/user_parser.go",
+      "loc": 4537
+    },
+    {
+      "file": "internal/cli/user_command.go",
+      "loc": 4136
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "f1d387553b0e1a44172bd3afa52fca5e12b7a896",
+      "short_hash": "f1d387553",
+      "author": "ZZZZY",
+      "date": "2026-11-06T15:02:17+08:00",
+      "subject": "fix(es): prevent Lucene injection in session_id and enforce dataset scope in DeleteChunks (#21981)",
+      "coauthors": [],
+      "additions": 208,
+      "deletions": 12,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "f41da2e8130ebb034002e9dd433a7a20e66d9748",
+      "short_hash": "f41da2e81",
+      "author": "chanx",
+      "date": "2026-11-06T15:09:36+08:00",
+      "subject": "fix(web): truncate overflowing titles in embedded chat headers (#22091)",
+      "coauthors": [],
+      "additions": 30,
+      "deletions": 15,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "832db8a5de778179a92322ee3392be46810dcaf0",
+      "short_hash": "832db8a5d",
+      "author": "ciel",
+      "date": "2026-11-06T15:14:36+08:00",
+      "subject": "fix: prefix agent channel sessions with the chat channel name (#22090)",
+      "coauthors": [],
+      "additions": 31,
+      "deletions": 0,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "3af179b868e86cbef5060ad2dc650bc6d66f18ed",
+      "short_hash": "3af179b86",
+      "author": "ciel",
+      "date": "2026-11-06T15:25:37+08:00",
+      "subject": "feat(chatchannel): stream Feishu, WeCom and DingTalk replies (#22041)",
+      "coauthors": [],
+      "additions": 2084,
+      "deletions": 43,
+      "files_count": 14,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "62d61ed26230d5dbb85f33d9d91b1a9c48003541",
+      "short_hash": "62d61ed26",
+      "author": "ciel",
+      "date": "2026-11-06T15:25:47+08:00",
+      "subject": "fix(channels): truncate Telegram and Discord upstream error bodies to 200 bytes (#22075)",
+      "coauthors": [],
+      "additions": 4,
+      "deletions": 4,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "c7944bfc3f1d7cbb534f47401321e48be23fbf77",
+      "short_hash": "c7944bfc3",
+      "author": "Sbaaoui Idriss",
+      "date": "2026-11-06T15:55:59+08:00",
+      "subject": "fix(channels): apply saved agent updates to existing conversations (#22093)",
+      "coauthors": [],
+      "additions": 234,
+      "deletions": 7,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "ed7510638ee1a477128ffe543ec7d76668bc2df8",
+      "short_hash": "ed7510638",
+      "author": "xugangqiang",
+      "date": "2026-11-06T16:33:19+08:00",
+      "subject": "Revert \"Provision native libs from versioned user cache (offline CI, drop /opt pre-bake)\" (#22097)",
+      "coauthors": [],
+      "additions": 140,
+      "deletions": 615,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": true
+    },
+    {
+      "hash": "50db7f5c7a6f41015fa5a2e1b0675a037e5ad085",
+      "short_hash": "50db7f5c7",
+      "author": "chanx",
+      "date": "2026-11-06T16:37:12+08:00",
+      "subject": "fix(web): refresh tenant user list after removing a member (#22096)",
+      "coauthors": [],
+      "additions": 5,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "7bf05bcb3c34a530a0f2ee1385ec3b73e1bca30f",
+      "short_hash": "7bf05bcb3",
+      "author": "ZZZZY",
+      "date": "2026-11-06T16:54:45+08:00",
+      "subject": "fix(test): fix always-true assertions in reranker normalize test (#22039)",
+      "coauthors": [],
+      "additions": 4,
+      "deletions": 3,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "fa813113e1058f78616f408d8235c1371d6c4b16",
+      "short_hash": "fa813113e",
+      "author": "ZZZZY",
+      "date": "2026-11-06T16:56:19+08:00",
+      "subject": "fix(dataset): sync folder rename in same transaction to prevent binding loss (#22021)",
+      "coauthors": [],
+      "additions": 480,
+      "deletions": 12,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "3a6b6dca78a07356c5a0ebc4ec5debfe93ac1698",
+      "short_hash": "3a6b6dca7",
+      "author": "jay77721",
+      "date": "2026-11-06T17:03:32+08:00",
+      "subject": "refactor(ingestion): centralize component names and identity checks (#22081)",
+      "coauthors": [],
+      "additions": 629,
+      "deletions": 216,
+      "files_count": 42,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "8ba216b1c198d90dc82b298354b750d2d0e9dbda",
+      "short_hash": "8ba216b1c",
+      "author": "jay77721",
+      "date": "2026-11-06T18:03:00+08:00",
+      "subject": "fix(deepdoc): preserve missed PDF table rows and merged headers (#22073)",
+      "coauthors": [],
+      "additions": 850,
+      "deletions": 492,
+      "files_count": 20,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "e2baf6d5113b0945f27f469f9be0880c1c3a3f0e",
+      "short_hash": "e2baf6d51",
+      "author": "Sbaaoui Idriss",
+      "date": "2026-11-06T19:04:29+08:00",
+      "subject": "fix(channels): strip citations from outgoing replies (#22106)",
+      "coauthors": [],
+      "additions": 26,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "c1711a2be1d427b8eaabb2d9aee2550f1c094f43",
+      "short_hash": "c1711a2be",
+      "author": "Sbaaoui Idriss",
+      "date": "2026-11-06T19:07:19+08:00",
+      "subject": "fix(syncer): retry startup task publication failures (#22101)",
+      "coauthors": [],
+      "additions": 5,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "61c46bf6223a1d790a051247b4f0e942407966b1",
+      "short_hash": "61c46bf62",
+      "author": "buua436",
+      "date": "2026-11-06T19:09:30+08:00",
+      "subject": "fix: align ChatChannel permission tests (#22107)",
+      "coauthors": [],
+      "additions": 5,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "0011888fef48cefdcc74a942f49d51f1f38d88b6",
+      "short_hash": "0011888fe",
+      "author": "CCLUCKY",
+      "date": "2026-11-06T19:22:02+08:00",
+      "subject": "fix(infinity): decode tag_feas on chunk search reads (#21782)",
+      "coauthors": [],
+      "additions": 55,
+      "deletions": 7,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "4f7fc963419d58b28eaa2c5c5c92a33d9bb5103e",
+      "short_hash": "4f7fc9634",
+      "author": "Wang Qi",
+      "date": "2026-11-06T19:44:10+08:00",
+      "subject": "Release notes 1.0 GA (#22109)",
+      "coauthors": [],
+      "additions": 15,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "996df336620c6425f671b64e24b55d27839ef263",
+      "short_hash": "996df3366",
+      "author": "Liu An",
+      "date": "2026-11-06T19:44:48+08:00",
+      "subject": "Docs: Update version references to v1.0.0 in READMEs and docs (#22108)",
+      "coauthors": [],
+      "additions": 35,
+      "deletions": 35,
+      "files_count": 17,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "db1cd5929a7885a3074547791f5ecc4d2f891739",
+      "short_hash": "db1cd5929",
+      "author": "maoyifeng",
+      "date": "2026-11-06T20:08:30+08:00",
+      "subject": "update macos runner to macos-15 for arm64 architecture (#22110)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "3c6d2255af06164f0818d0959af10de0afd8b8fa",
+      "short_hash": "3c6d2255a",
+      "author": "Severus",
+      "date": "2026-11-06T20:47:08+08:00",
+      "subject": "fix(web): add missing skill space dialog i18n strings (#22111)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    }
+  ]
+}

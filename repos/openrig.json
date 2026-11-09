@@ -1,0 +1,657 @@
+{
+  "repo": "openrig",
+  "full_name": "mvschwarz/openrig",
+  "stars": 8737,
+  "stars_source": "github-api 2026-11-08T09:05:54Z",
+  "selection_topics": [
+    "agent-harness"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2026-04-01T06:22:40Z",
+    "description": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.",
+    "fork": false,
+    "forks": 734,
+    "full_name": "mvschwarz/openrig",
+    "pushed_at": "2026-11-08T08:28:09Z",
+    "stars": 8737,
+    "fetched_at": "2026-11-08T09:05:54Z"
+  },
+  "url": "https://github.com/mvschwarz/openrig",
+  "description": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "7d15cefc8eb5fb94cf4c5b2af34c2066956ca4e6",
+    "head_date": "2026-11-07T22:37:50-08:00",
+    "history_complete": true,
+    "non_merge_commits": 4815,
+    "merge_commits": 192,
+    "maintenance_bot_commits": 0,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 1287,
+    "explicit_ai_pct": 26.7,
+    "by_tool": {
+      "claude": 1286,
+      "other": 1
+    },
+    "by_signal": {
+      "co-author": 1267,
+      "footer": 19,
+      "agent-author": 1
+    },
+    "recent_180d": {
+      "commits": 4006,
+      "ai_pct": 19.5,
+      "fix_pct": 52.8
+    },
+    "first_365d": {
+      "commits": 4815,
+      "ai_pct": 26.7,
+      "fix_pct": 49.1
+    },
+    "bot_commit_count": 0,
+    "agent_config": {
+      "files": {
+        ".agents/": "2026-10-01T00:49:21-07:00",
+        ".claude/": "2026-10-01T00:49:21-07:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2026-10-01T00:49:21-07:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 4815,
+    "first_commit_date": "2026-03-23T00:09:13-07:00",
+    "last_commit_date": "2026-11-07T22:37:50-08:00",
+    "current_loc": 992964,
+    "total_historical_additions": 1162430,
+    "total_historical_deletions": 165320,
+    "total_churn": 1327750,
+    "churn_ratio": 1.34,
+    "survival_rate_pct": 85.4,
+    "code": {
+      "current_loc": 931203,
+      "additions": 1053971,
+      "deletions": 118782,
+      "churn_ratio": 1.26,
+      "survival_rate_pct": 88.4
+    },
+    "docs": {
+      "current_loc": 61761,
+      "additions": 108459,
+      "deletions": 46538,
+      "churn_ratio": 2.51,
+      "survival_rate_pct": 56.9
+    },
+    "fix_commits": 2366,
+    "fix_pct": 49.1,
+    "revert_commits": 3,
+    "revert_pct": 0.1,
+    "trial_error_commits": 2368,
+    "trial_error_pct": 49.2,
+    "rapid_fire_commits": 678,
+    "rapid_fire_pct": 14.1,
+    "trial_error_chains": 390,
+    "suspicious_additions_count": 160,
+    "top5_hotspot_volatility_pct": 4.7
+  },
+  "code_hygiene": {
+    "total_files": 3783,
+    "docs_files": 409,
+    "avg_file_loc": 246.2,
+    "test_loc": 566373,
+    "test_files": 2210,
+    "test_ratio_pct": 60.8,
+    "comment_ratio_pct": 9.4,
+    "monolith_count": 128,
+    "top_languages": {
+      ".ts": 830931,
+      ".tsx": 73214,
+      ".mjs": 21506,
+      ".cjs": 2023,
+      ".sh": 1809
+    }
+  },
+  "authors": {
+    "unique_authors": 102,
+    "top_authors": [
+      {
+        "name": "Mike Schwarz",
+        "commits": 1615,
+        "pct": 33.5
+      },
+      {
+        "name": "v-openrig-build",
+        "commits": 1508,
+        "pct": 31.3
+      },
+      {
+        "name": "mvschwarz",
+        "commits": 925,
+        "pct": 19.2
+      },
+      {
+        "name": "Rudy Mizrahi Celekli",
+        "commits": 219,
+        "pct": 4.5
+      },
+      {
+        "name": "Wu Shuwen",
+        "commits": 69,
+        "pct": 1.4
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 17.6,
+    "p75": 159.6,
+    "p90": 6480.0,
+    "p95": 12480.0,
+    "p99": 33960.0,
+    "avg": 2209.8
+  },
+  "hotspots": [
+    {
+      "file": "packages/daemon/src/startup.ts",
+      "commits": 395,
+      "additions": 3929,
+      "deletions": 1084,
+      "churn": 5013,
+      "first_seen": "2026-03-23T05:15:43-07:00",
+      "last_seen": "2026-11-07T16:43:11-08:00"
+    },
+    {
+      "file": "packages/daemon/src/domain/types.ts",
+      "commits": 211,
+      "additions": 1841,
+      "deletions": 172,
+      "churn": 2013,
+      "first_seen": "2026-03-23T03:29:58-07:00",
+      "last_seen": "2026-11-07T12:09:28-08:00"
+    },
+    {
+      "file": "packages/daemon/src/domain/queue-repository.ts",
+      "commits": 191,
+      "additions": 7065,
+      "deletions": 1398,
+      "churn": 8463,
+      "first_seen": "2026-05-02T18:31:59-07:00",
+      "last_seen": "2026-11-07T20:20:34-08:00"
+    },
+    {
+      "file": "docs/as-built/cli-reference.md",
+      "commits": 174,
+      "additions": 3393,
+      "deletions": 2264,
+      "churn": 5657,
+      "first_seen": "2026-04-08T01:46:54-07:00",
+      "last_seen": "2026-11-07T12:51:07-08:00"
+    },
+    {
+      "file": "packages/daemon/test/helpers/test-app.ts",
+      "commits": 152,
+      "additions": 689,
+      "deletions": 145,
+      "churn": 834,
+      "first_seen": "2026-03-23T05:15:43-07:00",
+      "last_seen": "2026-11-07T22:37:50-08:00"
+    },
+    {
+      "file": "packages/daemon/src/domain/session-transport.ts",
+      "commits": 150,
+      "additions": 6073,
+      "deletions": 1133,
+      "churn": 7206,
+      "first_seen": "2026-04-01T01:09:19-07:00",
+      "last_seen": "2026-11-07T16:11:47-08:00"
+    },
+    {
+      "file": "packages/daemon/src/domain/rigspec-instantiator.ts",
+      "commits": 150,
+      "additions": 4334,
+      "deletions": 909,
+      "churn": 5243,
+      "first_seen": "2026-03-24T00:50:03-07:00",
+      "last_seen": "2026-11-07T05:42:35Z"
+    },
+    {
+      "file": "packages/daemon/src/domain/restore-orchestrator.ts",
+      "commits": 142,
+      "additions": 3962,
+      "deletions": 1032,
+      "churn": 4994,
+      "first_seen": "2026-03-23T17:46:45-07:00",
+      "last_seen": "2026-11-07T16:43:11-08:00"
+    },
+    {
+      "file": "packages/daemon/src/server.ts",
+      "commits": 133,
+      "additions": 1066,
+      "deletions": 89,
+      "churn": 1155,
+      "first_seen": "2026-03-23T03:10:15-07:00",
+      "last_seen": "2026-11-07T12:14:50+01:00"
+    },
+    {
+      "file": "packages/daemon/src/adapters/codex-runtime-adapter.ts",
+      "commits": 133,
+      "additions": 4237,
+      "deletions": 1192,
+      "churn": 5429,
+      "first_seen": "2026-03-29T06:57:44-07:00",
+      "last_seen": "2026-11-06T22:50:43-08:00"
+    },
+    {
+      "file": "packages/daemon/src/adapters/claude-code-adapter.ts",
+      "commits": 122,
+      "additions": 2428,
+      "deletions": 1013,
+      "churn": 3441,
+      "first_seen": "2026-03-29T06:57:44-07:00",
+      "last_seen": "2026-11-07T11:41:30-08:00"
+    },
+    {
+      "file": "packages/daemon/test/restore-orchestrator.test.ts",
+      "commits": 109,
+      "additions": 6314,
+      "deletions": 319,
+      "churn": 6633,
+      "first_seen": "2026-03-23T17:46:45-07:00",
+      "last_seen": "2026-11-07T16:43:11-08:00"
+    },
+    {
+      "file": "packages/tui/src/render.ts",
+      "commits": 104,
+      "additions": 2953,
+      "deletions": 918,
+      "churn": 3871,
+      "first_seen": "2026-08-02T10:22:15Z",
+      "last_seen": "2026-11-03T00:59:35+05:30"
+    },
+    {
+      "file": "docs/reference/getting-started.md",
+      "commits": 103,
+      "additions": 2303,
+      "deletions": 903,
+      "churn": 3206,
+      "first_seen": "2026-06-08T20:46:25-07:00",
+      "last_seen": "2026-11-07T22:02:29+02:00"
+    },
+    {
+      "file": "packages/daemon/src/adapters/tmux.ts",
+      "commits": 103,
+      "additions": 2491,
+      "deletions": 499,
+      "churn": 2990,
+      "first_seen": "2026-03-23T03:48:44-07:00",
+      "last_seen": "2026-11-05T23:28:05-08:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "packages/daemon/test/restore-orchestrator.test.ts",
+      "loc": 5995
+    },
+    {
+      "file": "packages/daemon/src/domain/queue-repository.ts",
+      "loc": 5667
+    },
+    {
+      "file": "packages/daemon/src/domain/session-transport.ts",
+      "loc": 4940
+    },
+    {
+      "file": "packages/daemon/test/session-transport.test.ts",
+      "loc": 4900
+    },
+    {
+      "file": "packages/daemon/test/bundle-routes.test.ts",
+      "loc": 3676
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "759d309483845b9dffcd9dc4dbfe69a109f4db81",
+      "short_hash": "759d30948",
+      "author": "billbenetti",
+      "date": "2026-11-07T15:42:19-08:00",
+      "subject": "perf(activity): OPENRIG_SEAT_POLL_INTERVAL_MS slows the seat-activity pollers (#2688)",
+      "coauthors": [],
+      "additions": 236,
+      "deletions": 11,
+      "files_count": 10,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "1898ac9f56f5480a79d43da386fd0b56166aef75",
+      "short_hash": "1898ac9f5",
+      "author": "Mike Schwarz",
+      "date": "2026-11-07T15:56:50-08:00",
+      "subject": "fix(mcp): tell a seatless plugin agent how its app can get a seat (#2709)",
+      "coauthors": [],
+      "additions": 13,
+      "deletions": 3,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "f554785b9d3bc30dd2377dcca8f03a4c07f24d42",
+      "short_hash": "f554785b9",
+      "author": "billbenetti",
+      "date": "2026-11-07T16:11:47-08:00",
+      "subject": "fix(daemon): hold a prepared managed compaction until its window instead of re-requesting (#2682) (#2698)",
+      "coauthors": [],
+      "additions": 1656,
+      "deletions": 67,
+      "files_count": 13,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "4a18628c8ace8bd5ccf9db82179201b6f55c47b2",
+      "short_hash": "4a18628c8",
+      "author": "Mike Schwarz",
+      "date": "2026-11-07T16:43:11-08:00",
+      "subject": "fix(daemon): reconcile a restored seat once it's proven resumed (#2711)",
+      "coauthors": [],
+      "additions": 287,
+      "deletions": 38,
+      "files_count": 7,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "2d0bd8b10e97e3123ca7981b37aec8287046b36b",
+      "short_hash": "2d0bd8b10",
+      "author": "James B. Shields",
+      "date": "2026-11-07T18:45:29-06:00",
+      "subject": "fix(handover): confirm Claude rebuild packet submission (#2650)",
+      "coauthors": [],
+      "additions": 225,
+      "deletions": 12,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "172685c89296b5aa82a5175507f19a86738a90d6",
+      "short_hash": "172685c89",
+      "author": "Mike Schwarz",
+      "date": "2026-11-07T16:48:16-08:00",
+      "subject": "fix(cli): rig acp serve says in the chat when a question ends unanswered (#2712)",
+      "coauthors": [],
+      "additions": 44,
+      "deletions": 10,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "1be8615a33e7ac1d44994718a1d0464a684bc321",
+      "short_hash": "1be8615a3",
+      "author": "James B. Shields",
+      "date": "2026-11-07T19:02:26-06:00",
+      "subject": "fix(skills): bound catalog Git reads to five seconds (#2713)",
+      "coauthors": [],
+      "additions": 146,
+      "deletions": 4,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "937acb681bac7d493b1a22ac7ed2ddbc10b28e14",
+      "short_hash": "937acb681",
+      "author": "Mike Schwarz",
+      "date": "2026-11-07T17:06:18-08:00",
+      "subject": "docs(acp): rig acp serve uses rig's daemon, which OPENRIG_URL can name (#2714)",
+      "coauthors": [],
+      "additions": 11,
+      "deletions": 9,
+      "files_count": 4,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "92a1c738fc7ab22b478dd60e74c08430a93dbfc3",
+      "short_hash": "92a1c738f",
+      "author": "billbenetti",
+      "date": "2026-11-07T17:22:03-08:00",
+      "subject": "fix(daemon): the compaction gate survives a restart, and a stale sample of another conversation ends an unready map (#2682 follow-up) (#2716)",
+      "coauthors": [],
+      "additions": 80,
+      "deletions": 12,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "73ad2c4e074e6e69c667953f3539f294f5224069",
+      "short_hash": "73ad2c4e0",
+      "author": "Tingri Lohar Mohammed Mohsin",
+      "date": "2026-11-08T07:07:18+05:30",
+      "subject": "fix(refocus): trace work in a catalogued project outside workspace.root (#2717)",
+      "coauthors": [],
+      "additions": 185,
+      "deletions": 8,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "1bcbef7e3f69b347afbe778d27620e087fc43af5",
+      "short_hash": "1bcbef7e3",
+      "author": "Mike Schwarz",
+      "date": "2026-11-07T17:42:43-08:00",
+      "subject": "build: pack the ACP launcher beside the CLI, at one version, with hashes (#2715)",
+      "coauthors": [],
+      "additions": 138,
+      "deletions": 1,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "0f88021f4a884b9a19e9a22272b1afbdc0718b60",
+      "short_hash": "0f88021f4",
+      "author": "Mike Schwarz",
+      "date": "2026-11-07T18:31:35-08:00",
+      "subject": "docs(plugin): give a VS Code or Cursor agent a seat with its own server, turning the plugin's off (#2718)",
+      "coauthors": [],
+      "additions": 29,
+      "deletions": 12,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "39c4f9fd6ede7fbff956b51429ff155044a557d1",
+      "short_hash": "39c4f9fd6",
+      "author": "Mike Schwarz",
+      "date": "2026-11-07T18:43:23-08:00",
+      "subject": "feat(plugin): marketplace files at the repo root, a square logo, and Codex listing metadata (#2719)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "59416773ce7f2f74f0ba8526a2116ce75c99b434",
+      "short_hash": "59416773c",
+      "author": "Mike Schwarz",
+      "date": "2026-11-07T19:44:00-08:00",
+      "subject": "fix(tui): neutral names in the demo stream events (#2724)",
+      "coauthors": [],
+      "additions": 2,
+      "deletions": 2,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "8a46d8fabcad618801bac52dae280ce69f4ef184",
+      "short_hash": "8a46d8fab",
+      "author": "Mike Schwarz",
+      "date": "2026-11-07T19:49:06-08:00",
+      "subject": "docs(plugin): record exactly what the person typed as their answer (#2733)",
+      "coauthors": [],
+      "additions": 14,
+      "deletions": 12,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "aa0599cd41b431b8d0181b50cc1af7527f4272aa",
+      "short_hash": "aa0599cd4",
+      "author": "Mike Schwarz",
+      "date": "2026-11-07T20:20:34-08:00",
+      "subject": "fix(daemon): a cross-host handoff says when it overrode a claim (#2734)",
+      "coauthors": [],
+      "additions": 264,
+      "deletions": 10,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "ba8c01467aeafe9d3fd7112638ea298d14b43809",
+      "short_hash": "ba8c01467",
+      "author": "Mike Schwarz",
+      "date": "2026-11-07T21:11:39-08:00",
+      "subject": "docs: carry the 0.7.10 capability map and agent-spec teaching onto main (#2736)",
+      "coauthors": [],
+      "additions": 58,
+      "deletions": 13,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "78d73bc7b34983de5f3e395fb0b44eee439cdd5a",
+      "short_hash": "78d73bc7b",
+      "author": "w4rc0n",
+      "date": "2026-11-07T22:45:44-07:00",
+      "subject": "fix(daemon): never start the daemon or a seat with a herdr-core terminal's scope (#2737)",
+      "coauthors": [],
+      "additions": 94,
+      "deletions": 5,
+      "files_count": 7,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "cab7f569fb3bff8a48ed4ed866b08de9e9973423",
+      "short_hash": "cab7f569f",
+      "author": "Mike Schwarz",
+      "date": "2026-11-07T21:48:30-08:00",
+      "subject": "feat(mcp): a person answers the team's questions from their assistant (#2735)",
+      "coauthors": [],
+      "additions": 733,
+      "deletions": 35,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "7d15cefc8eb5fb94cf4c5b2af34c2066956ca4e6",
+      "short_hash": "7d15cefc8",
+      "author": "Mike Schwarz",
+      "date": "2026-11-07T22:37:50-08:00",
+      "subject": "fix(workflow): keep a run's root objective on its instance (#2738)",
+      "coauthors": [],
+      "additions": 170,
+      "deletions": 3,
+      "files_count": 10,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    }
+  ]
+}

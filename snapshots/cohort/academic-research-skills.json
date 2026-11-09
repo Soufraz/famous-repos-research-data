@@ -1,0 +1,36 @@
+{
+  "repo": "academic-research-skills",
+  "full_name": "Imbad0202/academic-research-skills",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "127ff85e4bbfcdd10b95040537b6c6bd7ad17aeb",
+      "snapshot_date": "2026-08-24T17:36:07+08:00",
+      "first_commit_date": "2026-02-26T14:28:48+08:00",
+      "commits": 709,
+      "ai_pct": 74.0,
+      "has_agent_config": true,
+      "fix_pct": 24.5,
+      "revert_pct": 0.1,
+      "churn_ratio": 1.14,
+      "survival_rate_pct": 93.3,
+      "code": {
+        "current_loc": 260424,
+        "additions": 269311,
+        "deletions": 8887,
+        "churn_ratio": 1.07,
+        "survival_rate_pct": 96.7
+      },
+      "docs": {
+        "current_loc": 188595,
+        "additions": 211850,
+        "deletions": 23255,
+        "churn_ratio": 1.25,
+        "survival_rate_pct": 89.0
+      },
+      "rapid_fire_pct": 18.8,
+      "unique_authors": 17
+    },
+    "365": null
+  }
+}

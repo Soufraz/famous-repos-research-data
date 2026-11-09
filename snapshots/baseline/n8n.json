@@ -1,0 +1,63 @@
+{
+  "repo": "n8n",
+  "full_name": "n8n-io/n8n",
+  "group": "baseline",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "9cb9ec2b93401cc0640fc839be5cda94a59f2e93",
+      "snapshot_date": "2019-12-19T22:34:28-06:00",
+      "first_commit_date": "2019-06-23T12:35:23+02:00",
+      "commits": 881,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 20.7,
+      "revert_pct": 0.3,
+      "churn_ratio": 1.46,
+      "survival_rate_pct": 81.4,
+      "code": {
+        "current_loc": 79629,
+        "additions": 98076,
+        "deletions": 18413,
+        "churn_ratio": 1.46,
+        "survival_rate_pct": 81.2
+      },
+      "docs": {
+        "current_loc": 4217,
+        "additions": 4874,
+        "deletions": 657,
+        "churn_ratio": 1.31,
+        "survival_rate_pct": 86.5
+      },
+      "rapid_fire_pct": 29.5,
+      "unique_authors": 28
+    },
+    "365": {
+      "snapshot_commit": "54a670c0de778d6db8d64ecf39c21f50b9901f0f",
+      "snapshot_date": "2020-06-20T18:11:11+02:00",
+      "first_commit_date": "2019-06-23T12:35:23+02:00",
+      "commits": 1818,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 20.8,
+      "revert_pct": 0.2,
+      "churn_ratio": 1.52,
+      "survival_rate_pct": 79.4,
+      "code": {
+        "current_loc": 181085,
+        "additions": 228360,
+        "deletions": 47562,
+        "churn_ratio": 1.52,
+        "survival_rate_pct": 79.3
+      },
+      "docs": {
+        "current_loc": 4704,
+        "additions": 5716,
+        "deletions": 1013,
+        "churn_ratio": 1.43,
+        "survival_rate_pct": 82.3
+      },
+      "rapid_fire_pct": 27.0,
+      "unique_authors": 69
+    }
+  }
+}

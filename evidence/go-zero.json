@@ -1,0 +1,53 @@
+{
+  "repo": "go-zero",
+  "head_commit": "17efbb51",
+  "published_results": [
+    {
+      "claim": "## Benchmark ![benchmark](https://raw.githubusercontent.com/zeromicro/zero-doc/main/doc/images/benchmark.png) [Checkout the test code](https://github.com/smallnest/go-web-framework-benchmark)",
+      "metric": "HTTP framework throughput/latency (exact metric not stated in repo text; only an externally hosted image)",
+      "value": "not stated in any file in the repo (numbers, if any, are only inside the remote image)",
+      "baseline": "other Go web frameworks (implied by the linked third-party benchmark)",
+      "evidence_type": "external",
+      "files": [
+        "readme.md:257",
+        "readme.md:259",
+        "readme.md:261",
+        "readme-cn.md:178",
+        "readme-cn.md:180",
+        "readme-cn.md:182"
+      ],
+      "reproduce_command": null,
+      "notes": "Image hosted in zeromicro/zero-doc; test code is the third-party https://github.com/smallnest/go-web-framework-benchmark. Neither the chart data nor its date/version is in the clone."
+    },
+    {
+      "claim": "has been serving sites with tens of millions of users for years.",
+      "metric": "production scale (users)",
+      "value": "tens of millions of users (readme-cn.md: 经过千万日活服务验证的稳定性, i.e. tens-of-millions DAU)",
+      "baseline": null,
+      "evidence_type": "claim_only",
+      "files": [
+        "readme.md:28",
+        "readme-cn.md:28"
+      ],
+      "reproduce_command": null,
+      "notes": "Marketing statement; no method or data."
+    },
+    {
+      "claim": "57 `func BenchmarkXxx` Go micro-benchmarks across 37 test files (e.g. core/logx, core/collection, core/mapping, core/breaker, rest/router)",
+      "metric": "Go micro-benchmark timings (ns/op etc.)",
+      "value": "no results committed or documented (no ns/op output anywhere in the repo)",
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "core/collection/cache_test.go:242",
+        "core/collection/fifo_test.go:162"
+      ],
+      "reproduce_command": null,
+      "notes": "Counts (57 functions / 37 files) are from the auditor's grep, not published by the repo. Standard `go test -bench` would run them but no command is documented."
+    }
+  ],
+  "strongest_evidence_type": "external",
+  "summary": "go-zero's only performance result is a README 'Benchmark' section that embeds a remotely hosted chart and links a third-party benchmark repo (smallnest/go-web-framework-benchmark); no numbers, data, or harness for it are in the clone. It has 57 Go micro-benchmarks with no committed results, plus a marketing claim of serving 'tens of millions of users', so nothing quantitative is reproducible from the repo alone.",
+  "result_focus": "engineering",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}

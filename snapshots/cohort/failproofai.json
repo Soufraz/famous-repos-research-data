@@ -1,0 +1,36 @@
+{
+  "repo": "failproofai",
+  "full_name": "FailproofAI/failproofai",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "a7932a0a5065d7c3aa5aeea77f17c16e88310d76",
+      "snapshot_date": "2026-09-30T21:19:47+05:30",
+      "first_commit_date": "2026-04-06T02:03:16Z",
+      "commits": 319,
+      "ai_pct": 83.1,
+      "has_agent_config": true,
+      "fix_pct": 34.2,
+      "revert_pct": 0.0,
+      "churn_ratio": 2.39,
+      "survival_rate_pct": 59.1,
+      "code": {
+        "current_loc": 378740,
+        "additions": 402395,
+        "deletions": 23655,
+        "churn_ratio": 1.12,
+        "survival_rate_pct": 94.1
+      },
+      "docs": {
+        "current_loc": 212084,
+        "additions": 597912,
+        "deletions": 385828,
+        "churn_ratio": 4.64,
+        "survival_rate_pct": 35.5
+      },
+      "rapid_fire_pct": 6.6,
+      "unique_authors": 13
+    },
+    "365": null
+  }
+}

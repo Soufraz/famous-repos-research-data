@@ -1,0 +1,141 @@
+{
+  "repo": "ECC",
+  "head_commit": "d2ef2680",
+  "published_results": [
+    {
+      "claim": "**Primary outcome.** `passed`: `gate` 25 of 48 (52%), `off` 18 of 48 (38%). On",
+      "metric": "Task pass rate on 6 hidden-intent trapped coding scenarios, GateGuard on vs off; pre-registered confirmatory run, paired exact McNemar",
+      "value": "gate 25/48 (52%) vs off 18/48 (38%); discordant 15 vs 8; p = 0.210; 'not confirmed'; 96 trials, $12.42",
+      "baseline": "off arm (no gate)",
+      "evidence_type": "harness+results",
+      "files": [
+        "docs/gateguard/question-effectiveness.md:451",
+        "docs/gateguard/question-effectiveness.md:453",
+        "docs/gateguard/question-effectiveness.md:481",
+        "docker/gateguard-effectiveness/run-intent.js:25",
+        "docs/gateguard/question-effectiveness.md:582",
+        "docs/gateguard/question-effectiveness.md:447",
+        "docs/gateguard/question-effectiveness.md:448"
+      ],
+      "reproduce_command": "node docker/gateguard-effectiveness/run-intent.js --out gg-confirmatory --candidate-ref <frozen-commit-sha> --arms off,gate --scenarios audit-retention-purge,csv-export-delimiter,retry-idempotency,soft-limit-overage,timezone-daily-rollup,username-collation --reps 8 --user-turns 3 --max-turns 40 --timeout-min 15 --seed 11 --model <model> --judge-model haiku --allow-real-provider"
+    },
+    {
+      "claim": "| Exploratory, unflagged | 15/24 (63%) | 8/24 (33%) | +29 pts | 9 vs 2 | 0.065 |",
+      "metric": "Pass rate, gate vs off, exploratory unflagged-prompt run (48 trials); also signposted run and external-contract-question rerun",
+      "value": "unflagged: 15/24 vs 8/24, p = 0.065; signposted: 15/24 vs 16/24, p = 1.000; external-contract rerun: 23/48 vs 13/48, p = 0.021 (the repo says the gain came from the baseline falling and calls it exploratory)",
+      "baseline": "off arm",
+      "evidence_type": "harness+results",
+      "files": [
+        "docs/gateguard/question-effectiveness.md:370",
+        "docs/gateguard/question-effectiveness.md:480",
+        "docs/gateguard/question-effectiveness.md:303",
+        "docs/gateguard/question-effectiveness.md:503"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "turns and $0.151 per trial against 6.0 and $0.108, about 37% more turns and 40%",
+      "metric": "Per-trial overhead of the gate in turns and USD cost",
+      "value": "8.2 turns / $0.151 vs 6.0 / $0.108 (~37% more turns, ~40% more cost); across runs 'a consistent 35 to 45% in turns and spend'",
+      "baseline": "off arm",
+      "evidence_type": "harness+results",
+      "files": [
+        "docs/gateguard/question-effectiveness.md:471",
+        "docs/gateguard/question-effectiveness.md:311",
+        "docs/gateguard/question-effectiveness.md:553"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "commit `bdf2dca6`. It returned no information at all.",
+      "metric": "Pilot one-shot run (run.js): pass rate across 4 arms, 6 scenarios, 3 reps, 72 sessions",
+      "value": "every arm 18/18 passed; gate spends about 45% more turns and 28% more tokens than off",
+      "baseline": "off, minus-target, placebo arms",
+      "evidence_type": "harness+results",
+      "files": [
+        "docs/gateguard/question-effectiveness.md:162",
+        "docs/gateguard/question-effectiveness.md:166",
+        "docs/gateguard/question-effectiveness.md:180",
+        "docker/gateguard-effectiveness/run.js:223"
+      ],
+      "reproduce_command": "node docker/gateguard-effectiveness/run.js --out gg-eff --model <model> --allow-real-provider"
+    },
+    {
+      "claim": "- 16% fewer denials (157 to 132) and 8% fewer denial tokens, with every",
+      "metric": "Deterministic replay of a 20-scenario / 184-step hook corpus: denials, redundant denials, must-deny bypasses, irrelevant questions",
+      "value": "denials 157 -> 132; redundant 38 -> 0; must-deny bypasses 8 -> 0; irrelevant questions 187 -> 2; warranted-not-asked 57 -> 1; est. denial tokens 27796 -> 25633",
+      "baseline": "upstream/main = c70874fa (present in local clone)",
+      "evidence_type": "harness+results",
+      "files": [
+        "docs/gateguard/evaluation.md:74",
+        "docs/gateguard/evaluation.md:80",
+        "docs/gateguard/evaluation.md:125",
+        "scripts/dev/gateguard-eval.js"
+      ],
+      "reproduce_command": "node scripts/dev/gateguard-eval.js --markdown --baseline upstream/main --baseline 4b02f669"
+    },
+    {
+      "claim": "| Hook latency p50, fresh process (ms) | 23.68 | 11.58 | 27.05 |",
+      "metric": "GateGuard hook latency (require()+run(), fresh Node process), p50/p90/p95, plus per-call-type p50/p90 with 95% bootstrap intervals",
+      "value": "p50 23.68 ms (vs 11.58 upstream/main); 'First edit, code, denied' p50/p90 25.7/32.0 ms vs 12.4/13.9 ms on upstream/main",
+      "baseline": "upstream/main (c70874fa) and PR head 4b02f669",
+      "evidence_type": "harness+results",
+      "files": [
+        "docs/gateguard/evaluation.md:91",
+        "docs/gateguard/evaluation.md:244",
+        "scripts/dev/gateguard-latency.js"
+      ],
+      "reproduce_command": "node scripts/dev/gateguard-latency.js --baseline upstream/main --runs 40"
+    },
+    {
+      "claim": "| `model` | opus | **sonnet** | ~60% cost reduction; handles 80%+ of coding tasks |",
+      "metric": "Cost reduction from defaulting to Sonnet instead of Opus; share of coding tasks handled",
+      "value": "~60% cost reduction; 80%+ of coding tasks",
+      "baseline": "opus as default model",
+      "evidence_type": "claim_only",
+      "files": [
+        "README.md:1885",
+        "docs/token-optimization.md:34"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "*In our 50-task benchmark, mgrep + Claude Code used ~2x fewer tokens than grep-based workflows at similar or better judged quality. Source: mgrep by @mixedbread-ai*",
+      "metric": "Token usage of mgrep vs grep/ripgrep (third-party tool)",
+      "value": "~50% token reduction / ~2x fewer tokens on a 50-task benchmark",
+      "baseline": "grep-based workflows",
+      "evidence_type": "external",
+      "files": [
+        "the-longform-guide.md:136",
+        "the-longform-guide.md:139",
+        "the-shortform-guide.md:166"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "The dependency-free `benchmark.js` characterizes the legacy fixture, declared",
+      "metric": "Coordination-inventory build latency (median/p95 batch-average ms)",
+      "value": "no timings committed; the README says 'No performance improvement or conflict reduction is asserted'",
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "examples/coordination-inventory/benchmark.js:10",
+        "examples/coordination-inventory/README.md:142"
+      ],
+      "reproduce_command": "node examples/coordination-inventory/benchmark.js"
+    }
+  ],
+  "strongest_evidence_type": "harness+results",
+  "summary": "ECC publishes GateGuard evaluations with runnable harnesses and committed aggregate results. Its pre-registered confirmatory run (run-intent.js, 96 trials) reports the gate's benefit as not confirmed (25/48 passed with the gate against 18/48 without, p = 0.210) at about 37% more turns and 40% more cost per trial; an earlier exploratory run gave 15/24 against 8/24 (p = 0.065). The replay and latency scripts report denials falling from 157 to 132 and must-deny bypasses from 8 to 0 on a 184-step corpus, and a fresh-process hook p50 of 23.68 ms against 11.58 ms on upstream/main; row-level results and transcripts of the hidden-intent runs are not committed. Outside GateGuard, the README's '~60% cost reduction' for defaulting to Sonnet is stated without data, and the mgrep '~2x fewer tokens' figure is attributed to Mixedbread.",
+  "result_focus": "outcome",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself",
+  "accuracy_check": {
+    "date": "2026-11-08",
+    "numbers_checked": 75,
+    "corrections": [
+      "published_results[0].files: added docs/gateguard/question-effectiveness.md:447 and :448, where '96 trials' and '$12.42' in value appear",
+      "published_results[3].files: added docs/gateguard/question-effectiveness.md:166 (pilot table, '18/18' in value)",
+      "summary: '35-45% turn/cost overhead' stated as consistent, but the exploratory unflagged run reports about 50% more turns and 61% more cost (docs/gateguard/question-effectiveness.md:390-391); replaced with the confirmatory run's 37% turns / 40% cost (docs/gateguard/question-effectiveness.md:470-471)"
+    ]
+  }
+}

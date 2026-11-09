@@ -1,0 +1,63 @@
+{
+  "repo": "claude-mem",
+  "full_name": "thedotmack/claude-mem",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "ecb09df42002db222a57e117abcec188393ef984",
+      "snapshot_date": "2026-02-25T22:23:45-05:00",
+      "first_commit_date": "2025-09-06T19:34:53Z",
+      "commits": 1363,
+      "ai_pct": 53.5,
+      "has_agent_config": true,
+      "fix_pct": 25.2,
+      "revert_pct": 0.0,
+      "churn_ratio": 4.62,
+      "survival_rate_pct": 35.6,
+      "code": {
+        "current_loc": 75802,
+        "additions": 186908,
+        "deletions": 110980,
+        "churn_ratio": 3.93,
+        "survival_rate_pct": 40.6
+      },
+      "docs": {
+        "current_loc": 35833,
+        "additions": 126913,
+        "deletions": 90431,
+        "churn_ratio": 6.07,
+        "survival_rate_pct": 28.2
+      },
+      "rapid_fire_pct": 38.3,
+      "unique_authors": 63
+    },
+    "365": {
+      "snapshot_commit": "3939fbb2debe73e74a295553636e776e110df90a",
+      "snapshot_date": "2026-09-05T19:40:00-07:00",
+      "first_commit_date": "2025-09-06T19:34:53Z",
+      "commits": 2259,
+      "ai_pct": 57.5,
+      "has_agent_config": true,
+      "fix_pct": 32.2,
+      "revert_pct": 0.3,
+      "churn_ratio": 5.72,
+      "survival_rate_pct": 31.2,
+      "code": {
+        "current_loc": 187572,
+        "additions": 553643,
+        "deletions": 439398,
+        "churn_ratio": 5.29,
+        "survival_rate_pct": 33.9
+      },
+      "docs": {
+        "current_loc": 39730,
+        "additions": 174640,
+        "deletions": 133428,
+        "churn_ratio": 7.75,
+        "survival_rate_pct": 22.7
+      },
+      "rapid_fire_pct": 36.4,
+      "unique_authors": 140
+    }
+  }
+}

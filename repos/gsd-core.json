@@ -1,0 +1,675 @@
+{
+  "repo": "gsd-core",
+  "full_name": "open-gsd/gsd-core",
+  "stars": 11334,
+  "stars_source": "github-api 2026-11-08T09:04:38Z",
+  "selection_topics": [
+    "spec-driven-development"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2026-05-22T11:36:21Z",
+    "description": "Git. Ship. Done - Core",
+    "fork": false,
+    "forks": 816,
+    "full_name": "open-gsd/gsd-core",
+    "pushed_at": "2026-11-08T08:20:20Z",
+    "stars": 11334,
+    "fetched_at": "2026-11-08T09:04:38Z"
+  },
+  "url": "https://github.com/open-gsd/gsd-core",
+  "description": "Git. Ship. Done - Core",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "a00b42e65b8e9207f909c0432665a0149f0e560b",
+    "head_date": "2026-11-08T03:50:22Z",
+    "history_complete": true,
+    "non_merge_commits": 5784,
+    "merge_commits": 754,
+    "maintenance_bot_commits": 103,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 2758,
+    "explicit_ai_pct": 48.5,
+    "by_tool": {
+      "claude": 2743,
+      "cursor": 9,
+      "copilot": 3,
+      "other": 2,
+      "gemini": 1
+    },
+    "by_signal": {
+      "co-author": 2747,
+      "agent-author": 11
+    },
+    "recent_180d": {
+      "commits": 3414,
+      "ai_pct": 48.0,
+      "fix_pct": 54.0
+    },
+    "first_365d": {
+      "commits": 5681,
+      "ai_pct": 48.5,
+      "fix_pct": 49.3
+    },
+    "bot_commit_count": 103,
+    "agent_config": {
+      "files": {
+        ".clinerules": "2026-04-03T12:41:04-04:00",
+        ".opencode/": "2026-07-02T13:01:51-04:00",
+        "GEMINI.md": "2026-06-07T18:54:08-04:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2026-04-03T12:41:04-04:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 5681,
+    "first_commit_date": "2025-12-14T08:16:28-06:00",
+    "last_commit_date": "2026-11-08T03:50:22Z",
+    "current_loc": 1335286,
+    "total_historical_additions": 1891998,
+    "total_historical_deletions": 541851,
+    "total_churn": 2433849,
+    "churn_ratio": 1.82,
+    "survival_rate_pct": 70.6,
+    "code": {
+      "current_loc": 1073385,
+      "additions": 1485298,
+      "deletions": 403076,
+      "churn_ratio": 1.76,
+      "survival_rate_pct": 72.3
+    },
+    "docs": {
+      "current_loc": 261901,
+      "additions": 406700,
+      "deletions": 138775,
+      "churn_ratio": 2.08,
+      "survival_rate_pct": 64.4
+    },
+    "fix_commits": 2798,
+    "fix_pct": 49.3,
+    "revert_commits": 14,
+    "revert_pct": 0.2,
+    "trial_error_commits": 2767,
+    "trial_error_pct": 48.7,
+    "rapid_fire_commits": 1511,
+    "rapid_fire_pct": 26.6,
+    "trial_error_chains": 685,
+    "suspicious_additions_count": 384,
+    "top5_hotspot_volatility_pct": 6.0
+  },
+  "code_hygiene": {
+    "total_files": 1806,
+    "docs_files": 1952,
+    "avg_file_loc": 594.3,
+    "test_loc": 769393,
+    "test_files": 1248,
+    "test_ratio_pct": 71.7,
+    "comment_ratio_pct": 21.8,
+    "monolith_count": 229,
+    "top_languages": {
+      ".cjs": 860925,
+      ".cts": 178686,
+      ".js": 29572,
+      ".sh": 2892,
+      ".mjs": 1213
+    }
+  },
+  "authors": {
+    "unique_authors": 197,
+    "top_authors": [
+      {
+        "name": "Tom Boucher",
+        "commits": 3399,
+        "pct": 59.8
+      },
+      {
+        "name": "Lex Christopherson",
+        "commits": 866,
+        "pct": 15.2
+      },
+      {
+        "name": "sim",
+        "commits": 227,
+        "pct": 4.0
+      },
+      {
+        "name": "Tibsfox",
+        "commits": 127,
+        "pct": 2.2
+      },
+      {
+        "name": "Jeremy McSpadden",
+        "commits": 92,
+        "pct": 1.6
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 14.1,
+    "p75": 160.9,
+    "p90": 2280.0,
+    "p95": 5700.0,
+    "p99": 27300.0,
+    "avg": 2184.3
+  },
+  "hotspots": [
+    {
+      "file": "bin/install.js",
+      "commits": 547,
+      "additions": 29656,
+      "deletions": 14035,
+      "churn": 43691,
+      "first_seen": "2025-12-14T08:16:28-06:00",
+      "last_seen": "2026-11-08T03:50:22Z"
+    },
+    {
+      "file": "CONTEXT.md",
+      "commits": 440,
+      "additions": 2310,
+      "deletions": 1161,
+      "churn": 3471,
+      "first_seen": "2026-05-03T14:30:27-04:00",
+      "last_seen": "2026-11-05T21:45:49Z"
+    },
+    {
+      "file": "docs/INVENTORY.md",
+      "commits": 299,
+      "additions": 1222,
+      "deletions": 368,
+      "churn": 1590,
+      "first_seen": "2026-04-20T09:31:34-04:00",
+      "last_seen": "2026-11-08T03:50:22Z"
+    },
+    {
+      "file": "docs/CONFIGURATION.md",
+      "commits": 228,
+      "additions": 2951,
+      "deletions": 424,
+      "churn": 3375,
+      "first_seen": "2026-03-16T10:55:08-04:00",
+      "last_seen": "2026-11-06T14:59:16Z"
+    },
+    {
+      "file": "eslint.config.mjs",
+      "commits": 194,
+      "additions": 1223,
+      "deletions": 162,
+      "churn": 1385,
+      "first_seen": "2026-05-29T10:54:49-04:00",
+      "last_seen": "2026-11-08T03:50:22Z"
+    },
+    {
+      "file": "get-shit-done/workflows/execute-phase.md",
+      "commits": 187,
+      "additions": 6745,
+      "deletions": 3283,
+      "churn": 10028,
+      "first_seen": "2025-12-14T08:16:28-06:00",
+      "last_seen": "2026-06-01T20:10:59-04:00"
+    },
+    {
+      "file": "docs/FEATURES.md",
+      "commits": 175,
+      "additions": 5340,
+      "deletions": 545,
+      "churn": 5885,
+      "first_seen": "2026-03-16T10:55:08-04:00",
+      "last_seen": "2026-11-01T14:14:23Z"
+    },
+    {
+      "file": "docs/COMMANDS.md",
+      "commits": 174,
+      "additions": 3309,
+      "deletions": 783,
+      "churn": 4092,
+      "first_seen": "2026-03-16T10:55:08-04:00",
+      "last_seen": "2026-11-01T05:05:36Z"
+    },
+    {
+      "file": "README.md",
+      "commits": 170,
+      "additions": 2005,
+      "deletions": 1882,
+      "churn": 3887,
+      "first_seen": "2025-12-14T08:16:28-06:00",
+      "last_seen": "2026-07-14T22:49:44-04:00"
+    },
+    {
+      "file": "gsd-core/bin/lib/capability-registry.cjs",
+      "commits": 160,
+      "additions": 11714,
+      "deletions": 3199,
+      "churn": 14913,
+      "first_seen": "2026-06-08T21:15:41-04:00",
+      "last_seen": "2026-11-05T14:33:43Z"
+    },
+    {
+      "file": "get-shit-done/workflows/plan-phase.md",
+      "commits": 153,
+      "additions": 4572,
+      "deletions": 2762,
+      "churn": 7334,
+      "first_seen": "2025-12-14T08:16:28-06:00",
+      "last_seen": "2026-06-01T10:01:59-04:00"
+    },
+    {
+      "file": "gsd-core/bin/gsd-tools.cjs",
+      "commits": 147,
+      "additions": 7678,
+      "deletions": 3471,
+      "churn": 11149,
+      "first_seen": "2026-06-02T18:35:29-04:00",
+      "last_seen": "2026-11-08T03:50:22Z"
+    },
+    {
+      "file": "src/state.cts",
+      "commits": 146,
+      "additions": 9231,
+      "deletions": 3344,
+      "churn": 12575,
+      "first_seen": "2026-06-02T11:45:01-04:00",
+      "last_seen": "2026-11-05T18:18:35-05:00"
+    },
+    {
+      "file": "tests/phase.test.cjs",
+      "commits": 141,
+      "additions": 19890,
+      "deletions": 645,
+      "churn": 20535,
+      "first_seen": "2026-02-20T10:30:54-05:00",
+      "last_seen": "2026-11-08T03:50:22Z"
+    },
+    {
+      "file": "get-shit-done/bin/lib/core.cjs",
+      "commits": 136,
+      "additions": 3989,
+      "deletions": 1448,
+      "churn": 5437,
+      "first_seen": "2026-02-20T10:40:45-05:00",
+      "last_seen": "2026-06-01T20:53:46-04:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "tests/state.test.cjs",
+      "loc": 23830
+    },
+    {
+      "file": "tests/phase.test.cjs",
+      "loc": 18958
+    },
+    {
+      "file": "bin/install.js",
+      "loc": 15477
+    },
+    {
+      "file": "tests/worktree-safety.test.cjs",
+      "loc": 9407
+    },
+    {
+      "file": "tests/uat.test.cjs",
+      "loc": 8999
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "bd632b5e6b903aa768b762006399bba6b960608d",
+      "short_hash": "bd632b5e6",
+      "author": "Tom Boucher",
+      "date": "2026-11-05T04:50:51Z",
+      "subject": "fix(#5903): pass the release pipeline's own PRs through changeset-lint (#5909)",
+      "coauthors": [
+        "sim",
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 204,
+      "deletions": 12,
+      "files_count": 3,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "3e2e1f331645b0936b3b2ef8cbca3cabd23e9a71",
+      "short_hash": "3e2e1f331",
+      "author": "Tom Boucher",
+      "date": "2026-11-05T04:22:28Z",
+      "subject": "fix(#5757): one owner for tool .gsd directories; the fork-probe cache stays inside the project and out of git (#5908)",
+      "coauthors": [
+        "sim",
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 636,
+      "deletions": 73,
+      "files_count": 9,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "5a7cfecf77b65495268438333ae692ff55fd8801",
+      "short_hash": "5a7cfecf7",
+      "author": "Tom Boucher",
+      "date": "2026-11-05T04:22:25Z",
+      "subject": "fix(#5715): rewrite each config-dir reference once, with literal paths (#5906)",
+      "coauthors": [
+        "sim",
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 1139,
+      "deletions": 181,
+      "files_count": 8,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "6d509d85a806e217fdcb92eb9344023cf8c95323",
+      "short_hash": "6d509d85a",
+      "author": "Tom Boucher",
+      "date": "2026-11-05T18:18:33Z",
+      "subject": "fix(#5721): a test file that crashed at load is never RED evidence (#5917)",
+      "coauthors": [
+        "sim",
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 282,
+      "deletions": 3,
+      "files_count": 5,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "a502a9b8fbddc98cdd9377915b948816fa81a0ee",
+      "short_hash": "a502a9b8f",
+      "author": "Tom Boucher",
+      "date": "2026-11-05T19:11:44Z",
+      "subject": "fix(#5753): code-review-fix gate follows the workflow.code_review toggle (#5929)",
+      "coauthors": [
+        "sim",
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 34,
+      "deletions": 16,
+      "files_count": 4,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "d476cb46a10c26b7cd9279ef28d14501d6394a3c",
+      "short_hash": "d476cb46a",
+      "author": "Tom Boucher",
+      "date": "2026-11-05T19:13:54Z",
+      "subject": "fix(#5922): publish the release's CHANGELOG section as the GitHub Release body (#5930)",
+      "coauthors": [
+        "sim",
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 578,
+      "deletions": 5,
+      "files_count": 7,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "1e569b92375ace23b14ecbd8b1718a7f2ffbf266",
+      "short_hash": "1e569b923",
+      "author": "Tom Boucher",
+      "date": "2026-11-05T19:58:59Z",
+      "subject": "fix(#5758): read the dispatch-isolation record as a bounded regular file (#5927)",
+      "coauthors": [
+        "sim",
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 659,
+      "deletions": 8,
+      "files_count": 5,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "7961be10818efa1b5afea58cfcd56a481f9f9bbf",
+      "short_hash": "7961be108",
+      "author": "Tom Boucher",
+      "date": "2026-11-05T20:54:34Z",
+      "subject": "fix(#5741): verifier harvests every auto-task human check, recorded verdict or not (#5928)",
+      "coauthors": [
+        "sim",
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 61,
+      "deletions": 6,
+      "files_count": 6,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "f48f3b7ebe292c5209c417c2f4739137ca4a5aa2",
+      "short_hash": "f48f3b7eb",
+      "author": "Tom Boucher",
+      "date": "2026-11-05T21:45:49Z",
+      "subject": "chore(#3677): remove .gsd phase files committed despite .gitignore (#5921)",
+      "coauthors": [
+        "sim",
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 1701,
+      "deletions": 638,
+      "files_count": 12,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "f3f3a182627f56267028cf3145239ef8d8154635",
+      "short_hash": "f3f3a1826",
+      "author": "Tom Boucher",
+      "date": "2026-11-05T18:18:35-05:00",
+      "subject": "Revert \"fix(#5831): write the prune archive first and roll it back on failure\" (#5941)",
+      "coauthors": [],
+      "additions": 45,
+      "deletions": 1211,
+      "files_count": 8,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": true
+    },
+    {
+      "hash": "53f596cb2b700c7248532f621baf146a0a99a966",
+      "short_hash": "53f596cb2",
+      "author": "Behruz Nassre Esfahani",
+      "date": "2026-11-06T14:59:16Z",
+      "subject": "feat(#5624): stop the project-root walk at a symlinked $HOME in either spelling (#5847)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 232,
+      "deletions": 5,
+      "files_count": 6,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "f04db9d8b9ec9a2785aed7390baeb950ece604f4",
+      "short_hash": "f04db9d8b",
+      "author": "Tom Boucher",
+      "date": "2026-11-07T07:59:44Z",
+      "subject": "chore(#4036): CI timeout budget history update (#5912)",
+      "coauthors": [
+        "gsd-bot"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "59508eb99963d5f4d537adf869327a7f899dddbc",
+      "short_hash": "59508eb99",
+      "author": "Tom Boucher",
+      "date": "2026-11-07T20:48:00Z",
+      "subject": "docs(#5956): record per-plan executor routing as out-of-scope (#5976)",
+      "coauthors": [
+        "sim",
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 44,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "cdb841b15769a36307376f6168976fe41110ff07",
+      "short_hash": "cdb841b15",
+      "author": "Tom Boucher",
+      "date": "2026-11-07T22:40:52-05:00",
+      "subject": "fix(#5751): a merge commit contributes only its own changes to evaluation scope (#5973)",
+      "coauthors": [
+        "sim",
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 805,
+      "deletions": 31,
+      "files_count": 4,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "702121f2b7d4cfb699fcc065fa6a021052e939f6",
+      "short_hash": "702121f2b",
+      "author": "Tom Boucher",
+      "date": "2026-11-08T03:41:09Z",
+      "subject": "fix(#5790): read block-list agent tools in the Copilot and Codex converters (#5974)",
+      "coauthors": [
+        "sim",
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 206,
+      "deletions": 8,
+      "files_count": 4,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "9e4b0ad687e51c76766ed0278a50b3ba630e1709",
+      "short_hash": "9e4b0ad68",
+      "author": "Tom Boucher",
+      "date": "2026-11-08T03:41:19Z",
+      "subject": "fix(#5786): init --validate reads the plan total from Plan: N of M and Current Plan: N of M (#5975)",
+      "coauthors": [
+        "sim",
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 281,
+      "deletions": 47,
+      "files_count": 5,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "bea0dbe62bcbe564426fbc31516edccc27b4a18d",
+      "short_hash": "bea0dbe62",
+      "author": "Tom Boucher",
+      "date": "2026-11-08T03:41:28Z",
+      "subject": "fix(#5789): read SUMMARY status through one non-blocking bounded reader (#5979)",
+      "coauthors": [
+        "sim",
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 382,
+      "deletions": 21,
+      "files_count": 4,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "a00b42e65b8e9207f909c0432665a0149f0e560b",
+      "short_hash": "a00b42e65",
+      "author": "Tom Boucher",
+      "date": "2026-11-08T03:50:22Z",
+      "subject": "fix(#5759): bound config.json reads and harden platformWriteSync against FIFOs, devices and link swaps (#5932)",
+      "coauthors": [
+        "sim",
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 4214,
+      "deletions": 126,
+      "files_count": 48,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    }
+  ]
+}

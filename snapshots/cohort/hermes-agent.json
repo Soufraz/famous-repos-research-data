@@ -1,0 +1,63 @@
+{
+  "repo": "hermes-agent",
+  "full_name": "NousResearch/hermes-agent",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "6eb76c7c1a37f85984f5fd0cec72d50b7abfcbda",
+      "snapshot_date": "2026-01-18T10:11:59Z",
+      "first_commit_date": "2025-07-22T18:32:44-07:00",
+      "commits": 60,
+      "ai_pct": 0.0,
+      "has_agent_config": true,
+      "fix_pct": 10.0,
+      "revert_pct": 0.0,
+      "churn_ratio": 2.11,
+      "survival_rate_pct": 64.4,
+      "code": {
+        "current_loc": 9320,
+        "additions": 14706,
+        "deletions": 5392,
+        "churn_ratio": 2.16,
+        "survival_rate_pct": 63.4
+      },
+      "docs": {
+        "current_loc": 442,
+        "additions": 457,
+        "deletions": 15,
+        "churn_ratio": 1.07,
+        "survival_rate_pct": 96.7
+      },
+      "rapid_fire_pct": 13.3,
+      "unique_authors": 4
+    },
+    "365": {
+      "snapshot_commit": "e5b83633ecb7dc9e325d70de60515430f4c043a5",
+      "snapshot_date": "2026-07-23T11:21:03+10:00",
+      "first_commit_date": "2025-07-22T18:32:44-07:00",
+      "commits": 15572,
+      "ai_pct": 3.7,
+      "has_agent_config": true,
+      "fix_pct": 58.8,
+      "revert_pct": 0.4,
+      "churn_ratio": 1.49,
+      "survival_rate_pct": 80.3,
+      "code": {
+        "current_loc": 1903831,
+        "additions": 2346298,
+        "deletions": 441003,
+        "churn_ratio": 1.46,
+        "survival_rate_pct": 81.1
+      },
+      "docs": {
+        "current_loc": 346209,
+        "additions": 454768,
+        "deletions": 109895,
+        "churn_ratio": 1.63,
+        "survival_rate_pct": 76.1
+      },
+      "rapid_fire_pct": 27.9,
+      "unique_authors": 2096
+    }
+  }
+}

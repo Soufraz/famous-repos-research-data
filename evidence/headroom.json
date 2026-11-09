@@ -1,0 +1,142 @@
+{
+  "repo": "headroom",
+  "head_commit": "bb8d18a5",
+  "published_results": [
+    {
+      "claim": "Measured: 21–57% fewer",
+      "metric": "Tool-message input tokens before vs after compress(), counted with the gpt-5.6 tokenizer (TiktokenCounter)",
+      "value": "Code search (100 results) 17,199→13,597 (21%); SRE incident debugging 55,957→24,340 (57%); Codebase exploration 58,801→33,895 (42%); GitHub issue triage 46,067→32,429 (30%); TOTAL 178,024→104,261 (41%)",
+      "baseline": "Uncompressed tool outputs of the same seeded, generated MCP-format corpus (seed 20260902)",
+      "evidence_type": "harness+results",
+      "files": [
+        "README.md:38",
+        "README.md:180-195",
+        "benchmarks/index_proof_table.py:1-147",
+        "benchmarks/results/index_proof_table.txt:1-32",
+        "benchmarks/real_world_agent_benchmark.py:53-59",
+        "docs/content/docs/index.mdx:84-96"
+      ],
+      "reproduce_command": "uv run python benchmarks/index_proof_table.py --seed 20260902"
+    },
+    {
+      "claim": "seeds (Code search 21%, SRE 56--57%, triage 29--30%, exploration 41--50% over",
+      "metric": "Stability of token-savings % across five seeds",
+      "value": "Code search 21%, SRE 56--57%, triage 29--30%, exploration 41--50% (five seeds; seeds not named)",
+      "baseline": "Uncompressed tool outputs",
+      "evidence_type": "results_only",
+      "files": [
+        "docs/content/docs/index.mdx:98-102"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "90%+ on repeated JSON arrays and log",
+      "metric": "Token reduction on repetitive JSON arrays / log lines",
+      "value": "README: 90%+. Docs tables from benchmarks/bench_latency.py: repeated 500-string JSON array 4.9K → 228 tokens, 100-string array 1.1K → 226; structured logs 53% and 54%. The v0.3.7 wiki table shows 95% and 97% for the 500- and 1K-string arrays.",
+      "baseline": "Uncompressed payload",
+      "evidence_type": "harness+results",
+      "files": [
+        "README.md:38-40",
+        "README.md:197-199",
+        "benchmarks/bench_latency.py:1-35",
+        "docs/content/docs/benchmarks.mdx:18-19",
+        "docs/content/docs/benchmarks.mdx:75-76",
+        "wiki/LATENCY_BENCHMARKS.md:24-37"
+      ],
+      "reproduce_command": "python benchmarks/bench_latency.py"
+    },
+    {
+      "claim": "0.21 ms p50 on a 10K-token JSON",
+      "metric": "Local compression-pipeline latency (no LLM call), p50/p95 over 10 warm iterations, Apple M-series CPU, Headroom 0.37.0",
+      "value": "README: 0.21 ms p50 at 10K tokens, 1.4 ms at 100K tokens. Docs table: 10.2K tokens p50 0.20 / p95 0.21 ms; 100.5K tokens p50 1.4 / p95 1.6 ms",
+      "baseline": null,
+      "evidence_type": "harness+results",
+      "files": [
+        "README.md:202-203",
+        "docs/content/docs/benchmarks.mdx:62-78",
+        "benchmarks/bench_latency.py:1-35"
+      ],
+      "reproduce_command": "python benchmarks/bench_latency.py --scenario json --iterations 10"
+    },
+    {
+      "claim": "| GSM8K | Math | 100 | 0.870 | 0.870 | ±0.000 |",
+      "metric": "LLM task accuracy with vs without Headroom (N=100 each, gpt-4o-mini)",
+      "value": "GSM8K 0.870→0.870 (±0.000); TruthfulQA 0.530→0.560 (+0.030, called 'no detectable difference'); SQuAD v2 97% at 19% compression; BFCL 97% at 32% compression. evals README also lists Tool Outputs 100% (N=8) and CCR Needle Retention 100% (N=50). No raw run report is committed, and a rerun needs OpenAI API calls.",
+      "baseline": "Same model without Headroom for GSM8K/TruthfulQA; none ('—') for SQuAD v2 and BFCL",
+      "evidence_type": "harness+results",
+      "files": [
+        "README.md:205-216",
+        "headroom/evals/README.md:5-23",
+        "headroom/evals/suite_runner.py:56-135",
+        "headroom/evals/reports/report_card.py:152-155"
+      ],
+      "reproduce_command": "python -m headroom.evals suite --tier 1"
+    },
+    {
+      "claim": "| **F1 Score** | 0.919 |",
+      "metric": "HTML article extraction token-level F1 / precision / recall vs ground truth (Scrapinghub Article Extraction Benchmark, 181 pages)",
+      "value": "F1 0.919, precision 0.875, recall 0.985, compression 94.8%",
+      "baseline": null,
+      "evidence_type": "harness+results",
+      "files": [
+        "docs/content/docs/benchmarks.mdx:30-41",
+        "docs/content/docs/benchmarks.mdx:108-118",
+        "headroom/evals/html_oss_benchmarks.py:124",
+        "tests/test_evals/test_html_oss_benchmarks.py:28"
+      ],
+      "reproduce_command": "pytest tests/test_evals/ -v -s"
+    },
+    {
+      "claim": "| long task, **after fixes** | $0.284 | **$0.284** | — | **$0.255 (−10%)** |",
+      "metric": "Median billed USD per Claude Code session (n=3 after warmup, Sonnet 5.5, Claude Code 2.1.290), with a pass rule on task completion",
+      "value": "Long task: hr_hot $0.255 (−10%) vs native $0.284; short task: hr_hot $0.046 (−25%) vs native $0.061; 'All 73 recorded runs pass'",
+      "baseline": "native arm: Claude Code with its own ToolSearch straight to api.anthropic.com",
+      "evidence_type": "harness+results",
+      "files": [
+        "benchmarks/tool_search_vs_native/README.md:34-56",
+        "benchmarks/tool_search_vs_native/run.py:352-360"
+      ],
+      "reproduce_command": "python3 benchmarks/tool_search_vs_native/run.py --arms native,hr_hot,hr_client --reps 3 --warmup"
+    },
+    {
+      "claim": "**76.7% net reduction**",
+      "metric": "Prompt tokens, cost, latency and answer retention on 4 agent scenarios, gemini-3.8-flash on Vertex AI, with vs without Headroom proxy",
+      "value": "Prompt tokens 111,687→26,031 (76.7%); cost $0.0941→$0.0285 (69.7%); latency 8.9s→5.7s; relative quality retention 100.0%. Raw results.json is gitignored (.gitignore:212).",
+      "baseline": "Same scenarios sent to Vertex AI without Headroom",
+      "evidence_type": "harness+results",
+      "files": [
+        "examples/vertex_gemini_benchmark/README.md:24-43",
+        "examples/vertex_gemini_benchmark/benchmark.py:536-538",
+        "examples/vertex_gemini_benchmark/scenarios.py",
+        ".gitignore:212"
+      ],
+      "reproduce_command": "python examples/vertex_gemini_benchmark/benchmark.py --model gemini-3.8-flash"
+    },
+    {
+      "claim": "40–90% reduction through a trained ML router.",
+      "metric": "Image token reduction",
+      "value": "40–90%",
+      "baseline": "Original image token cost",
+      "evidence_type": "claim_only",
+      "files": [
+        "README.md:448",
+        "docs/content/docs/image-compression.mdx:3",
+        "docs/content/docs/image-compression.mdx:104-121"
+      ],
+      "reproduce_command": null
+    }
+  ],
+  "strongest_evidence_type": "harness+results",
+  "summary": "Headroom's main token-savings table (21–57% fewer input tokens on four seeded scenarios, 178,024 → 104,261 tokens in total) is reproducible offline: benchmarks/index_proof_table.py and its committed output benchmarks/results/index_proof_table.txt give the same numbers. The latency, accuracy (GSM8K 0.870 → 0.870; TruthfulQA 0.530 → 0.560, which the README calls no detectable difference), HTML extraction (F1 0.919), tool-search and Vertex AI (76.7% fewer prompt tokens) results have harness code with results recorded in markdown; no raw run files are committed for them, and several need paid API calls. Some README figures differ from the docs: the '0.21 ms p50' matches the docs table's p95 (p50 0.20 ms), and the docs tables from benchmarks/bench_latency.py show a repeated 500-string JSON array at 4.9K → 228 tokens but structured logs at 53% and 54%, against the README's '90%+ on repeated JSON arrays and log lines'. The 40–90% image-compression figure is stated without a benchmark.",
+  "result_focus": "outcome",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself",
+  "accuracy_check": {
+    "date": "2026-11-08",
+    "numbers_checked": 145,
+    "corrections": [
+      "value said only the v0.3.7 wiki shows >=90% for JSON arrays; the current docs table from the same script shows the repeated 500-string array at 4.9K -> 228 tokens (docs/content/docs/benchmarks.mdx:76): value reworded neutrally and ref added",
+      "evidence_type harness_only -> harness+results: benchmarks/bench_latency.py plus its committed docs tables (docs/content/docs/benchmarks.mdx:18-19, :75-76), the same evidence the latency entry is classed on",
+      "summary said no current table shows 90%+ 'on logs' without noting the 500-string JSON array result (docs/content/docs/benchmarks.mdx:76)"
+    ]
+  }
+}

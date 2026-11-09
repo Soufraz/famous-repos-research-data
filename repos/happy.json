@@ -1,0 +1,656 @@
+{
+  "repo": "happy",
+  "full_name": "slopus/happy",
+  "stars": 24536,
+  "stars_source": "github-api 2026-11-08T09:03:46Z",
+  "selection_topics": [
+    "coding-agents"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2025-07-18T05:53:18Z",
+    "description": "Orchestrate Claude, Codex and Grok in one app. Open-source (MIT), reuses the subscriptions you already pay for.",
+    "fork": false,
+    "forks": 2108,
+    "full_name": "slopus/happy",
+    "pushed_at": "2026-11-08T08:55:51Z",
+    "stars": 24536,
+    "fetched_at": "2026-11-08T09:03:46Z"
+  },
+  "url": "https://github.com/slopus/happy",
+  "description": "Orchestrate Claude, Codex and Grok in one app. Open-source (MIT), reuses the subscriptions you already pay for.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "c80fa5db54d6b8738f8d216e30abedfc9d9f0a03",
+    "head_date": "2026-11-07T22:17:08-08:00",
+    "history_complete": true,
+    "non_merge_commits": 4093,
+    "merge_commits": 510,
+    "maintenance_bot_commits": 3,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 567,
+    "explicit_ai_pct": 13.9,
+    "by_tool": {
+      "claude": 567
+    },
+    "by_signal": {
+      "co-author": 540,
+      "footer": 21,
+      "agent-author": 6
+    },
+    "recent_180d": {
+      "commits": 2138,
+      "ai_pct": 5.2,
+      "fix_pct": 12.1
+    },
+    "first_365d": {
+      "commits": 2052,
+      "ai_pct": 24.4,
+      "fix_pct": 37.9
+    },
+    "bot_commit_count": 3,
+    "agent_config": {
+      "files": {
+        ".agents/": "2026-03-06T22:15:29-08:00",
+        "AGENTS.md": "2026-05-17T17:22:29-07:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2026-03-06T22:15:29-08:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 4090,
+    "first_commit_date": "2025-07-12T17:57:05-07:00",
+    "last_commit_date": "2026-11-07T20:55:39-08:00",
+    "current_loc": 750957,
+    "total_historical_additions": 1227052,
+    "total_historical_deletions": 474403,
+    "total_churn": 1701455,
+    "churn_ratio": 2.27,
+    "survival_rate_pct": 61.2,
+    "code": {
+      "current_loc": 711528,
+      "additions": 1163185,
+      "deletions": 449800,
+      "churn_ratio": 2.27,
+      "survival_rate_pct": 61.2
+    },
+    "docs": {
+      "current_loc": 39429,
+      "additions": 63867,
+      "deletions": 24603,
+      "churn_ratio": 2.24,
+      "survival_rate_pct": 61.7
+    },
+    "fix_commits": 990,
+    "fix_pct": 24.2,
+    "revert_commits": 17,
+    "revert_pct": 0.4,
+    "trial_error_commits": 1155,
+    "trial_error_pct": 28.2,
+    "rapid_fire_commits": 870,
+    "rapid_fire_pct": 21.3,
+    "trial_error_chains": 221,
+    "suspicious_additions_count": 311,
+    "top5_hotspot_volatility_pct": 3.1
+  },
+  "code_hygiene": {
+    "total_files": 3656,
+    "docs_files": 164,
+    "avg_file_loc": 194.6,
+    "test_loc": 248826,
+    "test_files": 1320,
+    "test_ratio_pct": 35.0,
+    "comment_ratio_pct": 11.4,
+    "monolith_count": 43,
+    "top_languages": {
+      ".swift": 364579,
+      ".kt": 245296,
+      ".ts": 84608,
+      ".py": 5425,
+      ".cjs": 3370
+    }
+  },
+  "authors": {
+    "unique_authors": 84,
+    "top_authors": [
+      {
+        "name": "Steve Korshakov",
+        "commits": 2154,
+        "pct": 52.7
+      },
+      {
+        "name": "Kirill Dubovitskiy",
+        "commits": 1068,
+        "pct": 26.1
+      },
+      {
+        "name": "Andrew Hundt",
+        "commits": 232,
+        "pct": 5.7
+      },
+      {
+        "name": "Scoteezy",
+        "commits": 202,
+        "pct": 4.9
+      },
+      {
+        "name": "nobody",
+        "commits": 105,
+        "pct": 2.6
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 17.3,
+    "p75": 240.0,
+    "p90": 7020.0,
+    "p95": 25440.0,
+    "p99": 95220.0,
+    "avg": 4807.1
+  },
+  "hotspots": [
+    {
+      "file": "packages/happy-ios/docs/FEATURES.md",
+      "commits": 185,
+      "additions": 559,
+      "deletions": 296,
+      "churn": 855,
+      "first_seen": "2026-10-13T07:01:48Z",
+      "last_seen": "2026-11-07T06:11:40Z"
+    },
+    {
+      "file": "packages/happy-android/AGENTS.md",
+      "commits": 157,
+      "additions": 2564,
+      "deletions": 504,
+      "churn": 3068,
+      "first_seen": "2026-10-13T04:50:45Z",
+      "last_seen": "2026-11-08T02:50:05Z"
+    },
+    {
+      "file": "sources/app/(app)/new/index.tsx",
+      "commits": 99,
+      "additions": 5000,
+      "deletions": 3352,
+      "churn": 8352,
+      "first_seen": "2025-09-12T00:33:30-07:00",
+      "last_seen": "2026-01-13T13:39:09+03:00"
+    },
+    {
+      "file": "sources/sync/sync.ts",
+      "commits": 97,
+      "additions": 3145,
+      "deletions": 994,
+      "churn": 4139,
+      "first_seen": "2025-07-16T00:06:32-07:00",
+      "last_seen": "2026-01-13T14:35:03+03:00"
+    },
+    {
+      "file": "packages/happy-app/sources/text/_default.ts",
+      "commits": 90,
+      "additions": 530,
+      "deletions": 1470,
+      "churn": 2000,
+      "first_seen": "2026-01-27T23:49:34-08:00",
+      "last_seen": "2026-11-05T04:38:22Z"
+    },
+    {
+      "file": "packages/happy-ios/Sources/HappyUI/Agents/ChatViewController.swift",
+      "commits": 88,
+      "additions": 2030,
+      "deletions": 1453,
+      "churn": 3483,
+      "first_seen": "2026-10-29T21:59:05-07:00",
+      "last_seen": "2026-11-08T01:45:00Z"
+    },
+    {
+      "file": "sources/app/(app)/session/[id].tsx",
+      "commits": 88,
+      "additions": 2206,
+      "deletions": 2423,
+      "churn": 4629,
+      "first_seen": "2025-07-20T14:48:32-07:00",
+      "last_seen": "2025-09-21T15:00:55-07:00"
+    },
+    {
+      "file": "server/sources/app/api.ts",
+      "commits": 83,
+      "additions": 4998,
+      "deletions": 2245,
+      "churn": 7243,
+      "first_seen": "2025-07-12T17:57:05-07:00",
+      "last_seen": "2025-09-01T11:57:27-07:00"
+    },
+    {
+      "file": "packages/happy-app/sources/-session/SessionView.tsx",
+      "commits": 80,
+      "additions": 2330,
+      "deletions": 2740,
+      "churn": 5070,
+      "first_seen": "2026-01-27T23:49:34-08:00",
+      "last_seen": "2026-11-05T04:38:22Z"
+    },
+    {
+      "file": "sources/sync/storage.ts",
+      "commits": 72,
+      "additions": 2219,
+      "deletions": 922,
+      "churn": 3141,
+      "first_seen": "2025-07-16T00:06:32-07:00",
+      "last_seen": "2026-01-13T13:39:09+03:00"
+    },
+    {
+      "file": "packages/happy-android/app/src/main/kotlin/com/slopus/happy/ui/conversation/ConversationScreen.kt",
+      "commits": 70,
+      "additions": 1610,
+      "deletions": 771,
+      "churn": 2381,
+      "first_seen": "2026-10-30T00:24:03-07:00",
+      "last_seen": "2026-11-07T06:45:32Z"
+    },
+    {
+      "file": "packages/happy-ios/Sources/HappyUI/Chat/ChatViewController.swift",
+      "commits": 67,
+      "additions": 2393,
+      "deletions": 530,
+      "churn": 2923,
+      "first_seen": "2026-10-13T08:11:42Z",
+      "last_seen": "2026-10-28T06:23:54-07:00"
+    },
+    {
+      "file": "packages/happy-ios/AGENTS.md",
+      "commits": 66,
+      "additions": 1016,
+      "deletions": 182,
+      "churn": 1198,
+      "first_seen": "2026-10-13T04:29:53Z",
+      "last_seen": "2026-11-08T02:50:05Z"
+    },
+    {
+      "file": "cli/src/index.ts",
+      "commits": 66,
+      "additions": 1489,
+      "deletions": 727,
+      "churn": 2216,
+      "first_seen": "2025-07-12T20:30:27-07:00",
+      "last_seen": "2026-01-28T00:24:30+08:00"
+    },
+    {
+      "file": "packages/happy-app/sources/sync/sync.ts",
+      "commits": 65,
+      "additions": 1863,
+      "deletions": 4006,
+      "churn": 5869,
+      "first_seen": "2026-01-27T23:49:34-08:00",
+      "last_seen": "2026-11-05T04:38:22Z"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "packages/happy-ios/Tests/HappyDirectUITests/UITests.swift",
+      "loc": 3307
+    },
+    {
+      "file": "packages/happy-ios/Sources/HappyUI/Agents/ChatViewController.swift",
+      "loc": 2502
+    },
+    {
+      "file": "packages/happy-ios/Sources/HappyUI/Composer/AgentInputCard.swift",
+      "loc": 2413
+    },
+    {
+      "file": "packages/happy-ios/Tests/HappyCoreTests/NewSessionStartTests.swift",
+      "loc": 2383
+    },
+    {
+      "file": "packages/happy-ios/Sources/HappyUI/Chat/LegacyChatViewController.swift",
+      "loc": 2307
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "8e450989b4c720fee0bf4ac00b458999b1a090a0",
+      "short_hash": "8e450989b",
+      "author": "Steve Korshakov",
+      "date": "2026-11-07T23:03:25Z",
+      "subject": "Android: an ended cloud session leaves only Sign in and nothing of its server",
+      "coauthors": [],
+      "additions": 266,
+      "deletions": 20,
+      "files_count": 8,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "22082b86f3588bc07bb2787be7954b08c3d94dd1",
+      "short_hash": "22082b86f",
+      "author": "Kirill",
+      "date": "2026-11-07T23:16:51Z",
+      "subject": "Voice call: the agent's replies read whole up to about 1,000 words",
+      "coauthors": [],
+      "additions": 296,
+      "deletions": 69,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "7ecf7abdc69d1662c729a705e547a9e9c6efbf37",
+      "short_hash": "7ecf7abdc",
+      "author": "Kirill",
+      "date": "2026-11-07T22:59:09Z",
+      "subject": "Voice call (iOS): a conversation never opened takes a message",
+      "coauthors": [],
+      "additions": 74,
+      "deletions": 8,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "87a0353fefb36c6fd43cb00b2f952f669399ed59",
+      "short_hash": "87a0353fe",
+      "author": "Kirill",
+      "date": "2026-11-07T23:08:59Z",
+      "subject": "happy-ios: the microphone listens for the keyboard's language from the start; dictation tests fixed to what they assert",
+      "coauthors": [],
+      "additions": 10,
+      "deletions": 8,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "03457a6e75df50cd57d656c9165f618c5fab4fbc",
+      "short_hash": "03457a6e7",
+      "author": "Kirill",
+      "date": "2026-11-07T22:49:05Z",
+      "subject": "happy-ios: the record test holds the chat's microphone too; the dictation UIKit test compiles under Swift 6",
+      "coauthors": [],
+      "additions": 27,
+      "deletions": 10,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "fd3465d1c5eaf690023136e07000915022998c61",
+      "short_hash": "fd3465d1c",
+      "author": "Kirill",
+      "date": "2026-11-07T22:16:58Z",
+      "subject": "happy-ios: dictated text wraps clear of the recording circle; settled and revisable words joined by a space",
+      "coauthors": [],
+      "additions": 79,
+      "deletions": 14,
+      "files_count": 6,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "137273e43a843e691ac197f60947b23cd56b793e",
+      "short_hash": "137273e43",
+      "author": "Kirill",
+      "date": "2026-11-07T21:46:39Z",
+      "subject": "happy-ios: dictated words come into the chat's composer as they are said",
+      "coauthors": [],
+      "additions": 248,
+      "deletions": 8,
+      "files_count": 5,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "373c5d0db500b7a97a63e0007d14cd96197bf316",
+      "short_hash": "373c5d0db",
+      "author": "Kirill",
+      "date": "2026-11-08T00:05:23Z",
+      "subject": "happy-ios: Telegram's bin for a cancelled recording; the call moves to home's header",
+      "coauthors": [],
+      "additions": 336,
+      "deletions": 71,
+      "files_count": 12,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "12256bfa15005be707cc50740ab3f5fb070ac97c",
+      "short_hash": "12256bfa1",
+      "author": "Steve Korshakov",
+      "date": "2026-11-08T00:05:21Z",
+      "subject": "Android: a team server's 403 profile_required asks for a name",
+      "coauthors": [],
+      "additions": 38,
+      "deletions": 2,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "38682796338ee1a85d7450a67cae6b4348a3d062",
+      "short_hash": "386827963",
+      "author": "Kirill",
+      "date": "2026-11-08T00:22:02Z",
+      "subject": "happy-ios: dictation hears which language is spoken, at the first pause",
+      "coauthors": [],
+      "additions": 452,
+      "deletions": 50,
+      "files_count": 7,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "23124a0d3630cf6dc278d7def0ec235338242840",
+      "short_hash": "23124a0d3",
+      "author": "Kirill",
+      "date": "2026-11-08T00:36:14Z",
+      "subject": "happy-ios: a dictation test for a reading that replaces everything said (another language won at the pause)",
+      "coauthors": [],
+      "additions": 13,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "456f76a27529fbc552c0b1e43513e7972b0b55e8",
+      "short_hash": "456f76a27",
+      "author": "Kirill",
+      "date": "2026-11-08T00:35:05Z",
+      "subject": "Voice call: history of earlier calls, cues for silence and time limits, restart, call-dropped sound",
+      "coauthors": [],
+      "additions": 2346,
+      "deletions": 80,
+      "files_count": 27,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "529f6db8b064b8c8b20eeb148be76195def52144",
+      "short_hash": "529f6db8b",
+      "author": "Steve Korshakov",
+      "date": "2026-11-07T16:44:39-08:00",
+      "subject": "iOS: never sign out on a missing profile; an ended session erases its server and shows only Sign In (#1986)",
+      "coauthors": [],
+      "additions": 506,
+      "deletions": 61,
+      "files_count": 12,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "c35ca1577dfb434c46fa84c16b2c9451a03d9b65",
+      "short_hash": "c35ca1577",
+      "author": "Steve Korshakov",
+      "date": "2026-11-07T16:52:31-08:00",
+      "subject": "iOS: an agent's chat shows the agent's own mode, not a stale draft's (#1983)",
+      "coauthors": [],
+      "additions": 153,
+      "deletions": 9,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "d233fe7fa9c732ca13518f89461c1b06394c63ce",
+      "short_hash": "d233fe7fa",
+      "author": "Kirill",
+      "date": "2026-11-08T01:45:00Z",
+      "subject": "happy-ios: Multilingual dictation setting; two languages only for people who have two",
+      "coauthors": [],
+      "additions": 135,
+      "deletions": 29,
+      "files_count": 13,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "c21d13f13f784fede3eced826ecfcd2b53acf9a0",
+      "short_hash": "c21d13f13",
+      "author": "Kirill",
+      "date": "2026-11-08T01:54:20Z",
+      "subject": "happy-ios: send and the microphone swap glyphs out then in; the header's call is the hang-up during a call; Telegram's lock",
+      "coauthors": [],
+      "additions": 279,
+      "deletions": 202,
+      "files_count": 12,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "abd01bc0ddde061756c08960115995659e345911",
+      "short_hash": "abd01bc0d",
+      "author": "Steve Korshakov",
+      "date": "2026-11-07T18:41:02-08:00",
+      "subject": "happy-ios: home's header tests expect the call beside Settings (#1990)",
+      "coauthors": [],
+      "additions": 4,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "4850ab050c44efc85ec58869bb7a531a38042c31",
+      "short_hash": "4850ab050",
+      "author": "Kirill",
+      "date": "2026-11-08T02:50:05Z",
+      "subject": "Store builds need the voice agent; Android's call reads a conversation oldest first",
+      "coauthors": [],
+      "additions": 106,
+      "deletions": 15,
+      "files_count": 8,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "41cdc0aab17c9d42d883c67f72c0dd801fcd12f8",
+      "short_hash": "41cdc0aab",
+      "author": "Kirill",
+      "date": "2026-11-07T21:14:16-08:00",
+      "subject": "happy-ios: dictation keeps Russian said with the English keyboard; the pause decides against a language that heard nothing",
+      "coauthors": [],
+      "additions": 260,
+      "deletions": 20,
+      "files_count": 8,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "c80fa5db54d6b8738f8d216e30abedfc9d9f0a03",
+      "short_hash": "c80fa5db5",
+      "author": "Kirill",
+      "date": "2026-11-07T20:55:39-08:00",
+      "subject": "Voice call: the person's voice restarts the silence clock; warned at 180 s, ended at 290 s; silence_over",
+      "coauthors": [],
+      "additions": 263,
+      "deletions": 64,
+      "files_count": 9,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

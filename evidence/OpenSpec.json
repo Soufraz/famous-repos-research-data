@@ -1,0 +1,50 @@
+{
+  "repo": "OpenSpec",
+  "head_commit": "0fa4a970",
+  "published_results": [
+    {
+      "claim": "`openspec status --json` now loads 163 modules instead of 186.",
+      "metric": "Node modules loaded at CLI startup (proxy for startup speed)",
+      "value": "163 modules",
+      "baseline": "186 modules (previous release)",
+      "evidence_type": "claim_only",
+      "files": [
+        "CHANGELOG.md:55"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "`openspec __complete` ... now loads 48 modules instead of 344 when completing changes or specs",
+      "metric": "Node modules loaded per shell Tab-completion call",
+      "value": "48 modules",
+      "baseline": "344 modules (previous release)",
+      "evidence_type": "claim_only",
+      "files": [
+        "CHANGELOG.md:113"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "`openspec --version` and `--help` load 24 modules instead of 485",
+      "metric": "Node modules loaded at CLI startup",
+      "value": "24 modules",
+      "baseline": "485 modules (previous release)",
+      "evidence_type": "claim_only",
+      "files": [
+        "CHANGELOG.md:132",
+        "test/cli-e2e/startup-modules.test.ts:1",
+        "test/helpers/record-loaded-modules.mjs:1"
+      ],
+      "reproduce_command": null
+    }
+  ],
+  "strongest_evidence_type": "claim_only",
+  "summary": "OpenSpec publishes no accuracy, token or agent-outcome results, and the repository has no benchmark or eval directory. Its quantitative self-measurements are CLI module-load counts in CHANGELOG entries: `openspec status --json` loads 163 modules instead of 186, `openspec __complete` 48 instead of 344, and `openspec --version` and `--help` 24 instead of 485. test/cli-e2e/startup-modules.test.ts records loaded modules through a Node hook and asserts which modules load, not how many, so the published counts are not reproduced by a documented command.",
+  "result_focus": "engineering",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself",
+  "accuracy_check": {
+    "date": "2026-11-08",
+    "numbers_checked": 6,
+    "corrections": []
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "repo": "firecrawl",
+  "head_commit": "033f42f87",
+  "published_results": [
+    {
+      "claim": "Covers 96% of the web, including JS-heavy pages — no proxy headaches, just clean data ([see benchmarks](https://www.firecrawl.dev/blog/the-worlds-best-web-data-api-v25))",
+      "metric": "Web coverage (share of pages successfully scraped)",
+      "value": "96%",
+      "baseline": null,
+      "evidence_type": "external",
+      "files": [
+        "README.md:54"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "P95 latency of 3.4s across millions of pages",
+      "metric": "Scrape latency p95",
+      "value": "3.4s",
+      "baseline": null,
+      "evidence_type": "claim_only",
+      "files": [
+        "README.md:55"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "The system handled the load well, with no failed requests. The average response time was 838.1 ms, with a peak response time of 1416 ms.",
+      "metric": "Scrape API load test (10 min, 10 req/s) mean / peak response time, failures",
+      "value": "mean 838.1 ms; peak 1416 ms; 0 failures",
+      "baseline": null,
+      "evidence_type": "results_only",
+      "files": [
+        "apps/test-suite/load-test-results/tests-6-7/load-test-6.md:5",
+        "apps/test-suite/load-test-results/tests-6-7/load-test-6.md:58"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "processing 9000 requests with 5473 timeouts and a 61.6% failure rate. The average response time was 3682.1 ms",
+      "metric": "Scrape API load test failure rate / mean response time (2 machines)",
+      "value": "61.6% failure rate; mean 3682.1 ms",
+      "baseline": null,
+      "evidence_type": "results_only",
+      "files": [
+        "apps/test-suite/load-test-results/tests-1-5/load-test-2.md:5"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "The test involved 9000 requests with a timeout set to 30 seconds. The system handled the load well, with only 4 HTTP 502 responses (0.04%). The average response time was 5661.8 ms",
+      "metric": "Scrape API load test error rate / mean response time (after autoscaling + timeout tuning)",
+      "value": "0.04% HTTP 502; mean 5661.8 ms",
+      "baseline": "load test #2: 61.6% failure rate",
+      "evidence_type": "results_only",
+      "files": [
+        "apps/test-suite/load-test-results/tests-1-5/load-test-5.md:5",
+        "apps/test-suite/load-test-results/tests-1-5/assets/test-run-report.json"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "- **Expected Result**: Accuracy >= 0.9 / - **Received Result**: Accuracy between 0.2 and 0.3",
+      "metric": "Scrape accuracy, 100 pages, fuzzy threshold 0.8 (presented as an 'Example Test Case')",
+      "value": "0.2–0.3",
+      "baseline": "expected >= 0.9",
+      "evidence_type": "claim_only",
+      "files": [
+        "apps/test-suite/README.md:19-22"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "No published numbers. Notebook cell: \"Hypothesis: Indexed scrapes are faster\"",
+      "metric": "Scrape/crawl/map time with vs without index cache",
+      "value": null,
+      "baseline": "maxAge=1 / ignoreIndex=True (no cache)",
+      "evidence_type": "harness_only",
+      "files": [
+        "apps/test-suite/index-benchmark/run.ipynb"
+      ],
+      "reproduce_command": null
+    }
+  ],
+  "strongest_evidence_type": "results_only",
+  "summary": "Firecrawl's headline performance claims (README.md:54-55: 96% web coverage, P95 3.4s) have no method or data in the repo; the 96% links to the vendor's own blog. The only committed measurements are 8 historical artillery load-test write-ups (apps/test-suite/load-test-results, with one raw report JSON), with no runnable load-test config in the tree, plus an index-cache benchmark notebook with no saved outputs. Quality evals are dispatched to a separate 'scrape-evals' repo, so nothing about extraction accuracy is reproducible from this clone. Marketing numbers in apps/test-site blog posts (e.g. '10x faster') are crawler test-fixture content and were excluded.",
+  "result_focus": "outcome",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}

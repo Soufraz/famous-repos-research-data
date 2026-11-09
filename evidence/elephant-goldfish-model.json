@@ -1,0 +1,9 @@
+{
+  "repo": "elephant-goldfish-model",
+  "head_commit": "e9e1f06",
+  "published_results": [],
+  "strongest_evidence_type": "none",
+  "summary": "EGM publishes no quantitative performance results: no token, latency, accuracy, defect-rate, or success-rate figures. A design doc says outright that runtime and token costs have not been measured. Its verification is functional. TESTING.md records pass/fail end-to-end runs per harness (counts of reviewers launched, run durations). The repo also ships 43 deterministic behavioral scenarios in skills/*/test_scenarios.yaml, but has no in-repo runner and no committed results for them.",
+  "result_focus": "none",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}

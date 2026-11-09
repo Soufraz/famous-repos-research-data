@@ -1,0 +1,33 @@
+{
+  "repo": "anything-llm",
+  "head_commit": "308b2766",
+  "published_results": [
+    {
+      "claim": "[Intelligent Skill Selection](https://docs.anythingllm.com/agent/intelligent-tool-selection) Enable **unlimited** tools for your models while reducing token usage by up to 80% per query",
+      "metric": "Agent prompt token usage from tool definitions",
+      "value": "up to 80% reduction per query",
+      "baseline": "all tools/skills sent to the model (implied, not stated)",
+      "evidence_type": "claim_only",
+      "files": [
+        "README.md:69",
+        "server/utils/agents/aibitat/index.js:938-939"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Built-in optimizations for large document sets—lower costs and faster responses than other chat UIs.",
+      "metric": "Cost and response time vs other chat UIs (no number given)",
+      "value": null,
+      "baseline": "\"other chat UIs\" (unnamed)",
+      "evidence_type": "claim_only",
+      "files": [
+        "README.md:82"
+      ],
+      "reproduce_command": null
+    }
+  ],
+  "strongest_evidence_type": "claim_only",
+  "summary": "AnythingLLM publishes one quantitative performance claim, 'reducing token usage by up to 80% per query' with Intelligent Skill Selection (README.md:69, repeated as a runtime log hint in server/utils/agents/aibitat/index.js:938). It links to the product docs site, but the repo contains no benchmark, eval script, dataset, or result data behind it. There are no bench/, evals/, or results directories, and the test suites are functional unit tests only, so nothing about its performance is reproducible from the repo.",
+  "result_focus": "outcome",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}

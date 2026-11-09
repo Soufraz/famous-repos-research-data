@@ -1,0 +1,125 @@
+{
+  "repo": "graphify",
+  "head_commit": "6c8002ec",
+  "published_results": [
+    {
+      "claim": "LOCOMO retrieval recall@10 of 0.497, about 10x mem0 (0.048) and above BM25 (0.362).",
+      "metric": "recall@10 on LOCOMO (n=300)",
+      "value": "0.497",
+      "baseline": "BM25 0.362; mem0 0.048; supermemory 0.149 (embedder-confounded per BENCHMARKS.md); hybrid RRF 0.493",
+      "evidence_type": "results_only",
+      "files": [
+        "BENCHMARKS.md:19",
+        "BENCHMARKS.md:103-109",
+        "README.md:134"
+      ],
+      "reproduce_command": "python memory/runner.py --phase 3 --split locomo --n 300 --adapters graphify_v1_surreal --cn natural --workers 6 --max-spend 15 (documented at BENCHMARKS.md:198, but memory/runner.py is NOT in the repo)"
+    },
+    {
+      "claim": "LOCOMO QA accuracy of 45.3%: +18 points over mem0, +14 over BM25, and within 4.4 points of supermemory",
+      "metric": "LLM-judged QA accuracy (key-fact coverage, Kimi K2.6 judge) on LOCOMO n=300",
+      "value": "45.3%",
+      "baseline": "supermemory 49.7%; hybrid RRF 43.3%; BM25 31.3%; mem0 27.3%",
+      "evidence_type": "results_only",
+      "files": [
+        "BENCHMARKS.md:20",
+        "BENCHMARKS.md:103-109",
+        "README.md:135"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "LongMemEval-S of 76%, tied for best with dense RAG.",
+      "metric": "QA accuracy on LongMemEval-S (n=50)",
+      "value": "76%",
+      "baseline": "dense RAG 76%; hybrid RRF 74%; BM25 70%; mem0 70%",
+      "evidence_type": "results_only",
+      "files": [
+        "BENCHMARKS.md:22",
+        "BENCHMARKS.md:133-138",
+        "README.md:136"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "giving a fixed coding agent one graphify tool lifts key-fact coverage across the graded question set (n=6) from 70.8% (a grep and read baseline) to 82.0%, at about 140K tokens per query.",
+      "metric": "Key-fact coverage of agent answers on ERPNext questions (Claude Opus 4.8 agent, n=6)",
+      "value": "82.0%",
+      "baseline": "grep/read baseline 70.8%",
+      "evidence_type": "results_only",
+      "files": [
+        "BENCHMARKS.md:145-147",
+        "README.md:137"
+      ],
+      "reproduce_command": "python crosstool/run.py --repo erpnext --max-spend <budget> (documented at BENCHMARKS.md:202, but crosstool/ is NOT in the repo)"
+    },
+    {
+      "claim": "about 11x cheaper memory ingest than supermemory ($1.40 vs $15.67).",
+      "metric": "LOCOMO ingest cost (USD)",
+      "value": "~$1.40",
+      "baseline": "supermemory $15.67; mem0 $3.48",
+      "evidence_type": "results_only",
+      "files": [
+        "BENCHMARKS.md:23-24",
+        "BENCHMARKS.md:109",
+        "BENCHMARKS.md:186-187"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "judge on a sampled set at 90.6% agreement, Cohen's kappa 0.81 (substantial agreement).",
+      "metric": "Judge validation against a second independent judge",
+      "value": "90.6% agreement; kappa 0.81",
+      "baseline": null,
+      "evidence_type": "results_only",
+      "files": [
+        "BENCHMARKS.md:16",
+        "BENCHMARKS.md:80-81",
+        "README.md:140"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "| Corpus tokens (52 files, naive full-context) | ~123,488 | ... | Average query cost (BFS subgraph) | ~1,726 tokens | ... | **Reduction ratio** | **71.5x** |",
+      "metric": "Estimated tokens of naive full-corpus context vs tokens of graph BFS query answer (chars/4 and words*100/75 estimates, not a tokenizer)",
+      "value": "71.5x (52-file mixed corpus); 8.8x (29 code files)",
+      "baseline": "naive full-corpus stuffing (~123,488 estimated tokens)",
+      "evidence_type": "harness+results",
+      "files": [
+        "worked/karpathy-repos/review.md:11-28",
+        "worked/karpathy-repos/README.md:3",
+        "worked/karpathy-repos/README.md:71",
+        "worked/karpathy-repos/graph.json",
+        "graphify/benchmark.py:1",
+        "graphify/benchmark.py:75-92",
+        "graphify/cli.py:4098",
+        "docs/how-it-works.md:57"
+      ],
+      "reproduce_command": "graphify benchmark worked/karpathy-repos/graph.json (raw 52-file corpus is not committed; without .graphify_detect.json the corpus size falls back to nodes*50 words, graphify/benchmark.py:75-77)"
+    },
+    {
+      "claim": "<b>Cut agent token spend by 80%.</b> Graphify Cloud is always-on memory",
+      "metric": "Agent token spend (Graphify Cloud, commercial product)",
+      "value": "80%",
+      "baseline": null,
+      "evidence_type": "claim_only",
+      "files": [
+        "README.md:31",
+        "README.md:126",
+        "README.md:489"
+      ],
+      "reproduce_command": null
+    }
+  ],
+  "strongest_evidence_type": "harness+results",
+  "summary": "graphify's BENCHMARKS.md reports results against named baselines with cost and judge-agreement figures (90.6% agreement, Cohen's kappa 0.81): LOCOMO recall@10 0.497 vs BM25 0.362 and mem0 0.048, LongMemEval-S 76% tied with dense RAG, and ERPNext key-fact coverage 82.0% vs 70.8% for a grep-and-read baseline (n=6); on LOCOMO QA accuracy supermemory scores higher (49.7% vs 45.3%) at about 11x the ingest cost ($15.67 vs $1.40). The harness these results point to (memory/runner.py, crosstool/run.py) is not in the repository, and no per-run outputs or spend ledgers are committed. The 71.5x token-reduction figure is backed by in-repo code (graphify benchmark) and a committed graph.json, with corpus tokens estimated from word counts rather than measured. The Graphify Cloud claim of cutting agent token spend by 80% is stated without data.",
+  "result_focus": "outcome",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself",
+  "accuracy_check": {
+    "date": "2026-11-08",
+    "numbers_checked": 41,
+    "corrections": [
+      "published_results[4].files: added BENCHMARKS.md:109, where the mem0 $3.48 ingest baseline appears"
+    ]
+  }
+}

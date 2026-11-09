@@ -1,0 +1,143 @@
+{
+  "repo": "superpowers",
+  "head_commit": "22f0b46",
+  "published_results": [
+    {
+      "claim": "in our evals, Claude Code and Codex produce similar high-quality results roughly twice as fast and while spending almost 50% fewer tokens",
+      "metric": "wall-clock speed and token usage of SDD workflow (v6.0.0)",
+      "value": "roughly twice as fast; almost 50% fewer tokens",
+      "baseline": "previous release (implied, not named)",
+      "evidence_type": "claim_only",
+      "files": [
+        "RELEASE-NOTES.md:338"
+      ],
+      "reproduce_command": null,
+      "notes": "Headline release-note claim, hedged as \"these numbers won't hold on every harness\". The evals live in a separate repo (superpowers-evals, AGENTS.md / docs/testing.md:27) that is not in this clone."
+    },
+    {
+      "claim": "go-fractals 44.4 min / 13.4M / $11.67 (-32% time, -37% tokens, -27% dollars vs baseline); svelte-todo 62.8 / 19.7M / $15.76 (-21% / -28% / -25%)",
+      "metric": "wall-clock minutes, total tokens, dollar cost per eval scenario run",
+      "value": "go-fractals -32% time, -37% tokens, -27% dollars; svelte-todo -21% / -28% / -25%",
+      "baseline": "pre-change SDD baseline on the same scenario",
+      "evidence_type": "results_only",
+      "files": [
+        "docs/superpowers/specs/2026-06-09-sdd-task-scoped-review-dispatch-design.md:69",
+        "docs/superpowers/specs/2026-06-09-sdd-task-scoped-review-dispatch-design.md:70",
+        "docs/superpowers/specs/2026-06-09-sdd-task-scoped-review-dispatch-design.md:71"
+      ],
+      "reproduce_command": null,
+      "notes": "One run per config, and the same doc later reports run-to-run variance of 44.4→57.1 min on identical prompts (line 79). The scenarios and experiment log (evals/docs/experiments/2026-06-10-sdd-cost-experiments.md, line 84) are in the external superpowers-evals repo, not this clone."
+    },
+    {
+      "claim": "Across all 8 same-design fractals runs: 44.4-57.1 min / 13.4-20.0M / $11.67-14.84 — the worst draw beats baseline on every axis; typical mid-band savings ~20-25%.",
+      "metric": "wall-clock minutes, tokens, dollars (range over 8 runs)",
+      "value": "44.4-57.1 min / 13.4-20.0M / $11.67-14.84; ~20-25% typical savings",
+      "baseline": "go-fractals baseline 64.9 / 21.2M / $16.07; svelte-todo baseline 79.7 / 27.3M / $20.98",
+      "evidence_type": "results_only",
+      "files": [
+        "docs/superpowers/specs/2026-06-09-sdd-task-scoped-review-dispatch-design.md:106",
+        "docs/superpowers/specs/2026-06-09-sdd-task-scoped-review-dispatch-design.md:107",
+        "docs/superpowers/specs/2026-06-09-sdd-task-scoped-review-dispatch-design.md:108",
+        "docs/superpowers/specs/2026-06-09-sdd-task-scoped-review-dispatch-design.md:110",
+        "docs/superpowers/specs/2026-06-09-sdd-task-scoped-review-dispatch-design.md:111"
+      ],
+      "reproduce_command": null,
+      "notes": "This is the most rigorous number in the repo because it reports a range over 8 runs, not one draw. The baseline appears to be a single run, and there is no harness in this clone."
+    },
+    {
+      "claim": "Result (go-fractals): 47.5 min / 15.7M / $13.55 — beat baseline on every axis, blind-judged 9/10 vs baseline 7/10.",
+      "metric": "blind-judged output quality score",
+      "value": "9/10",
+      "baseline": "7/10",
+      "evidence_type": "results_only",
+      "files": [
+        "docs/superpowers/specs/2026-06-09-sdd-task-scoped-review-dispatch-design.md:58",
+        "docs/superpowers/specs/2026-06-09-sdd-task-scoped-review-dispatch-design.md:59"
+      ],
+      "reproduce_command": null,
+      "notes": "Intermediate iteration (iteration 2). One run, and the judge is not described."
+    },
+    {
+      "claim": "25/25 controller reps refused to treat a ledger as license to skip work.",
+      "metric": "count of reps that did not adopt a stale or false ledger (resume decision)",
+      "value": "25/25 RED baseline reps; GREEN S1 5/5, S2 5/5",
+      "baseline": "released pre-change SKILL.md text (RED arm); S2 RED control 5/5 on fixture v3",
+      "evidence_type": "results_only",
+      "files": [
+        "docs/superpowers/specs/2026-07-06-sdd-plan-scoped-workspace-eval-results.md:45",
+        "docs/superpowers/specs/2026-07-06-sdd-plan-scoped-workspace-eval-results.md:147",
+        "docs/superpowers/specs/2026-07-06-sdd-plan-scoped-workspace-eval-results.md:150",
+        "docs/superpowers/specs/2026-07-06-sdd-plan-scoped-workspace-eval-results.md:152",
+        "RELEASE-NOTES.md:259"
+      ],
+      "reproduce_command": null,
+      "notes": "Hand-scored, 5 sonnet subagents per arm. The fixture generator and prompt are embedded in the doc (Appendix A/B), but no harness runs them. The doc reports a negative finding: the hypothesized baseline failure did not reproduce (lines 53-55), and the change shipped \"on structural grounds\" (line 77)."
+    },
+    {
+      "claim": "the raw tool-call count did **not** drop (9.6 vs 9.0)",
+      "metric": "tool_uses per resume decision (mean over 5 reps)",
+      "value": "9.6 (GREEN)",
+      "baseline": "9.0 (RED probe, released text)",
+      "evidence_type": "results_only",
+      "files": [
+        "docs/superpowers/specs/2026-07-06-sdd-plan-scoped-workspace-eval-results.md:165",
+        "docs/superpowers/specs/2026-07-06-sdd-plan-scoped-workspace-eval-results.md:166",
+        "docs/superpowers/specs/2026-07-06-sdd-plan-scoped-workspace-eval-results.md:168",
+        "docs/superpowers/specs/2026-07-06-sdd-plan-scoped-workspace-eval-results.md:169"
+      ],
+      "reproduce_command": null,
+      "notes": "A null/negative cost result, reported openly. The same doc gives S2 GREEN mean 8.4 vs S2 RED 7.8 (line 182)."
+    },
+    {
+      "claim": "Validated: 50/50 runs (20 GREEN + 20 PRESSURE + 10 full-skill-text) with zero failures.",
+      "metric": "pass rate (agent uses native EnterWorktree instead of git worktree add)",
+      "value": "50/50",
+      "baseline": "original abstract Step 1a: 2/6 pass rate",
+      "evidence_type": "harness_only",
+      "files": [
+        "tests/claude-code/test-worktree-native-preference.sh:19",
+        "tests/claude-code/test-worktree-native-preference.sh:26",
+        "docs/superpowers/specs/2026-04-06-worktree-rototill-design.md:100",
+        "docs/superpowers/specs/2026-04-06-worktree-rototill-design.md:307"
+      ],
+      "reproduce_command": null,
+      "notes": "This is the only in-repo runnable harness with reported results: phases red/green/pressure/all, with the run count taken from the second argument (RUNS=\"${2:-1}\"). The results are summary counts only (a script comment and a design-doc table), with no raw logs committed. The repo does not document an exact invocation for the 50/50 run."
+    },
+    {
+      "claim": "plans took a quarter of the time and about a third of the tokens",
+      "metric": "planning time and tokens (writing-plans skill, v6.4.2)",
+      "value": "a quarter of the time; about a third of the tokens",
+      "baseline": "previous writing-plans skill on a reproduced user report",
+      "evidence_type": "claim_only",
+      "files": [
+        "RELEASE-NOTES.md:141"
+      ],
+      "reproduce_command": null,
+      "notes": null
+    },
+    {
+      "claim": "It measured about half the cost and wall clock.",
+      "metric": "cost and wall-clock (nested mid-tier controller, v6.4.1)",
+      "value": "about half",
+      "baseline": "controller on session model",
+      "evidence_type": "claim_only",
+      "files": [
+        "RELEASE-NOTES.md:194"
+      ],
+      "reproduce_command": null,
+      "notes": null
+    }
+  ],
+  "strongest_evidence_type": "results_only",
+  "summary": "Superpowers reports eval results in its design specs and release notes: subagent-driven-development cost runs show -32% time, -37% tokens and -27% dollars on go-fractals and -21% / -28% / -25% on svelte-todo versus baseline, with typical mid-band savings of ~20-25% across 8 go-fractals runs. These cost runs and the hand-scored pressure tests (5 reps per arm) are written up as results in the specs, while their harness is in the separate superpowers-evals repo; release-note figures such as \"roughly twice as fast\" and \"almost 50% fewer tokens\" are stated without data. The worktree-preference test is an in-repo harness whose result (50/50 runs) is stated in a comment in the script, with no committed output. The docs also report results that did not favor the changes: all 25 baseline reps already refused to treat a ledger as license to skip work, so the hypothesized failure did not reproduce, and the resume tool-call count did not drop (9.6 vs 9.0).",
+  "result_focus": "none",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself",
+  "accuracy_check": {
+    "date": "2026-11-08",
+    "numbers_checked": 56,
+    "corrections": [
+      "summary: '-20-37% time/tokens/dollars vs baseline' is not a figure the repo publishes; replaced with its reported -32%/-37%/-27% (go-fractals) and -21%/-28%/-25% (svelte-todo) (docs/superpowers/specs/2026-06-09-sdd-task-scoped-review-dispatch-design.md:70-71) and ~20-25% typical mid-band savings (same file:111)",
+      "published_results[6] (tests/claude-code/test-worktree-native-preference.sh:19): harness+results -> harness_only; the 50/50 result is a comment in the test script, not committed output; strongest_evidence_type -> results_only, result_focus -> none"
+    ]
+  }
+}

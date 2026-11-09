@@ -1,0 +1,663 @@
+{
+  "repo": "failproofai",
+  "full_name": "FailproofAI/failproofai",
+  "stars": 8230,
+  "stars_source": "github-api 2026-11-08T09:06:51Z",
+  "selection_topics": [
+    "agent-harness"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2026-04-06T01:56:39Z",
+    "description": "Observability and enforcement for AI agent harnesses. Capture every run and runtime reliability with policy enforcement.  ",
+    "fork": false,
+    "forks": 574,
+    "full_name": "FailproofAI/failproofai",
+    "pushed_at": "2026-11-07T07:33:11Z",
+    "stars": 8230,
+    "fetched_at": "2026-11-08T09:06:51Z"
+  },
+  "url": "https://github.com/FailproofAI/failproofai",
+  "description": "Observability and enforcement for AI agent harnesses. Capture every run and runtime reliability with policy enforcement.  ",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "fa9307f7afe77d2ca96da4eca65c7e8bdb334409",
+    "head_date": "2026-11-06T17:28:22+05:30",
+    "history_complete": true,
+    "non_merge_commits": 754,
+    "merge_commits": 7,
+    "maintenance_bot_commits": 417,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 282,
+    "explicit_ai_pct": 83.7,
+    "by_tool": {
+      "claude": 281,
+      "codex": 1
+    },
+    "by_signal": {
+      "co-author": 282
+    },
+    "recent_180d": {
+      "commits": 184,
+      "ai_pct": 79.3,
+      "fix_pct": 23.4
+    },
+    "first_365d": {
+      "commits": 337,
+      "ai_pct": 83.7,
+      "fix_pct": 32.6
+    },
+    "bot_commit_count": 417,
+    "agent_config": {
+      "files": {
+        ".agents/": "2026-04-08T16:10:50-07:00",
+        "AGENTS.md": "2026-04-07T13:00:45-07:00",
+        "CLAUDE.md": "2026-04-07T13:00:45-07:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2026-04-07T13:00:45-07:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 337,
+    "first_commit_date": "2026-04-06T02:03:16Z",
+    "last_commit_date": "2026-11-06T17:28:22+05:30",
+    "current_loc": 636811,
+    "total_historical_additions": 1056792,
+    "total_historical_deletions": 419981,
+    "total_churn": 1476773,
+    "churn_ratio": 2.32,
+    "survival_rate_pct": 60.3,
+    "code": {
+      "current_loc": 423095,
+      "additions": 456820,
+      "deletions": 33725,
+      "churn_ratio": 1.16,
+      "survival_rate_pct": 92.6
+    },
+    "docs": {
+      "current_loc": 213716,
+      "additions": 599972,
+      "deletions": 386256,
+      "churn_ratio": 4.61,
+      "survival_rate_pct": 35.6
+    },
+    "fix_commits": 110,
+    "fix_pct": 32.6,
+    "revert_commits": 0,
+    "revert_pct": 0.0,
+    "trial_error_commits": 115,
+    "trial_error_pct": 34.1,
+    "rapid_fire_commits": 21,
+    "rapid_fire_pct": 6.2,
+    "trial_error_chains": 8,
+    "suspicious_additions_count": 54,
+    "top5_hotspot_volatility_pct": 12.2
+  },
+  "code_hygiene": {
+    "total_files": 1255,
+    "docs_files": 1810,
+    "avg_file_loc": 337.1,
+    "test_loc": 202905,
+    "test_files": 630,
+    "test_ratio_pct": 48.0,
+    "comment_ratio_pct": 19.4,
+    "monolith_count": 83,
+    "top_languages": {
+      ".ts": 263408,
+      ".py": 75408,
+      ".rs": 57510,
+      ".tsx": 14655,
+      ".mjs": 4921
+    }
+  },
+  "authors": {
+    "unique_authors": 13,
+    "top_authors": [
+      {
+        "name": "Nivedit Jain",
+        "commits": 253,
+        "pct": 75.1
+      },
+      {
+        "name": "Chetan Raghuvanshi",
+        "commits": 31,
+        "pct": 9.2
+      },
+      {
+        "name": "hermes-exosphere",
+        "commits": 14,
+        "pct": 4.2
+      },
+      {
+        "name": "Siddartha Aralakuppe Yogesha",
+        "commits": 13,
+        "pct": 3.9
+      },
+      {
+        "name": "NiveditJain",
+        "commits": 6,
+        "pct": 1.8
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 2.3,
+    "p75": 15.3,
+    "p90": 102.0,
+    "p95": 300.0,
+    "p99": 15960.0,
+    "avg": 782.9
+  },
+  "hotspots": [
+    {
+      "file": "README.md",
+      "commits": 55,
+      "additions": 1088,
+      "deletions": 803,
+      "churn": 1891,
+      "first_seen": "2026-04-06T02:03:16Z",
+      "last_seen": "2026-10-27T14:48:14+05:30"
+    },
+    {
+      "file": "bin/failproofai.mjs",
+      "commits": 44,
+      "additions": 4623,
+      "deletions": 2407,
+      "churn": 7030,
+      "first_seen": "2026-04-06T02:03:16Z",
+      "last_seen": "2026-10-25T06:52:08+05:30"
+    },
+    {
+      "file": "src/hooks/builtin-policies.ts",
+      "commits": 39,
+      "additions": 4284,
+      "deletions": 908,
+      "churn": 5192,
+      "first_seen": "2026-04-06T02:03:16Z",
+      "last_seen": "2026-09-27T12:30:37+05:30"
+    },
+    {
+      "file": "src/hooks/handler.ts",
+      "commits": 36,
+      "additions": 2160,
+      "deletions": 696,
+      "churn": 2856,
+      "first_seen": "2026-04-06T02:03:16Z",
+      "last_seen": "2026-11-02T15:55:25+05:30"
+    },
+    {
+      "file": "CLAUDE.md",
+      "commits": 32,
+      "additions": 1724,
+      "deletions": 339,
+      "churn": 2063,
+      "first_seen": "2026-04-07T13:00:45-07:00",
+      "last_seen": "2026-11-02T15:55:25+05:30"
+    },
+    {
+      "file": "__tests__/hooks/builtin-policies.test.ts",
+      "commits": 28,
+      "additions": 4655,
+      "deletions": 202,
+      "churn": 4857,
+      "first_seen": "2026-04-06T02:03:16Z",
+      "last_seen": "2026-09-27T12:30:37+05:30"
+    },
+    {
+      "file": "app/policies/hooks-client.tsx",
+      "commits": 28,
+      "additions": 2674,
+      "deletions": 353,
+      "churn": 3027,
+      "first_seen": "2026-04-06T02:03:16Z",
+      "last_seen": "2026-09-27T12:30:37+05:30"
+    },
+    {
+      "file": "src/hooks/policy-evaluator.ts",
+      "commits": 27,
+      "additions": 2342,
+      "deletions": 1009,
+      "churn": 3351,
+      "first_seen": "2026-04-06T02:03:16Z",
+      "last_seen": "2026-10-25T06:52:08+05:30"
+    },
+    {
+      "file": "src/hooks/types.ts",
+      "commits": 24,
+      "additions": 1274,
+      "deletions": 161,
+      "churn": 1435,
+      "first_seen": "2026-04-06T02:03:16Z",
+      "last_seen": "2026-11-02T15:55:25+05:30"
+    },
+    {
+      "file": "src/hooks/manager.ts",
+      "commits": 24,
+      "additions": 2728,
+      "deletions": 901,
+      "churn": 3629,
+      "first_seen": "2026-04-06T02:03:16Z",
+      "last_seen": "2026-10-25T06:52:08+05:30"
+    },
+    {
+      "file": "docs/ar/built-in-policies.mdx",
+      "commits": 24,
+      "additions": 3376,
+      "deletions": 2516,
+      "churn": 5892,
+      "first_seen": "2026-04-14T15:15:27-07:00",
+      "last_seen": "2026-08-10T23:00:20+05:30"
+    },
+    {
+      "file": "docs/de/dashboard.mdx",
+      "commits": 24,
+      "additions": 840,
+      "deletions": 689,
+      "churn": 1529,
+      "first_seen": "2026-04-14T15:15:27-07:00",
+      "last_seen": "2026-08-10T23:00:20+05:30"
+    },
+    {
+      "file": "docs/ja/built-in-policies.mdx",
+      "commits": 24,
+      "additions": 3670,
+      "deletions": 2822,
+      "churn": 6492,
+      "first_seen": "2026-04-14T15:15:27-07:00",
+      "last_seen": "2026-08-10T23:00:20+05:30"
+    },
+    {
+      "file": "docs/zh/built-in-policies.mdx",
+      "commits": 24,
+      "additions": 3029,
+      "deletions": 2179,
+      "churn": 5208,
+      "first_seen": "2026-04-14T15:15:27-07:00",
+      "last_seen": "2026-08-10T23:00:20+05:30"
+    },
+    {
+      "file": "docs/de/built-in-policies.mdx",
+      "commits": 23,
+      "additions": 2311,
+      "deletions": 1452,
+      "churn": 3763,
+      "first_seen": "2026-04-14T15:15:27-07:00",
+      "last_seen": "2026-08-10T23:00:20+05:30"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "fp-cloud-cli/fp_cli/output.py",
+      "loc": 6961
+    },
+    {
+      "file": "__tests__/hooks/builtin-policies.test.ts",
+      "loc": 4453
+    },
+    {
+      "file": "src/hooks/pack-cli.ts",
+      "loc": 3496
+    },
+    {
+      "file": "crates/failproofaid/src/cloud_client.rs",
+      "loc": 3432
+    },
+    {
+      "file": "src/hooks/builtin-policies.ts",
+      "loc": 3376
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "ee5dc02259e5b3684b71965dbbe755eab282d3ab",
+      "short_hash": "ee5dc022",
+      "author": "Chetan Raghuvanshi",
+      "date": "2026-09-29T20:06:51+05:30",
+      "subject": "Hermes: update migrates to a linked plugin; no bundled Jev checks; shadow mode is observe (#868)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 4038,
+      "deletions": 1473,
+      "files_count": 139,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "a7932a0a5065d7c3aa5aeea77f17c16e88310d76",
+      "short_hash": "a7932a0a",
+      "author": "Chetan Raghuvanshi",
+      "date": "2026-09-30T21:19:47+05:30",
+      "subject": "feat: request ids on uploads, fp calls and evaluator calls (#872)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 1003,
+      "deletions": 50,
+      "files_count": 16,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "7b3655a21d377fa83fb1b1c5e0a93bec53a5fd1b",
+      "short_hash": "7b3655a2",
+      "author": "Chetan Raghuvanshi",
+      "date": "2026-10-05T23:24:51+05:30",
+      "subject": "Hermes: instruct runs the call and reminds (no more block-once), load on Hermes 0.20.0 (#875)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 2176,
+      "deletions": 64,
+      "files_count": 10,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "e59aa82ffe1ad6d5f2c3e33e3ecc3cbb840601fd",
+      "short_hash": "e59aa82f",
+      "author": "Nivedit Jain",
+      "date": "2026-10-15T11:19:21+05:30",
+      "subject": "[failproofai-legion-901] Combine the open Dependabot PRs and clear every fixable security finding (#901)",
+      "coauthors": [
+        "dependabot[bot]",
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "a9b27eff5d9ca2c67449b6c0b51001a0a49eea21",
+      "short_hash": "a9b27eff",
+      "author": "Chetan Raghuvanshi",
+      "date": "2026-10-15T20:00:51+05:30",
+      "subject": "fix(otel): use the /otel Cloud endpoint base (#903)",
+      "coauthors": [],
+      "additions": 117,
+      "deletions": 20,
+      "files_count": 7,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "a6059dd18103466b012b7763cca517fc39eeab0d",
+      "short_hash": "a6059dd1",
+      "author": "dependabot[bot]",
+      "date": "2026-10-16T12:39:04+05:30",
+      "subject": "[failproofai-legion-902] Patch the nextjs and mastra-0 fixture advisories without moving a pin (#902)",
+      "coauthors": [
+        "dependabot[bot]",
+        "NiveditJain",
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "8c903245dce12143b144415a9e34567df4015e35",
+      "short_hash": "8c903245",
+      "author": "Nivedit Jain",
+      "date": "2026-10-16T18:50:31+05:30",
+      "subject": "[failproofai-legion-904] Clear the fixable Dependabot alerts: mcp in the SDK lock, sprintf-js in two fixtures (#904)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "e24f0e6f810ddef4d1e7200ef61219464ae98c2f",
+      "short_hash": "e24f0e6f",
+      "author": "Nivedit Jain",
+      "date": "2026-10-20T11:46:23+05:30",
+      "subject": "[failproofai-legion-918] Patch aiohttp in the Python SDK lock to clear the Supply Chain gate (#918)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "a62c6bfefa80a2d72b566e90748a0653f0d7ca8b",
+      "short_hash": "a62c6bfe",
+      "author": "Nivedit Jain",
+      "date": "2026-10-22T16:45:21+05:30",
+      "subject": "[failproofai-legion-926] Combine the three open Dependabot PRs and clear the Supply Chain gate (#926)",
+      "coauthors": [
+        "dependabot[bot]",
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "2908deedb27b24dde8c7cff37727fcfa59ed463e",
+      "short_hash": "2908deed",
+      "author": "Siddartha Aralakuppe Yogesha",
+      "date": "2026-10-25T06:52:08+05:30",
+      "subject": "[staging] Cloud login, agent skills, SQLite-optional collector, and Cloud Jev policies (#933)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>",
+        "chhhee10"
+      ],
+      "additions": 24679,
+      "deletions": 1127,
+      "files_count": 198,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "c74ee64e9543ee0e92f0ec949531f1716fbb83de",
+      "short_hash": "c74ee64e",
+      "author": "Nivedit Jain",
+      "date": "2026-10-25T07:52:20+05:30",
+      "subject": "[failproofai-legion-934] Clear the fixable Dependabot alerts and restore the fixture pins #931 moved (#934)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 98,
+      "deletions": 3,
+      "files_count": 3,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "a9e42576ce7c5c5985f40dc4db711b648de9e1c0",
+      "short_hash": "a9e42576",
+      "author": "Nivedit Jain",
+      "date": "2026-10-25T09:52:58+05:30",
+      "subject": "chore(fp-cloud-cli): cut 0.0.2 stable (#936)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 1,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "30b09fbe5b6d6aa8b8eb3e9df7ab5385d870a766",
+      "short_hash": "30b09fbe",
+      "author": "Nivedit Jain",
+      "date": "2026-10-27T12:50:37+05:30",
+      "subject": "[failproofai-legion-950] Restore the framework floors #935 moved, and stop Dependabot proposing the move (#950)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 105,
+      "deletions": 9,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "2742718847bedb9e2bac58180ff03b07b3fdf2f4",
+      "short_hash": "27427188",
+      "author": "dependabot[bot]",
+      "date": "2026-10-27T13:28:52+05:30",
+      "subject": "chore(deps-dev): bump react from 19.3.0 to 19.3.1 (#944)",
+      "coauthors": [
+        "dependabot[bot]",
+        "NiveditJain",
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "ca313578c0f3ff2e01bd7e39ccf102c7775ae8ad",
+      "short_hash": "ca313578",
+      "author": "Nivedit Jain",
+      "date": "2026-10-27T14:30:09+05:30",
+      "subject": "[failproofai-legion-950] Drop Python 3.10 from failproofai-sdk to clear its 47 Dependabot alerts (#953)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 27,
+      "deletions": 59,
+      "files_count": 22,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "cc0ecee09088c69acc2e62dcd53553a4a5a37237",
+      "short_hash": "cc0ecee0",
+      "author": "Chetan Raghuvanshi",
+      "date": "2026-10-27T14:48:14+05:30",
+      "subject": "chore: remove the repo's dogfood failproofai hooks (#954)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 114,
+      "deletions": 1512,
+      "files_count": 20,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "5b48ffe1b90f16cea9cbdf4de16c881dfbaba3a1",
+      "short_hash": "5b48ffe1",
+      "author": "Nivedit Jain",
+      "date": "2026-11-02T16:48:07+05:30",
+      "subject": "[failproofai-legion-966] Replace #965 and #955, and clear every fixable Dependabot alert (#966)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 82,
+      "deletions": 4,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "fa9307f7afe77d2ca96da4eca65c7e8bdb334409",
+      "short_hash": "fa9307f7",
+      "author": "hermes-exosphere",
+      "date": "2026-11-06T17:28:22+05:30",
+      "subject": "docs: add MCP, Slack and product analytics pages (#982)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 301,
+      "deletions": 0,
+      "files_count": 3,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

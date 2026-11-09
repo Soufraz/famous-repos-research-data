@@ -1,0 +1,711 @@
+{
+  "repo": "headroom",
+  "full_name": "headroomlabs-ai/headroom",
+  "stars": 79105,
+  "stars_source": "github-api 2026-11-08T09:00:14Z",
+  "selection_topics": [
+    "context-engineering",
+    "prompt-engineering"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2026-01-07T19:58:51Z",
+    "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+    "fork": false,
+    "forks": 6184,
+    "full_name": "headroomlabs-ai/headroom",
+    "pushed_at": "2026-11-08T05:42:53Z",
+    "stars": 79105,
+    "fetched_at": "2026-11-08T09:00:14Z"
+  },
+  "url": "https://github.com/headroomlabs-ai/headroom",
+  "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "bb8d18a56abb07ca7e811235c86ea6b626eb1f8b",
+    "head_date": "2026-11-07T20:48:53-06:00",
+    "history_complete": true,
+    "non_merge_commits": 3314,
+    "merge_commits": 325,
+    "maintenance_bot_commits": 131,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 986,
+    "explicit_ai_pct": 31.0,
+    "by_tool": {
+      "claude": 837,
+      "copilot": 138,
+      "cursor": 5,
+      "devin": 3,
+      "other": 1,
+      "gemini": 1,
+      "codex": 1
+    },
+    "by_signal": {
+      "co-author": 932,
+      "footer": 51,
+      "agent-author": 3
+    },
+    "recent_180d": {
+      "commits": 2169,
+      "ai_pct": 32.3,
+      "fix_pct": 70.8
+    },
+    "first_365d": {
+      "commits": 3183,
+      "ai_pct": 31.0,
+      "fix_pct": 63.2
+    },
+    "bot_commit_count": 131,
+    "agent_config": {
+      "files": {
+        ".github/copilot-instructions.md": "2026-06-12T17:11:39-05:00",
+        "AGENTS.md": "2026-06-22T11:07:12-05:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2026-06-12T17:11:39-05:00"
+    }
+  },
+  "churn_and_stability": {
+    "total_commits": 3183,
+    "first_commit_date": "2026-01-06T23:16:58-08:00",
+    "last_commit_date": "2026-11-08T03:48:53+01:00",
+    "current_loc": 847162,
+    "total_historical_additions": 1094068,
+    "total_historical_deletions": 246932,
+    "total_churn": 1341000,
+    "churn_ratio": 1.58,
+    "survival_rate_pct": 77.4,
+    "code": {
+      "current_loc": 809016,
+      "additions": 1032969,
+      "deletions": 223938,
+      "churn_ratio": 1.55,
+      "survival_rate_pct": 78.3
+    },
+    "docs": {
+      "current_loc": 38146,
+      "additions": 61099,
+      "deletions": 22994,
+      "churn_ratio": 2.2,
+      "survival_rate_pct": 62.4
+    },
+    "fix_commits": 2011,
+    "fix_pct": 63.2,
+    "revert_commits": 4,
+    "revert_pct": 0.1,
+    "trial_error_commits": 2020,
+    "trial_error_pct": 63.5,
+    "rapid_fire_commits": 1249,
+    "rapid_fire_pct": 39.2,
+    "trial_error_chains": 883,
+    "suspicious_additions_count": 227,
+    "top5_hotspot_volatility_pct": 8.7
+  },
+  "code_hygiene": {
+    "total_files": 2198,
+    "docs_files": 167,
+    "avg_file_loc": 368.1,
+    "test_loc": 404832,
+    "test_files": 1225,
+    "test_ratio_pct": 50.0,
+    "comment_ratio_pct": 11.4,
+    "monolith_count": 138,
+    "top_languages": {
+      ".py": 663478,
+      ".rs": 93939,
+      ".ts": 21522,
+      ".js": 21490,
+      ".sh": 3327
+    }
+  },
+  "authors": {
+    "unique_authors": 417,
+    "top_authors": [
+      {
+        "name": "chopratejas",
+        "commits": 580,
+        "pct": 18.2
+      },
+      {
+        "name": "Tejas Chopra",
+        "commits": 503,
+        "pct": 15.8
+      },
+      {
+        "name": "JerrettDavis",
+        "commits": 242,
+        "pct": 7.6
+      },
+      {
+        "name": "Abhay Singh",
+        "commits": 185,
+        "pct": 5.8
+      },
+      {
+        "name": "JD Davis",
+        "commits": 126,
+        "pct": 4.0
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 23.7,
+    "p75": 200.0,
+    "p90": 1093.7,
+    "p95": 2823.0,
+    "p99": 27840.0,
+    "avg": 2139.6
+  },
+  "hotspots": [
+    {
+      "file": "headroom/proxy/server.py",
+      "commits": 408,
+      "additions": 33526,
+      "deletions": 25938,
+      "churn": 59464,
+      "first_seen": "2026-01-07T11:36:44-08:00",
+      "last_seen": "2026-11-08T03:48:53+01:00"
+    },
+    {
+      "file": "headroom/proxy/handlers/openai.py",
+      "commits": 310,
+      "additions": 26468,
+      "deletions": 13700,
+      "churn": 40168,
+      "first_seen": "2026-04-03T17:08:39-07:00",
+      "last_seen": "2026-11-08T03:48:53+01:00"
+    },
+    {
+      "file": "headroom/proxy/handlers/anthropic.py",
+      "commits": 244,
+      "additions": 11126,
+      "deletions": 4200,
+      "churn": 15326,
+      "first_seen": "2026-04-03T17:08:39-07:00",
+      "last_seen": "2026-11-08T03:48:53+01:00"
+    },
+    {
+      "file": "headroom/cli/wrap.py",
+      "commits": 232,
+      "additions": 21021,
+      "deletions": 11418,
+      "churn": 32439,
+      "first_seen": "2026-03-11T23:01:42-07:00",
+      "last_seen": "2026-11-08T03:48:53+01:00"
+    },
+    {
+      "file": "headroom/transforms/content_router.py",
+      "commits": 187,
+      "additions": 14691,
+      "deletions": 6042,
+      "churn": 20733,
+      "first_seen": "2026-01-14T13:46:55-08:00",
+      "last_seen": "2026-11-06T22:20:15+07:00"
+    },
+    {
+      "file": "README.md",
+      "commits": 164,
+      "additions": 5615,
+      "deletions": 4870,
+      "churn": 10485,
+      "first_seen": "2026-01-06T23:16:58-08:00",
+      "last_seen": "2026-11-08T03:48:53+01:00"
+    },
+    {
+      "file": "headroom/proxy/helpers.py",
+      "commits": 143,
+      "additions": 7002,
+      "deletions": 2051,
+      "churn": 9053,
+      "first_seen": "2026-04-03T16:17:50-07:00",
+      "last_seen": "2026-11-06T22:29:45-05:00"
+    },
+    {
+      "file": "headroom/cli/proxy.py",
+      "commits": 126,
+      "additions": 3547,
+      "deletions": 1501,
+      "churn": 5048,
+      "first_seen": "2026-01-29T21:19:27-08:00",
+      "last_seen": "2026-11-08T03:48:53+01:00"
+    },
+    {
+      "file": "headroom/proxy/handlers/streaming.py",
+      "commits": 97,
+      "additions": 4079,
+      "deletions": 1348,
+      "churn": 5427,
+      "first_seen": "2026-04-03T17:08:39-07:00",
+      "last_seen": "2026-11-08T08:15:40+05:30"
+    },
+    {
+      "file": "headroom/proxy/models.py",
+      "commits": 77,
+      "additions": 1205,
+      "deletions": 569,
+      "churn": 1774,
+      "first_seen": "2026-03-31T16:32:37-07:00",
+      "last_seen": "2026-11-08T03:48:53+01:00"
+    },
+    {
+      "file": "headroom/__init__.py",
+      "commits": 64,
+      "additions": 557,
+      "deletions": 207,
+      "churn": 764,
+      "first_seen": "2026-01-06T23:16:58-08:00",
+      "last_seen": "2026-11-04T07:01:04+08:00"
+    },
+    {
+      "file": "docs/content/docs/proxy.mdx",
+      "commits": 63,
+      "additions": 1352,
+      "deletions": 136,
+      "churn": 1488,
+      "first_seen": "2026-04-12T13:15:58+06:00",
+      "last_seen": "2026-11-08T03:48:53+01:00"
+    },
+    {
+      "file": "headroom/config.py",
+      "commits": 63,
+      "additions": 1479,
+      "deletions": 257,
+      "churn": 1736,
+      "first_seen": "2026-01-06T23:16:58-08:00",
+      "last_seen": "2026-11-07T21:40:09-05:00"
+    },
+    {
+      "file": "headroom/proxy/prometheus_metrics.py",
+      "commits": 59,
+      "additions": 2306,
+      "deletions": 182,
+      "churn": 2488,
+      "first_seen": "2026-04-03T16:17:50-07:00",
+      "last_seen": "2026-11-08T03:48:04+01:00"
+    },
+    {
+      "file": "headroom/proxy/savings_tracker.py",
+      "commits": 58,
+      "additions": 2843,
+      "deletions": 265,
+      "churn": 3108,
+      "first_seen": "2026-03-27T15:27:05+01:00",
+      "last_seen": "2026-11-08T03:43:46+01:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "headroom/providers/opencode/_dist/index.js",
+      "loc": 20389
+    },
+    {
+      "file": "headroom/proxy/handlers/openai.py",
+      "loc": 12770
+    },
+    {
+      "file": "headroom/cli/wrap.py",
+      "loc": 9631
+    },
+    {
+      "file": "headroom/transforms/content_router.py",
+      "loc": 8640
+    },
+    {
+      "file": "headroom/proxy/server.py",
+      "loc": 7600
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "2038fb2a3667d9cba3ff9cb1c4957add06ef5acb",
+      "short_hash": "2038fb2a",
+      "author": "Tejas Chopra",
+      "date": "2026-11-08T08:04:12+05:30",
+      "subject": "fix(metrics): cap savings_by_source rows and fold the rest into other (#4257)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>",
+        "JerrettDavis"
+      ],
+      "additions": 116,
+      "deletions": 10,
+      "files_count": 3,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "ced26852c6d103991e05c5eec1f13103e5ce2755",
+      "short_hash": "ced26852",
+      "author": "HetCreep",
+      "date": "2026-11-08T09:34:39+07:00",
+      "subject": "fix(smart-crusher): keep mixed-array dict rows and exact drop count with factor_out_constants (#4692)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 164,
+      "deletions": 9,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "456288da0765985ca31eed58dbdaef44ff9aa43a",
+      "short_hash": "456288da",
+      "author": "HetCreep",
+      "date": "2026-11-08T09:35:01+07:00",
+      "subject": "fix(beacon): enforce the allowlist below the top-level keys (#4691)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 228,
+      "deletions": 6,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "8f50884bd56deefdb3e8125b6f64ab9b6ca11bae",
+      "short_hash": "8f50884b",
+      "author": "Rudy Mizrahi Celekli",
+      "date": "2026-11-07T21:35:35-05:00",
+      "subject": "fix(init): handle non-UTF-8 directory names when deriving the init profile (#4673)",
+      "coauthors": [
+        "Claude Sonnet 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 22,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "33f067a243b2e648730c01ae6b9f20cba879f351",
+      "short_hash": "33f067a2",
+      "author": "Tejas Chopra",
+      "date": "2026-11-08T08:06:11+05:30",
+      "subject": "feat(proxy): add lossless /v1/compress mode and detect provider by wire shape (#4617)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>",
+        "JD Davis"
+      ],
+      "additions": 367,
+      "deletions": 31,
+      "files_count": 10,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "8f4122f4e5ae351703c775e042d2ad705cebc143",
+      "short_hash": "8f4122f4",
+      "author": "HetCreep",
+      "date": "2026-11-08T09:36:34+07:00",
+      "subject": "fix(proxy): track response.-prefixed item and content-part events in Responses SSE state (#4695)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 49,
+      "deletions": 4,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "08e66222c97a4e3e3e3e8eaa1df88f5769bc7d90",
+      "short_hash": "08e66222",
+      "author": "HetCreep",
+      "date": "2026-11-08T09:37:08+07:00",
+      "subject": "fix(proxy): apply max_body_bytes to chat completions and responses routes (#4693)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 81,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "adc67249660b4464e8489e21287d9b95d044b095",
+      "short_hash": "adc67249",
+      "author": "HetCreep",
+      "date": "2026-11-08T09:37:19+07:00",
+      "subject": "fix(proxy): refresh Bedrock AWS credentials before they expire (#4696)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 323,
+      "deletions": 17,
+      "files_count": 7,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "8f6366cf66d035fc8e9f390be424bc9bdf6c62e4",
+      "short_hash": "8f6366cf",
+      "author": "HetCreep",
+      "date": "2026-11-08T09:38:05+07:00",
+      "subject": "fix(ci): keep the npm publish token out of install and build steps (#4690)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 20,
+      "deletions": 3,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "385d487f41abd029fb4e2f8346c0cc30dc546bc4",
+      "short_hash": "385d487f",
+      "author": "HetCreep",
+      "date": "2026-11-08T09:38:20+07:00",
+      "subject": "fix(tag-protector): keep the enclosing tag open after a nested close in marker mode (#4682)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 18,
+      "deletions": 5,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "2568cbedaa394b073007f8704f4849730f9f0703",
+      "short_hash": "2568cbed",
+      "author": "HetCreep",
+      "date": "2026-11-08T09:38:37+07:00",
+      "subject": "fix(proxy): attach OpenAI chat memory only to a trailing user message (#4680)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 98,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "f896161340893dd8e96502d4c309980bed52d3d1",
+      "short_hash": "f8961613",
+      "author": "Aleksei Tcelishchev",
+      "date": "2026-11-07T21:40:09-05:00",
+      "subject": "feat(proxy): unified multi-upstream routing for Anthropic Cloud and local oMLX (#4597)",
+      "coauthors": [
+        "JD Davis"
+      ],
+      "additions": 763,
+      "deletions": 34,
+      "files_count": 8,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "861ef95620c801c2560a2eacc5773a26e131dfd0",
+      "short_hash": "861ef956",
+      "author": "Abhay Singh",
+      "date": "2026-11-08T08:11:30+05:30",
+      "subject": "feat(proxy/model-router): add shadow mode (HEADROOM_MODEL_ROUTER_LOG_ONLY) (#2395)",
+      "coauthors": [
+        "JD Davis"
+      ],
+      "additions": 111,
+      "deletions": 3,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "9b2dec56f9882a25fb511dc5f480b047845141f9",
+      "short_hash": "9b2dec56",
+      "author": "Serge ARADJ",
+      "date": "2026-11-08T03:42:27+01:00",
+      "subject": "feat(proxy): show per-request /stats metadata to token-authenticated callers (#4168)",
+      "coauthors": [
+        "Claude <noreply@anthropic.com>",
+        "JD Davis"
+      ],
+      "additions": 106,
+      "deletions": 6,
+      "files_count": 5,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "8388ff5efd7caf3a827e66bf69449c4a64df05af",
+      "short_hash": "8388ff5e",
+      "author": "gglucass",
+      "date": "2026-11-08T03:43:46+01:00",
+      "subject": "feat(savings): carry cumulative actual output_tokens in history checkpoints (#2921)",
+      "coauthors": [
+        "Claude Fable 5 <noreply@anthropic.com>",
+        "JD Davis"
+      ],
+      "additions": 115,
+      "deletions": 1,
+      "files_count": 2,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "9ad16a77f8b9a7817331aa5e9a9ee04d1e1fc05e",
+      "short_hash": "9ad16a77",
+      "author": "TenderDeve",
+      "date": "2026-11-08T08:15:18+05:30",
+      "subject": "feat(proxy): report DeepSeek as its own provider in dashboard (#2565)",
+      "coauthors": [
+        "JD Davis",
+        "JerrettDavis"
+      ],
+      "additions": 63,
+      "deletions": 4,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "3912c0405321c498f854fd0c152ae01abf63bf48",
+      "short_hash": "3912c040",
+      "author": "Abhay Singh",
+      "date": "2026-11-08T08:15:40+05:30",
+      "subject": "fix(ccr): lowercase the hash in the streaming feedback recorders (#2313)",
+      "coauthors": [
+        "JerrettDavis"
+      ],
+      "additions": 146,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "84cedbf2b4197f09ace9944c50655786dac35b03",
+      "short_hash": "84cedbf2",
+      "author": "Krishna Chaitanya",
+      "date": "2026-11-07T18:47:24-08:00",
+      "subject": "feat(proxy): expose per-request cost_usd in /stats recent_requests (#1079) (#1565)",
+      "coauthors": [
+        "JD Davis",
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 330,
+      "deletions": 1,
+      "files_count": 6,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "602ca65126e12d73ef44d4b1b01bbe1fa3b37080",
+      "short_hash": "602ca651",
+      "author": "Parideboy",
+      "date": "2026-11-08T03:48:04+01:00",
+      "subject": "feat(proxy): expose shared Redis store availability in /health and /metrics (#4578)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>",
+        "JD Davis"
+      ],
+      "additions": 562,
+      "deletions": 8,
+      "files_count": 7,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "bb8d18a56abb07ca7e811235c86ea6b626eb1f8b",
+      "short_hash": "bb8d18a5",
+      "author": "akbarkanso",
+      "date": "2026-11-08T03:48:53+01:00",
+      "subject": "feat(wrap): add `headroom wrap droid` for Factory Droid (#4143)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>",
+        "JerrettDavis"
+      ],
+      "additions": 1771,
+      "deletions": 47,
+      "files_count": 17,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

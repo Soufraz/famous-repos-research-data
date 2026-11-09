@@ -1,0 +1,86 @@
+{
+  "repo": "gsd-2",
+  "head_commit": "33c00aaff",
+  "published_results": [
+    {
+      "claim": "GSD 2.17 introduces a coordinated token optimization system that can reduce token usage by 40-60% without sacrificing output quality for most workloads.",
+      "metric": "Token usage reduction from token profiles (budget profile)",
+      "value": "40-60%",
+      "baseline": "Not stated explicitly (implied: pre-2.17 / quality profile)",
+      "evidence_type": "claim_only",
+      "files": [
+        "docs/user-docs/token-optimization.md:5",
+        "docs/user-docs/token-optimization.md:20",
+        "gitbook/features/token-optimization.md:3",
+        "mintlify-docs/guides/token-optimization.mdx:3",
+        "CHANGELOG.md:3671"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "This reduces token consumption by 20-50% on capped plans without sacrificing quality where it matters.",
+      "metric": "Token consumption (cost) reduction from dynamic model routing",
+      "value": "20-50%",
+      "baseline": "Not stated explicitly (implied: routing disabled)",
+      "evidence_type": "claim_only",
+      "files": [
+        "docs/user-docs/dynamic-model-routing.md:5",
+        "gitbook/features/dynamic-model-routing.md:3",
+        "mintlify-docs/guides/dynamic-model-routing.mdx:6",
+        "CHANGELOG.md:3629"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "decisions and requirements are formatted in a compact notation that saves 30-50% tokens compared to full markdown tables",
+      "metric": "Token savings of compact notation",
+      "value": "30-50%",
+      "baseline": "Full markdown tables",
+      "evidence_type": "claim_only",
+      "files": [
+        "docs/user-docs/token-optimization.md:373"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Proves ≥30% character savings when using DB-scoped content vs full-markdown for planning/research prompt types",
+      "metric": "Character savings (token proxy) of DB-scoped prompt content on synthetic fixtures (24 decisions, 21 requirements); asserted threshold, printed actual %",
+      "value": "Threshold only: plan-slice >=30%, research-milestone composite >10%; no actual values committed",
+      "baseline": "Full markdown file content",
+      "evidence_type": "harness_only",
+      "files": [
+        "src/resources/extensions/gsd/tests/integration/token-savings.test.ts:1-7",
+        "src/resources/extensions/gsd/tests/integration/token-savings.test.ts:174-180",
+        "src/resources/extensions/gsd/tests/integration/integration-lifecycle.test.ts:202-206"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "| Commands | Input tokens | Output tokens | Saved tokens | Savings | Avg command time |",
+      "metric": "RTK command-output token savings % and avg command time on a synthetic fixture project",
+      "value": "No results committed",
+      "baseline": "Raw command output (without RTK)",
+      "evidence_type": "harness_only",
+      "files": [
+        "scripts/rtk-benchmark.mjs:85-90",
+        "scripts/rtk-benchmark.mjs:108-118"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "ci: reduce GitHub Actions minutes ~60-70% (~10k → ~3-4k/month) (#1552)",
+      "metric": "Monthly GitHub Actions minutes (project CI cost, not product performance)",
+      "value": "~3-4k/month (~60-70% reduction)",
+      "baseline": "~10k/month",
+      "evidence_type": "claim_only",
+      "files": [
+        "CHANGELOG.md:2921"
+      ],
+      "reproduce_command": null
+    }
+  ],
+  "strongest_evidence_type": "harness_only",
+  "summary": "gsd-2 is archived (README.md is only a redirect to open-gsd/gsd-pi), but its user docs (mirrored in gitbook/ and mintlify-docs/) repeat headline savings figures (40-60% token reduction from token profiles, 20-50% from dynamic model routing, 30-50% from compact notation) with no method, data or quality measurement. The closest evidence is a synthetic-fixture integration test that asserts at least 30% character savings for DB-scoped prompts, and an RTK token-savings script (scripts/rtk-benchmark.mjs); neither has committed outputs and neither tests the headline figures. The ADR-003 token figures are design-time estimates, and the docs themselves say routing capability profiles are 'heuristic rankings, not benchmarks'.",
+  "result_focus": "outcome",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}

@@ -1,0 +1,167 @@
+{
+  "repo": "OmniRoute",
+  "head_commit": "2a8dc2741f",
+  "published_results": [
+    {
+      "claim": "RTK + Caveman stacked compression saves 15–95% tokens (~89% avg)",
+      "metric": "token savings % of stacked RTK→Caveman compression on eligible tool/context payloads. The number is computed from upstream third-party README figures, not measured: RTK https://github.com/rtk-ai/rtk (60-90%, sample ~118,000→~23,900 tokens = 79.7%) and Caveman https://github.com/JuliusBrussee/caveman (~46% input, 65% avg / ~75% headline / 22-87% output)",
+      "value": "78.4–94.6% range, 89.2% average (headline 15–95%)",
+      "baseline": "uncompressed payload; formula combined = 1 - (1 - RTK) * (1 - Caveman_input)",
+      "evidence_type": "external",
+      "files": [
+        "README.md:12",
+        "README.md:931",
+        "README.md:943",
+        "README.md:944",
+        "README.md:949",
+        "docs/compression/COMPRESSION_GUIDE.md:134",
+        "docs/compression/COMPRESSION_GUIDE.md:135",
+        "docs/compression/COMPRESSION_GUIDE.md:147",
+        "docs/compression/COMPRESSION_GUIDE.md:148",
+        "docs/compression/COMPRESSION_ENGINES.md:113",
+        "docs/compression/COMPRESSION_ENGINES.md:140",
+        "docs/compression/RTK_COMPRESSION.md:21",
+        "docs/compression/RTK_COMPRESSION.md:28"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Lite Mode (~15% savings, <1ms latency)",
+      "metric": "token savings % per compression mode preset (plus RTK intensity levels)",
+      "value": "Lite ~15% (<1ms latency); Standard (Caveman) ~30%; Aggressive ~50%; Ultra ~75%; RTK levels minimal ~20-40%, standard ~50-70%, aggressive ~70-90%",
+      "baseline": null,
+      "evidence_type": "claim_only",
+      "files": [
+        "README.md:975",
+        "README.md:976",
+        "README.md:977",
+        "README.md:978",
+        "docs/compression/COMPRESSION_GUIDE.md:41",
+        "docs/compression/COMPRESSION_GUIDE.md:57",
+        "docs/compression/COMPRESSION_GUIDE.md:68",
+        "docs/compression/COMPRESSION_GUIDE.md:80",
+        "docs/compression/RTK_COMPRESSION.md:367",
+        "docs/compression/RTK_COMPRESSION.md:368",
+        "docs/compression/RTK_COMPRESSION.md:369"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Same answer. 72% fewer tokens. Zero accuracy loss.",
+      "metric": "token reduction on one hand-picked Standard-mode example (plus one PT-BR Troglodita example); 'zero accuracy loss' is asserted, not graded",
+      "value": "69 → 19 tokens (72% fewer); PT-BR 42 → 12 tokens (~70% menos tokens)",
+      "baseline": "the original uncompressed sentence",
+      "evidence_type": "claim_only",
+      "files": [
+        "README.md:985",
+        "README.md:987",
+        "README.md:989",
+        "README.md:993",
+        "README.md:995",
+        "README.md:997"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "95.93% token savings / 96.26% character savings",
+      "metric": "token savings of stacked RTK(standard)+Caveman(full) on ONE synthetic Anthropic tool_result of 300 identical 'ERROR: connection refused at line 42' lines. The deterministic test reproduces exactly this input but only asserts savingsPercent > 90 and does not print the figure. The 96.26% character figure is not computed by the test.",
+      "value": "95.93% token savings / 96.26% character savings",
+      "baseline": "uncompressed request body",
+      "evidence_type": "harness+results",
+      "files": [
+        "docs/compression/COMPRESSION_GUIDE.md:161",
+        "docs/compression/COMPRESSION_GUIDE.md:163",
+        "tests/unit/compression/stacked-compression-tool-result-savings.test.ts:20",
+        "tests/unit/compression/stacked-compression-tool-result-savings.test.ts:48",
+        "tests/unit/compression/stacked-compression-tool-result-savings.test.ts:55"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Compression benchmark budget — per-engine token-savings floors must not regress",
+      "metric": "mean compressed tokens per task (chars/4 estimate) per engine over the 5-case hand-written BENCHMARK_CORPUS. It is used as a CI regression floor (fails if any engine rises >2%). Uncompressed per-task counts are NOT committed, so no savings % can be read from the file.",
+      "value": "caveman prose 119 / tool-output 114 / json 136; ultra 97 / 117 / 126; ccr 129 / 81 / 64; lite, aggressive, rtk, session-dedup and headroom all identical at 129 / 127 / 160",
+      "baseline": "frozen previous baseline (TOLERANCE_PERCENT = 2); no uncompressed baseline stated",
+      "evidence_type": "harness+results",
+      "files": [
+        "scripts/check/compression-budget-baseline.json:2-8",
+        "scripts/check/compression-budget-baseline.json:9-15",
+        "scripts/check/compression-budget-baseline.json:16-22",
+        "scripts/check/compression-budget-baseline.json:23-29",
+        "scripts/check/compression-budget-baseline.json:30-36",
+        "scripts/check/compression-budget-baseline.json:37-50",
+        "scripts/check/compression-budget-baseline.json:51-57",
+        "scripts/check/check-compression-budget.ts:11",
+        "scripts/check/check-compression-budget.ts:24",
+        "scripts/check/check-compression-budget.ts:43",
+        "open-sse/services/compression/harness/benchmark.ts:67",
+        "open-sse/services/compression/harness/benchmark.ts:311",
+        "docs/architecture/QUALITY_GATES.md:183",
+        ".github/workflows/ci.yml:353"
+      ],
+      "reproduce_command": "npm run check:compression-budget -- --update"
+    },
+    {
+      "claim": "The event-dispatch delta over baseline scoring is ~0.12 µs/request",
+      "metric": "in-process CPU cost per routing decision (µs/op, ops/s), 100k iterations on one workstation. This is a microbenchmark, not end-to-end proxy latency; the doc calls it 'machine-specific and relative — not a production guarantee'.",
+      "value": "scoring only ~0.045 µs/op (~22 M ops/s); + RoutingEvent (2 sinks) ~0.168 µs/op (~5.9 M ops/s); + OTel enqueue ~0.163 µs/op (~6.1 M ops/s); concurrent (8 interleaved bursts) ~0.18 µs/op; delta ~0.12 µs/request",
+      "baseline": "baseline (scoring only), i.e. calculateFactors+Score without the routing-event system",
+      "evidence_type": "harness+results",
+      "files": [
+        "docs/architecture/ADAPTIVE_ROUTING.md:128",
+        "docs/architecture/ADAPTIVE_ROUTING.md:134",
+        "docs/architecture/ADAPTIVE_ROUTING.md:135",
+        "docs/architecture/ADAPTIVE_ROUTING.md:136",
+        "docs/architecture/ADAPTIVE_ROUTING.md:137",
+        "docs/architecture/ADAPTIVE_ROUTING.md:139",
+        "docs/architecture/ADAPTIVE_ROUTING.md:141",
+        "scripts/perf/routing-events-bench.ts:43",
+        "scripts/perf/routing-events-bench.ts:120",
+        "scripts/perf/routing-events-bench.ts:127",
+        "scripts/perf/routing-events-bench.ts:136",
+        "scripts/perf/routing-events-bench.ts:166",
+        "package.json:108"
+      ],
+      "reproduce_command": "npm run bench:routing-events"
+    },
+    {
+      "claim": "Benchmark on a typical 4-core x86 server (texts ~100 tokens each):",
+      "metric": "memory-embedding latency p50/p95/p99 per embedding provider",
+      "value": "transformers (CPU) 80ms / 180ms / 350ms; remote (OpenAI) 120ms / 220ms / 400ms; static (Qdrant) 15ms / 30ms / 60ms; cache (hit) <1ms / <1ms / 2ms",
+      "baseline": null,
+      "evidence_type": "results_only",
+      "files": [
+        "docs/frameworks/MEMORY.md:698",
+        "docs/frameworks/MEMORY.md:702",
+        "docs/frameworks/MEMORY.md:703",
+        "docs/frameworks/MEMORY.md:704",
+        "docs/frameworks/MEMORY.md:705"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "~10× fewer tokens on the converted block; 59–70% end-to-end measured",
+      "metric": "token reduction of the OmniGlyph context-as-image engine (Claude Fable 5, direct Anthropic route)",
+      "value": "~10× fewer tokens on the converted block; 59–70% end-to-end",
+      "baseline": "the same block sent as text",
+      "evidence_type": "claim_only",
+      "files": [
+        "CHANGELOG.md:7560",
+        "CHANGELOG.md:9062",
+        "README.md:968"
+      ],
+      "reproduce_command": null
+    }
+  ],
+  "strongest_evidence_type": "harness+results",
+  "summary": "OmniRoute's headline '15–95% tokens (~89% avg)' is arithmetic on third-party README figures: the docs combine RTK's 60-90% and Caveman's ~46% input savings as 1 − (1 − RTK) × (1 − Caveman_input), giving 78.4–94.6% and an 89.2% average. The per-mode figures (Lite ~15%, Standard ~30%, Aggressive ~50%, Ultra ~75%) and the 69 → 19 token (72%) example are stated without data. The harness-backed numbers are narrower: a committed CI floor of compressed tokens per task over a 5-case corpus (`npm run check:compression-budget`), which records no uncompressed counts and lists the same values (129 / 127 / 160) for lite, aggressive, rtk, session-dedup and headroom; a unit test that runs the single input behind the quoted 95.93% (300 identical error lines) and asserts savings above 90%; and a routing-event microbenchmark (`npm run bench:routing-events`, ~0.12 µs of event-dispatch overhead per request). Other harnesses (bench:compression, eval:compression, perf:lts-baseline) have no committed outputs.",
+  "result_focus": "outcome",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself",
+  "accuracy_check": {
+    "date": "2026-11-08",
+    "numbers_checked": 103,
+    "corrections": [
+      "compression-budget-baseline.json refs :2, :9, :23, :30, :51 pointed at engine-name lines, not the numbers: widened to :2-8, :9-15, :23-29, :30-36, :51-57 and added :16-22 (aggressive) and :37-50 (session-dedup, headroom)"
+    ]
+  }
+}

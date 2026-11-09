@@ -1,0 +1,576 @@
+{
+  "ai-agents": [
+    {
+      "name": "affaan-m/ECC",
+      "stars": 299285,
+      "lang": "JavaScript",
+      "desc": "The agent harness performance optimization system. Skills, instincts, memory, se",
+      "topic": "ai-agents",
+      "url": "https://github.com/affaan-m/ECC"
+    },
+    {
+      "name": "deepseek-ai/deepseek-harness",
+      "stars": 275927,
+      "lang": "TypeScript",
+      "desc": "DeepSeek Harness: Everything is a Plugin.",
+      "topic": "ai-agents",
+      "url": "https://github.com/deepseek-ai/deepseek-harness"
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "stars": 261565,
+      "lang": "Python",
+      "desc": "The agent that grows with you",
+      "topic": "ai-agents",
+      "url": "https://github.com/NousResearch/hermes-agent"
+    },
+    {
+      "name": "firecrawl/firecrawl",
+      "stars": 199581,
+      "lang": "TypeScript",
+      "desc": "Supercharge your AI agents with data from the web and beyond. Building the libra",
+      "topic": "ai-agents",
+      "url": "https://github.com/firecrawl/firecrawl"
+    },
+    {
+      "name": "DietrichGebert/ponytail",
+      "stars": 186499,
+      "lang": "JavaScript",
+      "desc": "Makes your AI agent think like the laziest senior dev in the room. The best code",
+      "topic": "ai-agents",
+      "url": "https://github.com/DietrichGebert/ponytail"
+    },
+    {
+      "name": "langchain-ai/langchain",
+      "stars": 149183,
+      "lang": "Python",
+      "desc": "The agent engineering platform.",
+      "topic": "ai-agents",
+      "url": "https://github.com/langchain-ai/langchain"
+    },
+    {
+      "name": "Graphify-Labs/graphify",
+      "stars": 144099,
+      "lang": "Python",
+      "desc": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryab",
+      "topic": "ai-agents",
+      "url": "https://github.com/Graphify-Labs/graphify"
+    },
+    {
+      "name": "browser-use/browser-use",
+      "stars": 120280,
+      "lang": "Python",
+      "desc": "Open-source Python library for AI browser agents, plus Browser Use Cloud: stealt",
+      "topic": "ai-agents",
+      "url": "https://github.com/browser-use/browser-use"
+    },
+    {
+      "name": "stablyai/orca",
+      "stars": 118747,
+      "lang": "TypeScript",
+      "desc": "Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your o",
+      "topic": "ai-agents",
+      "url": "https://github.com/stablyai/orca"
+    },
+    {
+      "name": "thedotmack/claude-mem",
+      "stars": 114595,
+      "lang": "TypeScript",
+      "desc": "Persistent Context Across Sessions for Every Agent –  Captures everything your a",
+      "topic": "ai-agents",
+      "url": "https://github.com/thedotmack/claude-mem"
+    }
+  ],
+  "coding-agents": [
+    {
+      "name": "tt-a1i/archify",
+      "stars": 94538,
+      "lang": "JavaScript",
+      "desc": "Turn any idea, plan, or codebase into a beautiful interactive diagram. An agent ",
+      "topic": "coding-agents",
+      "url": "https://github.com/tt-a1i/archify"
+    },
+    {
+      "name": "hesreallyhim/awesome-claude-code",
+      "stars": 57501,
+      "lang": "Python",
+      "desc": "A hand-picked collection of the finest of resources for the most awesome of agen",
+      "topic": "coding-agents",
+      "url": "https://github.com/hesreallyhim/awesome-claude-code"
+    },
+    {
+      "name": "herdrdev/herdr",
+      "stars": 49190,
+      "lang": "Rust",
+      "desc": "the runtime your coding agents live on",
+      "topic": "coding-agents",
+      "url": "https://github.com/herdrdev/herdr"
+    },
+    {
+      "name": "wshobson/agents",
+      "stars": 42294,
+      "lang": "Python",
+      "desc": "Plugins, agents, skills, and commands for Claude Code, Codex CLI, Cursor, OpenCo",
+      "topic": "coding-agents",
+      "url": "https://github.com/wshobson/agents"
+    },
+    {
+      "name": "manaflow-ai/cmux",
+      "stars": 28742,
+      "lang": "Swift",
+      "desc": "Open source Ghostty-based macOS terminal with vertical tabs and notifications fo",
+      "topic": "coding-agents",
+      "url": "https://github.com/manaflow-ai/cmux"
+    },
+    {
+      "name": "slopus/happy",
+      "stars": 24536,
+      "lang": "Swift",
+      "desc": "Orchestrate Claude, Codex and Grok in one app. Open-source (MIT), reuses the sub",
+      "topic": "coding-agents",
+      "url": "https://github.com/slopus/happy"
+    },
+    {
+      "name": "composio-community/awesome-codex-skills",
+      "stars": 17248,
+      "lang": "Python",
+      "desc": "A curated list of practical Codex skills for automating workflows across the Cod",
+      "topic": "coding-agents",
+      "url": "https://github.com/composio-community/awesome-codex-skills"
+    },
+    {
+      "name": "ParadevAI/Paradev",
+      "stars": 16085,
+      "lang": "TypeScript",
+      "desc": "Paradev is an open-source Codex App and Conductor alternative. Orchestrate an ar",
+      "topic": "coding-agents",
+      "url": "https://github.com/ParadevAI/Paradev"
+    },
+    {
+      "name": "OrchestratorInc/agent-orchestrator",
+      "stars": 14249,
+      "lang": "TypeScript",
+      "desc": "Plan, run and supervise fleets of agents from task to merged PR. Desktop (macOS,",
+      "topic": "coding-agents",
+      "url": "https://github.com/OrchestratorInc/agent-orchestrator"
+    },
+    {
+      "name": "google/elephant-goldfish-model",
+      "stars": 14148,
+      "lang": "Python",
+      "desc": "Open-source plugin for designing and reviewing software with agents",
+      "topic": "coding-agents",
+      "url": "https://github.com/google/elephant-goldfish-model"
+    }
+  ],
+  "context-engineering": [
+    {
+      "name": "Snailclimb/JavaGuide",
+      "stars": 159464,
+      "lang": "JavaScript",
+      "desc": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
+      "topic": "context-engineering",
+      "url": "https://github.com/Snailclimb/JavaGuide"
+    },
+    {
+      "name": "infiniflow/ragflow",
+      "stars": 93745,
+      "lang": "Go",
+      "desc": "RAGFlow is an agent-native database: a Retrieval-Augmented Generation (RAG) engi",
+      "topic": "context-engineering",
+      "url": "https://github.com/infiniflow/ragflow"
+    },
+    {
+      "name": "headroomlabs-ai/headroom",
+      "stars": 79098,
+      "lang": "Python",
+      "desc": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20",
+      "topic": "context-engineering",
+      "url": "https://github.com/headroomlabs-ai/headroom"
+    },
+    {
+      "name": "Fission-AI/OpenSpec",
+      "stars": 74242,
+      "lang": "TypeScript",
+      "desc": "Spec-driven development (SDD) for AI coding assistants.",
+      "topic": "context-engineering",
+      "url": "https://github.com/Fission-AI/OpenSpec"
+    },
+    {
+      "name": "shanraisshan/claude-code-best-practice",
+      "stars": 68789,
+      "lang": "HTML",
+      "desc": "from vibe coding to agentic engineering - practice makes claude perfect",
+      "topic": "context-engineering",
+      "url": "https://github.com/shanraisshan/claude-code-best-practice"
+    },
+    {
+      "name": "gsd-build/get-shit-done",
+      "stars": 64159,
+      "lang": "JavaScript",
+      "desc": "A light-weight and powerful meta-prompting, context engineering and spec-driven ",
+      "topic": "context-engineering",
+      "url": "https://github.com/gsd-build/get-shit-done"
+    },
+    {
+      "name": "bojieli/ai-agent-book",
+      "stars": 57422,
+      "lang": "Python",
+      "desc": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
+      "topic": "context-engineering",
+      "url": "https://github.com/bojieli/ai-agent-book"
+    },
+    {
+      "name": "bmad-code-org/BMAD-METHOD",
+      "stars": 55122,
+      "lang": "Python",
+      "desc": "Breakthrough Method for Agile Ai Driven Development",
+      "topic": "context-engineering",
+      "url": "https://github.com/bmad-code-org/BMAD-METHOD"
+    },
+    {
+      "name": "VectifyAI/PageIndex",
+      "stars": 40172,
+      "lang": "Python",
+      "desc": "📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG",
+      "topic": "context-engineering",
+      "url": "https://github.com/VectifyAI/PageIndex"
+    },
+    {
+      "name": "virgiliojr94/book-to-skill",
+      "stars": 37227,
+      "lang": "Python",
+      "desc": "Turn any technical book PDF into a Claude Code skill — ready to study, reference",
+      "topic": "context-engineering",
+      "url": "https://github.com/virgiliojr94/book-to-skill"
+    }
+  ],
+  "llm": [
+    {
+      "name": "affaan-m/ECC",
+      "stars": 299285,
+      "lang": "JavaScript",
+      "desc": "The agent harness performance optimization system. Skills, instincts, memory, se",
+      "topic": "llm",
+      "url": "https://github.com/affaan-m/ECC"
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "stars": 261565,
+      "lang": "Python",
+      "desc": "The agent that grows with you",
+      "topic": "llm",
+      "url": "https://github.com/NousResearch/hermes-agent"
+    },
+    {
+      "name": "firecrawl/firecrawl",
+      "stars": 199581,
+      "lang": "TypeScript",
+      "desc": "Supercharge your AI agents with data from the web and beyond. Building the libra",
+      "topic": "llm",
+      "url": "https://github.com/firecrawl/firecrawl"
+    },
+    {
+      "name": "Significant-Gravitas/AutoGPT",
+      "stars": 187933,
+      "lang": "Python",
+      "desc": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our",
+      "topic": "llm",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT"
+    },
+    {
+      "name": "DietrichGebert/ponytail",
+      "stars": 186499,
+      "lang": "JavaScript",
+      "desc": "Makes your AI agent think like the laziest senior dev in the room. The best code",
+      "topic": "llm",
+      "url": "https://github.com/DietrichGebert/ponytail"
+    },
+    {
+      "name": "ollama/ollama",
+      "stars": 186313,
+      "lang": "Go",
+      "desc": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and o",
+      "topic": "llm",
+      "url": "https://github.com/ollama/ollama"
+    },
+    {
+      "name": "f/prompts.chat",
+      "stars": 176314,
+      "lang": "MDX",
+      "desc": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the co",
+      "topic": "llm",
+      "url": "https://github.com/f/prompts.chat"
+    },
+    {
+      "name": "huggingface/transformers",
+      "stars": 168639,
+      "lang": "Python",
+      "desc": "🤗 Transformers: the model-definition framework for state-of-the-art machine lear",
+      "topic": "llm",
+      "url": "https://github.com/huggingface/transformers"
+    },
+    {
+      "name": "langgenius/dify",
+      "stars": 160642,
+      "lang": "Python",
+      "desc": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on o",
+      "topic": "llm",
+      "url": "https://github.com/langgenius/dify"
+    },
+    {
+      "name": "open-webui/open-webui",
+      "stars": 158065,
+      "lang": "Svelte",
+      "desc": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+      "topic": "llm",
+      "url": "https://github.com/open-webui/open-webui"
+    }
+  ],
+  "prompt-engineering": [
+    {
+      "name": "DietrichGebert/ponytail",
+      "stars": 186499,
+      "lang": "JavaScript",
+      "desc": "Makes your AI agent think like the laziest senior dev in the room. The best code",
+      "topic": "prompt-engineering",
+      "url": "https://github.com/DietrichGebert/ponytail"
+    },
+    {
+      "name": "f/prompts.chat",
+      "stars": 176314,
+      "lang": "MDX",
+      "desc": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the co",
+      "topic": "prompt-engineering",
+      "url": "https://github.com/f/prompts.chat"
+    },
+    {
+      "name": "microsoft/generative-ai-for-beginners",
+      "stars": 123113,
+      "lang": "Jupyter Notebook",
+      "desc": "21 Lessons, Get Started Building with Generative AI ",
+      "topic": "prompt-engineering",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners"
+    },
+    {
+      "name": "JuliusBrussee/caveman",
+      "stars": 118199,
+      "lang": "Go",
+      "desc": "🪨 why use many token when few token do trick. Viral skill + proxy for coding age",
+      "topic": "prompt-engineering",
+      "url": "https://github.com/JuliusBrussee/caveman"
+    },
+    {
+      "name": "dair-ai/Prompt-Engineering-Guide",
+      "stars": 79893,
+      "lang": "MDX",
+      "desc": "🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, conte",
+      "topic": "prompt-engineering",
+      "url": "https://github.com/dair-ai/Prompt-Engineering-Guide"
+    },
+    {
+      "name": "headroomlabs-ai/headroom",
+      "stars": 79098,
+      "lang": "Python",
+      "desc": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20",
+      "topic": "prompt-engineering",
+      "url": "https://github.com/headroomlabs-ai/headroom"
+    },
+    {
+      "name": "asgeirtj/system_prompts_leaks",
+      "stars": 71011,
+      "lang": "Python",
+      "desc": "Leaked system prompts of ChatGPT, Claude, Gemini and more. The hidden system pro",
+      "topic": "prompt-engineering",
+      "url": "https://github.com/asgeirtj/system_prompts_leaks"
+    },
+    {
+      "name": "blader/humanizer",
+      "stars": 66059,
+      "lang": "Python",
+      "desc": "Agent skill that removes signs of AI-generated writing from text",
+      "topic": "prompt-engineering",
+      "url": "https://github.com/blader/humanizer"
+    },
+    {
+      "name": "Imbad0202/academic-research-skills",
+      "stars": 55760,
+      "lang": "Python",
+      "desc": "Academic Research Skills for Claude Code: research → write → review → revise → f",
+      "topic": "prompt-engineering",
+      "url": "https://github.com/Imbad0202/academic-research-skills"
+    },
+    {
+      "name": "elder-plinius/CL4R1T4S",
+      "stars": 51831,
+      "lang": "Markdown/None",
+      "desc": "LEAKED SYSTEM PROMPTS FOR CHATGPT, CLAUDE, GEMINI, GROK, PERPLEXITY, CURSOR, LOV",
+      "topic": "prompt-engineering",
+      "url": "https://github.com/elder-plinius/CL4R1T4S"
+    }
+  ],
+  "spec-driven-development": [
+    {
+      "name": "Fission-AI/OpenSpec",
+      "stars": 74242,
+      "lang": "TypeScript",
+      "desc": "Spec-driven development (SDD) for AI coding assistants.",
+      "topic": "spec-driven-development",
+      "url": "https://github.com/Fission-AI/OpenSpec"
+    },
+    {
+      "name": "gsd-build/get-shit-done",
+      "stars": 64159,
+      "lang": "JavaScript",
+      "desc": "A light-weight and powerful meta-prompting, context engineering and spec-driven ",
+      "topic": "spec-driven-development",
+      "url": "https://github.com/gsd-build/get-shit-done"
+    },
+    {
+      "name": "bmad-code-org/BMAD-METHOD",
+      "stars": 55122,
+      "lang": "Python",
+      "desc": "Breakthrough Method for Agile Ai Driven Development",
+      "topic": "spec-driven-development",
+      "url": "https://github.com/bmad-code-org/BMAD-METHOD"
+    },
+    {
+      "name": "zeromicro/go-zero",
+      "stars": 33420,
+      "lang": "Go",
+      "desc": "A cloud-native Go microservices framework with cli tool for productivity.",
+      "topic": "spec-driven-development",
+      "url": "https://github.com/zeromicro/go-zero"
+    },
+    {
+      "name": "google/elephant-goldfish-model",
+      "stars": 14148,
+      "lang": "Python",
+      "desc": "Open-source plugin for designing and reviewing software with agents",
+      "topic": "spec-driven-development",
+      "url": "https://github.com/google/elephant-goldfish-model"
+    },
+    {
+      "name": "open-gsd/gsd-core",
+      "stars": 11330,
+      "lang": "JavaScript",
+      "desc": "Git. Ship. Done - Core",
+      "topic": "spec-driven-development",
+      "url": "https://github.com/open-gsd/gsd-core"
+    },
+    {
+      "name": "Gentleman-Programming/gentle-ai",
+      "stars": 8585,
+      "lang": "Go",
+      "desc": "Gentle-AI configures the AI coding agents you already use: Claude Code, Cursor, ",
+      "topic": "spec-driven-development",
+      "url": "https://github.com/Gentleman-Programming/gentle-ai"
+    },
+    {
+      "name": "JetBrains/thinkrail",
+      "stars": 7918,
+      "lang": "TypeScript",
+      "desc": "ThinkRail is the agentic IDE that gets better every time you use it",
+      "topic": "spec-driven-development",
+      "url": "https://github.com/JetBrains/thinkrail"
+    },
+    {
+      "name": "gsd-build/gsd-2",
+      "stars": 7750,
+      "lang": "TypeScript",
+      "desc": "A powerful meta-prompting, context engineering and spec-driven development syste",
+      "topic": "spec-driven-development",
+      "url": "https://github.com/gsd-build/gsd-2"
+    },
+    {
+      "name": "gemini-cli-extensions/conductor",
+      "stars": 3777,
+      "lang": "Python",
+      "desc": "",
+      "topic": "spec-driven-development",
+      "url": "https://github.com/gemini-cli-extensions/conductor"
+    }
+  ],
+  "agent-harness": [
+    {
+      "name": "infiniflow/ragflow",
+      "stars": 93745,
+      "lang": "Go",
+      "desc": "RAGFlow is an agent-native database: a Retrieval-Augmented Generation (RAG) engi",
+      "topic": "agent-harness",
+      "url": "https://github.com/infiniflow/ragflow"
+    },
+    {
+      "name": "lobehub/lobehub",
+      "stars": 84357,
+      "lang": "TypeScript",
+      "desc": "🤯 LobeHub - Super-Agents on Your Team. Add super-agents to the chats your team a",
+      "topic": "agent-harness",
+      "url": "https://github.com/lobehub/lobehub"
+    },
+    {
+      "name": "Mintplex-Labs/anything-llm",
+      "stars": 68052,
+      "lang": "JavaScript",
+      "desc": "Stop renting your intelligence. Own it with AnythingLLM. Everything you need for",
+      "topic": "agent-harness",
+      "url": "https://github.com/Mintplex-Labs/anything-llm"
+    },
+    {
+      "name": "agentscope-ai/QwenPaw",
+      "stars": 37468,
+      "lang": "TypeScript",
+      "desc": "Your Personal AI Assistant; easy to install, deploy on your own machine or on th",
+      "topic": "agent-harness",
+      "url": "https://github.com/agentscope-ai/QwenPaw"
+    },
+    {
+      "name": "holaboss-ai/holaOS",
+      "stars": 11433,
+      "lang": "TypeScript",
+      "desc": "Open-source agentic workspace enterprises can make their own. Connect the system",
+      "topic": "agent-harness",
+      "url": "https://github.com/holaboss-ai/holaOS"
+    },
+    {
+      "name": "HarnessMD/munder-difflin",
+      "stars": 9423,
+      "lang": "JavaScript",
+      "desc": "an open-source alternative to the dots, bots and muses of the world, run an offi",
+      "topic": "agent-harness",
+      "url": "https://github.com/HarnessMD/munder-difflin"
+    },
+    {
+      "name": "Orkas-AI/Orkas",
+      "stars": 9097,
+      "lang": "JavaScript",
+      "desc": "Orkas is an open-source (MIT), local-first AI team for your desktop: a Commander",
+      "topic": "agent-harness",
+      "url": "https://github.com/Orkas-AI/Orkas"
+    },
+    {
+      "name": "mvschwarz/openrig",
+      "stars": 8733,
+      "lang": "TypeScript",
+      "desc": "Build your own network of agents from Claude Code, Codex and Pi: persistent team",
+      "topic": "agent-harness",
+      "url": "https://github.com/mvschwarz/openrig"
+    },
+    {
+      "name": "YaoApp/yao",
+      "stars": 8279,
+      "lang": "Go",
+      "desc": "✨ All your agents and workspaces in one place, on every device you own. Track ta",
+      "topic": "agent-harness",
+      "url": "https://github.com/YaoApp/yao"
+    },
+    {
+      "name": "FailproofAI/failproofai",
+      "stars": 8225,
+      "lang": "TypeScript",
+      "desc": "Observability and enforcement for AI agent harnesses. Capture every run and runt",
+      "topic": "agent-harness",
+      "url": "https://github.com/FailproofAI/failproofai"
+    }
+  ]
+}

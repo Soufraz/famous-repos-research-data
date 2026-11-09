@@ -1,0 +1,63 @@
+{
+  "repo": "yao",
+  "full_name": "YaoApp/yao",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "deb6ba9135e89cba56c531a2ca8b39fa7ac2058e",
+      "snapshot_date": "2022-03-04T21:43:19+08:00",
+      "first_commit_date": "2021-09-06T17:20:28+08:00",
+      "commits": 458,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 17.2,
+      "revert_pct": 0.0,
+      "churn_ratio": 2.12,
+      "survival_rate_pct": 64.1,
+      "code": {
+        "current_loc": 13885,
+        "additions": 21260,
+        "deletions": 7375,
+        "churn_ratio": 2.06,
+        "survival_rate_pct": 65.3
+      },
+      "docs": {
+        "current_loc": 244,
+        "additions": 790,
+        "deletions": 546,
+        "churn_ratio": 5.48,
+        "survival_rate_pct": 30.9
+      },
+      "rapid_fire_pct": 9.2,
+      "unique_authors": 3
+    },
+    "365": {
+      "snapshot_commit": "b3cf0e2e89646fdb5435c83cbcf0681c7fe7c1bb",
+      "snapshot_date": "2022-09-03T23:26:09+08:00",
+      "first_commit_date": "2021-09-06T17:20:28+08:00",
+      "commits": 547,
+      "ai_pct": 0.0,
+      "has_agent_config": false,
+      "fix_pct": 17.7,
+      "revert_pct": 0.0,
+      "churn_ratio": 2.18,
+      "survival_rate_pct": 62.8,
+      "code": {
+        "current_loc": 16721,
+        "additions": 26206,
+        "deletions": 9485,
+        "churn_ratio": 2.13,
+        "survival_rate_pct": 63.8
+      },
+      "docs": {
+        "current_loc": 302,
+        "additions": 891,
+        "deletions": 589,
+        "churn_ratio": 4.9,
+        "survival_rate_pct": 33.9
+      },
+      "rapid_fire_pct": 7.9,
+      "unique_authors": 4
+    }
+  }
+}

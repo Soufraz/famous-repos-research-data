@@ -1,0 +1,36 @@
+{
+  "repo": "graphify",
+  "full_name": "Graphify-Labs/graphify",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "ef4450d9c28acb2b8cdc22d369c1777b77148eef",
+      "snapshot_date": "2026-09-30T20:52:57+01:00",
+      "first_commit_date": "2026-04-03T18:56:14+01:00",
+      "commits": 1962,
+      "ai_pct": 52.9,
+      "has_agent_config": true,
+      "fix_pct": 53.5,
+      "revert_pct": 0.1,
+      "churn_ratio": 1.47,
+      "survival_rate_pct": 80.9,
+      "code": {
+        "current_loc": 184386,
+        "additions": 219195,
+        "deletions": 34826,
+        "churn_ratio": 1.38,
+        "survival_rate_pct": 84.1
+      },
+      "docs": {
+        "current_loc": 60023,
+        "additions": 83063,
+        "deletions": 23094,
+        "churn_ratio": 1.77,
+        "survival_rate_pct": 72.3
+      },
+      "rapid_fire_pct": 23.3,
+      "unique_authors": 312
+    },
+    "365": null
+  }
+}

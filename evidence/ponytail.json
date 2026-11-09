@@ -1,0 +1,133 @@
+{
+  "repo": "ponytail",
+  "head_commit": "96608e0",
+  "published_results": [
+    {
+      "claim": "-53% code · -41% time · -26% cost · -45% tokens",
+      "metric": "lines of code, wall-clock time, dollar cost, output tokens (geometric mean of per-task median ratios vs no skill)",
+      "value": "LOC -53% [-63..-41]; output tokens -45% [-54..-35]; cost -26% [-36..-16]; time -41% [-49..-32]; cheaper on 30 of 38 tasks",
+      "baseline": "same Claude Code agent (Opus 5.5) with no skill; also Ponytail v4.13 (LOC -48%, cost -16%)",
+      "evidence_type": "harness+results",
+      "files": [
+        "README.md:42",
+        "benchmarks/results/2026-10-07-agentic.md:40",
+        "benchmarks/results/2026-10-07-agentic.md:42",
+        "benchmarks/results/2026-10-07-agentic.md:43",
+        "benchmarks/results/2026-10-07-agentic.md:44",
+        "benchmarks/results/2026-10-07-agentic.md:46",
+        "benchmarks/agentic/run.py:472"
+      ],
+      "reproduce_command": "python run.py --task <the 39 task ids from the table above, comma separated> --arms baseline,ponytail,ponytail2 --models opus --runs 5",
+      "notes": "585 sessions, 39 tasks, with per-task medians committed (lines 133-173). Raw run workspaces (runs/<stamp>/) are not committed. Rescoring requires a live run first. A self-test runs without the API: `python run.py --selftest`."
+    },
+    {
+      "claim": "98% of risky logic ships with a test (no skill: 68%)",
+      "metric": "share of tasks needing a test where the agent left one; mutation-test kill rate of the agent's own tests",
+      "value": "98% test-where-needed; 66% injected bugs caught over all cells",
+      "baseline": "no skill 68% / 46%; Ponytail v4.13 95% / 64%",
+      "evidence_type": "harness+results",
+      "files": [
+        "benchmarks/README.md:13",
+        "benchmarks/results/2026-10-07-agentic.md:102",
+        "benchmarks/results/2026-10-07-agentic.md:104",
+        "benchmarks/results/2026-10-07-agentic.md:105"
+      ],
+      "reproduce_command": "python run.py --task <the 39 task ids from the table above, comma separated> --arms baseline,ponytail,ponytail2 --models opus --runs 5",
+      "notes": "The same table shows that where a test exists, no-skill tests catch more injected bugs (77% vs 69%, line 105). The README headline omits this."
+    },
+    {
+      "claim": "Hidden checks passed 86/90 (95.6%) | 86/90 (95.6%) | 87/90 (96.7%); all three arms passed 30 of 30 runs",
+      "metric": "hidden correctness/security checks passed (18 surgical tasks × 5 runs)",
+      "value": "Ponytail 5: 87/90 (96.7%); security tasks 30/30",
+      "baseline": "no skill 86/90 (95.6%), security 30/30",
+      "evidence_type": "harness+results",
+      "files": [
+        "benchmarks/results/2026-10-07-agentic.md:66",
+        "benchmarks/results/2026-10-07-agentic.md:68",
+        "benchmarks/results/2026-10-07-agentic.md:69",
+        "benchmarks/results/2026-10-07-agentic.md:71",
+        "README.md:88"
+      ],
+      "reproduce_command": "python run.py --task <the 39 task ids from the table above, comma separated> --arms baseline,ponytail,ponytail2 --models opus --runs 5",
+      "notes": "This is a parity result, not an improvement. The repo says so itself: \"the three arms are level\" (line 71)."
+    },
+    {
+      "claim": "in a blind comparison, Ponytail 5's replies beat the previous Ponytail's 110 to 67",
+      "metric": "blind LLM-judge pairwise preference of final replies",
+      "value": "110 : 67 (18 ties, p=0.002) vs v4.13; 82 : 106 (7 ties, p=0.09) vs no skill",
+      "baseline": "Ponytail v4.13; no skill",
+      "evidence_type": "harness+results",
+      "files": [
+        "README.md:88",
+        "benchmarks/results/2026-10-07-agentic.md:120",
+        "benchmarks/results/2026-10-07-agentic.md:121",
+        "benchmarks/agentic/judge.py"
+      ],
+      "reproduce_command": null,
+      "notes": "The README cites only the win over v4.13. Against no skill, the judge leaned slightly toward no skill (not significant), as the results file reports at lines 123-124."
+    },
+    {
+      "claim": "100% of planted problems found, no skill 87%. 100% of problems outside the diff found, no skill 78%.",
+      "metric": "/ponytail-review defect detection rate",
+      "value": "100% planted problems; 100% outside-diff problems",
+      "baseline": "no skill 87% / 78%",
+      "evidence_type": "claim_only",
+      "files": [
+        "README.md:105"
+      ],
+      "reproduce_command": null,
+      "notes": "Appears only in the alt text of an image (assets/v5/review.png). No results file or harness for review detection rates was found."
+    },
+    {
+      "claim": "Versus baseline, ponytail writes **80-94% less code**, costs **42-75% less**, and runs **3-6x faster**, on every Claude model.",
+      "metric": "LOC, cost, latency in the single-shot benchmark (5 tasks, 3 Claude models, median of 10 runs; cost at 30 runs)",
+      "value": "80-94% less code; 42-75% less cost; 3-6x faster",
+      "baseline": "bare model with no skill (also caveman arm)",
+      "evidence_type": "harness+results",
+      "files": [
+        "benchmarks/README.md:65",
+        "benchmarks/README.md:67",
+        "benchmarks/promptfooconfig.yaml",
+        "benchmarks/results/2026-06-17-cost-verification.md:56"
+      ],
+      "reproduce_command": "npx promptfoo@latest eval -c promptfooconfig.yaml --env-file ../.env --repeat 10",
+      "notes": "Superseded, and caveated by the repo itself: \"The gap above is single-shot, against a bare model ... and overstates the win\" (benchmarks/README.md:67-68)."
+    },
+    {
+      "claim": "gpt-5.4-mini ... **26.2% more expensive**; gpt-5.5 ... **38.7% more expensive**",
+      "metric": "cost per 5 tasks, single-shot, OpenAI models (10 reps)",
+      "value": "+26.2% (gpt-5.4-mini), +38.7% (gpt-5.5); gpt-4.1-mini 39.6% cheaper",
+      "baseline": "no skill",
+      "evidence_type": "harness+results",
+      "files": [
+        "benchmarks/results/2026-06-17-cost-verification.md:64",
+        "benchmarks/results/2026-06-17-cost-verification.md:65",
+        "benchmarks/promptfooconfig.gpt-newest.yaml"
+      ],
+      "reproduce_command": "npx promptfoo@latest eval -c benchmarks/promptfooconfig.gpt-newest.yaml --env-file .env --repeat 10",
+      "notes": "Openly published negative result: on reasoning models the injected ruleset costs more than it saves."
+    },
+    {
+      "claim": "~44% less code (53% fewer statements), no correctness or security regression",
+      "metric": "LOC and correctness on third-party harness (24 tasks, 480 builds, Opus 4.8)",
+      "value": "~44% less code",
+      "baseline": "no skill",
+      "evidence_type": "external",
+      "files": [
+        "benchmarks/README.md:85",
+        "benchmarks/README.md:86"
+      ],
+      "reproduce_command": null,
+      "notes": "Third-party: https://kuldeepb19.github.io/ponytail-benchmark/ . A second external run, https://github.com/RicardoCostaGit/ponytail-benchmark-from-cursor , reports \"higher process cost (more tool calls/tokens) on large completion-forced tasks\". Not verified here."
+    }
+  ],
+  "strongest_evidence_type": "harness+results",
+  "summary": "Ponytail commits an agentic harness (benchmarks/agentic/run.py with judge, completeness and compare scripts) and results with per-task medians, 95% bootstrap intervals and sign tests: on 39 tasks with 5 runs per task and arm (585 sessions), Ponytail 5 reports -53% lines of code, -45% output tokens, -26% cost and -41% time versus no skill, and a test for 98% of risky logic (no skill: 68%). The same results report where it did not come out ahead: hidden checks are level (87/90 vs 86/90 for no skill, and all three arms passed 30 of 30 security runs), no-skill tests catch more injected bugs where a test exists (77% vs 69%), and a blind judge leaned toward the no-skill replies (82 : 106, p=0.09, not significant). An earlier single-shot benchmark found ponytail 26.2% and 38.7% more expensive than no skill on gpt-5.4-mini and gpt-5.5. Raw run workspaces are not committed, so checking the results requires a paid live rerun, and the /ponytail-review detection rates (100% vs 87% for no skill) appear in an image caption without data.",
+  "result_focus": "outcome",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself",
+  "accuracy_check": {
+    "date": "2026-11-08",
+    "numbers_checked": 67,
+    "corrections": []
+  }
+}

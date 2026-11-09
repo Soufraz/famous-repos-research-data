@@ -1,0 +1,142 @@
+{
+  "repo": "AutoGPT",
+  "head_commit": "9cb76f90",
+  "published_results": [
+    {
+      "claim": "| Luna, migrated prompts | 131/137 | 125/137 | 13/137 | 31/34 | 28/34 |",
+      "metric": "Graphiti memory extraction (AutoGPT's Luna extraction prompts): answer checks passed on 31 AgentProbe multi-session memory scenarios (141 raw atomic checks, 137 after adjudication), normal memory / facts only / memory off / entire probes; one sample per case, evaluated 2026-10-19",
+      "value": "Migrated Luna prompts: 131/137 normal, 125/137 facts only, 13/137 memory off, 31/34 entire normal probes, 28/34 entire fact-only probes (raw: 134/141, 126/141, 15/141)",
+      "baseline": "Luna original prompts: 129/137, 79/137, 12/137, 30/34, 16/34 (raw 133/141, 81/141, 14/141); gpt-4.1-mini: 132/137, 104/137, 12/137, 31/34, 19/34 (raw 136/141, 105/141, 14/141)",
+      "evidence_type": "results_only",
+      "files": [
+        "docs/engineering/graphiti-luna-prompt-evaluation.md:3-5",
+        "docs/engineering/graphiti-luna-prompt-evaluation.md:31-36",
+        "docs/engineering/graphiti-luna-prompt-evaluation.md:56-76",
+        "docs/engineering/graphiti-luna-prompt-evaluation.csv"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "| Luna, migrated prompts | 10.89 / 17.94 s | 1.56 / 3.82 s | $0.11417 |",
+      "metric": "Graphiti memory evaluation runs: ingestion and warm-context latency (median / max) and recorded model cost per configuration (concurrent local runs, not production percentiles)",
+      "value": "Migrated Luna prompts: ingestion 10.89 / 17.94 s; warm context 1.56 / 3.82 s; recorded model cost $0.11417",
+      "baseline": "Luna original prompts: 8.63 / 15.50 s, 1.32 / 3.94 s, $0.10326; Mini: 7.00 / 13.73 s, 1.11 / 2.64 s, $0.26446",
+      "evidence_type": "results_only",
+      "files": [
+        "docs/engineering/graphiti-luna-prompt-evaluation.md:131-142"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "In `copilot-stream-reply`, one reply costs about 210,000 renders and 5.7 s of script time over about 55 commits.",
+      "metric": "Frontend copilot streaming a 20-line reply into a 200-message chat: React commits, renders, script/task time, long tasks, heap (median of 3 runs, dev at 03dfdcabf, 8 vCPU Linux sandbox)",
+      "value": "53 commits; 209,396 total renders; 3,815.2 renders per commit; script time 5,709 ms; task time 6,158 ms; 18 long tasks (5,867 ms total); heap after GC 86.4 MB",
+      "baseline": null,
+      "evidence_type": "harness+results",
+      "files": [
+        "docs/engineering/frontend-perf-baseline.md:1-17",
+        "docs/engineering/frontend-perf-baseline.md:161-175",
+        "autogpt_platform/frontend/scripts/perf/measure.ts",
+        "autogpt_platform/frontend/scripts/perf/scenarios/copilot-stream-reply.ts",
+        "autogpt_platform/frontend/package.json:35"
+      ],
+      "reproduce_command": "cd autogpt_platform/frontend && NEXT_PUBLIC_RENDER_COUNTER=1 pnpm dev (backend running), then pnpm perf --scenario copilot-stream-reply --label baseline"
+    },
+    {
+      "claim": "**Switching threads is the most expensive scenario:** about 270,000 renders and 11.7 s of script time over nine switches.",
+      "metric": "Frontend copilot switching between 200/50/10-message chats, three rounds: React renders, script/task time, long tasks, heap (median of 3 runs)",
+      "value": "288 commits; 269,370 total renders; 935.3 renders per commit; script time 11,714 ms; task time 13,451 ms; 26 long tasks (9,939 ms total); heap after GC 90.4 MB",
+      "baseline": null,
+      "evidence_type": "harness+results",
+      "files": [
+        "docs/engineering/frontend-perf-baseline.md:19",
+        "docs/engineering/frontend-perf-baseline.md:207-221",
+        "autogpt_platform/frontend/scripts/perf/scenarios/copilot-switch-threads.ts"
+      ],
+      "reproduce_command": "cd autogpt_platform/frontend && NEXT_PUBLIC_RENDER_COUNTER=1 pnpm dev (backend running), then pnpm perf --scenario copilot-switch-threads --label baseline"
+    },
+    {
+      "claim": "**Dragging a node during a running execution** renders about 500 components per pointer move, with 39 long tasks in 2 s.",
+      "metric": "Builder: dragging one node of a 50-node workflow with a RUNNING execution for 2 s (60 pointer moves): React renders, script time, long tasks, heap (median of 3 runs)",
+      "value": "251 commits; 128,816 total renders; 513.2 renders per commit; script time 5,327 ms; 39 long tasks (5,319 ms total); heap after GC 103.5 MB",
+      "baseline": null,
+      "evidence_type": "harness+results",
+      "files": [
+        "docs/engineering/frontend-perf-baseline.md:20",
+        "docs/engineering/frontend-perf-baseline.md:23-37",
+        "autogpt_platform/frontend/scripts/perf/scenarios/builder-drag-running.ts"
+      ],
+      "reproduce_command": "cd autogpt_platform/frontend && NEXT_PUBLIC_RENDER_COUNTER=1 pnpm dev (backend running), then pnpm perf --scenario builder-drag-running --label baseline"
+    },
+    {
+      "claim": "\"TestTicTacToe\": true, ... \"TestSynthesizeInfo\": false, ... \"TestWebArenaTask_0\": false,",
+      "metric": "Classic agent benchmark: per-challenge 'already beaten' flags read by direct-benchmark --maintain/--improve/--explore (agbenchmark 'Test{Name}' format; model, strategy, attempts and date not recorded)",
+      "value": "31 entries, 18 true and 13 false (counted from the file): 15 of 18 built-in challenges true; 3 of 13 WebArena tasks true (WebArena challenges are no longer in the tree)",
+      "baseline": null,
+      "evidence_type": "results_only",
+      "files": [
+        "classic/direct_benchmark/challenges_already_beaten.json:1-32",
+        "classic/direct_benchmark/direct_benchmark/challenge_loader.py:33-52"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "High-performance benchmark harness for AutoGPT that directly instantiates agents without HTTP server overhead",
+      "metric": "Classic agent challenge success per strategy/model over 22 challenge definitions in classic/direct_benchmark/challenges (reports written to ./reports/, which is gitignored)",
+      "value": "No results committed; CI runs ReadFile/WriteFile/coding subsets with --json and commits no output. Earlier agbenchmark report files (e.g. classic/benchmark/reports/Auto-GPT-Turbo/success_rate.json) were deleted in e33b1e210 on 2026-04-03",
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "classic/direct_benchmark/README.md:1-62",
+        "classic/direct_benchmark/README.md:137-145",
+        "classic/pyproject.toml:34",
+        "classic/reports/.gitignore",
+        ".github/workflows/classic-benchmark-ci.yml:66-115"
+      ],
+      "reproduce_command": "cd classic && poetry install && poetry run direct-benchmark run"
+    },
+    {
+      "claim": "**Release gate: aggregate (pooled) WER must stay under 5%.**",
+      "metric": "Word error rate of the onboarding brain-dump transcription pipeline against a committed LibriSpeech-derived corpus (25 speech clips, 4 no-speech clips) plus quality-gate verdicts",
+      "value": "No results committed; 5% is a release-gate threshold, and the report in EVAL.md:142-160 is a format example",
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "autogpt_platform/backend/backend/api/features/onboarding_dump/EVAL.md:1-11",
+        "autogpt_platform/backend/backend/api/features/onboarding_dump/EVAL.md:64-85",
+        "autogpt_platform/backend/backend/api/features/onboarding_dump/brain_dump_eval.py",
+        "autogpt_platform/backend/pyproject.toml:160"
+      ],
+      "reproduce_command": "cd autogpt_platform/backend && poetry run brain-dump-eval --dir backend/api/features/onboarding_dump/eval_data"
+    },
+    {
+      "claim": "about 11 requests a second in all, below what a preview's one-CPU API server can serve (it saturates near 18)",
+      "metric": "API throughput of a preview deployment under the k6 workload (per-endpoint p50/p95/p99, failure rate, copilot TTFT)",
+      "value": "Saturation near 18 requests/s on a one-CPU preview API server; baseline profile about 11 requests/s; no run results committed (load-tests/results/ is gitignored)",
+      "baseline": null,
+      "evidence_type": "harness_only",
+      "files": [
+        "autogpt_platform/backend/load-tests/README.md:22-28",
+        "autogpt_platform/backend/load-tests/README.md:59",
+        "autogpt_platform/backend/load-tests/tests/workload.js",
+        "autogpt_platform/backend/load-tests/.gitignore:8-9"
+      ],
+      "reproduce_command": "cd autogpt_platform/backend/load-tests && LOAD_PROFILE=baseline ./k6.sh run tests/workload.js"
+    },
+    {
+      "claim": "Tool schema token cost has been reduced by 34%, meaning faster and cheaper AutoPilot.",
+      "metric": "AutoPilot tool-schema token cost (platform changelog, March 20-25 2026, PR #12398)",
+      "value": "34% reduction",
+      "baseline": "Tool schemas before PR #12398",
+      "evidence_type": "claim_only",
+      "files": [
+        "docs/platform/changelog/march-20-march-25-2026.md:40"
+      ],
+      "reproduce_command": null
+    }
+  ],
+  "strongest_evidence_type": "harness+results",
+  "summary": "AutoGPT's only harness-backed published results are engineering measurements: docs/engineering/frontend-perf-baseline.md records `pnpm perf` medians for 19 frontend scenarios from the committed scripts/perf harness, e.g. 209,396 renders and 5,709 ms of script time for one streamed copilot reply. Its one outcome evaluation, a 2026-10-19 Graphiti memory-extraction comparison (migrated Luna prompts 131/137 adjudicated checks and 125/137 facts-only, vs 129/137 and 79/137 for the original prompts and 132/137 and 104/137 for gpt-4.1-mini), commits scores and a per-probe CSV but states that the local harness is not committed. The classic direct-benchmark agent harness, a k6 load-test suite and a transcription WER eval ship without results (agbenchmark reports were deleted on 2026-04-03, leaving a 31-entry beaten-challenge list of unrecorded provenance), and a changelog '34%' tool-schema token reduction has no in-repo evidence.",
+  "result_focus": "engineering",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}

@@ -1,0 +1,666 @@
+{
+  "repo": "BMAD-METHOD",
+  "full_name": "bmad-code-org/BMAD-METHOD",
+  "stars": 55118,
+  "stars_source": "github-api 2026-11-08T10:25:18Z",
+  "selection_topics": [
+    "context-engineering",
+    "spec-driven-development"
+  ],
+  "github": {
+    "archived": false,
+    "created_at": "2025-04-13T14:54:25Z",
+    "description": "Breakthrough Method for Agile Ai Driven Development",
+    "fork": false,
+    "forks": 6143,
+    "full_name": "bmad-code-org/BMAD-METHOD",
+    "pushed_at": "2026-11-08T03:41:31Z",
+    "stars": 55118,
+    "fetched_at": "2026-11-08T10:25:18Z"
+  },
+  "url": "https://github.com/bmad-code-org/BMAD-METHOD",
+  "description": "Breakthrough Method for Agile Ai Driven Development",
+  "audit": {
+    "analyzer_version": "2.0",
+    "head_commit": "a867e1604b365d48ea03cbd109da1066ba0c84bc",
+    "head_date": "2026-11-07T21:38:56-06:00",
+    "history_complete": true,
+    "non_merge_commits": 2193,
+    "merge_commits": 174,
+    "maintenance_bot_commits": 108,
+    "line_scope": "code + Markdown; excludes vendored, generated, lock and changelog files"
+  },
+  "ai_attribution": {
+    "explicit_ai_count": 306,
+    "explicit_ai_pct": 14.7,
+    "by_tool": {
+      "claude": 302,
+      "copilot": 3,
+      "cursor": 1
+    },
+    "by_signal": {
+      "co-author": 306
+    },
+    "recent_180d": {
+      "commits": 469,
+      "ai_pct": 8.5,
+      "fix_pct": 33.5
+    },
+    "first_365d": {
+      "commits": 1568,
+      "ai_pct": 16.6,
+      "fix_pct": 30.6
+    },
+    "agent_config": {
+      "files": {
+        "AGENTS.md": "2026-03-14T00:26:07-06:00"
+      },
+      "ci_agent_workflows": [],
+      "has_agent_config": true,
+      "first_config_date": "2026-03-14T00:26:07-06:00"
+    },
+    "bot_commit_count": 108
+  },
+  "churn_and_stability": {
+    "total_commits": 2085,
+    "first_commit_date": "2025-04-13T09:54:25-05:00",
+    "last_commit_date": "2026-11-07T21:38:56-06:00",
+    "current_loc": 65655,
+    "total_historical_additions": 1209424,
+    "total_historical_deletions": 1143761,
+    "total_churn": 2353185,
+    "churn_ratio": 35.84,
+    "survival_rate_pct": 5.4,
+    "code": {
+      "current_loc": 43788,
+      "additions": 184130,
+      "deletions": 140342,
+      "churn_ratio": 7.41,
+      "survival_rate_pct": 23.8
+    },
+    "docs": {
+      "current_loc": 21867,
+      "additions": 1025294,
+      "deletions": 1003419,
+      "churn_ratio": 92.78,
+      "survival_rate_pct": 2.1
+    },
+    "fix_commits": 661,
+    "fix_pct": 31.7,
+    "revert_commits": 3,
+    "revert_pct": 0.1,
+    "trial_error_commits": 658,
+    "trial_error_pct": 31.6,
+    "rapid_fire_commits": 232,
+    "rapid_fire_pct": 11.1,
+    "trial_error_chains": 94,
+    "suspicious_additions_count": 171,
+    "top5_hotspot_volatility_pct": 5.0
+  },
+  "code_hygiene": {
+    "total_files": 133,
+    "docs_files": 375,
+    "avg_file_loc": 329.2,
+    "test_loc": 20826,
+    "test_files": 56,
+    "test_ratio_pct": 47.6,
+    "comment_ratio_pct": 5.3,
+    "monolith_count": 8,
+    "top_languages": {
+      ".py": 39369,
+      ".mjs": 2453,
+      ".js": 1397,
+      ".astro": 485,
+      ".ts": 50
+    }
+  },
+  "authors": {
+    "unique_authors": 165,
+    "top_authors": [
+      {
+        "name": "Brian Madison",
+        "commits": 929,
+        "pct": 44.6
+      },
+      {
+        "name": "Alex Verkhovsky",
+        "commits": 609,
+        "pct": 29.2
+      },
+      {
+        "name": "Brian",
+        "commits": 160,
+        "pct": 7.7
+      },
+      {
+        "name": "Murat K Ozcan",
+        "commits": 48,
+        "pct": 2.3
+      },
+      {
+        "name": "Davor Racic",
+        "commits": 23,
+        "pct": 1.1
+      }
+    ]
+  },
+  "velocity_stats": {
+    "p50": 3.0,
+    "p75": 18.9,
+    "p90": 517.4,
+    "p95": 4560.0,
+    "p99": 117360.0,
+    "avg": 9652.2
+  },
+  "hotspots": [
+    {
+      "file": "README.md",
+      "commits": 210,
+      "additions": 3744,
+      "deletions": 3620,
+      "churn": 7364,
+      "first_seen": "2025-04-13T13:12:47-05:00",
+      "last_seen": "2026-10-31T18:02:51-05:00"
+    },
+    {
+      "file": "tools/cli/installers/lib/core/installer.js",
+      "commits": 110,
+      "additions": 7197,
+      "deletions": 7197,
+      "churn": 14394,
+      "first_seen": "2025-09-28T23:17:07-05:00",
+      "last_seen": "2026-03-27T06:50:07-06:00"
+    },
+    {
+      "file": "tools/cli/lib/ui.js",
+      "commits": 74,
+      "additions": 5092,
+      "deletions": 3175,
+      "churn": 8267,
+      "first_seen": "2025-09-28T23:17:07-05:00",
+      "last_seen": "2026-03-20T22:52:02-06:00"
+    },
+    {
+      "file": "test/test-installation-components.js",
+      "commits": 68,
+      "additions": 5926,
+      "deletions": 5926,
+      "churn": 11852,
+      "first_seen": "2025-11-05T14:14:31-06:00",
+      "last_seen": "2026-08-19T22:56:29-07:00"
+    },
+    {
+      "file": "tools/cli/installers/lib/modules/manager.js",
+      "commits": 63,
+      "additions": 2345,
+      "deletions": 2345,
+      "churn": 4690,
+      "first_seen": "2025-09-28T23:17:07-05:00",
+      "last_seen": "2026-03-27T06:50:07-06:00"
+    },
+    {
+      "file": "tools/cli/installers/lib/core/manifest-generator.js",
+      "commits": 53,
+      "additions": 2233,
+      "deletions": 1532,
+      "churn": 3765,
+      "first_seen": "2025-09-28T23:17:07-05:00",
+      "last_seen": "2026-03-24T00:18:29-05:00"
+    },
+    {
+      "file": "tools/installer/lib/ide-setup.js",
+      "commits": 45,
+      "additions": 3528,
+      "deletions": 3528,
+      "churn": 7056,
+      "first_seen": "2025-06-12T22:38:24-05:00",
+      "last_seen": "2025-09-28T23:17:07-05:00"
+    },
+    {
+      "file": "docs/index.md",
+      "commits": 44,
+      "additions": 632,
+      "deletions": 568,
+      "churn": 1200,
+      "first_seen": "2025-10-30T11:26:15-05:00",
+      "last_seen": "2026-10-11T22:00:01-05:00"
+    },
+    {
+      "file": "tools/installer/bin/bmad.js",
+      "commits": 44,
+      "additions": 1098,
+      "deletions": 1098,
+      "churn": 2196,
+      "first_seen": "2025-06-12T22:38:24-05:00",
+      "last_seen": "2025-09-28T23:17:07-05:00"
+    },
+    {
+      "file": "tools/installer/lib/installer.js",
+      "commits": 43,
+      "additions": 3378,
+      "deletions": 3378,
+      "churn": 6756,
+      "first_seen": "2025-06-12T22:38:24-05:00",
+      "last_seen": "2025-09-28T23:17:07-05:00"
+    },
+    {
+      "file": "docs/reference/workflow-map.md",
+      "commits": 40,
+      "additions": 422,
+      "deletions": 422,
+      "churn": 844,
+      "first_seen": "2026-01-25T12:00:26-08:00",
+      "last_seen": "2026-08-30T14:57:25-06:00"
+    },
+    {
+      "file": "tools/cli/installers/lib/core/config-collector.js",
+      "commits": 40,
+      "additions": 1757,
+      "deletions": 385,
+      "churn": 2142,
+      "first_seen": "2025-09-28T23:17:07-05:00",
+      "last_seen": "2026-03-23T15:55:19-05:00"
+    },
+    {
+      "file": "website/astro.config.mjs",
+      "commits": 36,
+      "additions": 834,
+      "deletions": 291,
+      "churn": 1125,
+      "first_seen": "2026-01-06T22:42:15-08:00",
+      "last_seen": "2026-08-30T14:57:25-06:00"
+    },
+    {
+      "file": "bmad-core/agents/bmad-master.md",
+      "commits": 34,
+      "additions": 301,
+      "deletions": 295,
+      "churn": 596,
+      "first_seen": "2025-06-12T19:36:12-05:00",
+      "last_seen": "2025-09-28T23:17:07-05:00"
+    },
+    {
+      "file": "tools/tests/test_bmad_setup.py",
+      "commits": 32,
+      "additions": 4936,
+      "deletions": 1688,
+      "churn": 6624,
+      "first_seen": "2026-08-18T20:46:19-07:00",
+      "last_seen": "2026-11-04T22:19:35-06:00"
+    }
+  ],
+  "monoliths": [
+    {
+      "file": "tools/tests/test_bmad_setup.py",
+      "loc": 4001
+    },
+    {
+      "file": "skills/bmad/scripts/setup.py",
+      "loc": 2587
+    },
+    {
+      "file": "skills/bmad-agent-po/scripts/tests/test_tickets.py",
+      "loc": 2120
+    },
+    {
+      "file": "skills/bmad-agent-po/scripts/tickets.py",
+      "loc": 1891
+    },
+    {
+      "file": "skills/bmad-shard-pro/scripts/shard_tool.py",
+      "loc": 1223
+    }
+  ],
+  "commits_sample": [
+    {
+      "hash": "fbd31bd82107cea012c2ddb86419d5effbed9b0f",
+      "short_hash": "fbd31bd8",
+      "author": "Alex Verkhovsky",
+      "date": "2026-10-18T20:40:45-07:00",
+      "subject": "fix(skills): rewrite bmad-build description around delegated work (#3118)",
+      "coauthors": [],
+      "additions": 1,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "68ae63d74670d560c33822808ba3b2314c796ea3",
+      "short_hash": "68ae63d7",
+      "author": "Alex Verkhovsky",
+      "date": "2026-10-19T20:24:14-07:00",
+      "subject": "fix(skills): say what bmad-build-auto does in its description (#3119)",
+      "coauthors": [],
+      "additions": 1,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "867c546e625c4d1f0cfdd290a79dcc035a994586",
+      "short_hash": "867c546e",
+      "author": "Ruben",
+      "date": "2026-10-27T22:57:00+04:00",
+      "subject": "fix(skills): escape apostrophe in bmad-retrospective description (#3108)",
+      "coauthors": [
+        "Claude Opus 5.5 (1M context) <noreply@anthropic.com>"
+      ],
+      "additions": 1,
+      "deletions": 1,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "ecfde2a980df96ff9d8181636d5a2f443a97fab7",
+      "short_hash": "ecfde2a9",
+      "author": "Murat K Ozcan",
+      "date": "2026-10-31T07:06:41-05:00",
+      "subject": "docs: name current TEA skills and its v7 install (#3152)",
+      "coauthors": [],
+      "additions": 19,
+      "deletions": 17,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "423690c3d7a334c9b3060609b18ca17a3cc2e3c0",
+      "short_hash": "423690c3",
+      "author": "Murat K Ozcan",
+      "date": "2026-10-31T11:49:27-05:00",
+      "subject": "docs: describe v7 module install and the three-file config model (#3156)",
+      "coauthors": [],
+      "additions": 618,
+      "deletions": 358,
+      "files_count": 27,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "0fe4f1490249f0379dc60daf6b928161d75b7f9d",
+      "short_hash": "0fe4f149",
+      "author": "Murat K Ozcan",
+      "date": "2026-10-31T11:50:15-05:00",
+      "subject": "fix(skills): scope the activation preflight to named roots, report pinned installs, reject bare-number backlog fallback (#3154)",
+      "coauthors": [
+        "Brian"
+      ],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "ae4b44c8a250d4f92627dba79fc9b6f9e762daff",
+      "short_hash": "ae4b44c8",
+      "author": "Murat K Ozcan",
+      "date": "2026-10-31T11:51:05-05:00",
+      "subject": "feat(skills): build and retrospective read run folders, migration rewrites moved module paths (#3155)",
+      "coauthors": [],
+      "additions": 0,
+      "deletions": 0,
+      "files_count": 0,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "1f2d879319c35481e68414e60fc12f93fd01573e",
+      "short_hash": "1f2d8793",
+      "author": "Samuel Pinheiro",
+      "date": "2026-10-31T13:53:21-03:00",
+      "subject": "fix(setup): keep _bmad/render/ out of git (#3150)",
+      "coauthors": [
+        "Brian"
+      ],
+      "additions": 56,
+      "deletions": 0,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "048741334d1488d08bc14bac018e18020145d040",
+      "short_hash": "04874133",
+      "author": "Brian",
+      "date": "2026-10-31T18:02:51-05:00",
+      "subject": "docs: move the v7 release ETA to mid-November 2026 (#3159)",
+      "coauthors": [],
+      "additions": 3,
+      "deletions": 3,
+      "files_count": 3,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "bd70c643a7ec85d1ec2e88076b3fbdd8e4517f41",
+      "short_hash": "bd70c643",
+      "author": "Brian",
+      "date": "2026-10-31T18:07:24-05:00",
+      "subject": "fix(eval): keep git init from rewriting a hook's repository config (#3160)",
+      "coauthors": [],
+      "additions": 24,
+      "deletions": 2,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "fc6a41c67332c1c1490e78c108bec42cbfae4e1e",
+      "short_hash": "fc6a41c6",
+      "author": "Brian",
+      "date": "2026-10-31T19:01:43-05:00",
+      "subject": "feat(toolsmith): default to a single-skill module and start prose from one sentence (#3158)",
+      "coauthors": [],
+      "additions": 2227,
+      "deletions": 263,
+      "files_count": 68,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "dc9fbb14f38676c3acaaf3f433c900d1ef162839",
+      "short_hash": "dc9fbb14",
+      "author": "Brian",
+      "date": "2026-10-31T21:22:02-05:00",
+      "subject": "feat(core-tools): add bmad-shard-pro and bmad-ingest (#3161)",
+      "coauthors": [],
+      "additions": 2704,
+      "deletions": 25,
+      "files_count": 30,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "499008ea97c53436e7c7fa598a4a25e7bb869e07",
+      "short_hash": "499008ea",
+      "author": "Brian",
+      "date": "2026-10-31T22:00:45-05:00",
+      "subject": "feat(skills)!: rebuild advanced elicitation to start in one command with independent readers (#3162)",
+      "coauthors": [],
+      "additions": 644,
+      "deletions": 202,
+      "files_count": 15,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "022be9314e4facd16826104a9f8033e1c5ed4fdc",
+      "short_hash": "022be931",
+      "author": "Alex Markevich",
+      "date": "2026-11-02T11:53:33-06:00",
+      "subject": "fix(tools): validate SKILL.md frontmatter as YAML (SKILL-08) (#3139)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 122,
+      "deletions": 2,
+      "files_count": 3,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "2c6124f6251ab7ba8d9d6c9a3f66cd31ca0c617d",
+      "short_hash": "2c6124f6",
+      "author": "Alex Markevich",
+      "date": "2026-11-02T12:30:47-06:00",
+      "subject": "test: skip unreadable-file READ-ERR test when run as root (#3138)",
+      "coauthors": [
+        "Claude Opus 5.5 <noreply@anthropic.com>"
+      ],
+      "additions": 1,
+      "deletions": 0,
+      "files_count": 1,
+      "ai_tool": "claude",
+      "ai_signal": "co-author",
+      "is_ai_explicit": true,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "7687d077f8457bb34a23a6bfa2cc797c0f23b16f",
+      "short_hash": "7687d077",
+      "author": "Brian",
+      "date": "2026-11-04T22:19:35-06:00",
+      "subject": "feat: add bmad-facilitate and move John's planning documents onto it (#3172)",
+      "coauthors": [],
+      "additions": 3480,
+      "deletions": 192,
+      "files_count": 74,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "e734d3ac3c0f4ea31cc2c2bbbe79e86e54f2cae6",
+      "short_hash": "e734d3ac",
+      "author": "Alex Verkhovsky",
+      "date": "2026-11-06T08:45:29-07:00",
+      "subject": "fix(tickets): read frontmatter with PyYAML instead of a hand-rolled parser (#3169)",
+      "coauthors": [],
+      "additions": 123,
+      "deletions": 50,
+      "files_count": 2,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": true,
+      "is_revert": false
+    },
+    {
+      "hash": "d74453f5e6295fffec8161c9df96f256fe51aa5a",
+      "short_hash": "d74453f5",
+      "author": "Alex Verkhovsky",
+      "date": "2026-11-06T10:20:43-07:00",
+      "subject": "refactor(build): write plan enum values bare, quoting only what YAML needs (#3174)",
+      "coauthors": [],
+      "additions": 24,
+      "deletions": 24,
+      "files_count": 8,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "96ebd0320e0986b6317a1e305b426efd73fae6cc",
+      "short_hash": "96ebd032",
+      "author": "Brian",
+      "date": "2026-11-07T21:26:40-06:00",
+      "subject": "feat(shard-pro): editable shards, safer rebuilds, and split-by-default for long documents (#3177)",
+      "coauthors": [],
+      "additions": 817,
+      "deletions": 214,
+      "files_count": 9,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    },
+    {
+      "hash": "a867e1604b365d48ea03cbd109da1066ba0c84bc",
+      "short_hash": "a867e160",
+      "author": "Brian",
+      "date": "2026-11-07T21:38:56-06:00",
+      "subject": "feat(facilitate)!: Mary and John on bmad-facilitate, paced templates, a generic engine and template customization (#3176)",
+      "coauthors": [],
+      "additions": 1430,
+      "deletions": 1800,
+      "files_count": 66,
+      "ai_tool": null,
+      "ai_signal": null,
+      "is_ai_explicit": false,
+      "is_maintenance_bot": false,
+      "is_fix": false,
+      "is_revert": false
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "repo": "orca",
+  "full_name": "stablyai/orca",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "5127d1eb3b5cb1f32aaf9a568acc6f19a023d66c",
+      "snapshot_date": "2026-09-12T20:10:49-07:00",
+      "first_commit_date": "2026-03-16T20:29:24-07:00",
+      "commits": 9999,
+      "ai_pct": 22.2,
+      "has_agent_config": true,
+      "fix_pct": 47.5,
+      "revert_pct": 1.2,
+      "churn_ratio": 1.98,
+      "survival_rate_pct": 67.1,
+      "code": {
+        "current_loc": 4273578,
+        "additions": 6297516,
+        "deletions": 2023964,
+        "churn_ratio": 1.95,
+        "survival_rate_pct": 67.9
+      },
+      "docs": {
+        "current_loc": 26988,
+        "additions": 114147,
+        "deletions": 87159,
+        "churn_ratio": 7.46,
+        "survival_rate_pct": 23.6
+      },
+      "rapid_fire_pct": 32.1,
+      "unique_authors": 371
+    },
+    "365": null
+  }
+}

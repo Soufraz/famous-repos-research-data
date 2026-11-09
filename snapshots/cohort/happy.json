@@ -1,0 +1,63 @@
+{
+  "repo": "happy",
+  "full_name": "slopus/happy",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "8feb2cd99b444ac09c50c280d7a02fa53af2654e",
+      "snapshot_date": "2026-01-06T20:41:30-08:00",
+      "first_commit_date": "2025-07-12T19:09:56-07:00",
+      "commits": 615,
+      "ai_pct": 15.8,
+      "has_agent_config": true,
+      "fix_pct": 32.7,
+      "revert_pct": 1.5,
+      "churn_ratio": 2.43,
+      "survival_rate_pct": 58.2,
+      "code": {
+        "current_loc": 64906,
+        "additions": 112478,
+        "deletions": 46726,
+        "churn_ratio": 2.45,
+        "survival_rate_pct": 57.7
+      },
+      "docs": {
+        "current_loc": 1447,
+        "additions": 1604,
+        "deletions": 157,
+        "churn_ratio": 1.22,
+        "survival_rate_pct": 90.2
+      },
+      "rapid_fire_pct": 11.2,
+      "unique_authors": 21
+    },
+    "365": {
+      "snapshot_commit": "3f161de70541b1cedaf0b7547ed70889d8dae22d",
+      "snapshot_date": "2026-07-11T03:01:25-07:00",
+      "first_commit_date": "2025-07-12T17:57:05-07:00",
+      "commits": 2052,
+      "ai_pct": 24.4,
+      "has_agent_config": true,
+      "fix_pct": 37.9,
+      "revert_pct": 0.7,
+      "churn_ratio": 2.29,
+      "survival_rate_pct": 60.7,
+      "code": {
+        "current_loc": 184982,
+        "additions": 309650,
+        "deletions": 123737,
+        "churn_ratio": 2.34,
+        "survival_rate_pct": 59.7
+      },
+      "docs": {
+        "current_loc": 26988,
+        "additions": 39292,
+        "deletions": 12474,
+        "churn_ratio": 1.92,
+        "survival_rate_pct": 68.7
+      },
+      "rapid_fire_pct": 19.4,
+      "unique_authors": 74
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "repo": "deepseek-harness",
+  "head_commit": "fcc0ad4621",
+  "published_results": [
+    {
+      "claim": "Its five current-generation `open` samples are 49.2, 47.4, 49.1, 48.6, and 48.1 ms: median 48.6 ms, maximum 49.2 ms.",
+      "metric": "Session reopen latency on standard two-CPU hosted CI",
+      "value": "median 48.6 ms",
+      "baseline": "CI expectation 50 ms (63 ms limit)",
+      "evidence_type": "harness+results",
+      "files": [
+        ".agents/notes/implemented/testing/2026-09-04-session-open-performance-gate.md:57",
+        "benchmarks/session-open/session-open.bench.ts:62",
+        "benchmarks/session-open/session-open.bench.ts:313"
+      ],
+      "reproduce_command": "pnpm run test:bench"
+    },
+    {
+      "claim": "| First open | Repeated-snapshot regression | 4,197.5 ms | 4,284.8 ms | 4,197.9 ms | 4.4 MB | Exhausts heap |",
+      "metric": "Large-session first-open four-phase total (reference-machine five-sample median), positive/negative control",
+      "value": "4,197.5 ms (regression control)",
+      "baseline": "249.0 ms (pre-stack reference implementation)",
+      "evidence_type": "harness+results",
+      "files": [
+        ".agents/notes/implemented/testing/2026-09-04-session-open-performance-gate.md:48-53"
+      ],
+      "reproduce_command": "pnpm run test:bench"
+    },
+    {
+      "claim": "| Browser open | 184.62 ms | 200 ms | 500 ms |",
+      "metric": "Long-session Web UI browser-open latency (three-sample median, arm64 reference machine)",
+      "value": "184.62 ms",
+      "baseline": "reference allowance 200 ms; historical CI limit 500 ms",
+      "evidence_type": "harness+results",
+      "files": [
+        ".agents/notes/implemented/testing/2026-09-06-frontend-performance-budgets.md:24-36",
+        "benchmarks/long-session-browser/long-session.bench.ts"
+      ],
+      "reproduce_command": "pnpm run test:bench"
+    },
+    {
+      "claim": "Tool continuation ... reports totals of 917.007, 892.091, 887.839, 905.659, and 898.252 ms: median 898.252 ms exceeds the historical 850 ms",
+      "metric": "Agent tool-continuation wall time on standard two-CPU hosted CI",
+      "value": "median 898.252 ms",
+      "baseline": "historical 850 ms budget; new 900 ms expectation x1.25 headroom = 1,125 ms",
+      "evidence_type": "harness+results",
+      "files": [
+        ".agents/notes/implemented/testing/2026-09-06-backend-continuation-performance.md:52",
+        "benchmarks/agent-continuation/README.md:21"
+      ],
+      "reproduce_command": "pnpm run build:bench && pnpm exec vitest run --config vitest.bench.config.ts benchmarks/agent-continuation/agent-continuation.bench.ts"
+    },
+    {
+      "claim": "The shipped SDK variant completes 100 turns, 200 requests, and 800 real file reads. Its five-sample smoke totals are 1,521.773, 1,463.465, 1,689.701, 1,365.485, and 1,417.106 ms (median 1,463.465 ms)",
+      "metric": "SDK-minimal 100-turn continuation wall time",
+      "value": "median 1,463.465 ms",
+      "baseline": null,
+      "evidence_type": "harness+results",
+      "files": [
+        ".agents/notes/implemented/testing/2026-09-06-backend-continuation-performance.md:46"
+      ],
+      "reproduce_command": "pnpm run build:bench && pnpm exec vitest run --config vitest.bench.config.ts benchmarks/agent-continuation/agent-continuation.bench.ts"
+    },
+    {
+      "claim": "The 2026-10-23 evaluation of the SDK profile (native tools, six benchmarks) measured this sentence as the only change: Pass@1 mean −0.03pp and Pass@3 mean +0.70pp ... (ProgramBench-New −15.5 steps, Terminal-Bench-v4 +13.5 steps)",
+      "metric": "Agent task Pass@1 / Pass@3 delta from a single prompt-sentence change",
+      "value": "Pass@1 −0.03pp; Pass@3 +0.70pp",
+      "baseline": "base commit (same profile without the sentence)",
+      "evidence_type": "results_only",
+      "files": [
+        ".agents/notes/implemented/bug-fix/2026-10-26-read-guidance-line-ranges.md:11",
+        ".agents/notes/implemented/bug-fix/2026-10-26-read-guidance-line-ranges.md:35"
+      ],
+      "reproduce_command": null
+    }
+  ],
+  "strongest_evidence_type": "harness+results",
+  "summary": "deepseek-harness publishes no headline agent-accuracy results: no SWE-bench, HumanEval or LiveCodeBench, and its README has no numbers. Its real quantitative evidence is engineering performance: CI-enforced latency/memory benchmarks (benchmarks/*.bench.ts, `pnpm run test:bench`) whose calibration samples and medians are committed in agent notes. These are reproducible as gates, though absolute numbers are machine-dependent. The only agent-quality numbers sit in one internal note (Pass@1 −0.03pp / Pass@3 +0.70pp for a prompt tweak across six benchmarks), and the eval harness and data behind them are not in the repo.",
+  "result_focus": "engineering",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}

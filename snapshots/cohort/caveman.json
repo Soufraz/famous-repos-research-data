@@ -1,0 +1,36 @@
+{
+  "repo": "caveman",
+  "full_name": "JuliusBrussee/caveman",
+  "group": "cohort",
+  "snapshots": {
+    "180": {
+      "snapshot_commit": "f5d729488caa8f6a5b6c8086fe2cccd3e8a63f91",
+      "snapshot_date": "2026-10-01T00:32:02+02:00",
+      "first_commit_date": "2026-04-04T12:02:51+02:00",
+      "commits": 695,
+      "ai_pct": 63.3,
+      "has_agent_config": true,
+      "fix_pct": 50.8,
+      "revert_pct": 0.0,
+      "churn_ratio": 1.89,
+      "survival_rate_pct": 69.2,
+      "code": {
+        "current_loc": 265291,
+        "additions": 374150,
+        "deletions": 109774,
+        "churn_ratio": 1.82,
+        "survival_rate_pct": 70.9
+      },
+      "docs": {
+        "current_loc": 16552,
+        "additions": 32927,
+        "deletions": 16417,
+        "churn_ratio": 2.98,
+        "survival_rate_pct": 50.3
+      },
+      "rapid_fire_pct": 34.0,
+      "unique_authors": 66
+    },
+    "365": null
+  }
+}

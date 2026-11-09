@@ -1,0 +1,79 @@
+{
+  "repo": "get-shit-done",
+  "head_commit": "bdcaab2c",
+  "published_results": [
+    {
+      "claim": "Cuts cold-start system-prompt overhead from ~12k tokens to ~700, useful for local LLMs with 32K–128K context",
+      "metric": "cold-start system-prompt token overhead (--minimal install profile vs full)",
+      "value": "~700 tokens (pt-BR README adds '≥94% de redução')",
+      "baseline": "full install: ~12k tokens",
+      "evidence_type": "claim_only",
+      "files": [
+        "CHANGELOG.md:45",
+        "CHANGELOG.md:46",
+        "docs/RELEASE-v1.39.0-rc.4.md:23",
+        "docs/RELEASE-v1.39.0-rc.4.md:24",
+        "README.pt-BR.md:80",
+        "docs/research/2026-05-12-skill-surface-budget.md:32"
+      ],
+      "reproduce_command": null,
+      "notes": "No measurement script, tokenizer, or raw count committed; repeated across CHANGELOG, release notes and localized READMEs with '~' approximations."
+    },
+    {
+      "claim": "| GSD share of a 200k 1% budget | ~60% | ... Estimated description tokens (÷4) | ~1,196 |",
+      "metric": "share of Claude Code's default skill-listing budget consumed by GSD skill descriptions (chars/4 token estimate)",
+      "value": "~60%; 4,787 description chars, ~1,196 estimated tokens across 66 skills",
+      "baseline": "default skillListingBudgetFraction 1% of 200k context, ~2,000 tokens",
+      "evidence_type": "results_only",
+      "files": [
+        "docs/research/2026-05-12-skill-surface-budget.md:20",
+        "docs/research/2026-05-12-skill-surface-budget.md:21",
+        "docs/research/2026-05-12-skill-surface-budget.md:24",
+        "docs/research/data/2026-05-12-skill-audit.json"
+      ],
+      "reproduce_command": null,
+      "notes": "Committed per-skill audit JSON backs the counts, but the memo says the extraction script is not in scripts/ ('one-shot snapshot', line 252). Token figure is a chars/4 estimate, not tokenizer output."
+    },
+    {
+      "claim": "**Purpose:** Reduce static prompt overhead by ~40% for models with context windows under 200K tokens.",
+      "metric": "static prompt overhead reduction (context-window-aware prompt thinning)",
+      "value": "~40%",
+      "baseline": "unthinned agent prompts",
+      "evidence_type": "claim_only",
+      "files": [
+        "docs/FEATURES.md:2493"
+      ],
+      "reproduce_command": null,
+      "notes": "Stated as a feature purpose/target; no measurement."
+    },
+    {
+      "claim": "Commands now delegate to workflows, reducing command file size by ~75% ... **Token reduction** — ~22k characters removed from affected command/workflow/agent files",
+      "metric": "prompt/command file size reduction",
+      "value": "~75% command file size; ~22k characters removed",
+      "baseline": "previous command files",
+      "evidence_type": "claim_only",
+      "files": [
+        "CHANGELOG.md:1438",
+        "CHANGELOG.md:1440"
+      ],
+      "reproduce_command": null,
+      "notes": "Changelog statement; verifiable only by diffing git history, no method given."
+    },
+    {
+      "claim": "Stryker measured a 4.62% mutation score on `get-shit-done/bin/lib/config-schema.cjs` (6 killed, 124 survived out of 130).",
+      "metric": "mutation score of the test suite for one module",
+      "value": "4.62% (6 killed / 130) before the fix",
+      "baseline": null,
+      "evidence_type": "results_only",
+      "files": [
+        "CHANGELOG.md:74"
+      ],
+      "reproduce_command": null,
+      "notes": "Test-suite quality metric, not product performance; no post-fix score or Stryker config/report committed."
+    }
+  ],
+  "strongest_evidence_type": "results_only",
+  "summary": "The English README is now only a 'GSD Has Moved' redirect, and the project publishes no measured outcome of its workflow (no task success, quality or 'context rot' evaluation). Its numbers are prompt-size figures: '~12k -> ~700 tokens' for --minimal and '~40%' prompt thinning, stated without method, plus a skill-budget memo backed by a committed one-shot audit JSON whose extraction script is not in the repo.",
+  "result_focus": "outcome",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}

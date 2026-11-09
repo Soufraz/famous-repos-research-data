@@ -1,0 +1,121 @@
+{
+  "repo": "book-to-skill",
+  "head_commit": "e7bb659d",
+  "published_results": [
+    {
+      "claim": "24×–51× fewer tokens than dumping the book into context, measured on real books",
+      "metric": "Tokens entering context to answer one targeted question: whole extracted book (tiktoken cl100k_base) vs book-to-skill resident core (~4K) plus one compiled chapter (~1K); tools/discovery_tax.py uses a 4,000-token design cap and a 1,000-token chapter unless --skill-dir is given; book texts are not committed",
+      "value": "24× (Think Python 2), 35× (Working Backwards), 51× (AI Engineering); book-to-skill ~5,000 tokens",
+      "baseline": "context-dump: 119,264 / 175,253 / 256,287 tokens",
+      "evidence_type": "harness+results",
+      "files": [
+        "README.md:107",
+        "README.md:46",
+        "docs/performance.md:8-10",
+        "docs/performance.md:37-53",
+        "tools/discovery_tax.py:118-119",
+        "tools/discovery_tax.py:151-173"
+      ],
+      "reproduce_command": "python3 tools/discovery_tax.py --full-text /tmp/book_skill_work/full_text.txt --target-chapter 5"
+    },
+    {
+      "claim": "The discovery-loop advantage (2.4–15.6×) is a one-time cost and a model using the book's real ToC/chapter sizes",
+      "metric": "Tokens of a modeled PDF-navigating agent that reads the ToC and pulls raw chapters, using the book's real ToC and chapter sizes, vs book-to-skill ~5,000; the tool's docstring calls this figure a model, not a measurement of a specific agent",
+      "value": "2.4× (Think Python 2), 6.7× (Working Backwards), 15.6× (AI Engineering)",
+      "baseline": "modeled discovery loop: 12,152 / 33,444 / 77,866 tokens",
+      "evidence_type": "harness+results",
+      "files": [
+        "docs/performance.md:42-55",
+        "tools/discovery_tax.py:3-28"
+      ],
+      "reproduce_command": "python3 tools/discovery_tax.py --full-text /tmp/book_skill_work/full_text.txt --target-chapter 5"
+    },
+    {
+      "claim": "Think Python 2 | PDF | 244 | 119K | 19",
+      "metric": "Extraction of real books: pages, extracted tokens, chapters auto-detected (pdftotext for PDF, ebooklib for EPUB)",
+      "value": "Think Python 2 119K tokens, 19 chapters; Working Backwards 175K, 10; Pro Git 229K, not auto-segmented; Moby-Dick 301K, 133 in docs/performance.md but listed as not auto-segmented in docs/how-it-works.md",
+      "baseline": null,
+      "evidence_type": "results_only",
+      "files": [
+        "docs/performance.md:14-25",
+        "docs/how-it-works.md:64-78"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "pdftotext | 0.1s | 0 | 0 ... Docling (technical mode) | 164s | 48 | 36",
+      "metric": "Extraction time, tables and code blocks recovered on a 103-page technical PDF, Docling technical mode vs pdftotext",
+      "value": "Docling: 164s, 48 tables, 36 code blocks, 27K tokens (+1.2%); ~1.5s/page",
+      "baseline": "pdftotext: 0.1s, 0 tables, 0 code blocks, 27K tokens",
+      "evidence_type": "results_only",
+      "files": [
+        "docs/performance.md:27-35",
+        "docs/how-it-works.md:57-62",
+        "README.md:172"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Roughly $1 per book for a full skill — paid once.",
+      "metric": "One-pass full conversion cost, estimated from measured tokens at Claude Sonnet 4.5 prices ($3 / $15 per MTok)",
+      "value": "$0.88 (Think Python 2), $0.96 (Working Backwards), $1.23 (Pro Git), $1.42 (Moby-Dick)",
+      "baseline": null,
+      "evidence_type": "results_only",
+      "files": [
+        "docs/performance.md:57-70",
+        "docs/how-it-works.md:64-78"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "Cheatsheet decision rules | 0 | 32",
+      "metric": "Generated-skill artifacts on one chapter before/after the adaptive-depth spec change (v1.0.0, #20)",
+      "value": "chapter file 1,219 tokens, worked example present, 32 cheatsheet decision rules, 0 keyword/definition lines",
+      "baseline": "old spec: chapter file 473 tokens, no worked example, 0 decision rules, 9 keyword/definition lines",
+      "evidence_type": "results_only",
+      "files": [
+        "docs/performance.md:72-84"
+      ],
+      "reproduce_command": null
+    },
+    {
+      "claim": "PD-04 | BLOCKED | Add dry-run/live runner contract and first harness adapter",
+      "metric": "Progressive-disclosure eval tooling (tools/evals: manifest, trajectory scorer, replay, paper-flat baseline builder) for routing, answer accuracy and token/call cost; live-run tasks PD-04 to PD-12 are BLOCKED and only synthetic replay fixtures are committed",
+      "value": "No results committed",
+      "baseline": "planned: raw chunk, paper-flat and current book-to-skill packs under the same questions",
+      "evidence_type": "harness_only",
+      "files": [
+        "docs/research/progressive-disclosure-evals.md:208-222",
+        "docs/research/progressive-disclosure-evals.md:549-563",
+        "tools/evals/replay.py:1-2",
+        "evals/fixtures/replay_trajectories.json"
+      ],
+      "reproduce_command": "python3 tools/evals/replay.py evals/fixtures/replay_trajectories.json"
+    },
+    {
+      "claim": "A single-level/flat skill pack is the best default in the study overall",
+      "metric": "Third-party study He et al., 'Is Progressive Disclosure All You Need for Long-Context Agents?' (https://arxiv.org/abs/2607.17598), which evaluates a controlled recipe based on book-to-skill, not the repository's current generator",
+      "value": "flat pack the best default overall; on a single book a strong navigator (tested Codex setup) reduces the accuracy benefit of the pre-built pack; K=20 En.QA 68.3M vs 32.5M tokens (condition-specific, uncached)",
+      "baseline": "raw navigation by the agent (as summarized in the doc)",
+      "evidence_type": "external",
+      "files": [
+        "docs/research/progressive-disclosure-evals.md:5",
+        "docs/research/progressive-disclosure-evals.md:35-42"
+      ],
+      "reproduce_command": null
+    }
+  ],
+  "strongest_evidence_type": "harness+results",
+  "summary": "book-to-skill's headline, 24×–51× fewer tokens than placing the whole book in context to answer one question, comes from tools/discovery_tax.py run on three real books whose texts are not committed (119,264 / 175,253 / 256,287 context-dump tokens vs ~5,000 for book-to-skill, a ~4K core plus ~1K chapter that the tool takes as a design cap unless a generated skill is passed), and the 2.4×–15.6× discovery-loop figures are a model, as the tool's docstring states. Extraction counts, Docling vs pdftotext (164s vs 0.1s; 48 vs 0 tables), a ~$1-per-book generation cost and a one-chapter before/after table are published as results without a committed harness, and docs/performance.md lists 133 auto-detected chapters for Moby-Dick where docs/how-it-works.md lists none. The tools/evals harness for routing and answer accuracy has no live results yet, and docs/research/progressive-disclosure-evals.md summarizes an external study of a book-to-skill-based recipe in which a strong navigator on a single book reduced the accuracy benefit of the pre-built pack.",
+  "result_focus": "outcome",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself",
+  "accuracy_check": {
+    "date": "2026-11-08",
+    "numbers_checked": 47,
+    "corrections": [
+      "Headline claim quote taken from README.md:107; README.md:46 wraps the same phrase in <strong> tags",
+      "tools/discovery_tax.py citations corrected to lines 118-119 (4,000-token design cap) and 151-173 (1,000-token chapter default)",
+      "Discovery-loop metric reworded: the docs do not say whether the table uses the tool best case or loop case"
+    ]
+  }
+}

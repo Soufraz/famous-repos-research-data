@@ -1,0 +1,114 @@
+{
+  "repo": "happy",
+  "head_commit": "c80fa5db5",
+  "published_results": [
+    {
+      "claim": "| scroll-while-streaming | hitch 683, 948 dropped, p95 98 ms, main max 637 ms | hitch 0, 0 dropped, p95 16.7 ms, main max 7 ms |",
+      "metric": "iOS scroll hitch ratio (ms/s), dropped frames, p95 frame interval, max main-thread stretch while a reply streams (simulator perf gym)",
+      "value": "after: hitch 0, 0 dropped, p95 16.7 ms, main max 7 ms",
+      "baseline": "before (commit 09b0036ba + meter): hitch 683, 948 dropped, p95 98 ms, main max 637 ms",
+      "evidence_type": "harness+results",
+      "files": [
+        "packages/happy-ios/docs/PERF-GYM.md:227",
+        "packages/happy-ios/scripts/perf-gym/gym.py",
+        "packages/happy-ios/scripts/perf-gym/baselines/before.json",
+        "packages/happy-ios/scripts/perf-gym/baselines/after.json",
+        "packages/happy-ios/Tests/HappyDirectUITests/ScrollPerfGymTests.swift"
+      ],
+      "reproduce_command": "python3 scripts/perf-gym/gym.py compare scripts/perf-gym/baselines/before.json scripts/perf-gym/baselines/after.json",
+      "notes": "Run from packages/happy-ios (PERF-GYM.md:41). Doc table matches committed JSON (e.g. before.json hitchRatio 683.4, dropped 948, mainMax 637.13; after.json 0.0/0.0/6.97). Simulator on an M-series Mac with synthetic chats; doc warns absolute frame times don't carry over to a phone. A fresh run needs Xcode, XcodeGen and a pinned Happy Agent 0.4.110-preview.11 binary."
+    },
+    {
+      "claim": "| open-cold | apply 4,261 ms, 16,333 views, 273 MB | apply 70 ms, 169 views, 146 MB |",
+      "metric": "time to apply transcript on chat open, live view count, memory",
+      "value": "after: apply 70 ms, 169 views, 146 MB",
+      "baseline": "before: apply 4,261 ms, 16,333 views, 273 MB",
+      "evidence_type": "harness+results",
+      "files": [
+        "packages/happy-ios/docs/PERF-GYM.md:221",
+        "packages/happy-ios/scripts/perf-gym/baselines/before.json",
+        "packages/happy-ios/scripts/perf-gym/baselines/after.json"
+      ],
+      "reproduce_command": "python3 scripts/perf-gym/gym.py run",
+      "notes": "JSON: before applyMax 4260.5, views 16333, peakMB 272.9; after applyMax 69.9, views 169, memMB 145.5. Also history-paging hitch 123 -> 0.9, main max 930 -> 16 ms (PERF-GYM.md:228)."
+    },
+    {
+      "claim": "| Main thread per scroll frame (median) | 45.7 ms | 1.05 ms | 43.3 ms | 0.52 ms | ... | Hitches over the scroll | 255 of 258 frames | 0 of 798 | 679 of 682 | 0 of 8328 |",
+      "metric": "main-thread ms per scroll frame and hitch count, What's New screen (iPhone 17 Pro iOS 26.5 simulator, Debug)",
+      "value": "after: 1.05 ms (Large), 0.52 ms (AX-XXXL); 0 of 798 and 0 of 8328 frames hitched",
+      "baseline": "before (8f1e2c3f): 45.7 ms / 43.3 ms; 255 of 258 and 679 of 682 frames hitched",
+      "evidence_type": "harness+results",
+      "files": [
+        "packages/happy-ios/docs/APPLY-PERF.md:208",
+        "packages/happy-ios/docs/APPLY-PERF.md:220",
+        "packages/happy-ios/docs/APPLY-PERF.md:221",
+        "packages/happy-ios/Harness/WhatsNewHarness.swift"
+      ],
+      "reproduce_command": null,
+      "notes": "Harness invocation given only as arguments (`-screen whatsnew -autoscroll 4000`), two runs each; results recorded in doc only, no raw data file."
+    },
+    {
+      "claim": "| Merge unchanged 1000-session page | 2558.75 ms | 1 | — | ... Current shared-machine debug medians: ... unchanged 1000-session merge 242.51ms",
+      "metric": "sync merge wall time (debug median, shared Linux build machine) and modifying commits per run",
+      "value": "242.51 ms; 0 modifying commits per run",
+      "baseline": "before (2026-10-13): 2558.75 ms; 1 modifying commit per run",
+      "evidence_type": "harness+results",
+      "files": [
+        "packages/happy-ios/docs/SYNC-PERF.md:16",
+        "packages/happy-ios/docs/SYNC-PERF.md:59",
+        "packages/happy-ios/docs/SYNC-PERF.md:97",
+        "packages/happy-ios/docs/SYNC-PERF.md:100",
+        "packages/happy-ios/Tests/HappyCoreTests/SyncPerfTests.swift"
+      ],
+      "reproduce_command": "swift test --build-system native --disable-build-manifest-caching --filter SyncPerf",
+      "notes": "The doc itself says 'Concurrent compilation and debug builds make wall-time ratios unsuitable as a performance claim. Exact transaction, fetch and publication counts are the regression guards.' (SYNC-PERF.md:99-101)."
+    },
+    {
+      "claim": "| dev, as `adb install` leaves it (`run-from-apk`) | 688 | **516** | 839 | **639** |",
+      "metric": "Android cold start: median time to first frame / fully drawn (ms), 15 cold starts, Galaxy Z Fold7",
+      "value": "dev build first frame 516 ms, fully drawn 639 ms; bench (release) build first frame 118 ms",
+      "baseline": "before: dev 688 ms / 839 ms; bench 116 ms / 119 ms",
+      "evidence_type": "harness+results",
+      "files": [
+        "packages/happy-android/research/cold-start.md:137",
+        "packages/happy-android/research/cold-start.md:36",
+        "packages/happy-android/benchmark/src/main/kotlin/com/slopus/happy/benchmark/StartupBenchmark.kt"
+      ],
+      "reproduce_command": "ANDROID_SERIAL=<device> ./gradlew :benchmark:connectedBenchmarkBenchAndroidTest",
+      "notes": "Most table numbers come from `am start -W -S` medians (manual), not the macrobenchmark; release build shows no improvement (116 -> 118). Results only in markdown, no raw benchmark JSON committed."
+    },
+    {
+      "claim": "The macrobenchmark ... puts the main thread's part of the first frame at 149 ms with the Baseline Profile against 191 ms without. Its timeToInitialDisplay is 298 against 328",
+      "metric": "Android macrobenchmark timeToInitialDisplay (ms), with vs without Baseline Profile",
+      "value": "298 ms (with Baseline Profile); main-thread share 149 ms",
+      "baseline": "328 ms without Baseline Profile; main-thread share 191 ms",
+      "evidence_type": "harness+results",
+      "files": [
+        "packages/happy-android/research/cold-start.md:142",
+        "packages/happy-android/research/cold-start.md:143",
+        "packages/happy-android/benchmark/src/main/kotlin/com/slopus/happy/benchmark/StartupBenchmark.kt"
+      ],
+      "reproduce_command": "ANDROID_SERIAL=<device> ./gradlew :benchmark:connectedBenchmarkBenchAndroidTest",
+      "notes": "Single device (Galaxy Z Fold7), 15 iterations; results documented in markdown only."
+    },
+    {
+      "claim": "├── reconnect-storm (5 cycles)          96–97% success ✅ ... ├── pod-kill-mid-rpc                    1612ms fast-fail ✅ (was 30000ms)",
+      "metric": "cross-replica RPC success rate and failure latency under chaos scenarios (happy-server on minikube)",
+      "value": "reconnect-storm 96–97% success; pod-kill-mid-rpc fast-fail 1612 ms; steady-state 50/50 + 20/20; network-loss 85/85",
+      "baseline": "pod-kill-mid-rpc was 30000 ms before the fix",
+      "evidence_type": "results_only",
+      "files": [
+        "docs/multi-process.md:228",
+        "docs/multi-process.md:229",
+        "docs/multi-process.md:233",
+        "docs/multi-process.md:195"
+      ],
+      "reproduce_command": "node deploy/integration-tests/test-rpc-cross-replica.mjs",
+      "notes": "The documented harness scripts (test-rpc-cross-replica.mjs, hammer.mjs, network-loss.mjs, test-multiprocess.mjs) are NOT present in packages/happy-server/deploy/integration-tests/ (which holds stress-*.mjs, test-rpc-dead-daemon.mjs, run-all.sh), so the gauntlet output cannot be reproduced from the clone."
+    }
+  ],
+  "strongest_evidence_type": "harness+results",
+  "summary": "Happy publishes no results about agent quality; its quantitative evidence is client/server engineering performance. The iOS perf gym is the strongest piece: a runnable harness (gym.py + UI tests) with committed before/after JSON baselines that match the doc tables (e.g. scroll-while-streaming hitch 683 -> 0), though fresh runs need Xcode, a simulator and a pinned agent binary; Android cold-start and iOS sync/apply numbers have in-repo harnesses but results only in markdown, and the server chaos results reference scripts missing from the clone.",
+  "result_focus": "engineering",
+  "result_focus_note": "manual classification of published_results: outcome = does the tool do its job; engineering = speed of the software itself"
+}
